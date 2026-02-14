@@ -4,7 +4,7 @@ let current = 0;
 let score = 0;
 
 // ================= LOAD DATA =================
-fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=15")
+fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=16")
   .then(r => r.json())
   .then(json => {
     data = json;
@@ -122,12 +122,19 @@ function showQuestion() {
     );
 
     // IATA: verwijder luchthavens uit dezelfde stad
-    if (q.type === "iata") {
-  const cityName = q.question.toLowerCase();
-  candidates = candidates.filter(d =>
-    !d.question.toLowerCase().includes(cityName)
-  );
-    }
+    // IATA: verwijder luchthavens uit dezelfde stad
+if (q.type === "iata") {
+
+  // pak eerste woord na "for" = stadsnaam
+  const match = q.question.match(/for (.*?) is/i);
+  const city = match ? match[1].split(" ")[0].toLowerCase() : "";
+
+  candidates = candidates.filter(d => {
+    const m = d.question.match(/for (.*?) is/i);
+    const otherCity = m ? m[1].split(" ")[0].toLowerCase() : "";
+    return otherCity !== city;
+  });
+}
 
     // antwoorden verzamelen
     let pool = candidates.flatMap(d => d.answer);
