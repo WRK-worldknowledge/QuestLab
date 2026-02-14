@@ -4,7 +4,7 @@ let current = 0;
 let score = 0;
 
 // ================= LOAD DATA =================
-fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=12")
+fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=13")
   .then(r => r.json())
   .then(json => {
     data = json;
@@ -87,8 +87,17 @@ function showQuestion() {
   document.getElementById("progress").textContent =
     `Question ${current+1} of ${questions.length}`;
 
-  document.getElementById("question").textContent = q.question;
+  let questionText = q.question;
 
+// airportnamen verbergen bij city vragen
+if (q.type === "city") {
+  questionText = questionText
+    .replace(/airport/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+document.getElementById("question").textContent = questionText;
   // afbeelding
   const img = document.getElementById("mapImage");
   if (q.image) {
@@ -103,21 +112,31 @@ function showQuestion() {
 
   const mode = document.getElementById("modeSelect").value;
 
- // ================= MULTIPLE CHOICE =================
+// ================= MULTIPLE CHOICE =================
 if (mode === "mc") {
 
-  // 1️⃣ ALTIJD hele MODULE (continent)
-let pool = data.filter(d =>
-  d.type === q.type &&
-  d.module === q.module
-).flatMap(d => d.answer);
+  // eerst alle kandidaten uit dezelfde module
+  let candidates = data.filter(d =>
+    d.type === q.type &&
+    d.module === q.module
+  );
 
-// 2️⃣ failsafe (bij hele kleine modules)
-if (pool.length < 4) {
-  pool = data.filter(d =>
-    d.type === q.type
-  ).flatMap(d => d.answer);
-});
+  // IATA: verwijder luchthavens uit dezelfde stad
+  if (q.type === "iata") {
+    const cityName = q.question.toLowerCase();
+    candidates = candidates.filter(d =>
+      !d.question.toLowerCase().includes(cityName)
+    );
+  }
+
+  // haal alleen antwoorden eruit
+  let pool = candidates.flatMap(d => d.answer);
+
+  // failsafe als te weinig
+  if (pool.length < 4) {
+    pool = data
+      .filter(d => d.type === q.type)
+      .flatMap(d => d.answer);
   }
 
   // unieke waarden
@@ -135,7 +154,7 @@ if (pool.length < 4) {
   // combineer + shuffle
   const choices = [...wrong, ...q.answer].sort(() => Math.random()-0.5);
 
-  // maak knoppen
+  // knoppen
   choices.forEach(opt => {
     const btn = document.createElement("button");
     btn.textContent = opt;
