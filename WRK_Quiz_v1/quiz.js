@@ -103,7 +103,26 @@ function showQuestion() {
   // ===== MULTIPLE CHOICE =====
   if (mode === "mc") {
 
-    q.options.forEach(opt => {
+    let choices = [];
+
+    // gebruik bestaande options als ze bestaan
+    if (q.options && q.options.length >= 2) {
+      choices = q.options;
+    }
+
+    // anders automatisch genereren
+    else {
+      const sameType = data.filter(d => d.type === q.type);
+      const wrong = sameType
+        .map(d => d.answer[0])
+        .filter(a => !q.answer.includes(a))
+        .sort(() => Math.random() - 0.5)
+        .slice(0,3);
+
+      choices = [...q.answer, ...wrong].sort(() => Math.random() - 0.5);
+    }
+
+    choices.forEach(opt => {
       const btn = document.createElement("button");
       btn.textContent = opt;
       btn.onclick = () => answer(opt, q.answer);
