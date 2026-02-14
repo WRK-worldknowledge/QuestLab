@@ -4,7 +4,7 @@ let current = 0;
 let score = 0;
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=2")
+fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=3")
   .then(r => r.json())
   .then(json => {
     data = json;
