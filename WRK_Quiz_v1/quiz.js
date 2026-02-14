@@ -1,10 +1,26 @@
 let data = [];
 let questions = [];
 let current = 0;
+let currentType = "";
 let score = 0;
-
+function normalizeCity(name) {
+    return name
+        .replace(/airport/gi,"")
+        .replace(/international/gi,"")
+        .replace(/city/gi,"")
+        .replace(/heathrow|gatwick|luton|stans?ted|schiphol|malpensa|linate|charles de gaulle|orly/gi,"")
+        .replace(/\s+/g," ")
+        .trim();
+}
+function shuffle(array){
+    for(let i=array.length-1;i>0;i--){
+        const j=Math.floor(Math.random()*(i+1));
+        [array[i],array[j]]=[array[j],array[i]];
+    }
+    return array;
+}
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=1")
+fetch("data/wrk-data.json?v=3")
 .then(r => r.json())
 .then(json => {
     data = json;
@@ -61,7 +77,7 @@ function startQuiz() {
         return;
     }
 
-    questions = questions.sort(()=>Math.random()-0.5).slice(0,20);
+    questions = shuffle([...questions]).slice(0,20);
 
     current = 0;
     score = 0;
@@ -74,8 +90,8 @@ function startQuiz() {
 
 // ================= SHOW QUESTION =================
 function showQuestion() {
-
-    const q = questions[current];
+const q = questions[current];
+currentType = q.type;
 
     document.getElementById("progress").textContent =
         `Question ${current+1} of ${questions.length}`;
@@ -83,8 +99,7 @@ function showQuestion() {
     // city vraag: verwijder airport naam
     let questionText = q.question;
     if (q.type === "city")
-        questionText = questionText.replace(/airport/gi,"").replace(/\s+/g," ").trim();
-
+    questionText = "Which city belongs to this airport?";
     document.getElementById("question").textContent = questionText;
 
     // image
@@ -109,32 +124,78 @@ function showQuestion() {
         );
 
         // voorkom meerdere airports uit zelfde stad (IATA)
-        if (q.type === "iata") {
+if (q.type === "iata") {
+    function extractCity(text){
+        const m = text.match(/for (.*?) is/i);
+        if(!m) return null;
+        return normalizeCity(m[1]).toLowerCase();
+    }
 
-            const match = q.question.match(/for (.*?) is/i);
-            const correctCity = match ? match[1].split(" ")[0].toLowerCase() : "";
+    const correctCity = extractCity(q.question);
 
-            candidates = candidates.filter(d => {
-                const m = d.question.match(/for (.*?) is/i);
-                const otherCity = m ? m[1].split(" ")[0].toLowerCase() : "";
-                return otherCity !== correctCity;
-            });
-        }
-
-        let pool = [...new Set(candidates.flatMap(d=>d.answer))];
-
-        // verwijder juiste antwoord
-        pool = pool.filter(a =>
-            !q.answer.map(x=>x.toLowerCase()).includes(a.toLowerCase())
+    if(correctCity){
+        candidates = candidates.filter(d =>
+            extractCity(d.question) !== correctCity
         );
+    }
+} // ← HEEL BELANGRIJK (deze ontbrak)
 
-        const wrong = pool.sort(()=>Math.random()-0.5).slice(0,3);
-        const choices = [...wrong,...q.answer].sort(()=>Math.random()-0.5);
+// ↓ ALTIJD uitvoeren (voor alle vraagtypes!)
+let pool = candidates.flatMap(d => 
+    d.answer.map(a =>
+        q.type === "city"
+            ? normalizeCity(a)
+            : a
+));
 
+// FAILSAFE → andere lessen binnen hetzelfde continent
+if (pool.length < 4) {
+    pool = data
+        .filter(d =>
+            d.type === q.type &&
+            d.module === q.module &&
+            d.lesson !== q.lesson
+        )
+        .flatMap(d => d.answer.map(a =>
+    q.type === "city"
+        ? normalizeCity(a).split(" ")[0]
+        : a
+));
+}
+
+pool = [...new Set(pool)];
+
+// eerst correcte antwoorden bepalen
+const normalizedCorrect = q.answer.map(a =>
+    q.type === "city" ? normalizeCity(a).toLowerCase() : a.toLowerCase()
+);
+
+// daarna juiste antwoord verwijderen
+pool = pool.filter(a =>
+    !normalizedCorrect.includes(
+        (q.type === "city" ? normalizeCity(a) : a).toLowerCase()
+    )
+);
+
+while(pool.length < 3){
+    pool.push("—");
+}
+
+        const wrong = shuffle(pool).slice(0,3);
+       const correctAnswers = q.type === "city"
+    ? q.answer.map(a => normalizeCity(a))
+    : q.answer;
+
+const choices = shuffle([...wrong,...correctAnswers]);
         choices.forEach(opt=>{
-            const btn=document.createElement("button");
-            btn.textContent=opt;
-            btn.onclick=()=>answer(opt,q.answer);
+    const btn=document.createElement("button");
+    btn.textContent=opt;
+    if(opt === "—"){
+    btn.disabled = true;
+    btn.classList.add("emptyOption");
+} else {
+    btn.onclick=()=>answer(opt,correctAnswers);
+}
             options.appendChild(btn);
             options.appendChild(document.createElement("br"));
         });
@@ -148,7 +209,11 @@ function showQuestion() {
 
         const btn=document.createElement("button");
         btn.textContent="Submit";
-        btn.onclick=()=>answer(input.value,q.answer);
+        const correctAnswers = q.type === "city"
+    ? q.answer.map(a => normalizeCity(a))
+    : q.answer;
+
+btn.onclick=()=>answer(input.value,correctAnswers);
 
         input.addEventListener("keydown",e=>{
             if(e.key==="Enter") btn.click();
@@ -165,7 +230,16 @@ function answer(given, correct){
 
     if(!given) return;
 
-    if(correct.map(a=>a.toLowerCase()).includes(given.toLowerCase().trim()))
+   let normalizedGiven = given
+    .toLowerCase()
+    .replace(/\s+/g," ")
+    .trim();
+
+    let normalizedCorrect = correct.map(a =>
+    a.toLowerCase().replace(/\s+/g," ").trim()
+);
+
+    if(normalizedCorrect.includes(normalizedGiven))
         score++;
 
     current++;
