@@ -47,15 +47,16 @@ function startQuiz() {
   const lesson = lessonSelect.value;
   const type = typeSelect.value;
 
-  questions = data.filter(d => d.type === type);
+  questions = data.filter(d =>
+  d.module?.toLowerCase() === module?.toLowerCase() &&
+  d.lesson?.toLowerCase() === lesson?.toLowerCase() &&
+  d.type?.toLowerCase() === type?.toLowerCase()
+);
 
+// max 20 vragen per sessie
 if (questions.length > 20) {
-  questions = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
+  questions = questions.sort(() => Math.random() - 0.5).slice(0, 20);
 }
-
-  if (questions.length > 20) {
-    questions = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
-  }
 
   current = 0;
   score = 0;
