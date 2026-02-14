@@ -18,12 +18,20 @@
   <select id="lessonSelect"></select><br><br>
 
   <label>Question type</label><br>
-  <select id="typeSelect">
-    <option value="city">City</option>
-    <option value="country">Country</option>
-    <option value="iata">IATA</option>
-    <option value="capital">Capital</option>
-  </select><br><br>
+<select id="typeSelect">
+  <option value="city">City</option>
+  <option value="country">Country</option>
+  <option value="iata">IATA</option>
+  <option value="capital">Capital</option>
+</select><br><br>
+
+<label>Answer mode</label><br>
+<select id="modeSelect">
+  <option value="mc">Multiple choice</option>
+  <option value="type">Typing</option>
+</select><br><br>
+
+<button onclick="startQuiz()">Start quiz</button>
 
   <button onclick="startQuiz()">Start quiz</button>
 </div>
