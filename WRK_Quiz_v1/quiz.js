@@ -89,54 +89,60 @@ function showQuestion() {
 
   document.getElementById("question").textContent = q.question;
 
+  // afbeelding
   const img = document.getElementById("mapImage");
   if (q.image) {
     img.src = "images/" + q.image;
     img.style.display = "block";
-  } else img.style.display = "none";
+  } else {
+    img.style.display = "none";
+  }
 
-  const options = document.getElementById("options");
-  options.innerHTML = "";
+  const optionsDiv = document.getElementById("options");
+  optionsDiv.innerHTML = "";
 
   const mode = document.getElementById("modeSelect").value;
 
-  // ===== MULTIPLE CHOICE =====
+  // ================= MULTIPLE CHOICE =================
   if (mode === "mc") {
 
-    let choices = [];
+    // verzamel antwoorden van hetzelfde type
+    const sameType = data.filter(d =>
+      d.type && q.type &&
+      d.type.toLowerCase().trim() === q.type.toLowerCase().trim()
+    );
 
-    // gebruik bestaande options als ze bestaan
-    if (q.options && q.options.length >= 2) {
-      choices = q.options;
-    }
+    // pak mogelijke foute antwoorden
+    let pool = [...new Set(sameType.flatMap(d => d.answer))];
 
-    // anders automatisch genereren
-    else {
-      const sameType = data.filter(d => d.type === q.type);
-      const wrong = sameType
-        .map(d => d.answer[0])
-        .filter(a => !q.answer.includes(a))
-        .sort(() => Math.random() - 0.5)
-        .slice(0,3);
+    // verwijder juiste antwoord
+    pool = pool.filter(a =>
+      !q.answer.map(x=>x.toLowerCase().trim())
+        .includes(a.toLowerCase().trim())
+    );
 
-      choices = [...q.answer, ...wrong].sort(() => Math.random() - 0.5);
-    }
+    // kies 3 random foute
+    const wrong = pool.sort(() => Math.random()-0.5).slice(0,3);
 
+    // combineer + shuffle
+    const choices = [...wrong, ...q.answer].sort(() => Math.random()-0.5);
+
+    // maak knoppen
     choices.forEach(opt => {
       const btn = document.createElement("button");
       btn.textContent = opt;
       btn.onclick = () => answer(opt, q.answer);
-      options.appendChild(btn);
-      options.appendChild(document.createElement("br"));
+      optionsDiv.appendChild(btn);
+      optionsDiv.appendChild(document.createElement("br"));
     });
-
   }
 
-  // ===== TYPING =====
+  // ================= TYPING =================
   else {
 
     const input = document.createElement("input");
     input.placeholder = "Type your answer...";
+    input.id = "typed";
 
     const btn = document.createElement("button");
     btn.textContent = "Submit";
@@ -146,30 +152,35 @@ function showQuestion() {
       if (e.key === "Enter") btn.click();
     });
 
-    options.appendChild(input);
-    options.appendChild(document.createElement("br"));
-    options.appendChild(btn);
+    optionsDiv.appendChild(input);
+    optionsDiv.appendChild(document.createElement("br"));
+    optionsDiv.appendChild(btn);
   }
 }
-
-// ================= ANSWER =================
-function answer(given, correct) {
-
-  if (correct.map(a=>a.toLowerCase()).includes(given.toLowerCase()))
-    score++;
-
-  current++;
-
-  if (current < questions.length)
-    showQuestion();
-  else
-    finishQuiz();
-}
-
 // ================= FINISH =================
 function finishQuiz() {
   document.getElementById("quiz").style.display = "none";
   document.getElementById("result").style.display = "block";
   document.getElementById("score").textContent =
     `Score: ${score} / ${questions.length}`;
+}
+// ================= ANSWER =================
+function answer(given, correct) {
+
+  if (!given) return;
+
+  const normalizedGiven = given.toLowerCase().trim();
+  const normalizedCorrect = correct.map(a => a.toLowerCase().trim());
+
+  if (normalizedCorrect.includes(normalizedGiven)) {
+    score++;
+  }
+
+  current++;
+
+  if (current < questions.length) {
+    showQuestion();
+  } else {
+    finishQuiz();
+  }
 }
