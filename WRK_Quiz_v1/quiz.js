@@ -3,57 +3,38 @@ let questions = [];
 let current = 0;
 let score = 0;
 
-// ================= DOM =================
-const setup = document.getElementById("setup");
-const quiz = document.getElementById("quiz");
-const result = document.getElementById("result");
-
-const moduleSelect = document.getElementById("moduleSelect");
-const lessonSelect = document.getElementById("lessonSelect");
-const typeSelect = document.getElementById("typeSelect");
-const modeSelect = document.getElementById("modeSelect");
-
-const progress = document.getElementById("progress");
-const questionEl = document.getElementById("question");
-const options = document.getElementById("options");
-const scoreEl = document.getElementById("score");
-
-// afbeelding element
-let mapImage = document.createElement("img");
-mapImage.style.maxWidth = "450px";
-mapImage.style.display = "block";
-mapImage.style.marginBottom = "15px";
-questionEl.before(mapImage);
-
-
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=5")
+fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=10")
   .then(r => r.json())
   .then(json => {
     data = json;
     populateModules();
+    document.getElementById("startBtn").addEventListener("click", startQuiz);
   });
 
-
-// ================= SELECTORS =================
+// ================= MODULES =================
 function populateModules() {
+  const moduleSelect = document.getElementById("moduleSelect");
   moduleSelect.innerHTML = "";
 
   const modules = [...new Set(data.map(d => d.module))];
 
   modules.forEach(m => {
-    const o = document.createElement("option");
-    o.value = m;
-    o.textContent = m;
-    moduleSelect.appendChild(o);
+    const opt = document.createElement("option");
+    opt.value = m;
+    opt.textContent = m;
+    moduleSelect.appendChild(opt);
   });
 
-  moduleSelect.onchange = populateLessons;
+  moduleSelect.addEventListener("change", populateLessons);
   populateLessons();
 }
 
+// ================= LESSONS =================
 function populateLessons() {
-  const module = moduleSelect.value;
+  const module = document.getElementById("moduleSelect").value;
+  const lessonSelect = document.getElementById("lessonSelect");
+
   lessonSelect.innerHTML = "";
 
   const lessons = [...new Set(
@@ -61,20 +42,19 @@ function populateLessons() {
   )];
 
   lessons.forEach(l => {
-    const o = document.createElement("option");
-    o.value = l;
-    o.textContent = l;
-    lessonSelect.appendChild(o);
+    const opt = document.createElement("option");
+    opt.value = l;
+    opt.textContent = l;
+    lessonSelect.appendChild(opt);
   });
 }
 
-
 // ================= START QUIZ =================
-window.startQuiz = function() {
+function startQuiz() {
 
-  const module = moduleSelect.value;
-  const lesson = lessonSelect.value;
-  const type = typeSelect.value;
+  const module = document.getElementById("moduleSelect").value;
+  const lesson = document.getElementById("lessonSelect").value;
+  const type = document.getElementById("typeSelect").value;
 
   questions = data.filter(d =>
     d.module === module &&
@@ -93,57 +73,54 @@ window.startQuiz = function() {
   current = 0;
   score = 0;
 
-  setup.style.display = "none";
-  result.style.display = "none";
-  quiz.style.display = "block";
+  document.getElementById("setup").style.display = "none";
+  document.getElementById("quiz").style.display = "block";
 
   showQuestion();
 }
-
 
 // ================= SHOW QUESTION =================
 function showQuestion() {
 
   const q = questions[current];
 
-  progress.textContent = `Question ${current+1} of ${questions.length}`;
-  questionEl.textContent = q.question;
+  document.getElementById("progress").textContent =
+    `Question ${current+1} of ${questions.length}`;
 
-  // image
+  document.getElementById("question").textContent = q.question;
+
+  const img = document.getElementById("mapImage");
   if (q.image) {
-    mapImage.src = "images/" + q.image;
-    mapImage.style.display = "block";
-  } else {
-    mapImage.style.display = "none";
-  }
+    img.src = "images/" + q.image;
+    img.style.display = "block";
+  } else img.style.display = "none";
 
+  const options = document.getElementById("options");
   options.innerHTML = "";
 
-  const mode = modeSelect.value;
+  const mode = document.getElementById("modeSelect").value;
 
-  // ---------- MULTIPLE CHOICE ----------
+  // ===== MULTIPLE CHOICE =====
   if (mode === "mc") {
 
     q.options.forEach(opt => {
-      const b = document.createElement("button");
-      b.textContent = opt;
-      b.onclick = () => answer(opt, q.answer);
-      options.appendChild(b);
+      const btn = document.createElement("button");
+      btn.textContent = opt;
+      btn.onclick = () => answer(opt, q.answer);
+      options.appendChild(btn);
       options.appendChild(document.createElement("br"));
     });
 
   }
 
-  // ---------- TYPING ----------
+  // ===== TYPING =====
   else {
 
     const input = document.createElement("input");
-    input.type = "text";
     input.placeholder = "Type your answer...";
 
     const btn = document.createElement("button");
     btn.textContent = "Submit";
-
     btn.onclick = () => answer(input.value, q.answer);
 
     input.addEventListener("keydown", e => {
@@ -156,11 +133,10 @@ function showQuestion() {
   }
 }
 
-
 // ================= ANSWER =================
 function answer(given, correct) {
 
-  if (correct.map(a => a.toLowerCase()).includes(given.toLowerCase()))
+  if (correct.map(a=>a.toLowerCase()).includes(given.toLowerCase()))
     score++;
 
   current++;
@@ -171,10 +147,10 @@ function answer(given, correct) {
     finishQuiz();
 }
 
-
 // ================= FINISH =================
 function finishQuiz() {
-  quiz.style.display = "none";
-  result.style.display = "block";
-  scoreEl.textContent = `Score: ${score} / ${questions.length}`;
+  document.getElementById("quiz").style.display = "none";
+  document.getElementById("result").style.display = "block";
+  document.getElementById("score").textContent =
+    `Score: ${score} / ${questions.length}`;
 }
