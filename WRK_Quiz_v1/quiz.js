@@ -6,21 +6,7 @@ let score = 0;
 fetch("data/wrk-data.json") 
   .then(res => res.json())
 .then(json => {
-
-  // Zet Excel data om naar quiz formaat
-  data = json.map(d => ({
-    module: d.Module,
-    lesson: d.Lesson,
-    type: d.Question_Type,
-
-    question: d.Question,
-
-    options: [d.Option1, d.Option2, d.Option3, d.Option4].filter(Boolean),
-    answer: d.Answer,
-
-    image: d.City_Airport_Image_File || d.Country_Image_File
-  }));
-
+  data = json;
   populateSelectors();
 });
 
