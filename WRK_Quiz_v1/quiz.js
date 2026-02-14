@@ -45,17 +45,24 @@ function populateLessons() {
 }
 
 // ================= START QUIZ =================
-document.getElementById("startBtn").onclick = () => {
+function startQuiz() {
 
-  const module = moduleSelect.value;
-  const lesson = lessonSelect.value;
-  const type = typeSelect.value;
+  const module = moduleSelect.value.trim().toLowerCase();
+  const lesson = lessonSelect.value.trim().toLowerCase();
+  const type = typeSelect.value.trim().toLowerCase();
 
   questions = data.filter(d =>
-    d.module === module &&
-    d.lesson === lesson &&
-    d.type === type
+    d.module?.trim().toLowerCase() === module &&
+    d.lesson?.trim().toLowerCase() === lesson &&
+    d.type?.trim().toLowerCase() === type
   );
+
+  console.log("Found questions:", questions.length);
+
+  if (questions.length === 0) {
+    alert("No questions found — check type/module/lesson naming");
+    return;
+  }
 
   if (questions.length > 20)
     questions = questions.sort(() => Math.random() - 0.5).slice(0,20);
@@ -67,7 +74,7 @@ document.getElementById("startBtn").onclick = () => {
   quiz.style.display = "block";
 
   showQuestion();
-};
+}
 
 // ================= SHOW QUESTION =================
 function showQuestion() {
