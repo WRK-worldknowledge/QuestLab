@@ -73,6 +73,23 @@ function showQuestion() {
 
   document.getElementById("question").textContent = q.question;
 
+// ↓ HIER PLAATSEN
+let img = document.getElementById("mapImage");
+if (!img) {
+  img = document.createElement("img");
+  img.id = "mapImage";
+  img.style.maxWidth = "450px";
+  img.style.marginBottom = "15px";
+  document.getElementById("question").before(img);
+}
+
+if (q.image) {
+  img.src = "images/" + q.image;
+  img.style.display = "block";
+} else {
+  img.style.display = "none";
+}
+
   const optionsDiv = document.getElementById("options");
   optionsDiv.innerHTML = "";
 
