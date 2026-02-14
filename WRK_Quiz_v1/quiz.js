@@ -20,7 +20,7 @@ function shuffle(array){
     return array;
 }
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=3")
+fetch("data/wrk-data.json?v=4")
 .then(r => r.json())
 .then(json => {
     data = json;
@@ -97,10 +97,30 @@ currentType = q.type;
         `Question ${current+1} of ${questions.length}`;
 
     // city vraag: verwijder airport naam
-    let questionText = q.question;
-    if (q.type === "city")
-    questionText = "Which city belongs to this airport?";
-    document.getElementById("question").textContent = questionText;
+   let questionText = "";
+
+switch(q.type){
+    case "city":
+        questionText = "What city is this airport in?";
+        break;
+
+    case "country":
+        questionText = "Which country is this in?";
+        break;
+
+    case "capital":
+        questionText = "What is the capital of this country?";
+        break;
+
+    case "iata":
+        questionText = "What is the IATA code?";
+        break;
+
+    default:
+        questionText = q.question;
+}
+
+document.getElementById("question").textContent = questionText;
 
     // image
     const img = document.getElementById("mapImage");
