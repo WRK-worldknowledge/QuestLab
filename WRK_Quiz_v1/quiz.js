@@ -4,7 +4,7 @@ let current = 0;
 let score = 0;
 
 // ================= LOAD DATA =================
-fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=13")
+fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=14")
   .then(r => r.json())
   .then(json => {
     data = json;
@@ -87,17 +87,17 @@ function showQuestion() {
   document.getElementById("progress").textContent =
     `Question ${current+1} of ${questions.length}`;
 
+  // ===== City vraag: airportnaam verbergen =====
   let questionText = q.question;
+  if (q.type === "city") {
+    questionText = questionText
+      .replace(/airport/gi, "")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+  }
 
-// airportnamen verbergen bij city vragen
-if (q.type === "city") {
-  questionText = questionText
-    .replace(/airport/gi, "")
-    .replace(/\s{2,}/g, " ")
-    .trim();
-}
+  document.getElementById("question").textContent = questionText;
 
-document.getElementById("question").textContent = questionText;
   // afbeelding
   const img = document.getElementById("mapImage");
   if (q.image) {
@@ -112,63 +112,63 @@ document.getElementById("question").textContent = questionText;
 
   const mode = document.getElementById("modeSelect").value;
 
-// ================= MULTIPLE CHOICE =================
-if (mode === "mc") {
+  // ================= MULTIPLE CHOICE =================
+  if (mode === "mc") {
 
-  // eerst alle kandidaten uit dezelfde module
-  let candidates = data.filter(d =>
-    d.type === q.type &&
-    d.module === q.module
-  );
-
-  // IATA: verwijder luchthavens uit dezelfde stad
-  if (q.type === "iata") {
-    const cityName = q.question.toLowerCase();
-    candidates = candidates.filter(d =>
-      !d.question.toLowerCase().includes(cityName)
+    // kandidaten uit zelfde module
+    let candidates = data.filter(d =>
+      d.type === q.type &&
+      d.module === q.module
     );
+
+    // IATA: verwijder luchthavens uit dezelfde stad
+    if (q.type === "iata") {
+      const cityName = q.question.toLowerCase();
+      candidates = candidates.filter(d =>
+        !d.question.toLowerCase().includes(cityName)
+      );
+    }
+
+    // antwoorden verzamelen
+    let pool = candidates.flatMap(d => d.answer);
+
+    // failsafe
+    if (pool.length < 4) {
+      pool = data
+        .filter(d => d.type === q.type)
+        .flatMap(d => d.answer);
+    }
+
+    // uniek maken
+    pool = [...new Set(pool)];
+
+    // juiste antwoord verwijderen
+    pool = pool.filter(a =>
+      !q.answer.map(x=>x.toLowerCase().trim())
+        .includes(a.toLowerCase().trim())
+    );
+
+    // 3 foute
+    const wrong = pool.sort(() => Math.random()-0.5).slice(0,3);
+
+    // mix
+    const choices = [...wrong, ...q.answer].sort(() => Math.random()-0.5);
+
+    // knoppen
+    choices.forEach(opt => {
+      const btn = document.createElement("button");
+      btn.textContent = opt;
+      btn.onclick = () => answer(opt, q.answer);
+      optionsDiv.appendChild(btn);
+      optionsDiv.appendChild(document.createElement("br"));
+    });
   }
 
-  // haal alleen antwoorden eruit
-  let pool = candidates.flatMap(d => d.answer);
-
-  // failsafe als te weinig
-  if (pool.length < 4) {
-    pool = data
-      .filter(d => d.type === q.type)
-      .flatMap(d => d.answer);
-  }
-
-  // unieke waarden
-  pool = [...new Set(pool)];
-
-  // verwijder juiste antwoord
-  pool = pool.filter(a =>
-    !q.answer.map(x=>x.toLowerCase().trim())
-      .includes(a.toLowerCase().trim())
-  );
-
-  // kies 3 random foute
-  const wrong = pool.sort(() => Math.random()-0.5).slice(0,3);
-
-  // combineer + shuffle
-  const choices = [...wrong, ...q.answer].sort(() => Math.random()-0.5);
-
-  // knoppen
-  choices.forEach(opt => {
-    const btn = document.createElement("button");
-    btn.textContent = opt;
-    btn.onclick = () => answer(opt, q.answer);
-    optionsDiv.appendChild(btn);
-    optionsDiv.appendChild(document.createElement("br"));
-  });
-}
   // ================= TYPING =================
   else {
 
     const input = document.createElement("input");
     input.placeholder = "Type your answer...";
-    input.id = "typed";
 
     const btn = document.createElement("button");
     btn.textContent = "Submit";
