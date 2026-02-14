@@ -69,38 +69,67 @@ if (questions.length > 20) {
 
 function showQuestion() {
   const q = questions[current];
+
   document.getElementById("progress").textContent =
     `Question ${current + 1} of ${questions.length}`;
 
   document.getElementById("question").textContent = q.question;
 
-// ↓ HIER PLAATSEN
-let img = document.getElementById("mapImage");
-if (!img) {
-  img = document.createElement("img");
-  img.id = "mapImage";
-  img.style.maxWidth = "450px";
-  img.style.marginBottom = "15px";
-  document.getElementById("question").before(img);
-}
+  // IMAGE
+  let img = document.getElementById("mapImage");
+  if (!img) {
+    img = document.createElement("img");
+    img.id = "mapImage";
+    img.style.maxWidth = "450px";
+    img.style.marginBottom = "15px";
+    document.getElementById("question").before(img);
+  }
 
-if (q.image) {
-  img.src = "images/" + q.image;
-  img.style.display = "block";
-} else {
-  img.style.display = "none";
-}
+  if (q.image) {
+    img.src = "images/" + q.image;
+    img.style.display = "block";
+  } else {
+    img.style.display = "none";
+  }
 
+  // OPTIONS / INPUT
   const optionsDiv = document.getElementById("options");
   optionsDiv.innerHTML = "";
 
-  q.options.forEach(opt => {
+  // MULTIPLE CHOICE
+  if (q.options && q.options.length > 0) {
+    q.options.forEach(opt => {
+      const btn = document.createElement("button");
+      btn.textContent = opt;
+      btn.onclick = () => checkAnswer(opt, q.answer);
+      optionsDiv.appendChild(btn);
+      optionsDiv.appendChild(document.createElement("br"));
+    });
+  }
+
+  // TYPE ANSWER (fallback)
+  else {
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Type your answer...";
+    input.id = "textAnswer";
+
     const btn = document.createElement("button");
-    btn.textContent = opt;
-    btn.onclick = () => checkAnswer(opt, q.answer);
-    optionsDiv.appendChild(btn);
+    btn.textContent = "Submit";
+    btn.onclick = () => {
+      const val = input.value.trim();
+      checkAnswer(val, q.answer);
+    };
+
+    // ENTER = submit
+    input.addEventListener("keypress", function(e) {
+      if (e.key === "Enter") btn.click();
+    });
+
+    optionsDiv.appendChild(input);
     optionsDiv.appendChild(document.createElement("br"));
-  });
+    optionsDiv.appendChild(btn);
+  }
 }
 
 function checkAnswer(selected, correct) {
