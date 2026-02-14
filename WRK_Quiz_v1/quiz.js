@@ -103,54 +103,55 @@ function showQuestion() {
 
   const mode = document.getElementById("modeSelect").value;
 
-  // ================= MULTIPLE CHOICE =================
+ // ================= MULTIPLE CHOICE =================
+if (mode === "mc") {
 
   // 1️⃣ eerst zelfde LES
-let pool = data.filter(d =>
-  d.type === q.type &&
-  d.module === q.module &&
-  d.lesson === q.lesson
-).flatMap(d => d.answer);
-
-// 2️⃣ te weinig? zelfde MODULE
-if (pool.length < 4) {
-  pool = data.filter(d =>
+  let pool = data.filter(d =>
     d.type === q.type &&
-    d.module === q.module
+    d.module === q.module &&
+    d.lesson === q.lesson
   ).flatMap(d => d.answer);
+
+  // 2️⃣ te weinig? zelfde MODULE
+  if (pool.length < 4) {
+    pool = data.filter(d =>
+      d.type === q.type &&
+      d.module === q.module
+    ).flatMap(d => d.answer);
+  }
+
+  // 3️⃣ nog te weinig? hele dataset (failsafe)
+  if (pool.length < 4) {
+    pool = data.filter(d =>
+      d.type === q.type
+    ).flatMap(d => d.answer);
+  }
+
+  // unieke waarden
+  pool = [...new Set(pool)];
+
+  // verwijder juiste antwoord
+  pool = pool.filter(a =>
+    !q.answer.map(x=>x.toLowerCase().trim())
+      .includes(a.toLowerCase().trim())
+  );
+
+  // kies 3 random foute
+  const wrong = pool.sort(() => Math.random()-0.5).slice(0,3);
+
+  // combineer + shuffle
+  const choices = [...wrong, ...q.answer].sort(() => Math.random()-0.5);
+
+  // maak knoppen
+  choices.forEach(opt => {
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.onclick = () => answer(opt, q.answer);
+    optionsDiv.appendChild(btn);
+    optionsDiv.appendChild(document.createElement("br"));
+  });
 }
-
-// 3️⃣ nog te weinig? hele wereld (failsafe)
-if (pool.length < 4) {
-  pool = data.filter(d =>
-    d.type === q.type
-  ).flatMap(d => d.answer);
-}
-
-// unieke waarden
-pool = [...new Set(pool)];
-
-// verwijder juiste antwoord
-pool = pool.filter(a =>
-  !q.answer.map(x=>x.toLowerCase().trim())
-    .includes(a.toLowerCase().trim())
-);
-
-// pak 3 random foute
-const wrong = pool.sort(() => Math.random()-0.5).slice(0,3);
-
-// combineer + shuffle
-const choices = [...wrong, ...q.answer].sort(() => Math.random()-0.5);
-
-// knoppen maken
-choices.forEach(opt => {
-  const btn = document.createElement("button");
-  btn.textContent = opt;
-  btn.onclick = () => answer(opt, q.answer);
-  optionsDiv.appendChild(btn);
-  optionsDiv.appendChild(document.createElement("br"));
-});
-
   // ================= TYPING =================
   else {
 
