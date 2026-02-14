@@ -47,11 +47,11 @@ function startQuiz() {
   const lesson = lessonSelect.value;
   const type = typeSelect.value;
 
-  questions = data.filter(d =>
-    d.module === module &&
-    d.lesson === lesson &&
-    d.type === type
-  );
+  questions = data.filter(d => d.type === type);
+
+if (questions.length > 20) {
+  questions = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
+}
 
   if (questions.length > 20) {
     questions = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
