@@ -4,7 +4,7 @@ let current = 0;
 let score = 0;
 
 // ================= LOAD DATA =================
-fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=11")
+fetch("/QuestLab/WRK_Quiz_v1/data/wrk-data.json?v=12")
   .then(r => r.json())
   .then(json => {
     data = json;
@@ -106,26 +106,18 @@ function showQuestion() {
  // ================= MULTIPLE CHOICE =================
 if (mode === "mc") {
 
-  // 1️⃣ eerst zelfde LES
-  let pool = data.filter(d =>
-    d.type === q.type &&
-    d.module === q.module &&
-    d.lesson === q.lesson
+  // 1️⃣ ALTIJD hele MODULE (continent)
+let pool = data.filter(d =>
+  d.type === q.type &&
+  d.module === q.module
+).flatMap(d => d.answer);
+
+// 2️⃣ failsafe (bij hele kleine modules)
+if (pool.length < 4) {
+  pool = data.filter(d =>
+    d.type === q.type
   ).flatMap(d => d.answer);
-
-  // 2️⃣ te weinig? zelfde MODULE
-  if (pool.length < 4) {
-    pool = data.filter(d =>
-      d.type === q.type &&
-      d.module === q.module
-    ).flatMap(d => d.answer);
-  }
-
-  // 3️⃣ nog te weinig? hele dataset (failsafe)
-  if (pool.length < 4) {
-    pool = data.filter(d =>
-      d.type === q.type
-    ).flatMap(d => d.answer);
+});
   }
 
   // unieke waarden
