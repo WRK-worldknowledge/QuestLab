@@ -75,7 +75,7 @@ function showQuestion() {
 
   document.getElementById("question").textContent = q.question;
 
-  // IMAGE
+  // afbeelding
   let img = document.getElementById("mapImage");
   if (!img) {
     img = document.createElement("img");
@@ -92,12 +92,16 @@ function showQuestion() {
     img.style.display = "none";
   }
 
-  // OPTIONS / INPUT
   const optionsDiv = document.getElementById("options");
   optionsDiv.innerHTML = "";
 
-  // MULTIPLE CHOICE
-  if (q.options && q.options.length > 0) {
+  const mode = document.getElementById("modeSelect").value;
+
+  // =========================
+  // MULTIPLE CHOICE MODE
+  // =========================
+  if (mode === "mc") {
+
     q.options.forEach(opt => {
       const btn = document.createElement("button");
       btn.textContent = opt;
@@ -105,21 +109,32 @@ function showQuestion() {
       optionsDiv.appendChild(btn);
       optionsDiv.appendChild(document.createElement("br"));
     });
+
   }
 
-  // TYPE ANSWER (fallback)
+  // =========================
+  // TYPING MODE
+  // =========================
   else {
+
     const input = document.createElement("input");
     input.type = "text";
     input.placeholder = "Type your answer...";
-    input.id = "textAnswer";
+    input.id = "typedAnswer";
+
+    input.addEventListener("keypress", function(e) {
+      if (e.key === "Enter") submitTyped();
+    });
 
     const btn = document.createElement("button");
     btn.textContent = "Submit";
-    btn.onclick = () => {
-      const val = input.value.trim();
-      checkAnswer(val, q.answer);
-    };
+    btn.onclick = submitTyped;
+
+    optionsDiv.appendChild(input);
+    optionsDiv.appendChild(document.createElement("br"));
+    optionsDiv.appendChild(btn);
+  }
+}
 
     // ENTER = submit
     input.addEventListener("keypress", function(e) {
