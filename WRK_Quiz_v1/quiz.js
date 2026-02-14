@@ -43,9 +43,9 @@ function updateLessons() {
 }
 
 function startQuiz() {
-  const module = moduleSelect.value;
-  const lesson = lessonSelect.value;
-  const type = typeSelect.value;
+  const module = document.getElementById("moduleSelect").value;
+const lesson = document.getElementById("lessonSelect").value;
+const type = document.getElementById("typeSelect").value;
 
   questions = data.filter(d =>
   d.module?.toLowerCase() === module?.toLowerCase() &&
