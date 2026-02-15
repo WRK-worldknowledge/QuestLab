@@ -4,6 +4,7 @@ let current = 0;
 let currentType = "";
 let currentLesson = "";
 let score = 0;
+let results = [];
 function normalizeCity(name) {
     return name
         .replace(/airport/gi,"")
@@ -29,7 +30,7 @@ function shuffle(array){
     return array;
 }
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=10")
+fetch("data/wrk-data.json?v=11")
 .then(r => r.json())
 .then(json => {
     data = json;
@@ -104,6 +105,7 @@ questions = shuffle([...questions]).slice(0,amount);
 
     current = 0;
     score = 0;
+    results = [];
 
     document.getElementById("setup").style.display = "none";
     document.getElementById("quiz").style.display = "block";
@@ -275,17 +277,23 @@ function answer(given, correct){
 
     if(!given) return;
 
-   let normalizedGiven = given
-    .toLowerCase()
-    .replace(/\s+/g," ")
-    .trim();
+    let normalizedGiven = given.toLowerCase().replace(/\s+/g," ").trim();
 
     let normalizedCorrect = correct.map(a =>
-    a.toLowerCase().replace(/\s+/g," ").trim()
-);
+        a.toLowerCase().replace(/\s+/g," ").trim()
+    );
 
-    if(normalizedCorrect.includes(normalizedGiven))
-        score++;
+    const isCorrect = normalizedCorrect.includes(normalizedGiven);
+
+    if(isCorrect) score++;
+
+    // ⭐ OPSLAAN VOOR OVERZICHT
+    results.push({
+        question: document.getElementById("question").textContent,
+        given: given,
+        correct: correct.join(" / "),
+        ok: isCorrect
+    });
 
     current++;
 
@@ -295,7 +303,25 @@ function answer(given, correct){
 
 // ================= FINISH =================
 function finishQuiz(){
+
     document.getElementById("quiz").style.display="none";
     document.getElementById("result").style.display="block";
-    document.getElementById("score").textContent=`Score: ${score} / ${questions.length}`;
+
+    document.getElementById("score").textContent =
+        `Score: ${score} / ${questions.length}`;
+
+    const resultDiv = document.getElementById("result");
+
+    let html = "<h3>Review</h3>";
+
+    results.forEach(r=>{
+        html += `
+        <div style="background:white;color:black;padding:10px;margin:10px 0;border-radius:10px;text-align:left">
+            <b>${r.question}</b><br>
+            Your answer: <span style="color:${r.ok?"green":"red"}">${r.given}</span><br>
+            Correct: <b>${r.correct}</b>
+        </div>`;
+    });
+
+    resultDiv.innerHTML += html;
 }
