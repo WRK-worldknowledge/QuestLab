@@ -37,12 +37,26 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("../data/wrk-data.json?v=FINAL3")
-.then(r=>r.json())
-.then(json=>{
-data=json;
-populateModules();
-document.getElementById("startBtn").addEventListener("click",startQuiz);
+fetch("../data/wrk-data.json?v=TEST123")
+.then(r=>{
+    console.log("FETCH STATUS:", r.status);
+    console.log("FETCH URL:", r.url);
+    return r.text();
+})
+.then(text=>{
+    console.log("RAW RESPONSE START:");
+    console.log(text.substring(0,200));
+
+    const json = JSON.parse(text);
+    data=json;
+
+    console.log("DATA LOADED:", data.length);
+
+    populateModules();
+    document.getElementById("startBtn").addEventListener("click",startQuiz);
+})
+.catch(err=>{
+    console.error("FETCH FAILED:", err);
 });
 
 // ================= MODULES =================
