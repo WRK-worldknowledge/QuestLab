@@ -23,10 +23,8 @@ function cityOnly(name){
 return normalizeCity(name);
 }
 
-function getIATACity(text){
-const m = text.match(/for (.*?) is/i);
-if(!m) return null;
-return normalizeCity(m[1]).toLowerCase();
+function getIATACity(){
+    return null;
 }
 
 function shuffle(array){
@@ -38,7 +36,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("./data/wrk-data.json?v=FINAL2")
+fetch("./data/wrk-data.json?v=FINAL3")
 .then(r=>r.json())
 .then(json=>{
 data=json;
@@ -183,10 +181,8 @@ switch(q.type){
     case "country": questionText="Which country is this in?"; break;
     case "capital": questionText="What is the capital of this country?"; break;
     case "iata":
-        const m=q.question.match(/for (.*?) is/i);
-        questionText=m?`The IATA code for ${m[1]} airport is:`:"What is the IATA code?";
-        break;
-}
+    questionText = "What is the IATA code?";
+    break;
 
 document.getElementById("question").textContent=questionText;
 
