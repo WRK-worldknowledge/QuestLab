@@ -38,7 +38,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=FINAL1")
+fetch("./data/wrk-data.json?v=FINAL2")
 .then(r=>r.json())
 .then(json=>{
 data=json;
