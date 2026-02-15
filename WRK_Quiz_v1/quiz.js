@@ -14,7 +14,7 @@ function normalizeCity(name) {
         .trim();
 }
 function cityOnly(name){
-    return normalizeCity(name).split(" ")[0];
+    return normalizeCity(name);
 }
 function getIATACity(text){
     const m = text.match(/for (.*?) is/i);
@@ -29,7 +29,7 @@ function shuffle(array){
     return array;
 }
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=8")
+fetch("data/wrk-data.json?v=10")
 .then(r => r.json())
 .then(json => {
     data = json;
@@ -193,6 +193,7 @@ let pool = candidates.flatMap(d =>
 ));
 
 // FAILSAFE → andere lessen binnen hetzelfde continent
+// FAILSAFE → andere lessen binnen hetzelfde continent
 if (pool.length < 4) {
     pool = data
         .filter(d =>
@@ -201,10 +202,10 @@ if (pool.length < 4) {
             d.lesson !== q.lesson
         )
         .flatMap(d => d.answer.map(a =>
-    q.type === "city"
-        ? normalizeCity(a).split(" ")[0]
-        : a
-));
+            q.type === "city"
+                ? cityOnly(a)
+                : a
+        ));
 }
 
 pool = [...new Set(pool)];
