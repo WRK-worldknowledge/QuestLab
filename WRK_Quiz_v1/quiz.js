@@ -187,8 +187,8 @@ const q=questions[current];
 
 document.getElementById("progress").textContent =
     currentLesson==="all"
-    ? `Module test — Question ${current+1} of ${questions.length}`
-    : `Question ${current+1} of ${questions.length}`;
+    ? "Module test - Question " + (current+1) + " of " + questions.length
+    : "Question " + (current+1) + " of " + questions.length;
 
 let questionText="";
 switch(q.type){
