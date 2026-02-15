@@ -191,14 +191,13 @@ document.getElementById("progress").textContent =
     : `Question ${current+1} of ${questions.length}`;
 
 let questionText="";
-
 switch(q.type){
     case "city":
         questionText="What city is this?";
         break;
 
     case "country":
-        questionText="Which country is this?";
+        questionText="Which country is this in?";
         break;
 
     case "capital":
@@ -206,12 +205,13 @@ switch(q.type){
         break;
 
     case "iata":
-        questionText="What is the IATA code for this airport?";
+        questionText="What is the IATA code?";
         break;
+
+    default:
+        questionText=q.question;
 }
-
 document.getElementById("question").textContent=questionText;
-
 const img=document.getElementById("mapImage");
 if(q.image){
     img.src="images/"+q.image;
