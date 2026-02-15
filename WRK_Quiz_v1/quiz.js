@@ -36,7 +36,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("./data/wrk-data.json?v=FINAL3")
+fetch("./data/wrk-data.json?v=FINAL4")
 .then(r=>r.json())
 .then(json=>{
 data=json;
@@ -176,13 +176,24 @@ document.getElementById("progress").textContent =
     : `Question ${current+1} of ${questions.length}`;
 
 let questionText="";
+
 switch(q.type){
-    case "city": questionText="What city is this?"; break;
-    case "country": questionText="Which country is this in?"; break;
-    case "capital": questionText="What is the capital of this country?"; break;
+    case "city":
+        questionText="What city is this?";
+        break;
+
+    case "country":
+        questionText="Which country is this?";
+        break;
+
+    case "capital":
+        questionText="What is the capital of this country?";
+        break;
+
     case "iata":
-    questionText = "What is the IATA code?";
-    break;
+        questionText="What is the IATA code for this airport?";
+        break;
+}
 
 document.getElementById("question").textContent=questionText;
 
