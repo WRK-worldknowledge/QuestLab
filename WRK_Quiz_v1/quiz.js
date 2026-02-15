@@ -2,6 +2,7 @@ let data = [];
 let questions = [];
 let current = 0;
 let currentType = "";
+let currentLesson = "";
 let score = 0;
 function normalizeCity(name) {
     return name
@@ -12,6 +13,14 @@ function normalizeCity(name) {
         .replace(/\s+/g," ")
         .trim();
 }
+function cityOnly(name){
+    return normalizeCity(name).split(" ")[0];
+}
+function getIATACity(text){
+    const m = text.match(/for (.*?) is/i);
+    if(!m) return null;
+    return normalizeCity(m[1]).toLowerCase();
+}
 function shuffle(array){
     for(let i=array.length-1;i>0;i--){
         const j=Math.floor(Math.random()*(i+1));
@@ -20,7 +29,7 @@ function shuffle(array){
     return array;
 }
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=4")
+fetch("data/wrk-data.json?v=7")
 .then(r => r.json())
 .then(json => {
     data = json;
@@ -50,6 +59,11 @@ function populateLessons() {
     const lessonSelect = document.getElementById("lessonSelect");
     lessonSelect.innerHTML = "";
 
+// nieuwe optie
+const all = document.createElement("option");
+all.value = "all";
+all.textContent = "All lessons (module test)";
+lessonSelect.appendChild(all);
     [...new Set(data.filter(d => d.module === module).map(d => d.lesson))]
     .forEach(l => {
         const opt = document.createElement("option");
@@ -65,19 +79,28 @@ function startQuiz() {
     const module = document.getElementById("moduleSelect").value;
     const lesson = document.getElementById("lessonSelect").value;
     const type = document.getElementById("typeSelect").value;
+    currentLesson = lesson;
 
+    if(lesson === "all"){
+    questions = data.filter(d =>
+        d.module === module &&
+        d.type === type
+    );
+}else{
     questions = data.filter(d =>
         d.module === module &&
         d.lesson === lesson &&
         d.type === type
     );
+}
 
     if (!questions.length) {
         alert("No questions found");
         return;
     }
 
-    questions = shuffle([...questions]).slice(0,20);
+    const amount = lesson === "all" ? 30 : 20;
+questions = shuffle([...questions]).slice(0,amount);
 
     current = 0;
     score = 0;
@@ -94,14 +117,17 @@ const q = questions[current];
 currentType = q.type;
 
     document.getElementById("progress").textContent =
-        `Question ${current+1} of ${questions.length}`;
+    currentLesson === "all"
+    ? `Module test — Question ${current+1} of ${questions.length}`
+    : `Question ${current+1} of ${questions.length}`;
 
     // city vraag: verwijder airport naam
-   let questionText = "";
+  let questionText = "";
 
 switch(q.type){
+
     case "city":
-        questionText = "What city is this airport in?";
+        questionText = "What city is this?";
         break;
 
     case "country":
@@ -113,13 +139,15 @@ switch(q.type){
         break;
 
     case "iata":
-        questionText = "What is the IATA code?";
+        const m = q.question.match(/for (.*?) is/i);
+        questionText = m
+            ? `The IATA code for ${m[1]} airport is:`
+            : "What is the IATA code?";
         break;
 
     default:
         questionText = q.question;
 }
-
 document.getElementById("question").textContent = questionText;
 
     // image
@@ -145,26 +173,22 @@ document.getElementById("question").textContent = questionText;
 
         // voorkom meerdere airports uit zelfde stad (IATA)
 if (q.type === "iata") {
-    function extractCity(text){
-        const m = text.match(/for (.*?) is/i);
-        if(!m) return null;
-        return normalizeCity(m[1]).toLowerCase();
-    }
 
-    const correctCity = extractCity(q.question);
+    const correctCity = getIATACity(q.question);
 
     if(correctCity){
         candidates = candidates.filter(d =>
-            extractCity(d.question) !== correctCity
+            getIATACity(d.question) !== correctCity
         );
     }
+
 } // ← HEEL BELANGRIJK (deze ontbrak)
 
 // ↓ ALTIJD uitvoeren (voor alle vraagtypes!)
 let pool = candidates.flatMap(d => 
     d.answer.map(a =>
         q.type === "city"
-            ? normalizeCity(a)
+            ? cityOnly(a)
             : a
 ));
 
@@ -187,13 +211,13 @@ pool = [...new Set(pool)];
 
 // eerst correcte antwoorden bepalen
 const normalizedCorrect = q.answer.map(a =>
-    q.type === "city" ? normalizeCity(a).toLowerCase() : a.toLowerCase()
+    q.type === "city" ? cityOnly(a).toLowerCase() : a.toLowerCase()
 );
 
 // daarna juiste antwoord verwijderen
 pool = pool.filter(a =>
     !normalizedCorrect.includes(
-        (q.type === "city" ? normalizeCity(a) : a).toLowerCase()
+        (q.type === "city" ? cityOnly(a) : a).toLowerCase()
     )
 );
 
@@ -203,7 +227,7 @@ while(pool.length < 3){
 
         const wrong = shuffle(pool).slice(0,3);
        const correctAnswers = q.type === "city"
-    ? q.answer.map(a => normalizeCity(a))
+    ? q.answer.map(a => cityOnly(a))
     : q.answer;
 
 const choices = shuffle([...wrong,...correctAnswers]);
