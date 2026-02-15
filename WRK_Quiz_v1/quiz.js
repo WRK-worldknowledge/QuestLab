@@ -37,7 +37,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("../data/wrk-data.json?v=TEST123")
+fetch("/data/wrk-data.json?v=TEST123")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
