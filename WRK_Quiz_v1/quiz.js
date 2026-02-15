@@ -1,327 +1,301 @@
 let data = [];
 let questions = [];
 let current = 0;
-let currentType = "";
 let currentLesson = "";
 let score = 0;
+
+let userAnswers = [];
 let results = [];
-function normalizeCity(name) {
-    return name
-        .replace(/airport/gi,"")
-        .replace(/international/gi,"")
-        .replace(/city/gi,"")
-        .replace(/heathrow|gatwick|luton|stans?ted|schiphol|malpensa|linate|charles de gaulle|orly/gi,"")
-        .replace(/\s+/g," ")
-        .trim();
+let currentChoice = null;
+
+// ================= HELPERS =================
+function normalizeCity(name){
+return name
+.replace(/airport/gi,"")
+.replace(/international/gi,"")
+.replace(/city/gi,"")
+.replace(/heathrow|gatwick|luton|stans?ted|schiphol|malpensa|linate|charles de gaulle|orly/gi,"")
+.replace(/\s+/g," ")
+.trim();
 }
+
 function cityOnly(name){
-    return normalizeCity(name);
+return normalizeCity(name);
 }
+
 function getIATACity(text){
-    const m = text.match(/for (.*?) is/i);
-    if(!m) return null;
-    return normalizeCity(m[1]).toLowerCase();
+const m = text.match(/for (.*?) is/i);
+if(!m) return null;
+return normalizeCity(m[1]).toLowerCase();
 }
+
 function shuffle(array){
-    for(let i=array.length-1;i>0;i--){
-        const j=Math.floor(Math.random()*(i+1));
-        [array[i],array[j]]=[array[j],array[i]];
-    }
-    return array;
+for(let i=array.length-1;i>0;i--){
+const j=Math.floor(Math.random()*(i+1));
+[array[i],array[j]]=[array[j],array[i]];
 }
+return array;
+}
+
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=11")
-.then(r => r.json())
-.then(json => {
-    data = json;
-    populateModules();
-    document.getElementById("startBtn").addEventListener("click", startQuiz);
+fetch("data/wrk-data.json?v=FINAL1")
+.then(r=>r.json())
+.then(json=>{
+data=json;
+populateModules();
+document.getElementById("startBtn").addEventListener("click",startQuiz);
 });
 
 // ================= MODULES =================
-function populateModules() {
-    const moduleSelect = document.getElementById("moduleSelect");
-    moduleSelect.innerHTML = "";
+function populateModules(){
+const moduleSelect=document.getElementById("moduleSelect");
+moduleSelect.innerHTML="";
 
-    [...new Set(data.map(d => d.module))].forEach(m => {
-        const opt = document.createElement("option");
-        opt.value = m;
-        opt.textContent = m;
-        moduleSelect.appendChild(opt);
-    });
+```
+[...new Set(data.map(d=>d.module))].forEach(m=>{
+    const opt=document.createElement("option");
+    opt.value=m;
+    opt.textContent=m;
+    moduleSelect.appendChild(opt);
+});
 
-    moduleSelect.addEventListener("change", populateLessons);
-    populateLessons();
+moduleSelect.addEventListener("change",populateLessons);
+populateLessons();
+```
+
 }
 
 // ================= LESSONS =================
-function populateLessons() {
-    const module = document.getElementById("moduleSelect").value;
-    const lessonSelect = document.getElementById("lessonSelect");
-    lessonSelect.innerHTML = "";
+function populateLessons(){
+const module=document.getElementById("moduleSelect").value;
+const lessonSelect=document.getElementById("lessonSelect");
+lessonSelect.innerHTML="";
 
-// nieuwe optie
-const all = document.createElement("option");
-all.value = "all";
-all.textContent = "All lessons (module test)";
+```
+const all=document.createElement("option");
+all.value="all";
+all.textContent="All lessons (module test)";
 lessonSelect.appendChild(all);
-    [...new Set(data.filter(d => d.module === module).map(d => d.lesson))]
-    .forEach(l => {
-        const opt = document.createElement("option");
-        opt.value = l;
-        opt.textContent = l;
-        lessonSelect.appendChild(opt);
-    });
+
+[...new Set(data.filter(d=>d.module===module).map(d=>d.lesson))]
+.forEach(l=>{
+    const opt=document.createElement("option");
+    opt.value=l;
+    opt.textContent=l;
+    lessonSelect.appendChild(opt);
+});
+```
+
 }
 
 // ================= START QUIZ =================
-function startQuiz() {
+function startQuiz(){
 
-    const module = document.getElementById("moduleSelect").value;
-    const lesson = document.getElementById("lessonSelect").value;
-    const type = document.getElementById("typeSelect").value;
-    currentLesson = lesson;
+```
+const module=document.getElementById("moduleSelect").value;
+const lesson=document.getElementById("lessonSelect").value;
+const type=document.getElementById("typeSelect").value;
 
-    if(lesson === "all"){
-    questions = data.filter(d =>
-        d.module === module &&
-        d.type === type
-    );
+currentLesson=lesson;
+
+if(lesson==="all"){
+    questions=data.filter(d=>d.module===module && d.type===type);
 }else{
-    questions = data.filter(d =>
-        d.module === module &&
-        d.lesson === lesson &&
-        d.type === type
-    );
+    questions=data.filter(d=>d.module===module && d.lesson===lesson && d.type===type);
 }
 
-    if (!questions.length) {
-        alert("No questions found");
-        return;
-    }
+if(!questions.length){
+    alert("No questions found");
+    return;
+}
 
-    const amount = lesson === "all" ? 30 : 20;
-questions = shuffle([...questions]).slice(0,amount);
+const amount=lesson==="all"?30:20;
+questions=shuffle([...questions]).slice(0,amount);
 
-    current = 0;
-    score = 0;
-    results = [];
+current=0;
+score=0;
+userAnswers=new Array(questions.length).fill(null);
+results=[];
+currentChoice=null;
 
-    document.getElementById("setup").style.display = "none";
-    document.getElementById("quiz").style.display = "block";
+document.getElementById("setup").style.display="none";
+document.getElementById("quiz").style.display="block";
 
+showQuestion();
+```
+
+}
+
+// ================= SELECT OPTION =================
+function selectOption(button,value){
+document.querySelectorAll("#options button").forEach(b=>b.classList.remove("selected"));
+button.classList.add("selected");
+currentChoice=value;
+}
+
+// ================= NEXT =================
+function nextQuestion(){
+
+```
+if(currentChoice===null){
+    alert("Choose an answer first");
+    return;
+}
+
+userAnswers[current]=currentChoice;
+currentChoice=null;
+
+current++;
+
+if(current<questions.length){
     showQuestion();
+}else{
+    confirmSubmit();
+}
+```
+
+}
+
+// ================= CONFIRM =================
+function confirmSubmit(){
+if(confirm("Submit test? You cannot change answers afterwards.")){
+gradeQuiz();
+}else{
+current--;
+showQuestion();
+}
 }
 
 // ================= SHOW QUESTION =================
-function showQuestion() {
-const q = questions[current];
-currentType = q.type;
+function showQuestion(){
 
-    document.getElementById("progress").textContent =
-    currentLesson === "all"
+```
+const q=questions[current];
+
+document.getElementById("progress").textContent =
+    currentLesson==="all"
     ? `Module test — Question ${current+1} of ${questions.length}`
     : `Question ${current+1} of ${questions.length}`;
 
-    // city vraag: verwijder airport naam
-  let questionText = "";
-
+let questionText="";
 switch(q.type){
-
-    case "city":
-        questionText = "What city is this?";
-        break;
-
-    case "country":
-        questionText = "Which country is this in?";
-        break;
-
-    case "capital":
-        questionText = "What is the capital of this country?";
-        break;
-
+    case "city": questionText="What city is this?"; break;
+    case "country": questionText="Which country is this in?"; break;
+    case "capital": questionText="What is the capital of this country?"; break;
     case "iata":
-        const m = q.question.match(/for (.*?) is/i);
-        questionText = m
-            ? `The IATA code for ${m[1]} airport is:`
-            : "What is the IATA code?";
+        const m=q.question.match(/for (.*?) is/i);
+        questionText=m?`The IATA code for ${m[1]} airport is:`:"What is the IATA code?";
         break;
-
-    default:
-        questionText = q.question;
 }
-document.getElementById("question").textContent = questionText;
 
-    // image
-    const img = document.getElementById("mapImage");
-    if (q.image) {
-        img.src = "images/" + q.image;
-        img.style.display = "block";
-    } else img.style.display = "none";
+document.getElementById("question").textContent=questionText;
 
-    const options = document.getElementById("options");
-    options.innerHTML = "";
+const img=document.getElementById("mapImage");
+if(q.image){
+    img.src="images/"+q.image;
+    img.style.display="block";
+}else img.style.display="none";
 
-    const mode = document.getElementById("modeSelect").value;
+const options=document.getElementById("options");
+options.innerHTML="";
 
-    // ================= MULTIPLE CHOICE =================
-    if (mode === "mc") {
+let candidates=data.filter(d=>d.type===q.type && d.module===q.module);
 
-        // antwoorden uit zelfde continent
-        let candidates = data.filter(d =>
-            d.type === q.type &&
-            d.module === q.module
-        );
-
-        // voorkom meerdere airports uit zelfde stad (IATA)
-if (q.type === "iata") {
-
-    const correctCity = getIATACity(q.question);
-
+if(q.type==="iata"){
+    const correctCity=getIATACity(q.question);
     if(correctCity){
-        candidates = candidates.filter(d =>
-            getIATACity(d.question) !== correctCity
-        );
+        candidates=candidates.filter(d=>getIATACity(d.question)!==correctCity);
     }
-
-} // ← HEEL BELANGRIJK (deze ontbrak)
-
-// ↓ ALTIJD uitvoeren (voor alle vraagtypes!)
-let pool = candidates.flatMap(d => 
-    d.answer.map(a =>
-        q.type === "city"
-            ? cityOnly(a)
-            : a
-));
-
-// FAILSAFE → andere lessen binnen hetzelfde continent
-// FAILSAFE → andere lessen binnen hetzelfde continent
-if (pool.length < 4) {
-    pool = data
-        .filter(d =>
-            d.type === q.type &&
-            d.module === q.module &&
-            d.lesson !== q.lesson
-        )
-        .flatMap(d => d.answer.map(a =>
-            q.type === "city"
-                ? cityOnly(a)
-                : a
-        ));
 }
 
-pool = [...new Set(pool)];
+let pool=candidates.flatMap(d=>d.answer.map(a=>q.type==="city"?cityOnly(a):a));
+pool=[...new Set(pool)];
 
-// eerst correcte antwoorden bepalen
-const normalizedCorrect = q.answer.map(a =>
-    q.type === "city" ? cityOnly(a).toLowerCase() : a.toLowerCase()
-);
+const correctAnswers=q.type==="city"?q.answer.map(a=>cityOnly(a)):q.answer;
 
-// daarna juiste antwoord verwijderen
-pool = pool.filter(a =>
-    !normalizedCorrect.includes(
-        (q.type === "city" ? cityOnly(a) : a).toLowerCase()
-    )
-);
+pool=pool.filter(a=>!correctAnswers.map(x=>x.toLowerCase()).includes(a.toLowerCase()));
 
-while(pool.length < 3){
-    pool.push("—");
-}
+while(pool.length<3) pool.push("—");
 
-        const wrong = shuffle(pool).slice(0,3);
-       const correctAnswers = q.type === "city"
-    ? q.answer.map(a => cityOnly(a))
-    : q.answer;
+const choices=shuffle([...shuffle(pool).slice(0,3),...correctAnswers]);
 
-const choices = shuffle([...wrong,...correctAnswers]);
-        choices.forEach(opt=>{
+choices.forEach(opt=>{
     const btn=document.createElement("button");
     btn.textContent=opt;
-    if(opt === "—"){
-    btn.disabled = true;
-    btn.classList.add("emptyOption");
-} else {
-    btn.onclick=()=>answer(opt,correctAnswers);
-}
-            options.appendChild(btn);
-            options.appendChild(document.createElement("br"));
-        });
+
+    if(opt==="—"){
+        btn.disabled=true;
+    }else{
+        btn.onclick=()=>selectOption(btn,opt);
     }
 
-    // ================= TYPING =================
-    else {
+    options.appendChild(btn);
+    options.appendChild(document.createElement("br"));
+});
 
-        const input=document.createElement("input");
-        input.placeholder="Type your answer...";
+const nextBtn=document.createElement("button");
+nextBtn.textContent=current===questions.length-1?"Finish":"Next";
+nextBtn.className="nextBtn";
+nextBtn.onclick=nextQuestion;
 
-        const btn=document.createElement("button");
-        btn.textContent="Submit";
-        const correctAnswers = q.type === "city"
-    ? q.answer.map(a => normalizeCity(a))
-    : q.answer;
+options.appendChild(document.createElement("br"));
+options.appendChild(nextBtn);
+```
 
-btn.onclick=()=>answer(input.value,correctAnswers);
-
-        input.addEventListener("keydown",e=>{
-            if(e.key==="Enter") btn.click();
-        });
-
-        options.appendChild(input);
-        options.appendChild(document.createElement("br"));
-        options.appendChild(btn);
-    }
 }
 
-// ================= ANSWER =================
-function answer(given, correct){
+// ================= GRADE =================
+function gradeQuiz(){
 
-    if(!given) return;
+```
+score=0;
+results=[];
 
-    let normalizedGiven = given.toLowerCase().replace(/\s+/g," ").trim();
+questions.forEach((q,i)=>{
 
-    let normalizedCorrect = correct.map(a =>
-        a.toLowerCase().replace(/\s+/g," ").trim()
-    );
+    const correct=q.type==="city"?q.answer.map(a=>cityOnly(a)):q.answer;
+    const given=userAnswers[i]||"";
 
-    const isCorrect = normalizedCorrect.includes(normalizedGiven);
+    const ok=correct.map(a=>a.toLowerCase()).includes(given.toLowerCase());
 
-    if(isCorrect) score++;
+    if(ok) score++;
 
-    // ⭐ OPSLAAN VOOR OVERZICHT
     results.push({
-        question: document.getElementById("question").textContent,
-        given: given,
-        correct: correct.join(" / "),
-        ok: isCorrect
+        question:q.question,
+        given:given||"(no answer)",
+        correct:correct.join(" / "),
+        ok:ok
     });
+});
 
-    current++;
+finishQuiz();
+```
 
-    if(current<questions.length) showQuestion();
-    else finishQuiz();
 }
 
 // ================= FINISH =================
 function finishQuiz(){
 
-    document.getElementById("quiz").style.display="none";
-    document.getElementById("result").style.display="block";
+```
+document.getElementById("quiz").style.display="none";
+document.getElementById("result").style.display="block";
 
-    document.getElementById("score").textContent =
-        `Score: ${score} / ${questions.length}`;
+document.getElementById("score").textContent=`Score: ${score} / ${questions.length}`;
 
-    const resultDiv = document.getElementById("result");
+const resultDiv=document.getElementById("result");
 
-    let html = "<h3>Review</h3>";
+let html="<h3>Review</h3>";
 
-    results.forEach(r=>{
-        html += `
-        <div style="background:white;color:black;padding:10px;margin:10px 0;border-radius:10px;text-align:left">
-            <b>${r.question}</b><br>
-            Your answer: <span style="color:${r.ok?"green":"red"}">${r.given}</span><br>
-            Correct: <b>${r.correct}</b>
-        </div>`;
-    });
+results.forEach(r=>{
+    html+=`
+    <div style="background:white;color:black;padding:12px;margin:12px 0;border-radius:12px;text-align:left">
+        <b>${r.question}</b><br>
+        Your answer: <span style="color:${r.ok?"green":"red"}">${r.given}</span><br>
+        Correct: <b>${r.correct}</b>
+    </div>`;
+});
 
-    resultDiv.innerHTML += html;
+resultDiv.innerHTML+=html;
+```
+
 }
