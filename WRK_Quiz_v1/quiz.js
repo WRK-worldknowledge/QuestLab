@@ -29,7 +29,7 @@ function shuffle(array){
     return array;
 }
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=7")
+fetch("data/wrk-data.json?v=8")
 .then(r => r.json())
 .then(json => {
     data = json;
