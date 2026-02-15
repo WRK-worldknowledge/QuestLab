@@ -1,40 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WRK Quiz</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+}
+
+h1{
+    margin-top:20px;
+}
+
+#setup, #quiz, #result{
+    max-width:500px;
+    margin:auto;
+    padding:15px;
+}
+
+select, button, input{
+    width:100%;
+    padding:14px;
+    margin:8px 0;
+    border-radius:10px;
+    border:none;
+    font-size:18px;
+}
+
+button{
+    background:#ffd400;
+    color:#000;
+    font-weight:bold;
+}
+
+button:active{
+    transform:scale(0.97);
+}
+
+#options button{
+    margin-top:12px;
+    font-size:20px;
+}
+
+.correct{
+    background:#4caf50 !important;
+    color:white;
+}
+
+.wrong{
+    background:#d93025 !important;
+    color:white;
+}
+
+#mapImage{
+    width:100%;
+    max-width:420px;
+    margin-top:10px;
+    border-radius:12px;
+}
+
+</style>
+</head>
+
 <body>
 
 <h1>WRK Quiz</h1>
 
 <div id="setup">
 
-<label>Module</label><br>
-<select id="moduleSelect"></select><br><br>
+<label>Module</label>
+<select id="moduleSelect"></select>
 
-<label>Lesson</label><br>
-<select id="lessonSelect"></select><br><br>
+<label>Lesson</label>
+<select id="lessonSelect"></select>
 
-<label>Question type</label><br>
+<label>Question type</label>
 <select id="typeSelect">
   <option value="city">City</option>
   <option value="country">Country</option>
   <option value="iata">IATA</option>
   <option value="capital">Capital</option>
-</select><br><br>
+</select>
 
-<label>Answer mode</label><br>
+<label>Answer mode</label>
 <select id="modeSelect">
   <option value="mc">Multiple choice</option>
   <option value="type">Typing</option>
-</select><br><br>
+</select>
 
 <button id="startBtn">Start quiz</button>
 
 </div>
 
 <div id="quiz" style="display:none">
-
 <p id="progress"></p>
-<img id="mapImage" style="max-width:450px; display:none;"><br>
+<img id="mapImage" style="display:none;">
 <h2 id="question"></h2>
 <div id="options"></div>
-
 </div>
 
 <div id="result" style="display:none">
@@ -46,4 +116,4 @@
 <script src="quiz.js"></script>
 
 </body>
-    
+</html>
