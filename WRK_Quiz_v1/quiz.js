@@ -52,7 +52,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=25")
+fetch("data/wrk-data.json?v=26")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -189,7 +189,7 @@ showQuestion();
 // ================= SHOW QUESTION =================
 function showQuestion(){
 
-const q=questions[current];+
+const q=questions[current];
     const mode = document.getElementById("modeSelect").value;
 
 document.getElementById("progress").textContent =
@@ -307,69 +307,6 @@ nextBtn.onclick=nextQuestion;
 options.appendChild(document.createElement("br"));
 options.appendChild(nextBtn);
 
-let candidates=data.filter(d=>{
-    if(d.module!==q.module) return false;
-
-    if(q.type==="city") return d.city;
-    if(q.type==="country") return d.country;
-    if(q.type==="capital") return d.capital;
-    if(q.type==="iata") return d.iata;
-
-    return false;
-});
-
-if(q.type==="iata"){
-    const correctCity=getIATACity(q.question);
-    if(correctCity){
-        candidates=candidates.filter(d=>getIATACity(d.question)!==correctCity);
-    }
-}
-
-let pool=candidates.flatMap(d=>{
-    if(q.type==="city") return d.city ? [d.city] : [];
-    if(q.type==="country") return d.country ? [d.country] : [];
-    if(q.type==="capital") return d.capital ? [d.capital] : [];
-    return d.answer || [];
-});
-pool=[...new Set(pool)];
-
-const correctAnswers =
-q.type==="city" ? [q.city || q.answer?.[0]] :
-q.type==="country" ? [q.country || q.answer?.[0]] :
-q.type==="capital" ? [q.capital || q.answer?.[0]] :
-q.answer;
-pool = pool.filter(a =>
-    !correctAnswers.map(x=>normalizeAnswer(x))
-    .includes(normalizeAnswer(a))
-);
-    pool = pool.filter(v => v && v !== "" && v !== null);
-
-while(pool.length<3) pool.push("—");
-
-const choices=shuffle([...shuffle(pool).slice(0,3),...correctAnswers]);
-
-choices.forEach(opt=>{
-    const btn=document.createElement("button");
-    btn.textContent=opt;
-
-    if(opt==="—"){
-        btn.disabled=true;
-    }else{
-        btn.onclick=()=>selectOption(btn,opt);
-    }
-
-    options.appendChild(btn);
-    options.appendChild(document.createElement("br"));
-});
-
-const nextBtn=document.createElement("button");
-nextBtn.textContent=current===questions.length-1?"Finish":"Next";
-nextBtn.className="nextBtn";
-nextBtn.onclick=nextQuestion;
-
-options.appendChild(document.createElement("br"));
-options.appendChild(nextBtn);
-
 }
 
 // ================= GRADE =================
@@ -389,7 +326,7 @@ questions.forEach((q,i)=>{
 
     const given=userAnswers[i]||"";
 
-    const ok = correct
+    const ok = correctAnswers
     .map(a => normalizeAnswer(a))
     .includes(normalizeAnswer(given));
 
@@ -398,7 +335,7 @@ questions.forEach((q,i)=>{
     results.push({
     question:q.question,
     given:given||"(no answer)",
-    correct:correct.join(" / "),
+    correct:correctAnswers.join(" / "),
     ok:ok,
     image:q.image || null
 });
