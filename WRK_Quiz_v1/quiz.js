@@ -35,7 +35,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=17")
+fetch("data/wrk-data.json?v=18")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -219,10 +219,19 @@ if(q.type==="iata"){
     }
 }
 
-let pool=candidates.flatMap(d=>d.answer.map(a=>q.type==="city"?cityOnly(a):a));
+let pool=candidates.flatMap(d=>{
+    if(q.type==="city") return [d.city];
+    if(q.type==="country") return [d.country];
+    if(q.type==="capital") return [d.capital];
+    return d.answer;
+});
 pool=[...new Set(pool)];
 
-const correctAnswers=q.type==="city"?q.answer.map(a=>cityOnly(a)):q.answer;
+const correctAnswers =
+q.type==="city" ? [q.city] :
+q.type==="country" ? [q.country] :
+q.type==="capital" ? [q.capital] :
+q.answer;
 
 pool=pool.filter(a=>!correctAnswers.map(x=>x.toLowerCase()).includes(a.toLowerCase()));
 
@@ -262,7 +271,12 @@ results=[];
 
 questions.forEach((q,i)=>{
 
-    const correct=q.type==="city"?q.answer.map(a=>cityOnly(a)):q.answer;
+    const correct =
+        q.type==="city" ? [q.city] :
+        q.type==="country" ? [q.country] :
+        q.type==="capital" ? [q.capital] :
+        q.answer;
+
     const given=userAnswers[i]||"";
 
     const ok=correct.map(a=>a.toLowerCase()).includes(given.toLowerCase());
