@@ -37,7 +37,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=15")
+fetch("data/wrk-data.json?v=16")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -272,11 +272,12 @@ questions.forEach((q,i)=>{
     if(ok) score++;
 
     results.push({
-        question:q.question,
-        given:given||"(no answer)",
-        correct:correct.join(" / "),
-        ok:ok
-    });
+    question:q.question,
+    given:given||"(no answer)",
+    correct:correct.join(" / "),
+    ok:ok,
+    image:q.image || null
+});
 });
 
 finishQuiz();
@@ -299,9 +300,16 @@ let html="<h3>Review</h3>";
 results.forEach(function(r){
 
 html += "<div style='background:white;color:black;padding:12px;margin:12px 0;border-radius:12px;text-align:left'>";
+
+// afbeelding bovenaan
+if(r.image){
+html += "<img src='images/" + r.image + "' style='width:100%;max-width:420px;border-radius:10px;margin-bottom:8px'><br>";
+}
+
 html += "<b>" + r.question + "</b><br>";
 html += "Your answer: <span style='color:" + (r.ok?"green":"red") + "'>" + r.given + "</span><br>";
 html += "Correct: <b>" + r.correct + "</b>";
+
 html += "</div>";
 
 });
