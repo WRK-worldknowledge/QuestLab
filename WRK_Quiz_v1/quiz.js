@@ -290,19 +290,21 @@ function finishQuiz(){
 document.getElementById("quiz").style.display="none";
 document.getElementById("result").style.display="block";
 
-document.getElementById("score").textContent=`Score: ${score} / ${questions.length}`;
+document.getElementById("score").textContent =
+"Score: " + score + " / " + questions.length;
 
 const resultDiv=document.getElementById("result");
 
 let html="<h3>Review</h3>";
 
-results.forEach(r=>{
-    html+=`
-    <div style="background:white;color:black;padding:12px;margin:12px 0;border-radius:12px;text-align:left">
-        <b>${r.question}</b><br>
-        Your answer: <span style="color:${r.ok?"green":"red"}">${r.given}</span><br>
-        Correct: <b>${r.correct}</b>
-    </div>`;
+results.forEach(function(r){
+
+html += "<div style='background:white;color:black;padding:12px;margin:12px 0;border-radius:12px;text-align:left'>";
+html += "<b>" + r.question + "</b><br>";
+html += "Your answer: <span style='color:" + (r.ok?"green":"red") + "'>" + r.given + "</span><br>";
+html += "Correct: <b>" + r.correct + "</b>";
+html += "</div>";
+
 });
 
 resultDiv.innerHTML+=html;
