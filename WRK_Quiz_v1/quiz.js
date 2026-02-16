@@ -14,8 +14,6 @@ function normalizeCity(name){
 return name
 .replace(/airport/gi,"")
 .replace(/international/gi,"")
-.replace(/city/gi,"")
-.replace(/heathrow|gatwick|luton|stans?ted|schiphol|malpensa|linate|charles de gaulle|orly/gi,"")
 .replace(/\s+/g," ")
 .trim();
 }
@@ -37,7 +35,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=16")
+fetch("data/wrk-data.json?v=17")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
