@@ -21,6 +21,23 @@ return name
 function cityOnly(name){
 return normalizeCity(name);
 }
+function normalizeAnswer(text){
+    if(!text) return "";
+
+    return text
+        .toString()
+        .normalize("NFD")                 // split accents
+        .replace(/[\u0300-\u036f]/g,"")   // remove accents
+        .replace(/ß/g,"ss")
+        .replace(/æ/g,"ae")
+        .replace(/ø/g,"o")
+        .replace(/å/g,"a")
+        .replace(/-/g," ")
+        .replace(/\s+/g," ")
+        .replace(/\s/g,"")
+        .trim()
+        .toLowerCase();
+}
 
 function getIATACity(){
     return null;
@@ -35,7 +52,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=23")
+fetch("data/wrk-data.json?v=24")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -241,7 +258,10 @@ q.type==="city" ? [q.city || q.answer?.[0]] :
 q.type==="country" ? [q.country || q.answer?.[0]] :
 q.type==="capital" ? [q.capital || q.answer?.[0]] :
 q.answer;
-pool=pool.filter(a=>!correctAnswers.map(x=>x.toLowerCase()).includes(a.toLowerCase()));
+pool = pool.filter(a =>
+    !correctAnswers.map(x=>normalizeAnswer(x))
+    .includes(normalizeAnswer(a))
+);
     pool = pool.filter(v => v && v !== "" && v !== null);
 
 while(pool.length<3) pool.push("—");
@@ -289,7 +309,9 @@ questions.forEach((q,i)=>{
 
     const given=userAnswers[i]||"";
 
-    const ok=correct.map(a=>a.toLowerCase()).includes(given.toLowerCase());
+    const ok = correct
+    .map(a => normalizeAnswer(a))
+    .includes(normalizeAnswer(given));
 
     if(ok) score++;
 
