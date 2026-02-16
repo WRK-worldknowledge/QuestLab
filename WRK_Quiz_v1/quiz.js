@@ -35,7 +35,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=21")
+fetch("data/wrk-data.json?v=22")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -182,11 +182,11 @@ document.getElementById("progress").textContent =
 let questionText="";
 switch(q.type){
     case "city":
-        questionText="What city is this?";
+        questionText="Which city is this?";
         break;
 
     case "country":
-        questionText="Which country is this in?";
+        questionText="Which country is this?";
         break;
 
     case "capital":
