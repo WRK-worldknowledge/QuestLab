@@ -66,6 +66,45 @@ button:active{
     margin-top:10px;
     border-radius:12px;
 }
+    /* ================= QUIZ BUTTON STYLING ================= */
+
+/* multiple choice knoppen */
+#options button{
+    background:#F5CA51;
+    color:#0F172A;
+    border:none;
+    padding:12px 18px;
+    border-radius:12px;
+    margin:10px 0;
+    font-weight:600;
+    transition:all .15s ease;
+}
+
+/* hover */
+#options button:hover{
+    filter:brightness(1.07);
+}
+
+/* geselecteerde optie */
+#options button.selected{
+    background:#FFD977;
+    color:#0F172A;
+    transform:scale(1.03);
+    box-shadow:0 0 0 3px rgba(245,202,81,0.35);
+}
+
+/* next knop (outline stijl) */
+.nextBtn{
+    background:transparent !important;
+    color:#F8FAFC !important;
+    border:2px solid #F8FAFC !important;
+    font-weight:700;
+}
+
+/* hover next */
+.nextBtn:hover{
+    background:#1E293B !important;
+}
 
 </style>
 </head>
