@@ -106,6 +106,47 @@ button:active{
 .nextBtn:hover{
     background:#1D4ED8 !important;
 }
+    /* afbeelding container netjes centreren */
+#quiz{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* afbeelding zelf */
+#mapImage{
+    display:block;
+    margin:20px auto;
+    border-radius:14px;
+    cursor:zoom-in;
+
+    /* nieuwe grootte regels */
+    width:min(92vw, 720px);
+    height:auto;
+    max-height:60vh;
+
+    object-fit:contain;
+    background:#0B1222;
+    padding:8px;
+}
+    /* LIGHTBOX */
+#lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.88);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+}
+
+#lightbox img{
+    max-width:95vw;
+    max-height:95vh;
+    border-radius:16px;
+    box-shadow:0 0 40px rgba(0,0,0,0.7);
+    cursor:zoom-out;
+}
 </style>
 </head>
 
@@ -150,6 +191,9 @@ button:active{
 <h2>Session complete</h2>
 <p id="score"></p>
 <button onclick="location.reload()">New session</button>
+</div>
+    <div id="lightbox">
+    <img id="lightboxImg">
 </div>
 
 <script src="quiz.js"></script>
