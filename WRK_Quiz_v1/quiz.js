@@ -35,7 +35,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=20")
+fetch("data/wrk-data.json?v=21")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -210,7 +210,16 @@ if(q.image){
 const options=document.getElementById("options");
 options.innerHTML="";
 
-let candidates=data.filter(d=>d.type===q.type && d.module===q.module);
+let candidates=data.filter(d=>{
+    if(d.module!==q.module) return false;
+
+    if(q.type==="city") return d.city;
+    if(q.type==="country") return d.country;
+    if(q.type==="capital") return d.capital;
+    if(q.type==="iata") return d.iata;
+
+    return false;
+});
 
 if(q.type==="iata"){
     const correctCity=getIATACity(q.question);
@@ -233,6 +242,7 @@ q.type==="country" ? [q.country || q.answer?.[0]] :
 q.type==="capital" ? [q.capital || q.answer?.[0]] :
 q.answer;
 pool=pool.filter(a=>!correctAnswers.map(x=>x.toLowerCase()).includes(a.toLowerCase()));
+    pool = pool.filter(v => v && v !== "" && v !== null);
 
 while(pool.length<3) pool.push("—");
 
