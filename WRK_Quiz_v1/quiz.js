@@ -35,7 +35,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=22")
+fetch("data/wrk-data.json?v=23")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -229,10 +229,10 @@ if(q.type==="iata"){
 }
 
 let pool=candidates.flatMap(d=>{
-    if(q.type==="city") return [d.city || d.answer?.[0]];
-    if(q.type==="country") return [d.country || d.answer?.[0]];
-    if(q.type==="capital") return [d.capital || d.answer?.[0]];
-    return d.answer;
+    if(q.type==="city") return d.city ? [d.city] : [];
+    if(q.type==="country") return d.country ? [d.country] : [];
+    if(q.type==="capital") return d.capital ? [d.capital] : [];
+    return d.answer || [];
 });
 pool=[...new Set(pool)];
 
@@ -280,11 +280,12 @@ results=[];
 
 questions.forEach((q,i)=>{
 
-    const correct =
-    q.type==="city" ? [q.city || q.answer?.[0]] :
-    q.type==="country" ? [q.country || q.answer?.[0]] :
-    q.type==="capital" ? [q.capital || q.answer?.[0]] :
-    q.answer;
+    const correctAnswers = [
+    q.type==="city" ? q.city :
+    q.type==="country" ? q.country :
+    q.type==="capital" ? q.capital :
+    (q.answer?.[0] || "")
+].filter(Boolean);
 
     const given=userAnswers[i]||"";
 
