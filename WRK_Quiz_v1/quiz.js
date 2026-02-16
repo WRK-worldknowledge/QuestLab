@@ -143,7 +143,6 @@ currentChoice=value;
 // ================= NEXT =================
 function nextQuestion(){
 
-```
 if(currentChoice===null){
     alert("Choose an answer first");
     return;
