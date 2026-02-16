@@ -37,7 +37,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("/data/wrk-data.json?v=TEST123")
+fetch("/data/wrk-data.json?v=TEST124")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -64,7 +64,6 @@ function populateModules(){
 const moduleSelect=document.getElementById("moduleSelect");
 moduleSelect.innerHTML="";
 
-```
 [...new Set(data.map(d=>d.module))].forEach(m=>{
     const opt=document.createElement("option");
     opt.value=m;
@@ -74,7 +73,6 @@ moduleSelect.innerHTML="";
 
 moduleSelect.addEventListener("change",populateLessons);
 populateLessons();
-```
 
 }
 
@@ -84,7 +82,6 @@ const module=document.getElementById("moduleSelect").value;
 const lessonSelect=document.getElementById("lessonSelect");
 lessonSelect.innerHTML="";
 
-```
 const all=document.createElement("option");
 all.value="all";
 all.textContent="All lessons (module test)";
@@ -97,14 +94,12 @@ lessonSelect.appendChild(all);
     opt.textContent=l;
     lessonSelect.appendChild(opt);
 });
-```
 
 }
 
 // ================= START QUIZ =================
 function startQuiz(){
 
-```
 const module=document.getElementById("moduleSelect").value;
 const lesson=document.getElementById("lessonSelect").value;
 const type=document.getElementById("typeSelect").value;
@@ -135,7 +130,6 @@ document.getElementById("setup").style.display="none";
 document.getElementById("quiz").style.display="block";
 
 showQuestion();
-```
 
 }
 
@@ -165,7 +159,6 @@ if(current<questions.length){
 }else{
     confirmSubmit();
 }
-```
 
 }
 
@@ -182,7 +175,6 @@ showQuestion();
 // ================= SHOW QUESTION =================
 function showQuestion(){
 
-```
 const q=questions[current];
 
 document.getElementById("progress").textContent =
@@ -262,14 +254,12 @@ nextBtn.onclick=nextQuestion;
 
 options.appendChild(document.createElement("br"));
 options.appendChild(nextBtn);
-```
 
 }
 
 // ================= GRADE =================
 function gradeQuiz(){
 
-```
 score=0;
 results=[];
 
@@ -291,14 +281,12 @@ questions.forEach((q,i)=>{
 });
 
 finishQuiz();
-```
 
 }
 
 // ================= FINISH =================
 function finishQuiz(){
 
-```
 document.getElementById("quiz").style.display="none";
 document.getElementById("result").style.display="block";
 
@@ -318,6 +306,5 @@ results.forEach(r=>{
 });
 
 resultDiv.innerHTML+=html;
-```
 
 }
