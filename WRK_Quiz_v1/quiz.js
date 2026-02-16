@@ -35,7 +35,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=19")
+fetch("data/wrk-data.json?v=20")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -328,3 +328,17 @@ html += "</div>";
 resultDiv.innerHTML+=html;
 
 }
+// ===== IMAGE ZOOM =====
+const mapImage = document.getElementById("mapImage");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+
+mapImage.addEventListener("click", ()=>{
+    if(!mapImage.src) return;
+    lightbox.style.display="flex";
+    lightboxImg.src = mapImage.src;
+});
+
+lightbox.addEventListener("click", ()=>{
+    lightbox.style.display="none";
+});
