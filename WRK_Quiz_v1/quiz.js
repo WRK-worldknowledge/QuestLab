@@ -52,7 +52,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=26")
+fetch("data/wrk-data.json?v=27")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -332,13 +332,20 @@ questions.forEach((q,i)=>{
 
     if(ok) score++;
 
-    results.push({
-    question:q.question,
+  let questionLabel =
+    q.type==="city" ? "City" :
+    q.type==="country" ? "Country" :
+    q.type==="capital" ? "Capital" :
+    q.type==="iata" ? "IATA code" :
+    "Question";
+
+results.push({
+    question:questionLabel,
     given:given||"(no answer)",
-    correct:correctAnswers.join(" / "),
+    correct:correct.join(" / "),
     ok:ok,
     image:q.image || null
-});
+});  
 });
 
 finishQuiz();
