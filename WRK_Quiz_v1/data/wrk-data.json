@@ -946,7 +946,7 @@
     "module": "Africa",
     "lesson": "Central Africa",
     "type": "city",
-    "city": "Mahe Island",
+    "city": "Victoria",
     "country": "Seychelles",
     "image": "SEZ pijl.png"
   },
@@ -955,8 +955,8 @@
     "lesson": "Central Africa",
     "type": "iata",
     "iata": "SEZ",
-    "city": "Mahe Island",
-    "display": "Mahe Island",
+    "city": "Victoria",
+    "display": "Victoia, Seychelles",
     "image": "SEZ pijl.png"
   },
   {
@@ -1083,7 +1083,7 @@
     "module": "Africa",
     "lesson": "Northern Africa - Sahara countries",
     "type": "country",
-    "country": "Tunesia",
+    "country": "Tunisia",
     "image": "Tunis.png"
   },
   {
@@ -1091,7 +1091,7 @@
     "lesson": "Northern Africa - Sahara countries",
     "type": "city",
     "city": "Tunis",
-    "country": "Tunesia",
+    "country": "Tunisia",
     "image": "TUN Pijl.png"
   },
   {
