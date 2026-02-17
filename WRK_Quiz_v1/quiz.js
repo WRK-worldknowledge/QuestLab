@@ -52,7 +52,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=27")
+fetch("data/wrk-data.json?v=28")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -318,34 +318,35 @@ results=[];
 questions.forEach((q,i)=>{
 
     const correctAnswers = [
-    q.type==="city" ? q.city :
-    q.type==="country" ? q.country :
-    q.type==="capital" ? q.capital :
-    (q.answer?.[0] || "")
-].filter(Boolean);
+        q.type==="city" ? q.city :
+        q.type==="country" ? q.country :
+        q.type==="capital" ? q.capital :
+        (q.answer?.[0] || "")
+    ].filter(Boolean);
 
     const given=userAnswers[i]||"";
 
     const ok = correctAnswers
-    .map(a => normalizeAnswer(a))
-    .includes(normalizeAnswer(given));
+        .map(a => normalizeAnswer(a))
+        .includes(normalizeAnswer(given));
 
     if(ok) score++;
 
-  let questionLabel =
-    q.type==="city" ? "City" :
-    q.type==="country" ? "Country" :
-    q.type==="capital" ? "Capital" :
-    q.type==="iata" ? "IATA code" :
-    "Question";
+    let questionLabel =
+        q.type==="city" ? "City" :
+        q.type==="country" ? "Country" :
+        q.type==="capital" ? "Capital" :
+        q.type==="iata" ? "IATA code" :
+        "Question";
 
-results.push({
-    question:questionLabel,
-    given:given||"(no answer)",
-    correct:correct.join(" / "),
-    ok:ok,
-    image:q.image || null
-});  
+    results.push({
+        question:questionLabel,
+        given:given||"(no answer)",
+        correct:correctAnswers.join(" / "),   // ✅ FIX
+        ok:ok,
+        image:q.image || null
+    });
+
 });
 
 finishQuiz();
