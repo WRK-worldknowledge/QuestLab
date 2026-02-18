@@ -52,7 +52,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=28")
+fetch("data/wrk-data.json?v=29")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -256,7 +256,10 @@ if(mode==="type"){
 
 /* ================= MULTIPLE CHOICE ================= */
 
-let candidates=data.filter(d=>d.type===q.type && d.module===q.module);
+let candidates=data.filter(d =>
+    d.type===q.type &&
+    (moduleAliases[d.module] || d.module) === (moduleAliases[q.module] || q.module)
+);
 
 if(q.type==="iata"){
     const correctCity=getIATACity(q.question);
