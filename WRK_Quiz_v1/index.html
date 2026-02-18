@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <a class="backBtn" href="../">⬅ Back to Game Console</a>
-    
 <title>WRK Quiz</title>
 
 <style>
@@ -154,10 +152,33 @@ button:active{
     box-shadow:0 0 40px rgba(0,0,0,0.7);
     cursor:zoom-out;
 }
+    .backBtn{
+    position:fixed;
+    top:14px;
+    left:14px;
+    background:#0F172A;
+    color:#F8FAFC;
+    border:2px solid #F5CA51;
+    padding:10px 14px;
+    border-radius:12px;
+    font-weight:700;
+    text-decoration:none;
+    font-size:14px;
+    z-index:999;
+}
+
+.backBtn:hover{
+    background:#F5CA51;
+    color:#0F172A;
+}
 </style>
 </head>
 
 <body>
+
+<a class="backBtn" href="../" onclick="return confirm('Leave the game? Progress will be lost.')">
+⬅ Back to Game Console
+</a>
 
 <h1>WRK Quiz</h1>
 
