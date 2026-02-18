@@ -13,7 +13,7 @@ const moduleNames = {
     "EURW": "1. Western Europe",
     "EURO": "2. Eastern Europe",
     "AMOC": "3. America & Oceania",
-    "AFR":  "4. Africa",
+    "Africa":  "4. Africa",
     "ASIA": "5. Asia"
 };
 
@@ -60,7 +60,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=30")
+fetch("data/wrk-data.json?v=31")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
