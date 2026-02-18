@@ -59,4 +59,7 @@ function resetPlayer(){
 }
 
 /* automatisch tonen */
-window.addEventListener("load", renderPlayerCard);
+window.addEventListener("load", () => {
+    getPlayer();        // zorgt dat speler wordt aangemaakt
+    renderPlayerCard(); // daarna tonen
+});
