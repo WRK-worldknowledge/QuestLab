@@ -16,7 +16,7 @@ const moduleNames = {
     "Africa":  "4. Africa",
     "ASIA": "5. Asia"
 };
-const moduleOrder = ["EURW","EURO","AMOC","AFR","ASIA"];
+const moduleOrder = ["EURW","EURO","AMOC","Africa","ASIA"];
 
 // ================= HELPERS =================
 function normalizeCity(name){
@@ -61,7 +61,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=33")
+fetch("data/wrk-data.json?v=34")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
