@@ -16,6 +16,7 @@ const moduleNames = {
     "Africa":  "4. Africa",
     "ASIA": "5. Asia"
 };
+const moduleOrder = ["EURW","EURO","AMOC","AFR","ASIA"];
 
 // ================= HELPERS =================
 function normalizeCity(name){
@@ -60,7 +61,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=31")
+fetch("data/wrk-data.json?v=33")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -87,7 +88,13 @@ function populateModules(){
 const moduleSelect=document.getElementById("moduleSelect");
 moduleSelect.innerHTML="";
 
-[...new Set(data.map(d=>d.module))].forEach(m=>{
+// alleen modules tonen die echt in data zitten
+const available = new Set(data.map(d=>d.module));
+
+// vaste volgorde afdwingen
+moduleOrder.forEach(m=>{
+    if(!available.has(m)) return;
+
     const opt=document.createElement("option");
     opt.value=m;
     opt.textContent = moduleNames[m] || m;
@@ -96,8 +103,8 @@ moduleSelect.innerHTML="";
 
 moduleSelect.addEventListener("change",populateLessons);
 populateLessons();
-
 }
+
 
 // ================= LESSONS =================
 function populateLessons(){
@@ -264,9 +271,9 @@ if(mode==="type"){
 
 /* ================= MULTIPLE CHOICE ================= */
 
-let candidates=data.filter(d =>
-    d.type===q.type &&
-    (moduleAliases[d.module] || d.module) === (moduleAliases[q.module] || q.module)
+let candidates = data.filter(d =>
+    d.type === q.type &&
+    d.module === q.module
 );
 
 if(q.type==="iata"){
