@@ -4656,14 +4656,14 @@
     "image": "Pijl CPH.png"
   },
   {
-    "module": "EURW",
+    "module": "EURO",
     "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
     "type": "country",
     "country": "Estonia",
     "image": "Estland.png"
   },
   {
-    "module": "EURW",
+    "module": "EURO",
     "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
     "type": "city",
     "city": "Tallinn",
@@ -4671,7 +4671,7 @@
     "image": "Pijl TLL.png"
   },
   {
-    "module": "EURW",
+    "module": "EURO",
     "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
     "type": "iata",
     "iata": "TLL",
