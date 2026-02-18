@@ -20,38 +20,38 @@ const moduleOrder = ["EURW","EURO","AMOC","Africa","ASIA"];
 const lessonOrder = {
 
     "EURW": [
-        "1. Countries and capital cities",
-        "2. UK, Ireland & France",
-        "3. Scandinavia, Germany & BeNeLux",
-        "4. Switzerland & Italy",
-        "5. Spain & Portugal"
+        "Countries and capital cities",
+        "UK, Ireland & France",
+        "Scandinavia, Germany & BeNeLux",
+        "Switzerland & Italy",
+        "Spain & Portugal"
     ],
 
     "EURO": [
-        "1. Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
-        "2. Austria, Hungary, Romania, Moldova & the Balkan",
-        "3. Greece",
-        "4. Turkey & Cyprus"
+        "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+        "Austria, Hungary, Romania, Moldova & the Balkan",
+        "Greece",
+        "Turkey & Cyprus"
     ],
 
     "AMOC": [
-        "1. Countries and capitals North America & Caribbean",
-        "2. Cities North America",
-        "3. Countries and cities South America",
-        "4. Oceania"
+        "Countries and capitals North America & Caribbean",
+        "Cities North America",
+        "Countries and cities South America",
+        "Oceania"
     ],
 
     "AFR": [
-        "1. Northern Africa - Sahara countries",
-        "2. Northern Africa - Sahel countries",
+        "Northern Africa - Sahara countries",
+        "Northern Africa - Sahel countries",
         "Central Africa",
         "Southern Africa"
     ],
 
     "ASIA": [
-        "1. Middle East & EurAsia",
-        "2. Central Asia",
-        "3. Far East"
+        "Middle East & EurAsia",
+        "Central Asia",
+        "Far East"
     ]
 
 };
@@ -99,7 +99,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=35")
+fetch("data/wrk-data.json?v=36")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
