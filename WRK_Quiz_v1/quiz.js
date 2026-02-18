@@ -9,6 +9,14 @@ let userAnswers = [];
 let results = [];
 let currentChoice = null;
 
+const moduleNames = {
+    "EURW": "1. Western Europe",
+    "EURO": "2. Eastern Europe",
+    "AMOC": "3. America & Oceania",
+    "AFR":  "4. Africa",
+    "ASIA": "5. Asia"
+};
+
 // ================= HELPERS =================
 function normalizeCity(name){
 return name
@@ -52,7 +60,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=29")
+fetch("data/wrk-data.json?v=30")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -82,7 +90,7 @@ moduleSelect.innerHTML="";
 [...new Set(data.map(d=>d.module))].forEach(m=>{
     const opt=document.createElement("option");
     opt.value=m;
-    opt.textContent=m;
+    opt.textContent = moduleNames[m] || m;
     moduleSelect.appendChild(opt);
 });
 
