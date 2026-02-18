@@ -17,6 +17,44 @@ const moduleNames = {
     "ASIA": "5. Asia"
 };
 const moduleOrder = ["EURW","EURO","AMOC","Africa","ASIA"];
+const lessonOrder = {
+
+    "EURW": [
+        "1. Countries and capital cities",
+        "2. UK, Ireland & France",
+        "3. Scandinavia, Germany & BeNeLux",
+        "4. Switzerland & Italy",
+        "5. Spain & Portugal"
+    ],
+
+    "EURO": [
+        "1. Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+        "2. Austria, Hungary, Romania, Moldova & the Balkan",
+        "3. Greece",
+        "4. Turkey & Cyprus"
+    ],
+
+    "AMOC": [
+        "1. Countries and capitals North America & Caribbean",
+        "2. Cities North America",
+        "3. Countries and cities South America",
+        "4. Oceania"
+    ],
+
+    "AFR": [
+        "1. Northern Africa - Sahara countries",
+        "2. Northern Africa - Sahel countries",
+        "Central Africa",
+        "Southern Africa"
+    ],
+
+    "ASIA": [
+        "1. Middle East & EurAsia",
+        "2. Central Asia",
+        "3. Far East"
+    ]
+
+};
 
 // ================= HELPERS =================
 function normalizeCity(name){
@@ -61,7 +99,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=34")
+fetch("data/wrk-data.json?v=35")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -108,23 +146,49 @@ populateLessons();
 
 // ================= LESSONS =================
 function populateLessons(){
-const module=document.getElementById("moduleSelect").value;
-const lessonSelect=document.getElementById("lessonSelect");
-lessonSelect.innerHTML="";
 
-const all=document.createElement("option");
-all.value="all";
-all.textContent="All lessons (module test)";
-lessonSelect.appendChild(all);
+    const module = document.getElementById("moduleSelect").value;
+    const lessonSelect = document.getElementById("lessonSelect");
+    lessonSelect.innerHTML = "";
 
-[...new Set(data.filter(d=>d.module===module).map(d=>d.lesson))]
-.forEach(l=>{
-    const opt=document.createElement("option");
-    opt.value=l;
-    opt.textContent=l;
-    lessonSelect.appendChild(opt);
-});
+    // Module test optie
+    const all = document.createElement("option");
+    all.value = "all";
+    all.textContent = "All lessons (module test)";
+    lessonSelect.appendChild(all);
 
+    // Welke lessen bestaan er in data?
+    const availableLessons = new Set(
+        data
+        .filter(d => d.module === module)
+        .map(d => d.lesson)
+    );
+
+    // Gebruik vaste volgorde als die bestaat
+    if(lessonOrder[module]){
+
+        lessonOrder[module].forEach(l => {
+
+            if(!availableLessons.has(l)) return;
+
+            const opt = document.createElement("option");
+            opt.value = l;
+            opt.textContent = l;
+            lessonSelect.appendChild(opt);
+
+        });
+
+    } else {
+
+        // fallback (voor veiligheid)
+        [...availableLessons].forEach(l=>{
+            const opt = document.createElement("option");
+            opt.value = l;
+            opt.textContent = l;
+            lessonSelect.appendChild(opt);
+        });
+
+    }
 }
 
 // ================= START QUIZ =================
