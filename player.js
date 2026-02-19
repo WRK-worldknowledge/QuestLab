@@ -1,3 +1,24 @@
+// ===== CLOUD SAVE CONFIG =====
+const GITHUB_USER = "WRK-worldknowledge";
+const GITHUB_REPO = "QuestLab";
+const GITHUB_FILE = "players.json";
+const GITHUB_TOKEN = "HIER_JOUW_TOKEN";
+
+ async function loadPlayerFromCloud(name){
+
+    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+
+    const res = await fetch(url);
+    const data = await res.json();
+
+    const content = JSON.parse(atob(data.content));
+
+    if(content[name]){
+        localStorage.setItem("questlab_player", JSON.stringify(content[name]));
+        console.log("Cloud profile loaded");
+    }
+}
+
 // ===== RANKS / BADGES =====
 const ranks = [
   { name:"Service Agent",          xp:0,     badge:"badges/service_agent.png" },
@@ -20,6 +41,7 @@ function getPlayer(){
     rank:"Service Agent",
     badge:"badges/service_agent.png"
 };
+     
         localStorage.setItem("questlab_player", JSON.stringify(player));
     }
     return player;
@@ -99,21 +121,21 @@ function renderPlayerCard(){
 }
 
 // eerste keer speler naam vragen
-function ensurePlayer(){
+window.addEventListener("load", async () => {
+
+    // 1️⃣ eerst zorgen dat speler naam heeft
+    ensurePlayer();
+
+    // 2️⃣ daarna opnieuw ophalen (nu mét juiste naam)
     let player = getPlayer();
 
-    if(player.name === "Cadet"){
-        const name = prompt("Enter your callsign:");
-        if(name && name.trim() !== ""){
-            player.name = name;
-            localStorage.setItem("questlab_player", JSON.stringify(player));
-        }
-    }
-}
+    // 3️⃣ cloud profiel laden
+    await loadPlayerFromCloud(player.name);
 
-// automatisch tonen
-window.addEventListener("load", () => {
-    ensurePlayer();
+    // 4️⃣ opnieuw ophalen want cloud kan hem overschreven hebben
+    player = getPlayer();
+
+    // 5️⃣ kaart tekenen
     renderPlayerCard();
 });
  function showPromotion(rank){
@@ -160,4 +182,37 @@ window.addEventListener("load", () => {
     document.body.appendChild(overlay);
 
     card.querySelector("button").onclick = () => overlay.remove();
+}
+async function savePlayerToCloud(){
+
+    const player = getPlayer();
+
+    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+
+    const res = await fetch(url);
+    const data = await res.json();
+
+    let content = {};
+    try{
+        content = JSON.parse(atob(data.content));
+    }catch{
+        content = {};
+    }
+
+    content[player.name] = player;
+
+    await fetch(url,{
+        method:"PUT",
+        headers:{
+            "Authorization":"token " + GITHUB_TOKEN,
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({
+            message:"QuestLab autosave",
+            content:btoa(JSON.stringify(content,null,2)),
+            sha:data.sha
+        })
+    });
+
+    console.log("Cloud saved");
 }
