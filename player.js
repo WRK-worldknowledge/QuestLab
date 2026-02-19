@@ -31,10 +31,27 @@ function updateRank(player){
         }
     });
 
+    function updateRank(player){
+
+    const oldRank = player.rank;
+
+    let newRank = ranks[0];
+
+    ranks.forEach(r=>{
+        if(player.xp >= r.xp){
+            newRank = r;
+        }
+    });
+
     player.rank = newRank.name;
     player.badge = newRank.badge;
 
     localStorage.setItem("questlab_player", JSON.stringify(player));
+
+    // ===== PROMOTION DETECT =====
+    if(oldRank !== newRank.name){
+        showPromotion(newRank);
+    }
 }
 
 function addXP(amount){
@@ -98,3 +115,49 @@ window.addEventListener("load", () => {
     ensurePlayer();
     renderPlayerCard();
 });
+  function showPromotion(rank){
+
+    // overlay
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.inset = "0";
+    overlay.style.background = "rgba(0,0,0,0.75)";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.zIndex = "9999";
+    overlay.style.animation = "fadeIn 0.3s ease";
+
+    // card
+    const card = document.createElement("div");
+    card.style.background = "#0B1222";
+    card.style.border = "3px solid #F5CA51";
+    card.style.borderRadius = "18px";
+    card.style.padding = "28px";
+    card.style.textAlign = "center";
+    card.style.color = "white";
+    card.style.boxShadow = "0 20px 60px rgba(0,0,0,0.6)";
+    card.style.maxWidth = "340px";
+
+    card.innerHTML = `
+        <div style="font-size:14px;opacity:.7">PROMOTION</div>
+        <div style="font-size:28px;font-weight:800;margin:8px 0">✦ ${rank.name} ✦</div>
+        <img src="${location.pathname.includes('WRK_Quiz_v1') ? '../' : ''}${rank.badge}"> style="width:120px;margin:12px 0">
+        <div style="opacity:.8;margin-top:10px">You have been promoted</div>
+        <button style="
+            margin-top:18px;
+            padding:12px 18px;
+            background:#F5CA51;
+            color:#0F172A;
+            border:none;
+            border-radius:12px;
+            font-weight:700;
+            cursor:pointer;
+        ">Continue</button>
+    `;
+
+    overlay.appendChild(card);
+    document.body.appendChild(overlay);
+
+    card.querySelector("button").onclick = () => overlay.remove();
+}
