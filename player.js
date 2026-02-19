@@ -13,40 +13,38 @@ function getPlayer(){
 
     if(!player){
         player = {
-            name:"Cadet",
-            xp:0,
-            modules:{},   // per module scores
-            rank:"Service Agent"
-        };
+    name:"Cadet",
+    xp:0,
+    modules:{},
+    masteredModules:0,
+    rank:"Service Agent",
+    badge:"badges/service_agent.png"
+};
         localStorage.setItem("questlab_player", JSON.stringify(player));
     }
     return player;
 }
 function updateRank(player){
-    let newRank = ranks[0];
 
-    ranks.forEach(r=>{
-        if(player.xp >= r.xp){
-            newRank = r;
-        }
-    });
+    const m = player.masteredModules;
 
-    function updateRank(player){
-
-    const oldRank = player.rank;
-
-    let newRank = ranks[0];
-
-    ranks.forEach(r=>{
-        if(player.xp >= r.xp){
-            newRank = r;
-        }
-    });
-
-    player.rank = newRank.name;
-    player.badge = newRank.badge;
+    if(m >= 5) setRank(player,"Senior Purser","badges/senior_purser.png");
+    else if(m === 4) setRank(player,"Purser","badges/purser.png");
+    else if(m === 3) setRank(player,"Assistant Purser","badges/assistant_purser.png");
+    else if(m === 2) setRank(player,"Senior Flight Attendant","badges/senior_fa.png");
+    else if(m === 1) setRank(player,"Flight Attendant","badges/fa.png");
+    else setRank(player,"Service Agent","badges/service_agent.png");
 
     localStorage.setItem("questlab_player", JSON.stringify(player));
+}
+
+function setRank(player,name,badge){
+    if(player.rank !== name){
+        player.rank = name;
+        player.badge = badge;
+        showPromotion(name,badge);
+    }
+}
 
     // ===== PROMOTION DETECT =====
     if(oldRank !== newRank.name){
@@ -73,10 +71,14 @@ function registerModuleScore(module, percentage){
 
     player.modules[module]++;
 
-    // bonus XP voor mastery
+    // mastery bereikt
     if(player.modules[module] === 10){
-        addXP(350); // grote promotie XP
+
+        player.masteredModules++;
+
         alert("🎓 Module mastery achieved: " + module);
+
+        updateRank(player);
     }
 
     localStorage.setItem("questlab_player", JSON.stringify(player));
