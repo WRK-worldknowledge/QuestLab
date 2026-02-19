@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=40")
+fetch("data/wrk-data.json?v=41")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -454,32 +454,24 @@ document.getElementById("score").textContent =
     // ===== XP & PROGRESS =====
 const percentage = Math.round((score/questions.length)*100);
 
-// kleine XP altijd
-addXP(Math.floor(score*5));
-
-// module mastery registratie
-const module = document.getElementById("moduleSelect").value;
-registerModuleScore(module, percentage);
-
-// kaart updaten
-if(typeof renderPlayerCard === "function")
-    renderPlayerCard();
-    
-    // ===== XP + MODULE PROGRESS =====
-
+// ===== XP & PROGRESS (FINAL) =====
 const percent = Math.round((score/questions.length)*100);
 
-// basis XP
-let xpEarned = Math.round(percent * 2); // 0–200 XP
+// basis XP: 0–150
+const xpEarned = Math.round(percent * 1.5);
 addXP(xpEarned);
 
-// alleen voor module test (30 vragen)
+// alleen module test telt voor badges
 if(currentLesson === "all"){
     registerModuleScore(
         document.getElementById("moduleSelect").value,
         percent
     );
 }
+
+// kaart vernieuwen
+if(typeof renderPlayerCard === "function")
+    renderPlayerCard();
 
 // UI updaten
 if(typeof renderPlayerCard === "function")
