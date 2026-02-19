@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=38")
+fetch("data/wrk-data.json?v=39")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -450,6 +450,22 @@ document.getElementById("result").style.display="block";
 
 document.getElementById("score").textContent =
 "Score: " + score + " / " + questions.length;
+    
+    // ===== XP + MODULE PROGRESS =====
+
+const percent = Math.round((score/questions.length)*100);
+
+// basis XP
+let xpEarned = Math.round(percent * 2); // 0–200 XP
+addXP(xpEarned);
+
+// alleen voor module test (30 vragen)
+if(currentLesson === "all"){
+    registerModuleScore(
+        document.getElementById("moduleSelect").value,
+        percent
+    );
+}
 
 const resultDiv=document.getElementById("result");
 
