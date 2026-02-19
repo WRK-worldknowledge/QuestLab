@@ -74,9 +74,9 @@ function renderPlayerCard(){
 
     el.innerHTML = `
         <div class="playerName">${player.name}</div>
+        <img src="${player.badge}" style="width:48px;margin:6px 0">
         <div class="playerRank">${player.rank}</div>
         <div class="playerXP">XP: ${player.xp}</div>
-        ${player.badge ? `<img src="${player.badge}" style="width:42px;margin-top:6px">` : ""}
     `;
 }
 
