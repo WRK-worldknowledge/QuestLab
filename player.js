@@ -75,7 +75,7 @@ function registerModuleScore(module, percentage){
 
     // bonus XP voor mastery
     if(player.modules[module] === 10){
-        addXP(500); // grote promotie XP
+        addXP(350); // grote promotie XP
         alert("🎓 Module mastery achieved: " + module);
     }
 
