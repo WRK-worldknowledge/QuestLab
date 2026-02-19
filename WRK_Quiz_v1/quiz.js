@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=37")
+fetch("data/wrk-data.json?v=38")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -442,7 +442,8 @@ finishQuiz();
 // ================= FINISH =================
 function finishQuiz(){
 
-        quizActive = false;
+safeToLeave = true;
+quizActive = false;
 
 document.getElementById("quiz").style.display="none";
 document.getElementById("result").style.display="block";
@@ -490,7 +491,7 @@ lightbox.addEventListener("click", ()=>{
     lightbox.style.display="none";
 });
 window.addEventListener("beforeunload", function (e) {
-    if (!quizActive) return;
+    if (!quizActive || safeToLeave) return;
 
     e.preventDefault();
     e.returnValue = "";
