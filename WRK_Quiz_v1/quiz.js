@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=39")
+fetch("data/wrk-data.json?v=40")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -450,6 +450,20 @@ document.getElementById("result").style.display="block";
 
 document.getElementById("score").textContent =
 "Score: " + score + " / " + questions.length;
+
+    // ===== XP & PROGRESS =====
+const percentage = Math.round((score/questions.length)*100);
+
+// kleine XP altijd
+addXP(Math.floor(score*5));
+
+// module mastery registratie
+const module = document.getElementById("moduleSelect").value;
+registerModuleScore(module, percentage);
+
+// kaart updaten
+if(typeof renderPlayerCard === "function")
+    renderPlayerCard();
     
     // ===== XP + MODULE PROGRESS =====
 
@@ -467,6 +481,10 @@ if(currentLesson === "all"){
     );
 }
 
+// UI updaten
+if(typeof renderPlayerCard === "function")
+    renderPlayerCard();
+    
 const resultDiv=document.getElementById("result");
 
 let html="<h3>Review</h3>";
