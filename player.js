@@ -39,17 +39,16 @@ function updateRank(player){
 }
 
 function setRank(player,name,badge){
-    if(player.rank !== name){
-        player.rank = name;
-        player.badge = badge;
-        showPromotion(name,badge);
-    }
-}
 
-    // ===== PROMOTION DETECT =====
-    if(oldRank !== newRank.name){
-        showPromotion(newRank);
-    }
+    if(player.rank === name) return;
+
+    player.rank = name;
+    player.badge = badge;
+
+    showPromotion({
+        name:name,
+        badge:badge
+    });
 }
 
 function addXP(amount){
@@ -117,9 +116,10 @@ window.addEventListener("load", () => {
     ensurePlayer();
     renderPlayerCard();
 });
-  function showPromotion(rank){
+ function showPromotion(rank){
 
-    // overlay
+    const pathFix = location.pathname.includes('WRK_Quiz_v1') ? '../' : '';
+
     const overlay = document.createElement("div");
     overlay.style.position = "fixed";
     overlay.style.inset = "0";
@@ -128,9 +128,7 @@ window.addEventListener("load", () => {
     overlay.style.alignItems = "center";
     overlay.style.justifyContent = "center";
     overlay.style.zIndex = "9999";
-    overlay.style.animation = "fadeIn 0.3s ease";
 
-    // card
     const card = document.createElement("div");
     card.style.background = "#0B1222";
     card.style.border = "3px solid #F5CA51";
@@ -144,7 +142,7 @@ window.addEventListener("load", () => {
     card.innerHTML = `
         <div style="font-size:14px;opacity:.7">PROMOTION</div>
         <div style="font-size:28px;font-weight:800;margin:8px 0">✦ ${rank.name} ✦</div>
-        <img src="${location.pathname.includes('WRK_Quiz_v1') ? '../' : ''}${rank.badge}"> style="width:120px;margin:12px 0">
+        <img src="${pathFix + rank.badge}" style="width:120px;margin:12px 0">
         <div style="opacity:.8;margin-top:10px">You have been promoted</div>
         <button style="
             margin-top:18px;
