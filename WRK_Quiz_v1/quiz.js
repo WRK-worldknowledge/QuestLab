@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=41")
+fetch("data/wrk-data.json?v=42")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -455,10 +455,11 @@ document.getElementById("score").textContent =
 const percentage = Math.round((score/questions.length)*100);
 
 // ===== XP & PROGRESS (FINAL) =====
+// ===== BASE XP (klein — alleen motivatie) =====
 const percent = Math.round((score/questions.length)*100);
 
-// basis XP: 0–150
-const xpEarned = Math.round(percent * 1.5);
+// max ±40 XP per quiz
+const xpEarned = Math.round(percent * 0.4);
 addXP(xpEarned);
 
 // alleen module test telt voor badges
