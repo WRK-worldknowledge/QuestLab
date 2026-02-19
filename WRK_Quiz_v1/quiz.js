@@ -8,6 +8,7 @@ let score = 0;
 let userAnswers = [];
 let results = [];
 let currentChoice = null;
+let quizActive = false;
 
 const moduleNames = {
     "EURW": "1. Western Europe",
@@ -99,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=36")
+fetch("data/wrk-data.json?v=37")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -197,6 +198,8 @@ function startQuiz(){
 const module=document.getElementById("moduleSelect").value;
 const lesson=document.getElementById("lessonSelect").value;
 const type=document.getElementById("typeSelect").value;
+
+    quizActive = true;
 
 currentLesson=lesson;
 
@@ -397,6 +400,7 @@ function gradeQuiz(){
 score=0;
 results=[];
 
+
 questions.forEach((q,i)=>{
 
     const correctAnswers = [
@@ -438,6 +442,8 @@ finishQuiz();
 // ================= FINISH =================
 function finishQuiz(){
 
+        quizActive = false;
+
 document.getElementById("quiz").style.display="none";
 document.getElementById("result").style.display="block";
 
@@ -465,6 +471,7 @@ html += "</div>";
 
 });
 
+
 resultDiv.innerHTML+=html;
 
 }
@@ -481,4 +488,10 @@ mapImage.addEventListener("click", ()=>{
 
 lightbox.addEventListener("click", ()=>{
     lightbox.style.display="none";
+});
+window.addEventListener("beforeunload", function (e) {
+    if (!quizActive) return;
+
+    e.preventDefault();
+    e.returnValue = "";
 });
