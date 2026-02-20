@@ -1,0 +1,7514 @@
+[
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Algeria",
+    "image": "Algeria.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Algiers",
+    "country": "Algeria",
+    "image": "ALG Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "ALG",
+    "city": "Algiers",
+    "display": "Algiers",
+    "image": "ALG Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Angola",
+    "image": "Angola.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Luanda",
+    "country": "Angola",
+    "image": "LAD pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "LAD",
+    "city": "Luanda",
+    "display": "Luanda",
+    "image": "LAD pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Benin",
+    "image": "Benin.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Cotonou",
+    "country": "Benin",
+    "image": "COO pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "COO",
+    "city": "Cotonou",
+    "display": "Cotonou",
+    "image": "COO pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Burkina Faso",
+    "image": "Burkina Faso.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Ouagadougou",
+    "country": "Burkina Faso",
+    "image": "OUA Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "OUA",
+    "city": "Ouagadougou",
+    "display": "Ouagadougou",
+    "image": "OUA Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Cameroon",
+    "image": "Cameroon.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Yaounde",
+    "country": "Cameroon",
+    "image": "YAO pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "YAO",
+    "city": "Yaounde",
+    "display": "Yaounde",
+    "image": "YAO pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Cape Verde",
+    "image": "Cape Verde.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Praia",
+    "country": "Cape Verde",
+    "image": "RAI pijlen.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "RAI",
+    "city": "Praia",
+    "display": "Praia",
+    "image": "RAI pijlen.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Central African Republic",
+    "image": "CAR.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Bangui",
+    "country": "Central African Republic",
+    "image": "BGF pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "BGF",
+    "city": "Bangui",
+    "display": "Bangui",
+    "image": "BGF pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Chad",
+    "image": "Chad.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "N'Djamena",
+    "country": "Chad",
+    "image": "NDJ Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "NDJ",
+    "city": "N'Djamena",
+    "display": "N'Djamena",
+    "image": "NDJ Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Cote d'Ivoire",
+    "image": "Cote d'Ivoire.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Yamoussoukro",
+    "country": "Cote d'Ivoire",
+    "image": "ASK pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "ASK",
+    "city": "Yamoussoukro",
+    "display": "Yamoussoukro",
+    "image": "ASK pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Cote d'Ivoire",
+    "image": "Cote d'Ivoire.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Abidjan",
+    "country": "Cote d'Ivoire",
+    "image": "ABJ pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "ABJ",
+    "city": "Abidjan",
+    "display": "Abidjan",
+    "image": "ABJ pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Democratic Republic of Congo",
+    "image": "DCR.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Kinshasa",
+    "country": "Democratic Republic of Congo",
+    "image": "FIH pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "FIH",
+    "city": "Kinshasa",
+    "display": "Kinshasa",
+    "image": "FIH pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Djibouti",
+    "image": "Djibouti.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Djibouti",
+    "country": "Djibouti",
+    "image": "JIB pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "JIB",
+    "city": "Djibouti",
+    "display": "Djibouti",
+    "image": "JIB pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Egypt",
+    "image": "Egypt.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Cairo",
+    "country": "Egypt",
+    "image": "CAI Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "CAI",
+    "city": "Cairo",
+    "display": "Cairo",
+    "image": "CAI Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Egypt",
+    "image": "Egypt.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Hurghada",
+    "country": "Egypt",
+    "image": "HRG Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "HRG",
+    "city": "Hurghada",
+    "display": "Hurghada",
+    "image": "HRG Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Egypt",
+    "image": "Egypt.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Sharm el Sheikh",
+    "country": "Egypt",
+    "image": "SSH Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "SSH",
+    "city": "Sharm el Sheikh",
+    "display": "Sharm el Sheikh",
+    "image": "SSH Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Equatorial Guinea",
+    "image": "Equatorial Guinea.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Malabo",
+    "country": "Equatorial Guinea",
+    "image": "SSG pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "SSG",
+    "city": "Malabo",
+    "display": "Malabo",
+    "image": "SSG pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Ethiopia",
+    "image": "Ethiopia.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "image": "ADD pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "ADD",
+    "city": "Addis Ababa",
+    "display": "Addis Ababa",
+    "image": "ADD pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Gabon",
+    "image": "Gabon.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Libreville",
+    "country": "Gabon",
+    "image": "LBV pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "LBV",
+    "city": "Libreville",
+    "display": "Libreville",
+    "image": "LBV pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Gambia",
+    "image": "Gambia.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Banjul",
+    "country": "Gambia",
+    "image": "BJL Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "BJL",
+    "city": "Banjul",
+    "display": "Banjul",
+    "image": "BJL Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Ghana",
+    "image": "Ghana.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Accra",
+    "country": "Ghana",
+    "image": "ACC pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "ACC",
+    "city": "Accra",
+    "display": "Accra",
+    "image": "ACC pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Guinea",
+    "image": "Guinea.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Conakry",
+    "country": "Guinea",
+    "image": "CKY pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "CKY",
+    "city": "Conakry",
+    "display": "Conakry",
+    "image": "CKY pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Kenya",
+    "image": "Kenya.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Mombasa",
+    "country": "Kenya",
+    "image": "MBA pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "MBA",
+    "city": "Mombasa",
+    "display": "Mombasa",
+    "image": "MBA pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Kenya",
+    "image": "Kenya.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "image": "NBO pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "NBO",
+    "city": "Nairobi",
+    "display": "Nairobi",
+    "image": "NBO pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Libya",
+    "image": "Libya.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Tripoli",
+    "country": "Libya",
+    "image": "TIP Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "TIP",
+    "city": "Tripoli",
+    "display": "Tripoli",
+    "image": "TIP Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Madagascar",
+    "image": "Madagascar.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Antananarivo",
+    "country": "Madagascar",
+    "image": "TNR pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "TNR",
+    "city": "Antananarivo",
+    "display": "Antananarivo",
+    "image": "TNR pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Malawi",
+    "image": "Malawi.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Lilongwe",
+    "country": "Malawi",
+    "image": "LLW pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "LLW",
+    "city": "Lilongwe",
+    "display": "Lilongwe",
+    "image": "LLW pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Mali",
+    "image": "Mali.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Bamako",
+    "country": "Mali",
+    "image": "BKO Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "BKO",
+    "city": "Bamako",
+    "display": "Bamako",
+    "image": "BKO Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Mauritius",
+    "image": "Mauritius.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Port Louis",
+    "country": "Mauritius",
+    "image": "MRU pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "MRU",
+    "city": "Port Louis",
+    "display": "Port Louis",
+    "image": "MRU pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Morocco",
+    "image": "Morocco.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Casablanca",
+    "country": "Morocco",
+    "image": "CMN Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "CMN",
+    "city": "Casablanca",
+    "display": "Casablanca",
+    "image": "CMN Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Morocco",
+    "image": "Morocco.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Marrakech",
+    "country": "Morocco",
+    "image": "RAK Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "RAK",
+    "city": "Marrakech",
+    "display": "Marrakech",
+    "image": "RAK Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Morocco",
+    "image": "Morocco.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Rabat",
+    "country": "Morocco",
+    "image": "RBA Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "RBA",
+    "city": "Rabat",
+    "display": "Rabat",
+    "image": "RBA Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Mozambique",
+    "image": "Mozambique.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Maputo",
+    "country": "Mozambique",
+    "image": "MPM pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "MPM",
+    "city": "Maputo",
+    "display": "Maputo",
+    "image": "MPM pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Namibia",
+    "image": "Namibia.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Windhoek",
+    "country": "Namibia",
+    "image": "WDH pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "WDH",
+    "city": "Windhoek",
+    "display": "Windhoek",
+    "image": "WDH pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Niger ",
+    "image": "Niger.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Niamey",
+    "country": "Niger ",
+    "image": "NIM pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "NIM",
+    "city": "Niamey",
+    "display": "Niamey",
+    "image": "NIM pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Nigeria",
+    "image": "Nigeria.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "image": "ABV pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "ABV",
+    "city": "Abuja",
+    "display": "Abuja",
+    "image": "ABV pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Nigeria",
+    "image": "Nigeria.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "image": "LOS pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "LOS",
+    "city": "Lagos",
+    "display": "Lagos",
+    "image": "LOS pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Republic of Congo",
+    "image": "Republic of the Congo.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Brazzaville",
+    "country": "Republic of Congo",
+    "image": "BZV pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "BZV",
+    "city": "Brazzaville",
+    "display": "Brazzaville",
+    "image": "BZV pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Rwanda",
+    "image": "Rwanda.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Kigali",
+    "country": "Rwanda",
+    "image": "KGL pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "KGL",
+    "city": "Kigali",
+    "display": "Kigali",
+    "image": "KGL pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Senegal",
+    "image": "Senegal.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Dakar",
+    "country": "Senegal",
+    "image": "DSS Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "DSS",
+    "city": "Dakar",
+    "display": "Dakar",
+    "image": "DSS Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Seychelles",
+    "image": "SEZ pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Victoria",
+    "country": "Seychelles",
+    "image": "SEZ pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "SEZ",
+    "city": "Victoria",
+    "display": "Victoia, Seychelles",
+    "image": "SEZ pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Sierra Leone",
+    "image": "Sierra Leone.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Freetown",
+    "country": "Sierra Leone",
+    "image": "FNA pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "FNA",
+    "city": "Freetown",
+    "display": "Freetown",
+    "image": "FNA pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "South Africa",
+    "image": "South Africa.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "image": "CPT pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "CPT",
+    "city": "Cape Town",
+    "display": "Cape Town",
+    "image": "CPT pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "South Africa",
+    "image": "South Africa.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "image": "JNB pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "JNB",
+    "city": "Johannesburg",
+    "display": "Johannesburg",
+    "image": "JNB pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Tanzania",
+    "image": "Tanzania.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Dar es Salaam",
+    "country": "Tanzania",
+    "image": "DAR pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "DAR",
+    "city": "Dar es Salaam",
+    "display": "Dar es Salaam",
+    "image": "DAR pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "country",
+    "country": "Togo",
+    "image": "Togo.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "city",
+    "city": "Lomé",
+    "country": "Togo",
+    "image": "LFW pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahel countries",
+    "type": "iata",
+    "iata": "LFW",
+    "city": "Lomé",
+    "display": "Lomé",
+    "image": "LFW pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "country",
+    "country": "Tunisia",
+    "image": "Tunis.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "city",
+    "city": "Tunis",
+    "country": "Tunisia",
+    "image": "TUN Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Northern Africa - Sahara countries",
+    "type": "iata",
+    "iata": "TUN",
+    "city": "Tunis",
+    "display": "Tunis",
+    "image": "TUN Pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "country",
+    "country": "Uganda",
+    "image": "Uganda.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "city",
+    "city": "Entebbe",
+    "country": "Uganda",
+    "image": "EBB pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Central Africa",
+    "type": "iata",
+    "iata": "EBB",
+    "city": "Entebbe",
+    "display": "Entebbe",
+    "image": "EBB pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Zambia",
+    "image": "Zambia.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Lusaka",
+    "country": "Zambia",
+    "image": "LUN pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "LUN",
+    "city": "Lusaka",
+    "display": "Lusaka",
+    "image": "LUN pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "country",
+    "country": "Zimbabwe",
+    "image": "Zimbabwe wit.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "city",
+    "city": "Harare",
+    "country": "Zimbabwe",
+    "image": "HRE pijl.png"
+  },
+  {
+    "module": "Africa",
+    "lesson": "Southern Africa",
+    "type": "iata",
+    "iata": "HRE",
+    "city": "Harare",
+    "display": "Harare",
+    "image": "HRE pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Argentina",
+    "image": "Argentina.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "image": "EZE Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "EZE",
+    "city": "Buenos Aires",
+    "display": "Buenos Aires",
+    "image": "EZE Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Aruba",
+    "image": "AUA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Oranjestad",
+    "country": "Aruba",
+    "image": "AUA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "AUA",
+    "city": "Oranjestad",
+    "display": "Oranjestad",
+    "image": "AUA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Bonaire",
+    "image": "BON pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Kralendijk",
+    "country": "Bonaire",
+    "image": "BON pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "BON",
+    "city": "Kralendijk",
+    "display": "Kralendijk",
+    "image": "BON pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Brazil",
+    "image": "Brazil.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Brasilia",
+    "country": "Brazil",
+    "image": "BSB Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "BSB",
+    "city": "Brasilia",
+    "display": "Brasilia",
+    "image": "BSB Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Brazil",
+    "image": "Brazil.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Fortaleza",
+    "country": "Brazil",
+    "image": "FOR Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "FOR",
+    "city": "Fortaleza",
+    "display": "Fortaleza",
+    "image": "FOR Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Brazil",
+    "image": "Brazil.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "image": "GIG Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "GIG",
+    "city": "Rio de Janeiro",
+    "display": "Rio de Janeiro",
+    "image": "GIG Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Brazil",
+    "image": "Brazil.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "image": "GRU Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "GRU",
+    "city": "São Paulo",
+    "display": "São Paulo",
+    "image": "GRU Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Canada",
+    "image": "Canada.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Calgary",
+    "country": "Canada",
+    "image": "YYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "YYC",
+    "city": "Calgary",
+    "display": "Calgary",
+    "image": "YYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Canada",
+    "image": "Canada.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Edmonton",
+    "country": "Canada",
+    "image": "YEG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "YEG",
+    "city": "Edmonton",
+    "display": "Edmonton",
+    "image": "YEG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Canada",
+    "image": "Canada.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Montreal",
+    "country": "Canada",
+    "image": "YUL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "YUL",
+    "city": "Montreal",
+    "display": "Montreal",
+    "image": "YUL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Canada",
+    "image": "Canada.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Ottawa",
+    "country": "Canada",
+    "image": "YOW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "YOW",
+    "city": "Ottawa",
+    "display": "Ottawa",
+    "image": "YOW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Canada",
+    "image": "Canada.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Toronto",
+    "country": "Canada",
+    "image": "YYZ pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "YYZ",
+    "city": "Toronto",
+    "display": "Toronto",
+    "image": "YYZ pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Canada",
+    "image": "Canada.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Vancouver ",
+    "country": "Canada",
+    "image": "YVR pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "YVR",
+    "city": "Vancouver ",
+    "display": "Vancouver ",
+    "image": "YVR pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Chile",
+    "image": "Chile.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Santiago de Chile",
+    "country": "Chile",
+    "image": "SCL Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "SCL",
+    "city": "Santiago de Chile",
+    "display": "Santiago de Chile",
+    "image": "SCL Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Colombia",
+    "image": "Colombia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Bogota",
+    "country": "Colombia",
+    "image": "BOG Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "BOG",
+    "city": "Bogota",
+    "display": "Bogota",
+    "image": "BOG Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Colombia",
+    "image": "Colombia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Cartagena",
+    "country": "Colombia",
+    "image": "CTG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "CTG",
+    "city": "Cartagena",
+    "display": "Cartagena",
+    "image": "CTG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Costa Rica",
+    "image": "CR.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "San Jose",
+    "country": "Costa Rica",
+    "image": "SJO pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "SJO",
+    "city": "San Jose",
+    "display": "San Jose",
+    "image": "SJO pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Cuba",
+    "image": "Cuba.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Havana",
+    "country": "Cuba",
+    "image": "HAV pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "HAV",
+    "city": "Havana",
+    "display": "Havana",
+    "image": "HAV pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Cuba",
+    "image": "Cuba.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Varadero",
+    "country": "Cuba",
+    "image": "VRA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "VRA",
+    "city": "Varadero",
+    "display": "Varadero",
+    "image": "VRA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Curacao",
+    "image": "CUR pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Willemstad",
+    "country": "Curacao",
+    "image": "CUR pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "CUR",
+    "city": "Willemstad",
+    "display": "Willemstad",
+    "image": "CUR pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Dominican Republic",
+    "image": "DR.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Punta Cana",
+    "country": "Dominican Republic",
+    "image": "PUJ pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "PUJ",
+    "city": "Punta Cana",
+    "display": "Punta Cana",
+    "image": "PUJ pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Dominican Republic",
+    "image": "DR.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Santo Domingo",
+    "country": "Dominican Republic",
+    "image": "SDQ pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "SDQ",
+    "city": "Santo Domingo",
+    "display": "Santo Domingo",
+    "image": "SDQ pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Ecuador",
+    "image": "Ecuador.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Guayaquil",
+    "country": "Ecuador",
+    "image": "GYE Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "GYE",
+    "city": "Guayaquil",
+    "display": "Guayaquil",
+    "image": "GYE Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Ecuador",
+    "image": "Ecuador.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Quito",
+    "country": "Ecuador",
+    "image": "UIO Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "UIO",
+    "city": "Quito",
+    "display": "Quito",
+    "image": "UIO Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "French Guyana ",
+    "image": "French Guiana.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Cayenne",
+    "country": "French Guyana ",
+    "image": "CAY Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "CAY",
+    "city": "Cayenne",
+    "display": "Cayenne",
+    "image": "CAY Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Guadeloupe ",
+    "image": "PTP pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Ponte-a-Pitre",
+    "country": "Guadeloupe ",
+    "image": "PTP pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "PTP",
+    "city": "Ponte-a-Pitre",
+    "display": "Ponte-a-Pitre",
+    "image": "PTP pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Haiti",
+    "image": "Haiti.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Port-au-Prince",
+    "country": "Haiti",
+    "image": "PAP pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "PAP",
+    "city": "Port-au-Prince",
+    "display": "Port-au-Prince",
+    "image": "PAP pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Jamaica",
+    "image": "Jamaica.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Kingston",
+    "country": "Jamaica",
+    "image": "KIN pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "KIN",
+    "city": "Kingston",
+    "display": "Kingston",
+    "image": "KIN pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Jamaica",
+    "image": "Jamaica.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Montego Bay",
+    "country": "Jamaica",
+    "image": "MBJ Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "MBJ",
+    "city": "Montego Bay",
+    "display": "Montego Bay",
+    "image": "MBJ Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Martinique",
+    "image": "FDF.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Fort de France",
+    "country": "Martinique",
+    "image": "FDF pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "FDF",
+    "city": "Fort de France",
+    "display": "Fort de France",
+    "image": "FDF pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "Mexico",
+    "image": "Mexico.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Cancun",
+    "country": "Mexico",
+    "image": "CUN pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "CUN",
+    "city": "Cancun",
+    "display": "Cancun",
+    "image": "CUN pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Mexico",
+    "image": "Mexico.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "image": "MEX pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "MEX",
+    "city": "Mexico City",
+    "display": "Mexico City",
+    "image": "MEX pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Panama",
+    "image": "Panama.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Panama City",
+    "country": "Panama",
+    "image": "PTY pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "PTY",
+    "city": "Panama City",
+    "display": "Panama City",
+    "image": "PTY pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Peru",
+    "image": "Peru.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Lima",
+    "country": "Peru",
+    "image": "LIM Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "LIM",
+    "city": "Lima",
+    "display": "Lima",
+    "image": "LIM Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "Sint Maarten",
+    "image": "SXM pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Philipsburg",
+    "country": "Sint Maarten",
+    "image": "SXM pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "SXM",
+    "city": "Philipsburg",
+    "display": "Philipsburg",
+    "image": "SXM pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Surinam",
+    "image": "Suriname.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Paramaribo",
+    "country": "Surinam",
+    "image": "PBM Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "PBM",
+    "city": "Paramaribo",
+    "display": "Paramaribo",
+    "image": "PBM Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Uruguay",
+    "image": "Uruguay.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Montevideo",
+    "country": "Uruguay",
+    "image": "MVD Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "MVD",
+    "city": "Montevideo",
+    "display": "Montevideo",
+    "image": "MVD Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Atlanta",
+    "country": "USA",
+    "image": "ATL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "ATL",
+    "city": "Atlanta",
+    "display": "Atlanta",
+    "image": "ATL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Boston",
+    "country": "USA",
+    "image": "BOS pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "BOS",
+    "city": "Boston",
+    "display": "Boston",
+    "image": "BOS pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Chicago",
+    "country": "USA",
+    "image": "ORD pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "ORD",
+    "city": "Chicago",
+    "display": "Chicago",
+    "image": "ORD pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Cincinnati",
+    "country": "USA",
+    "image": "CVG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "CVG",
+    "city": "Cincinnati",
+    "display": "Cincinnati",
+    "image": "CVG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Dallas ",
+    "country": "USA",
+    "image": "DFW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "DFW",
+    "city": "Dallas ",
+    "display": "Dallas ",
+    "image": "DFW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Detroit",
+    "country": "USA",
+    "image": "DTW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "DTW",
+    "city": "Detroit",
+    "display": "Detroit",
+    "image": "DTW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Honolulu",
+    "country": "USA",
+    "image": "HNL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "HNL",
+    "city": "Honolulu",
+    "display": "Honolulu",
+    "image": "HNL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Houston",
+    "country": "USA",
+    "image": "IAH pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "IAH",
+    "city": "Houston",
+    "display": "Houston",
+    "image": "IAH pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Las Vegas",
+    "country": "USA",
+    "image": "LAS pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "LAS",
+    "city": "Las Vegas",
+    "display": "Las Vegas",
+    "image": "LAS pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Los Angeles",
+    "country": "USA",
+    "image": "LAX pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "LAX",
+    "city": "Los Angeles",
+    "display": "Los Angeles",
+    "image": "LAX pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Miami",
+    "country": "USA",
+    "image": "MIA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "MIA",
+    "city": "Miami",
+    "display": "Miami",
+    "image": "MIA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Minneapolis",
+    "country": "USA",
+    "image": "MSP pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "MSP",
+    "city": "Minneapolis",
+    "display": "Minneapolis",
+    "image": "MSP pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "New York",
+    "country": "USA",
+    "image": "NYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "JFK",
+    "city": "New York",
+    "display": "New York John F. Kennedy ",
+    "image": "NYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "New York ",
+    "country": "USA",
+    "image": "NYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "LGA",
+    "city": "New York ",
+    "display": "New York La Guardia",
+    "image": "NYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "New York ",
+    "country": "USA",
+    "image": "NYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "EWR",
+    "city": "New York ",
+    "display": "New York Newark",
+    "image": "NYC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Orlando",
+    "country": "USA",
+    "image": "MCO pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "MCO",
+    "city": "Orlando",
+    "display": "Orlando",
+    "image": "MCO pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Pittsburgh",
+    "country": "USA",
+    "image": "PIT pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "PIT",
+    "city": "Pittsburgh",
+    "display": "Pittsburgh",
+    "image": "PIT pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Portland",
+    "country": "USA",
+    "image": "PDX pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "PDX",
+    "city": "Portland",
+    "display": "Portland",
+    "image": "PDX pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Salt Lake City",
+    "country": "USA",
+    "image": "SLC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "SLC",
+    "city": "Salt Lake City",
+    "display": "Salt Lake City",
+    "image": "SLC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "San Francisco",
+    "country": "USA",
+    "image": "SFO pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "SFO",
+    "city": "San Francisco",
+    "display": "San Francisco",
+    "image": "SFO pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "city",
+    "city": "Seattle",
+    "country": "USA",
+    "image": "SEA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Cities North America",
+    "type": "iata",
+    "iata": "SEA",
+    "city": "Seattle",
+    "display": "Seattle",
+    "image": "SEA pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "country",
+    "country": "USA",
+    "image": "USA.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "city",
+    "city": "Washington D.C.",
+    "country": "USA",
+    "image": "IAD pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and capitals North America & Caribbean",
+    "type": "iata",
+    "iata": "IAD",
+    "city": "Washington D.C.",
+    "display": "Washington D.C.",
+    "image": "IAD pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "country",
+    "country": "Venezuela",
+    "image": "Venezuela.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "city",
+    "city": "Caracas",
+    "country": "Venezuela",
+    "image": "CCS Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Countries and cities South America",
+    "type": "iata",
+    "iata": "CCS",
+    "city": "Caracas",
+    "display": "Caracas",
+    "image": "CCS Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Afghanistan",
+    "image": "Afghanistan.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Kabul",
+    "country": "Afghanistan",
+    "image": "KBL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "KBL",
+    "city": "Kabul",
+    "display": "Kabul",
+    "image": "KBL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Armenia",
+    "image": "Armenia white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Yerevan",
+    "country": "Armenia",
+    "image": "EVN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "EVN",
+    "city": "Yerevan",
+    "display": "Yerevan",
+    "image": "EVN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Bahrein",
+    "image": "BAH pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Manama",
+    "country": "Bahrein",
+    "image": "BAH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "BAH",
+    "city": "Manama",
+    "display": "Manama",
+    "image": "BAH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Bangladesh",
+    "image": "Bangladesh.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "image": "DAC Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "DAC",
+    "city": "Dhaka",
+    "display": "Dhaka",
+    "image": "DAC Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Cambodia",
+    "image": "Cambodia.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Phnom Penh",
+    "country": "Cambodia",
+    "image": "PNH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "PNH",
+    "city": "Phnom Penh",
+    "display": "Phnom Penh",
+    "image": "PNH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "China",
+    "image": "China.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Beijing",
+    "country": "China",
+    "image": "PEK Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "PEK",
+    "city": "Beijing",
+    "display": "Beijing",
+    "image": "PEK Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "China",
+    "image": "China.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Chengdu",
+    "country": "China",
+    "image": "CTU Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "CTU",
+    "city": "Chengdu",
+    "display": "Chengdu",
+    "image": "CTU Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "China",
+    "image": "China.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Hong Kong",
+    "country": "China",
+    "image": "HKG Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "HKG",
+    "city": "Hong Kong",
+    "display": "Hong Kong",
+    "image": "HKG Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "China",
+    "image": "China.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Shanghai",
+    "country": "China",
+    "image": "PVG Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "PVG",
+    "city": "Shanghai",
+    "display": "Shanghai",
+    "image": "PVG Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "China",
+    "image": "China.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Wuhan",
+    "country": "China",
+    "image": "WUH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "WUH",
+    "city": "Wuhan",
+    "display": "Wuhan",
+    "image": "WUH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Georgia",
+    "image": "Georgia.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Tbilisi",
+    "country": "Georgia",
+    "image": "TBS Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "TBS",
+    "city": "Tbilisi",
+    "display": "Tbilisi",
+    "image": "TBS Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "India",
+    "image": "India white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Mumbai",
+    "country": "India",
+    "image": "BOM Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "BOM",
+    "city": "Mumbai",
+    "display": "Mumbai",
+    "image": "BOM Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "India",
+    "image": "India white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "New Delhi",
+    "country": "India",
+    "image": "DEL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "DEL",
+    "city": "New Delhi",
+    "display": "New Delhi",
+    "image": "DEL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Indonesia",
+    "image": "Indonesia white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Denpasar",
+    "country": "Indonesia",
+    "image": "DPS Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "DPS",
+    "city": "Denpasar",
+    "display": "Denpasar",
+    "image": "DPS Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Indonesia",
+    "image": "Indonesia white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "image": "CGK Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "CGK",
+    "city": "Jakarta",
+    "display": "Jakarta",
+    "image": "CGK Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Iran",
+    "image": "Iran.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Tehran",
+    "country": "Iran",
+    "image": "IKA Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "IKA",
+    "city": "Tehran",
+    "display": "Tehran",
+    "image": "IKA Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Israel",
+    "image": "Israel.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "image": "TLV Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "TLV",
+    "city": "Tel Aviv",
+    "display": "Tel Aviv",
+    "image": "TLV Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Japan",
+    "image": "Japan white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Osaka",
+    "country": "Japan",
+    "image": "KIX Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "KIX",
+    "city": "Osaka",
+    "display": "Osaka",
+    "image": "KIX Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Japan",
+    "image": "Japan white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Tokyo ",
+    "country": "Japan",
+    "image": "NRT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "NRT",
+    "city": "Tokyo ",
+    "display": "Tokyo Narita",
+    "image": "NRT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Japan",
+    "image": "Japan white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Tokyo ",
+    "country": "Japan",
+    "image": "NRT pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "HND",
+    "city": "Tokyo ",
+    "display": "Tokyo Haneda",
+    "image": "NRT pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Jordan",
+    "image": "Jordan white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Amman",
+    "country": "Jordan",
+    "image": "AMM Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "AMM",
+    "city": "Amman",
+    "display": "Amman",
+    "image": "AMM Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Kazakhstan",
+    "image": "Kazakhstan.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Astana",
+    "country": "Kazakhstan",
+    "image": "NQZ Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "NQZ",
+    "city": "Astana",
+    "display": "Astana",
+    "image": "NQZ Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Kuwait",
+    "image": "Kuwait.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Kuwait",
+    "country": "Kuwait",
+    "image": "KWI Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "KWI",
+    "city": "Kuwait",
+    "display": "Kuwait",
+    "image": "KWI Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Laos",
+    "image": "Laos white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Vientiane",
+    "country": "Laos",
+    "image": "VTE Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "VTE",
+    "city": "Vientiane",
+    "display": "Vientiane",
+    "image": "VTE Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Lebanon",
+    "image": "Lebanon white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Beirut",
+    "country": "Lebanon",
+    "image": "BEY Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "BEY",
+    "city": "Beirut",
+    "display": "Beirut",
+    "image": "BEY Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Malaysia",
+    "image": "Malaysia.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "image": "KUL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "KUL",
+    "city": "Kuala Lumpur",
+    "display": "Kuala Lumpur",
+    "image": "KUL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Maldives",
+    "image": "Maldives.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Male",
+    "country": "Maldives",
+    "image": "MLE Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "MLE",
+    "city": "Male",
+    "display": "Male",
+    "image": "MLE Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Mongolia",
+    "image": "Mongolia.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Ulaanbataar",
+    "country": "Mongolia",
+    "image": "ULN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "UBN",
+    "city": "Ulaanbataar",
+    "display": "Ulaanbataar",
+    "image": "ULN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Myanmar",
+    "image": "Myanmar white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Naypyidaw",
+    "country": "Myanmar",
+    "image": "NYT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "NYT",
+    "city": "Naypyidaw",
+    "display": "Naypyidaw",
+    "image": "NYT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Nepal",
+    "image": "Nepal.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Kathmandu",
+    "country": "Nepal",
+    "image": "KTM Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "KTM",
+    "city": "Kathmandu",
+    "display": "Kathmandu",
+    "image": "KTM Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "North Korea",
+    "image": "North Korea.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Pyongyang",
+    "country": "North Korea",
+    "image": "FNJ Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "FNJ",
+    "city": "Pyongyang",
+    "display": "Pyongyang",
+    "image": "FNJ Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Oman",
+    "image": "Oman.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Muscat",
+    "country": "Oman",
+    "image": "MCT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "MCT",
+    "city": "Muscat",
+    "display": "Muscat",
+    "image": "MCT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Pakistan",
+    "image": "Pakistan.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Islamabad",
+    "country": "Pakistan",
+    "image": "ISB Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "ISB",
+    "city": "Islamabad",
+    "display": "Islamabad",
+    "image": "ISB Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Phillipines",
+    "image": "Philippines white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Manila",
+    "country": "Phillipines",
+    "image": "MNL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "MNL",
+    "city": "Manila",
+    "display": "Manila",
+    "image": "MNL Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Qatar",
+    "image": "Qatar.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Doha",
+    "country": "Qatar",
+    "image": "DOH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "DOH",
+    "city": "Doha",
+    "display": "Doha",
+    "image": "DOH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Russia",
+    "image": "1200px-Europe-Russia.svg.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Vladivistok",
+    "country": "Russia",
+    "image": "VVO pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "VVO",
+    "city": "Vladivistok",
+    "display": "Vladivistok",
+    "image": "VVO pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Saudi Arabia",
+    "image": "Saudi Arabia white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Jeddah",
+    "country": "Saudi Arabia",
+    "image": "JED Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "JED",
+    "city": "Jeddah",
+    "display": "Jeddah",
+    "image": "JED Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Saudi Arabia",
+    "image": "Saudi Arabia white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "image": "RUH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "RUH",
+    "city": "Riyadh",
+    "display": "Riyadh",
+    "image": "RUH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Singapore",
+    "image": "Singapore.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Singapore",
+    "country": "Singapore",
+    "image": "SIN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "SIN",
+    "city": "Singapore",
+    "display": "Singapore",
+    "image": "SIN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "South Korea",
+    "image": "South Korea white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Seoul",
+    "country": "South Korea",
+    "image": "ICN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "ICN",
+    "city": "Seoul",
+    "display": "Seoul",
+    "image": "ICN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Sri Lanka",
+    "image": "Sri Lanka white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Colombo",
+    "country": "Sri Lanka",
+    "image": "CMB Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "CMB",
+    "city": "Colombo",
+    "display": "Colombo",
+    "image": "CMB Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "Syria",
+    "image": "Syria.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Damascus",
+    "country": "Syria",
+    "image": "DAM.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "DAM",
+    "city": "Damascus",
+    "display": "Damascus",
+    "image": "DAM.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Taiwan",
+    "image": "Taiwan white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "image": "TPE Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "TPE",
+    "city": "Taipei",
+    "display": "Taipei",
+    "image": "TPE Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Thailand",
+    "image": "Thailand white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "image": "BKK Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "BKK",
+    "city": "Bangkok",
+    "display": "Bangkok",
+    "image": "BKK Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Thailand",
+    "image": "Thailand white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Phuket",
+    "country": "Thailand",
+    "image": "HKT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "HKT",
+    "city": "Phuket",
+    "display": "Phuket",
+    "image": "HKT Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "United Arab Emirates",
+    "image": "UAE white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "image": "AUH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "AUH",
+    "city": "Abu Dhabi",
+    "display": "Abu Dhabi",
+    "image": "AUH Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "country",
+    "country": "United Arab Emirates",
+    "image": "UAE white.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "city",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "image": "DXB Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Middle East & EurAsia",
+    "type": "iata",
+    "iata": "DXB",
+    "city": "Dubai",
+    "display": "Dubai",
+    "image": "DXB Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "country",
+    "country": "Uzbekistan",
+    "image": "Uzbekistan.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "city",
+    "city": "Tashkent",
+    "country": "Uzbekistan",
+    "image": "TAS Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Central Asia",
+    "type": "iata",
+    "iata": "TAS",
+    "city": "Tashkent",
+    "display": "Tashkent",
+    "image": "TAS Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Vietnam",
+    "image": "Vietnam.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "image": "HAN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "HAN",
+    "city": "Hanoi",
+    "display": "Hanoi",
+    "image": "HAN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "country",
+    "country": "Vietnam",
+    "image": "Vietnam.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "city",
+    "city": "Ho Chi Min City",
+    "country": "Vietnam",
+    "image": "SGN Pijl.png"
+  },
+  {
+    "module": "ASIA",
+    "lesson": "Far East",
+    "type": "iata",
+    "iata": "SGN",
+    "city": "Ho Chi Min City",
+    "display": "Ho Chi Min City",
+    "image": "SGN Pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Adelaide",
+    "country": "Australia",
+    "image": "ADL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "ADL",
+    "city": "Adelaide",
+    "display": "Adelaide",
+    "image": "ADL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Brisbane",
+    "country": "Australia",
+    "image": "BNE pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "BNE",
+    "city": "Brisbane",
+    "display": "Brisbane",
+    "image": "BNE pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Cairns",
+    "country": "Australia",
+    "image": "CNS pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "CNS",
+    "city": "Cairns",
+    "display": "Cairns",
+    "image": "CNS pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Canberra",
+    "country": "Australia",
+    "image": "CBR pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "CBR",
+    "city": "Canberra",
+    "display": "Canberra",
+    "image": "CBR pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Darwin",
+    "country": "Australia",
+    "image": "DRW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "DRW",
+    "city": "Darwin",
+    "display": "Darwin",
+    "image": "DRW pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Melbourne",
+    "country": "Australia",
+    "image": "MEL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "MEL",
+    "city": "Melbourne",
+    "display": "Melbourne",
+    "image": "MEL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Perth",
+    "country": "Australia",
+    "image": "PER pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "PER",
+    "city": "Perth",
+    "display": "Perth",
+    "image": "PER pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "Australia",
+    "image": "Australia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Sydney",
+    "country": "Australia",
+    "image": "SYD pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "SYD",
+    "city": "Sydney",
+    "display": "Sydney",
+    "image": "SYD pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "New Caledonia ",
+    "image": "New Caledonia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Noumea",
+    "country": "New Caledonia ",
+    "image": "NOU pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "NOU",
+    "city": "Noumea",
+    "display": "Noumea",
+    "image": "NOU pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "New Guinea",
+    "image": "Papua New Guinea.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Port Moresby",
+    "country": "New Guinea",
+    "image": "POM pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "POM",
+    "city": "Port Moresby",
+    "display": "Port Moresby",
+    "image": "POM pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "New Zealand",
+    "image": "New Zealand.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "image": "AKL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "AKL",
+    "city": "Auckland",
+    "display": "Auckland",
+    "image": "AKL pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "New Zealand",
+    "image": "New Zealand.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "image": "CHC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "CHC",
+    "city": "Christchurch",
+    "display": "Christchurch",
+    "image": "CHC pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "New Zealand",
+    "image": "New Zealand.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "image": "WLG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "WLG",
+    "city": "Wellington",
+    "display": "Wellington",
+    "image": "WLG pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "country",
+    "country": "French Polynesia",
+    "image": "French Polynesia.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "city",
+    "city": "Papeete",
+    "country": "French Polynesia",
+    "image": "PPT pijl.png"
+  },
+  {
+    "module": "AMOC",
+    "lesson": "Oceania",
+    "type": "iata",
+    "iata": "PPT",
+    "city": "Papeete",
+    "display": "Papeete",
+    "image": "PPT pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Albania",
+    "image": "Albanië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Tirana",
+    "country": "Albania",
+    "image": "Pijl TIA.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "TIA",
+    "city": "Tirana",
+    "display": "Tirana",
+    "image": "Pijl TIA.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Austria",
+    "image": "Oostenrijk.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Graz",
+    "country": "Austria",
+    "image": "Pijl GRZ.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "GRZ",
+    "city": "Graz",
+    "display": "Graz",
+    "image": "Pijl GRZ.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Austria",
+    "image": "Oostenrijk.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Innsbruck",
+    "country": "Austria",
+    "image": "Pijl INN.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "INN",
+    "city": "Innsbruck",
+    "display": "Innsbruck",
+    "image": "Pijl INN.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Austria",
+    "image": "Oostenrijk.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Klagenfurt",
+    "country": "Austria",
+    "image": "Pijl KLU.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "KLU",
+    "city": "Klagenfurt",
+    "display": "Klagenfurt",
+    "image": "Pijl KLU.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Austria",
+    "image": "Oostenrijk.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Salzburg",
+    "country": "Austria",
+    "image": "Pijl SZG.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "SZG",
+    "city": "Salzburg",
+    "display": "Salzburg",
+    "image": "Pijl SZG.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Austria",
+    "image": "Oostenrijk.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Vienna",
+    "country": "Austria",
+    "image": "Pijl VIE.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "VIE",
+    "city": "Vienna",
+    "display": "Vienna",
+    "image": "Pijl VIE.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Belarus",
+    "image": "Wit-Rusland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Minsk",
+    "country": "Belarus",
+    "image": "Pijl MSQ.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "MSQ",
+    "city": "Minsk",
+    "display": "Minsk",
+    "image": "Pijl MSQ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Belgium",
+    "image": "Belgium.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Brussels",
+    "country": "Belgium",
+    "image": "Pijl BRU.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "BRU",
+    "city": "Brussels",
+    "display": "Brussels",
+    "image": "Pijl BRU.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Belgium",
+    "image": "Belgium.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Brussels South Charleroi",
+    "country": "Belgium",
+    "image": "Pijl CRL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "CRL",
+    "city": "Brussels South Charleroi",
+    "display": "Brussels South Charleroi",
+    "image": "Pijl CRL.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Bosnia and Herzegovina",
+    "image": "Bosnië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Sarajevo",
+    "country": "Bosnia and Herzegovina",
+    "image": "Pijl SJJ.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "SJJ",
+    "city": "Sarajevo",
+    "display": "Sarajevo",
+    "image": "Pijl SJJ.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Bulgaria",
+    "image": "Bulgarije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Burgas",
+    "country": "Bulgaria",
+    "image": "Pijl BOJ.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "BOJ",
+    "city": "Burgas",
+    "display": "Burgas",
+    "image": "Pijl BOJ.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Bulgaria",
+    "image": "Bulgarije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "image": "Pijl SOF.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "SOF",
+    "city": "Sofia",
+    "display": "Sofia",
+    "image": "Pijl SOF.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Croatia",
+    "image": "Kroatië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Dubrovnik",
+    "country": "Croatia",
+    "image": "Pijl DBV.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "DBV",
+    "city": "Dubrovnik",
+    "display": "Dubrovnik",
+    "image": "Pijl DBV.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Croatia",
+    "image": "Kroatië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Split",
+    "country": "Croatia",
+    "image": "Pijl SPU.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "SPU",
+    "city": "Split",
+    "display": "Split",
+    "image": "Pijl SPU.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Croatia",
+    "image": "Kroatië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Zagreb",
+    "country": "Croatia",
+    "image": "Pijl ZAG.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "ZAG",
+    "city": "Zagreb",
+    "display": "Zagreb",
+    "image": "Pijl ZAG.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Cyprus",
+    "image": "Cyprus.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Larnaca",
+    "country": "Cyprus",
+    "image": "Pijl LCA.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "LCA",
+    "city": "Larnaca",
+    "display": "Larnaca",
+    "image": "Pijl LCA.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Cyprus",
+    "image": "Cyprus.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Paphos",
+    "country": "Cyprus",
+    "image": "Pijl PFO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "PFO",
+    "city": "Paphos",
+    "display": "Paphos",
+    "image": "Pijl PFO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Czech Republic",
+    "image": "Tsjechië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "image": "Pijl PRG.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "PRG",
+    "city": "Prague",
+    "display": "Prague",
+    "image": "Pijl PRG.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Denmark",
+    "image": "Denmark.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Aalborg",
+    "country": "Denmark",
+    "image": "Pijl AAL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "AAL",
+    "city": "Aalborg",
+    "display": "Aalborg",
+    "image": "Pijl AAL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Denmark",
+    "image": "Denmark.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Billund",
+    "country": "Denmark",
+    "image": "Pijl BLL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "BLL",
+    "city": "Billund",
+    "display": "Billund",
+    "image": "Pijl BLL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Denmark",
+    "image": "Denmark.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "image": "Pijl CPH.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "CPH",
+    "city": "Copenhagen",
+    "display": "Copenhagen",
+    "image": "Pijl CPH.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Estonia",
+    "image": "Estland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Tallinn",
+    "country": "Estonia",
+    "image": "Pijl TLL.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "TLL",
+    "city": "Tallinn",
+    "display": "Tallinn",
+    "image": "Pijl TLL.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Finland",
+    "image": "Finland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Helsinki",
+    "country": "Finland",
+    "image": "Pijl HEL.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "HEL",
+    "city": "Helsinki",
+    "display": "Helsinki",
+    "image": "Pijl HEL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Bordeaux",
+    "country": "France",
+    "image": "Pijl BOD.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "BOD",
+    "city": "Bordeaux",
+    "display": "Bordeaux",
+    "image": "Pijl BOD.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Chambéry",
+    "country": "France",
+    "image": "Pijl CMF.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "CMF",
+    "city": "Chambéry",
+    "display": "Chambéry",
+    "image": "Pijl CMF.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Lyon",
+    "country": "France",
+    "image": "Pijl LYS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "LYS",
+    "city": "Lyon",
+    "display": "Lyon",
+    "image": "Pijl LYS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Marseille",
+    "country": "France",
+    "image": "Pijl MRS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "MRS",
+    "city": "Marseille",
+    "display": "Marseille",
+    "image": "Pijl MRS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Nice",
+    "country": "France",
+    "image": "Pijl NCE.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "NCE",
+    "city": "Nice",
+    "display": "Nice",
+    "image": "Pijl NCE.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Paris",
+    "country": "France",
+    "image": "Pijl PAR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "CDG",
+    "city": "Paris",
+    "display": "Paris Charles de Gaulle",
+    "image": "Pijl PAR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Paris Orly",
+    "country": "France",
+    "image": "Pijl PAR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "ORY",
+    "city": "Paris Orly",
+    "display": "Paris Orly",
+    "image": "Pijl PAR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Strasbourg",
+    "country": "France",
+    "image": "Pijl SXB.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "SXB",
+    "city": "Strasbourg",
+    "display": "Strasbourg",
+    "image": "Pijl SXB.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "France",
+    "image": "France.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Toulouse",
+    "country": "France",
+    "image": "Pijl TLS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "TLS",
+    "city": "Toulouse",
+    "display": "Toulouse",
+    "image": "Pijl TLS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Germany",
+    "image": "Germany.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Berlin",
+    "country": "Germany",
+    "image": "Pijl BER.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "BER",
+    "city": "Berlin",
+    "display": "Berlin",
+    "image": "Pijl BER.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Germany",
+    "image": "Germany.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Dusseldorf",
+    "country": "Germany",
+    "image": "Pijl DUS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "DUS",
+    "city": "Dusseldorf",
+    "display": "Dusseldorf",
+    "image": "Pijl DUS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Germany",
+    "image": "Germany.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "image": "Pijl FRA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "FRA",
+    "city": "Frankfurt",
+    "display": "Frankfurt",
+    "image": "Pijl FRA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Germany",
+    "image": "Germany.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Hamburg",
+    "country": "Germany",
+    "image": "Pijl HAM.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "HAM",
+    "city": "Hamburg",
+    "display": "Hamburg",
+    "image": "Pijl HAM.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Germany",
+    "image": "Germany.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Munich",
+    "country": "Germany",
+    "image": "Pijl MUC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "MUC",
+    "city": "Munich",
+    "display": "Munich",
+    "image": "Pijl MUC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Germany",
+    "image": "Germany.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "image": "Pijl STR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "STR",
+    "city": "Stuttgart",
+    "display": "Stuttgart",
+    "image": "Pijl STR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Germany",
+    "image": "Germany.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Weeze Niederrhein",
+    "country": "Germany",
+    "image": "Pijl NRN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "NRN",
+    "city": "Weeze Niederrhein",
+    "display": "Weeze Niederrhein",
+    "image": "Pijl NRN.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Athens",
+    "country": "Greece",
+    "image": "Pijl ATH.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "ATH",
+    "city": "Athens",
+    "display": "Athens",
+    "image": "Pijl ATH.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Corfu",
+    "country": "Greece",
+    "image": "Pijl CFU.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "CFU",
+    "city": "Corfu",
+    "display": "Corfu",
+    "image": "Pijl CFU.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Heraklion",
+    "country": "Greece",
+    "image": "Pijl HER.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "HER",
+    "city": "Heraklion",
+    "display": "Heraklion",
+    "image": "Pijl HER.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Karpathos",
+    "country": "Greece",
+    "image": "Pijl AOK.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "AOK",
+    "city": "Karpathos",
+    "display": "Karpathos",
+    "image": "Pijl AOK.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Kos",
+    "country": "Greece",
+    "image": "Pijl KGS.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "KGS",
+    "city": "Kos",
+    "display": "Kos",
+    "image": "Pijl KGS.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Mykonos",
+    "country": "Greece",
+    "image": "Pijl JMK.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "JMK",
+    "city": "Mykonos",
+    "display": "Mykonos",
+    "image": "Pijl JMK.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Preveza",
+    "country": "Greece",
+    "image": "PVK pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "PVK",
+    "city": "Preveza",
+    "display": "Preveza",
+    "image": "PVK pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Rhodos",
+    "country": "Greece",
+    "image": "RHO pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "RHO",
+    "city": "Rhodos",
+    "display": "Rhodos",
+    "image": "RHO pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Samos",
+    "country": "Greece",
+    "image": "SMI pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "SMI",
+    "city": "Samos",
+    "display": "Samos",
+    "image": "SMI pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Santorini",
+    "country": "Greece",
+    "image": "Pijl JTR.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "JTR",
+    "city": "Santorini",
+    "display": "Santorini",
+    "image": "Pijl JTR.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Thessaloniki",
+    "country": "Greece",
+    "image": "SKG pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "SKG",
+    "city": "Thessaloniki",
+    "display": "Thessaloniki",
+    "image": "SKG pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "country",
+    "country": "Greece",
+    "image": "Griekenland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "city",
+    "city": "Zakynthos",
+    "country": "Greece",
+    "image": "ZTH Pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Greece",
+    "type": "iata",
+    "iata": "ZTH",
+    "city": "Zakynthos",
+    "display": "Zakynthos",
+    "image": "ZTH Pijl.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Hungary",
+    "image": "Hongarije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Budapest",
+    "country": "Hungary",
+    "image": "Pijl BUD.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "BUD",
+    "city": "Budapest",
+    "display": "Budapest",
+    "image": "Pijl BUD.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Iceland",
+    "image": "Iceland.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "image": "Pijk KEF.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "KEF",
+    "city": "Reykjavik",
+    "display": "Reykjavik",
+    "image": "Pijk KEF.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "Ireland",
+    "image": "Ireland.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Cork",
+    "country": "Ireland",
+    "image": "Pijl ORK.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "ORK",
+    "city": "Cork",
+    "display": "Cork",
+    "image": "Pijl ORK.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Ireland",
+    "image": "Ireland.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Dublin",
+    "country": "Ireland",
+    "image": "Pijl dub.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "DUB",
+    "city": "Dublin",
+    "display": "Dublin",
+    "image": "Pijl dub.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Bologna",
+    "country": "Italy",
+    "image": "Pijl BLQ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "BLQ",
+    "city": "Bologna",
+    "display": "Bologna",
+    "image": "Pijl BLQ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Catania",
+    "country": "Italy",
+    "image": "Pijl CTA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "CTA",
+    "city": "Catania",
+    "display": "Catania",
+    "image": "Pijl CTA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Florence",
+    "country": "Italy",
+    "image": "Pijl FLR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "FLR",
+    "city": "Florence",
+    "display": "Florence",
+    "image": "Pijl FLR.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Genua",
+    "country": "Italy",
+    "image": "Pijl GOA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "GOA",
+    "city": "Genua",
+    "display": "Genua",
+    "image": "Pijl GOA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Milan",
+    "country": "Italy",
+    "image": "Pijl MIL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "LIN",
+    "city": "Milan",
+    "display": "Milan Linate",
+    "image": "Pijl MIL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Milan",
+    "country": "Italy",
+    "image": "Pijl MIL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "MXP",
+    "city": "Milan",
+    "display": "Milan Malpensa",
+    "image": "Pijl MIL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Naples",
+    "country": "Italy",
+    "image": "Pijl NAP.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "NAP",
+    "city": "Naples",
+    "display": "Naples",
+    "image": "Pijl NAP.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Olbia",
+    "country": "Italy",
+    "image": "Pijl OLB.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "OLB",
+    "city": "Olbia",
+    "display": "Olbia",
+    "image": "Pijl OLB.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Pisa",
+    "country": "Italy",
+    "image": "Pijl PSA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "PSA",
+    "city": "Pisa",
+    "display": "Pisa",
+    "image": "Pijl PSA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Rome",
+    "country": "Italy",
+    "image": "Pijl FCO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "FCO",
+    "city": "Rome",
+    "display": "Rome",
+    "image": "Pijl FCO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Turin",
+    "country": "Italy",
+    "image": "Pijl TRN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "TRN",
+    "city": "Turin",
+    "display": "Turin",
+    "image": "Pijl TRN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Italy",
+    "image": "Italy.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Venice",
+    "country": "Italy",
+    "image": "Pijl VCE.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "VCE",
+    "city": "Venice",
+    "display": "Venice",
+    "image": "Pijl VCE.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Kosovo",
+    "image": "Kosovo.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Pristina",
+    "country": "Kosovo",
+    "image": "Pijl PRN.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "PRN",
+    "city": "Pristina",
+    "display": "Pristina",
+    "image": "Pijl PRN.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Latvia",
+    "image": "Letland.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Riga",
+    "country": "Latvia",
+    "image": "Pijl RIX.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "RIX",
+    "city": "Riga",
+    "display": "Riga",
+    "image": "Pijl RIX.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Lithuania",
+    "image": "Litouwen.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "image": "Pijl VNO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "VNO",
+    "city": "Vilnius",
+    "display": "Vilnius",
+    "image": "Pijl VNO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Luxembourg",
+    "image": "Luxembourg.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Luxembourg",
+    "country": "Luxembourg",
+    "image": "Pijl LUX.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "LUX",
+    "city": "Luxembourg",
+    "display": "Luxembourg",
+    "image": "Pijl LUX.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Malta",
+    "image": "Malta.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Valletta",
+    "country": "Malta",
+    "image": "Pijl MLA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "MLA",
+    "city": "Valletta",
+    "display": "Valletta",
+    "image": "Pijl MLA.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Moldova",
+    "image": "Moldavië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Chisinau",
+    "country": "Moldova",
+    "image": "Pijl RMO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "RMO",
+    "city": "Chisinau",
+    "display": "Chisinau",
+    "image": "Pijl RMO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Montenegro",
+    "image": "Montenegro.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Podgorica",
+    "country": "Montenegro",
+    "image": "Pijl TGD.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "TGD",
+    "city": "Podgorica",
+    "display": "Podgorica",
+    "image": "Pijl TGD.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Netherlands",
+    "image": "Netherlands.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Amsterdam ",
+    "country": "Netherlands",
+    "image": "Pijl AMS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "AMS",
+    "city": "Amsterdam ",
+    "display": "Amsterdam ",
+    "image": "Pijl AMS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Netherlands",
+    "image": "Netherlands.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Eindhoven",
+    "country": "Netherlands",
+    "image": "Pijl EIN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "EIN",
+    "city": "Eindhoven",
+    "display": "Eindhoven",
+    "image": "Pijl EIN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Netherlands",
+    "image": "Netherlands.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Groningen",
+    "country": "Netherlands",
+    "image": "Pijl GRQ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "GRQ",
+    "city": "Groningen",
+    "display": "Groningen",
+    "image": "Pijl GRQ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Netherlands",
+    "image": "Netherlands.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Maastricht",
+    "country": "Netherlands",
+    "image": "Pijl MST.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "MST",
+    "city": "Maastricht",
+    "display": "Maastricht",
+    "image": "Pijl MST.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Netherlands",
+    "image": "Netherlands.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Rotterdam ",
+    "country": "Netherlands",
+    "image": "Pijl RTM.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "RTM",
+    "city": "Rotterdam ",
+    "display": "Rotterdam ",
+    "image": "Pijl RTM.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "North Macedonia",
+    "image": "Macedonië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Ohrid",
+    "country": "North Macedonia",
+    "image": "Pijl OHD.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "OHD",
+    "city": "Ohrid",
+    "display": "Ohrid",
+    "image": "Pijl OHD.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "North Macedonia",
+    "image": "Macedonië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Skopje",
+    "country": "North Macedonia",
+    "image": "Pijl SKP.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "SKP",
+    "city": "Skopje",
+    "display": "Skopje",
+    "image": "Pijl SKP.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Norway",
+    "image": "Norway.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Alesund",
+    "country": "Norway",
+    "image": "Pijl AES.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "AES",
+    "city": "Alesund",
+    "display": "Alesund",
+    "image": "Pijl AES.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Norway",
+    "image": "Norway.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Bergen",
+    "country": "Norway",
+    "image": "Pijl BGO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "BGO",
+    "city": "Bergen",
+    "display": "Bergen",
+    "image": "Pijl BGO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Norway",
+    "image": "Norway.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Oslo",
+    "country": "Norway",
+    "image": "Pijl OSL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "OSL",
+    "city": "Oslo",
+    "display": "Oslo",
+    "image": "Pijl OSL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Norway",
+    "image": "Norway.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Stavanger",
+    "country": "Norway",
+    "image": "Pijl SVG.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "SVG",
+    "city": "Stavanger",
+    "display": "Stavanger",
+    "image": "Pijl SVG.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Norway",
+    "image": "Norway.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Trondheim",
+    "country": "Norway",
+    "image": "Pijl TRD.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "TRD",
+    "city": "Trondheim",
+    "display": "Trondheim",
+    "image": "Pijl TRD.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Poland",
+    "image": "Polen.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Gdansk",
+    "country": "Poland",
+    "image": "Pijl GDN.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "GDN",
+    "city": "Gdansk",
+    "display": "Gdansk",
+    "image": "Pijl GDN.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Poland",
+    "image": "Polen.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Krakow",
+    "country": "Poland",
+    "image": "Pijl KRK.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "KRK",
+    "city": "Krakow",
+    "display": "Krakow",
+    "image": "Pijl KRK.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Poland",
+    "image": "Polen.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Warsaw",
+    "country": "Poland",
+    "image": "Pijl WAW.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "WAW",
+    "city": "Warsaw",
+    "display": "Warsaw",
+    "image": "Pijl WAW.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Portugal",
+    "image": "Portugal.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Faro",
+    "country": "Portugal",
+    "image": "Pijl FAO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "FAO",
+    "city": "Faro",
+    "display": "Faro",
+    "image": "Pijl FAO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Portugal",
+    "image": "Portugal.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Funchal",
+    "country": "Portugal",
+    "image": "Pijl FNC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "FNC",
+    "city": "Funchal",
+    "display": "Funchal",
+    "image": "Pijl FNC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Portugal",
+    "image": "Portugal.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "image": "Pijl LIS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "LIS",
+    "city": "Lisbon",
+    "display": "Lisbon",
+    "image": "Pijl LIS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Portugal",
+    "image": "Portugal.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Porto",
+    "country": "Portugal",
+    "image": "Pijl OPO.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "OPO",
+    "city": "Porto",
+    "display": "Porto",
+    "image": "Pijl OPO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Romania",
+    "image": "Roemenië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Bucharest",
+    "country": "Romania",
+    "image": "Pijl OTP.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "OTP",
+    "city": "Bucharest",
+    "display": "Bucharest",
+    "image": "Pijl OTP.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Russia",
+    "image": "1200px-Europe-Russia.svg.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Moscow",
+    "country": "Russia",
+    "image": "Pijl SVO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "SVO",
+    "city": "Moscow",
+    "display": "Moscow",
+    "image": "Pijl SVO.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Russia",
+    "image": "1200px-Europe-Russia.svg.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "image": "Pijl LED.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "LED",
+    "city": "Saint Petersburg",
+    "display": "Saint Petersburg",
+    "image": "Pijl LED.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Serbia",
+    "image": "Servië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Belgrade",
+    "country": "Serbia",
+    "image": "Pijl BEG.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "BEG",
+    "city": "Belgrade",
+    "display": "Belgrade",
+    "image": "Pijl BEG.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Slovakia",
+    "image": "Slowakije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Bratislava",
+    "country": "Slovakia",
+    "image": "Pijl BTS.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "BTS",
+    "city": "Bratislava",
+    "display": "Bratislava",
+    "image": "Pijl BTS.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "country",
+    "country": "Slovenia",
+    "image": "Slovenië.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "city",
+    "city": "Ljubljana",
+    "country": "Slovenia",
+    "image": "Pijl LJU.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Austria, Hungary, Romania, Moldova & the Balkan",
+    "type": "iata",
+    "iata": "LJU",
+    "city": "Ljubljana",
+    "display": "Ljubljana",
+    "image": "Pijl LJU.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Alicante",
+    "country": "Spain",
+    "image": "Pijl ALC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "ALC",
+    "city": "Alicante",
+    "display": "Alicante",
+    "image": "Pijl ALC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Arrecife",
+    "country": "Spain",
+    "image": "Pijl ACE.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "ACE",
+    "city": "Arrecife",
+    "display": "Arrecife",
+    "image": "Pijl ACE.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Barcelona ",
+    "country": "Spain",
+    "image": "Pijl BCN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "BCN",
+    "city": "Barcelona ",
+    "display": "Barcelona ",
+    "image": "Pijl BCN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Fuerteventura",
+    "country": "Spain",
+    "image": "Pijl FUE.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "FUE",
+    "city": "Fuerteventura",
+    "display": "Fuerteventura",
+    "image": "Pijl FUE.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Ibiza",
+    "country": "Spain",
+    "image": "Pijl IBZ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "IBZ",
+    "city": "Ibiza",
+    "display": "Ibiza",
+    "image": "Pijl IBZ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "La Palma",
+    "country": "Spain",
+    "image": "Pijl SPC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "SPC",
+    "city": "La Palma",
+    "display": "La Palma",
+    "image": "Pijl SPC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Las Palmas",
+    "country": "Spain",
+    "image": "Pijl LPA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "LPA",
+    "city": "Las Palmas",
+    "display": "Las Palmas",
+    "image": "Pijl LPA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Madrid",
+    "country": "Spain",
+    "image": "Pijl MAD.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "MAD",
+    "city": "Madrid",
+    "display": "Madrid",
+    "image": "Pijl MAD.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Mahon",
+    "country": "Spain",
+    "image": "Pijl MAH.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "MAH",
+    "city": "Mahon",
+    "display": "Mahon",
+    "image": "Pijl MAH.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Malaga",
+    "country": "Spain",
+    "image": "Pijl AGP.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "AGP",
+    "city": "Malaga",
+    "display": "Malaga",
+    "image": "Pijl AGP.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Palma de Mallorca",
+    "country": "Spain",
+    "image": "Pijl PMI.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "PMI",
+    "city": "Palma de Mallorca",
+    "display": "Palma de Mallorca",
+    "image": "Pijl PMI.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Sevilla",
+    "country": "Spain",
+    "image": "Pijl SVQ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "SVQ",
+    "city": "Sevilla",
+    "display": "Sevilla",
+    "image": "Pijl SVQ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Tenerife",
+    "country": "Spain",
+    "image": "Pijl TFS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "TFS",
+    "city": "Tenerife",
+    "display": "Tenerife",
+    "image": "Pijl TFS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "country",
+    "country": "Spain",
+    "image": "Spain.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "city",
+    "city": "Valencia",
+    "country": "Spain",
+    "image": "Pijl VLC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Spain & Portugal",
+    "type": "iata",
+    "iata": "VLC",
+    "city": "Valencia",
+    "display": "Valencia",
+    "image": "Pijl VLC.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "country",
+    "country": "Sweden",
+    "image": "Sweden.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "city",
+    "city": "Gothenburg",
+    "country": "Sweden",
+    "image": "Pijl GOT.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Scandinavia, Germany & BeNeLux",
+    "type": "iata",
+    "iata": "GOT",
+    "city": "Gothenburg",
+    "display": "Gothenburg",
+    "image": "Pijl GOT.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Sweden",
+    "image": "Sweden.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "image": "Pijl ARN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "ARN",
+    "city": "Stockholm",
+    "display": "Stockholm",
+    "image": "Pijl ARN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Switzerland",
+    "image": "Switzerland.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Basel",
+    "country": "Switzerland",
+    "image": "Pijl BSL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "BSL",
+    "city": "Basel",
+    "display": "Basel",
+    "image": "Pijl BSL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "Switzerland",
+    "image": "Switzerland.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "Bern",
+    "country": "Switzerland",
+    "image": "Pijl BRN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "BRN",
+    "city": "Bern",
+    "display": "Bern",
+    "image": "Pijl BRN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Switzerland",
+    "image": "Switzerland.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Geneva",
+    "country": "Switzerland",
+    "image": "Pijl GVA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "GVA",
+    "city": "Geneva",
+    "display": "Geneva",
+    "image": "Pijl GVA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "country",
+    "country": "Switzerland",
+    "image": "Switzerland.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "city",
+    "city": "Zürich",
+    "country": "Switzerland",
+    "image": "Pijl ZRH.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Switzerland & Italy",
+    "type": "iata",
+    "iata": "ZRH",
+    "city": "Zürich",
+    "display": "Zürich",
+    "image": "Pijl ZRH.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Turkey",
+    "image": "Turkije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Ankara",
+    "country": "Turkey",
+    "image": "Pijl ESB.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "ESB",
+    "city": "Ankara",
+    "display": "Ankara",
+    "image": "Pijl ESB.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Turkey",
+    "image": "Turkije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Antalya",
+    "country": "Turkey",
+    "image": "Pijl AYT.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "AYT",
+    "city": "Antalya",
+    "display": "Antalya",
+    "image": "Pijl AYT.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Turkey",
+    "image": "Turkije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Bodrum",
+    "country": "Turkey",
+    "image": "Pijl BJV.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "BJV",
+    "city": "Bodrum",
+    "display": "Bodrum",
+    "image": "Pijl BJV.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Turkey",
+    "image": "Turkije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Dalaman",
+    "country": "Turkey",
+    "image": "Pijl DLM.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "DLM",
+    "city": "Dalaman",
+    "display": "Dalaman",
+    "image": "Pijl DLM.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Turkey",
+    "image": "Turkije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "image": "Pijl IST SAW.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "IST",
+    "city": "Istanbul",
+    "display": "Instanbul International",
+    "image": "Pijl IST SAW.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Turkey",
+    "image": "Turkije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Istanbul ",
+    "country": "Turkey",
+    "image": "Pijl IST SAW.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "SAW",
+    "city": "Istanbul ",
+    "display": "Istanbul Sabiha Gökçen",
+    "image": "Pijl IST SAW.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "country",
+    "country": "Turkey",
+    "image": "Turkije.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "city",
+    "city": "Izmir",
+    "country": "Turkey",
+    "image": "Pijl ADB.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Turkey & Cyprus",
+    "type": "iata",
+    "iata": "ADB",
+    "city": "Izmir",
+    "display": "Izmir",
+    "image": "Pijl ADB.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "country",
+    "country": "Ukraine",
+    "image": "Oekraïne.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "city",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "image": "Pijl KBP.png"
+  },
+  {
+    "module": "EURO",
+    "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+    "type": "iata",
+    "iata": "KBP",
+    "city": "Kyiv",
+    "display": "Kyiv",
+    "image": "Pijl KBP.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Aberdeen",
+    "country": "United Kingdom",
+    "image": "Pijl ABZ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "ABZ",
+    "city": "Aberdeen",
+    "display": "Aberdeen",
+    "image": "Pijl ABZ.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Belfast",
+    "country": "United Kingdom",
+    "image": "Pijl BFS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "BFS",
+    "city": "Belfast",
+    "display": "Belfast",
+    "image": "Pijl BFS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "image": "Pijl BHX.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "BHX",
+    "city": "Birmingham",
+    "display": "Birmingham",
+    "image": "Pijl BHX.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Bristol",
+    "country": "United Kingdom",
+    "image": "Pijl BRS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "BRS",
+    "city": "Bristol",
+    "display": "Bristol",
+    "image": "Pijl BRS.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "image": "Pijl EDI.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "EDI",
+    "city": "Edinburgh",
+    "display": "Edinburgh",
+    "image": "Pijl EDI.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "image": "Pijl GLA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "GLA",
+    "city": "Glasgow",
+    "display": "Glasgow",
+    "image": "Pijl GLA.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Liverpool",
+    "country": "United Kingdom",
+    "image": "Pijl LPL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "LPL",
+    "city": "Liverpool",
+    "display": "Liverpool",
+    "image": "Pijl LPL.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "London",
+    "country": "United Kingdom",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "LCY",
+    "city": "London",
+    "display": "London City",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "London",
+    "country": "United Kingdom",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "LGW",
+    "city": "London",
+    "display": "London Gatwick",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "London",
+    "country": "United Kingdom",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "LHR",
+    "city": "London",
+    "display": "London Heathrow",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "London",
+    "country": "United Kingdom",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "LTN",
+    "city": "London",
+    "display": "London Luton",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "city",
+    "city": "London",
+    "country": "United Kingdom",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "Countries and capital cities",
+    "type": "iata",
+    "iata": "STN",
+    "city": "London",
+    "display": "London Stansted",
+    "image": "Pijl LON.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "country",
+    "country": "United Kingdom",
+    "image": "United Kingdom.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "city",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "image": "Pijl MAN.png"
+  },
+  {
+    "module": "EURW",
+    "lesson": "UK, Ireland & France",
+    "type": "iata",
+    "iata": "MAN",
+    "city": "Manchester",
+    "display": "Manchester",
+    "image": "Pijl MAN.png"
+  }
+]
