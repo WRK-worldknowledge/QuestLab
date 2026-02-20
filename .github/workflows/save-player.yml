@@ -1,0 +1,37 @@
+name: Save QuestLab Player
+
+on:
+  repository_dispatch:
+    types: [save_player]
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Write player data
+        run: |
+          FILE="players.json"
+
+          if [ ! -f $FILE ]; then
+            echo "{}" > $FILE
+          fi
+
+          PLAYER_NAME="${{ github.event.client_payload.name }}"
+          PLAYER_DATA='${{ toJson(github.event.client_payload.player) }}'
+
+          jq --arg name "$PLAYER_NAME" --argjson data "$PLAYER_DATA" \
+            '.[$name]=$data' $FILE > temp.json
+
+          mv temp.json $FILE
+
+      - name: Commit changes
+        run: |
+          git config user.name "QuestLab Bot"
+          git config user.email "actions@github.com"
+          git add players.json
+          git commit -m "Auto save player" || echo "No changes"
+          git push
