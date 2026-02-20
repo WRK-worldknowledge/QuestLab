@@ -1,24 +1,3 @@
-// ===== CLOUD SAVE CONFIG =====
-const GITHUB_USER = "WRK-worldknowledge";
-const GITHUB_REPO = "QuestLab";
-const GITHUB_FILE = "players.json";
-const GITHUB_TOKEN = "HIER_JOUW_TOKEN";
-
- async function loadPlayerFromCloud(name){
-
-    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
-
-    const res = await fetch(url);
-    const data = await res.json();
-
-    const content = JSON.parse(atob(data.content));
-
-    if(content[name]){
-        localStorage.setItem("questlab_player", JSON.stringify(content[name]));
-        console.log("Cloud profile loaded");
-    }
-}
-
 // ===== RANKS / BADGES =====
 const ranks = [
   { name:"Service Agent",          xp:0,     badge:"badges/service_agent.png" },
