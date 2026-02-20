@@ -49,7 +49,8 @@ async function savePlayerToCloud(){
 
     console.log("Cloud save requested");
 }
-}// ===== RANKS / BADGES =====
+
+// ===== RANKS / BADGES =====
 const ranks = [
   { name:"Service Agent",          xp:0,     badge:"badges/service_agent.png" },
   { name:"Junior Flight Attendant",xp:200,   badge:"badges/junior_fa.png" },
