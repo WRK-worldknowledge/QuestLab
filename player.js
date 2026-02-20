@@ -30,40 +30,25 @@ async function loadPlayerFromCloud(name){
 // ===== SAVE TO CLOUD =====
 async function savePlayerToCloud(){
 
-    try{
-        const player = getPlayer();
-        const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+    const player = getPlayer();
 
-        const res = await fetch(url);
-        const data = await res.json();
+    await fetch("https://api.github.com/repos/WRK-worldknowledge/QuestLab/dispatches",{
+        method:"POST",
+        headers:{
+            "Accept":"application/vnd.github+json",
+            "Authorization":"Bearer " + QUESTLAB_TOKEN_RUNTIME
+        },
+        body:JSON.stringify({
+            event_type:"save_player",
+            client_payload:{
+                name:player.name,
+                player:player
+            }
+        })
+    });
 
-        let content = {};
-        try{
-            content = JSON.parse(atob(data.content));
-        }catch{
-            content = {};
-        }
-
-        content[player.name] = player;
-
-        await fetch(url,{
-            method:"PUT",
-            headers:{
-                "Authorization":"token " + GITHUB_TOKEN,
-                "Content-Type":"application/json"
-            },
-            body:JSON.stringify({
-                message:"QuestLab autosave",
-                content:btoa(JSON.stringify(content,null,2)),
-                sha:data.sha
-            })
-        });
-
-        console.log("☁️ Cloud saved");
-
-    }catch(e){
-        console.log("Cloud save failed");
-    }
+    console.log("Cloud save requested");
+}
 }// ===== RANKS / BADGES =====
 const ranks = [
   { name:"Service Agent",          xp:0,     badge:"badges/service_agent.png" },
