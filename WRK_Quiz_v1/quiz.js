@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=42")
+fetch("data/wrk-data.json?v=43")
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -473,6 +473,10 @@ if(currentLesson === "all"){
 // kaart vernieuwen
 if(typeof renderPlayerCard === "function")
     renderPlayerCard();
+    // cloud save
+if(typeof savePlayerToCloud === "function"){
+    savePlayerToCloud();
+}
 
 // UI updaten
 if(typeof renderPlayerCard === "function")
