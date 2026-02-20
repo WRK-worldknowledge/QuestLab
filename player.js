@@ -98,6 +98,21 @@ function renderPlayerCard(){
         <div class="playerXP">XP: ${player.xp}</div>
     `;
 }
+// ===== FIRST TIME PLAYER NAME =====
+function ensurePlayer(){
+
+    let player = getPlayer();
+
+    // eerste keer → naam vragen
+    if(player.name === "Cadet"){
+        const name = prompt("Enter your callsign:");
+
+        if(name && name.trim() !== ""){
+            player.name = name.trim();
+            localStorage.setItem("questlab_player", JSON.stringify(player));
+        }
+    }
+}
 
 // eerste keer speler naam vragen
 window.addEventListener("load", async () => {
