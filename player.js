@@ -2,7 +2,7 @@
 const GITHUB_USER = "WRK-worldknowledge";
 const GITHUB_REPO = "QuestLab";
 const GITHUB_FILE = "players.json";
-const GITHUB_TOKEN = "HIER_JOUW_TOKEN";
+const GITHUB_TOKEN = "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";
 
 // ===== LOAD FROM CLOUD =====
 async function loadPlayerFromCloud(name){
