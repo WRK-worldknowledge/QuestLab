@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WRK Quiz</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: system-ui, sans-serif;
+    background:#0F172A;
+    color:#F8FAFC;
+    text-align:center;
+}
+    .logo {
+  max-width: 160px;
+  margin: 20px auto;
+  display: block;
+}
+
+h1{
+    margin-top:20px;
+}
+
+#setup, #quiz, #result{
+    max-width:500px;
+    margin:auto;
+    padding:15px;
+}
+
+select, button, input{
+    width:100%;
+    padding:14px;
+    margin:8px 0;
+    border-radius:10px;
+    border:none;
+    font-size:18px;
+}
+
+button{
+    background:#F5CA51;
+    color:#0F172A;
+    font-weight:bold;
+}
+
+button:active{
+    transform:scale(0.97);
+}
+
+#options button{
+    margin-top:12px;
+    font-size:20px;
+}
+
+.correct{
+    background:#4caf50 !important;
+    color:white;
+}
+
+.wrong{
+    background:#d93025 !important;
+    color:white;
+}
+
+#mapImage{
+    width:100%;
+    max-width:420px;
+    margin-top:10px;
+    border-radius:12px;
+}
+    /* ================= QUIZ BUTTON STYLING ================= */
+
+/* multiple choice knoppen */
+#options button{
+    background:#F5CA51;
+    color:#0F172A;
+    border:none;
+    padding:12px 18px;
+    border-radius:12px;
+    margin:10px 0;
+    font-weight:600;
+    transition:all .15s ease;
+}
+
+/* hover = kleine feedback */
+#options button:hover{
+    background:#FFE7A3;
+}
+
+/* SELECTED = SUPER duidelijk */
+#options button.selected{
+    background:#FFF3C4;
+    color:#0F172A;
+    border:3px solid #F5CA51;
+    transform:scale(1.04);
+    box-shadow:0 4px 18px rgba(0,0,0,0.25);
+}
+
+/* NEXT = actieknop (blauw) */
+.nextBtn{
+    background:#2563EB !important;
+    color:white !important;
+    border:none !important;
+    font-weight:700;
+}
+
+/* hover next */
+.nextBtn:hover{
+    background:#1D4ED8 !important;
+}
+    /* afbeelding container netjes centreren */
+#quiz{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* afbeelding zelf */
+#mapImage{
+    display:block;
+    margin:20px auto;
+    border-radius:14px;
+    cursor:zoom-in;
+
+    /* nieuwe grootte regels */
+    width:min(92vw, 720px);
+    height:auto;
+    max-height:60vh;
+
+    object-fit:contain;
+    background:#0B1222;
+    padding:8px;
+}
+    /* LIGHTBOX */
+#lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.88);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+}
+
+#lightbox img{
+    max-width:95vw;
+    max-height:95vh;
+    border-radius:16px;
+    box-shadow:0 0 40px rgba(0,0,0,0.7);
+    cursor:zoom-out;
+}
+    .backBtn{
+    position:fixed;
+    top:14px;
+    left:14px;
+    background:#0F172A;
+    color:#F8FAFC;
+    border:2px solid #F5CA51;
+    padding:10px 14px;
+    border-radius:12px;
+    font-weight:700;
+    text-decoration:none;
+    font-size:14px;
+    z-index:999;
+}
+
+.backBtn:hover{
+    background:#F5CA51;
+    color:#0F172A;
+}
+</style>
+</head>
+
+<body>
+
+<a class="backBtn" href="../" onclick="safeToLeave=true;">⬅ Back to Game Console</a>
+
+<h1>WRK Quiz</h1>
+
+<div id="setup">
+
+<label>Module</label>
+<select id="moduleSelect"></select>
+
+<label>Lesson</label>
+<select id="lessonSelect"></select>
+
+<label>Question type</label>
+<select id="typeSelect">
+  <option value="city">City</option>
+  <option value="country">Country</option>
+  <option value="iata">IATA</option>
+  <option value="capital">Capital</option>
+</select>
+
+<label>Answer mode</label>
+<select id="modeSelect">
+  <option value="mc">Multiple choice</option>
+  <option value="type">Typing</option>
+</select>
+
+<button id="startBtn">Start quiz</button>
+
+</div>
+
+<div id="quiz" style="display:none">
+<p id="progress"></p>
+<img id="mapImage" style="display:none;">
+<h2 id="question"></h2>
+<div id="options"></div>
+</div>
+
+<div id="result" style="display:none">
+<h2>Session complete</h2>
+<p id="score"></p>
+<button onclick="location.reload()">New session</button>
+</div>
+    <div id="lightbox">
+    <img id="lightboxImg">
+</div>
+
+<script src="../player.js"></script>
+<script src="quiz.js"></script>
+
+</body>
+</html>
