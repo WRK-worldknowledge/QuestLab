@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("./data/wrk-data.json?v=1 + Date.now())
+fetch(`./data/wrk-data.json?v=${Date.now()}`)
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
