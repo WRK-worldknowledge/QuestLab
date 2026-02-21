@@ -100,7 +100,7 @@ return array;
 }
 
 // ================= LOAD DATA =================
-fetch("data/wrk-data.json?v=43")
+fetch("./data/wrk-data.json?v=1 + Date.now())
 .then(r=>{
     console.log("FETCH STATUS:", r.status);
     console.log("FETCH URL:", r.url);
@@ -303,7 +303,7 @@ switch(q.type){
 document.getElementById("question").textContent=questionText;
 const img=document.getElementById("mapImage");
 if(q.image){
-    img.src="images/"+q.image;
+    img.src="./images/"+q.image;
     img.style.display="block";
 }else img.style.display="none";
 
