@@ -146,10 +146,17 @@ function renderPlayerCard(){
     if(!el) return;
 
     el.innerHTML = `
+    <div class="playerHeader">
         <div class="playerName">${player.name}</div>
-        <img src="${player.badge}" style="width:48px;margin:6px 0">
-        <div class="playerRank">${player.rank}</div>
-        <div class="playerXP">XP: ${player.xp}</div>
+
+        <div class="playerRankBlock">
+        <div>
+        <span class="playerRank">${player.rank}</span>
+        <img src="${player.badge}" class="playerBadge">
+        </div>
+        <div class="playerXP">XP:${player.xp}</div>
+        </div>
+        </div>
     `;
 }
 // ===== FIRST TIME PLAYER NAME =====
