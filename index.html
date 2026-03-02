@@ -63,26 +63,44 @@ h1 {
     background:linear-gradient(145deg,#0F172A,#111E3A);
     border:3px solid #F5CA51;
     border-radius:20px;
-    padding:20px;
-    width:320PX;
+    padding:16xp 20px;
+    width:280PX;
     margin:30px auto 20px auto;
     box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
+  .playerHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:10px;
+  }
 
 .playerName{
     font-weight:700;
-    font-size:16px;
+    font-size:18px;
+  word-break:break-word;
+  flex:1;
 }
-
+.playerRankBlock{
+  text-align:right;
+}
+  
 .playerRank{
     color:#F5CA51;
     font-weight:600;
+  font-size:14xp;
 }
 
 .playerXP{
-    opacity:.8;
-    font-size:13px;
+    opacity:0.8;
+    font-size:12px;
 }
+  .playerBadge{
+    width:36px;
+    height:auto;
+    margin-left:6xp;
+  }
+  
   .game-buttons{
     display:flex;
     flex-direction:column;
