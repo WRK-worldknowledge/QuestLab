@@ -71,16 +71,18 @@ h1 {
   .playerHeader{
     display:flex;
     justify-content:space-between;
-    align-items:flex-start;
-    gap:10px;
+    align-items:center;
   }
 
 .playerName{
     font-weight:700;
     font-size:18px;
-  word-break:break-word;
-  flex:1;
+  max-width:150px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
+  
 .playerRankBlock{
   text-align:right;
 }
@@ -96,9 +98,9 @@ h1 {
     font-size:12px;
 }
   .playerBadge{
-    width:36px;
-    height:auto;
+    width:28px;
     margin-left:6xp;
+    vertical-align:middle;
   }
   
   .game-buttons{
