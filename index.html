@@ -63,7 +63,7 @@ h1 {
     background:linear-gradient(145deg,#0F172A,#111E3A);
     border:3px solid #F5CA51;
     border-radius:20px;
-    padding:16xp 20px;
+    padding:14xp 18px;
     width:280PX;
     margin:30px auto 20px auto;
     box-shadow:0 10px 25px rgba(0,0,0,0.4);
@@ -77,31 +77,39 @@ h1 {
 .playerName{
     font-weight:700;
     font-size:18px;
-  max-width:150px;
+  color:white;
+  max-width:130px;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
 }
   
-.playerRankBlock{
-  text-align:right;
+.playerRight{
+  display:felx;
+  slex-direction:column;
+  align-items:flex-end;
 }
+  .rankRow{
+    display:flex;
+    align-items:center;
+    gap:6xp;
+  }
   
 .playerRank{
     color:#F5CA51;
     font-weight:600;
   font-size:14xp;
 }
-
-.playerXP{
-    opacity:0.8;
-    font-size:12px;
-}
   .playerBadge{
-    width:28px;
-    margin-left:6xp;
-    vertical-align:middle;
+    width:26px;
+    height:auto;
   }
+  
+.playerXP{
+    font-size:12px;
+  opacity:0.7;
+  margin-top:2px;
+}
   
   .game-buttons{
     display:flex;
