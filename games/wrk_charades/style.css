@@ -7,10 +7,7 @@ body{
 }
 
 /* Logo */
-.logo{
-  max-width:220px;
-  margin:40px auto 10px auto;
-}
+.logo{max-width:160px;margin:20px auto;}
 
 /* Titel */
 h1{
