@@ -1,27 +1,81 @@
-
 body{
  margin:0;
  font-family:Arial, sans-serif;
- background:#111;
+ background:linear-gradient(145deg,#0F172A,#111E3A);
  color:white;
  text-align:center;
 }
-.logo{max-width:160px;margin:20px auto;}
-h1{font-size:28px;margin-bottom:8px;}
+
+/* Logo */
+.logo{
+ max-width:160px;
+ margin:20px auto;
+}
+
+/* Titel */
+h1{
+ font-size:28px;
+ margin-bottom:8px;
+}
+
+/* ===== GELE QUESTLAB KNOPPEN ===== */
+
 button{
- padding:14px 24px;
- margin:6px;
- background:#b00020;
- color:white;
+ padding:18px 28px;
+ margin:10px;
+ background:#F5CA51;
+ color:#0F172A;
  border:none;
- border-radius:8px;
+ border-radius:18px;
+ font-size:18px;
+ font-weight:700;
+ cursor:pointer;
+ box-shadow:0 8px 20px rgba(0,0,0,0.3);
+ transition:all 0.2s ease;
+}
+
+button:hover{
+ transform:translateY(-2px);
+ box-shadow:0 12px 28px rgba(0,0,0,0.4);
+}
+
+/* Start knop iets groter */
+.startBtn{
+ font-size:20px;
+ margin-top:14px;
+}
+
+/* Utility */
+.hidden{
+ display:none;
+}
+
+#modules label{
+ display:block;
+ margin:6px;
  font-size:16px;
 }
-.startBtn{font-size:20px;margin-top:14px;}
-.hidden{display:none;}
-#modules label{display:block;margin:6px;font-size:16px;}
-#code{font-size:120px;font-weight:bold;margin-top:40px;}
-#timer{font-size:20px;margin-top:10px;}
-.flash-good{background:#1f8f3a !important;}
-.flash-bad{background:#a00000 !important;}
-#hint{font-size:42px;padding:40px;}
+
+#code{
+ font-size:120px;
+ font-weight:bold;
+ margin-top:40px;
+}
+
+#timer{
+ font-size:20px;
+ margin-top:10px;
+}
+
+.flash-good{
+ background:#1f8f3a !important;
+}
+
+.flash-bad{
+ background:#a00000 !important;
+}
+
+#hint{
+ font-size:42px;
+ padding:40px;
+}
