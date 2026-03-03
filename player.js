@@ -146,15 +146,17 @@ function renderPlayerCard(){
     if(!el) return;
 
    el.innerHTML = `
-  <div class="playerHeader">
-    <div class="playerName">${player.name}</div>
+  <div class="playerRow">
+    <div class="playerLeft">
+    ${player.name}
+    </div>
 
     <div class="playerRight">
-        <div class="rankRow">
-            <span class="playerRank">${player.rank}</span>
-            <img src="${player.badge}" class="playerBadge">
+        <div class="rankLine">
+        ${player.rank}
+            <img src="${player.badge}" class="badge">
         </div>
-        <div class="playerXP">XP: ${player.xp}</div>
+        <div class="xpline">XP: ${player.xp}</div>
     </div>
   </div>
 `;
