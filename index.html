@@ -63,21 +63,20 @@ h1 {
     background:linear-gradient(145deg,#0F172A,#111E3A);
     border:3px solid #F5CA51;
     border-radius:20px;
-    padding:14xp 18px;
+    padding:16px;
     width:280PX;
-    margin:30px auto 20px auto;
+    margin:30px auto;
     box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
-  .playerHeader{
+  .playerRow{
     display:flex;
     justify-content:space-between;
     align-items:center;
   }
 
-.playerName{
+.playerLeft{
     font-weight:700;
     font-size:18px;
-  color:white;
   max-width:130px;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -85,27 +84,23 @@ h1 {
 }
   
 .playerRight{
-  display:felx;
-  slex-direction:column;
-  align-items:flex-end;
+  text-align:right;
 }
-  .rankRow{
+  .rankLine{
+    font-weight:600
+      font-size:14px;
+    color:#F5CA51;
     display:flex;
     align-items:center;
     gap:6xp;
+    justify-content:flex-end;
   }
   
-.playerRank{
-    color:#F5CA51;
-    font-weight:600;
-  font-size:14xp;
-}
-  .playerBadge{
-    width:26px;
-    height:auto;
+  .badge{
+    width:24px;
   }
   
-.playerXP{
+.xpLine{
     font-size:12px;
   opacity:0.7;
   margin-top:2px;
