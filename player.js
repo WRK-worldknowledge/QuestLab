@@ -145,21 +145,24 @@ function renderPlayerCard(){
     const el = document.getElementById("playerCard");
     if(!el) return;
 
-   el.innerHTML = `
-  <div class="playerRow">
-    <div class="playerLeft">
-    ${player.name}
-    </div>
+    el.innerHTML = `
+        <div class="playerRow">
 
-    <div class="playerRight">
-        <div class="rankLine">
-        ${player.rank}
-            <img src="${player.badge}" class="badge">
+            <div class="badgeCol">
+                <img src="${player.badge}" class="badge">
+            </div>
+
+            <div class="rankCol">
+                <div class="rankText">${player.rank}</div>
+                <div class="xpText">XP: ${player.xp}</div>
+            </div>
+
+            <div class="nameCol">
+                ${player.name}
+            </div>
+
         </div>
-        <div class="xpline">XP: ${player.xp}</div>
-    </div>
-  </div>
-`;
+    `;
 }
 // ===== FIRST TIME PLAYER NAME =====
 function ensurePlayer(){
