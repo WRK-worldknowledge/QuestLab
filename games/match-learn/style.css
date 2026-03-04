@@ -6,9 +6,9 @@ color:white;
 text-align:center;
 }
 
-header{
-padding:20px;
-font-size:28px;
+h1{
+font-size:clamp(24px,5vw,48px);
+margin-bottom:clamp(20px,5vw,40px);
 }
 
 #timer{
@@ -16,16 +16,16 @@ display:flex;
 align-items:center;
 justify-content:center;
 
-height:110px;
-width:110px;
+width:clamp(70px,12vw,110px);
+height:clamp(70px,12vw,110px);
 
-border-radius:60px;
-border:8px solid #7cc142;
-font-size:28px;
+border-radius:50%;
+border:clamp(5px,1vw,8px) solid #7cc142;
+
+font-size:clamp(16px,3vw,28px);
 
 background:white;
 color:#0c2d5c;
-
 margin:auto;
 }
 .topRow{
@@ -48,30 +48,31 @@ font-weight:bold;
 #grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-grid-auto-rows:110px;
-gap:20px;
-max-width:700px;
+gap:clamp(10px,2vw,24px);
+
+width:min(90vw,700px);
 margin:auto;
 }
 
 .tile{
-background:#ffd84d;
-border-radius:12px;
-font-size:20px;
+background:#F5CA51;
+border-radius:clamp(10px,2vw,18px);
 cursor:pointer;
 color:#0c2d5c;
 font-weight:bold;
-transition:0.2s;
 
-/* ⭐ zorgt dat tekst perfect gecentreerd staat */
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 
-/* ⭐ vaste grootte */
-height:110px;
-width:100%;
+/* ⭐ dynamische grootte */
+height:clamp(70px,12vw,110px);
+
+/* ⭐ dynamische tekst */
+font-size:clamp(14px,2.5vw,20px);
+
+transition:0.2s;
 }
 
 .tile:hover{
