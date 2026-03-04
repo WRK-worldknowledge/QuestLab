@@ -8,13 +8,6 @@ let time=480
 
 let timerInterval
 
-timerInterval=setInterval(()=>{
-time--
-let min=Math.floor(time/60)
-let sec=time%60
-document.getElementById("timer").innerText=min+":"+( "0"+sec).slice(-2)
-},1000)
-
 const params = new URLSearchParams(location.search)
 
 const file = params.get("data")
@@ -118,6 +111,8 @@ return array
 
 }
 function startGame(data){
+  clearInterval(timerInterval)
+time = 480
 
 let tiles=[]
 
@@ -136,7 +131,18 @@ tiles = shuffle(tiles)
 const grid=document.getElementById("grid")
 grid.innerHTML=""
 
-tiles.forEach(tile=>{
+tiles.forEach((tile,index)=>{
+
+// timer op positie 2 (midden boven)
+if(index === 1){
+
+const timer=document.createElement("div")
+timer.id="timer"
+timer.innerText="08:00"
+
+grid.appendChild(timer)
+
+}
 
 const div=document.createElement("div")
 div.className="tile"
@@ -147,6 +153,13 @@ div.onclick=()=>selectTile(div,tile)
 grid.appendChild(div)
 
 })
+  timerInterval=setInterval(()=>{
+time--
+let min=Math.floor(time/60)
+let sec=time%60
+document.getElementById("timer").innerText =
+min + ":" + sec.toString().padStart(2,"0")
+},1000)
 }
 
 function selectTile(div,tile){
@@ -158,14 +171,10 @@ if(firstPick==null){
 firstPick={div,tile}
 div.style.border="3px solid white"
 
-document.getElementById("leftDisplay").innerText = tile.value
-
 return
 }
 
 secondPick={div,tile}
-
-document.getElementById("rightDisplay").innerText = tile.value
 
 checkMatch()
 
@@ -214,8 +223,6 @@ if(secondPick) secondPick.div.style.border=""
 
 firstPick=null
 secondPick=null
-  document.getElementById("leftDisplay").innerText=""
-document.getElementById("rightDisplay").innerText=""
 
 }
 function finishGame(){
