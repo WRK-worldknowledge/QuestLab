@@ -2,6 +2,8 @@
 let firstPick=null
 let secondPick=null
 
+let matchesLeft=0   // ⭐ NIEUW
+
 let time=480
 
 setInterval(()=>{
@@ -23,6 +25,8 @@ data.pairs.forEach(pair=>{
 tiles.push({type:"city",value:pair.city,match:pair.code})
 tiles.push({type:"code",value:pair.code,match:pair.code})
 })
+  
+matchesLeft = data.pairs.length
 
 tiles=tiles.sort(()=>Math.random()-0.5)
 
@@ -64,6 +68,13 @@ secondPick.div.classList.add("correct")
 setTimeout(()=>{
 firstPick.div.remove()
 secondPick.div.remove()
+
+matchesLeft--   // ⭐ nieuwe match
+
+if(matchesLeft===0){
+finishGame()
+}
+
 reset()
 },500)
 
@@ -84,4 +95,17 @@ reset()
 function reset(){
 firstPick=null
 secondPick=null
+}
+function finishGame(){
+
+alert("Mission complete!")
+
+// XP berekenen
+const xp = 25 + Math.floor(Math.random()*15)
+
+// QuestLab XP systeem
+addXP(xp)
+
+alert("+" + xp + " XP earned")
+
 }
