@@ -20,8 +20,21 @@ Asia:[
 "amoc_cities_north_america.json",
 "amoc_countries_and_cities_south_america.json",
 "amoc_oceania.json"
-]
-
+],
+  "Eastern Europe":[
+"euro_austria_hungary_romania_moldova_the_balkan.json",
+    "euro_finland_baltics_russia_belarus_poland_czech_republic_slovakia_ukraine.json",
+    "euro_greece.json",
+    "euro_turkey_cyprus.json"
+],
+  "Western Europe":[
+    "eurw_countries_and_capital_cities.json",
+    "eurw_scandinavia_germany_benelux.json",
+    "eurw_spain_portugal.json",
+    "eurw_switzerland_italy.json",
+    "eurw_uk_ireland_france.json"
+    ]
+   
 }
 
 const modeSelect = document.getElementById("modeSelect")
