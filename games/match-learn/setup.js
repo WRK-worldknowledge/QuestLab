@@ -21,20 +21,22 @@ Asia:[
 "amoc_countries_and_cities_south_america.json",
 "amoc_oceania.json"
 ],
-  "Eastern Europe":[
+
+"Eastern Europe":[
 "euro_austria_hungary_romania_moldova_the_balkan.json",
-    "euro_finland_baltics_russia_belarus_poland_czech_republic_slovakia_ukraine.json",
-    "euro_greece.json",
-    "euro_turkey_cyprus.json"
+"euro_finland_baltics_russia_belarus_poland_czech_republic_slovakia_ukraine.json",
+"euro_greece.json",
+"euro_turkey_cyprus.json"
 ],
-  "Western Europe":[
-    "eurw_countries_and_capital_cities.json",
-    "eurw_scandinavia_germany_benelux.json",
-    "eurw_spain_portugal.json",
-    "eurw_switzerland_italy.json",
-    "eurw_uk_ireland_france.json"
-    ]
-   
+
+"Western Europe":[
+"eurw_countries_and_capital_cities.json",
+"eurw_scandinavia_germany_benelux.json",
+"eurw_spain_portugal.json",
+"eurw_switzerland_italy.json",
+"eurw_uk_ireland_france.json"
+]
+
 }
 
 const modeSelect = document.getElementById("modeSelect")
@@ -42,18 +44,18 @@ const moduleSelect = document.getElementById("moduleSelect")
 const lessonSelect = document.getElementById("lessonSelect")
 const startBtn = document.getElementById("startBtn")
 
-// modules vullen
-Object.keys(moduleFiles).forEach(m => {
+// MODULES VULLEN
+Object.keys(moduleFiles).forEach(moduleName => {
 
-const opt = document.createElement("option")
-opt.value = m
-opt.textContent = m
+const option = document.createElement("option")
+option.value = moduleName
+option.textContent = moduleName
 
-moduleSelect.appendChild(opt)
+moduleSelect.appendChild(option)
 
 })
 
-// lessons vullen
+// LESSONS VULLEN
 function populateLessons(){
 
 lessonSelect.innerHTML = ""
@@ -61,13 +63,18 @@ lessonSelect.innerHTML = ""
 const module = moduleSelect.value
 const files = moduleFiles[module]
 
-files.forEach((file,i)=>{
+if(!files){
+console.error("Module not found:", module)
+return
+}
 
-const opt = document.createElement("option")
-opt.value = file
-opt.textContent = "Lesson " + (i+1)
+files.forEach((file,index)=>{
 
-lessonSelect.appendChild(opt)
+const option = document.createElement("option")
+option.value = file
+option.textContent = "Lesson " + (index + 1)
+
+lessonSelect.appendChild(option)
 
 })
 
@@ -75,27 +82,39 @@ lessonSelect.appendChild(opt)
 
 moduleSelect.addEventListener("change", populateLessons)
 
+// eerste keer laden
 populateLessons()
 
-// start knop
+// START BUTTON
 startBtn.addEventListener("click", function(){
 
 const mode = modeSelect.value
 const module = moduleSelect.value
 const lesson = lessonSelect.value
 
-console.log("Start clicked")
+console.log("MODE:", mode)
+console.log("MODULE:", module)
+console.log("LESSON FILE:", lesson)
 
-if(mode==="training"){
+// TRAINING (1 LESSON)
+if(mode === "training"){
+
 window.location.href = "game.html?data=" + lesson
+
 }
 
-if(mode==="module"){
-window.location.href = "game.html?module=" + module
+// MODULE EXAM
+if(mode === "module"){
+
+window.location.href = "game.html?module=" + encodeURIComponent(module)
+
 }
 
-if(mode==="final"){
+// FINAL EXAM
+if(mode === "final"){
+
 window.location.href = "game.html?final=true"
+
 }
 
 })
