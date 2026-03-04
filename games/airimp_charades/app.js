@@ -1,4 +1,4 @@
-
+startHelp("airimp")
 let allData=[], gameData=[], i=0, score=0, time=60, timer;
 let mode='train', gameType='code-to-city';
 let tiltState='neutral';
