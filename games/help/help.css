@@ -15,14 +15,15 @@ z-index:999;
 background:#001b44;
 color:white;
 padding:40px;
-border-radius:16px;
+border-radius:18px;
 width:90%;
-max-width:500px;
+max-width:520px;
 text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
 }
 
 .helpTitle{
-font-size:28px;
+font-size:26px;
 margin-bottom:15px;
 }
 
@@ -35,15 +36,33 @@ margin-bottom:25px;
 .helpNav{
 display:flex;
 justify-content:space-between;
-margin-top:20px;
+margin-top:25px;
 }
 
 .helpBtn{
 background:#0fa3d1;
 border:none;
-padding:10px 20px;
+padding:12px 26px;
 color:white;
-border-radius:8px;
+border-radius:10px;
 font-size:16px;
 cursor:pointer;
+}
+
+.helpDots{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-top:20px;
+}
+
+.helpDot{
+width:10px;
+height:10px;
+border-radius:50%;
+background:#6a7c99;
+}
+
+.helpDot.active{
+background:#0fa3d1;
 }
