@@ -83,9 +83,15 @@ location.href="index.html?data="+lesson
 
 }
 
-if(mode==="exam"){
+if(mode==="module"){
 
 location.href="index.html?module="+module
+
+}
+
+if(mode==="final"){
+
+location.href="index.html?final=true"
 
 }
 
