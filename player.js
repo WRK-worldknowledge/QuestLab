@@ -185,6 +185,7 @@ function renderPlayerCard(){
             <div class="rankCol">
                 <div class="rankText">${player.rank}</div>
                 <div class="xpText">XP: ${player.xp}</div>
+<div class="xpText">${player.id || ""}</div>
             </div>
 
             <div class="nameCol">
