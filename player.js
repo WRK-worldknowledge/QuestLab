@@ -131,9 +131,8 @@ function setRank(player,name,badge){
 
 function addXP(amount){
     player.lastSave = Date.now();
-    if(amount > 100){
-console.warn("XP blocked")
-return
+    if(amount > 500){
+amount = 500
 }
     const player = getPlayer();
     player.xp += amount;
