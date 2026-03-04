@@ -18,21 +18,6 @@ const moduleFiles = {
 "amoc_cities_north_america.json",
 "amoc_countries_and_cities_south_america.json",
 "amoc_oceania.json"
-],
-
-"Western Europe":[
-"eurw_countries_and_capital_cities.json",
-"eurw_uk_ireland_and_france.json",
-"eurw_scandinavia_germany_and_benelux.json",
-"eurw_switzerland_and_italy.json",
-"eurw_spain_and_portugal.json"
-],
-
-"Eastern Europe":[
-"euro_finland_baltics_russia_belarus_poland_czech_republic_slovakia_and_ukraine.json",
-"euro_austria_hungary_romania_moldova_and_the_balkan.json",
-"euro_greece.json",
-"euro_turkey_and_cyprus.json"
 ]
 
 }
@@ -40,6 +25,7 @@ const moduleFiles = {
 const moduleSelect = document.getElementById("moduleSelect")
 const lessonSelect = document.getElementById("lessonSelect")
 
+// modules vullen
 Object.keys(moduleFiles).forEach(m=>{
 const opt=document.createElement("option")
 opt.value=m
@@ -47,14 +33,12 @@ opt.textContent=m
 moduleSelect.appendChild(opt)
 })
 
-moduleSelect.addEventListener("change",populateLessons)
-
+// lessons vullen
 function populateLessons(){
 
 lessonSelect.innerHTML=""
 
 const module=moduleSelect.value
-
 const files=moduleFiles[module]
 
 files.forEach((file,i)=>{
@@ -69,8 +53,11 @@ lessonSelect.appendChild(opt)
 
 }
 
+moduleSelect.addEventListener("change",populateLessons)
+
 populateLessons()
 
+// ⭐ start knop
 document.getElementById("startBtn").onclick=function(){
 
 const mode=document.getElementById("modeSelect").value
@@ -79,19 +66,19 @@ const lesson=lessonSelect.value
 
 if(mode==="training"){
 
-location.href="index.html?data="+lesson
+window.location.href="index.html?data="+lesson
 
 }
 
 if(mode==="module"){
 
-location.href="index.html?module="+module
+window.location.href="index.html?module="+module
 
 }
 
 if(mode==="final"){
 
-location.href="index.html?final=true"
+window.location.href="index.html?final=true"
 
 }
 
