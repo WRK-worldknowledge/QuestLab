@@ -14,18 +14,18 @@ text:"Play per lesson, per module or take the final challenge with all destinati
 wrkcharades:[
 {
 title:"WRK Charades",
-text:"Hold your phone against your forehead. Your classmates give clues so you can guess the destination."
+text:"Test your knowledge of worldwide destinations. Your classmates give clues so you can guess the destination or IATA code."
 },
 {
-title:"Tilt controls",
-text:"Tilt LEFT if correct. Tilt RIGHT to skip."
+title:"How to play",
+text:"Hold your phone against your forehead. Tilt LEFT if correct. Tilt RIGHT to skip."
 }
 ],
 
 airimp:[
 {
 title:"AIRIMP Codes",
-text:"AIRIMP codes are aviation abbreviations used worldwide in reservations and ticketing systems."
+text:"AIRIMP codes are aviation abbreviations used worldwide in reservations and ticketing systems. Your classmates give clues so you can guess the AIRIMP code or meaning."
 },
 {
 title:"How to play",
@@ -36,7 +36,7 @@ text:"Hold the phone on your forehead. Tilt LEFT if correct, RIGHT to skip."
 matchlearn:[
 {
 title:"Match & Learn",
-text:"Match destinations with their three-letter IATA airport code."
+text:"Match destinations with their three-letter IATA airport code or their place on the maps."
 },
 {
 title:"Goal",
