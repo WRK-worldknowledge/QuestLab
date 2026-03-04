@@ -74,15 +74,15 @@ const lesson = lessonSelect.value
 console.log("Start clicked")
 
 if(mode==="training"){
-window.location.href = "index.html?data=" + lesson
+window.location.href = "game.html?data=" + lesson
 }
 
 if(mode==="module"){
-window.location.href = "index.html?module=" + module
+window.location.href = "game.html?module=" + module
 }
 
 if(mode==="final"){
-window.location.href = "index.html?final=true"
+window.location.href = "game.html?final=true"
 }
 
 })
