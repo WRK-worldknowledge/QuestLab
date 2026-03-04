@@ -1,4 +1,4 @@
-
+startHelp("matchlearn")
 let firstPick=null
 let secondPick=null
 
