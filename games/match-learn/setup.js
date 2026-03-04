@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 const moduleFiles = {
 
 Africa:[
@@ -62,33 +64,27 @@ moduleSelect.addEventListener("change", populateLessons)
 
 populateLessons()
 
-// ⭐ START KNOP
+// start knop
 startBtn.addEventListener("click", function(){
 
 const mode = modeSelect.value
 const module = moduleSelect.value
 const lesson = lessonSelect.value
 
-console.log("Mode:",mode)
-console.log("Module:",module)
-console.log("Lesson:",lesson)
+console.log("Start clicked")
 
 if(mode==="training"){
-
 window.location.href = "index.html?data=" + lesson
-
 }
 
 if(mode==="module"){
-
 window.location.href = "index.html?module=" + module
-
 }
 
 if(mode==="final"){
-
 window.location.href = "index.html?final=true"
-
 }
+
+})
 
 })
