@@ -47,13 +47,13 @@ text:"Clear all tiles before the timer runs out."
 }
 
 let slideIndex=0
-let gameType=""
+let helpGame=""
 
 function startHelp(game){
 
 if(localStorage.getItem(game+"_help")==="hide") return
 
-gameType=game
+helpGame=game
 slideIndex=0
 createModal()
 
@@ -91,7 +91,7 @@ updateSlide()
 
 function updateSlide(){
 
-const slide=helpData[gameType][slideIndex]
+const slide=helpData[helpGame][slideIndex]
 
 document.getElementById("helpTitle").innerText=slide.title
 document.getElementById("helpText").innerText=slide.text
