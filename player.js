@@ -2,6 +2,7 @@
 const GITHUB_USER = "WRK-worldknowledge";
 const GITHUB_REPO = "QuestLab";
 const GITHUB_FILE = "players.json";
+let cloudSaveTimer = null
 function generateFAID(){
 
 const time = Date.now().toString(36)
@@ -48,28 +49,43 @@ async function loadPlayerFromCloud(id){
     }
 
 }
+function scheduleCloudSave(){
+
+if(cloudSaveTimer) return
+
+cloudSaveTimer = setTimeout(()=>{
+
+savePlayerToCloud()
+
+cloudSaveTimer = null
+
+},10000)
+
+}
 // ===== SAVE TO CLOUD =====
 async function savePlayerToCloud(){
 
-    const player = getPlayer();
+const player = getPlayer();
 
-    await fetch("https://api.github.com/repos/WRK-worldknowledge/QuestLab/dispatches",{
-        method:"POST",
-        headers:{
-            "Accept":"application/vnd.github+json",
-            "Authorization":"Bearer " + QUESTLAB_TOKEN_RUNTIME
-        },
-        body:JSON.stringify({
-            event_type:"save_player",
-           client_payload:{
-    id:player.id,
-    player:player
+await fetch("https://api.github.com/repos/WRK-worldknowledge/QuestLab/dispatches",{
+method:"POST",
+headers:{
+"Accept":"application/vnd.github+json",
+"Authorization":"Bearer " + QUESTLAB_TOKEN_RUNTIME
+},
+body:JSON.stringify({
+event_type:"save_player",
+client_payload:{
+id:player.id,
+player:player
 }
-        })
-    });
+})
+});
 
-    console.log("Cloud save requested");
+console.log("Cloud save requested");
+
 }
+
 
 // ===== RANKS / BADGES =====
 const ranks = [
@@ -130,17 +146,24 @@ function setRank(player,name,badge){
 }
 
 function addXP(amount){
-    player.lastSave = Date.now();
-    if(amount > 500){
+
+if(amount > 500){
 amount = 500
 }
-    const player = getPlayer();
-    player.xp += amount;
 
-    updateRank(player);
-    localStorage.setItem("questlab_player", JSON.stringify(player));
+const player = getPlayer()
 
-    savePlayerToCloud(); // ⭐ elke XP wijziging meteen syncen
+player.xp += amount
+player.lastSave = Date.now()
+
+updateRank(player)
+
+localStorage.setItem("questlab_player", JSON.stringify(player))
+
+scheduleCloudSave()
+
+renderPlayerCard()
+
 }
 
 function registerModuleScore(module, percentage){
@@ -182,9 +205,7 @@ function renderPlayerCard(){
             </div>
 
             <div class="rankCol">
-                <div class="rankText">${player.rank}</div>
-                <div class="xpText">XP: ${player.xp}</div>
-<div class="xpText">${player.id || ""}</div>
+                <div class="xpText">FA-ID (save this!): ${player.id || ""}</div>
             </div>
 
             <div class="nameCol">
@@ -292,5 +313,10 @@ window.addEventListener("load", async () => {
 
     card.querySelector("button").onclick = () => overlay.remove();
 }
+window.addEventListener("beforeunload", () => {
+
+savePlayerToCloud()
+
+})
 
 
