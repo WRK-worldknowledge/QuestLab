@@ -61,10 +61,10 @@ async function savePlayerToCloud(){
         },
         body:JSON.stringify({
             event_type:"save_player",
-            client_payload:{
-                name:player.name,
-                player:player
-            }
+           client_payload:{
+    id:player.id,
+    player:player
+}
         })
     });
 
@@ -130,6 +130,11 @@ function setRank(player,name,badge){
 }
 
 function addXP(amount){
+    player.lastSave = Date.now();
+    if(amount > 100){
+console.warn("XP blocked")
+return
+}
     const player = getPlayer();
     player.xp += amount;
 
