@@ -48,11 +48,11 @@ alert("Dataset failed to load")
 // MODULE EXAM
 if(module){
 
-fetch("data/datasets.json")
+fetch("data/dataset.json")
 .then(res=>res.json())
 .then(data=>{
 
-const datasets = data.datasets
+const datasets = data.dataset
 
 const moduleFiles=datasets.filter(d=>d.module===module)
 
@@ -78,11 +78,12 @@ startGame(combined)
 // FINAL EXAM
 if(final){
 
-fetch("data/datasets.json")
+fetch("data/dataset.json")
 .then(res=>res.json())
 .then(data=>{
 
-const datasets = data.datasets
+const datasets = data.dataset
+
 Promise.all(
 datasets.map(d=>fetch("data/"+d.file).then(r=>r.json()))
 )
