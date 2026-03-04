@@ -50,7 +50,9 @@ if(module){
 
 fetch("data/datasets.json")
 .then(res=>res.json())
-.then(datasets=>{
+.then(data=>{
+
+const datasets = data.datasets
 
 const moduleFiles=datasets.filter(d=>d.module===module)
 
@@ -78,8 +80,9 @@ if(final){
 
 fetch("data/datasets.json")
 .then(res=>res.json())
-.then(datasets=>{
+.then(data=>{
 
+const datasets = data.datasets
 Promise.all(
 datasets.map(d=>fetch("data/"+d.file).then(r=>r.json()))
 )
