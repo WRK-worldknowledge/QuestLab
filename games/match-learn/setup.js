@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function(){
 const moduleFiles = {
 
 Africa:[
-"africa_northern_africa_sahara_countries.json",
-"africa_northern_africa_sahel_countries.json",
+"africa_northern_africa_-_sahara_countries.json",
+"africa_northern_africa_-_sahel_countries.json",
 "africa_central_africa.json",
 "africa_southern_africa.json"
 ],
