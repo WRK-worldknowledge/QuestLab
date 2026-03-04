@@ -12,17 +12,21 @@ font-size:28px;
 }
 
 #timer{
-width:120px;
-height:120px;
-border-radius:60px;
-border:8px solid #7cc142;
 display:flex;
 align-items:center;
 justify-content:center;
-margin:20px auto;
+
+height:110px;
+width:110px;
+
+border-radius:60px;
+border:8px solid #7cc142;
 font-size:28px;
+
 background:white;
 color:#0c2d5c;
+
+margin:auto;
 }
 .topRow{
 display:grid;
@@ -43,21 +47,31 @@ font-weight:bold;
 }
 #grid{
 display:grid;
-grid-template-columns: repeat(3, 200px);
+grid-template-columns:repeat(3,1fr);
+grid-auto-rows:110px;
 gap:20px;
-justify-content:center;
-margin-top:40px;
+max-width:700px;
+margin:auto;
 }
 
 .tile{
 background:#ffd84d;
-padding:30px;
 border-radius:12px;
 font-size:20px;
 cursor:pointer;
 color:#0c2d5c;
 font-weight:bold;
-transition:0.3s;
+transition:0.2s;
+
+/* ⭐ zorgt dat tekst perfect gecentreerd staat */
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+/* ⭐ vaste grootte */
+height:110px;
+width:100%;
 }
 
 .tile:hover{
