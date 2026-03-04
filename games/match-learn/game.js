@@ -15,18 +15,10 @@ let sec=time%60
 document.getElementById("timer").innerText=min+":"+( "0"+sec).slice(-2)
 },1000)
 
-let datasetFile = null
+const params = new URLSearchParams(location.search)
+const file = params.get("data")
 
-fetch("data/datasets.json")
-.then(res=>res.json())
-.then(datasets => {
-
-    // voorbeeld: eerste dataset laden
-    datasetFile = datasets[0].file
-
-    return fetch("data/" + datasetFile)
-
-})
+fetch("data/" + file)
 .then(res=>res.json())
 .then(data=>startGame(data))
 
