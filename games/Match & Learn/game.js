@@ -6,7 +6,9 @@ let matchesLeft=0   // ⭐ NIEUW
 
 let time=480
 
-setInterval(()=>{
+let timerInterval
+
+timerInterval=setInterval(()=>{
 time--
 let min=Math.floor(time/60)
 let sec=time%60
@@ -47,6 +49,8 @@ grid.appendChild(div)
 
 function selectTile(div,tile){
 
+if(firstPick && firstPick.div === div) return
+
 if(firstPick==null){
 firstPick={div,tile}
 div.style.border="3px solid white"
@@ -55,8 +59,8 @@ return
 
 secondPick={div,tile}
 checkMatch()
-}
 
+}
 function checkMatch(){
 
 if(firstPick.tile.match===secondPick.tile.match
@@ -73,6 +77,7 @@ matchesLeft--   // ⭐ nieuwe match
 
 if(matchesLeft===0){
 finishGame()
+  clearInterval(timerInterval)
 }
 
 reset()
@@ -93,15 +98,21 @@ reset()
 }
 
 function reset(){
+
+if(firstPick) firstPick.div.style.border=""
+if(secondPick) secondPick.div.style.border=""
+
 firstPick=null
 secondPick=null
+
 }
 function finishGame(){
 
 alert("Mission complete!")
 
 // XP berekenen
-const xp = 25 + Math.floor(Math.random()*15)
+const timeBonus = Math.max(0, Math.floor(time/20))
+const xp = 20 + timeBonus
 
 // QuestLab XP systeem
 addXP(xp)
