@@ -73,8 +73,20 @@ populateLessons()
 
 document.getElementById("startBtn").onclick=function(){
 
-const file=lessonSelect.value
+const mode=document.getElementById("modeSelect").value
+const module=moduleSelect.value
+const lesson=lessonSelect.value
 
-location.href="index.html?data="+file
+if(mode==="training"){
+
+location.href="index.html?data="+lesson
+
+}
+
+if(mode==="exam"){
+
+location.href="index.html?module="+module
+
+}
 
 }
