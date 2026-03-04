@@ -75,6 +75,6 @@ document.getElementById("startBtn").onclick=function(){
 
 const file=lessonSelect.value
 
-location.href="game.html?data="+file
+location.href="index.html?data="+file
 
 }
