@@ -16,11 +16,44 @@ document.getElementById("timer").innerText=min+":"+( "0"+sec).slice(-2)
 },1000)
 
 const params = new URLSearchParams(location.search)
+
 const file = params.get("data")
+const module = params.get("module")
+
+if(file){
 
 fetch("data/" + file)
 .then(res=>res.json())
 .then(data=>startGame(data))
+
+}
+
+if(module){
+
+fetch("data/datasets.json")
+.then(res=>res.json())
+.then(datasets=>{
+
+const moduleFiles=datasets.filter(d=>d.module===module)
+
+Promise.all(
+moduleFiles.map(d=>fetch("data/"+d.file).then(r=>r.json()))
+)
+.then(allData=>{
+
+let combined={pairs:[]}
+
+allData.forEach(d=>{
+combined.pairs.push(...d.pairs)
+})
+
+startGame(combined)
+
+})
+
+})
+
+}
 
 function shuffle(array){
 for(let i=array.length-1;i>0;i--){
