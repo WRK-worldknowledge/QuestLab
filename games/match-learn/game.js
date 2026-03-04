@@ -19,18 +19,28 @@ fetch("data/iata_data.json")
 .then(res=>res.json())
 .then(data=>startGame(data))
 
+function shuffle(array){
+for(let i=array.length-1;i>0;i--){
+const j=Math.floor(Math.random()*(i+1))
+[array[i],array[j]]=[array[j],array[i]]
+}
+return array
+}
 function startGame(data){
 
 let tiles=[]
 
-data.pairs.forEach(pair=>{
+const selectedPairs = shuffle([...data.pairs]).slice(0,7)
+
+selectedPairs.forEach(pair=>{
 tiles.push({type:"city",value:pair.city,match:pair.code})
 tiles.push({type:"code",value:pair.code,match:pair.code})
 })
-  
-matchesLeft = data.pairs.length
 
-tiles=tiles.sort(()=>Math.random()-0.5)
+matchesLeft = selectedPairs.length
+
+
+tiles = shuffle(tiles)
 
 const grid=document.getElementById("grid")
 
