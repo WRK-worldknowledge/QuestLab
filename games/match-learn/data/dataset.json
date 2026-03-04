@@ -1,19 +1,30 @@
 {
- "datasets":[
+  "dataset": [
 
-  { "module":"Africa","lesson":"Lesson 1","file":"africa_central_africa.json"},
-  { "module":"Africa","lesson":"Lesson 2","file":"africa_northern_africa_-_sahara_countries.json"},
-  { "module":"Africa","lesson":"Lesson 3","file":"africa_northern_africa_-_sahel_countries.json"},
-  { "module":"Africa","lesson":"Lesson 4","file":"africa_southern_africa.json"},
+    { "module":"Africa", "file":"africa_northern_africa_-_sahara_countries.json" },
+    { "module":"Africa", "file":"africa_northern_africa_-_sahel_countries.json" },
+    { "module":"Africa", "file":"africa_central_africa.json" },
+    { "module":"Africa", "file":"africa_southern_africa.json" },
 
-  { "module":"Americas","lesson":"Lesson 1","file":"amoc_cities_north_america.json"},
-  { "module":"Americas","lesson":"Lesson 2","file":"amoc_countries_and_capitals_north_america_and_caribbean.json"},
-  { "module":"Americas","lesson":"Lesson 3","file":"amoc_countries_and_cities_south_america.json"},
-  { "module":"Americas","lesson":"Lesson 4","file":"amoc_oceania.json"},
+    { "module":"Asia", "file":"asia_middle_east_eurasia.json" },
+    { "module":"Asia", "file":"asia_central_asia.json" },
+    { "module":"Asia", "file":"asia_far_east.json" },
 
-  { "module":"Asia","lesson":"Lesson 1","file":"asia_central_asia.json"},
-  { "module":"Asia","lesson":"Lesson 2","file":"asia_far_east.json"},
-  { "module":"Asia","lesson":"Lesson 3","file":"asia_middle_east_eurasia.json"}
+    { "module":"America & Oceania", "file":"amoc_countries_and_capitals_north_america_caribbean.json" },
+    { "module":"America & Oceania", "file":"amoc_cities_north_america.json" },
+    { "module":"America & Oceania", "file":"amoc_countries_and_cities_south_america.json" },
+    { "module":"America & Oceania", "file":"amoc_oceania.json" },
 
- ]
+    { "module":"Eastern Europe", "file":"euro_austria_hungary_romania_moldova_the_balkan.json" },
+    { "module":"Eastern Europe", "file":"euro_finland_baltics_russia_belarus_poland_czech_republic_slovakia_ukraine.json" },
+    { "module":"Eastern Europe", "file":"euro_greece.json" },
+    { "module":"Eastern Europe", "file":"euro_turkey_cyprus.json" },
+
+    { "module":"Western Europe", "file":"eurw_countries_and_capital_cities.json" },
+    { "module":"Western Europe", "file":"eurw_scandinavia_germany_benelux.json" },
+    { "module":"Western Europe", "file":"eurw_spain_portugal.json" },
+    { "module":"Western Europe", "file":"eurw_switzerland_italy.json" },
+    { "module":"Western Europe", "file":"eurw_uk_ireland_france.json" }
+
+  ]
 }
