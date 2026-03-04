@@ -1,13 +1,13 @@
 const moduleFiles = {
 
-"Africa":[
+Africa:[
 "africa_northern_africa_sahara_countries.json",
 "africa_northern_africa_sahel_countries.json",
 "africa_central_africa.json",
 "africa_southern_africa.json"
 ],
 
-"Asia":[
+Asia:[
 "asia_middle_east_and_eurasia.json",
 "asia_central_asia.json",
 "asia_far_east.json"
@@ -22,30 +22,35 @@ const moduleFiles = {
 
 }
 
+const modeSelect = document.getElementById("modeSelect")
 const moduleSelect = document.getElementById("moduleSelect")
 const lessonSelect = document.getElementById("lessonSelect")
+const startBtn = document.getElementById("startBtn")
 
 // modules vullen
-Object.keys(moduleFiles).forEach(m=>{
-const opt=document.createElement("option")
-opt.value=m
-opt.textContent=m
+Object.keys(moduleFiles).forEach(m => {
+
+const opt = document.createElement("option")
+opt.value = m
+opt.textContent = m
+
 moduleSelect.appendChild(opt)
+
 })
 
 // lessons vullen
 function populateLessons(){
 
-lessonSelect.innerHTML=""
+lessonSelect.innerHTML = ""
 
-const module=moduleSelect.value
-const files=moduleFiles[module]
+const module = moduleSelect.value
+const files = moduleFiles[module]
 
 files.forEach((file,i)=>{
 
-const opt=document.createElement("option")
-opt.value=file
-opt.textContent="Lesson "+(i+1)
+const opt = document.createElement("option")
+opt.value = file
+opt.textContent = "Lesson " + (i+1)
 
 lessonSelect.appendChild(opt)
 
@@ -53,33 +58,37 @@ lessonSelect.appendChild(opt)
 
 }
 
-moduleSelect.addEventListener("change",populateLessons)
+moduleSelect.addEventListener("change", populateLessons)
 
 populateLessons()
 
-// ⭐ start knop
-document.getElementById("startBtn").onclick=function(){
+// ⭐ START KNOP
+startBtn.addEventListener("click", function(){
 
-const mode=document.getElementById("modeSelect").value
-const module=moduleSelect.value
-const lesson=lessonSelect.value
+const mode = modeSelect.value
+const module = moduleSelect.value
+const lesson = lessonSelect.value
+
+console.log("Mode:",mode)
+console.log("Module:",module)
+console.log("Lesson:",lesson)
 
 if(mode==="training"){
 
-window.location.href="index.html?data="+lesson
+window.location.href = "index.html?data=" + lesson
 
 }
 
 if(mode==="module"){
 
-window.location.href="index.html?module="+module
+window.location.href = "index.html?module=" + module
 
 }
 
 if(mode==="final"){
 
-window.location.href="index.html?final=true"
+window.location.href = "index.html?final=true"
 
 }
 
-}
+})
