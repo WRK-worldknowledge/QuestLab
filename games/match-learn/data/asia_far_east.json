@@ -1,0 +1,100 @@
+{
+  "pairs": [
+    {
+      "city": "Phnom Penh",
+      "code": "PNH"
+    },
+    {
+      "city": "Beijing",
+      "code": "PEK"
+    },
+    {
+      "city": "Chengdu",
+      "code": "CTU"
+    },
+    {
+      "city": "Hong Kong",
+      "code": "HKG"
+    },
+    {
+      "city": "Shanghai",
+      "code": "PVG"
+    },
+    {
+      "city": "Wuhan",
+      "code": "WUH"
+    },
+    {
+      "city": "Denpasar",
+      "code": "DPS"
+    },
+    {
+      "city": "Jakarta",
+      "code": "CGK"
+    },
+    {
+      "city": "Osaka",
+      "code": "KIX"
+    },
+    {
+      "city": "Tokyo ",
+      "code": "NRT"
+    },
+    {
+      "city": "Tokyo ",
+      "code": "HND"
+    },
+    {
+      "city": "Vientiane",
+      "code": "VTE"
+    },
+    {
+      "city": "Kuala Lumpur",
+      "code": "KUL"
+    },
+    {
+      "city": "Ulaanbataar",
+      "code": "UBN"
+    },
+    {
+      "city": "Pyongyang",
+      "code": "FNJ"
+    },
+    {
+      "city": "Manila",
+      "code": "MNL"
+    },
+    {
+      "city": "Vladivistok",
+      "code": "VVO"
+    },
+    {
+      "city": "Singapore",
+      "code": "SIN"
+    },
+    {
+      "city": "Seoul",
+      "code": "ICN"
+    },
+    {
+      "city": "Taipei",
+      "code": "TPE"
+    },
+    {
+      "city": "Bangkok",
+      "code": "BKK"
+    },
+    {
+      "city": "Phuket",
+      "code": "HKT"
+    },
+    {
+      "city": "Hanoi",
+      "code": "HAN"
+    },
+    {
+      "city": "Ho Chi Min City",
+      "code": "SGN"
+    }
+  ]
+}

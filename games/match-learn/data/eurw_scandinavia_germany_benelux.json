@@ -1,0 +1,76 @@
+{
+  "pairs": [
+    {
+      "city": "Brussels South Charleroi",
+      "code": "CRL"
+    },
+    {
+      "city": "Aalborg",
+      "code": "AAL"
+    },
+    {
+      "city": "Billund",
+      "code": "BLL"
+    },
+    {
+      "city": "Dusseldorf",
+      "code": "DUS"
+    },
+    {
+      "city": "Frankfurt",
+      "code": "FRA"
+    },
+    {
+      "city": "Hamburg",
+      "code": "HAM"
+    },
+    {
+      "city": "Munich",
+      "code": "MUC"
+    },
+    {
+      "city": "Stuttgart",
+      "code": "STR"
+    },
+    {
+      "city": "Weeze Niederrhein",
+      "code": "NRN"
+    },
+    {
+      "city": "Eindhoven",
+      "code": "EIN"
+    },
+    {
+      "city": "Groningen",
+      "code": "GRQ"
+    },
+    {
+      "city": "Maastricht",
+      "code": "MST"
+    },
+    {
+      "city": "Rotterdam ",
+      "code": "RTM"
+    },
+    {
+      "city": "Alesund",
+      "code": "AES"
+    },
+    {
+      "city": "Bergen",
+      "code": "BGO"
+    },
+    {
+      "city": "Stavanger",
+      "code": "SVG"
+    },
+    {
+      "city": "Trondheim",
+      "code": "TRD"
+    },
+    {
+      "city": "Gothenburg",
+      "code": "GOT"
+    }
+  ]
+}

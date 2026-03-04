@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "city": "Brussels",
+      "code": "BRU"
+    },
+    {
+      "city": "Copenhagen",
+      "code": "CPH"
+    },
+    {
+      "city": "Paris",
+      "code": "CDG"
+    },
+    {
+      "city": "Paris",
+      "code": "ORY"
+    },
+    {
+      "city": "Berlin",
+      "code": "BER"
+    },
+    {
+      "city": "Reykjavik",
+      "code": "KEF"
+    },
+    {
+      "city": "Dublin",
+      "code": "DUB"
+    },
+    {
+      "city": "Rome",
+      "code": "FCO"
+    },
+    {
+      "city": "Luxembourg",
+      "code": "LUX"
+    },
+    {
+      "city": "Valletta",
+      "code": "MLA"
+    },
+    {
+      "city": "Amsterdam ",
+      "code": "AMS"
+    },
+    {
+      "city": "Oslo",
+      "code": "OSL"
+    },
+    {
+      "city": "Lisbon",
+      "code": "LIS"
+    },
+    {
+      "city": "Madrid",
+      "code": "MAD"
+    },
+    {
+      "city": "Stockholm",
+      "code": "ARN"
+    },
+    {
+      "city": "Bern",
+      "code": "BRN"
+    },
+    {
+      "city": "London",
+      "code": "LCY"
+    },
+    {
+      "city": "London",
+      "code": "LGW"
+    },
+    {
+      "city": "London",
+      "code": "LHR"
+    },
+    {
+      "city": "London",
+      "code": "LTN"
+    },
+    {
+      "city": "London",
+      "code": "STN"
+    }
+  ]
+}

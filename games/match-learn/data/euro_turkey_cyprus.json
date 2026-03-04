@@ -1,0 +1,40 @@
+{
+  "pairs": [
+    {
+      "city": "Larnaca",
+      "code": "LCA"
+    },
+    {
+      "city": "Paphos",
+      "code": "PFO"
+    },
+    {
+      "city": "Ankara",
+      "code": "ESB"
+    },
+    {
+      "city": "Antalya",
+      "code": "AYT"
+    },
+    {
+      "city": "Bodrum",
+      "code": "BJV"
+    },
+    {
+      "city": "Dalaman",
+      "code": "DLM"
+    },
+    {
+      "city": "Istanbul",
+      "code": "IST"
+    },
+    {
+      "city": "Istanbul ",
+      "code": "SAW"
+    },
+    {
+      "city": "Izmir",
+      "code": "ADB"
+    }
+  ]
+}

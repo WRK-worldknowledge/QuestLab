@@ -1,0 +1,60 @@
+{
+  "pairs": [
+    {
+      "city": "Bologna",
+      "code": "BLQ"
+    },
+    {
+      "city": "Catania",
+      "code": "CTA"
+    },
+    {
+      "city": "Florence",
+      "code": "FLR"
+    },
+    {
+      "city": "Genua",
+      "code": "GOA"
+    },
+    {
+      "city": "Milan",
+      "code": "LIN"
+    },
+    {
+      "city": "Milan",
+      "code": "MXP"
+    },
+    {
+      "city": "Naples",
+      "code": "NAP"
+    },
+    {
+      "city": "Olbia",
+      "code": "OLB"
+    },
+    {
+      "city": "Pisa",
+      "code": "PSA"
+    },
+    {
+      "city": "Turin",
+      "code": "TRN"
+    },
+    {
+      "city": "Venice",
+      "code": "VCE"
+    },
+    {
+      "city": "Basel",
+      "code": "BSL"
+    },
+    {
+      "city": "Geneva",
+      "code": "GVA"
+    },
+    {
+      "city": "Z\u00fcrich",
+      "code": "ZRH"
+    }
+  ]
+}

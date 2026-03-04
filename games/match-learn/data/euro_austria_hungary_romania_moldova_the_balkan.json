@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "city": "Tirana",
+      "code": "TIA"
+    },
+    {
+      "city": "Graz",
+      "code": "GRZ"
+    },
+    {
+      "city": "Innsbruck",
+      "code": "INN"
+    },
+    {
+      "city": "Klagenfurt",
+      "code": "KLU"
+    },
+    {
+      "city": "Salzburg",
+      "code": "SZG"
+    },
+    {
+      "city": "Vienna",
+      "code": "VIE"
+    },
+    {
+      "city": "Sarajevo",
+      "code": "SJJ"
+    },
+    {
+      "city": "Burgas",
+      "code": "BOJ"
+    },
+    {
+      "city": "Sofia",
+      "code": "SOF"
+    },
+    {
+      "city": "Dubrovnik",
+      "code": "DBV"
+    },
+    {
+      "city": "Split",
+      "code": "SPU"
+    },
+    {
+      "city": "Zagreb",
+      "code": "ZAG"
+    },
+    {
+      "city": "Budapest",
+      "code": "BUD"
+    },
+    {
+      "city": "Pristina",
+      "code": "PRN"
+    },
+    {
+      "city": "Chisinau",
+      "code": "RMO"
+    },
+    {
+      "city": "Podgorica",
+      "code": "TGD"
+    },
+    {
+      "city": "Ohrid",
+      "code": "OHD"
+    },
+    {
+      "city": "Skopje",
+      "code": "SKP"
+    },
+    {
+      "city": "Bucharest",
+      "code": "OTP"
+    },
+    {
+      "city": "Belgrade",
+      "code": "BEG"
+    },
+    {
+      "city": "Ljubljana",
+      "code": "LJU"
+    }
+  ]
+}

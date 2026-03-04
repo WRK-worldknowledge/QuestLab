@@ -1,0 +1,60 @@
+{
+  "pairs": [
+    {
+      "city": "Buenos Aires",
+      "code": "EZE"
+    },
+    {
+      "city": "Brasilia",
+      "code": "BSB"
+    },
+    {
+      "city": "Fortaleza",
+      "code": "FOR"
+    },
+    {
+      "city": "Rio de Janeiro",
+      "code": "GIG"
+    },
+    {
+      "city": "S\u00e3o Paulo",
+      "code": "GRU"
+    },
+    {
+      "city": "Bogota",
+      "code": "BOG"
+    },
+    {
+      "city": "Cartagena",
+      "code": "CTG"
+    },
+    {
+      "city": "Guayaquil",
+      "code": "GYE"
+    },
+    {
+      "city": "Quito",
+      "code": "UIO"
+    },
+    {
+      "city": "Cayenne",
+      "code": "CAY"
+    },
+    {
+      "city": "Lima",
+      "code": "LIM"
+    },
+    {
+      "city": "Paramaribo",
+      "code": "PBM"
+    },
+    {
+      "city": "Montevideo",
+      "code": "MVD"
+    },
+    {
+      "city": "Caracas",
+      "code": "CCS"
+    }
+  ]
+}

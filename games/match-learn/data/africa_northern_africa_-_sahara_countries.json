@@ -1,0 +1,60 @@
+{
+  "pairs": [
+    {
+      "city": "Algiers",
+      "code": "ALG"
+    },
+    {
+      "city": "Ouagadougou",
+      "code": "OUA"
+    },
+    {
+      "city": "N'Djamena",
+      "code": "NDJ"
+    },
+    {
+      "city": "Cairo",
+      "code": "CAI"
+    },
+    {
+      "city": "Hurghada",
+      "code": "HRG"
+    },
+    {
+      "city": "Sharm el Sheikh",
+      "code": "SSH"
+    },
+    {
+      "city": "Tripoli",
+      "code": "TIP"
+    },
+    {
+      "city": "Bamako",
+      "code": "BKO"
+    },
+    {
+      "city": "Casablanca",
+      "code": "CMN"
+    },
+    {
+      "city": "Marrakech",
+      "code": "RAK"
+    },
+    {
+      "city": "Rabat",
+      "code": "RBA"
+    },
+    {
+      "city": "Niamey",
+      "code": "NIM"
+    },
+    {
+      "city": "Dakar",
+      "code": "DSS"
+    },
+    {
+      "city": "Tunis",
+      "code": "TUN"
+    }
+  ]
+}
