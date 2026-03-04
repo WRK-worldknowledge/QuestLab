@@ -1,0 +1,54 @@
+{
+  "module": "EURO",
+  "lesson": "Greece",
+  "pairs": [
+    {
+      "city": "Athens",
+      "code": "ATH"
+    },
+    {
+      "city": "Corfu",
+      "code": "CFU"
+    },
+    {
+      "city": "Heraklion",
+      "code": "HER"
+    },
+    {
+      "city": "Karpathos",
+      "code": "AOK"
+    },
+    {
+      "city": "Kos",
+      "code": "KGS"
+    },
+    {
+      "city": "Mykonos",
+      "code": "JMK"
+    },
+    {
+      "city": "Preveza",
+      "code": "PVK"
+    },
+    {
+      "city": "Rhodos",
+      "code": "RHO"
+    },
+    {
+      "city": "Samos",
+      "code": "SMI"
+    },
+    {
+      "city": "Santorini",
+      "code": "JTR"
+    },
+    {
+      "city": "Thessaloniki",
+      "code": "SKG"
+    },
+    {
+      "city": "Zakynthos",
+      "code": "ZTH"
+    }
+  ]
+}

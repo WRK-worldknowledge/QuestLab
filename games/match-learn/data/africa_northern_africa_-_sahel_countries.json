@@ -1,0 +1,58 @@
+{
+  "module": "Africa",
+  "lesson": "Northern Africa - Sahel countries",
+  "pairs": [
+    {
+      "city": "Cotonou",
+      "code": "COO"
+    },
+    {
+      "city": "Praia",
+      "code": "RAI"
+    },
+    {
+      "city": "Yamoussoukro",
+      "code": "ASK"
+    },
+    {
+      "city": "Abidjan",
+      "code": "ABJ"
+    },
+    {
+      "city": "Djibouti",
+      "code": "JIB"
+    },
+    {
+      "city": "Addis Ababa",
+      "code": "ADD"
+    },
+    {
+      "city": "Banjul",
+      "code": "BJL"
+    },
+    {
+      "city": "Accra",
+      "code": "ACC"
+    },
+    {
+      "city": "Conakry",
+      "code": "CKY"
+    },
+    {
+      "city": "Abuja",
+      "code": "ABV"
+    },
+    {
+      "city": "Lagos",
+      "code": "LOS"
+    },
+    {
+      "city": "Freetown",
+      "code": "FNA"
+    },
+    {
+      "city": "Lom\u00e9",
+      "code": "LFW"
+    }
+  ]
+}

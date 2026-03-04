@@ -1,0 +1,70 @@
+{
+  "module": "EURW",
+  "lesson": "UK, Ireland & France",
+  "pairs": [
+    {
+      "city": "Bordeaux",
+      "code": "BOD"
+    },
+    {
+      "city": "Chamb\u00e9ry",
+      "code": "CMF"
+    },
+    {
+      "city": "Lyon",
+      "code": "LYS"
+    },
+    {
+      "city": "Marseille",
+      "code": "MRS"
+    },
+    {
+      "city": "Nice",
+      "code": "NCE"
+    },
+    {
+      "city": "Strasbourg",
+      "code": "SXB"
+    },
+    {
+      "city": "Toulouse",
+      "code": "TLS"
+    },
+    {
+      "city": "Cork",
+      "code": "ORK"
+    },
+    {
+      "city": "Aberdeen",
+      "code": "ABZ"
+    },
+    {
+      "city": "Belfast",
+      "code": "BFS"
+    },
+    {
+      "city": "Birmingham",
+      "code": "BHX"
+    },
+    {
+      "city": "Bristol",
+      "code": "BRS"
+    },
+    {
+      "city": "Edinburgh",
+      "code": "EDI"
+    },
+    {
+      "city": "Glasgow",
+      "code": "GLA"
+    },
+    {
+      "city": "Liverpool",
+      "code": "LPL"
+    },
+    {
+      "city": "Manchester",
+      "code": "MAN"
+    }
+  ]
+}

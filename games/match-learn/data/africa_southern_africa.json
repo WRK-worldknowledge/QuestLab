@@ -1,0 +1,46 @@
+{
+  "module": "Africa",
+  "lesson": "Southern Africa",
+  "pairs": [
+    {
+      "city": "Luanda",
+      "code": "LAD"
+    },
+    {
+      "city": "Antananarivo",
+      "code": "TNR"
+    },
+    {
+      "city": "Lilongwe",
+      "code": "LLW"
+    },
+    {
+      "city": "Port Louis",
+      "code": "MRU"
+    },
+    {
+      "city": "Maputo",
+      "code": "MPM"
+    },
+    {
+      "city": "Windhoek",
+      "code": "WDH"
+    },
+    {
+      "city": "Cape Town",
+      "code": "CPT"
+    },
+    {
+      "city": "Johannesburg",
+      "code": "JNB"
+    },
+    {
+      "city": "Lusaka",
+      "code": "LUN"
+    },
+    {
+      "city": "Harare",
+      "code": "HRE"
+    }
+  ]
+}

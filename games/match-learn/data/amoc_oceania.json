@@ -1,0 +1,62 @@
+{
+  "module": "AMOC",
+  "lesson": "Oceania",
+  "pairs": [
+    {
+      "city": "Adelaide",
+      "code": "ADL"
+    },
+    {
+      "city": "Brisbane",
+      "code": "BNE"
+    },
+    {
+      "city": "Cairns",
+      "code": "CNS"
+    },
+    {
+      "city": "Canberra",
+      "code": "CBR"
+    },
+    {
+      "city": "Darwin",
+      "code": "DRW"
+    },
+    {
+      "city": "Melbourne",
+      "code": "MEL"
+    },
+    {
+      "city": "Perth",
+      "code": "PER"
+    },
+    {
+      "city": "Sydney",
+      "code": "SYD"
+    },
+    {
+      "city": "Noumea",
+      "code": "NOU"
+    },
+    {
+      "city": "Port Moresby",
+      "code": "POM"
+    },
+    {
+      "city": "Auckland",
+      "code": "AKL"
+    },
+    {
+      "city": "Christchurch",
+      "code": "CHC"
+    },
+    {
+      "city": "Wellington",
+      "code": "WLG"
+    },
+    {
+      "city": "Papeete",
+      "code": "PPT"
+    }
+  ]
+}

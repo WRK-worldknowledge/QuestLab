@@ -1,0 +1,70 @@
+{
+  "module": "EURW",
+  "lesson": "Spain & Portugal",
+  "pairs": [
+    {
+      "city": "Faro",
+      "code": "FAO"
+    },
+    {
+      "city": "Funchal",
+      "code": "FNC"
+    },
+    {
+      "city": "Porto",
+      "code": "OPO"
+    },
+    {
+      "city": "Alicante",
+      "code": "ALC"
+    },
+    {
+      "city": "Arrecife",
+      "code": "ACE"
+    },
+    {
+      "city": "Barcelona ",
+      "code": "BCN"
+    },
+    {
+      "city": "Fuerteventura",
+      "code": "FUE"
+    },
+    {
+      "city": "Ibiza",
+      "code": "IBZ"
+    },
+    {
+      "city": "La Palma",
+      "code": "SPC"
+    },
+    {
+      "city": "Las Palmas",
+      "code": "LPA"
+    },
+    {
+      "city": "Mahon",
+      "code": "MAH"
+    },
+    {
+      "city": "Malaga",
+      "code": "AGP"
+    },
+    {
+      "city": "Palma de Mallorca",
+      "code": "PMI"
+    },
+    {
+      "city": "Sevilla",
+      "code": "SVQ"
+    },
+    {
+      "city": "Tenerife",
+      "code": "TFS"
+    },
+    {
+      "city": "Valencia",
+      "code": "VLC"
+    }
+  ]
+}
