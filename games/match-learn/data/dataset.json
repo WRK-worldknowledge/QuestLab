@@ -1,0 +1,19 @@
+{
+ "datasets":[
+
+  { "module":"Africa","lesson":"Lesson 1","file":"africa_central_africa.json"},
+  { "module":"Africa","lesson":"Lesson 2","file":"africa_northern_africa_-_sahara_countries.json"},
+  { "module":"Africa","lesson":"Lesson 3","file":"africa_northern_africa_-_sahel_countries.json"},
+  { "module":"Africa","lesson":"Lesson 4","file":"africa_southern_africa.json"},
+
+  { "module":"Americas","lesson":"Lesson 1","file":"amoc_cities_north_america.json"},
+  { "module":"Americas","lesson":"Lesson 2","file":"amoc_countries_and_capitals_north_america_and_caribbean.json"},
+  { "module":"Americas","lesson":"Lesson 3","file":"amoc_countries_and_cities_south_america.json"},
+  { "module":"Americas","lesson":"Lesson 4","file":"amoc_oceania.json"},
+
+  { "module":"Asia","lesson":"Lesson 1","file":"asia_central_asia.json"},
+  { "module":"Asia","lesson":"Lesson 2","file":"asia_far_east.json"},
+  { "module":"Asia","lesson":"Lesson 3","file":"asia_middle_east_eurasia.json"}
+
+ ]
+}
