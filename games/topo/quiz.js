@@ -1,4 +1,5 @@
-console.log("quiz.js loaded");
+startHelp("wrkquiz")
+    console.log("quiz.js loaded");
 let data = [];
 let questions = [];
 let current = 0;
