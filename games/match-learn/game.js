@@ -15,7 +15,18 @@ let sec=time%60
 document.getElementById("timer").innerText=min+":"+( "0"+sec).slice(-2)
 },1000)
 
-fetch("data/iata_data.json")
+let datasetFile = null
+
+fetch("data/datasets.json")
+.then(res=>res.json())
+.then(datasets => {
+
+    // voorbeeld: eerste dataset laden
+    datasetFile = datasets[0].file
+
+    return fetch("data/" + datasetFile)
+
+})
 .then(res=>res.json())
 .then(data=>startGame(data))
 
