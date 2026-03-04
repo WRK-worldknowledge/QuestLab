@@ -20,13 +20,28 @@ const params = new URLSearchParams(location.search)
 const file = params.get("data")
 const module = params.get("module")
 const final = params.get("final")
+console.log("DATA FILE:", file)
+console.log("MODULE:", module)
+console.log("FINAL:", final)
 
 // TRAINING (1 lesson)
 if(file){
 
 fetch("data/" + file)
-.then(res=>res.json())
-.then(data=>startGame(data))
+.then(res=>{
+if(!res.ok){
+throw new Error("Dataset not found: " + file)
+}
+return res.json()
+})
+.then(data=>{
+console.log("DATA LOADED:", data)
+startGame(data)
+})
+.catch(err=>{
+console.error(err)
+alert("Dataset failed to load")
+})
 
 }
 
