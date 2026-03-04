@@ -24,7 +24,23 @@ font-size:28px;
 background:white;
 color:#0c2d5c;
 }
+.topRow{
+display:grid;
+grid-template-columns:1fr 140px 1fr;
+gap:20px;
+align-items:center;
+max-width:700px;
+margin:20px auto;
+}
 
+.tile.large{
+background:#ffd84d;
+color:#0c2d5c;
+padding:30px;
+border-radius:12px;
+font-size:20px;
+font-weight:bold;
+}
 #grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
