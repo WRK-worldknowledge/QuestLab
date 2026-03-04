@@ -10,13 +10,13 @@ Africa:[
 ],
 
 Asia:[
-"asia_middle_east_and_eurasia.json",
+"asia_middle_east_eurasia.json",
 "asia_central_asia.json",
 "asia_far_east.json"
 ],
 
 "America & Oceania":[
-"amoc_countries_and_capitals_north_america_and_caribbean.json",
+"amoc_countries_and_capitals_north_america_caribbean.json",
 "amoc_cities_north_america.json",
 "amoc_countries_and_cities_south_america.json",
 "amoc_oceania.json"
