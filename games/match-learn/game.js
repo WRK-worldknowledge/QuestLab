@@ -19,7 +19,9 @@ const params = new URLSearchParams(location.search)
 
 const file = params.get("data")
 const module = params.get("module")
+const final = params.get("final")
 
+// TRAINING (1 lesson)
 if(file){
 
 fetch("data/" + file)
@@ -28,6 +30,7 @@ fetch("data/" + file)
 
 }
 
+// MODULE EXAM
 if(module){
 
 fetch("data/datasets.json")
@@ -55,6 +58,31 @@ startGame(combined)
 
 }
 
+// FINAL EXAM
+if(final){
+
+fetch("data/datasets.json")
+.then(res=>res.json())
+.then(datasets=>{
+
+Promise.all(
+datasets.map(d=>fetch("data/"+d.file).then(r=>r.json()))
+)
+.then(allData=>{
+
+let combined={pairs:[]}
+
+allData.forEach(d=>{
+combined.pairs.push(...d.pairs)
+})
+
+startGame(combined)
+
+})
+
+})
+
+}
 function shuffle(array){
 for(let i=array.length-1;i>0;i--){
 const j=Math.floor(Math.random()*(i+1))
