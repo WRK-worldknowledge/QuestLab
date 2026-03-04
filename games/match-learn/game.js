@@ -134,6 +134,7 @@ matchesLeft = selectedPairs.length
 tiles = shuffle(tiles)
 
 const grid=document.getElementById("grid")
+grid.innerHTML=""
 
 tiles.forEach(tile=>{
 
@@ -153,12 +154,19 @@ function selectTile(div,tile){
 if(firstPick && firstPick.div === div) return
 
 if(firstPick==null){
+
 firstPick={div,tile}
 div.style.border="3px solid white"
+
+document.getElementById("leftDisplay").innerText = tile.value
+
 return
 }
 
 secondPick={div,tile}
+
+document.getElementById("rightDisplay").innerText = tile.value
+
 checkMatch()
 
 }
@@ -171,8 +179,9 @@ firstPick.div.classList.add("correct")
 secondPick.div.classList.add("correct")
 
 setTimeout(()=>{
-firstPick.div.remove()
-secondPick.div.remove()
+
+firstPick.div.style.visibility="hidden"
+secondPick.div.style.visibility="hidden"
 
 matchesLeft--   // ⭐ nieuwe match
 
@@ -205,6 +214,8 @@ if(secondPick) secondPick.div.style.border=""
 
 firstPick=null
 secondPick=null
+  document.getElementById("leftDisplay").innerText=""
+document.getElementById("rightDisplay").innerText=""
 
 }
 function finishGame(){
