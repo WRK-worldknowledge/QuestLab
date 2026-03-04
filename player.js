@@ -2,11 +2,20 @@
 const GITHUB_USER = "WRK-worldknowledge";
 const GITHUB_REPO = "QuestLab";
 const GITHUB_FILE = "players.json";
+function generateFAID(){
+
+const time = Date.now().toString(36)
+const rand = Math.random().toString(36).substring(2,6)
+
+return "FA-" + time + rand
+
+}
 
 // ===== LOAD FROM CLOUD =====
-async function loadPlayerFromCloud(name){
+async function loadPlayerFromCloud(id){
 
     try{
+
         const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
 
         const res = await fetch(url);
@@ -17,16 +26,28 @@ async function loadPlayerFromCloud(name){
 
         const content = JSON.parse(atob(data.content));
 
-        if(content[name]){
-            localStorage.setItem("questlab_player", JSON.stringify(content[name]));
-            console.log("☁️ Cloud profile loaded");
+        if(content[id]){
+
+            const local = getPlayer();
+            const cloud = content[id];
+
+            // voorkom dat oude save nieuwe overschrijft
+            if(!local.lastSave || cloud.lastSave > local.lastSave){
+
+                localStorage.setItem("questlab_player", JSON.stringify(cloud));
+                console.log("☁️ Cloud profile loaded");
+
+            }
+
         }
 
     }catch(e){
-        console.log("No cloud save found");
-    }
-}
 
+        console.log("No cloud save found");
+
+    }
+
+}
 // ===== SAVE TO CLOUD =====
 async function savePlayerToCloud(){
 
@@ -65,12 +86,16 @@ function getPlayer(){
 
     if(!player){
         player = {
+    id:null,
+    firstName:"",
+    lastName:"",
     name:"Cadet",
     xp:0,
     modules:{},
     masteredModules:0,
     rank:"Service Agent",
-    badge:"badges/service_agent.png"
+    badge:"badges/service_agent.png",
+    lastSave:0
 };
      
         localStorage.setItem("questlab_player", JSON.stringify(player));
@@ -167,19 +192,38 @@ function renderPlayerCard(){
 // ===== FIRST TIME PLAYER NAME =====
 function ensurePlayer(){
 
-    let player = getPlayer();
+let player = getPlayer()
 
-    // eerste keer → naam vragen
-    if(player.name === "Cadet"){
-        const name = prompt("Enter your callsign:");
+if(player.name === "Cadet"){
 
-        if(name && name.trim() !== ""){
-            player.name = name.trim();
-            localStorage.setItem("questlab_player", JSON.stringify(player));
-        }
-    }
+const first = prompt("First name:")
+const last = prompt("Last name:")
+const call = prompt("Choose your callsign:")
+
+if(!first || !last || !call){
+alert("Please complete all fields")
+return
 }
 
+player.firstName = first.trim()
+player.lastName = last.trim()
+player.name = call.trim()
+
+player.id = generateFAID()
+player.lastSave = Date.now()
+
+localStorage.setItem("questlab_player", JSON.stringify(player))
+
+alert(
+"Welcome " + player.name + "!\n\n" +
+"Your Flight Attendant ID:\n" +
+player.id +
+"\n\nSave this ID to restore your progress."
+)
+
+}
+
+}
 // eerste keer speler naam vragen
 window.addEventListener("load", async () => {
 
@@ -190,7 +234,7 @@ window.addEventListener("load", async () => {
     let player = getPlayer();
 
     // 3️⃣ cloud profiel laden
-    await loadPlayerFromCloud(player.name);
+    await loadPlayerFromCloud(player.id);
 
     // 4️⃣ opnieuw ophalen want cloud kan hem overschreven hebben
     player = getPlayer();
@@ -243,36 +287,5 @@ window.addEventListener("load", async () => {
 
     card.querySelector("button").onclick = () => overlay.remove();
 }
-async function savePlayerToCloud(){
 
-    const player = getPlayer();
 
-    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
-
-    const res = await fetch(url);
-    const data = await res.json();
-
-    let content = {};
-    try{
-        content = JSON.parse(atob(data.content));
-    }catch{
-        content = {};
-    }
-
-    content[player.name] = player;
-
-    await fetch(url,{
-        method:"PUT",
-        headers:{
-            "Authorization":"token " + GITHUB_TOKEN,
-            "Content-Type":"application/json"
-        },
-        body:JSON.stringify({
-            message:"QuestLab autosave",
-            content:btoa(JSON.stringify(content,null,2)),
-            sha:data.sha
-        })
-    });
-
-    console.log("Cloud saved");
-}
