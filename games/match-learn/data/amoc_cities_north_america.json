@@ -1,128 +1,23 @@
 {
-  "pairs": [
-    {
-      "city": "Calgary",
-      "code": "YYC"
-    },
-    {
-      "city": "Edmonton",
-      "code": "YEG"
-    },
-    {
-      "city": "Montreal",
-      "code": "YUL"
-    },
-    {
-      "city": "Toronto",
-      "code": "YYZ"
-    },
-    {
-      "city": "Vancouver ",
-      "code": "YVR"
-    },
-    {
-      "city": "Santiago de Chile",
-      "code": "SCL"
-    },
-    {
-      "city": "Varadero",
-      "code": "VRA"
-    },
-    {
-      "city": "Punta Cana",
-      "code": "PUJ"
-    },
-    {
-      "city": "Montego Bay",
-      "code": "MBJ"
-    },
-    {
-      "city": "Cancun",
-      "code": "CUN"
-    },
-    {
-      "city": "Atlanta",
-      "code": "ATL"
-    },
-    {
-      "city": "Boston",
-      "code": "BOS"
-    },
-    {
-      "city": "Chicago",
-      "code": "ORD"
-    },
-    {
-      "city": "Cincinnati",
-      "code": "CVG"
-    },
-    {
-      "city": "Dallas ",
-      "code": "DFW"
-    },
-    {
-      "city": "Detroit",
-      "code": "DTW"
-    },
-    {
-      "city": "Honolulu",
-      "code": "HNL"
-    },
-    {
-      "city": "Houston",
-      "code": "IAH"
-    },
-    {
-      "city": "Las Vegas",
-      "code": "LAS"
-    },
-    {
-      "city": "Los Angeles",
-      "code": "LAX"
-    },
-    {
-      "city": "Miami",
-      "code": "MIA"
-    },
-    {
-      "city": "Minneapolis",
-      "code": "MSP"
-    },
-    {
-      "city": "New York",
-      "code": "JFK"
-    },
-    {
-      "city": "New York ",
-      "code": "LGA"
-    },
-    {
-      "city": "New York ",
-      "code": "EWR"
-    },
-    {
-      "city": "Orlando",
-      "code": "MCO"
-    },
-    {
-      "city": "Pittsburgh",
-      "code": "PIT"
-    },
-    {
-      "city": "Portland",
-      "code": "PDX"
-    },
-    {
-      "city": "Salt Lake City",
-      "code": "SLC"
-    },
-    {
-      "city": "San Francisco",
-      "code": "SFO"
-    },
-    {
-      "city": "Seattle",
-      "code": "SEA"
-    }
-  ]
+ "pairs":[
+  {"city":"Calgary","code":"YYC","image":"YYC pijl.png"},
+  {"city":"Edmonton","code":"YEG","image":"YEG pijl.png"},
+  {"city":"Montreal","code":"YUL","image":"YUL pijl.png"},
+  {"city":"Toronto","code":"YYZ","image":"YYZ pijl.png"},
+  {"city":"Vancouver","code":"YVR","image":"YVR pijl.png"},
+  {"city":"Varadero","code":"VRA","image":"VRA pijl.png"},
+  {"city":"Punta Cana","code":"PUJ","image":"PUJ pijl.png"},
+  {"city":"Montego Bay","code":"MBJ","image":"MBJ Pijl.png"},
+  {"city":"Cancun","code":"CUN","image":"CUN pijl.png"},
+  {"city":"Atlanta","code":"ATL","image":"ATL pijl.png"},
+  {"city":"Boston","code":"BOS","image":"BOS pijl.png"},
+  {"city":"Chicago","code":"ORD","image":"ORD pijl.png"},
+  {"city":"Dallas","code":"DFW","image":"DFW pijl.png"},
+  {"city":"Detroit","code":"DTW","image":"DTW pijl.png"},
+  {"city":"Las Vegas","code":"LAS","image":"LAS pijl.png"},
+  {"city":"Los Angeles","code":"LAX","image":"LAX pijl.png"},
+  {"city":"Miami","code":"MIA","image":"MIA pijl.png"},
+  {"city":"San Francisco","code":"SFO","image":"SFO pijl.png"},
+  {"city":"Seattle","code":"SEA","image":"SEA pijl.png"}
+ ]
 }
