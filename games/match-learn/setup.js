@@ -119,8 +119,11 @@ option.textContent = "Lesson " + (index + 1) + " – " + name
 lessonSelect.appendChild(option)
 
 })
+  
+}
 
 moduleSelect.addEventListener("change", populateLessons)
+populateLessons()
 
 // eerste keer laden
 populateLessons()
