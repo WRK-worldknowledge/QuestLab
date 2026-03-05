@@ -205,7 +205,9 @@ function renderPlayerCard(){
             </div>
 
             <div class="rankCol">
-                <div class="xpText">FA-ID (save this!): ${player.id || ""}</div>
+                <div class="rankText">${player.rank}</div>
+<div class="xpText">XP: ${player.xp}</div>
+<div class="xpText">FA-ID: ${player.id || ""}</div>
             </div>
 
             <div class="nameCol">
