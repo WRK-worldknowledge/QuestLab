@@ -9,6 +9,7 @@ let time=180
 let timerInterval
 
 const params = new URLSearchParams(location.search)
+const gameType = params.get("type") || "code-city"
 
 const file = params.get("data")
 const module = params.get("module")
@@ -164,9 +165,26 @@ let tiles=[]
 const selectedPairs = shuffle([...data.pairs]).slice(0,7)
 
 selectedPairs.forEach(pair=>{
+if(gameType==="code-city"){
+
 tiles.push({type:"city",value:pair.city,match:pair.code})
 tiles.push({type:"code",value:pair.code,match:pair.code})
-})
+
+}
+
+if(gameType==="code-image"){
+
+tiles.push({type:"image",value:pair.image,match:pair.code})
+tiles.push({type:"code",value:pair.code,match:pair.code})
+
+}
+
+if(gameType==="city-image"){
+
+tiles.push({type:"city",value:pair.city,match:pair.code})
+tiles.push({type:"image",value:pair.image,match:pair.code})
+
+}
 
 matchesLeft = selectedPairs.length
 
@@ -191,7 +209,19 @@ grid.appendChild(timer)
 
 const div=document.createElement("div")
 div.className="tile"
+if(tile.type==="image"){
+
+const img=document.createElement("img")
+img.src="images/"+tile.value
+img.style.width="70px"
+
+div.appendChild(img)
+
+}else{
+
 div.innerText=tile.value
+
+}
 
 div.onclick=()=>selectTile(div,tile)
 
