@@ -1,52 +1,16 @@
 {
-  "pairs": [
-    {
-      "city": "Yaounde",
-      "code": "YAO"
-    },
-    {
-      "city": "Bangui",
-      "code": "BGF"
-    },
-    {
-      "city": "Kinshasa",
-      "code": "FIH"
-    },
-    {
-      "city": "Malabo",
-      "code": "SSG"
-    },
-    {
-      "city": "Libreville",
-      "code": "LBV"
-    },
-    {
-      "city": "Mombasa",
-      "code": "MBA"
-    },
-    {
-      "city": "Nairobi",
-      "code": "NBO"
-    },
-    {
-      "city": "Brazzaville",
-      "code": "BZV"
-    },
-    {
-      "city": "Kigali",
-      "code": "KGL"
-    },
-    {
-      "city": "Mahe Island",
-      "code": "SEZ"
-    },
-    {
-      "city": "Dar es Salaam",
-      "code": "DAR"
-    },
-    {
-      "city": "Entebbe",
-      "code": "EBB"
-    }
+  "pairs":[
+    {"city":"Yaounde","code":"YAO","image":"YAO pijl.png"},
+    {"city":"Bangui","code":"BGF","image":"BGF pijl.png"},
+    {"city":"Kinshasa","code":"FIH","image":"FIH pijl.png"},
+    {"city":"Malabo","code":"SSG","image":"SSG pijl.png"},
+    {"city":"Libreville","code":"LBV","image":"LBV pijl.png"},
+    {"city":"Mombasa","code":"MBA","image":"MBA pijl.png"},
+    {"city":"Nairobi","code":"NBO","image":"NBO pijl.png"},
+    {"city":"Brazzaville","code":"BZV","image":"BZV pijl.png"},
+    {"city":"Kigali","code":"KGL","image":"KGL pijl.png"},
+    {"city":"Mahe Island","code":"SEZ","image":"SEZ pijl.png"},
+    {"city":"Dar es Salaam","code":"DAR","image":"DAR pijl.png"},
+    {"city":"Entebbe","code":"EBB","image":"EBB pijl.png"}
   ]
 }
