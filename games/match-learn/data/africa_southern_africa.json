@@ -1,44 +1,14 @@
 {
-  "pairs": [
-    {
-      "city": "Luanda",
-      "code": "LAD"
-    },
-    {
-      "city": "Antananarivo",
-      "code": "TNR"
-    },
-    {
-      "city": "Lilongwe",
-      "code": "LLW"
-    },
-    {
-      "city": "Port Louis",
-      "code": "MRU"
-    },
-    {
-      "city": "Maputo",
-      "code": "MPM"
-    },
-    {
-      "city": "Windhoek",
-      "code": "WDH"
-    },
-    {
-      "city": "Cape Town",
-      "code": "CPT"
-    },
-    {
-      "city": "Johannesburg",
-      "code": "JNB"
-    },
-    {
-      "city": "Lusaka",
-      "code": "LUN"
-    },
-    {
-      "city": "Harare",
-      "code": "HRE"
-    }
+  "pairs":[
+    {"city":"Luanda","code":"LAD","image":"LAD pijl.png"},
+    {"city":"Antananarivo","code":"TNR","image":"TNR pijl.png"},
+    {"city":"Lilongwe","code":"LLW","image":"LLW pijl.png"},
+    {"city":"Port Louis","code":"MRU","image":"MRU pijl.png"},
+    {"city":"Maputo","code":"MPM","image":"MPM pijl.png"},
+    {"city":"Windhoek","code":"WDH","image":"WDH pijl.png"},
+    {"city":"Cape Town","code":"CPT","image":"CPT pijl.png"},
+    {"city":"Johannesburg","code":"JNB","image":"JNB pijl.png"},
+    {"city":"Lusaka","code":"LUN","image":"LUN pijl.png"},
+    {"city":"Harare","code":"HRE","image":"HRE pijl.png"}
   ]
 }
