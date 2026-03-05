@@ -71,22 +71,32 @@ h1 {
 }
 
 .playerRow{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:16px;
 
+background:linear-gradient(135deg,#0F1C3F,#0B1222);
+padding:14px 18px;
+border-radius:16px;
+  border:2px solid #F5CA51;
+}
 .badgeCol{
-    flex:0 0 auto;
+display:flex;
+align-items:center;
 }
 
 .badge{
-    width:36px;
+height:70px;
+width:auto;
+object-fit:contain;
 }
 
 .rankCol{
-    flex:1;
-    text-align:center;
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+line-height:1.2;
 }
 
 .rankText{
@@ -102,13 +112,9 @@ h1 {
 }
 
 .nameCol{
-    flex:0 0 auto;
-    font-weight:700;
-    font-size:16px;
-    max-width:90px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+margin-left:auto;
+font-weight:700;
+font-size:18px;
 }
 
   .games-grid{
