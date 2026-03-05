@@ -1,64 +1,19 @@
 {
-  "pairs": [
-    {
-      "city": "Oranjestad",
-      "code": "AUA"
-    },
-    {
-      "city": "Kralendijk",
-      "code": "BON"
-    },
-    {
-      "city": "Ottawa",
-      "code": "YOW"
-    },
-    {
-      "city": "San Jose",
-      "code": "SJO"
-    },
-    {
-      "city": "Havana",
-      "code": "HAV"
-    },
-    {
-      "city": "Willemstad",
-      "code": "CUR"
-    },
-    {
-      "city": "Santo Domingo",
-      "code": "SDQ"
-    },
-    {
-      "city": "Ponte-a-Pitre",
-      "code": "PTP"
-    },
-    {
-      "city": "Port-au-Prince",
-      "code": "PAP"
-    },
-    {
-      "city": "Kingston",
-      "code": "KIN"
-    },
-    {
-      "city": "Fort de France",
-      "code": "FDF"
-    },
-    {
-      "city": "Mexico City",
-      "code": "MEX"
-    },
-    {
-      "city": "Panama City",
-      "code": "PTY"
-    },
-    {
-      "city": "Philipsburg",
-      "code": "SXM"
-    },
-    {
-      "city": "Washington D.C.",
-      "code": "IAD"
-    }
-  ]
+ "pairs":[
+  {"city":"Oranjestad","code":"AUA","image":"AUA pijl.png"},
+  {"city":"Kralendijk","code":"BON","image":"BON pijl.png"},
+  {"city":"Ottawa","code":"YOW","image":"YOW pijl.png"},
+  {"city":"San Jose","code":"SJO","image":"SJO pijl.png"},
+  {"city":"Havana","code":"HAV","image":"HAV pijl.png"},
+  {"city":"Willemstad","code":"CUR","image":"CUR pijl.png"},
+  {"city":"Santo Domingo","code":"SDQ","image":"SDQ pijl.png"},
+  {"city":"Ponte-a-Pitre","code":"PTP","image":"PTP pijl.png"},
+  {"city":"Port-au-Prince","code":"PAP","image":"PAP pijl.png"},
+  {"city":"Kingston","code":"KIN","image":"KIN pijl.png"},
+  {"city":"Fort de France","code":"FDF","image":"FDF pijl.png"},
+  {"city":"Mexico City","code":"MEX","image":"MEX pijl.png"},
+  {"city":"Panama City","code":"PTY","image":"PTY pijl.png"},
+  {"city":"Philipsburg","code":"SXM","image":"SXM pijl.png"},
+  {"city":"Washington D.C.","code":"IAD","image":"IAD pijl.png"}
+ ]
 }
