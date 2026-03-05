@@ -1,4 +1,42 @@
 document.addEventListener("DOMContentLoaded", function(){
+  const lessonNames = {
+
+"Africa":[
+"Northern Africa - Sahara countries",
+"Northern Africa - Sahel countries",
+"Central Africa",
+"Southern Africa"
+],
+
+"Asia":[
+"Middle East & EurAsia",
+"Central Asia",
+"Far East"
+],
+
+"America & Oceania":[
+"Countries and capitals North America & Caribbean",
+"Cities North America",
+"Countries and cities South America",
+"Oceania"
+],
+
+"Eastern Europe":[
+"Austria, Hungary, Romania, Moldova & the Balkan",
+"Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+"Greece",
+"Turkey & Cyprus"
+],
+
+"Western Europe":[
+"Countries and capital cities",
+"Scandinavia, Germany & BeNeLux",
+"Spain & Portugal",
+"Switzerland & Italy",
+"UK, Ireland & France"
+]
+
+}
 
 const moduleFiles = {
 
@@ -71,14 +109,16 @@ return
 files.forEach((file,index)=>{
 
 const option = document.createElement("option")
+
 option.value = file
-option.textContent = "Lesson " + (index + 1)
+
+const name = lessonNames[module][index]
+
+option.textContent = "Lesson " + (index + 1) + " – " + name
 
 lessonSelect.appendChild(option)
 
 })
-
-}
 
 moduleSelect.addEventListener("change", populateLessons)
 
