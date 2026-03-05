@@ -1,60 +1,18 @@
 {
-  "pairs": [
-    {
-      "city": "Adelaide",
-      "code": "ADL"
-    },
-    {
-      "city": "Brisbane",
-      "code": "BNE"
-    },
-    {
-      "city": "Cairns",
-      "code": "CNS"
-    },
-    {
-      "city": "Canberra",
-      "code": "CBR"
-    },
-    {
-      "city": "Darwin",
-      "code": "DRW"
-    },
-    {
-      "city": "Melbourne",
-      "code": "MEL"
-    },
-    {
-      "city": "Perth",
-      "code": "PER"
-    },
-    {
-      "city": "Sydney",
-      "code": "SYD"
-    },
-    {
-      "city": "Noumea",
-      "code": "NOU"
-    },
-    {
-      "city": "Port Moresby",
-      "code": "POM"
-    },
-    {
-      "city": "Auckland",
-      "code": "AKL"
-    },
-    {
-      "city": "Christchurch",
-      "code": "CHC"
-    },
-    {
-      "city": "Wellington",
-      "code": "WLG"
-    },
-    {
-      "city": "Papeete",
-      "code": "PPT"
-    }
-  ]
+ "pairs":[
+  {"city":"Adelaide","code":"ADL","image":"ADL pijl.png"},
+  {"city":"Brisbane","code":"BNE","image":"BNE pijl.png"},
+  {"city":"Cairns","code":"CNS","image":"CNS pijl.png"},
+  {"city":"Canberra","code":"CBR","image":"CBR pijl.png"},
+  {"city":"Darwin","code":"DRW","image":"DRW pijl.png"},
+  {"city":"Melbourne","code":"MEL","image":"MEL pijl.png"},
+  {"city":"Perth","code":"PER","image":"PER pijl.png"},
+  {"city":"Sydney","code":"SYD","image":"SYD pijl.png"},
+  {"city":"Noumea","code":"NOU","image":"NOU pijl.png"},
+  {"city":"Port Moresby","code":"POM","image":"POM pijl.png"},
+  {"city":"Auckland","code":"AKL","image":"AKL pijl.png"},
+  {"city":"Christchurch","code":"CHC","image":"CHC pijl.png"},
+  {"city":"Wellington","code":"WLG","image":"WLG pijl.png"},
+  {"city":"Papeete","code":"PPT","image":"PPT pijl.png"}
+ ]
 }
