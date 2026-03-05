@@ -4,7 +4,7 @@ let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
 
-let time=480
+let time=180
 
 let timerInterval
 
@@ -16,6 +16,51 @@ const final = params.get("final")
 console.log("DATA FILE:", file)
 console.log("MODULE:", module)
 console.log("FINAL:", final)
+const moduleNames = {
+    "EURW": "1. Western Europe",
+    "EURO": "2. Eastern Europe",
+    "AMOC": "3. America & Oceania",
+    "AFR": "4. Africa",
+    "ASIA": "5. Asia"
+};
+
+const lessonOrder = {
+
+    "EURW": [
+        "Countries and capital cities",
+        "UK, Ireland & France",
+        "Scandinavia, Germany & BeNeLux",
+        "Switzerland & Italy",
+        "Spain & Portugal"
+    ],
+
+    "EURO": [
+        "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
+        "Austria, Hungary, Romania, Moldova & the Balkan",
+        "Greece",
+        "Turkey & Cyprus"
+    ],
+
+    "AMOC": [
+        "Countries and capitals North America & Caribbean",
+        "Cities North America",
+        "Countries and cities South America",
+        "Oceania"
+    ],
+
+    "AFR": [
+        "Northern Africa - Sahara countries",
+        "Northern Africa - Sahel countries",
+        "Central Africa",
+        "Southern Africa"
+    ],
+
+    "ASIA": [
+        "Middle East & EurAsia",
+        "Central Asia",
+        "Far East"
+    ]
+};
 
 // TRAINING (1 lesson)
 if(file){
