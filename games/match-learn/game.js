@@ -185,6 +185,7 @@ tiles.push({type:"city",value:pair.city,match:pair.code})
 tiles.push({type:"image",value:pair.image,match:pair.code})
 
 }
+    }) 
 
 matchesLeft = selectedPairs.length
 
