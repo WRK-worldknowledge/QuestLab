@@ -74,9 +74,18 @@ font-size:clamp(14px,2.5vw,20px);
 
 transition:0.2s;
 }
+.tile img{
+max-width:90%;
+max-height:90%;
+object-fit:contain;
+pointer-events:none;
+}
 
 .tile:hover{
 transform:scale(1.05);
+}
+.tile{
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
 
 .correct{
