@@ -1,60 +1,19 @@
 {
-  "pairs": [
-    {
-      "city": "Buenos Aires",
-      "code": "EZE"
-    },
-    {
-      "city": "Brasilia",
-      "code": "BSB"
-    },
-    {
-      "city": "Fortaleza",
-      "code": "FOR"
-    },
-    {
-      "city": "Rio de Janeiro",
-      "code": "GIG"
-    },
-    {
-      "city": "S\u00e3o Paulo",
-      "code": "GRU"
-    },
-    {
-      "city": "Bogota",
-      "code": "BOG"
-    },
-    {
-      "city": "Cartagena",
-      "code": "CTG"
-    },
-    {
-      "city": "Guayaquil",
-      "code": "GYE"
-    },
-    {
-      "city": "Quito",
-      "code": "UIO"
-    },
-    {
-      "city": "Cayenne",
-      "code": "CAY"
-    },
-    {
-      "city": "Lima",
-      "code": "LIM"
-    },
-    {
-      "city": "Paramaribo",
-      "code": "PBM"
-    },
-    {
-      "city": "Montevideo",
-      "code": "MVD"
-    },
-    {
-      "city": "Caracas",
-      "code": "CCS"
-    }
-  ]
+ "pairs":[
+  {"city":"Buenos Aires","code":"EZE","image":"EZE Pijl.png"},
+  {"city":"Brasilia","code":"BSB","image":"BSB Pijl.png"},
+  {"city":"Fortaleza","code":"FOR","image":"FOR Pijl.png"},
+  {"city":"Rio de Janeiro","code":"GIG","image":"GIG Pijl.png"},
+  {"city":"São Paulo","code":"GRU","image":"GRU Pijl.png"},
+  {"city":"Santiago de Chile","code":"SCL","image":"SCL Pijl.png"},
+  {"city":"Bogota","code":"BOG","image":"BOG Pijl.png"},
+  {"city":"Cartagena","code":"CTG","image":"CTG pijl.png"},
+  {"city":"Guayaquil","code":"GYE","image":"GYE Pijl.png"},
+  {"city":"Quito","code":"UIO","image":"UIO Pijl.png"},
+  {"city":"Cayenne","code":"CAY","image":"CAY Pijl.png"},
+  {"city":"Lima","code":"LIM","image":"LIM Pijl.png"},
+  {"city":"Paramaribo","code":"PBM","image":"PBM Pijl.png"},
+  {"city":"Montevideo","code":"MVD","image":"MVD Pijl.png"},
+  {"city":"Caracas","code":"CCS","image":"CCS Pijl.png"}
+ ]
 }
