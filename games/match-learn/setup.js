@@ -131,6 +131,7 @@ startBtn.addEventListener("click", function(){
 const mode = modeSelect.value
 const module = moduleSelect.value
 const lesson = lessonSelect.value
+  const gameType = document.getElementById("gameType").value
 
 console.log("MODE:", mode)
 console.log("MODULE:", module)
@@ -139,7 +140,8 @@ console.log("LESSON FILE:", lesson)
 // TRAINING (1 LESSON)
 if(mode === "training"){
 
-window.location.href = "game.html?data=" + lesson
+window.location.href =
+"game.html?data=" + lesson + "&type=" + gameType
 
 }
 
