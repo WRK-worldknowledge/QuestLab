@@ -14,22 +14,22 @@ text:"Play per lesson, per module or challenge yourself with the full exam."
 wrkcharades:[
 {
 title:"WRK Charades",
-text:"Test your knowledge of worldwide destinations. Your classmates give clues so you can guess the destination or IATA code."
+text:"Test your knowledge of worldwide destinations and IATA codes."
 },
 {
 title:"How to play",
-text:"Hold your phone against your forehead. Tilt LEFT if correct. Tilt RIGHT to skip."
+text:"Hold your phone against your forehead. Your classmates give clues so you can guess the destination or IATA code. Tilt LEFT if correct. Tilt RIGHT to skip."
 }
 ],
 
 airimp:[
 {
 title:"AIRIMP Codes",
-text:"AIRIMP codes are aviation abbreviations used worldwide in reservations and ticketing systems. Your classmates give clues so you can guess the AIRIMP code or meaning"
+text:"AIRIMP codes are aviation abbreviations used worldwide in reservations and ticketing systems. Test your knowledge of these abbreviations and their meaning."
 },
 {
 title:"How to play",
-text:"Hold the phone to your forehead. Tilt LEFT if correct, RIGHT to skip."
+text:"Hold the phone to your forehead. Your classmates give clues so you can guess the AIRIMP code or meaning. Tilt LEFT if correct, RIGHT to skip."
 }
 ],
 
