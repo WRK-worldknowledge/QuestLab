@@ -11,6 +11,30 @@ const rand = Math.random().toString(36).substring(2,6)
 return "FA-" + time + rand
 
 }
+function upgradeOldPlayer(player){
+
+// oude spelers hebben nog geen FA-ID
+if(!player.id){
+
+player.id = generateFAID()
+player.firstName = player.firstName || ""
+player.lastName = player.lastName || ""
+player.lastSave = Date.now()
+
+console.log("Player upgraded to FA-ID system")
+
+localStorage.setItem("questlab_player", JSON.stringify(player))
+
+alert(
+"Your profile has been upgraded.\n\n" +
+"Your new Flight Attendant ID:\n" +
+player.id +
+"\n\nSave this ID to restore your progress."
+)
+
+}
+
+}
 
 // ===== LOAD FROM CLOUD =====
 async function loadPlayerFromCloud(id){
@@ -221,6 +245,30 @@ function renderPlayerCard(){
 function ensurePlayer(){
 
 let player = getPlayer()
+    function upgradeOldPlayer(player){
+
+// oude spelers hebben nog geen FA-ID
+if(!player.id){
+
+player.id = generateFAID()
+player.firstName = player.firstName || ""
+player.lastName = player.lastName || ""
+player.lastSave = Date.now()
+
+console.log("Player upgraded to FA-ID system")
+
+localStorage.setItem("questlab_player", JSON.stringify(player))
+
+alert(
+"Your profile has been upgraded.\n\n" +
+"Your new Flight Attendant ID:\n" +
+player.id +
+"\n\nSave this ID to restore your progress."
+)
+
+}
+
+}
 
 if(player.name === "Cadet"){
 
