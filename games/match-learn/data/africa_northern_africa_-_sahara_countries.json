@@ -1,60 +1,18 @@
 {
-  "pairs": [
-    {
-      "city": "Algiers",
-      "code": "ALG"
-    },
-    {
-      "city": "Ouagadougou",
-      "code": "OUA"
-    },
-    {
-      "city": "N'Djamena",
-      "code": "NDJ"
-    },
-    {
-      "city": "Cairo",
-      "code": "CAI"
-    },
-    {
-      "city": "Hurghada",
-      "code": "HRG"
-    },
-    {
-      "city": "Sharm el Sheikh",
-      "code": "SSH"
-    },
-    {
-      "city": "Tripoli",
-      "code": "TIP"
-    },
-    {
-      "city": "Bamako",
-      "code": "BKO"
-    },
-    {
-      "city": "Casablanca",
-      "code": "CMN"
-    },
-    {
-      "city": "Marrakech",
-      "code": "RAK"
-    },
-    {
-      "city": "Rabat",
-      "code": "RBA"
-    },
-    {
-      "city": "Niamey",
-      "code": "NIM"
-    },
-    {
-      "city": "Dakar",
-      "code": "DSS"
-    },
-    {
-      "city": "Tunis",
-      "code": "TUN"
-    }
+  "pairs":[
+    {"city":"Algiers","code":"ALG","image":"ALG Pijl.png"},
+    {"city":"Ouagadougou","code":"OUA","image":"OUA Pijl.png"},
+    {"city":"N'Djamena","code":"NDJ","image":"NDJ Pijl.png"},
+    {"city":"Cairo","code":"CAI","image":"CAI Pijl.png"},
+    {"city":"Hurghada","code":"HRG","image":"HRG Pijl.png"},
+    {"city":"Sharm el Sheikh","code":"SSH","image":"SSH Pijl.png"},
+    {"city":"Tripoli","code":"TIP","image":"TIP Pijl.png"},
+    {"city":"Bamako","code":"BKO","image":"BKO Pijl.png"},
+    {"city":"Casablanca","code":"CMN","image":"CMN Pijl.png"},
+    {"city":"Marrakech","code":"RAK","image":"RAK Pijl.png"},
+    {"city":"Rabat","code":"RBA","image":"RBA Pijl.png"},
+    {"city":"Niamey","code":"NIM","image":"NIM pijl.png"},
+    {"city":"Dakar","code":"DSS","image":"DSS Pijl.png"},
+    {"city":"Tunis","code":"TUN","image":"TUN Pijl.png"}
   ]
 }
