@@ -1,56 +1,17 @@
 {
-  "pairs": [
-    {
-      "city": "Cotonou",
-      "code": "COO"
-    },
-    {
-      "city": "Praia",
-      "code": "RAI"
-    },
-    {
-      "city": "Yamoussoukro",
-      "code": "ASK"
-    },
-    {
-      "city": "Abidjan",
-      "code": "ABJ"
-    },
-    {
-      "city": "Djibouti",
-      "code": "JIB"
-    },
-    {
-      "city": "Addis Ababa",
-      "code": "ADD"
-    },
-    {
-      "city": "Banjul",
-      "code": "BJL"
-    },
-    {
-      "city": "Accra",
-      "code": "ACC"
-    },
-    {
-      "city": "Conakry",
-      "code": "CKY"
-    },
-    {
-      "city": "Abuja",
-      "code": "ABV"
-    },
-    {
-      "city": "Lagos",
-      "code": "LOS"
-    },
-    {
-      "city": "Freetown",
-      "code": "FNA"
-    },
-    {
-      "city": "Lom\u00e9",
-      "code": "LFW"
-    }
+  "pairs":[
+    {"city":"Cotonou","code":"COO","image":"COO pijl.png"},
+    {"city":"Praia","code":"RAI","image":"RAI pijlen.png"},
+    {"city":"Yamoussoukro","code":"ASK","image":"ASK pijl.png"},
+    {"city":"Abidjan","code":"ABJ","image":"ABJ pijl.png"},
+    {"city":"Djibouti","code":"JIB","image":"JIB pijl.png"},
+    {"city":"Addis Ababa","code":"ADD","image":"ADD pijl.png"},
+    {"city":"Banjul","code":"BJL","image":"BJL Pijl.png"},
+    {"city":"Accra","code":"ACC","image":"ACC pijl.png"},
+    {"city":"Conakry","code":"CKY","image":"CKY pijl.png"},
+    {"city":"Abuja","code":"ABV","image":"ABV pijl.png"},
+    {"city":"Lagos","code":"LOS","image":"LOS pijl.png"},
+    {"city":"Freetown","code":"FNA","image":"FNA pijl.png"},
+    {"city":"Lomé","code":"LFW","image":"LFW pijl.png"}
   ]
 }
