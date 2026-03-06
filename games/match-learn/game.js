@@ -340,6 +340,10 @@ overlay.style.display="flex"
 
 }
 
-document.getElementById("imageOverlay").onclick=()=>{
-document.getElementById("imageOverlay").style.display="none"
+const overlay=document.getElementById("imageOverlay")
+
+if(overlay){
+overlay.onclick=()=>{
+overlay.style.display="none"
+}
 }
