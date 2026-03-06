@@ -44,14 +44,14 @@ padding:30px;
 border-radius:12px;
 font-size:20px;
 font-weight:bold;
-}
+  
 #grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:clamp(12px,2vw,28px);
+gap:clamp(12px,2vw,24px);
 
-/* grotere maximale breedte */
-width:min(95vw,1100px);
+/* perfecte balans */
+width:min(92vw,900px);
 
 margin:auto;
 padding:20px;
@@ -71,7 +71,7 @@ justify-content:center;
 text-align:center;
 
 /* GROTERE TILES */
-height:clamp(120px,22vw,220px);
+height:clamp(100px,16vw,180px);
 padding:10px;
 
 /* GROTERE TEKST */
