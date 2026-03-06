@@ -94,7 +94,10 @@ aspect-ratio:1/1;
 
 padding:10px;
 
-font-size:clamp(18px,3vw,28px);
+font-size:clamp(14px,2.2vw,24px);
+  line-height:1.2;
+overflow:hidden;
+  transform-style:preserve-3d;
 
 transition:0.2s;
 
@@ -117,9 +120,6 @@ box-shadow:0 8px 18px rgba(0,0,0,0.45);
 box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
 
-.tile{
-word-break:break-word;
-}
 
 .correct{
 background:#7cc142;
@@ -173,6 +173,15 @@ transform:scale(1.06);
 60% { transform: translateX(-6px); }
 80% { transform: translateX(6px); }
 100% { transform: translateX(0); }
+}
+@keyframes flipMatch {
+0% { transform: rotateY(0deg); }
+50% { transform: rotateY(90deg) scale(1.05); }
+100% { transform: rotateY(0deg) scale(1.05); }
+}
+
+.flip{
+animation:flipMatch 0.45s ease;
 }
 
 .wrong{
