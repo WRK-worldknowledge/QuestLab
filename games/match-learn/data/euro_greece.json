@@ -1,52 +1,16 @@
 {
-  "pairs": [
-    {
-      "city": "Athens",
-      "code": "ATH"
-    },
-    {
-      "city": "Corfu",
-      "code": "CFU"
-    },
-    {
-      "city": "Heraklion",
-      "code": "HER"
-    },
-    {
-      "city": "Karpathos",
-      "code": "AOK"
-    },
-    {
-      "city": "Kos",
-      "code": "KGS"
-    },
-    {
-      "city": "Mykonos",
-      "code": "JMK"
-    },
-    {
-      "city": "Preveza",
-      "code": "PVK"
-    },
-    {
-      "city": "Rhodos",
-      "code": "RHO"
-    },
-    {
-      "city": "Samos",
-      "code": "SMI"
-    },
-    {
-      "city": "Santorini",
-      "code": "JTR"
-    },
-    {
-      "city": "Thessaloniki",
-      "code": "SKG"
-    },
-    {
-      "city": "Zakynthos",
-      "code": "ZTH"
-    }
-  ]
+ "pairs":[
+  {"city":"Athens","code":"ATH","image":"Pijl ATH.png"},
+  {"city":"Corfu","code":"CFU","image":"Pijl CFU.png"},
+  {"city":"Heraklion","code":"HER","image":"Pijl HER.png"},
+  {"city":"Karpathos","code":"AOK","image":"Pijl AOK.png"},
+  {"city":"Kos","code":"KGS","image":"Pijl KGS.png"},
+  {"city":"Mykonos","code":"JMK","image":"Pijl JMK.png"},
+  {"city":"Preveza","code":"PVK","image":"PVK pijl.png"},
+  {"city":"Rhodos","code":"RHO","image":"RHO pijl.png"},
+  {"city":"Samos","code":"SMI","image":"SMI pijl.png"},
+  {"city":"Santorini","code":"JTR","image":"Pijl JTR.png"},
+  {"city":"Thessaloniki","code":"SKG","image":"SKG pijl.png"},
+  {"city":"Zakynthos","code":"ZTH","image":"ZTH Pijl.png"}
+ ]
 }
