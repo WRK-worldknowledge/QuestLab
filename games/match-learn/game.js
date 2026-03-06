@@ -277,8 +277,11 @@ if(firstPick && firstPick.div === div) return
 
 if(firstPick==null){
 
-firstPick={div,tile}
-div.style.border="3px solid white"
+.selected{
+border:4px solid white;
+box-shadow:0 0 0 4px #0c2d5c, 0 0 18px rgba(255,255,255,0.7);
+transform:scale(1.06);
+}
 
 return
 }
@@ -327,8 +330,8 @@ reset()
 
 function reset(){
 
-if(firstPick) firstPick.div.style.border=""
-if(secondPick) secondPick.div.style.border=""
+if(firstPick) firstPick.div.classList.remove("selected")
+if(secondPick) secondPick.div.classList.remove("selected")
 
 firstPick=null
 secondPick=null
