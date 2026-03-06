@@ -282,6 +282,7 @@ document.getElementById("timer").innerText =
 min + ":" + sec.toString().padStart(2,"0")
 
 },1000)
+}
 
 function selectTile(div,tile){
 
