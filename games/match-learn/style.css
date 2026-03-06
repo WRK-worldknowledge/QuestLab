@@ -69,7 +69,7 @@ justify-content:center;
 text-align:center;
 
 /* GROTERE TILES */
-height:clamp(100px,18vw,180px);
+height:clamp(120px,22vw,220px);
 padding:10px;
 
 /* GROTERE TEKST */
@@ -116,4 +116,15 @@ z-index:999;
 max-width:90%;
 max-height:90%;
 border-radius:10px;
+}
+
+.zoomed{
+transform:scale(2);
+z-index:10;
+position:relative;
+transition:0.2s;
+}
+
+.tile img{
+touch-action:manipulation;
 }
