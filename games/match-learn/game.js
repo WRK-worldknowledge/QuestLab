@@ -297,8 +297,8 @@ function checkMatch(){
 if(firstPick.tile.match===secondPick.tile.match
 && firstPick.tile.type!==secondPick.tile.type){
 
-firstPick.div.classList.add("correct")
-secondPick.div.classList.add("correct")
+firstPick.div.classList.add("flip","correct")
+secondPick.div.classList.add("flip","correct")
 
 setTimeout(()=>{
 
