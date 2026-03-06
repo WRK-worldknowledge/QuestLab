@@ -1,100 +1,28 @@
 {
-  "pairs": [
-    {
-      "city": "Phnom Penh",
-      "code": "PNH"
-    },
-    {
-      "city": "Beijing",
-      "code": "PEK"
-    },
-    {
-      "city": "Chengdu",
-      "code": "CTU"
-    },
-    {
-      "city": "Hong Kong",
-      "code": "HKG"
-    },
-    {
-      "city": "Shanghai",
-      "code": "PVG"
-    },
-    {
-      "city": "Wuhan",
-      "code": "WUH"
-    },
-    {
-      "city": "Denpasar",
-      "code": "DPS"
-    },
-    {
-      "city": "Jakarta",
-      "code": "CGK"
-    },
-    {
-      "city": "Osaka",
-      "code": "KIX"
-    },
-    {
-      "city": "Tokyo ",
-      "code": "NRT"
-    },
-    {
-      "city": "Tokyo ",
-      "code": "HND"
-    },
-    {
-      "city": "Vientiane",
-      "code": "VTE"
-    },
-    {
-      "city": "Kuala Lumpur",
-      "code": "KUL"
-    },
-    {
-      "city": "Ulaanbataar",
-      "code": "UBN"
-    },
-    {
-      "city": "Pyongyang",
-      "code": "FNJ"
-    },
-    {
-      "city": "Manila",
-      "code": "MNL"
-    },
-    {
-      "city": "Vladivistok",
-      "code": "VVO"
-    },
-    {
-      "city": "Singapore",
-      "code": "SIN"
-    },
-    {
-      "city": "Seoul",
-      "code": "ICN"
-    },
-    {
-      "city": "Taipei",
-      "code": "TPE"
-    },
-    {
-      "city": "Bangkok",
-      "code": "BKK"
-    },
-    {
-      "city": "Phuket",
-      "code": "HKT"
-    },
-    {
-      "city": "Hanoi",
-      "code": "HAN"
-    },
-    {
-      "city": "Ho Chi Min City",
-      "code": "SGN"
-    }
-  ]
+ "pairs":[
+  {"city":"Phnom Penh","code":"PNH","image":"PNH Pijl.png"},
+  {"city":"Beijing","code":"PEK","image":"PEK Pijl.png"},
+  {"city":"Chengdu","code":"CTU","image":"CTU Pijl.png"},
+  {"city":"Hong Kong","code":"HKG","image":"HKG Pijl.png"},
+  {"city":"Shanghai","code":"PVG","image":"PVG Pijl.png"},
+  {"city":"Wuhan","code":"WUH","image":"WUH Pijl.png"},
+  {"city":"Denpasar","code":"DPS","image":"DPS Pijl.png"},
+  {"city":"Jakarta","code":"CGK","image":"CGK Pijl.png"},
+  {"city":"Osaka","code":"KIX","image":"KIX Pijl.png"},
+  {"city":"Tokyo Narita","code":"NRT","image":"NRT Pijl.png"},
+  {"city":"Tokyo Haneda","code":"HND","image":"NRT pijl.png"},
+  {"city":"Vientiane","code":"VTE","image":"VTE Pijl.png"},
+  {"city":"Kuala Lumpur","code":"KUL","image":"KUL Pijl.png"},
+  {"city":"Ulaanbataar","code":"UBN","image":"ULN Pijl.png"},
+  {"city":"Pyongyang","code":"FNJ","image":"FNJ Pijl.png"},
+  {"city":"Manila","code":"MNL","image":"MNL Pijl.png"},
+  {"city":"Vladivostok","code":"VVO","image":"VVO pijl.png"},
+  {"city":"Singapore","code":"SIN","image":"SIN Pijl.png"},
+  {"city":"Seoul","code":"ICN","image":"ICN Pijl.png"},
+  {"city":"Taipei","code":"TPE","image":"TPE Pijl.png"},
+  {"city":"Bangkok","code":"BKK","image":"BKK Pijl.png"},
+  {"city":"Phuket","code":"HKT","image":"HKT Pijl.png"},
+  {"city":"Hanoi","code":"HAN","image":"HAN Pijl.png"},
+  {"city":"Ho Chi Min City","code":"SGN","image":"SGN Pijl.png"}
+ ]
 }
