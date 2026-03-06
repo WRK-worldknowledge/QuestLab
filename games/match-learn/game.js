@@ -274,7 +274,6 @@ timerEl.style.setProperty("--progress", progress + "deg")
 
 },1000)
 }
-
 function selectTile(div,tile){
 
 if(firstPick && firstPick.div === div) return
@@ -292,11 +291,7 @@ secondPick={div,tile}
 checkMatch()
 
 }
-secondPick={div,tile}
 
-checkMatch()
-
-}
 function checkMatch(){
 
 if(firstPick.tile.match===secondPick.tile.match
