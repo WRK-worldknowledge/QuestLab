@@ -1,8 +1,17 @@
 {
-  "pairs": [
-    {
-      "city": "Tallinn",
-      "code": "TLL"
-    }
-  ]
+ "pairs":[
+  {"city":"Minsk","code":"MSQ","image":"Pijl MSQ.png"},
+  {"city":"Prague","code":"PRG","image":"Pijl PRG.png"},
+  {"city":"Tallinn","code":"TLL","image":"Pijl TLL.png"},
+  {"city":"Helsinki","code":"HEL","image":"Pijl HEL.png"},
+  {"city":"Riga","code":"RIX","image":"Pijl RIX.png"},
+  {"city":"Vilnius","code":"VNO","image":"Pijl VNO.png"},
+  {"city":"Gdansk","code":"GDN","image":"Pijl GDN.png"},
+  {"city":"Krakow","code":"KRK","image":"Pijl KRK.png"},
+  {"city":"Warsaw","code":"WAW","image":"Pijl WAW.png"},
+  {"city":"Moscow","code":"SVO","image":"Pijl SVO.png"},
+  {"city":"Saint Petersburg","code":"LED","image":"Pijl LED.png"},
+  {"city":"Bratislava","code":"BTS","image":"Pijl BTS.png"},
+  {"city":"Kyiv","code":"KBP","image":"Pijl KBP.png"}
+ ]
 }
