@@ -48,9 +48,11 @@ font-weight:bold;
 
 #grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:clamp(12px,2vw,24px);
-width:min(92vw,900px);
+
+width:min(92vw,520px);
+
 margin:auto;
 padding:20px;
 }
@@ -126,4 +128,9 @@ cursor:zoom-out;
 
 .tile img{
 touch-action:manipulation;
+}
+.selected{
+border:4px solid white;
+box-shadow:0 0 0 4px #0c2d5c, 0 0 18px rgba(255,255,255,0.7);
+transform:scale(1.06);
 }
