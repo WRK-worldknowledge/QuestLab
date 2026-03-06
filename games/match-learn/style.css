@@ -48,10 +48,11 @@ font-weight:bold;
 #grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:clamp(10px,2vw,24px);
+gap:clamp(12px,2vw,28px);
 
-width:95vw;
-max-width:900px;
+/* grotere maximale breedte */
+width:min(95vw,1100px);
+
 margin:auto;
 }
 
