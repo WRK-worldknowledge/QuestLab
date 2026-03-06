@@ -1,88 +1,25 @@
 {
-  "pairs": [
-    {
-      "city": "Tirana",
-      "code": "TIA"
-    },
-    {
-      "city": "Graz",
-      "code": "GRZ"
-    },
-    {
-      "city": "Innsbruck",
-      "code": "INN"
-    },
-    {
-      "city": "Klagenfurt",
-      "code": "KLU"
-    },
-    {
-      "city": "Salzburg",
-      "code": "SZG"
-    },
-    {
-      "city": "Vienna",
-      "code": "VIE"
-    },
-    {
-      "city": "Sarajevo",
-      "code": "SJJ"
-    },
-    {
-      "city": "Burgas",
-      "code": "BOJ"
-    },
-    {
-      "city": "Sofia",
-      "code": "SOF"
-    },
-    {
-      "city": "Dubrovnik",
-      "code": "DBV"
-    },
-    {
-      "city": "Split",
-      "code": "SPU"
-    },
-    {
-      "city": "Zagreb",
-      "code": "ZAG"
-    },
-    {
-      "city": "Budapest",
-      "code": "BUD"
-    },
-    {
-      "city": "Pristina",
-      "code": "PRN"
-    },
-    {
-      "city": "Chisinau",
-      "code": "RMO"
-    },
-    {
-      "city": "Podgorica",
-      "code": "TGD"
-    },
-    {
-      "city": "Ohrid",
-      "code": "OHD"
-    },
-    {
-      "city": "Skopje",
-      "code": "SKP"
-    },
-    {
-      "city": "Bucharest",
-      "code": "OTP"
-    },
-    {
-      "city": "Belgrade",
-      "code": "BEG"
-    },
-    {
-      "city": "Ljubljana",
-      "code": "LJU"
-    }
-  ]
+ "pairs":[
+  {"city":"Tirana","code":"TIA","image":"Pijl TIA.png"},
+  {"city":"Graz","code":"GRZ","image":"Pijl GRZ.png"},
+  {"city":"Innsbruck","code":"INN","image":"Pijl INN.png"},
+  {"city":"Klagenfurt","code":"KLU","image":"Pijl KLU.png"},
+  {"city":"Salzburg","code":"SZG","image":"Pijl SZG.png"},
+  {"city":"Vienna","code":"VIE","image":"Pijl VIE.png"},
+  {"city":"Sarajevo","code":"SJJ","image":"Pijl SJJ.png"},
+  {"city":"Burgas","code":"BOJ","image":"Pijl BOJ.png"},
+  {"city":"Sofia","code":"SOF","image":"Pijl SOF.png"},
+  {"city":"Dubrovnik","code":"DBV","image":"Pijl DBV.png"},
+  {"city":"Split","code":"SPU","image":"Pijl SPU.png"},
+  {"city":"Zagreb","code":"ZAG","image":"Pijl ZAG.png"},
+  {"city":"Budapest","code":"BUD","image":"Pijl BUD.png"},
+  {"city":"Pristina","code":"PRN","image":"Pijl PRN.png"},
+  {"city":"Chisinau","code":"RMO","image":"Pijl RMO.png"},
+  {"city":"Podgorica","code":"TGD","image":"Pijl TGD.png"},
+  {"city":"Ohrid","code":"OHD","image":"Pijl OHD.png"},
+  {"city":"Skopje","code":"SKP","image":"Pijl SKP.png"},
+  {"city":"Bucharest","code":"OTP","image":"Pijl OTP.png"},
+  {"city":"Belgrade","code":"BEG","image":"Pijl BEG.png"},
+  {"city":"Ljubljana","code":"LJU","image":"Pijl LJU.png"}
+ ]
 }
