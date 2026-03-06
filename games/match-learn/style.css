@@ -50,7 +50,8 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:clamp(10px,2vw,24px);
 
-width:min(90vw,700px);
+width:95vw;
+max-width:900px;
 margin:auto;
 }
 
@@ -80,7 +81,6 @@ transition:0.2s;
 max-width:90%;
 max-height:90%;
 object-fit:contain;
-pointer-events:none;
 }
 
 .tile:hover{
