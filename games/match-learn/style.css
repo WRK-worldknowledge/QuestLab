@@ -54,6 +54,7 @@ gap:clamp(12px,2vw,28px);
 width:min(95vw,1100px);
 
 margin:auto;
+padding:20px;
 }
 
 .tile{
