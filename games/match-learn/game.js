@@ -5,7 +5,7 @@ let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
 
-let time=180
+let time=120
 
 let timerInterval
 
@@ -159,7 +159,7 @@ return array
 }
 function startGame(data){
   clearInterval(timerInterval)
-time = 480
+time = 120
 
 let tiles=[]
 
@@ -203,8 +203,7 @@ if(index === 1){
 
 const timer=document.createElement("div")
 timer.id="timer"
-timer.innerText="08:00"
-
+timer.innerText = Math.floor(time/60) + ":00"
 grid.appendChild(timer)
 
 }
@@ -259,13 +258,30 @@ grid.appendChild(div)
 
 })
   timerInterval=setInterval(()=>{
+
 time--
+      if(time <= 10){
+document.getElementById("timer").style.borderColor = "#ff4d4d"
+}
+
+if(time <= 0){
+
+clearInterval(timerInterval)
+
+document.getElementById("timer").innerText = "0:00"
+
+timeUp()
+
+return
+}
+
 let min=Math.floor(time/60)
 let sec=time%60
+
 document.getElementById("timer").innerText =
 min + ":" + sec.toString().padStart(2,"0")
+
 },1000)
-}
 
 function selectTile(div,tile){
 
@@ -372,6 +388,23 @@ overlay.style.display = "none"
 document.querySelectorAll(".zoomed").forEach(el=>{
 el.classList.remove("zoomed")
 })
+
+}
+
+}
+    function timeUp(){
+
+const choice = confirm(
+"Time's up!\n\nOK = Restart mission\nCancel = Back to Game Console"
+)
+
+if(choice){
+
+location.reload()
+
+}else{
+
+window.location.href="index.html"
 
 }
 
