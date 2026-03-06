@@ -55,8 +55,9 @@ margin:auto;
 }
 
 .tile{
+
 background:#F5CA51;
-border-radius:clamp(10px,2vw,18px);
+border-radius:clamp(12px,2vw,20px);
 cursor:pointer;
 color:#0c2d5c;
 font-weight:bold;
@@ -66,11 +67,12 @@ align-items:center;
 justify-content:center;
 text-align:center;
 
-/* ⭐ dynamische grootte */
-height:clamp(70px,12vw,110px);
+/* GROTERE TILES */
+height:clamp(100px,18vw,180px);
+padding:10px;
 
-/* ⭐ dynamische tekst */
-font-size:clamp(14px,2.5vw,20px);
+/* GROTERE TEKST */
+font-size:clamp(18px,4vw,32px);
 
 transition:0.2s;
 }
