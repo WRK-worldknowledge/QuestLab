@@ -226,34 +226,23 @@ img.style.maxHeight="90%"
 img.style.objectFit="contain"
 
 // ⭐ klik om groot te maken
-let tapTimeout = null
+let pressTimer
 
-img.onclick=(e)=>{
+img.addEventListener("touchstart", function(){
 
-e.stopPropagation()
-
-if(tapTimeout){
-
-// tweede tik → zoom toggle
-clearTimeout(tapTimeout)
-tapTimeout = null
-
-img.classList.toggle("zoomed")
-
-}else{
-
-tapTimeout = setTimeout(()=>{
-
-// single tap → fullscreen
+pressTimer = setTimeout(()=>{
 openImage(img.src)
+},500)
 
-tapTimeout = null
+})
 
-},250)
+img.addEventListener("touchend", function(){
+clearTimeout(pressTimer)
+})
 
-}
-
-}
+img.addEventListener("touchmove", function(){
+clearTimeout(pressTimer)
+})
     
 div.appendChild(img)
 
