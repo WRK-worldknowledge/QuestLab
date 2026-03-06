@@ -78,9 +78,10 @@ font-size:clamp(18px,4vw,32px);
 transition:0.2s;
 }
 .tile img{
-max-width:90%;
-max-height:90%;
+max-width:95%;
+max-height:95%;
 object-fit:contain;
+border-radius:6px;
 }
 
 .tile:hover{
@@ -120,9 +121,10 @@ border-radius:10px;
 
 .zoomed{
 transform:scale(2);
-z-index:10;
+z-index:20;
 position:relative;
 transition:0.2s;
+cursor:zoom-out;
 }
 
 .tile img{
