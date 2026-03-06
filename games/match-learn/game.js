@@ -224,25 +224,12 @@ img.style.maxWidth="90%"
 img.style.maxHeight="90%"
 img.style.objectFit="contain"
 
-// ⭐ klik om groot te maken
-let pressTimer
-
-img.addEventListener("touchstart", function(){
-
-pressTimer = setTimeout(()=>{
+    // klik op afbeelding = vergroten
+img.onclick = function(e){
+e.stopPropagation()
 openImage(img.src)
-},500)
+}
 
-})
-
-img.addEventListener("touchend", function(){
-clearTimeout(pressTimer)
-})
-
-img.addEventListener("touchmove", function(){
-clearTimeout(pressTimer)
-})
-    
 div.appendChild(img)
 
 }else{
