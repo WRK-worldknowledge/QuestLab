@@ -1,68 +1,20 @@
 {
-  "pairs": [
-    {
-      "city": "Bordeaux",
-      "code": "BOD"
-    },
-    {
-      "city": "Chamb\u00e9ry",
-      "code": "CMF"
-    },
-    {
-      "city": "Lyon",
-      "code": "LYS"
-    },
-    {
-      "city": "Marseille",
-      "code": "MRS"
-    },
-    {
-      "city": "Nice",
-      "code": "NCE"
-    },
-    {
-      "city": "Strasbourg",
-      "code": "SXB"
-    },
-    {
-      "city": "Toulouse",
-      "code": "TLS"
-    },
-    {
-      "city": "Cork",
-      "code": "ORK"
-    },
-    {
-      "city": "Aberdeen",
-      "code": "ABZ"
-    },
-    {
-      "city": "Belfast",
-      "code": "BFS"
-    },
-    {
-      "city": "Birmingham",
-      "code": "BHX"
-    },
-    {
-      "city": "Bristol",
-      "code": "BRS"
-    },
-    {
-      "city": "Edinburgh",
-      "code": "EDI"
-    },
-    {
-      "city": "Glasgow",
-      "code": "GLA"
-    },
-    {
-      "city": "Liverpool",
-      "code": "LPL"
-    },
-    {
-      "city": "Manchester",
-      "code": "MAN"
-    }
-  ]
+ "pairs":[
+  {"city":"Bordeaux","code":"BOD","image":"Pijl BOD.png"},
+  {"city":"Chambéry","code":"CMF","image":"Pijl CMF.png"},
+  {"city":"Lyon","code":"LYS","image":"Pijl LYS.png"},
+  {"city":"Marseille","code":"MRS","image":"Pijl MRS.png"},
+  {"city":"Nice","code":"NCE","image":"Pijl NCE.png"},
+  {"city":"Strasbourg","code":"SXB","image":"Pijl SXB.png"},
+  {"city":"Toulouse","code":"TLS","image":"Pijl TLS.png"},
+  {"city":"Cork","code":"ORK","image":"Pijl ORK.png"},
+  {"city":"Aberdeen","code":"ABZ","image":"Pijl ABZ.png"},
+  {"city":"Belfast","code":"BFS","image":"Pijl BFS.png"},
+  {"city":"Birmingham","code":"BHX","image":"Pijl BHX.png"},
+  {"city":"Bristol","code":"BRS","image":"Pijl BRS.png"},
+  {"city":"Edinburgh","code":"EDI","image":"Pijl EDI.png"},
+  {"city":"Glasgow","code":"GLA","image":"Pijl GLA.png"},
+  {"city":"Liverpool","code":"LPL","image":"Pijl LPL.png"},
+  {"city":"Manchester","code":"MAN","image":"Pijl MAN.png"}
+ ]
 }
