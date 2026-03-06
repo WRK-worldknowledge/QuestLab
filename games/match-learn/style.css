@@ -45,14 +45,12 @@ border-radius:12px;
 font-size:20px;
 font-weight:bold;
 }
+
 #grid{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
 gap:clamp(12px,2vw,24px);
-
-/* perfecte balans */
 width:min(92vw,900px);
-
 margin:auto;
 padding:20px;
 }
