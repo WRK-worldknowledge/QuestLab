@@ -214,6 +214,12 @@ if(tile.type==="image"){
 
 const img=document.createElement("img")
 img.src="images/"+tile.value
+
+    img.onerror=function(){
+        console.log("Missing image:", tile.value)
+this.src="images/fallback.jpg"
+}
+    
 img.style.maxWidth="80px"
 img.style.height="auto"
 img.style.pointerEvents="none"
