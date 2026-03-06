@@ -277,15 +277,17 @@ if(firstPick && firstPick.div === div) return
 
 if(firstPick==null){
 
-.selected{
-border:4px solid white;
-box-shadow:0 0 0 4px #0c2d5c, 0 0 18px rgba(255,255,255,0.7);
-transform:scale(1.06);
-}
+firstPick={div,tile}
+div.classList.add("selected")
 
 return
 }
 
+secondPick={div,tile}
+
+checkMatch()
+
+}
 secondPick={div,tile}
 
 checkMatch()
