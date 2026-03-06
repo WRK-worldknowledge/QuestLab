@@ -1,40 +1,13 @@
 {
-  "pairs": [
-    {
-      "city": "Larnaca",
-      "code": "LCA"
-    },
-    {
-      "city": "Paphos",
-      "code": "PFO"
-    },
-    {
-      "city": "Ankara",
-      "code": "ESB"
-    },
-    {
-      "city": "Antalya",
-      "code": "AYT"
-    },
-    {
-      "city": "Bodrum",
-      "code": "BJV"
-    },
-    {
-      "city": "Dalaman",
-      "code": "DLM"
-    },
-    {
-      "city": "Istanbul",
-      "code": "IST"
-    },
-    {
-      "city": "Istanbul ",
-      "code": "SAW"
-    },
-    {
-      "city": "Izmir",
-      "code": "ADB"
-    }
-  ]
+ "pairs":[
+  {"city":"Larnaca","code":"LCA","image":"Pijl LCA.png"},
+  {"city":"Paphos","code":"PFO","image":"Pijl PFO.png"},
+  {"city":"Ankara","code":"ESB","image":"Pijl ESB.png"},
+  {"city":"Antalya","code":"AYT","image":"Pijl AYT.png"},
+  {"city":"Bodrum","code":"BJV","image":"Pijl BJV.png"},
+  {"city":"Dalaman","code":"DLM","image":"Pijl DLM.png"},
+  {"city":"Istanbul International","code":"IST","image":"Pijl IST SAW.png"},
+  {"city":"Istanbul Sabiha Gökçen","code":"SAW","image":"Pijl IST SAW.png"},
+  {"city":"Izmir","code":"ADB","image":"Pijl ADB.png"}
+ ]
 }
