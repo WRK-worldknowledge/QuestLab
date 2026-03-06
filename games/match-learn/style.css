@@ -88,13 +88,18 @@ align-items:center;
 justify-content:center;
 text-align:center;
 
-height:clamp(100px,16vw,160px);
+/* vaste tile grootte */
+aspect-ratio:1/1;
+
 padding:10px;
 
 font-size:clamp(18px,3vw,28px);
 
 transition:0.2s;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
+
 .tile img{
 max-width:95%;
 max-height:95%;
@@ -109,6 +114,10 @@ box-shadow:0 8px 18px rgba(0,0,0,0.45);
 
 .tile{
 box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+.tile{
+word-break:break-word;
 }
 
 .correct{
