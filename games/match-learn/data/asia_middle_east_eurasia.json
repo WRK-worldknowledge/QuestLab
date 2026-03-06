@@ -1,64 +1,19 @@
 {
-  "pairs": [
-    {
-      "city": "Yerevan",
-      "code": "EVN"
-    },
-    {
-      "city": "Manama",
-      "code": "BAH"
-    },
-    {
-      "city": "Tbilisi",
-      "code": "TBS"
-    },
-    {
-      "city": "Tehran",
-      "code": "IKA"
-    },
-    {
-      "city": "Tel Aviv",
-      "code": "TLV"
-    },
-    {
-      "city": "Amman",
-      "code": "AMM"
-    },
-    {
-      "city": "Kuwait",
-      "code": "KWI"
-    },
-    {
-      "city": "Beirut",
-      "code": "BEY"
-    },
-    {
-      "city": "Muscat",
-      "code": "MCT"
-    },
-    {
-      "city": "Doha",
-      "code": "DOH"
-    },
-    {
-      "city": "Jeddah",
-      "code": "JED"
-    },
-    {
-      "city": "Riyadh",
-      "code": "RUH"
-    },
-    {
-      "city": "Damascus",
-      "code": "DAM"
-    },
-    {
-      "city": "Abu Dhabi",
-      "code": "AUH"
-    },
-    {
-      "city": "Dubai",
-      "code": "DXB"
-    }
-  ]
+ "pairs":[
+  {"city":"Yerevan","code":"EVN","image":"EVN Pijl.png"},
+  {"city":"Manama","code":"BAH","image":"BAH Pijl.png"},
+  {"city":"Tbilisi","code":"TBS","image":"TBS Pijl.png"},
+  {"city":"Tehran","code":"IKA","image":"IKA Pijl.png"},
+  {"city":"Tel Aviv","code":"TLV","image":"TLV Pijl.png"},
+  {"city":"Amman","code":"AMM","image":"AMM Pijl.png"},
+  {"city":"Kuwait","code":"KWI","image":"KWI Pijl.png"},
+  {"city":"Beirut","code":"BEY","image":"BEY Pijl.png"},
+  {"city":"Muscat","code":"MCT","image":"MCT Pijl.png"},
+  {"city":"Doha","code":"DOH","image":"DOH Pijl.png"},
+  {"city":"Jeddah","code":"JED","image":"JED Pijl.png"},
+  {"city":"Riyadh","code":"RUH","image":"RUH Pijl.png"},
+  {"city":"Abu Dhabi","code":"AUH","image":"AUH Pijl.png"},
+  {"city":"Dubai","code":"DXB","image":"DXB Pijl.png"},
+  {"city":"Damascus","code":"DAM","image":"DAM.png"}
+ ]
 }
