@@ -215,14 +215,20 @@ if(tile.type==="image"){
 const img=document.createElement("img")
 img.src="images/"+tile.value
 
-    img.onerror=function(){
-        console.log("Missing image:", tile.value)
+img.onerror=function(){
+console.log("Missing image:", tile.value)
 this.src="images/fallback.jpg"
 }
-    
-img.style.maxWidth="80px"
-img.style.height="auto"
-img.style.pointerEvents="none"
+
+img.style.maxWidth="90%"
+img.style.maxHeight="90%"
+img.style.objectFit="contain"
+
+// ⭐ klik om groot te maken
+img.onclick=(e)=>{
+e.stopPropagation()
+openImage(img.src)
+}
 
 div.appendChild(img)
 
@@ -232,6 +238,7 @@ div.innerText=tile.value
 
 }
 
+// tile zelf blijft klikbaar
 div.onclick=()=>selectTile(div,tile)
 
 grid.appendChild(div)
@@ -322,4 +329,17 @@ addXP(xp)
 
 alert("+" + xp + " XP earned")
 
+}
+function openImage(src){
+
+const overlay=document.getElementById("imageOverlay")
+const img=document.getElementById("overlayImage")
+
+img.src=src
+overlay.style.display="flex"
+
+}
+
+document.getElementById("imageOverlay").onclick=()=>{
+document.getElementById("imageOverlay").style.display="none"
 }
