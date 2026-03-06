@@ -1,68 +1,20 @@
 {
-  "pairs": [
-    {
-      "city": "Faro",
-      "code": "FAO"
-    },
-    {
-      "city": "Funchal",
-      "code": "FNC"
-    },
-    {
-      "city": "Porto",
-      "code": "OPO"
-    },
-    {
-      "city": "Alicante",
-      "code": "ALC"
-    },
-    {
-      "city": "Arrecife",
-      "code": "ACE"
-    },
-    {
-      "city": "Barcelona ",
-      "code": "BCN"
-    },
-    {
-      "city": "Fuerteventura",
-      "code": "FUE"
-    },
-    {
-      "city": "Ibiza",
-      "code": "IBZ"
-    },
-    {
-      "city": "La Palma",
-      "code": "SPC"
-    },
-    {
-      "city": "Las Palmas",
-      "code": "LPA"
-    },
-    {
-      "city": "Mahon",
-      "code": "MAH"
-    },
-    {
-      "city": "Malaga",
-      "code": "AGP"
-    },
-    {
-      "city": "Palma de Mallorca",
-      "code": "PMI"
-    },
-    {
-      "city": "Sevilla",
-      "code": "SVQ"
-    },
-    {
-      "city": "Tenerife",
-      "code": "TFS"
-    },
-    {
-      "city": "Valencia",
-      "code": "VLC"
-    }
-  ]
+ "pairs":[
+  {"city":"Faro","code":"FAO","image":"Pijl FAO.png"},
+  {"city":"Funchal","code":"FNC","image":"Pijl FNC.png"},
+  {"city":"Porto","code":"OPO","image":"Pijl OPO.png"},
+  {"city":"Alicante","code":"ALC","image":"Pijl ALC.png"},
+  {"city":"Arrecife","code":"ACE","image":"Pijl ACE.png"},
+  {"city":"Barcelona","code":"BCN","image":"Pijl BCN.png"},
+  {"city":"Fuerteventura","code":"FUE","image":"Pijl FUE.png"},
+  {"city":"Ibiza","code":"IBZ","image":"Pijl IBZ.png"},
+  {"city":"La Palma","code":"SPC","image":"Pijl SPC.png"},
+  {"city":"Las Palmas","code":"LPA","image":"Pijl LPA.png"},
+  {"city":"Mahon","code":"MAH","image":"Pijl MAH.png"},
+  {"city":"Malaga","code":"AGP","image":"Pijl AGP.png"},
+  {"city":"Palma de Mallorca","code":"PMI","image":"Pijl PMI.png"},
+  {"city":"Sevilla","code":"SVQ","image":"Pijl SVQ.png"},
+  {"city":"Tenerife","code":"TFS","image":"Pijl TFS.png"},
+  {"city":"Valencia","code":"VLC","image":"Pijl VLC.png"}
+ ]
 }
