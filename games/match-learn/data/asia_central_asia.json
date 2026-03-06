@@ -1,48 +1,14 @@
 {
-  "pairs": [
-    {
-      "city": "Kabul",
-      "code": "KBL"
-    },
-    {
-      "city": "Dhaka",
-      "code": "DAC"
-    },
-    {
-      "city": "Mumbai",
-      "code": "BOM"
-    },
-    {
-      "city": "New Delhi",
-      "code": "DEL"
-    },
-    {
-      "city": "Astana",
-      "code": "NQZ"
-    },
-    {
-      "city": "Male",
-      "code": "MLE"
-    },
-    {
-      "city": "Naypyidaw",
-      "code": "NYT"
-    },
-    {
-      "city": "Kathmandu",
-      "code": "KTM"
-    },
-    {
-      "city": "Islamabad",
-      "code": "ISB"
-    },
-    {
-      "city": "Colombo",
-      "code": "CMB"
-    },
-    {
-      "city": "Tashkent",
-      "code": "TAS"
-    }
-  ]
+ "pairs":[
+  {"city":"Kabul","code":"KBL","image":"KBL Pijl.png"},
+  {"city":"Dhaka","code":"DAC","image":"DAC Pijl.png"},
+  {"city":"Mumbai","code":"BOM","image":"BOM Pijl.png"},
+  {"city":"New Delhi","code":"DEL","image":"DEL Pijl.png"},
+  {"city":"Male","code":"MLE","image":"MLE Pijl.png"},
+  {"city":"Naypyidaw","code":"NYT","image":"NYT Pijl.png"},
+  {"city":"Kathmandu","code":"KTM","image":"KTM Pijl.png"},
+  {"city":"Islamabad","code":"ISB","image":"ISB Pijl.png"},
+  {"city":"Colombo","code":"CMB","image":"CMB Pijl.png"},
+  {"city":"Tashkent","code":"TAS","image":"TAS Pijl.png"}
+ ]
 }
