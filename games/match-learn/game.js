@@ -1,5 +1,6 @@
 startHelp("matchlearn")
-let firstPick=null
+let lastTap = 0
+    let firstPick=null
 let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
@@ -225,11 +226,35 @@ img.style.maxHeight="90%"
 img.style.objectFit="contain"
 
 // ⭐ klik om groot te maken
+let tapTimeout = null
+
 img.onclick=(e)=>{
+
 e.stopPropagation()
+
+if(tapTimeout){
+
+// tweede tik → zoom toggle
+clearTimeout(tapTimeout)
+tapTimeout = null
+
+img.classList.toggle("zoomed")
+
+}else{
+
+tapTimeout = setTimeout(()=>{
+
+// single tap → fullscreen
 openImage(img.src)
+
+tapTimeout = null
+
+},250)
+
 }
 
+}
+    
 div.appendChild(img)
 
 }else{
