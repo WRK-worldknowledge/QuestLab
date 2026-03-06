@@ -203,7 +203,7 @@ if(index === 1){
 
 const timer=document.createElement("div")
 timer.id="timer"
-timer.innerText = Math.floor(time/60) + ":00"
+timer.innerHTML = "<span>" + Math.floor(time/60) + ":00</span>"
 grid.appendChild(timer)
 
 }
@@ -265,8 +265,12 @@ return
 let min=Math.floor(time/60)
 let sec=time%60
 
-document.getElementById("timer").innerText =
-min + ":" + sec.toString().padStart(2,"0")
+const timerEl = document.getElementById("timer")
+
+timerEl.innerHTML = "<span>" + min + ":" + sec.toString().padStart(2,"0") + "</span>"
+
+const progress = (time / 120) * 360
+timerEl.style.setProperty("--progress", progress + "deg")
 
 },1000)
 }
