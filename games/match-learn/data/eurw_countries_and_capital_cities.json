@@ -1,88 +1,25 @@
 {
-  "pairs": [
-    {
-      "city": "Brussels",
-      "code": "BRU"
-    },
-    {
-      "city": "Copenhagen",
-      "code": "CPH"
-    },
-    {
-      "city": "Paris",
-      "code": "CDG"
-    },
-    {
-      "city": "Paris",
-      "code": "ORY"
-    },
-    {
-      "city": "Berlin",
-      "code": "BER"
-    },
-    {
-      "city": "Reykjavik",
-      "code": "KEF"
-    },
-    {
-      "city": "Dublin",
-      "code": "DUB"
-    },
-    {
-      "city": "Rome",
-      "code": "FCO"
-    },
-    {
-      "city": "Luxembourg",
-      "code": "LUX"
-    },
-    {
-      "city": "Valletta",
-      "code": "MLA"
-    },
-    {
-      "city": "Amsterdam ",
-      "code": "AMS"
-    },
-    {
-      "city": "Oslo",
-      "code": "OSL"
-    },
-    {
-      "city": "Lisbon",
-      "code": "LIS"
-    },
-    {
-      "city": "Madrid",
-      "code": "MAD"
-    },
-    {
-      "city": "Stockholm",
-      "code": "ARN"
-    },
-    {
-      "city": "Bern",
-      "code": "BRN"
-    },
-    {
-      "city": "London",
-      "code": "LCY"
-    },
-    {
-      "city": "London",
-      "code": "LGW"
-    },
-    {
-      "city": "London",
-      "code": "LHR"
-    },
-    {
-      "city": "London",
-      "code": "LTN"
-    },
-    {
-      "city": "London",
-      "code": "STN"
-    }
-  ]
+ "pairs":[
+  {"city":"Brussels","code":"BRU","image":"Pijl BRU.png"},
+  {"city":"Copenhagen","code":"CPH","image":"Pijl CPH.png"},
+  {"city":"Paris Charles de Gaulle","code":"CDG","image":"Pijl PAR.png"},
+  {"city":"Paris Orly","code":"ORY","image":"Pijl PAR.png"},
+  {"city":"Berlin","code":"BER","image":"Pijl BER.png"},
+  {"city":"Reykjavik","code":"KEF","image":"Pijk KEF.png"},
+  {"city":"Dublin","code":"DUB","image":"Pijl dub.png"},
+  {"city":"Rome","code":"FCO","image":"Pijl FCO.png"},
+  {"city":"Luxembourg","code":"LUX","image":"Pijl LUX.png"},
+  {"city":"Valletta","code":"MLA","image":"Pijl MLA.png"},
+  {"city":"Amsterdam","code":"AMS","image":"Pijl AMS.png"},
+  {"city":"Oslo","code":"OSL","image":"Pijl OSL.png"},
+  {"city":"Lisbon","code":"LIS","image":"Pijl LIS.png"},
+  {"city":"Madrid","code":"MAD","image":"Pijl MAD.png"},
+  {"city":"Stockholm","code":"ARN","image":"Pijl ARN.png"},
+  {"city":"Bern","code":"BRN","image":"Pijl BRN.png"},
+  {"city":"London City","code":"LCY","image":"Pijl LON.png"},
+  {"city":"London Gatwick","code":"LGW","image":"Pijl LON.png"},
+  {"city":"London Heathrow","code":"LHR","image":"Pijl LON.png"},
+  {"city":"London Luton","code":"LTN","image":"Pijl LON.png"},
+  {"city":"London Stansted","code":"STN","image":"Pijl LON.png"}
+ ]
 }
