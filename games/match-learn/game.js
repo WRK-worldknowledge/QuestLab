@@ -355,20 +355,35 @@ addXP(xp)
 alert("+" + xp + " XP earned")
 
 }
+const overlay = document.getElementById("imageOverlay")
+const overlayImg = document.getElementById("overlayImage")
+
 function openImage(src){
 
-const overlay=document.getElementById("imageOverlay")
-const img=document.getElementById("overlayImage")
+if(!overlay || !overlayImg) return
 
-img.src=src
-overlay.style.display="flex"
+// reset tile zooms
+document.querySelectorAll(".zoomed").forEach(el=>{
+el.classList.remove("zoomed")
+})
+
+overlayImg.src = src
+overlay.style.display = "flex"
 
 }
 
-const overlay=document.getElementById("imageOverlay")
-
+// klik op overlay sluit fullscreen
 if(overlay){
-overlay.onclick=()=>{
-overlay.style.display="none"
+
+overlay.onclick = () => {
+
+overlay.style.display = "none"
+
+// reset zoom
+document.querySelectorAll(".zoomed").forEach(el=>{
+el.classList.remove("zoomed")
+})
+
 }
+
 }
