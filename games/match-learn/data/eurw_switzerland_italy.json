@@ -1,60 +1,18 @@
 {
-  "pairs": [
-    {
-      "city": "Bologna",
-      "code": "BLQ"
-    },
-    {
-      "city": "Catania",
-      "code": "CTA"
-    },
-    {
-      "city": "Florence",
-      "code": "FLR"
-    },
-    {
-      "city": "Genua",
-      "code": "GOA"
-    },
-    {
-      "city": "Milan",
-      "code": "LIN"
-    },
-    {
-      "city": "Milan",
-      "code": "MXP"
-    },
-    {
-      "city": "Naples",
-      "code": "NAP"
-    },
-    {
-      "city": "Olbia",
-      "code": "OLB"
-    },
-    {
-      "city": "Pisa",
-      "code": "PSA"
-    },
-    {
-      "city": "Turin",
-      "code": "TRN"
-    },
-    {
-      "city": "Venice",
-      "code": "VCE"
-    },
-    {
-      "city": "Basel",
-      "code": "BSL"
-    },
-    {
-      "city": "Geneva",
-      "code": "GVA"
-    },
-    {
-      "city": "Z\u00fcrich",
-      "code": "ZRH"
-    }
-  ]
+ "pairs":[
+  {"city":"Bologna","code":"BLQ","image":"Pijl BLQ.png"},
+  {"city":"Catania","code":"CTA","image":"Pijl CTA.png"},
+  {"city":"Florence","code":"FLR","image":"Pijl FLR.png"},
+  {"city":"Genua","code":"GOA","image":"Pijl GOA.png"},
+  {"city":"Milan Linate","code":"LIN","image":"Pijl MIL.png"},
+  {"city":"Milan Malpensa","code":"MXP","image":"Pijl MIL.png"},
+  {"city":"Naples","code":"NAP","image":"Pijl NAP.png"},
+  {"city":"Olbia","code":"OLB","image":"Pijl OLB.png"},
+  {"city":"Pisa","code":"PSA","image":"Pijl PSA.png"},
+  {"city":"Turin","code":"TRN","image":"Pijl TRN.png"},
+  {"city":"Venice","code":"VCE","image":"Pijl VCE.png"},
+  {"city":"Basel","code":"BSL","image":"Pijl BSL.png"},
+  {"city":"Geneva","code":"GVA","image":"Pijl GVA.png"},
+  {"city":"Zürich","code":"ZRH","image":"Pijl ZRH.png"}
+ ]
 }
