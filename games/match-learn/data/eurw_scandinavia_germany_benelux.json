@@ -1,76 +1,22 @@
 {
-  "pairs": [
-    {
-      "city": "Brussels South Charleroi",
-      "code": "CRL"
-    },
-    {
-      "city": "Aalborg",
-      "code": "AAL"
-    },
-    {
-      "city": "Billund",
-      "code": "BLL"
-    },
-    {
-      "city": "Dusseldorf",
-      "code": "DUS"
-    },
-    {
-      "city": "Frankfurt",
-      "code": "FRA"
-    },
-    {
-      "city": "Hamburg",
-      "code": "HAM"
-    },
-    {
-      "city": "Munich",
-      "code": "MUC"
-    },
-    {
-      "city": "Stuttgart",
-      "code": "STR"
-    },
-    {
-      "city": "Weeze Niederrhein",
-      "code": "NRN"
-    },
-    {
-      "city": "Eindhoven",
-      "code": "EIN"
-    },
-    {
-      "city": "Groningen",
-      "code": "GRQ"
-    },
-    {
-      "city": "Maastricht",
-      "code": "MST"
-    },
-    {
-      "city": "Rotterdam ",
-      "code": "RTM"
-    },
-    {
-      "city": "Alesund",
-      "code": "AES"
-    },
-    {
-      "city": "Bergen",
-      "code": "BGO"
-    },
-    {
-      "city": "Stavanger",
-      "code": "SVG"
-    },
-    {
-      "city": "Trondheim",
-      "code": "TRD"
-    },
-    {
-      "city": "Gothenburg",
-      "code": "GOT"
-    }
-  ]
+ "pairs":[
+  {"city":"Brussels South Charleroi","code":"CRL","image":"Pijl CRL.png"},
+  {"city":"Aalborg","code":"AAL","image":"Pijl AAL.png"},
+  {"city":"Billund","code":"BLL","image":"Pijl BLL.png"},
+  {"city":"Dusseldorf","code":"DUS","image":"Pijl DUS.png"},
+  {"city":"Frankfurt","code":"FRA","image":"Pijl FRA.png"},
+  {"city":"Hamburg","code":"HAM","image":"Pijl HAM.png"},
+  {"city":"Munich","code":"MUC","image":"Pijl MUC.png"},
+  {"city":"Stuttgart","code":"STR","image":"Pijl STR.png"},
+  {"city":"Weeze Niederrhein","code":"NRN","image":"Pijl NRN.png"},
+  {"city":"Eindhoven","code":"EIN","image":"Pijl EIN.png"},
+  {"city":"Groningen","code":"GRQ","image":"Pijl GRQ.png"},
+  {"city":"Maastricht","code":"MST","image":"Pijl MST.png"},
+  {"city":"Rotterdam","code":"RTM","image":"Pijl RTM.png"},
+  {"city":"Alesund","code":"AES","image":"Pijl AES.png"},
+  {"city":"Bergen","code":"BGO","image":"Pijl BGO.png"},
+  {"city":"Stavanger","code":"SVG","image":"Pijl SVG.png"},
+  {"city":"Trondheim","code":"TRD","image":"Pijl TRD.png"},
+  {"city":"Gothenburg","code":"GOT","image":"Pijl GOT.png"}
+ ]
 }
