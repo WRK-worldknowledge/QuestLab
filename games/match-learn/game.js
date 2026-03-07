@@ -225,10 +225,39 @@ img.style.maxHeight="90%"
 img.style.objectFit="contain"
 
     // klik op afbeelding = vergroten
-img.onclick = function(e){
-e.stopPropagation()
+let pressTimer
+
+img.addEventListener("touchstart", function(e){
+
+pressTimer = setTimeout(()=>{
 openImage(img.src)
-}
+},500)
+
+})
+
+img.addEventListener("touchend", function(e){
+clearTimeout(pressTimer)
+})
+
+img.addEventListener("touchmove", function(e){
+clearTimeout(pressTimer)
+})
+
+img.addEventListener("mousedown", function(e){
+
+pressTimer = setTimeout(()=>{
+openImage(img.src)
+},500)
+
+})
+
+img.addEventListener("mouseup", function(e){
+clearTimeout(pressTimer)
+})
+
+img.addEventListener("mouseleave", function(e){
+clearTimeout(pressTimer)
+})
 
 div.appendChild(img)
 
