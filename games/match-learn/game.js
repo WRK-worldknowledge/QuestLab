@@ -369,7 +369,7 @@ secondPick=null
 }
 function finishGame(){
 
-alert("Mission complete!")
+clearInterval(timerInterval)
 
 // XP berekenen
 const timeBonus = Math.max(0, Math.floor(time/20))
@@ -378,7 +378,15 @@ const xp = 20 + timeBonus
 // QuestLab XP systeem
 addXP(xp)
 
-alert("+" + xp + " XP earned")
+const grid = document.getElementById("grid")
+const finish = document.getElementById("finishScreen")
+
+grid.innerHTML = ""
+
+finish.style.display = "block"
+
+document.getElementById("finishScreen").querySelector("h2").innerText =
+"Mission Complete ✈️ +" + xp + " XP"
 
 }
 const overlay = document.getElementById("imageOverlay")
@@ -430,3 +438,17 @@ window.location.href="index.html"
 }
 
 }
+window.addEventListener("DOMContentLoaded", () => {
+
+const newBtn = document.getElementById("newSessionBtn")
+const backBtn = document.getElementById("backBtn")
+
+if(newBtn){
+newBtn.onclick = () => location.reload()
+}
+
+if(backBtn){
+backBtn.onclick = () => window.history.back()
+}
+
+})
