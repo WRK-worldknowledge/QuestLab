@@ -40,7 +40,7 @@ text:"Match destinations with their three-letter IATA airport code or location o
 },
 {
 title:"Goal",
-text:"Clear all tiles before the timer runs out."
+text:"Long press maps to enlarge and clear all tiles before the timer runs out."
 }
 ]
 
