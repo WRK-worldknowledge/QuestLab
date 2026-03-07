@@ -188,3 +188,29 @@ animation:flipMatch 0.45s ease;
 background:#ff4d4d;
 animation:shake 0.35s;
 }
+
+#finishScreen{
+margin-top:40px;
+text-align:center;
+}
+
+#finishScreen h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+#finishScreen button{
+background:#F5CA51;
+color:#0F172A;
+border:none;
+padding:14px 24px;
+margin:10px;
+border-radius:14px;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+}
+
+#finishScreen button:hover{
+transform:scale(1.05);
+}
