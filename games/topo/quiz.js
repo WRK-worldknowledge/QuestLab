@@ -206,6 +206,7 @@ function startQuiz(){
 const module=document.getElementById("moduleSelect").value;
 const lesson=document.getElementById("lessonSelect").value;
 const type=document.getElementById("typeSelect").value;
+    console.log("TYPE =", type);
 
     quizActive = true;
 
