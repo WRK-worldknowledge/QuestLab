@@ -253,6 +253,7 @@ if(!questions.length){
 
 const amount=lesson==="all"?30:20;
 questions=shuffle([...questions]).slice(0,amount);
+    console.log("QUESTIONS SAMPLE:", questions.slice(0,3));
 
 current=0;
 score=0;
