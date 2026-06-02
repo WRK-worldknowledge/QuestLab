@@ -211,10 +211,38 @@ const type=document.getElementById("typeSelect").value;
 
 currentLesson=lesson;
 
-if(lesson==="all"){
-    questions=data.filter(d=>d.module===module && d.type===type);
+if(type==="capital"){
+
+    if(lesson==="all"){
+        questions=data.filter(d =>
+            d.module===module &&
+            d.type==="city" &&
+            d.isCapital===true
+        );
+    }else{
+        questions=data.filter(d =>
+            d.module===module &&
+            d.lesson===lesson &&
+            d.type==="city" &&
+            d.isCapital===true
+        );
+    }
+
 }else{
-    questions=data.filter(d=>d.module===module && d.lesson===lesson && d.type===type);
+
+    if(lesson==="all"){
+        questions=data.filter(d =>
+            d.module===module &&
+            d.type===type
+        );
+    }else{
+        questions=data.filter(d =>
+            d.module===module &&
+            d.lesson===lesson &&
+            d.type===type
+        );
+    }
+
 }
 
 if(!questions.length){
@@ -298,8 +326,8 @@ switch(q.type){
         break;
 
     case "capital":
-        questionText="What is the capital of this country?";
-        break;
+    questionText = "What is the capital of " + q.country + "?";
+    break;
 
     case "iata":
         questionText="What is the IATA code?";
