@@ -12,6 +12,7 @@
     "type": "city",
     "city": "Algiers",
     "country": "Algeria",
+    "isCapital": true,
     "image": "ALG Pijl.png"
   },
   {
@@ -21,6 +22,7 @@
     "iata": "ALG",
     "city": "Algiers",
     "display": "Algiers",
+    "isCapital": true,
     "image": "ALG Pijl.png"
   },
   {
@@ -36,6 +38,7 @@
     "type": "city",
     "city": "Luanda",
     "country": "Angola",
+    "isCapital": true,
     "image": "LAD pijl.png"
   },
   {
@@ -45,6 +48,7 @@
     "iata": "LAD",
     "city": "Luanda",
     "display": "Luanda",
+    "isCapital": true,
     "image": "LAD pijl.png"
   },
   {
@@ -60,6 +64,7 @@
     "type": "city",
     "city": "Cotonou",
     "country": "Benin",
+    "isCapital": false,
     "image": "COO pijl.png"
   },
   {
@@ -69,6 +74,7 @@
     "iata": "COO",
     "city": "Cotonou",
     "display": "Cotonou",
+    "isCapital": false,
     "image": "COO pijl.png"
   },
   {
@@ -84,6 +90,7 @@
     "type": "city",
     "city": "Ouagadougou",
     "country": "Burkina Faso",
+    "isCapital": true,
     "image": "OUA Pijl.png"
   },
   {
@@ -93,6 +100,7 @@
     "iata": "OUA",
     "city": "Ouagadougou",
     "display": "Ouagadougou",
+    "isCapital": true,
     "image": "OUA Pijl.png"
   },
   {
@@ -108,6 +116,7 @@
     "type": "city",
     "city": "Yaounde",
     "country": "Cameroon",
+    "isCapital": true,
     "image": "YAO pijl.png"
   },
   {
@@ -117,6 +126,7 @@
     "iata": "YAO",
     "city": "Yaounde",
     "display": "Yaounde",
+    "isCapital": true,
     "image": "YAO pijl.png"
   },
   {
@@ -132,6 +142,7 @@
     "type": "city",
     "city": "Praia",
     "country": "Cape Verde",
+    "isCapital": true,
     "image": "RAI pijlen.png"
   },
   {
@@ -141,6 +152,7 @@
     "iata": "RAI",
     "city": "Praia",
     "display": "Praia",
+    "isCapital": true,
     "image": "RAI pijlen.png"
   },
   {
@@ -156,6 +168,7 @@
     "type": "city",
     "city": "Bangui",
     "country": "Central African Republic",
+    "isCapital": true,
     "image": "BGF pijl.png"
   },
   {
@@ -165,6 +178,7 @@
     "iata": "BGF",
     "city": "Bangui",
     "display": "Bangui",
+    "isCapital": true,
     "image": "BGF pijl.png"
   },
   {
@@ -180,6 +194,7 @@
     "type": "city",
     "city": "N'Djamena",
     "country": "Chad",
+    "isCapital": true,
     "image": "NDJ Pijl.png"
   },
   {
@@ -189,6 +204,7 @@
     "iata": "NDJ",
     "city": "N'Djamena",
     "display": "N'Djamena",
+    "isCapital": true,
     "image": "NDJ Pijl.png"
   },
   {
@@ -204,6 +220,7 @@
     "type": "city",
     "city": "Yamoussoukro",
     "country": "Cote d'Ivoire",
+    "isCapital": true,
     "image": "ASK pijl.png"
   },
   {
@@ -213,6 +230,7 @@
     "iata": "ASK",
     "city": "Yamoussoukro",
     "display": "Yamoussoukro",
+    "isCapital": true,
     "image": "ASK pijl.png"
   },
   {
@@ -228,6 +246,7 @@
     "type": "city",
     "city": "Abidjan",
     "country": "Cote d'Ivoire",
+    "isCapital": false,
     "image": "ABJ pijl.png"
   },
   {
@@ -237,6 +256,7 @@
     "iata": "ABJ",
     "city": "Abidjan",
     "display": "Abidjan",
+    "isCapital": false,
     "image": "ABJ pijl.png"
   },
   {
@@ -252,6 +272,7 @@
     "type": "city",
     "city": "Kinshasa",
     "country": "Democratic Republic of Congo",
+    "isCapital": true,
     "image": "FIH pijl.png"
   },
   {
@@ -261,6 +282,7 @@
     "iata": "FIH",
     "city": "Kinshasa",
     "display": "Kinshasa",
+    "isCapital": true,
     "image": "FIH pijl.png"
   },
   {
@@ -276,6 +298,7 @@
     "type": "city",
     "city": "Djibouti",
     "country": "Djibouti",
+    "isCapital": true,
     "image": "JIB pijl.png"
   },
   {
@@ -285,6 +308,7 @@
     "iata": "JIB",
     "city": "Djibouti",
     "display": "Djibouti",
+    "isCapital": true,
     "image": "JIB pijl.png"
   },
   {
@@ -300,6 +324,7 @@
     "type": "city",
     "city": "Cairo",
     "country": "Egypt",
+    "isCapital": true,
     "image": "CAI Pijl.png"
   },
   {
@@ -309,6 +334,7 @@
     "iata": "CAI",
     "city": "Cairo",
     "display": "Cairo",
+    "isCapital": true,
     "image": "CAI Pijl.png"
   },
   {
@@ -324,6 +350,7 @@
     "type": "city",
     "city": "Hurghada",
     "country": "Egypt",
+    "isCapital": false,
     "image": "HRG Pijl.png"
   },
   {
@@ -333,6 +360,7 @@
     "iata": "HRG",
     "city": "Hurghada",
     "display": "Hurghada",
+    "isCapital": false,
     "image": "HRG Pijl.png"
   },
   {
@@ -348,6 +376,7 @@
     "type": "city",
     "city": "Sharm el Sheikh",
     "country": "Egypt",
+    "isCapital": false,
     "image": "SSH Pijl.png"
   },
   {
@@ -357,6 +386,7 @@
     "iata": "SSH",
     "city": "Sharm el Sheikh",
     "display": "Sharm el Sheikh",
+    "isCapital": false,
     "image": "SSH Pijl.png"
   },
   {
@@ -372,6 +402,7 @@
     "type": "city",
     "city": "Malabo",
     "country": "Equatorial Guinea",
+    "isCapital": false,
     "image": "SSG pijl.png"
   },
   {
@@ -381,6 +412,7 @@
     "iata": "SSG",
     "city": "Malabo",
     "display": "Malabo",
+    "isCapital": false,
     "image": "SSG pijl.png"
   },
   {
@@ -396,6 +428,7 @@
     "type": "city",
     "city": "Addis Ababa",
     "country": "Ethiopia",
+    "isCapital": true,
     "image": "ADD pijl.png"
   },
   {
@@ -405,6 +438,7 @@
     "iata": "ADD",
     "city": "Addis Ababa",
     "display": "Addis Ababa",
+    "isCapital": true,
     "image": "ADD pijl.png"
   },
   {
@@ -420,6 +454,7 @@
     "type": "city",
     "city": "Libreville",
     "country": "Gabon",
+    "isCapital": true,
     "image": "LBV pijl.png"
   },
   {
@@ -429,6 +464,7 @@
     "iata": "LBV",
     "city": "Libreville",
     "display": "Libreville",
+    "isCapital": true,
     "image": "LBV pijl.png"
   },
   {
@@ -444,6 +480,7 @@
     "type": "city",
     "city": "Banjul",
     "country": "Gambia",
+    "isCapital": true,
     "image": "BJL Pijl.png"
   },
   {
@@ -453,6 +490,7 @@
     "iata": "BJL",
     "city": "Banjul",
     "display": "Banjul",
+    "isCapital": true,
     "image": "BJL Pijl.png"
   },
   {
@@ -468,6 +506,7 @@
     "type": "city",
     "city": "Accra",
     "country": "Ghana",
+    "isCapital": true,
     "image": "ACC pijl.png"
   },
   {
@@ -477,6 +516,7 @@
     "iata": "ACC",
     "city": "Accra",
     "display": "Accra",
+    "isCapital": true,
     "image": "ACC pijl.png"
   },
   {
@@ -492,6 +532,7 @@
     "type": "city",
     "city": "Conakry",
     "country": "Guinea",
+    "isCapital": true,
     "image": "CKY pijl.png"
   },
   {
@@ -501,6 +542,7 @@
     "iata": "CKY",
     "city": "Conakry",
     "display": "Conakry",
+    "isCapital": true,
     "image": "CKY pijl.png"
   },
   {
@@ -516,6 +558,7 @@
     "type": "city",
     "city": "Mombasa",
     "country": "Kenya",
+    "isCapital": false,
     "image": "MBA pijl.png"
   },
   {
@@ -525,6 +568,7 @@
     "iata": "MBA",
     "city": "Mombasa",
     "display": "Mombasa",
+    "isCapital": false,
     "image": "MBA pijl.png"
   },
   {
@@ -540,6 +584,7 @@
     "type": "city",
     "city": "Nairobi",
     "country": "Kenya",
+    "isCapital": true,
     "image": "NBO pijl.png"
   },
   {
@@ -549,6 +594,7 @@
     "iata": "NBO",
     "city": "Nairobi",
     "display": "Nairobi",
+    "isCapital": true,
     "image": "NBO pijl.png"
   },
   {
@@ -564,6 +610,7 @@
     "type": "city",
     "city": "Tripoli",
     "country": "Libya",
+    "isCapital": true,
     "image": "TIP Pijl.png"
   },
   {
@@ -573,6 +620,7 @@
     "iata": "TIP",
     "city": "Tripoli",
     "display": "Tripoli",
+    "isCapital": true,
     "image": "TIP Pijl.png"
   },
   {
@@ -588,6 +636,7 @@
     "type": "city",
     "city": "Antananarivo",
     "country": "Madagascar",
+    "isCapital": true,
     "image": "TNR pijl.png"
   },
   {
@@ -597,6 +646,7 @@
     "iata": "TNR",
     "city": "Antananarivo",
     "display": "Antananarivo",
+    "isCapital": true,
     "image": "TNR pijl.png"
   },
   {
@@ -612,6 +662,7 @@
     "type": "city",
     "city": "Lilongwe",
     "country": "Malawi",
+    "isCapital": true,
     "image": "LLW pijl.png"
   },
   {
@@ -621,6 +672,7 @@
     "iata": "LLW",
     "city": "Lilongwe",
     "display": "Lilongwe",
+    "isCapital": true,
     "image": "LLW pijl.png"
   },
   {
@@ -636,6 +688,7 @@
     "type": "city",
     "city": "Bamako",
     "country": "Mali",
+    "isCapital": true,
     "image": "BKO Pijl.png"
   },
   {
@@ -645,6 +698,7 @@
     "iata": "BKO",
     "city": "Bamako",
     "display": "Bamako",
+    "isCapital": true,
     "image": "BKO Pijl.png"
   },
   {
@@ -660,6 +714,7 @@
     "type": "city",
     "city": "Port Louis",
     "country": "Mauritius",
+    "isCapital": true,
     "image": "MRU pijl.png"
   },
   {
@@ -669,6 +724,7 @@
     "iata": "MRU",
     "city": "Port Louis",
     "display": "Port Louis",
+    "isCapital": true,
     "image": "MRU pijl.png"
   },
   {
@@ -684,6 +740,7 @@
     "type": "city",
     "city": "Casablanca",
     "country": "Morocco",
+    "isCapital": false,
     "image": "CMN Pijl.png"
   },
   {
@@ -693,6 +750,7 @@
     "iata": "CMN",
     "city": "Casablanca",
     "display": "Casablanca",
+    "isCapital": false,
     "image": "CMN Pijl.png"
   },
   {
@@ -708,6 +766,7 @@
     "type": "city",
     "city": "Marrakech",
     "country": "Morocco",
+    "isCapital": false,
     "image": "RAK Pijl.png"
   },
   {
@@ -717,6 +776,7 @@
     "iata": "RAK",
     "city": "Marrakech",
     "display": "Marrakech",
+    "isCapital": false,
     "image": "RAK Pijl.png"
   },
   {
@@ -732,6 +792,7 @@
     "type": "city",
     "city": "Rabat",
     "country": "Morocco",
+    "isCapital": true,
     "image": "RBA Pijl.png"
   },
   {
@@ -741,6 +802,7 @@
     "iata": "RBA",
     "city": "Rabat",
     "display": "Rabat",
+    "isCapital": true,
     "image": "RBA Pijl.png"
   },
   {
@@ -756,6 +818,7 @@
     "type": "city",
     "city": "Maputo",
     "country": "Mozambique",
+    "isCapital": true,
     "image": "MPM pijl.png"
   },
   {
@@ -765,6 +828,7 @@
     "iata": "MPM",
     "city": "Maputo",
     "display": "Maputo",
+    "isCapital": true,
     "image": "MPM pijl.png"
   },
   {
@@ -780,6 +844,7 @@
     "type": "city",
     "city": "Windhoek",
     "country": "Namibia",
+    "isCapital": true,
     "image": "WDH pijl.png"
   },
   {
@@ -789,13 +854,14 @@
     "iata": "WDH",
     "city": "Windhoek",
     "display": "Windhoek",
+    "isCapital": true,
     "image": "WDH pijl.png"
   },
   {
     "module": "Africa",
     "lesson": "Northern Africa - Sahara countries",
     "type": "country",
-    "country": "Niger ",
+    "country": "Niger",
     "image": "Niger.png"
   },
   {
@@ -803,7 +869,8 @@
     "lesson": "Northern Africa - Sahara countries",
     "type": "city",
     "city": "Niamey",
-    "country": "Niger ",
+    "country": "Niger",
+    "isCapital": true,
     "image": "NIM pijl.png"
   },
   {
@@ -813,6 +880,7 @@
     "iata": "NIM",
     "city": "Niamey",
     "display": "Niamey",
+    "isCapital": true,
     "image": "NIM pijl.png"
   },
   {
@@ -828,6 +896,7 @@
     "type": "city",
     "city": "Abuja",
     "country": "Nigeria",
+    "isCapital": true,
     "image": "ABV pijl.png"
   },
   {
@@ -837,6 +906,7 @@
     "iata": "ABV",
     "city": "Abuja",
     "display": "Abuja",
+    "isCapital": true,
     "image": "ABV pijl.png"
   },
   {
@@ -852,6 +922,7 @@
     "type": "city",
     "city": "Lagos",
     "country": "Nigeria",
+    "isCapital": false,
     "image": "LOS pijl.png"
   },
   {
@@ -861,6 +932,7 @@
     "iata": "LOS",
     "city": "Lagos",
     "display": "Lagos",
+    "isCapital": false,
     "image": "LOS pijl.png"
   },
   {
@@ -876,6 +948,7 @@
     "type": "city",
     "city": "Brazzaville",
     "country": "Republic of Congo",
+    "isCapital": true,
     "image": "BZV pijl.png"
   },
   {
@@ -885,6 +958,7 @@
     "iata": "BZV",
     "city": "Brazzaville",
     "display": "Brazzaville",
+    "isCapital": true,
     "image": "BZV pijl.png"
   },
   {
@@ -900,6 +974,7 @@
     "type": "city",
     "city": "Kigali",
     "country": "Rwanda",
+    "isCapital": true,
     "image": "KGL pijl.png"
   },
   {
@@ -909,6 +984,7 @@
     "iata": "KGL",
     "city": "Kigali",
     "display": "Kigali",
+    "isCapital": true,
     "image": "KGL pijl.png"
   },
   {
@@ -924,6 +1000,7 @@
     "type": "city",
     "city": "Dakar",
     "country": "Senegal",
+    "isCapital": true,
     "image": "DSS Pijl.png"
   },
   {
@@ -933,6 +1010,7 @@
     "iata": "DSS",
     "city": "Dakar",
     "display": "Dakar",
+    "isCapital": true,
     "image": "DSS Pijl.png"
   },
   {
@@ -946,8 +1024,9 @@
     "module": "Africa",
     "lesson": "Central Africa",
     "type": "city",
-    "city": "Victoria",
+    "city": "Mahe Island",
     "country": "Seychelles",
+    "isCapital": true,
     "image": "SEZ pijl.png"
   },
   {
@@ -955,8 +1034,9 @@
     "lesson": "Central Africa",
     "type": "iata",
     "iata": "SEZ",
-    "city": "Victoria",
-    "display": "Victoia, Seychelles",
+    "city": "Mahe Island",
+    "display": "Mahe Island",
+    "isCapital": true,
     "image": "SEZ pijl.png"
   },
   {
@@ -972,6 +1052,7 @@
     "type": "city",
     "city": "Freetown",
     "country": "Sierra Leone",
+    "isCapital": true,
     "image": "FNA pijl.png"
   },
   {
@@ -981,6 +1062,7 @@
     "iata": "FNA",
     "city": "Freetown",
     "display": "Freetown",
+    "isCapital": true,
     "image": "FNA pijl.png"
   },
   {
@@ -996,6 +1078,7 @@
     "type": "city",
     "city": "Cape Town",
     "country": "South Africa",
+    "isCapital": true,
     "image": "CPT pijl.png"
   },
   {
@@ -1005,6 +1088,7 @@
     "iata": "CPT",
     "city": "Cape Town",
     "display": "Cape Town",
+    "isCapital": true,
     "image": "CPT pijl.png"
   },
   {
@@ -1020,6 +1104,7 @@
     "type": "city",
     "city": "Johannesburg",
     "country": "South Africa",
+    "isCapital": false,
     "image": "JNB pijl.png"
   },
   {
@@ -1029,6 +1114,7 @@
     "iata": "JNB",
     "city": "Johannesburg",
     "display": "Johannesburg",
+    "isCapital": false,
     "image": "JNB pijl.png"
   },
   {
@@ -1044,6 +1130,7 @@
     "type": "city",
     "city": "Dar es Salaam",
     "country": "Tanzania",
+    "isCapital": true,
     "image": "DAR pijl.png"
   },
   {
@@ -1053,6 +1140,7 @@
     "iata": "DAR",
     "city": "Dar es Salaam",
     "display": "Dar es Salaam",
+    "isCapital": true,
     "image": "DAR pijl.png"
   },
   {
@@ -1068,6 +1156,7 @@
     "type": "city",
     "city": "Lomé",
     "country": "Togo",
+    "isCapital": true,
     "image": "LFW pijl.png"
   },
   {
@@ -1077,13 +1166,14 @@
     "iata": "LFW",
     "city": "Lomé",
     "display": "Lomé",
+    "isCapital": true,
     "image": "LFW pijl.png"
   },
   {
     "module": "Africa",
     "lesson": "Northern Africa - Sahara countries",
     "type": "country",
-    "country": "Tunisia",
+    "country": "Tunesia",
     "image": "Tunis.png"
   },
   {
@@ -1091,7 +1181,8 @@
     "lesson": "Northern Africa - Sahara countries",
     "type": "city",
     "city": "Tunis",
-    "country": "Tunisia",
+    "country": "Tunesia",
+    "isCapital": true,
     "image": "TUN Pijl.png"
   },
   {
@@ -1101,6 +1192,7 @@
     "iata": "TUN",
     "city": "Tunis",
     "display": "Tunis",
+    "isCapital": true,
     "image": "TUN Pijl.png"
   },
   {
@@ -1116,6 +1208,7 @@
     "type": "city",
     "city": "Entebbe",
     "country": "Uganda",
+    "isCapital": false,
     "image": "EBB pijl.png"
   },
   {
@@ -1125,6 +1218,7 @@
     "iata": "EBB",
     "city": "Entebbe",
     "display": "Entebbe",
+    "isCapital": false,
     "image": "EBB pijl.png"
   },
   {
@@ -1140,6 +1234,7 @@
     "type": "city",
     "city": "Lusaka",
     "country": "Zambia",
+    "isCapital": true,
     "image": "LUN pijl.png"
   },
   {
@@ -1149,6 +1244,7 @@
     "iata": "LUN",
     "city": "Lusaka",
     "display": "Lusaka",
+    "isCapital": true,
     "image": "LUN pijl.png"
   },
   {
@@ -1164,6 +1260,7 @@
     "type": "city",
     "city": "Harare",
     "country": "Zimbabwe",
+    "isCapital": true,
     "image": "HRE pijl.png"
   },
   {
@@ -1173,6 +1270,7 @@
     "iata": "HRE",
     "city": "Harare",
     "display": "Harare",
+    "isCapital": true,
     "image": "HRE pijl.png"
   },
   {
@@ -1188,6 +1286,7 @@
     "type": "city",
     "city": "Buenos Aires",
     "country": "Argentina",
+    "isCapital": true,
     "image": "EZE Pijl.png"
   },
   {
@@ -1197,6 +1296,7 @@
     "iata": "EZE",
     "city": "Buenos Aires",
     "display": "Buenos Aires",
+    "isCapital": true,
     "image": "EZE Pijl.png"
   },
   {
@@ -1212,6 +1312,7 @@
     "type": "city",
     "city": "Oranjestad",
     "country": "Aruba",
+    "isCapital": false,
     "image": "AUA pijl.png"
   },
   {
@@ -1221,6 +1322,7 @@
     "iata": "AUA",
     "city": "Oranjestad",
     "display": "Oranjestad",
+    "isCapital": false,
     "image": "AUA pijl.png"
   },
   {
@@ -1236,6 +1338,7 @@
     "type": "city",
     "city": "Kralendijk",
     "country": "Bonaire",
+    "isCapital": false,
     "image": "BON pijl.png"
   },
   {
@@ -1245,6 +1348,7 @@
     "iata": "BON",
     "city": "Kralendijk",
     "display": "Kralendijk",
+    "isCapital": false,
     "image": "BON pijl.png"
   },
   {
@@ -1260,6 +1364,7 @@
     "type": "city",
     "city": "Brasilia",
     "country": "Brazil",
+    "isCapital": true,
     "image": "BSB Pijl.png"
   },
   {
@@ -1269,6 +1374,7 @@
     "iata": "BSB",
     "city": "Brasilia",
     "display": "Brasilia",
+    "isCapital": true,
     "image": "BSB Pijl.png"
   },
   {
@@ -1284,6 +1390,7 @@
     "type": "city",
     "city": "Fortaleza",
     "country": "Brazil",
+    "isCapital": false,
     "image": "FOR Pijl.png"
   },
   {
@@ -1293,6 +1400,7 @@
     "iata": "FOR",
     "city": "Fortaleza",
     "display": "Fortaleza",
+    "isCapital": false,
     "image": "FOR Pijl.png"
   },
   {
@@ -1308,6 +1416,7 @@
     "type": "city",
     "city": "Rio de Janeiro",
     "country": "Brazil",
+    "isCapital": false,
     "image": "GIG Pijl.png"
   },
   {
@@ -1317,6 +1426,7 @@
     "iata": "GIG",
     "city": "Rio de Janeiro",
     "display": "Rio de Janeiro",
+    "isCapital": false,
     "image": "GIG Pijl.png"
   },
   {
@@ -1332,6 +1442,7 @@
     "type": "city",
     "city": "São Paulo",
     "country": "Brazil",
+    "isCapital": false,
     "image": "GRU Pijl.png"
   },
   {
@@ -1341,6 +1452,7 @@
     "iata": "GRU",
     "city": "São Paulo",
     "display": "São Paulo",
+    "isCapital": false,
     "image": "GRU Pijl.png"
   },
   {
@@ -1356,6 +1468,7 @@
     "type": "city",
     "city": "Calgary",
     "country": "Canada",
+    "isCapital": false,
     "image": "YYC pijl.png"
   },
   {
@@ -1365,6 +1478,7 @@
     "iata": "YYC",
     "city": "Calgary",
     "display": "Calgary",
+    "isCapital": false,
     "image": "YYC pijl.png"
   },
   {
@@ -1380,6 +1494,7 @@
     "type": "city",
     "city": "Edmonton",
     "country": "Canada",
+    "isCapital": false,
     "image": "YEG pijl.png"
   },
   {
@@ -1389,6 +1504,7 @@
     "iata": "YEG",
     "city": "Edmonton",
     "display": "Edmonton",
+    "isCapital": false,
     "image": "YEG pijl.png"
   },
   {
@@ -1404,6 +1520,7 @@
     "type": "city",
     "city": "Montreal",
     "country": "Canada",
+    "isCapital": false,
     "image": "YUL pijl.png"
   },
   {
@@ -1413,6 +1530,7 @@
     "iata": "YUL",
     "city": "Montreal",
     "display": "Montreal",
+    "isCapital": false,
     "image": "YUL pijl.png"
   },
   {
@@ -1428,6 +1546,7 @@
     "type": "city",
     "city": "Ottawa",
     "country": "Canada",
+    "isCapital": true,
     "image": "YOW pijl.png"
   },
   {
@@ -1437,6 +1556,7 @@
     "iata": "YOW",
     "city": "Ottawa",
     "display": "Ottawa",
+    "isCapital": true,
     "image": "YOW pijl.png"
   },
   {
@@ -1452,6 +1572,7 @@
     "type": "city",
     "city": "Toronto",
     "country": "Canada",
+    "isCapital": false,
     "image": "YYZ pijl.png"
   },
   {
@@ -1461,6 +1582,7 @@
     "iata": "YYZ",
     "city": "Toronto",
     "display": "Toronto",
+    "isCapital": false,
     "image": "YYZ pijl.png"
   },
   {
@@ -1474,8 +1596,9 @@
     "module": "AMOC",
     "lesson": "Cities North America",
     "type": "city",
-    "city": "Vancouver ",
+    "city": "Vancouver",
     "country": "Canada",
+    "isCapital": false,
     "image": "YVR pijl.png"
   },
   {
@@ -1483,8 +1606,9 @@
     "lesson": "Cities North America",
     "type": "iata",
     "iata": "YVR",
-    "city": "Vancouver ",
-    "display": "Vancouver ",
+    "city": "Vancouver",
+    "display": "Vancouver",
+    "isCapital": false,
     "image": "YVR pijl.png"
   },
   {
@@ -1500,6 +1624,7 @@
     "type": "city",
     "city": "Santiago de Chile",
     "country": "Chile",
+    "isCapital": true,
     "image": "SCL Pijl.png"
   },
   {
@@ -1509,6 +1634,7 @@
     "iata": "SCL",
     "city": "Santiago de Chile",
     "display": "Santiago de Chile",
+    "isCapital": true,
     "image": "SCL Pijl.png"
   },
   {
@@ -1524,6 +1650,7 @@
     "type": "city",
     "city": "Bogota",
     "country": "Colombia",
+    "isCapital": true,
     "image": "BOG Pijl.png"
   },
   {
@@ -1533,6 +1660,7 @@
     "iata": "BOG",
     "city": "Bogota",
     "display": "Bogota",
+    "isCapital": true,
     "image": "BOG Pijl.png"
   },
   {
@@ -1548,6 +1676,7 @@
     "type": "city",
     "city": "Cartagena",
     "country": "Colombia",
+    "isCapital": false,
     "image": "CTG pijl.png"
   },
   {
@@ -1557,6 +1686,7 @@
     "iata": "CTG",
     "city": "Cartagena",
     "display": "Cartagena",
+    "isCapital": false,
     "image": "CTG pijl.png"
   },
   {
@@ -1572,6 +1702,7 @@
     "type": "city",
     "city": "San Jose",
     "country": "Costa Rica",
+    "isCapital": true,
     "image": "SJO pijl.png"
   },
   {
@@ -1581,6 +1712,7 @@
     "iata": "SJO",
     "city": "San Jose",
     "display": "San Jose",
+    "isCapital": true,
     "image": "SJO pijl.png"
   },
   {
@@ -1596,6 +1728,7 @@
     "type": "city",
     "city": "Havana",
     "country": "Cuba",
+    "isCapital": true,
     "image": "HAV pijl.png"
   },
   {
@@ -1605,6 +1738,7 @@
     "iata": "HAV",
     "city": "Havana",
     "display": "Havana",
+    "isCapital": true,
     "image": "HAV pijl.png"
   },
   {
@@ -1620,6 +1754,7 @@
     "type": "city",
     "city": "Varadero",
     "country": "Cuba",
+    "isCapital": false,
     "image": "VRA pijl.png"
   },
   {
@@ -1629,6 +1764,7 @@
     "iata": "VRA",
     "city": "Varadero",
     "display": "Varadero",
+    "isCapital": false,
     "image": "VRA pijl.png"
   },
   {
@@ -1644,6 +1780,7 @@
     "type": "city",
     "city": "Willemstad",
     "country": "Curacao",
+    "isCapital": false,
     "image": "CUR pijl.png"
   },
   {
@@ -1653,6 +1790,7 @@
     "iata": "CUR",
     "city": "Willemstad",
     "display": "Willemstad",
+    "isCapital": false,
     "image": "CUR pijl.png"
   },
   {
@@ -1668,6 +1806,7 @@
     "type": "city",
     "city": "Punta Cana",
     "country": "Dominican Republic",
+    "isCapital": false,
     "image": "PUJ pijl.png"
   },
   {
@@ -1677,6 +1816,7 @@
     "iata": "PUJ",
     "city": "Punta Cana",
     "display": "Punta Cana",
+    "isCapital": false,
     "image": "PUJ pijl.png"
   },
   {
@@ -1692,6 +1832,7 @@
     "type": "city",
     "city": "Santo Domingo",
     "country": "Dominican Republic",
+    "isCapital": true,
     "image": "SDQ pijl.png"
   },
   {
@@ -1701,6 +1842,7 @@
     "iata": "SDQ",
     "city": "Santo Domingo",
     "display": "Santo Domingo",
+    "isCapital": true,
     "image": "SDQ pijl.png"
   },
   {
@@ -1716,6 +1858,7 @@
     "type": "city",
     "city": "Guayaquil",
     "country": "Ecuador",
+    "isCapital": false,
     "image": "GYE Pijl.png"
   },
   {
@@ -1725,6 +1868,7 @@
     "iata": "GYE",
     "city": "Guayaquil",
     "display": "Guayaquil",
+    "isCapital": false,
     "image": "GYE Pijl.png"
   },
   {
@@ -1740,6 +1884,7 @@
     "type": "city",
     "city": "Quito",
     "country": "Ecuador",
+    "isCapital": true,
     "image": "UIO Pijl.png"
   },
   {
@@ -1749,13 +1894,14 @@
     "iata": "UIO",
     "city": "Quito",
     "display": "Quito",
+    "isCapital": true,
     "image": "UIO Pijl.png"
   },
   {
     "module": "AMOC",
     "lesson": "Countries and cities South America",
     "type": "country",
-    "country": "French Guyana ",
+    "country": "French Guyana",
     "image": "French Guiana.png"
   },
   {
@@ -1763,7 +1909,8 @@
     "lesson": "Countries and cities South America",
     "type": "city",
     "city": "Cayenne",
-    "country": "French Guyana ",
+    "country": "French Guyana",
+    "isCapital": true,
     "image": "CAY Pijl.png"
   },
   {
@@ -1773,13 +1920,14 @@
     "iata": "CAY",
     "city": "Cayenne",
     "display": "Cayenne",
+    "isCapital": true,
     "image": "CAY Pijl.png"
   },
   {
     "module": "AMOC",
     "lesson": "Countries and capitals North America & Caribbean",
     "type": "country",
-    "country": "Guadeloupe ",
+    "country": "Guadeloupe",
     "image": "PTP pijl.png"
   },
   {
@@ -1787,7 +1935,8 @@
     "lesson": "Countries and capitals North America & Caribbean",
     "type": "city",
     "city": "Ponte-a-Pitre",
-    "country": "Guadeloupe ",
+    "country": "Guadeloupe",
+    "isCapital": false,
     "image": "PTP pijl.png"
   },
   {
@@ -1797,6 +1946,7 @@
     "iata": "PTP",
     "city": "Ponte-a-Pitre",
     "display": "Ponte-a-Pitre",
+    "isCapital": false,
     "image": "PTP pijl.png"
   },
   {
@@ -1812,6 +1962,7 @@
     "type": "city",
     "city": "Port-au-Prince",
     "country": "Haiti",
+    "isCapital": true,
     "image": "PAP pijl.png"
   },
   {
@@ -1821,6 +1972,7 @@
     "iata": "PAP",
     "city": "Port-au-Prince",
     "display": "Port-au-Prince",
+    "isCapital": true,
     "image": "PAP pijl.png"
   },
   {
@@ -1836,6 +1988,7 @@
     "type": "city",
     "city": "Kingston",
     "country": "Jamaica",
+    "isCapital": true,
     "image": "KIN pijl.png"
   },
   {
@@ -1845,6 +1998,7 @@
     "iata": "KIN",
     "city": "Kingston",
     "display": "Kingston",
+    "isCapital": true,
     "image": "KIN pijl.png"
   },
   {
@@ -1860,6 +2014,7 @@
     "type": "city",
     "city": "Montego Bay",
     "country": "Jamaica",
+    "isCapital": false,
     "image": "MBJ Pijl.png"
   },
   {
@@ -1869,6 +2024,7 @@
     "iata": "MBJ",
     "city": "Montego Bay",
     "display": "Montego Bay",
+    "isCapital": false,
     "image": "MBJ Pijl.png"
   },
   {
@@ -1884,6 +2040,7 @@
     "type": "city",
     "city": "Fort de France",
     "country": "Martinique",
+    "isCapital": true,
     "image": "FDF pijl.png"
   },
   {
@@ -1893,6 +2050,7 @@
     "iata": "FDF",
     "city": "Fort de France",
     "display": "Fort de France",
+    "isCapital": true,
     "image": "FDF pijl.png"
   },
   {
@@ -1908,6 +2066,7 @@
     "type": "city",
     "city": "Cancun",
     "country": "Mexico",
+    "isCapital": false,
     "image": "CUN pijl.png"
   },
   {
@@ -1917,6 +2076,7 @@
     "iata": "CUN",
     "city": "Cancun",
     "display": "Cancun",
+    "isCapital": false,
     "image": "CUN pijl.png"
   },
   {
@@ -1932,6 +2092,7 @@
     "type": "city",
     "city": "Mexico City",
     "country": "Mexico",
+    "isCapital": true,
     "image": "MEX pijl.png"
   },
   {
@@ -1941,6 +2102,7 @@
     "iata": "MEX",
     "city": "Mexico City",
     "display": "Mexico City",
+    "isCapital": true,
     "image": "MEX pijl.png"
   },
   {
@@ -1956,6 +2118,7 @@
     "type": "city",
     "city": "Panama City",
     "country": "Panama",
+    "isCapital": true,
     "image": "PTY pijl.png"
   },
   {
@@ -1965,6 +2128,7 @@
     "iata": "PTY",
     "city": "Panama City",
     "display": "Panama City",
+    "isCapital": true,
     "image": "PTY pijl.png"
   },
   {
@@ -1980,6 +2144,7 @@
     "type": "city",
     "city": "Lima",
     "country": "Peru",
+    "isCapital": true,
     "image": "LIM Pijl.png"
   },
   {
@@ -1989,6 +2154,7 @@
     "iata": "LIM",
     "city": "Lima",
     "display": "Lima",
+    "isCapital": true,
     "image": "LIM Pijl.png"
   },
   {
@@ -2004,6 +2170,7 @@
     "type": "city",
     "city": "Philipsburg",
     "country": "Sint Maarten",
+    "isCapital": false,
     "image": "SXM pijl.png"
   },
   {
@@ -2013,6 +2180,7 @@
     "iata": "SXM",
     "city": "Philipsburg",
     "display": "Philipsburg",
+    "isCapital": false,
     "image": "SXM pijl.png"
   },
   {
@@ -2028,6 +2196,7 @@
     "type": "city",
     "city": "Paramaribo",
     "country": "Surinam",
+    "isCapital": true,
     "image": "PBM Pijl.png"
   },
   {
@@ -2037,6 +2206,7 @@
     "iata": "PBM",
     "city": "Paramaribo",
     "display": "Paramaribo",
+    "isCapital": true,
     "image": "PBM Pijl.png"
   },
   {
@@ -2052,6 +2222,7 @@
     "type": "city",
     "city": "Montevideo",
     "country": "Uruguay",
+    "isCapital": true,
     "image": "MVD Pijl.png"
   },
   {
@@ -2061,6 +2232,7 @@
     "iata": "MVD",
     "city": "Montevideo",
     "display": "Montevideo",
+    "isCapital": true,
     "image": "MVD Pijl.png"
   },
   {
@@ -2076,6 +2248,7 @@
     "type": "city",
     "city": "Atlanta",
     "country": "USA",
+    "isCapital": false,
     "image": "ATL pijl.png"
   },
   {
@@ -2085,6 +2258,7 @@
     "iata": "ATL",
     "city": "Atlanta",
     "display": "Atlanta",
+    "isCapital": false,
     "image": "ATL pijl.png"
   },
   {
@@ -2100,6 +2274,7 @@
     "type": "city",
     "city": "Boston",
     "country": "USA",
+    "isCapital": false,
     "image": "BOS pijl.png"
   },
   {
@@ -2109,6 +2284,7 @@
     "iata": "BOS",
     "city": "Boston",
     "display": "Boston",
+    "isCapital": false,
     "image": "BOS pijl.png"
   },
   {
@@ -2124,6 +2300,7 @@
     "type": "city",
     "city": "Chicago",
     "country": "USA",
+    "isCapital": false,
     "image": "ORD pijl.png"
   },
   {
@@ -2133,6 +2310,7 @@
     "iata": "ORD",
     "city": "Chicago",
     "display": "Chicago",
+    "isCapital": false,
     "image": "ORD pijl.png"
   },
   {
@@ -2148,6 +2326,7 @@
     "type": "city",
     "city": "Cincinnati",
     "country": "USA",
+    "isCapital": false,
     "image": "CVG pijl.png"
   },
   {
@@ -2157,6 +2336,7 @@
     "iata": "CVG",
     "city": "Cincinnati",
     "display": "Cincinnati",
+    "isCapital": false,
     "image": "CVG pijl.png"
   },
   {
@@ -2170,8 +2350,9 @@
     "module": "AMOC",
     "lesson": "Cities North America",
     "type": "city",
-    "city": "Dallas ",
+    "city": "Dallas",
     "country": "USA",
+    "isCapital": false,
     "image": "DFW pijl.png"
   },
   {
@@ -2179,8 +2360,9 @@
     "lesson": "Cities North America",
     "type": "iata",
     "iata": "DFW",
-    "city": "Dallas ",
-    "display": "Dallas ",
+    "city": "Dallas",
+    "display": "Dallas",
+    "isCapital": false,
     "image": "DFW pijl.png"
   },
   {
@@ -2196,6 +2378,7 @@
     "type": "city",
     "city": "Detroit",
     "country": "USA",
+    "isCapital": false,
     "image": "DTW pijl.png"
   },
   {
@@ -2205,6 +2388,7 @@
     "iata": "DTW",
     "city": "Detroit",
     "display": "Detroit",
+    "isCapital": false,
     "image": "DTW pijl.png"
   },
   {
@@ -2220,6 +2404,7 @@
     "type": "city",
     "city": "Honolulu",
     "country": "USA",
+    "isCapital": false,
     "image": "HNL pijl.png"
   },
   {
@@ -2229,6 +2414,7 @@
     "iata": "HNL",
     "city": "Honolulu",
     "display": "Honolulu",
+    "isCapital": false,
     "image": "HNL pijl.png"
   },
   {
@@ -2244,6 +2430,7 @@
     "type": "city",
     "city": "Houston",
     "country": "USA",
+    "isCapital": false,
     "image": "IAH pijl.png"
   },
   {
@@ -2253,6 +2440,7 @@
     "iata": "IAH",
     "city": "Houston",
     "display": "Houston",
+    "isCapital": false,
     "image": "IAH pijl.png"
   },
   {
@@ -2268,6 +2456,7 @@
     "type": "city",
     "city": "Las Vegas",
     "country": "USA",
+    "isCapital": false,
     "image": "LAS pijl.png"
   },
   {
@@ -2277,6 +2466,7 @@
     "iata": "LAS",
     "city": "Las Vegas",
     "display": "Las Vegas",
+    "isCapital": false,
     "image": "LAS pijl.png"
   },
   {
@@ -2292,6 +2482,7 @@
     "type": "city",
     "city": "Los Angeles",
     "country": "USA",
+    "isCapital": false,
     "image": "LAX pijl.png"
   },
   {
@@ -2301,6 +2492,7 @@
     "iata": "LAX",
     "city": "Los Angeles",
     "display": "Los Angeles",
+    "isCapital": false,
     "image": "LAX pijl.png"
   },
   {
@@ -2316,6 +2508,7 @@
     "type": "city",
     "city": "Miami",
     "country": "USA",
+    "isCapital": false,
     "image": "MIA pijl.png"
   },
   {
@@ -2325,6 +2518,7 @@
     "iata": "MIA",
     "city": "Miami",
     "display": "Miami",
+    "isCapital": false,
     "image": "MIA pijl.png"
   },
   {
@@ -2340,6 +2534,7 @@
     "type": "city",
     "city": "Minneapolis",
     "country": "USA",
+    "isCapital": false,
     "image": "MSP pijl.png"
   },
   {
@@ -2349,6 +2544,7 @@
     "iata": "MSP",
     "city": "Minneapolis",
     "display": "Minneapolis",
+    "isCapital": false,
     "image": "MSP pijl.png"
   },
   {
@@ -2364,6 +2560,7 @@
     "type": "city",
     "city": "New York",
     "country": "USA",
+    "isCapital": false,
     "image": "NYC pijl.png"
   },
   {
@@ -2372,7 +2569,8 @@
     "type": "iata",
     "iata": "JFK",
     "city": "New York",
-    "display": "New York John F. Kennedy ",
+    "display": "New York",
+    "isCapital": false,
     "image": "NYC pijl.png"
   },
   {
@@ -2386,8 +2584,9 @@
     "module": "AMOC",
     "lesson": "Cities North America",
     "type": "city",
-    "city": "New York ",
+    "city": "New York",
     "country": "USA",
+    "isCapital": false,
     "image": "NYC pijl.png"
   },
   {
@@ -2395,8 +2594,9 @@
     "lesson": "Cities North America",
     "type": "iata",
     "iata": "LGA",
-    "city": "New York ",
-    "display": "New York La Guardia",
+    "city": "New York",
+    "display": "New York",
+    "isCapital": false,
     "image": "NYC pijl.png"
   },
   {
@@ -2410,8 +2610,9 @@
     "module": "AMOC",
     "lesson": "Cities North America",
     "type": "city",
-    "city": "New York ",
+    "city": "New York",
     "country": "USA",
+    "isCapital": false,
     "image": "NYC pijl.png"
   },
   {
@@ -2419,8 +2620,9 @@
     "lesson": "Cities North America",
     "type": "iata",
     "iata": "EWR",
-    "city": "New York ",
-    "display": "New York Newark",
+    "city": "New York",
+    "display": "New York",
+    "isCapital": false,
     "image": "NYC pijl.png"
   },
   {
@@ -2436,6 +2638,7 @@
     "type": "city",
     "city": "Orlando",
     "country": "USA",
+    "isCapital": false,
     "image": "MCO pijl.png"
   },
   {
@@ -2445,6 +2648,7 @@
     "iata": "MCO",
     "city": "Orlando",
     "display": "Orlando",
+    "isCapital": false,
     "image": "MCO pijl.png"
   },
   {
@@ -2460,6 +2664,7 @@
     "type": "city",
     "city": "Pittsburgh",
     "country": "USA",
+    "isCapital": false,
     "image": "PIT pijl.png"
   },
   {
@@ -2469,6 +2674,7 @@
     "iata": "PIT",
     "city": "Pittsburgh",
     "display": "Pittsburgh",
+    "isCapital": false,
     "image": "PIT pijl.png"
   },
   {
@@ -2484,6 +2690,7 @@
     "type": "city",
     "city": "Portland",
     "country": "USA",
+    "isCapital": false,
     "image": "PDX pijl.png"
   },
   {
@@ -2493,6 +2700,7 @@
     "iata": "PDX",
     "city": "Portland",
     "display": "Portland",
+    "isCapital": false,
     "image": "PDX pijl.png"
   },
   {
@@ -2508,6 +2716,7 @@
     "type": "city",
     "city": "Salt Lake City",
     "country": "USA",
+    "isCapital": false,
     "image": "SLC pijl.png"
   },
   {
@@ -2517,6 +2726,7 @@
     "iata": "SLC",
     "city": "Salt Lake City",
     "display": "Salt Lake City",
+    "isCapital": false,
     "image": "SLC pijl.png"
   },
   {
@@ -2532,6 +2742,7 @@
     "type": "city",
     "city": "San Francisco",
     "country": "USA",
+    "isCapital": false,
     "image": "SFO pijl.png"
   },
   {
@@ -2541,6 +2752,7 @@
     "iata": "SFO",
     "city": "San Francisco",
     "display": "San Francisco",
+    "isCapital": false,
     "image": "SFO pijl.png"
   },
   {
@@ -2556,6 +2768,7 @@
     "type": "city",
     "city": "Seattle",
     "country": "USA",
+    "isCapital": false,
     "image": "SEA pijl.png"
   },
   {
@@ -2565,6 +2778,7 @@
     "iata": "SEA",
     "city": "Seattle",
     "display": "Seattle",
+    "isCapital": false,
     "image": "SEA pijl.png"
   },
   {
@@ -2580,6 +2794,7 @@
     "type": "city",
     "city": "Washington D.C.",
     "country": "USA",
+    "isCapital": true,
     "image": "IAD pijl.png"
   },
   {
@@ -2589,6 +2804,7 @@
     "iata": "IAD",
     "city": "Washington D.C.",
     "display": "Washington D.C.",
+    "isCapital": true,
     "image": "IAD pijl.png"
   },
   {
@@ -2604,6 +2820,7 @@
     "type": "city",
     "city": "Caracas",
     "country": "Venezuela",
+    "isCapital": true,
     "image": "CCS Pijl.png"
   },
   {
@@ -2613,6 +2830,7 @@
     "iata": "CCS",
     "city": "Caracas",
     "display": "Caracas",
+    "isCapital": true,
     "image": "CCS Pijl.png"
   },
   {
@@ -2628,6 +2846,7 @@
     "type": "city",
     "city": "Kabul",
     "country": "Afghanistan",
+    "isCapital": false,
     "image": "KBL Pijl.png"
   },
   {
@@ -2637,6 +2856,7 @@
     "iata": "KBL",
     "city": "Kabul",
     "display": "Kabul",
+    "isCapital": false,
     "image": "KBL Pijl.png"
   },
   {
@@ -2652,6 +2872,7 @@
     "type": "city",
     "city": "Yerevan",
     "country": "Armenia",
+    "isCapital": true,
     "image": "EVN Pijl.png"
   },
   {
@@ -2661,6 +2882,7 @@
     "iata": "EVN",
     "city": "Yerevan",
     "display": "Yerevan",
+    "isCapital": true,
     "image": "EVN Pijl.png"
   },
   {
@@ -2676,6 +2898,7 @@
     "type": "city",
     "city": "Manama",
     "country": "Bahrein",
+    "isCapital": true,
     "image": "BAH Pijl.png"
   },
   {
@@ -2685,6 +2908,7 @@
     "iata": "BAH",
     "city": "Manama",
     "display": "Manama",
+    "isCapital": true,
     "image": "BAH Pijl.png"
   },
   {
@@ -2700,6 +2924,7 @@
     "type": "city",
     "city": "Dhaka",
     "country": "Bangladesh",
+    "isCapital": true,
     "image": "DAC Pijl.png"
   },
   {
@@ -2709,6 +2934,7 @@
     "iata": "DAC",
     "city": "Dhaka",
     "display": "Dhaka",
+    "isCapital": true,
     "image": "DAC Pijl.png"
   },
   {
@@ -2724,6 +2950,7 @@
     "type": "city",
     "city": "Phnom Penh",
     "country": "Cambodia",
+    "isCapital": true,
     "image": "PNH Pijl.png"
   },
   {
@@ -2733,6 +2960,7 @@
     "iata": "PNH",
     "city": "Phnom Penh",
     "display": "Phnom Penh",
+    "isCapital": true,
     "image": "PNH Pijl.png"
   },
   {
@@ -2748,6 +2976,7 @@
     "type": "city",
     "city": "Beijing",
     "country": "China",
+    "isCapital": true,
     "image": "PEK Pijl.png"
   },
   {
@@ -2757,6 +2986,7 @@
     "iata": "PEK",
     "city": "Beijing",
     "display": "Beijing",
+    "isCapital": true,
     "image": "PEK Pijl.png"
   },
   {
@@ -2772,6 +3002,7 @@
     "type": "city",
     "city": "Chengdu",
     "country": "China",
+    "isCapital": false,
     "image": "CTU Pijl.png"
   },
   {
@@ -2781,6 +3012,7 @@
     "iata": "CTU",
     "city": "Chengdu",
     "display": "Chengdu",
+    "isCapital": false,
     "image": "CTU Pijl.png"
   },
   {
@@ -2796,6 +3028,7 @@
     "type": "city",
     "city": "Hong Kong",
     "country": "China",
+    "isCapital": false,
     "image": "HKG Pijl.png"
   },
   {
@@ -2805,6 +3038,7 @@
     "iata": "HKG",
     "city": "Hong Kong",
     "display": "Hong Kong",
+    "isCapital": false,
     "image": "HKG Pijl.png"
   },
   {
@@ -2820,6 +3054,7 @@
     "type": "city",
     "city": "Shanghai",
     "country": "China",
+    "isCapital": false,
     "image": "PVG Pijl.png"
   },
   {
@@ -2829,6 +3064,7 @@
     "iata": "PVG",
     "city": "Shanghai",
     "display": "Shanghai",
+    "isCapital": false,
     "image": "PVG Pijl.png"
   },
   {
@@ -2844,6 +3080,7 @@
     "type": "city",
     "city": "Wuhan",
     "country": "China",
+    "isCapital": false,
     "image": "WUH Pijl.png"
   },
   {
@@ -2853,6 +3090,7 @@
     "iata": "WUH",
     "city": "Wuhan",
     "display": "Wuhan",
+    "isCapital": false,
     "image": "WUH Pijl.png"
   },
   {
@@ -2868,6 +3106,7 @@
     "type": "city",
     "city": "Tbilisi",
     "country": "Georgia",
+    "isCapital": true,
     "image": "TBS Pijl.png"
   },
   {
@@ -2877,6 +3116,7 @@
     "iata": "TBS",
     "city": "Tbilisi",
     "display": "Tbilisi",
+    "isCapital": true,
     "image": "TBS Pijl.png"
   },
   {
@@ -2892,6 +3132,7 @@
     "type": "city",
     "city": "Mumbai",
     "country": "India",
+    "isCapital": false,
     "image": "BOM Pijl.png"
   },
   {
@@ -2901,6 +3142,7 @@
     "iata": "BOM",
     "city": "Mumbai",
     "display": "Mumbai",
+    "isCapital": false,
     "image": "BOM Pijl.png"
   },
   {
@@ -2916,6 +3158,7 @@
     "type": "city",
     "city": "New Delhi",
     "country": "India",
+    "isCapital": true,
     "image": "DEL Pijl.png"
   },
   {
@@ -2925,6 +3168,7 @@
     "iata": "DEL",
     "city": "New Delhi",
     "display": "New Delhi",
+    "isCapital": true,
     "image": "DEL Pijl.png"
   },
   {
@@ -2940,6 +3184,7 @@
     "type": "city",
     "city": "Denpasar",
     "country": "Indonesia",
+    "isCapital": false,
     "image": "DPS Pijl.png"
   },
   {
@@ -2949,6 +3194,7 @@
     "iata": "DPS",
     "city": "Denpasar",
     "display": "Denpasar",
+    "isCapital": false,
     "image": "DPS Pijl.png"
   },
   {
@@ -2964,6 +3210,7 @@
     "type": "city",
     "city": "Jakarta",
     "country": "Indonesia",
+    "isCapital": true,
     "image": "CGK Pijl.png"
   },
   {
@@ -2973,6 +3220,7 @@
     "iata": "CGK",
     "city": "Jakarta",
     "display": "Jakarta",
+    "isCapital": true,
     "image": "CGK Pijl.png"
   },
   {
@@ -2988,6 +3236,7 @@
     "type": "city",
     "city": "Tehran",
     "country": "Iran",
+    "isCapital": true,
     "image": "IKA Pijl.png"
   },
   {
@@ -2997,6 +3246,7 @@
     "iata": "IKA",
     "city": "Tehran",
     "display": "Tehran",
+    "isCapital": true,
     "image": "IKA Pijl.png"
   },
   {
@@ -3012,6 +3262,7 @@
     "type": "city",
     "city": "Tel Aviv",
     "country": "Israel",
+    "isCapital": true,
     "image": "TLV Pijl.png"
   },
   {
@@ -3021,6 +3272,7 @@
     "iata": "TLV",
     "city": "Tel Aviv",
     "display": "Tel Aviv",
+    "isCapital": true,
     "image": "TLV Pijl.png"
   },
   {
@@ -3036,6 +3288,7 @@
     "type": "city",
     "city": "Osaka",
     "country": "Japan",
+    "isCapital": false,
     "image": "KIX Pijl.png"
   },
   {
@@ -3045,6 +3298,7 @@
     "iata": "KIX",
     "city": "Osaka",
     "display": "Osaka",
+    "isCapital": false,
     "image": "KIX Pijl.png"
   },
   {
@@ -3058,8 +3312,9 @@
     "module": "ASIA",
     "lesson": "Far East",
     "type": "city",
-    "city": "Tokyo ",
+    "city": "Tokyo",
     "country": "Japan",
+    "isCapital": true,
     "image": "NRT Pijl.png"
   },
   {
@@ -3067,8 +3322,9 @@
     "lesson": "Far East",
     "type": "iata",
     "iata": "NRT",
-    "city": "Tokyo ",
-    "display": "Tokyo Narita",
+    "city": "Tokyo",
+    "display": "Tokyo",
+    "isCapital": true,
     "image": "NRT Pijl.png"
   },
   {
@@ -3082,8 +3338,9 @@
     "module": "ASIA",
     "lesson": "Far East",
     "type": "city",
-    "city": "Tokyo ",
+    "city": "Tokyo",
     "country": "Japan",
+    "isCapital": true,
     "image": "NRT pijl.png"
   },
   {
@@ -3091,8 +3348,9 @@
     "lesson": "Far East",
     "type": "iata",
     "iata": "HND",
-    "city": "Tokyo ",
-    "display": "Tokyo Haneda",
+    "city": "Tokyo",
+    "display": "Tokyo",
+    "isCapital": true,
     "image": "NRT pijl.png"
   },
   {
@@ -3108,6 +3366,7 @@
     "type": "city",
     "city": "Amman",
     "country": "Jordan",
+    "isCapital": true,
     "image": "AMM Pijl.png"
   },
   {
@@ -3117,6 +3376,7 @@
     "iata": "AMM",
     "city": "Amman",
     "display": "Amman",
+    "isCapital": true,
     "image": "AMM Pijl.png"
   },
   {
@@ -3132,6 +3392,7 @@
     "type": "city",
     "city": "Astana",
     "country": "Kazakhstan",
+    "isCapital": true,
     "image": "NQZ Pijl.png"
   },
   {
@@ -3141,6 +3402,7 @@
     "iata": "NQZ",
     "city": "Astana",
     "display": "Astana",
+    "isCapital": true,
     "image": "NQZ Pijl.png"
   },
   {
@@ -3156,6 +3418,7 @@
     "type": "city",
     "city": "Kuwait",
     "country": "Kuwait",
+    "isCapital": true,
     "image": "KWI Pijl.png"
   },
   {
@@ -3165,6 +3428,7 @@
     "iata": "KWI",
     "city": "Kuwait",
     "display": "Kuwait",
+    "isCapital": true,
     "image": "KWI Pijl.png"
   },
   {
@@ -3180,6 +3444,7 @@
     "type": "city",
     "city": "Vientiane",
     "country": "Laos",
+    "isCapital": true,
     "image": "VTE Pijl.png"
   },
   {
@@ -3189,6 +3454,7 @@
     "iata": "VTE",
     "city": "Vientiane",
     "display": "Vientiane",
+    "isCapital": true,
     "image": "VTE Pijl.png"
   },
   {
@@ -3204,6 +3470,7 @@
     "type": "city",
     "city": "Beirut",
     "country": "Lebanon",
+    "isCapital": true,
     "image": "BEY Pijl.png"
   },
   {
@@ -3213,6 +3480,7 @@
     "iata": "BEY",
     "city": "Beirut",
     "display": "Beirut",
+    "isCapital": true,
     "image": "BEY Pijl.png"
   },
   {
@@ -3228,6 +3496,7 @@
     "type": "city",
     "city": "Kuala Lumpur",
     "country": "Malaysia",
+    "isCapital": true,
     "image": "KUL Pijl.png"
   },
   {
@@ -3237,6 +3506,7 @@
     "iata": "KUL",
     "city": "Kuala Lumpur",
     "display": "Kuala Lumpur",
+    "isCapital": true,
     "image": "KUL Pijl.png"
   },
   {
@@ -3252,6 +3522,7 @@
     "type": "city",
     "city": "Male",
     "country": "Maldives",
+    "isCapital": true,
     "image": "MLE Pijl.png"
   },
   {
@@ -3261,6 +3532,7 @@
     "iata": "MLE",
     "city": "Male",
     "display": "Male",
+    "isCapital": true,
     "image": "MLE Pijl.png"
   },
   {
@@ -3276,6 +3548,7 @@
     "type": "city",
     "city": "Ulaanbataar",
     "country": "Mongolia",
+    "isCapital": true,
     "image": "ULN Pijl.png"
   },
   {
@@ -3285,6 +3558,7 @@
     "iata": "UBN",
     "city": "Ulaanbataar",
     "display": "Ulaanbataar",
+    "isCapital": true,
     "image": "ULN Pijl.png"
   },
   {
@@ -3300,6 +3574,7 @@
     "type": "city",
     "city": "Naypyidaw",
     "country": "Myanmar",
+    "isCapital": true,
     "image": "NYT Pijl.png"
   },
   {
@@ -3309,6 +3584,7 @@
     "iata": "NYT",
     "city": "Naypyidaw",
     "display": "Naypyidaw",
+    "isCapital": true,
     "image": "NYT Pijl.png"
   },
   {
@@ -3324,6 +3600,7 @@
     "type": "city",
     "city": "Kathmandu",
     "country": "Nepal",
+    "isCapital": true,
     "image": "KTM Pijl.png"
   },
   {
@@ -3333,6 +3610,7 @@
     "iata": "KTM",
     "city": "Kathmandu",
     "display": "Kathmandu",
+    "isCapital": true,
     "image": "KTM Pijl.png"
   },
   {
@@ -3348,6 +3626,7 @@
     "type": "city",
     "city": "Pyongyang",
     "country": "North Korea",
+    "isCapital": true,
     "image": "FNJ Pijl.png"
   },
   {
@@ -3357,6 +3636,7 @@
     "iata": "FNJ",
     "city": "Pyongyang",
     "display": "Pyongyang",
+    "isCapital": true,
     "image": "FNJ Pijl.png"
   },
   {
@@ -3372,6 +3652,7 @@
     "type": "city",
     "city": "Muscat",
     "country": "Oman",
+    "isCapital": true,
     "image": "MCT Pijl.png"
   },
   {
@@ -3381,6 +3662,7 @@
     "iata": "MCT",
     "city": "Muscat",
     "display": "Muscat",
+    "isCapital": true,
     "image": "MCT Pijl.png"
   },
   {
@@ -3396,6 +3678,7 @@
     "type": "city",
     "city": "Islamabad",
     "country": "Pakistan",
+    "isCapital": true,
     "image": "ISB Pijl.png"
   },
   {
@@ -3405,6 +3688,7 @@
     "iata": "ISB",
     "city": "Islamabad",
     "display": "Islamabad",
+    "isCapital": true,
     "image": "ISB Pijl.png"
   },
   {
@@ -3420,6 +3704,7 @@
     "type": "city",
     "city": "Manila",
     "country": "Phillipines",
+    "isCapital": true,
     "image": "MNL Pijl.png"
   },
   {
@@ -3429,6 +3714,7 @@
     "iata": "MNL",
     "city": "Manila",
     "display": "Manila",
+    "isCapital": true,
     "image": "MNL Pijl.png"
   },
   {
@@ -3444,6 +3730,7 @@
     "type": "city",
     "city": "Doha",
     "country": "Qatar",
+    "isCapital": true,
     "image": "DOH Pijl.png"
   },
   {
@@ -3453,6 +3740,7 @@
     "iata": "DOH",
     "city": "Doha",
     "display": "Doha",
+    "isCapital": true,
     "image": "DOH Pijl.png"
   },
   {
@@ -3468,6 +3756,7 @@
     "type": "city",
     "city": "Vladivistok",
     "country": "Russia",
+    "isCapital": false,
     "image": "VVO pijl.png"
   },
   {
@@ -3477,6 +3766,7 @@
     "iata": "VVO",
     "city": "Vladivistok",
     "display": "Vladivistok",
+    "isCapital": false,
     "image": "VVO pijl.png"
   },
   {
@@ -3492,6 +3782,7 @@
     "type": "city",
     "city": "Jeddah",
     "country": "Saudi Arabia",
+    "isCapital": false,
     "image": "JED Pijl.png"
   },
   {
@@ -3501,6 +3792,7 @@
     "iata": "JED",
     "city": "Jeddah",
     "display": "Jeddah",
+    "isCapital": false,
     "image": "JED Pijl.png"
   },
   {
@@ -3516,6 +3808,7 @@
     "type": "city",
     "city": "Riyadh",
     "country": "Saudi Arabia",
+    "isCapital": true,
     "image": "RUH Pijl.png"
   },
   {
@@ -3525,6 +3818,7 @@
     "iata": "RUH",
     "city": "Riyadh",
     "display": "Riyadh",
+    "isCapital": true,
     "image": "RUH Pijl.png"
   },
   {
@@ -3540,6 +3834,7 @@
     "type": "city",
     "city": "Singapore",
     "country": "Singapore",
+    "isCapital": true,
     "image": "SIN Pijl.png"
   },
   {
@@ -3549,6 +3844,7 @@
     "iata": "SIN",
     "city": "Singapore",
     "display": "Singapore",
+    "isCapital": true,
     "image": "SIN Pijl.png"
   },
   {
@@ -3564,6 +3860,7 @@
     "type": "city",
     "city": "Seoul",
     "country": "South Korea",
+    "isCapital": true,
     "image": "ICN Pijl.png"
   },
   {
@@ -3573,6 +3870,7 @@
     "iata": "ICN",
     "city": "Seoul",
     "display": "Seoul",
+    "isCapital": true,
     "image": "ICN Pijl.png"
   },
   {
@@ -3588,6 +3886,7 @@
     "type": "city",
     "city": "Colombo",
     "country": "Sri Lanka",
+    "isCapital": false,
     "image": "CMB Pijl.png"
   },
   {
@@ -3597,6 +3896,7 @@
     "iata": "CMB",
     "city": "Colombo",
     "display": "Colombo",
+    "isCapital": false,
     "image": "CMB Pijl.png"
   },
   {
@@ -3612,6 +3912,7 @@
     "type": "city",
     "city": "Damascus",
     "country": "Syria",
+    "isCapital": true,
     "image": "DAM.png"
   },
   {
@@ -3621,6 +3922,7 @@
     "iata": "DAM",
     "city": "Damascus",
     "display": "Damascus",
+    "isCapital": true,
     "image": "DAM.png"
   },
   {
@@ -3636,6 +3938,7 @@
     "type": "city",
     "city": "Taipei",
     "country": "Taiwan",
+    "isCapital": true,
     "image": "TPE Pijl.png"
   },
   {
@@ -3645,6 +3948,7 @@
     "iata": "TPE",
     "city": "Taipei",
     "display": "Taipei",
+    "isCapital": true,
     "image": "TPE Pijl.png"
   },
   {
@@ -3660,6 +3964,7 @@
     "type": "city",
     "city": "Bangkok",
     "country": "Thailand",
+    "isCapital": true,
     "image": "BKK Pijl.png"
   },
   {
@@ -3669,6 +3974,7 @@
     "iata": "BKK",
     "city": "Bangkok",
     "display": "Bangkok",
+    "isCapital": true,
     "image": "BKK Pijl.png"
   },
   {
@@ -3684,6 +3990,7 @@
     "type": "city",
     "city": "Phuket",
     "country": "Thailand",
+    "isCapital": false,
     "image": "HKT Pijl.png"
   },
   {
@@ -3693,6 +4000,7 @@
     "iata": "HKT",
     "city": "Phuket",
     "display": "Phuket",
+    "isCapital": false,
     "image": "HKT Pijl.png"
   },
   {
@@ -3708,6 +4016,7 @@
     "type": "city",
     "city": "Abu Dhabi",
     "country": "United Arab Emirates",
+    "isCapital": true,
     "image": "AUH Pijl.png"
   },
   {
@@ -3717,6 +4026,7 @@
     "iata": "AUH",
     "city": "Abu Dhabi",
     "display": "Abu Dhabi",
+    "isCapital": true,
     "image": "AUH Pijl.png"
   },
   {
@@ -3732,6 +4042,7 @@
     "type": "city",
     "city": "Dubai",
     "country": "United Arab Emirates",
+    "isCapital": false,
     "image": "DXB Pijl.png"
   },
   {
@@ -3741,6 +4052,7 @@
     "iata": "DXB",
     "city": "Dubai",
     "display": "Dubai",
+    "isCapital": false,
     "image": "DXB Pijl.png"
   },
   {
@@ -3756,6 +4068,7 @@
     "type": "city",
     "city": "Tashkent",
     "country": "Uzbekistan",
+    "isCapital": true,
     "image": "TAS Pijl.png"
   },
   {
@@ -3765,6 +4078,7 @@
     "iata": "TAS",
     "city": "Tashkent",
     "display": "Tashkent",
+    "isCapital": true,
     "image": "TAS Pijl.png"
   },
   {
@@ -3780,6 +4094,7 @@
     "type": "city",
     "city": "Hanoi",
     "country": "Vietnam",
+    "isCapital": true,
     "image": "HAN Pijl.png"
   },
   {
@@ -3789,6 +4104,7 @@
     "iata": "HAN",
     "city": "Hanoi",
     "display": "Hanoi",
+    "isCapital": true,
     "image": "HAN Pijl.png"
   },
   {
@@ -3804,6 +4120,7 @@
     "type": "city",
     "city": "Ho Chi Min City",
     "country": "Vietnam",
+    "isCapital": false,
     "image": "SGN Pijl.png"
   },
   {
@@ -3813,6 +4130,7 @@
     "iata": "SGN",
     "city": "Ho Chi Min City",
     "display": "Ho Chi Min City",
+    "isCapital": false,
     "image": "SGN Pijl.png"
   },
   {
@@ -3828,6 +4146,7 @@
     "type": "city",
     "city": "Adelaide",
     "country": "Australia",
+    "isCapital": false,
     "image": "ADL pijl.png"
   },
   {
@@ -3837,6 +4156,7 @@
     "iata": "ADL",
     "city": "Adelaide",
     "display": "Adelaide",
+    "isCapital": false,
     "image": "ADL pijl.png"
   },
   {
@@ -3852,6 +4172,7 @@
     "type": "city",
     "city": "Brisbane",
     "country": "Australia",
+    "isCapital": false,
     "image": "BNE pijl.png"
   },
   {
@@ -3861,6 +4182,7 @@
     "iata": "BNE",
     "city": "Brisbane",
     "display": "Brisbane",
+    "isCapital": false,
     "image": "BNE pijl.png"
   },
   {
@@ -3876,6 +4198,7 @@
     "type": "city",
     "city": "Cairns",
     "country": "Australia",
+    "isCapital": false,
     "image": "CNS pijl.png"
   },
   {
@@ -3885,6 +4208,7 @@
     "iata": "CNS",
     "city": "Cairns",
     "display": "Cairns",
+    "isCapital": false,
     "image": "CNS pijl.png"
   },
   {
@@ -3900,6 +4224,7 @@
     "type": "city",
     "city": "Canberra",
     "country": "Australia",
+    "isCapital": true,
     "image": "CBR pijl.png"
   },
   {
@@ -3909,6 +4234,7 @@
     "iata": "CBR",
     "city": "Canberra",
     "display": "Canberra",
+    "isCapital": true,
     "image": "CBR pijl.png"
   },
   {
@@ -3924,6 +4250,7 @@
     "type": "city",
     "city": "Darwin",
     "country": "Australia",
+    "isCapital": false,
     "image": "DRW pijl.png"
   },
   {
@@ -3933,6 +4260,7 @@
     "iata": "DRW",
     "city": "Darwin",
     "display": "Darwin",
+    "isCapital": false,
     "image": "DRW pijl.png"
   },
   {
@@ -3948,6 +4276,7 @@
     "type": "city",
     "city": "Melbourne",
     "country": "Australia",
+    "isCapital": false,
     "image": "MEL pijl.png"
   },
   {
@@ -3957,6 +4286,7 @@
     "iata": "MEL",
     "city": "Melbourne",
     "display": "Melbourne",
+    "isCapital": false,
     "image": "MEL pijl.png"
   },
   {
@@ -3972,6 +4302,7 @@
     "type": "city",
     "city": "Perth",
     "country": "Australia",
+    "isCapital": false,
     "image": "PER pijl.png"
   },
   {
@@ -3981,6 +4312,7 @@
     "iata": "PER",
     "city": "Perth",
     "display": "Perth",
+    "isCapital": false,
     "image": "PER pijl.png"
   },
   {
@@ -3996,6 +4328,7 @@
     "type": "city",
     "city": "Sydney",
     "country": "Australia",
+    "isCapital": false,
     "image": "SYD pijl.png"
   },
   {
@@ -4005,13 +4338,14 @@
     "iata": "SYD",
     "city": "Sydney",
     "display": "Sydney",
+    "isCapital": false,
     "image": "SYD pijl.png"
   },
   {
     "module": "AMOC",
     "lesson": "Oceania",
     "type": "country",
-    "country": "New Caledonia ",
+    "country": "New Caledonia",
     "image": "New Caledonia.png"
   },
   {
@@ -4019,7 +4353,8 @@
     "lesson": "Oceania",
     "type": "city",
     "city": "Noumea",
-    "country": "New Caledonia ",
+    "country": "New Caledonia",
+    "isCapital": true,
     "image": "NOU pijl.png"
   },
   {
@@ -4029,6 +4364,7 @@
     "iata": "NOU",
     "city": "Noumea",
     "display": "Noumea",
+    "isCapital": true,
     "image": "NOU pijl.png"
   },
   {
@@ -4044,6 +4380,7 @@
     "type": "city",
     "city": "Port Moresby",
     "country": "New Guinea",
+    "isCapital": true,
     "image": "POM pijl.png"
   },
   {
@@ -4053,6 +4390,7 @@
     "iata": "POM",
     "city": "Port Moresby",
     "display": "Port Moresby",
+    "isCapital": true,
     "image": "POM pijl.png"
   },
   {
@@ -4068,6 +4406,7 @@
     "type": "city",
     "city": "Auckland",
     "country": "New Zealand",
+    "isCapital": false,
     "image": "AKL pijl.png"
   },
   {
@@ -4077,6 +4416,7 @@
     "iata": "AKL",
     "city": "Auckland",
     "display": "Auckland",
+    "isCapital": false,
     "image": "AKL pijl.png"
   },
   {
@@ -4092,6 +4432,7 @@
     "type": "city",
     "city": "Christchurch",
     "country": "New Zealand",
+    "isCapital": false,
     "image": "CHC pijl.png"
   },
   {
@@ -4101,6 +4442,7 @@
     "iata": "CHC",
     "city": "Christchurch",
     "display": "Christchurch",
+    "isCapital": false,
     "image": "CHC pijl.png"
   },
   {
@@ -4116,6 +4458,7 @@
     "type": "city",
     "city": "Wellington",
     "country": "New Zealand",
+    "isCapital": true,
     "image": "WLG pijl.png"
   },
   {
@@ -4125,6 +4468,7 @@
     "iata": "WLG",
     "city": "Wellington",
     "display": "Wellington",
+    "isCapital": true,
     "image": "WLG pijl.png"
   },
   {
@@ -4140,6 +4484,7 @@
     "type": "city",
     "city": "Papeete",
     "country": "French Polynesia",
+    "isCapital": true,
     "image": "PPT pijl.png"
   },
   {
@@ -4149,6 +4494,7 @@
     "iata": "PPT",
     "city": "Papeete",
     "display": "Papeete",
+    "isCapital": true,
     "image": "PPT pijl.png"
   },
   {
@@ -4164,6 +4510,7 @@
     "type": "city",
     "city": "Tirana",
     "country": "Albania",
+    "isCapital": true,
     "image": "Pijl TIA.png"
   },
   {
@@ -4173,6 +4520,7 @@
     "iata": "TIA",
     "city": "Tirana",
     "display": "Tirana",
+    "isCapital": true,
     "image": "Pijl TIA.png"
   },
   {
@@ -4188,6 +4536,7 @@
     "type": "city",
     "city": "Graz",
     "country": "Austria",
+    "isCapital": false,
     "image": "Pijl GRZ.png"
   },
   {
@@ -4197,6 +4546,7 @@
     "iata": "GRZ",
     "city": "Graz",
     "display": "Graz",
+    "isCapital": false,
     "image": "Pijl GRZ.png"
   },
   {
@@ -4212,6 +4562,7 @@
     "type": "city",
     "city": "Innsbruck",
     "country": "Austria",
+    "isCapital": false,
     "image": "Pijl INN.png"
   },
   {
@@ -4221,6 +4572,7 @@
     "iata": "INN",
     "city": "Innsbruck",
     "display": "Innsbruck",
+    "isCapital": false,
     "image": "Pijl INN.png"
   },
   {
@@ -4236,6 +4588,7 @@
     "type": "city",
     "city": "Klagenfurt",
     "country": "Austria",
+    "isCapital": false,
     "image": "Pijl KLU.png"
   },
   {
@@ -4245,6 +4598,7 @@
     "iata": "KLU",
     "city": "Klagenfurt",
     "display": "Klagenfurt",
+    "isCapital": false,
     "image": "Pijl KLU.png"
   },
   {
@@ -4260,6 +4614,7 @@
     "type": "city",
     "city": "Salzburg",
     "country": "Austria",
+    "isCapital": false,
     "image": "Pijl SZG.png"
   },
   {
@@ -4269,6 +4624,7 @@
     "iata": "SZG",
     "city": "Salzburg",
     "display": "Salzburg",
+    "isCapital": false,
     "image": "Pijl SZG.png"
   },
   {
@@ -4284,6 +4640,7 @@
     "type": "city",
     "city": "Vienna",
     "country": "Austria",
+    "isCapital": true,
     "image": "Pijl VIE.png"
   },
   {
@@ -4293,6 +4650,7 @@
     "iata": "VIE",
     "city": "Vienna",
     "display": "Vienna",
+    "isCapital": true,
     "image": "Pijl VIE.png"
   },
   {
@@ -4308,6 +4666,7 @@
     "type": "city",
     "city": "Minsk",
     "country": "Belarus",
+    "isCapital": true,
     "image": "Pijl MSQ.png"
   },
   {
@@ -4317,6 +4676,7 @@
     "iata": "MSQ",
     "city": "Minsk",
     "display": "Minsk",
+    "isCapital": true,
     "image": "Pijl MSQ.png"
   },
   {
@@ -4332,6 +4692,7 @@
     "type": "city",
     "city": "Brussels",
     "country": "Belgium",
+    "isCapital": true,
     "image": "Pijl BRU.png"
   },
   {
@@ -4341,6 +4702,7 @@
     "iata": "BRU",
     "city": "Brussels",
     "display": "Brussels",
+    "isCapital": true,
     "image": "Pijl BRU.png"
   },
   {
@@ -4356,6 +4718,7 @@
     "type": "city",
     "city": "Brussels South Charleroi",
     "country": "Belgium",
+    "isCapital": false,
     "image": "Pijl CRL.png"
   },
   {
@@ -4365,6 +4728,7 @@
     "iata": "CRL",
     "city": "Brussels South Charleroi",
     "display": "Brussels South Charleroi",
+    "isCapital": false,
     "image": "Pijl CRL.png"
   },
   {
@@ -4380,6 +4744,7 @@
     "type": "city",
     "city": "Sarajevo",
     "country": "Bosnia and Herzegovina",
+    "isCapital": true,
     "image": "Pijl SJJ.png"
   },
   {
@@ -4389,6 +4754,7 @@
     "iata": "SJJ",
     "city": "Sarajevo",
     "display": "Sarajevo",
+    "isCapital": true,
     "image": "Pijl SJJ.png"
   },
   {
@@ -4404,6 +4770,7 @@
     "type": "city",
     "city": "Burgas",
     "country": "Bulgaria",
+    "isCapital": false,
     "image": "Pijl BOJ.png"
   },
   {
@@ -4413,6 +4780,7 @@
     "iata": "BOJ",
     "city": "Burgas",
     "display": "Burgas",
+    "isCapital": false,
     "image": "Pijl BOJ.png"
   },
   {
@@ -4428,6 +4796,7 @@
     "type": "city",
     "city": "Sofia",
     "country": "Bulgaria",
+    "isCapital": true,
     "image": "Pijl SOF.png"
   },
   {
@@ -4437,6 +4806,7 @@
     "iata": "SOF",
     "city": "Sofia",
     "display": "Sofia",
+    "isCapital": true,
     "image": "Pijl SOF.png"
   },
   {
@@ -4452,6 +4822,7 @@
     "type": "city",
     "city": "Dubrovnik",
     "country": "Croatia",
+    "isCapital": false,
     "image": "Pijl DBV.png"
   },
   {
@@ -4461,6 +4832,7 @@
     "iata": "DBV",
     "city": "Dubrovnik",
     "display": "Dubrovnik",
+    "isCapital": false,
     "image": "Pijl DBV.png"
   },
   {
@@ -4476,6 +4848,7 @@
     "type": "city",
     "city": "Split",
     "country": "Croatia",
+    "isCapital": false,
     "image": "Pijl SPU.png"
   },
   {
@@ -4485,6 +4858,7 @@
     "iata": "SPU",
     "city": "Split",
     "display": "Split",
+    "isCapital": false,
     "image": "Pijl SPU.png"
   },
   {
@@ -4500,6 +4874,7 @@
     "type": "city",
     "city": "Zagreb",
     "country": "Croatia",
+    "isCapital": true,
     "image": "Pijl ZAG.png"
   },
   {
@@ -4509,6 +4884,7 @@
     "iata": "ZAG",
     "city": "Zagreb",
     "display": "Zagreb",
+    "isCapital": true,
     "image": "Pijl ZAG.png"
   },
   {
@@ -4524,6 +4900,7 @@
     "type": "city",
     "city": "Larnaca",
     "country": "Cyprus",
+    "isCapital": false,
     "image": "Pijl LCA.png"
   },
   {
@@ -4533,6 +4910,7 @@
     "iata": "LCA",
     "city": "Larnaca",
     "display": "Larnaca",
+    "isCapital": false,
     "image": "Pijl LCA.png"
   },
   {
@@ -4548,6 +4926,7 @@
     "type": "city",
     "city": "Paphos",
     "country": "Cyprus",
+    "isCapital": false,
     "image": "Pijl PFO.png"
   },
   {
@@ -4557,6 +4936,7 @@
     "iata": "PFO",
     "city": "Paphos",
     "display": "Paphos",
+    "isCapital": false,
     "image": "Pijl PFO.png"
   },
   {
@@ -4572,6 +4952,7 @@
     "type": "city",
     "city": "Prague",
     "country": "Czech Republic",
+    "isCapital": true,
     "image": "Pijl PRG.png"
   },
   {
@@ -4581,6 +4962,7 @@
     "iata": "PRG",
     "city": "Prague",
     "display": "Prague",
+    "isCapital": true,
     "image": "Pijl PRG.png"
   },
   {
@@ -4596,6 +4978,7 @@
     "type": "city",
     "city": "Aalborg",
     "country": "Denmark",
+    "isCapital": false,
     "image": "Pijl AAL.png"
   },
   {
@@ -4605,6 +4988,7 @@
     "iata": "AAL",
     "city": "Aalborg",
     "display": "Aalborg",
+    "isCapital": false,
     "image": "Pijl AAL.png"
   },
   {
@@ -4620,6 +5004,7 @@
     "type": "city",
     "city": "Billund",
     "country": "Denmark",
+    "isCapital": false,
     "image": "Pijl BLL.png"
   },
   {
@@ -4629,6 +5014,7 @@
     "iata": "BLL",
     "city": "Billund",
     "display": "Billund",
+    "isCapital": false,
     "image": "Pijl BLL.png"
   },
   {
@@ -4644,6 +5030,7 @@
     "type": "city",
     "city": "Copenhagen",
     "country": "Denmark",
+    "isCapital": true,
     "image": "Pijl CPH.png"
   },
   {
@@ -4653,30 +5040,33 @@
     "iata": "CPH",
     "city": "Copenhagen",
     "display": "Copenhagen",
+    "isCapital": true,
     "image": "Pijl CPH.png"
   },
   {
-    "module": "EURO",
+    "module": "EURW",
     "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
     "type": "country",
     "country": "Estonia",
     "image": "Estland.png"
   },
   {
-    "module": "EURO",
+    "module": "EURW",
     "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
     "type": "city",
     "city": "Tallinn",
     "country": "Estonia",
+    "isCapital": true,
     "image": "Pijl TLL.png"
   },
   {
-    "module": "EURO",
+    "module": "EURW",
     "lesson": "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
     "type": "iata",
     "iata": "TLL",
     "city": "Tallinn",
     "display": "Tallinn",
+    "isCapital": true,
     "image": "Pijl TLL.png"
   },
   {
@@ -4692,6 +5082,7 @@
     "type": "city",
     "city": "Helsinki",
     "country": "Finland",
+    "isCapital": true,
     "image": "Pijl HEL.png"
   },
   {
@@ -4701,6 +5092,7 @@
     "iata": "HEL",
     "city": "Helsinki",
     "display": "Helsinki",
+    "isCapital": true,
     "image": "Pijl HEL.png"
   },
   {
@@ -4716,6 +5108,7 @@
     "type": "city",
     "city": "Bordeaux",
     "country": "France",
+    "isCapital": false,
     "image": "Pijl BOD.png"
   },
   {
@@ -4725,6 +5118,7 @@
     "iata": "BOD",
     "city": "Bordeaux",
     "display": "Bordeaux",
+    "isCapital": false,
     "image": "Pijl BOD.png"
   },
   {
@@ -4740,6 +5134,7 @@
     "type": "city",
     "city": "Chambéry",
     "country": "France",
+    "isCapital": false,
     "image": "Pijl CMF.png"
   },
   {
@@ -4749,6 +5144,7 @@
     "iata": "CMF",
     "city": "Chambéry",
     "display": "Chambéry",
+    "isCapital": false,
     "image": "Pijl CMF.png"
   },
   {
@@ -4764,6 +5160,7 @@
     "type": "city",
     "city": "Lyon",
     "country": "France",
+    "isCapital": false,
     "image": "Pijl LYS.png"
   },
   {
@@ -4773,6 +5170,7 @@
     "iata": "LYS",
     "city": "Lyon",
     "display": "Lyon",
+    "isCapital": false,
     "image": "Pijl LYS.png"
   },
   {
@@ -4788,6 +5186,7 @@
     "type": "city",
     "city": "Marseille",
     "country": "France",
+    "isCapital": false,
     "image": "Pijl MRS.png"
   },
   {
@@ -4797,6 +5196,7 @@
     "iata": "MRS",
     "city": "Marseille",
     "display": "Marseille",
+    "isCapital": false,
     "image": "Pijl MRS.png"
   },
   {
@@ -4812,6 +5212,7 @@
     "type": "city",
     "city": "Nice",
     "country": "France",
+    "isCapital": false,
     "image": "Pijl NCE.png"
   },
   {
@@ -4821,6 +5222,7 @@
     "iata": "NCE",
     "city": "Nice",
     "display": "Nice",
+    "isCapital": false,
     "image": "Pijl NCE.png"
   },
   {
@@ -4836,6 +5238,7 @@
     "type": "city",
     "city": "Paris",
     "country": "France",
+    "isCapital": true,
     "image": "Pijl PAR.png"
   },
   {
@@ -4844,7 +5247,8 @@
     "type": "iata",
     "iata": "CDG",
     "city": "Paris",
-    "display": "Paris Charles de Gaulle",
+    "display": "Paris",
+    "isCapital": true,
     "image": "Pijl PAR.png"
   },
   {
@@ -4860,6 +5264,7 @@
     "type": "city",
     "city": "Paris Orly",
     "country": "France",
+    "isCapital": true,
     "image": "Pijl PAR.png"
   },
   {
@@ -4869,6 +5274,7 @@
     "iata": "ORY",
     "city": "Paris Orly",
     "display": "Paris Orly",
+    "isCapital": true,
     "image": "Pijl PAR.png"
   },
   {
@@ -4884,6 +5290,7 @@
     "type": "city",
     "city": "Strasbourg",
     "country": "France",
+    "isCapital": false,
     "image": "Pijl SXB.png"
   },
   {
@@ -4893,6 +5300,7 @@
     "iata": "SXB",
     "city": "Strasbourg",
     "display": "Strasbourg",
+    "isCapital": false,
     "image": "Pijl SXB.png"
   },
   {
@@ -4908,6 +5316,7 @@
     "type": "city",
     "city": "Toulouse",
     "country": "France",
+    "isCapital": false,
     "image": "Pijl TLS.png"
   },
   {
@@ -4917,6 +5326,7 @@
     "iata": "TLS",
     "city": "Toulouse",
     "display": "Toulouse",
+    "isCapital": false,
     "image": "Pijl TLS.png"
   },
   {
@@ -4932,6 +5342,7 @@
     "type": "city",
     "city": "Berlin",
     "country": "Germany",
+    "isCapital": true,
     "image": "Pijl BER.png"
   },
   {
@@ -4941,6 +5352,7 @@
     "iata": "BER",
     "city": "Berlin",
     "display": "Berlin",
+    "isCapital": true,
     "image": "Pijl BER.png"
   },
   {
@@ -4956,6 +5368,7 @@
     "type": "city",
     "city": "Dusseldorf",
     "country": "Germany",
+    "isCapital": false,
     "image": "Pijl DUS.png"
   },
   {
@@ -4965,6 +5378,7 @@
     "iata": "DUS",
     "city": "Dusseldorf",
     "display": "Dusseldorf",
+    "isCapital": false,
     "image": "Pijl DUS.png"
   },
   {
@@ -4980,6 +5394,7 @@
     "type": "city",
     "city": "Frankfurt",
     "country": "Germany",
+    "isCapital": false,
     "image": "Pijl FRA.png"
   },
   {
@@ -4989,6 +5404,7 @@
     "iata": "FRA",
     "city": "Frankfurt",
     "display": "Frankfurt",
+    "isCapital": false,
     "image": "Pijl FRA.png"
   },
   {
@@ -5004,6 +5420,7 @@
     "type": "city",
     "city": "Hamburg",
     "country": "Germany",
+    "isCapital": false,
     "image": "Pijl HAM.png"
   },
   {
@@ -5013,6 +5430,7 @@
     "iata": "HAM",
     "city": "Hamburg",
     "display": "Hamburg",
+    "isCapital": false,
     "image": "Pijl HAM.png"
   },
   {
@@ -5028,6 +5446,7 @@
     "type": "city",
     "city": "Munich",
     "country": "Germany",
+    "isCapital": false,
     "image": "Pijl MUC.png"
   },
   {
@@ -5037,6 +5456,7 @@
     "iata": "MUC",
     "city": "Munich",
     "display": "Munich",
+    "isCapital": false,
     "image": "Pijl MUC.png"
   },
   {
@@ -5052,6 +5472,7 @@
     "type": "city",
     "city": "Stuttgart",
     "country": "Germany",
+    "isCapital": false,
     "image": "Pijl STR.png"
   },
   {
@@ -5061,6 +5482,7 @@
     "iata": "STR",
     "city": "Stuttgart",
     "display": "Stuttgart",
+    "isCapital": false,
     "image": "Pijl STR.png"
   },
   {
@@ -5076,6 +5498,7 @@
     "type": "city",
     "city": "Weeze Niederrhein",
     "country": "Germany",
+    "isCapital": false,
     "image": "Pijl NRN.png"
   },
   {
@@ -5085,6 +5508,7 @@
     "iata": "NRN",
     "city": "Weeze Niederrhein",
     "display": "Weeze Niederrhein",
+    "isCapital": false,
     "image": "Pijl NRN.png"
   },
   {
@@ -5100,6 +5524,7 @@
     "type": "city",
     "city": "Athens",
     "country": "Greece",
+    "isCapital": true,
     "image": "Pijl ATH.png"
   },
   {
@@ -5109,6 +5534,7 @@
     "iata": "ATH",
     "city": "Athens",
     "display": "Athens",
+    "isCapital": true,
     "image": "Pijl ATH.png"
   },
   {
@@ -5124,6 +5550,7 @@
     "type": "city",
     "city": "Corfu",
     "country": "Greece",
+    "isCapital": false,
     "image": "Pijl CFU.png"
   },
   {
@@ -5133,6 +5560,7 @@
     "iata": "CFU",
     "city": "Corfu",
     "display": "Corfu",
+    "isCapital": false,
     "image": "Pijl CFU.png"
   },
   {
@@ -5148,6 +5576,7 @@
     "type": "city",
     "city": "Heraklion",
     "country": "Greece",
+    "isCapital": false,
     "image": "Pijl HER.png"
   },
   {
@@ -5157,6 +5586,7 @@
     "iata": "HER",
     "city": "Heraklion",
     "display": "Heraklion",
+    "isCapital": false,
     "image": "Pijl HER.png"
   },
   {
@@ -5172,6 +5602,7 @@
     "type": "city",
     "city": "Karpathos",
     "country": "Greece",
+    "isCapital": false,
     "image": "Pijl AOK.png"
   },
   {
@@ -5181,6 +5612,7 @@
     "iata": "AOK",
     "city": "Karpathos",
     "display": "Karpathos",
+    "isCapital": false,
     "image": "Pijl AOK.png"
   },
   {
@@ -5196,6 +5628,7 @@
     "type": "city",
     "city": "Kos",
     "country": "Greece",
+    "isCapital": false,
     "image": "Pijl KGS.png"
   },
   {
@@ -5205,6 +5638,7 @@
     "iata": "KGS",
     "city": "Kos",
     "display": "Kos",
+    "isCapital": false,
     "image": "Pijl KGS.png"
   },
   {
@@ -5220,6 +5654,7 @@
     "type": "city",
     "city": "Mykonos",
     "country": "Greece",
+    "isCapital": false,
     "image": "Pijl JMK.png"
   },
   {
@@ -5229,6 +5664,7 @@
     "iata": "JMK",
     "city": "Mykonos",
     "display": "Mykonos",
+    "isCapital": false,
     "image": "Pijl JMK.png"
   },
   {
@@ -5244,6 +5680,7 @@
     "type": "city",
     "city": "Preveza",
     "country": "Greece",
+    "isCapital": false,
     "image": "PVK pijl.png"
   },
   {
@@ -5253,6 +5690,7 @@
     "iata": "PVK",
     "city": "Preveza",
     "display": "Preveza",
+    "isCapital": false,
     "image": "PVK pijl.png"
   },
   {
@@ -5268,6 +5706,7 @@
     "type": "city",
     "city": "Rhodos",
     "country": "Greece",
+    "isCapital": false,
     "image": "RHO pijl.png"
   },
   {
@@ -5277,6 +5716,7 @@
     "iata": "RHO",
     "city": "Rhodos",
     "display": "Rhodos",
+    "isCapital": false,
     "image": "RHO pijl.png"
   },
   {
@@ -5292,6 +5732,7 @@
     "type": "city",
     "city": "Samos",
     "country": "Greece",
+    "isCapital": false,
     "image": "SMI pijl.png"
   },
   {
@@ -5301,6 +5742,7 @@
     "iata": "SMI",
     "city": "Samos",
     "display": "Samos",
+    "isCapital": false,
     "image": "SMI pijl.png"
   },
   {
@@ -5316,6 +5758,7 @@
     "type": "city",
     "city": "Santorini",
     "country": "Greece",
+    "isCapital": false,
     "image": "Pijl JTR.png"
   },
   {
@@ -5325,6 +5768,7 @@
     "iata": "JTR",
     "city": "Santorini",
     "display": "Santorini",
+    "isCapital": false,
     "image": "Pijl JTR.png"
   },
   {
@@ -5340,6 +5784,7 @@
     "type": "city",
     "city": "Thessaloniki",
     "country": "Greece",
+    "isCapital": false,
     "image": "SKG pijl.png"
   },
   {
@@ -5349,6 +5794,7 @@
     "iata": "SKG",
     "city": "Thessaloniki",
     "display": "Thessaloniki",
+    "isCapital": false,
     "image": "SKG pijl.png"
   },
   {
@@ -5364,6 +5810,7 @@
     "type": "city",
     "city": "Zakynthos",
     "country": "Greece",
+    "isCapital": false,
     "image": "ZTH Pijl.png"
   },
   {
@@ -5373,6 +5820,7 @@
     "iata": "ZTH",
     "city": "Zakynthos",
     "display": "Zakynthos",
+    "isCapital": false,
     "image": "ZTH Pijl.png"
   },
   {
@@ -5388,6 +5836,7 @@
     "type": "city",
     "city": "Budapest",
     "country": "Hungary",
+    "isCapital": true,
     "image": "Pijl BUD.png"
   },
   {
@@ -5397,6 +5846,7 @@
     "iata": "BUD",
     "city": "Budapest",
     "display": "Budapest",
+    "isCapital": true,
     "image": "Pijl BUD.png"
   },
   {
@@ -5412,6 +5862,7 @@
     "type": "city",
     "city": "Reykjavik",
     "country": "Iceland",
+    "isCapital": true,
     "image": "Pijk KEF.png"
   },
   {
@@ -5421,6 +5872,7 @@
     "iata": "KEF",
     "city": "Reykjavik",
     "display": "Reykjavik",
+    "isCapital": true,
     "image": "Pijk KEF.png"
   },
   {
@@ -5436,6 +5888,7 @@
     "type": "city",
     "city": "Cork",
     "country": "Ireland",
+    "isCapital": false,
     "image": "Pijl ORK.png"
   },
   {
@@ -5445,6 +5898,7 @@
     "iata": "ORK",
     "city": "Cork",
     "display": "Cork",
+    "isCapital": false,
     "image": "Pijl ORK.png"
   },
   {
@@ -5460,6 +5914,7 @@
     "type": "city",
     "city": "Dublin",
     "country": "Ireland",
+    "isCapital": true,
     "image": "Pijl dub.png"
   },
   {
@@ -5469,6 +5924,7 @@
     "iata": "DUB",
     "city": "Dublin",
     "display": "Dublin",
+    "isCapital": true,
     "image": "Pijl dub.png"
   },
   {
@@ -5484,6 +5940,7 @@
     "type": "city",
     "city": "Bologna",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl BLQ.png"
   },
   {
@@ -5493,6 +5950,7 @@
     "iata": "BLQ",
     "city": "Bologna",
     "display": "Bologna",
+    "isCapital": false,
     "image": "Pijl BLQ.png"
   },
   {
@@ -5508,6 +5966,7 @@
     "type": "city",
     "city": "Catania",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl CTA.png"
   },
   {
@@ -5517,6 +5976,7 @@
     "iata": "CTA",
     "city": "Catania",
     "display": "Catania",
+    "isCapital": false,
     "image": "Pijl CTA.png"
   },
   {
@@ -5532,6 +5992,7 @@
     "type": "city",
     "city": "Florence",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl FLR.png"
   },
   {
@@ -5541,6 +6002,7 @@
     "iata": "FLR",
     "city": "Florence",
     "display": "Florence",
+    "isCapital": false,
     "image": "Pijl FLR.png"
   },
   {
@@ -5556,6 +6018,7 @@
     "type": "city",
     "city": "Genua",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl GOA.png"
   },
   {
@@ -5565,6 +6028,7 @@
     "iata": "GOA",
     "city": "Genua",
     "display": "Genua",
+    "isCapital": false,
     "image": "Pijl GOA.png"
   },
   {
@@ -5580,6 +6044,7 @@
     "type": "city",
     "city": "Milan",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl MIL.png"
   },
   {
@@ -5588,7 +6053,8 @@
     "type": "iata",
     "iata": "LIN",
     "city": "Milan",
-    "display": "Milan Linate",
+    "display": "Milan",
+    "isCapital": false,
     "image": "Pijl MIL.png"
   },
   {
@@ -5604,6 +6070,7 @@
     "type": "city",
     "city": "Milan",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl MIL.png"
   },
   {
@@ -5612,7 +6079,8 @@
     "type": "iata",
     "iata": "MXP",
     "city": "Milan",
-    "display": "Milan Malpensa",
+    "display": "Milan",
+    "isCapital": false,
     "image": "Pijl MIL.png"
   },
   {
@@ -5628,6 +6096,7 @@
     "type": "city",
     "city": "Naples",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl NAP.png"
   },
   {
@@ -5637,6 +6106,7 @@
     "iata": "NAP",
     "city": "Naples",
     "display": "Naples",
+    "isCapital": false,
     "image": "Pijl NAP.png"
   },
   {
@@ -5652,6 +6122,7 @@
     "type": "city",
     "city": "Olbia",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl OLB.png"
   },
   {
@@ -5661,6 +6132,7 @@
     "iata": "OLB",
     "city": "Olbia",
     "display": "Olbia",
+    "isCapital": false,
     "image": "Pijl OLB.png"
   },
   {
@@ -5676,6 +6148,7 @@
     "type": "city",
     "city": "Pisa",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl PSA.png"
   },
   {
@@ -5685,6 +6158,7 @@
     "iata": "PSA",
     "city": "Pisa",
     "display": "Pisa",
+    "isCapital": false,
     "image": "Pijl PSA.png"
   },
   {
@@ -5700,6 +6174,7 @@
     "type": "city",
     "city": "Rome",
     "country": "Italy",
+    "isCapital": true,
     "image": "Pijl FCO.png"
   },
   {
@@ -5709,6 +6184,7 @@
     "iata": "FCO",
     "city": "Rome",
     "display": "Rome",
+    "isCapital": true,
     "image": "Pijl FCO.png"
   },
   {
@@ -5724,6 +6200,7 @@
     "type": "city",
     "city": "Turin",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl TRN.png"
   },
   {
@@ -5733,6 +6210,7 @@
     "iata": "TRN",
     "city": "Turin",
     "display": "Turin",
+    "isCapital": false,
     "image": "Pijl TRN.png"
   },
   {
@@ -5748,6 +6226,7 @@
     "type": "city",
     "city": "Venice",
     "country": "Italy",
+    "isCapital": false,
     "image": "Pijl VCE.png"
   },
   {
@@ -5757,6 +6236,7 @@
     "iata": "VCE",
     "city": "Venice",
     "display": "Venice",
+    "isCapital": false,
     "image": "Pijl VCE.png"
   },
   {
@@ -5772,6 +6252,7 @@
     "type": "city",
     "city": "Pristina",
     "country": "Kosovo",
+    "isCapital": true,
     "image": "Pijl PRN.png"
   },
   {
@@ -5781,6 +6262,7 @@
     "iata": "PRN",
     "city": "Pristina",
     "display": "Pristina",
+    "isCapital": true,
     "image": "Pijl PRN.png"
   },
   {
@@ -5796,6 +6278,7 @@
     "type": "city",
     "city": "Riga",
     "country": "Latvia",
+    "isCapital": true,
     "image": "Pijl RIX.png"
   },
   {
@@ -5805,6 +6288,7 @@
     "iata": "RIX",
     "city": "Riga",
     "display": "Riga",
+    "isCapital": true,
     "image": "Pijl RIX.png"
   },
   {
@@ -5820,6 +6304,7 @@
     "type": "city",
     "city": "Vilnius",
     "country": "Lithuania",
+    "isCapital": true,
     "image": "Pijl VNO.png"
   },
   {
@@ -5829,6 +6314,7 @@
     "iata": "VNO",
     "city": "Vilnius",
     "display": "Vilnius",
+    "isCapital": true,
     "image": "Pijl VNO.png"
   },
   {
@@ -5844,6 +6330,7 @@
     "type": "city",
     "city": "Luxembourg",
     "country": "Luxembourg",
+    "isCapital": true,
     "image": "Pijl LUX.png"
   },
   {
@@ -5853,6 +6340,7 @@
     "iata": "LUX",
     "city": "Luxembourg",
     "display": "Luxembourg",
+    "isCapital": true,
     "image": "Pijl LUX.png"
   },
   {
@@ -5868,6 +6356,7 @@
     "type": "city",
     "city": "Valletta",
     "country": "Malta",
+    "isCapital": true,
     "image": "Pijl MLA.png"
   },
   {
@@ -5877,6 +6366,7 @@
     "iata": "MLA",
     "city": "Valletta",
     "display": "Valletta",
+    "isCapital": true,
     "image": "Pijl MLA.png"
   },
   {
@@ -5892,6 +6382,7 @@
     "type": "city",
     "city": "Chisinau",
     "country": "Moldova",
+    "isCapital": true,
     "image": "Pijl RMO.png"
   },
   {
@@ -5901,6 +6392,7 @@
     "iata": "RMO",
     "city": "Chisinau",
     "display": "Chisinau",
+    "isCapital": true,
     "image": "Pijl RMO.png"
   },
   {
@@ -5916,6 +6408,7 @@
     "type": "city",
     "city": "Podgorica",
     "country": "Montenegro",
+    "isCapital": false,
     "image": "Pijl TGD.png"
   },
   {
@@ -5925,6 +6418,7 @@
     "iata": "TGD",
     "city": "Podgorica",
     "display": "Podgorica",
+    "isCapital": false,
     "image": "Pijl TGD.png"
   },
   {
@@ -5938,8 +6432,9 @@
     "module": "EURW",
     "lesson": "Countries and capital cities",
     "type": "city",
-    "city": "Amsterdam ",
+    "city": "Amsterdam",
     "country": "Netherlands",
+    "isCapital": true,
     "image": "Pijl AMS.png"
   },
   {
@@ -5947,8 +6442,9 @@
     "lesson": "Countries and capital cities",
     "type": "iata",
     "iata": "AMS",
-    "city": "Amsterdam ",
-    "display": "Amsterdam ",
+    "city": "Amsterdam",
+    "display": "Amsterdam",
+    "isCapital": true,
     "image": "Pijl AMS.png"
   },
   {
@@ -5964,6 +6460,7 @@
     "type": "city",
     "city": "Eindhoven",
     "country": "Netherlands",
+    "isCapital": false,
     "image": "Pijl EIN.png"
   },
   {
@@ -5973,6 +6470,7 @@
     "iata": "EIN",
     "city": "Eindhoven",
     "display": "Eindhoven",
+    "isCapital": false,
     "image": "Pijl EIN.png"
   },
   {
@@ -5988,6 +6486,7 @@
     "type": "city",
     "city": "Groningen",
     "country": "Netherlands",
+    "isCapital": false,
     "image": "Pijl GRQ.png"
   },
   {
@@ -5997,6 +6496,7 @@
     "iata": "GRQ",
     "city": "Groningen",
     "display": "Groningen",
+    "isCapital": false,
     "image": "Pijl GRQ.png"
   },
   {
@@ -6012,6 +6512,7 @@
     "type": "city",
     "city": "Maastricht",
     "country": "Netherlands",
+    "isCapital": false,
     "image": "Pijl MST.png"
   },
   {
@@ -6021,6 +6522,7 @@
     "iata": "MST",
     "city": "Maastricht",
     "display": "Maastricht",
+    "isCapital": false,
     "image": "Pijl MST.png"
   },
   {
@@ -6034,8 +6536,9 @@
     "module": "EURW",
     "lesson": "Scandinavia, Germany & BeNeLux",
     "type": "city",
-    "city": "Rotterdam ",
+    "city": "Rotterdam",
     "country": "Netherlands",
+    "isCapital": false,
     "image": "Pijl RTM.png"
   },
   {
@@ -6043,8 +6546,9 @@
     "lesson": "Scandinavia, Germany & BeNeLux",
     "type": "iata",
     "iata": "RTM",
-    "city": "Rotterdam ",
-    "display": "Rotterdam ",
+    "city": "Rotterdam",
+    "display": "Rotterdam",
+    "isCapital": false,
     "image": "Pijl RTM.png"
   },
   {
@@ -6060,6 +6564,7 @@
     "type": "city",
     "city": "Ohrid",
     "country": "North Macedonia",
+    "isCapital": false,
     "image": "Pijl OHD.png"
   },
   {
@@ -6069,6 +6574,7 @@
     "iata": "OHD",
     "city": "Ohrid",
     "display": "Ohrid",
+    "isCapital": false,
     "image": "Pijl OHD.png"
   },
   {
@@ -6084,6 +6590,7 @@
     "type": "city",
     "city": "Skopje",
     "country": "North Macedonia",
+    "isCapital": false,
     "image": "Pijl SKP.png"
   },
   {
@@ -6093,6 +6600,7 @@
     "iata": "SKP",
     "city": "Skopje",
     "display": "Skopje",
+    "isCapital": false,
     "image": "Pijl SKP.png"
   },
   {
@@ -6108,6 +6616,7 @@
     "type": "city",
     "city": "Alesund",
     "country": "Norway",
+    "isCapital": false,
     "image": "Pijl AES.png"
   },
   {
@@ -6117,6 +6626,7 @@
     "iata": "AES",
     "city": "Alesund",
     "display": "Alesund",
+    "isCapital": false,
     "image": "Pijl AES.png"
   },
   {
@@ -6132,6 +6642,7 @@
     "type": "city",
     "city": "Bergen",
     "country": "Norway",
+    "isCapital": false,
     "image": "Pijl BGO.png"
   },
   {
@@ -6141,6 +6652,7 @@
     "iata": "BGO",
     "city": "Bergen",
     "display": "Bergen",
+    "isCapital": false,
     "image": "Pijl BGO.png"
   },
   {
@@ -6156,6 +6668,7 @@
     "type": "city",
     "city": "Oslo",
     "country": "Norway",
+    "isCapital": true,
     "image": "Pijl OSL.png"
   },
   {
@@ -6165,6 +6678,7 @@
     "iata": "OSL",
     "city": "Oslo",
     "display": "Oslo",
+    "isCapital": true,
     "image": "Pijl OSL.png"
   },
   {
@@ -6180,6 +6694,7 @@
     "type": "city",
     "city": "Stavanger",
     "country": "Norway",
+    "isCapital": false,
     "image": "Pijl SVG.png"
   },
   {
@@ -6189,6 +6704,7 @@
     "iata": "SVG",
     "city": "Stavanger",
     "display": "Stavanger",
+    "isCapital": false,
     "image": "Pijl SVG.png"
   },
   {
@@ -6204,6 +6720,7 @@
     "type": "city",
     "city": "Trondheim",
     "country": "Norway",
+    "isCapital": false,
     "image": "Pijl TRD.png"
   },
   {
@@ -6213,6 +6730,7 @@
     "iata": "TRD",
     "city": "Trondheim",
     "display": "Trondheim",
+    "isCapital": false,
     "image": "Pijl TRD.png"
   },
   {
@@ -6228,6 +6746,7 @@
     "type": "city",
     "city": "Gdansk",
     "country": "Poland",
+    "isCapital": false,
     "image": "Pijl GDN.png"
   },
   {
@@ -6237,6 +6756,7 @@
     "iata": "GDN",
     "city": "Gdansk",
     "display": "Gdansk",
+    "isCapital": false,
     "image": "Pijl GDN.png"
   },
   {
@@ -6252,6 +6772,7 @@
     "type": "city",
     "city": "Krakow",
     "country": "Poland",
+    "isCapital": false,
     "image": "Pijl KRK.png"
   },
   {
@@ -6261,6 +6782,7 @@
     "iata": "KRK",
     "city": "Krakow",
     "display": "Krakow",
+    "isCapital": false,
     "image": "Pijl KRK.png"
   },
   {
@@ -6276,6 +6798,7 @@
     "type": "city",
     "city": "Warsaw",
     "country": "Poland",
+    "isCapital": true,
     "image": "Pijl WAW.png"
   },
   {
@@ -6285,6 +6808,7 @@
     "iata": "WAW",
     "city": "Warsaw",
     "display": "Warsaw",
+    "isCapital": true,
     "image": "Pijl WAW.png"
   },
   {
@@ -6300,6 +6824,7 @@
     "type": "city",
     "city": "Faro",
     "country": "Portugal",
+    "isCapital": false,
     "image": "Pijl FAO.png"
   },
   {
@@ -6309,6 +6834,7 @@
     "iata": "FAO",
     "city": "Faro",
     "display": "Faro",
+    "isCapital": false,
     "image": "Pijl FAO.png"
   },
   {
@@ -6324,6 +6850,7 @@
     "type": "city",
     "city": "Funchal",
     "country": "Portugal",
+    "isCapital": false,
     "image": "Pijl FNC.png"
   },
   {
@@ -6333,6 +6860,7 @@
     "iata": "FNC",
     "city": "Funchal",
     "display": "Funchal",
+    "isCapital": false,
     "image": "Pijl FNC.png"
   },
   {
@@ -6348,6 +6876,7 @@
     "type": "city",
     "city": "Lisbon",
     "country": "Portugal",
+    "isCapital": true,
     "image": "Pijl LIS.png"
   },
   {
@@ -6357,6 +6886,7 @@
     "iata": "LIS",
     "city": "Lisbon",
     "display": "Lisbon",
+    "isCapital": true,
     "image": "Pijl LIS.png"
   },
   {
@@ -6372,6 +6902,7 @@
     "type": "city",
     "city": "Porto",
     "country": "Portugal",
+    "isCapital": false,
     "image": "Pijl OPO.png"
   },
   {
@@ -6381,6 +6912,7 @@
     "iata": "OPO",
     "city": "Porto",
     "display": "Porto",
+    "isCapital": false,
     "image": "Pijl OPO.png"
   },
   {
@@ -6396,6 +6928,7 @@
     "type": "city",
     "city": "Bucharest",
     "country": "Romania",
+    "isCapital": true,
     "image": "Pijl OTP.png"
   },
   {
@@ -6405,6 +6938,7 @@
     "iata": "OTP",
     "city": "Bucharest",
     "display": "Bucharest",
+    "isCapital": true,
     "image": "Pijl OTP.png"
   },
   {
@@ -6420,6 +6954,7 @@
     "type": "city",
     "city": "Moscow",
     "country": "Russia",
+    "isCapital": true,
     "image": "Pijl SVO.png"
   },
   {
@@ -6429,6 +6964,7 @@
     "iata": "SVO",
     "city": "Moscow",
     "display": "Moscow",
+    "isCapital": true,
     "image": "Pijl SVO.png"
   },
   {
@@ -6444,6 +6980,7 @@
     "type": "city",
     "city": "Saint Petersburg",
     "country": "Russia",
+    "isCapital": false,
     "image": "Pijl LED.png"
   },
   {
@@ -6453,6 +6990,7 @@
     "iata": "LED",
     "city": "Saint Petersburg",
     "display": "Saint Petersburg",
+    "isCapital": false,
     "image": "Pijl LED.png"
   },
   {
@@ -6468,6 +7006,7 @@
     "type": "city",
     "city": "Belgrade",
     "country": "Serbia",
+    "isCapital": true,
     "image": "Pijl BEG.png"
   },
   {
@@ -6477,6 +7016,7 @@
     "iata": "BEG",
     "city": "Belgrade",
     "display": "Belgrade",
+    "isCapital": true,
     "image": "Pijl BEG.png"
   },
   {
@@ -6492,6 +7032,7 @@
     "type": "city",
     "city": "Bratislava",
     "country": "Slovakia",
+    "isCapital": true,
     "image": "Pijl BTS.png"
   },
   {
@@ -6501,6 +7042,7 @@
     "iata": "BTS",
     "city": "Bratislava",
     "display": "Bratislava",
+    "isCapital": true,
     "image": "Pijl BTS.png"
   },
   {
@@ -6516,6 +7058,7 @@
     "type": "city",
     "city": "Ljubljana",
     "country": "Slovenia",
+    "isCapital": true,
     "image": "Pijl LJU.png"
   },
   {
@@ -6525,6 +7068,7 @@
     "iata": "LJU",
     "city": "Ljubljana",
     "display": "Ljubljana",
+    "isCapital": true,
     "image": "Pijl LJU.png"
   },
   {
@@ -6540,6 +7084,7 @@
     "type": "city",
     "city": "Alicante",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl ALC.png"
   },
   {
@@ -6549,6 +7094,7 @@
     "iata": "ALC",
     "city": "Alicante",
     "display": "Alicante",
+    "isCapital": false,
     "image": "Pijl ALC.png"
   },
   {
@@ -6564,6 +7110,7 @@
     "type": "city",
     "city": "Arrecife",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl ACE.png"
   },
   {
@@ -6573,6 +7120,7 @@
     "iata": "ACE",
     "city": "Arrecife",
     "display": "Arrecife",
+    "isCapital": false,
     "image": "Pijl ACE.png"
   },
   {
@@ -6586,8 +7134,9 @@
     "module": "EURW",
     "lesson": "Spain & Portugal",
     "type": "city",
-    "city": "Barcelona ",
+    "city": "Barcelona",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl BCN.png"
   },
   {
@@ -6595,8 +7144,9 @@
     "lesson": "Spain & Portugal",
     "type": "iata",
     "iata": "BCN",
-    "city": "Barcelona ",
-    "display": "Barcelona ",
+    "city": "Barcelona",
+    "display": "Barcelona",
+    "isCapital": false,
     "image": "Pijl BCN.png"
   },
   {
@@ -6612,6 +7162,7 @@
     "type": "city",
     "city": "Fuerteventura",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl FUE.png"
   },
   {
@@ -6621,6 +7172,7 @@
     "iata": "FUE",
     "city": "Fuerteventura",
     "display": "Fuerteventura",
+    "isCapital": false,
     "image": "Pijl FUE.png"
   },
   {
@@ -6636,6 +7188,7 @@
     "type": "city",
     "city": "Ibiza",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl IBZ.png"
   },
   {
@@ -6645,6 +7198,7 @@
     "iata": "IBZ",
     "city": "Ibiza",
     "display": "Ibiza",
+    "isCapital": false,
     "image": "Pijl IBZ.png"
   },
   {
@@ -6660,6 +7214,7 @@
     "type": "city",
     "city": "La Palma",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl SPC.png"
   },
   {
@@ -6669,6 +7224,7 @@
     "iata": "SPC",
     "city": "La Palma",
     "display": "La Palma",
+    "isCapital": false,
     "image": "Pijl SPC.png"
   },
   {
@@ -6684,6 +7240,7 @@
     "type": "city",
     "city": "Las Palmas",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl LPA.png"
   },
   {
@@ -6693,6 +7250,7 @@
     "iata": "LPA",
     "city": "Las Palmas",
     "display": "Las Palmas",
+    "isCapital": false,
     "image": "Pijl LPA.png"
   },
   {
@@ -6708,6 +7266,7 @@
     "type": "city",
     "city": "Madrid",
     "country": "Spain",
+    "isCapital": true,
     "image": "Pijl MAD.png"
   },
   {
@@ -6717,6 +7276,7 @@
     "iata": "MAD",
     "city": "Madrid",
     "display": "Madrid",
+    "isCapital": true,
     "image": "Pijl MAD.png"
   },
   {
@@ -6732,6 +7292,7 @@
     "type": "city",
     "city": "Mahon",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl MAH.png"
   },
   {
@@ -6741,6 +7302,7 @@
     "iata": "MAH",
     "city": "Mahon",
     "display": "Mahon",
+    "isCapital": false,
     "image": "Pijl MAH.png"
   },
   {
@@ -6756,6 +7318,7 @@
     "type": "city",
     "city": "Malaga",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl AGP.png"
   },
   {
@@ -6765,6 +7328,7 @@
     "iata": "AGP",
     "city": "Malaga",
     "display": "Malaga",
+    "isCapital": false,
     "image": "Pijl AGP.png"
   },
   {
@@ -6780,6 +7344,7 @@
     "type": "city",
     "city": "Palma de Mallorca",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl PMI.png"
   },
   {
@@ -6789,6 +7354,7 @@
     "iata": "PMI",
     "city": "Palma de Mallorca",
     "display": "Palma de Mallorca",
+    "isCapital": false,
     "image": "Pijl PMI.png"
   },
   {
@@ -6804,6 +7370,7 @@
     "type": "city",
     "city": "Sevilla",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl SVQ.png"
   },
   {
@@ -6813,6 +7380,7 @@
     "iata": "SVQ",
     "city": "Sevilla",
     "display": "Sevilla",
+    "isCapital": false,
     "image": "Pijl SVQ.png"
   },
   {
@@ -6828,6 +7396,7 @@
     "type": "city",
     "city": "Tenerife",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl TFS.png"
   },
   {
@@ -6837,6 +7406,7 @@
     "iata": "TFS",
     "city": "Tenerife",
     "display": "Tenerife",
+    "isCapital": false,
     "image": "Pijl TFS.png"
   },
   {
@@ -6852,6 +7422,7 @@
     "type": "city",
     "city": "Valencia",
     "country": "Spain",
+    "isCapital": false,
     "image": "Pijl VLC.png"
   },
   {
@@ -6861,6 +7432,7 @@
     "iata": "VLC",
     "city": "Valencia",
     "display": "Valencia",
+    "isCapital": false,
     "image": "Pijl VLC.png"
   },
   {
@@ -6876,6 +7448,7 @@
     "type": "city",
     "city": "Gothenburg",
     "country": "Sweden",
+    "isCapital": false,
     "image": "Pijl GOT.png"
   },
   {
@@ -6885,6 +7458,7 @@
     "iata": "GOT",
     "city": "Gothenburg",
     "display": "Gothenburg",
+    "isCapital": false,
     "image": "Pijl GOT.png"
   },
   {
@@ -6900,6 +7474,7 @@
     "type": "city",
     "city": "Stockholm",
     "country": "Sweden",
+    "isCapital": true,
     "image": "Pijl ARN.png"
   },
   {
@@ -6909,6 +7484,7 @@
     "iata": "ARN",
     "city": "Stockholm",
     "display": "Stockholm",
+    "isCapital": true,
     "image": "Pijl ARN.png"
   },
   {
@@ -6924,6 +7500,7 @@
     "type": "city",
     "city": "Basel",
     "country": "Switzerland",
+    "isCapital": false,
     "image": "Pijl BSL.png"
   },
   {
@@ -6933,6 +7510,7 @@
     "iata": "BSL",
     "city": "Basel",
     "display": "Basel",
+    "isCapital": false,
     "image": "Pijl BSL.png"
   },
   {
@@ -6948,6 +7526,7 @@
     "type": "city",
     "city": "Bern",
     "country": "Switzerland",
+    "isCapital": true,
     "image": "Pijl BRN.png"
   },
   {
@@ -6957,6 +7536,7 @@
     "iata": "BRN",
     "city": "Bern",
     "display": "Bern",
+    "isCapital": true,
     "image": "Pijl BRN.png"
   },
   {
@@ -6972,6 +7552,7 @@
     "type": "city",
     "city": "Geneva",
     "country": "Switzerland",
+    "isCapital": false,
     "image": "Pijl GVA.png"
   },
   {
@@ -6981,6 +7562,7 @@
     "iata": "GVA",
     "city": "Geneva",
     "display": "Geneva",
+    "isCapital": false,
     "image": "Pijl GVA.png"
   },
   {
@@ -6996,6 +7578,7 @@
     "type": "city",
     "city": "Zürich",
     "country": "Switzerland",
+    "isCapital": false,
     "image": "Pijl ZRH.png"
   },
   {
@@ -7005,6 +7588,7 @@
     "iata": "ZRH",
     "city": "Zürich",
     "display": "Zürich",
+    "isCapital": false,
     "image": "Pijl ZRH.png"
   },
   {
@@ -7020,6 +7604,7 @@
     "type": "city",
     "city": "Ankara",
     "country": "Turkey",
+    "isCapital": true,
     "image": "Pijl ESB.png"
   },
   {
@@ -7029,6 +7614,7 @@
     "iata": "ESB",
     "city": "Ankara",
     "display": "Ankara",
+    "isCapital": true,
     "image": "Pijl ESB.png"
   },
   {
@@ -7044,6 +7630,7 @@
     "type": "city",
     "city": "Antalya",
     "country": "Turkey",
+    "isCapital": false,
     "image": "Pijl AYT.png"
   },
   {
@@ -7053,6 +7640,7 @@
     "iata": "AYT",
     "city": "Antalya",
     "display": "Antalya",
+    "isCapital": false,
     "image": "Pijl AYT.png"
   },
   {
@@ -7068,6 +7656,7 @@
     "type": "city",
     "city": "Bodrum",
     "country": "Turkey",
+    "isCapital": false,
     "image": "Pijl BJV.png"
   },
   {
@@ -7077,6 +7666,7 @@
     "iata": "BJV",
     "city": "Bodrum",
     "display": "Bodrum",
+    "isCapital": false,
     "image": "Pijl BJV.png"
   },
   {
@@ -7092,6 +7682,7 @@
     "type": "city",
     "city": "Dalaman",
     "country": "Turkey",
+    "isCapital": false,
     "image": "Pijl DLM.png"
   },
   {
@@ -7101,6 +7692,7 @@
     "iata": "DLM",
     "city": "Dalaman",
     "display": "Dalaman",
+    "isCapital": false,
     "image": "Pijl DLM.png"
   },
   {
@@ -7116,6 +7708,7 @@
     "type": "city",
     "city": "Istanbul",
     "country": "Turkey",
+    "isCapital": false,
     "image": "Pijl IST SAW.png"
   },
   {
@@ -7124,7 +7717,8 @@
     "type": "iata",
     "iata": "IST",
     "city": "Istanbul",
-    "display": "Instanbul International",
+    "display": "Istanbul",
+    "isCapital": false,
     "image": "Pijl IST SAW.png"
   },
   {
@@ -7138,8 +7732,9 @@
     "module": "EURO",
     "lesson": "Turkey & Cyprus",
     "type": "city",
-    "city": "Istanbul ",
+    "city": "Istanbul",
     "country": "Turkey",
+    "isCapital": false,
     "image": "Pijl IST SAW.png"
   },
   {
@@ -7147,8 +7742,9 @@
     "lesson": "Turkey & Cyprus",
     "type": "iata",
     "iata": "SAW",
-    "city": "Istanbul ",
-    "display": "Istanbul Sabiha Gökçen",
+    "city": "Istanbul",
+    "display": "Istanbul",
+    "isCapital": false,
     "image": "Pijl IST SAW.png"
   },
   {
@@ -7164,6 +7760,7 @@
     "type": "city",
     "city": "Izmir",
     "country": "Turkey",
+    "isCapital": false,
     "image": "Pijl ADB.png"
   },
   {
@@ -7173,6 +7770,7 @@
     "iata": "ADB",
     "city": "Izmir",
     "display": "Izmir",
+    "isCapital": false,
     "image": "Pijl ADB.png"
   },
   {
@@ -7188,6 +7786,7 @@
     "type": "city",
     "city": "Kyiv",
     "country": "Ukraine",
+    "isCapital": true,
     "image": "Pijl KBP.png"
   },
   {
@@ -7197,6 +7796,7 @@
     "iata": "KBP",
     "city": "Kyiv",
     "display": "Kyiv",
+    "isCapital": true,
     "image": "Pijl KBP.png"
   },
   {
@@ -7212,6 +7812,7 @@
     "type": "city",
     "city": "Aberdeen",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl ABZ.png"
   },
   {
@@ -7221,6 +7822,7 @@
     "iata": "ABZ",
     "city": "Aberdeen",
     "display": "Aberdeen",
+    "isCapital": false,
     "image": "Pijl ABZ.png"
   },
   {
@@ -7236,6 +7838,7 @@
     "type": "city",
     "city": "Belfast",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl BFS.png"
   },
   {
@@ -7245,6 +7848,7 @@
     "iata": "BFS",
     "city": "Belfast",
     "display": "Belfast",
+    "isCapital": false,
     "image": "Pijl BFS.png"
   },
   {
@@ -7260,6 +7864,7 @@
     "type": "city",
     "city": "Birmingham",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl BHX.png"
   },
   {
@@ -7269,6 +7874,7 @@
     "iata": "BHX",
     "city": "Birmingham",
     "display": "Birmingham",
+    "isCapital": false,
     "image": "Pijl BHX.png"
   },
   {
@@ -7284,6 +7890,7 @@
     "type": "city",
     "city": "Bristol",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl BRS.png"
   },
   {
@@ -7293,6 +7900,7 @@
     "iata": "BRS",
     "city": "Bristol",
     "display": "Bristol",
+    "isCapital": false,
     "image": "Pijl BRS.png"
   },
   {
@@ -7308,6 +7916,7 @@
     "type": "city",
     "city": "Edinburgh",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl EDI.png"
   },
   {
@@ -7317,6 +7926,7 @@
     "iata": "EDI",
     "city": "Edinburgh",
     "display": "Edinburgh",
+    "isCapital": false,
     "image": "Pijl EDI.png"
   },
   {
@@ -7332,6 +7942,7 @@
     "type": "city",
     "city": "Glasgow",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl GLA.png"
   },
   {
@@ -7341,6 +7952,7 @@
     "iata": "GLA",
     "city": "Glasgow",
     "display": "Glasgow",
+    "isCapital": false,
     "image": "Pijl GLA.png"
   },
   {
@@ -7356,6 +7968,7 @@
     "type": "city",
     "city": "Liverpool",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl LPL.png"
   },
   {
@@ -7365,6 +7978,7 @@
     "iata": "LPL",
     "city": "Liverpool",
     "display": "Liverpool",
+    "isCapital": false,
     "image": "Pijl LPL.png"
   },
   {
@@ -7380,6 +7994,7 @@
     "type": "city",
     "city": "London",
     "country": "United Kingdom",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7388,7 +8003,8 @@
     "type": "iata",
     "iata": "LCY",
     "city": "London",
-    "display": "London City",
+    "display": "London",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7404,6 +8020,7 @@
     "type": "city",
     "city": "London",
     "country": "United Kingdom",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7412,7 +8029,8 @@
     "type": "iata",
     "iata": "LGW",
     "city": "London",
-    "display": "London Gatwick",
+    "display": "London",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7428,6 +8046,7 @@
     "type": "city",
     "city": "London",
     "country": "United Kingdom",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7436,7 +8055,8 @@
     "type": "iata",
     "iata": "LHR",
     "city": "London",
-    "display": "London Heathrow",
+    "display": "London",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7452,6 +8072,7 @@
     "type": "city",
     "city": "London",
     "country": "United Kingdom",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7460,7 +8081,8 @@
     "type": "iata",
     "iata": "LTN",
     "city": "London",
-    "display": "London Luton",
+    "display": "London",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7476,6 +8098,7 @@
     "type": "city",
     "city": "London",
     "country": "United Kingdom",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7484,7 +8107,8 @@
     "type": "iata",
     "iata": "STN",
     "city": "London",
-    "display": "London Stansted",
+    "display": "London",
+    "isCapital": true,
     "image": "Pijl LON.png"
   },
   {
@@ -7500,6 +8124,7 @@
     "type": "city",
     "city": "Manchester",
     "country": "United Kingdom",
+    "isCapital": false,
     "image": "Pijl MAN.png"
   },
   {
@@ -7509,6 +8134,7 @@
     "iata": "MAN",
     "city": "Manchester",
     "display": "Manchester",
+    "isCapital": false,
     "image": "Pijl MAN.png"
   }
 ]
