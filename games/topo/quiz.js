@@ -352,18 +352,20 @@ if(q.type==="iata"){
 }
 
 let pool=candidates.flatMap(d=>{
-    if(q.type==="city") return [d.city];
-    if(q.type==="country") return [d.country];
-    if(q.type==="capital") return [d.capital];
-    return d.answer;
+    iif(q.type==="city") return [d.city];
+if(q.type==="country") return [d.country];
+if(q.type==="capital") return [d.city];
+if(q.type==="iata") return [d.iata];
+return [];
 });
 pool=[...new Set(pool)];
 
 const correctAnswers =
 q.type==="city" ? [q.city] :
 q.type==="country" ? [q.country] :
-q.type==="capital" ? [q.capital] :
-q.answer;
+q.type==="capital" ? [q.city] :
+q.type==="iata" ? [q.iata] :
+[];
 
 pool=pool.filter(a=>!correctAnswers.map(x=>x.toLowerCase()).includes(a.toLowerCase()));
 
