@@ -359,7 +359,7 @@ if(q.type==="iata"){
 }
 
 let pool=candidates.flatMap(d=>{
-    iif(q.type==="city") return [d.city];
+    if(q.type==="city") return [d.city];
 if(q.type==="country") return [d.country];
 if(q.type==="capital") return [d.city];
 if(q.type==="iata") return [d.iata];
