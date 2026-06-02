@@ -15,10 +15,18 @@ const moduleNames = {
     "EURW": "1. Western Europe",
     "EURO": "2. Eastern Europe",
     "AMOC": "3. America & Oceania",
-    "Africa":  "4. Africa",
+    "Africa": "4. Africa",
     "ASIA": "5. Asia"
 };
-const moduleOrder = ["EURW","EURO","AMOC","Africa","ASIA"];
+
+const moduleOrder = [
+    "EURW",
+    "EURO",
+    "AMOC",
+    "Africa",
+    "ASIA"
+];
+
 const lessonOrder = {
 
     "EURW": [
@@ -43,7 +51,7 @@ const lessonOrder = {
         "Oceania"
     ],
 
-    "AFR": [
+    "Africa": [
         "Northern Africa - Sahara countries",
         "Northern Africa - Sahel countries",
         "Central Africa",
@@ -55,7 +63,6 @@ const lessonOrder = {
         "Central Asia",
         "Far East"
     ]
-
 };
 
 // ================= HELPERS =================
