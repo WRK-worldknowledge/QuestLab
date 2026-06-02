@@ -1130,7 +1130,7 @@
     "type": "city",
     "city": "Dar es Salaam",
     "country": "Tanzania",
-    "isCapital": true,
+    "isCapital": false,
     "image": "DAR pijl.png"
   },
   {
@@ -1140,7 +1140,7 @@
     "iata": "DAR",
     "city": "Dar es Salaam",
     "display": "Dar es Salaam",
-    "isCapital": true,
+    "isCapital": false,
     "image": "DAR pijl.png"
   },
   {
@@ -3324,7 +3324,7 @@
     "iata": "NRT",
     "city": "Tokyo",
     "display": "Tokyo",
-    "isCapital": true,
+    "isCapital": false,
     "image": "NRT Pijl.png"
   },
   {
@@ -3350,7 +3350,7 @@
     "iata": "HND",
     "city": "Tokyo",
     "display": "Tokyo",
-    "isCapital": true,
+    "isCapital": false,
     "image": "NRT pijl.png"
   },
   {
@@ -5248,7 +5248,7 @@
     "iata": "CDG",
     "city": "Paris",
     "display": "Paris",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl PAR.png"
   },
   {
@@ -5264,7 +5264,7 @@
     "type": "city",
     "city": "Paris Orly",
     "country": "France",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl PAR.png"
   },
   {
@@ -5274,7 +5274,7 @@
     "iata": "ORY",
     "city": "Paris Orly",
     "display": "Paris Orly",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl PAR.png"
   },
   {
@@ -5872,7 +5872,7 @@
     "iata": "KEF",
     "city": "Reykjavik",
     "display": "Reykjavik",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijk KEF.png"
   },
   {
@@ -7484,7 +7484,7 @@
     "iata": "ARN",
     "city": "Stockholm",
     "display": "Stockholm",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl ARN.png"
   },
   {
@@ -8004,7 +8004,7 @@
     "iata": "LCY",
     "city": "London",
     "display": "London",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl LON.png"
   },
   {
@@ -8030,7 +8030,7 @@
     "iata": "LGW",
     "city": "London",
     "display": "London",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl LON.png"
   },
   {
@@ -8056,7 +8056,7 @@
     "iata": "LHR",
     "city": "London",
     "display": "London",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl LON.png"
   },
   {
@@ -8082,7 +8082,7 @@
     "iata": "LTN",
     "city": "London",
     "display": "London",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl LON.png"
   },
   {
@@ -8108,7 +8108,7 @@
     "iata": "STN",
     "city": "London",
     "display": "London",
-    "isCapital": true,
+    "isCapital": false,
     "image": "Pijl LON.png"
   },
   {
