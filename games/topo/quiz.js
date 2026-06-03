@@ -64,6 +64,21 @@ const lessonOrder = {
         "Far East"
     ]
 };
+const assessmentModules = {
+
+    "1":["EURW"],
+
+    "2":["EURW","EURO"],
+
+    "3":["EURW","EURO","AMOC"],
+
+    "4":["EURW","EURO","AMOC","Africa"],
+
+    "5":["EURW","EURO","AMOC","Africa","ASIA"],
+
+    "final":["EURW","EURO","AMOC","Africa","ASIA"]
+
+};
 
 // ================= HELPERS =================
 function normalizeCity(name){
@@ -124,35 +139,139 @@ fetch(`./data/wrk-data.json?v=${Date.now()}`)
     console.log("DATA LOADED:", data.length);
 
     populateModules();
-    document.getElementById("startBtn").addEventListener("click",startQuiz);
+    setupModeSelector();
+
+    document.getElementById("startBtn")
+        .addEventListener("click",startQuiz);
+
 })
 .catch(err=>{
     console.error("FETCH FAILED:", err);
 });
 
+// ================= MODE SELECTOR =================
+function setupModeSelector(){
+
+const mode =
+document.getElementById("quizMode");
+
+const assessmentSelect =
+document.getElementById("assessmentSelect");
+
+mode.addEventListener("change",()=>{
+
+    const practice =
+    document.getElementById("practiceOptions");
+
+    const assessment =
+    document.getElementById("assessmentOptions");
+
+    if(mode.value==="practice"){
+
+        practice.style.display="block";
+        assessment.style.display="none";
+
+        populateLessons();
+
+    }else{
+
+        practice.style.display="none";
+        assessment.style.display="block";
+
+        populateAssessmentLessons();
+
+    }
+
+});
+
+assessmentSelect.addEventListener(
+    "change",
+    populateAssessmentLessons
+);
+
+}
+
 // ================= MODULES =================
 function populateModules(){
-const moduleSelect=document.getElementById("moduleSelect");
+
+const moduleSelect =
+document.getElementById("moduleSelect");
+
 moduleSelect.innerHTML="";
 
 // alleen modules tonen die echt in data zitten
-const available = new Set(data.map(d=>d.module));
+const available =
+new Set(data.map(d=>d.module));
 
 // vaste volgorde afdwingen
 moduleOrder.forEach(m=>{
+
     if(!available.has(m)) return;
 
     const opt=document.createElement("option");
+
     opt.value=m;
-    opt.textContent = moduleNames[m] || m;
+    opt.textContent =
+    moduleNames[m] || m;
+
     moduleSelect.appendChild(opt);
+
 });
 
-moduleSelect.addEventListener("change",populateLessons);
+moduleSelect.addEventListener(
+    "change",
+    populateLessons
+);
+
 populateLessons();
+
 }
 
+// ================= ASSESSMENT LESSONS =================
+function populateAssessmentLessons(){
 
+const assessment =
+document.getElementById("assessmentSelect").value;
+
+const lessonSelect =
+document.getElementById("assessmentLessonSelect");
+
+lessonSelect.innerHTML="";
+
+const all=document.createElement("option");
+
+all.value="all";
+all.textContent="All lessons";
+
+lessonSelect.appendChild(all);
+
+const modules =
+assessmentModules[assessment];
+
+const lessons = new Set();
+
+modules.forEach(m=>{
+
+    data
+    .filter(d=>d.module===m)
+    .forEach(d=>lessons.add(d.lesson));
+
+});
+
+[...lessons]
+.sort()
+.forEach(l=>{
+
+    const opt=document.createElement("option");
+
+    opt.value=l;
+    opt.textContent=l;
+
+    lessonSelect.appendChild(opt);
+
+});
+
+}
 // ================= LESSONS =================
 function populateLessons(){
 
