@@ -196,6 +196,24 @@ color:#0F172A;
 
 <div id="setup">
 
+<label>Mode</label>
+<select id="quizMode">
+    <option value="practice">Practice</option>
+    <option value="assessment">Assessment</option>
+</select>
+
+<div id="practiceOptions">
+
+<label>Module</label>
+<select id="moduleSelect"></select>
+
+<label>Lesson</label>
+<select id="lessonSelect"></select>
+
+</div>
+
+<div id="assessmentOptions" style="display:none">
+
 <label>Assessment</label>
 <select id="assessmentSelect">
     <option value="1">Assessment 1</option>
@@ -207,7 +225,9 @@ color:#0F172A;
 </select>
 
 <label>Lesson</label>
-<select id="lessonSelect"></select>
+<select id="assessmentLessonSelect"></select>
+
+</div>
 
 <label>Question type</label>
 <select id="typeSelect">
@@ -225,6 +245,7 @@ color:#0F172A;
 
 <button id="startBtn" class="startBtn">Start quiz</button>
 
+</div>
 </div>
 
 <div id="quiz" style="display:none">
