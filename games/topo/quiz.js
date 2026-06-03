@@ -398,6 +398,21 @@ if(type==="capital"){
     }
 
 }
+    // HIER KOMT HET NIEUWE BLOK
+
+if(
+    quizMode==="assessment" &&
+    (type==="country" || type==="capital")
+){
+
+    questions = questions.filter(
+        (q,index,self) =>
+        index === self.findIndex(
+            x => x.country === q.country
+        )
+    );
+
+}
 
 if(!questions.length){
     alert("No questions found");
