@@ -228,6 +228,10 @@ if(type==="capital"){
             d.isCapital===true
         );
     }
+    questions = questions.map(q => ({
+    ...q,
+    type: "capital"
+}));
 
 }else{
 
@@ -394,9 +398,8 @@ if(q.type==="capital") return [d.city];
 if(q.type==="iata") return [d.iata];
 return [];
 });
-    console.log(pool);
+
 pool=[...new Set(pool)];
-    console.log([...new Set(pool)]);
 
 const correctAnswers =
 q.type==="city" ? [q.city] :
