@@ -322,30 +322,60 @@ function populateLessons(){
 // ================= START QUIZ =================
 function startQuiz(){
 
-const module=document.getElementById("moduleSelect").value;
-const lesson=document.getElementById("lessonSelect").value;
-const type=document.getElementById("typeSelect").value;
-    console.log("TYPE =", type);
+const quizMode =
+document.getElementById("quizMode").value;
 
-    quizActive = true;
+const type =
+document.getElementById("typeSelect").value;
 
-currentLesson=lesson;
+let lesson;
+let selectedModules;
+
+if(quizMode==="practice"){
+
+    const module =
+    document.getElementById("moduleSelect").value;
+
+    lesson =
+    document.getElementById("lessonSelect").value;
+
+    selectedModules = [module];
+
+}else{
+
+    const assessment =
+    document.getElementById("assessmentSelect").value;
+
+    lesson =
+    document.getElementById("assessmentLessonSelect").value;
+
+    selectedModules =
+    assessmentModules[assessment];
+
+}
+
+console.log("TYPE =", type);
+console.log("MODULES =", selectedModules);
+
+quizActive = true;
+
+currentLesson = lesson;
 
 if(type==="capital"){
 
     if(lesson==="all"){
         questions=data.filter(d =>
-            d.module===module &&
-            d.type==="city" &&
-            d.isCapital===true
-        );
+    selectedModules.includes(d.module) &&
+    d.type==="city" &&
+    d.isCapital===true
+);
     }else{
         questions=data.filter(d =>
-            d.module===module &&
-            d.lesson===lesson &&
-            d.type==="city" &&
-            d.isCapital===true
-        );
+    selectedModules.includes(d.module) &&
+    d.lesson===lesson &&
+    d.type==="city" &&
+    d.isCapital===true
+);
     }
     questions = questions.map(q => ({
     ...q,
@@ -356,15 +386,15 @@ if(type==="capital"){
 
     if(lesson==="all"){
         questions=data.filter(d =>
-            d.module===module &&
-            d.type===type
-        );
+    selectedModules.includes(d.module) &&
+    d.type===type
+);
     }else{
         questions=data.filter(d =>
-            d.module===module &&
-            d.lesson===lesson &&
-            d.type===type
-        );
+    selectedModules.includes(d.module) &&
+    d.lesson===lesson &&
+    d.type===type
+);
     }
 
 }
