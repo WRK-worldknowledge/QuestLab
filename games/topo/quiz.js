@@ -387,7 +387,6 @@ if(q.type==="iata"){
         candidates=candidates.filter(d=>getIATACity(d.question)!==correctCity);
     }
 }
-
 let pool=candidates.flatMap(d=>{
     if(q.type==="city") return [d.city];
 if(q.type==="country") return [d.country];
@@ -395,7 +394,9 @@ if(q.type==="capital") return [d.city];
 if(q.type==="iata") return [d.iata];
 return [];
 });
+    console.log(pool);
 pool=[...new Set(pool)];
+    console.log([...new Set(pool)]);
 
 const correctAnswers =
 q.type==="city" ? [q.city] :
