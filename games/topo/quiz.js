@@ -380,10 +380,23 @@ if(mode==="type"){
 
 /* ================= MULTIPLE CHOICE ================= */
 
-let candidates = data.filter(d =>
-    d.type === q.type &&
-    d.module === q.module
-);
+let candidates;
+
+if(q.type === "capital"){
+
+    candidates = data.filter(d =>
+        d.type === "city" &&
+        d.isCapital === true
+    );
+
+}else{
+
+    candidates = data.filter(d =>
+        d.type === q.type &&
+        d.module === q.module
+    );
+
+}
 
 if(q.type==="iata"){
     const correctCity=getIATACity(q.question);
