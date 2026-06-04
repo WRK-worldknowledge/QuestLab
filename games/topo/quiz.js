@@ -413,6 +413,27 @@ if(
     );
 
 }
+    if(type==="city"){
+
+    questions = questions.filter(
+        (q,index,self) =>
+        index === self.findIndex(
+            x => x.city === q.city
+        )
+    );
+
+}
+
+if(type==="country" || type==="capital"){
+
+    questions = questions.filter(
+        (q,index,self) =>
+        index === self.findIndex(
+            x => x.country === q.country
+        )
+    );
+
+}
 
 if(!questions.length){
     alert("No questions found");
