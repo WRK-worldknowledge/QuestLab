@@ -464,6 +464,20 @@ button.classList.add("selected");
 currentChoice=value;
 }
 
+// ================= BACK TO SETUP =================
+function quitQuiz(){
+
+    if(!confirm("Leave this quiz and return to WRK Topo Quiz menu?")){
+        return;
+    }
+
+    quizActive = false;
+
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("setup").style.display = "block";
+
+}
+
 // ================= NEXT =================
 function nextQuestion(){
 
