@@ -189,7 +189,7 @@ color:#0F172A;
 <body>
 
 <a class="consoleBack" href="../../index.html">
-← Back to Game Console
+← Back to QuestLab Games
 </a>
 
 <h1>WRK Quiz</h1>
@@ -249,10 +249,16 @@ color:#0F172A;
 </div>
 
 <div id="quiz" style="display:none">
+
+<button id="backToSetupBtn" onclick="quitQuiz()">
+← Back to Quiz Setup
+</button>
+
 <p id="progress"></p>
 <img id="mapImage" style="display:none;">
 <h2 id="question"></h2>
 <div id="options"></div>
+
 </div>
 
 <div id="result" style="display:none">
@@ -267,7 +273,7 @@ color:#0F172A;
 <script src="../help/help.js"></script>
 
 <script>
-const QUESTLAB_TOKEN_RUNTIME = "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";
+const QUESTLAB_TOKEN_RUNTIME = "";
 </script>
 
 <script src="../../player.js"></script>
