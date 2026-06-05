@@ -571,7 +571,8 @@ if(q.type === "capital"){
 
     candidates = data.filter(d =>
         d.type === "city" &&
-        d.isCapital === true
+        d.isCapital === true &&
+        d.module === q.module
     );
 
 }else{
@@ -648,7 +649,7 @@ questions.forEach((q,i)=>{
     const correctAnswers = [
         q.type==="city" ? q.city :
         q.type==="country" ? q.country :
-        q.type==="capital" ? q.capital :
+       q.type==="capital" ? q.city :
         (q.answer?.[0] || "")
     ].filter(Boolean);
 
