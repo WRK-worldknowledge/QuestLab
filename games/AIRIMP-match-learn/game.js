@@ -166,27 +166,21 @@ let tiles=[]
 const selectedPairs = shuffle([...data.pairs]).slice(0,7)
 
 selectedPairs.forEach(pair=>{
-if(gameType==="code-city"){
+if(gameType==="code-description"){
 
-tiles.push({type:"city",value:pair.city,match:pair.code})
-tiles.push({type:"code",value:pair.code,match:pair.code})
+tiles.push({
+type:"description",
+value:pair.description,
+match:pair.code
+})
 
-}
-
-if(gameType==="code-image"){
-
-tiles.push({type:"image",value:pair.image,match:pair.code})
-tiles.push({type:"code",value:pair.code,match:pair.code})
-
-}
-
-if(gameType==="city-image"){
-
-tiles.push({type:"city",value:pair.city,match:pair.code})
-tiles.push({type:"image",value:pair.image,match:pair.code})
+tiles.push({
+type:"code",
+value:pair.code,
+match:pair.code
+})
 
 }
-    }) 
 
 matchesLeft = selectedPairs.length
 
