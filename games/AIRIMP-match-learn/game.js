@@ -19,52 +19,14 @@ console.log("DATA FILE:", file)
 console.log("MODULE:", module)
 console.log("FINAL:", final)
 const moduleNames = {
-    "Special Meals",
-    "Passengers & Travel Docs",
-    "Baggage",
-    "Special Services",
-    "Flight Operations"
-    "Ticket status"
-"Cabin & Safety"
-    "Master Challenge"
-};
-
-const lessonOrder = {
-
-    "EURW": [
-        "Countries and capital cities",
-        "UK, Ireland & France",
-        "Scandinavia, Germany & BeNeLux",
-        "Switzerland & Italy",
-        "Spain & Portugal"
-    ],
-
-    "EURO": [
-        "Finland, Baltics, Russia, Belarus, Poland, Czech Republic, Slovakia & Ukraine",
-        "Austria, Hungary, Romania, Moldova & the Balkan",
-        "Greece",
-        "Turkey & Cyprus"
-    ],
-
-    "AMOC": [
-        "Countries and capitals North America & Caribbean",
-        "Cities North America",
-        "Countries and cities South America",
-        "Oceania"
-    ],
-
-    "AFR": [
-        "Northern Africa - Sahara countries",
-        "Northern Africa - Sahel countries",
-        "Central Africa",
-        "Southern Africa"
-    ],
-
-    "ASIA": [
-        "Middle East & EurAsia",
-        "Central Asia",
-        "Far East"
-    ]
+    "SSR": "Special Services",
+    "MEALS": "Special Meals",
+    "PAX & DOCS": "Passengers & Travel Docs",
+    "TKT": "Ticket Status",
+    "OPS": "Flight Operations",
+    "BAG": "Baggage",
+    "CAB": "Cabin & Safety",
+    "MASTER": "Master Challenge"
 };
 
 // TRAINING (1 lesson)
