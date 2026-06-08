@@ -20,10 +20,12 @@ console.log("MODULE:", module)
 console.log("FINAL:", final)
 const moduleNames = {
     "Special Meals",
-    "Passengers",
+    "Passengers & Travel Docs",
     "Baggage",
     "Special Services",
-    "Operations"
+    "Flight Operations"
+    "Ticket status"
+"Cabin & Safety"
     "Master Challenge"
 };
 
