@@ -1,0 +1,20 @@
+{
+  "pairs":[
+    {"code":"AVML","description":"Asian Vegetarian Meal"},
+    {"code":"BBML","description":"Baby Meal"},
+    {"code":"CHML","description":"Child Meal"},
+    {"code":"DBML","description":"Diabetic Meal"},
+    {"code":"GFML","description":"Gluten Free Meal"},
+    {"code":"HNML","description":"Hindu Meal"},
+    {"code":"LFML","description":"Low Fat Meal"},
+    {"code":"LSML","description":"Low Sodium Meal"},
+    {"code":"KSML","description":"Kosher Meal"},
+    {"code":"MOML","description":"Muslim Meal"},
+    {"code":"NLML","description":"Non-Lactose Meal"},
+    {"code":"RVML","description":"Raw Vegetarian Meal"},
+    {"code":"SFML","description":"Sea Food Meal"},
+    {"code":"SPML","description":"Special Meal"},
+    {"code":"VGML","description":"Strict Vegetarian Meal"},
+    {"code":"VLML","description":"Western Vegetarian Meal"}
+  ]
+}
