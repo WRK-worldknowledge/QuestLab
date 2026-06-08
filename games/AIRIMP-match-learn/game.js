@@ -182,6 +182,8 @@ match:pair.code
 
 }
 
+}) 
+
 matchesLeft = selectedPairs.length
 
 
