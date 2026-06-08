@@ -19,11 +19,12 @@ console.log("DATA FILE:", file)
 console.log("MODULE:", module)
 console.log("FINAL:", final)
 const moduleNames = {
-    "EURW": "1. Western Europe",
-    "EURO": "2. Eastern Europe",
-    "AMOC": "3. America & Oceania",
-    "AFR": "4. Africa",
-    "ASIA": "5. Asia"
+    "Special Meals",
+    "Passengers",
+    "Baggage",
+    "Special Services",
+    "Operations"
+    "Master Challenge"
 };
 
 const lessonOrder = {
