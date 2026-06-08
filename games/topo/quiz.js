@@ -453,6 +453,17 @@ currentChoice=null;
 document.getElementById("setup").style.display="none";
 document.getElementById("quiz").style.display="block";
 
+// Back knop tijdelijk aanpassen
+document.querySelector(".consoleBack").textContent =
+"← Back to WRK Topo Quiz Menu";
+
+document.querySelector(".consoleBack").href = "#";
+
+document.querySelector(".consoleBack").onclick = function(e){
+    e.preventDefault();
+    quitQuiz();
+};
+
 showQuestion();
 
 }
@@ -467,7 +478,7 @@ currentChoice=value;
 // ================= BACK TO SETUP =================
 function quitQuiz(){
 
-    if(!confirm("Leave this quiz and return to WRK Topo Quiz menu?")){
+    if(!confirm("Leave this quiz and return to the quiz menu?")){
         return;
     }
 
@@ -475,6 +486,15 @@ function quitQuiz(){
 
     document.getElementById("quiz").style.display = "none";
     document.getElementById("setup").style.display = "block";
+
+    // originele knop herstellen
+    document.querySelector(".consoleBack").textContent =
+    "← Back to QuestLab Games";
+
+    document.querySelector(".consoleBack").href =
+    "../../index.html";
+
+    document.querySelector(".consoleBack").onclick = null;
 
 }
 
