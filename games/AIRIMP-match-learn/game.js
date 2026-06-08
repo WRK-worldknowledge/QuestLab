@@ -10,7 +10,7 @@ let time=120
 let timerInterval
 
 const params = new URLSearchParams(location.search)
-const gameType = params.get("type") || "code-city"
+const gameType = params.get("type") || "code-description"
 
 const file = params.get("data")
 const module = params.get("module")
