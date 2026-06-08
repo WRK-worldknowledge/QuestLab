@@ -1,5 +1,6 @@
 {
   "pairs":[
+    {"code":"ASAP","description":"As Soon As Possible"},
     {"code":"ATA","description":"Actual Time of Arrival"},
     {"code":"ATD","description":"Actual Time of Departure"},
     {"code":"EBT","description":"Estimated Block Time"},
@@ -9,6 +10,8 @@
     {"code":"STD","description":"Scheduled Time of Departure"},
     {"code":"LIA","description":"Late Incoming Aircraft"},
     {"code":"LIAC","description":"Late Incoming Aircraft"},
+    {"code":"CANX","description":"Cancelled Flight"},
+    {"code":"LMC","description":"Last Minute Change"},
     {"code":"NOTOC","description":"Notification to Captain"}
   ]
 }
