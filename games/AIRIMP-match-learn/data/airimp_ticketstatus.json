@@ -1,10 +1,10 @@
 {
   "pairs":[
-    {"code":"NS","description":"No Seat"},
-    {"code":"OPEN","description":"Open Ticket"},
-    {"code":"OK","description":"Confirmed Booking"},
+    {"code":"OK","description":"Confirmed"},
     {"code":"RQ","description":"Requested"},
     {"code":"SA","description":"Seat Available"},
+    {"code":"NS","description":"No Seat"},
+    {"code":"OPEN","description":"Open Ticket"},
     {"code":"COR","description":"Corresponding Flight"},
     {"code":"NOC","description":"No Connection"},
     {"code":"MCT","description":"Minimum Connecting Time"},
