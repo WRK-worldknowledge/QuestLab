@@ -1,0 +1,13 @@
+{
+  "pairs":[
+    {"code":"BULK","description":"Bulky Baggage"},
+    {"code":"CBBG","description":"Cabin Baggage"},
+    {"code":"CLAIMTAG","description":"Baggage Receipt"},
+    {"code":"FIBAG","description":"First Bag on Belt"},
+    {"code":"FRAG","description":"Fragile Baggage"},
+    {"code":"LABAG","description":"Last Bag on Belt"},
+    {"code":"PIR","description":"Property Irregularity Report"},
+    {"code":"RUSH","description":"Rush Baggage"},
+    {"code":"XBAG","description":"Excess Baggage"}
+  ]
+}
