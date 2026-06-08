@@ -1,0 +1,28 @@
+{
+  "pairs":[
+    {"code":"AVIH","description":"Animal in Hold"},
+    {"code":"BLND","description":"Blind Passenger"},
+    {"code":"BSCT","description":"Baby Bassinet"},
+    {"code":"DEAF","description":"Deaf Passenger"},
+    {"code":"DEPO","description":"Deportee"},
+    {"code":"DEPA","description":"Deportee Accompanied"},
+    {"code":"DEPU","description":"Deportee Unaccompanied"},
+    {"code":"EXST","description":"Extra Seat"},
+    {"code":"INAD","description":"Inadmissible Passenger"},
+    {"code":"MAAS","description":"Meet and Assist"},
+    {"code":"MEDA","description":"Medical Case"},
+    {"code":"PETC","description":"Pet in Cabin"},
+    {"code":"PRM","description":"Passenger with Reduced Mobility"},
+    {"code":"PWD","description":"Passenger with Disability"},
+    {"code":"SEMN","description":"Seaman"},
+    {"code":"TWOV","description":"Transit Without Visa"},
+    {"code":"UMNR","description":"Unaccompanied Minor"},
+    {"code":"WCHC","description":"Wheelchair Carry On Carry Off"},
+    {"code":"WCHR","description":"Wheelchair Ramp"},
+    {"code":"WCHS","description":"Wheelchair Steps"},
+    {"code":"WCOB","description":"Wheelchair On Board"},
+    {"code":"WCMP","description":"Wheelchair Manual"},
+    {"code":"WCBD","description":"Wheelchair Battery Dry"},
+    {"code":"WCBW","description":"Wheelchair Battery Wet"}
+  ]
+}
