@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 const moduleFiles = {
 
-const moduleFiles = {
-
 "AIRIMP":[
 "airimp_services.json",
 "airimp_meals.json",
