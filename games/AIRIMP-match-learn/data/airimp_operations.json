@@ -1,0 +1,14 @@
+{
+  "pairs":[
+    {"code":"ATA","description":"Actual Time of Arrival"},
+    {"code":"ATD","description":"Actual Time of Departure"},
+    {"code":"EBT","description":"Estimated Block Time"},
+    {"code":"ETA","description":"Estimated Time of Arrival"},
+    {"code":"ETD","description":"Estimated Time of Departure"},
+    {"code":"STA","description":"Scheduled Time of Arrival"},
+    {"code":"STD","description":"Scheduled Time of Departure"},
+    {"code":"LIA","description":"Late Incoming Aircraft"},
+    {"code":"LIAC","description":"Late Incoming Aircraft"},
+    {"code":"NOTOC","description":"Notification to Captain"}
+  ]
+}
