@@ -13,6 +13,7 @@
     {"code":"YP","description":"Young Passenger"},
     {"code":"DST","description":"Daylight Saving Time"},
     {"code":"UTC","description":"Universal Time Coordinated"},
-    {"code":"ZULU","description":"Zulu Time"}
+    {"code":"ZULU","description":"Zulu Time"},
+    {"code":"PNR","description":"Passenger Name Record"}
   ]
 }
