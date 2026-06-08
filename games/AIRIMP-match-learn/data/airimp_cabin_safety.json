@@ -1,0 +1,33 @@
+{
+  "pairs":[
+    {"code":"A/C","description":"Aircraft"},
+    {"code":"ABP","description":"Able Bodied Passenger"},
+    {"code":"APU","description":"Auxiliary Power Unit"},
+    {"code":"ATC","description":"Air Traffic Control"},
+    {"code":"CA","description":"Cabin Attendant"},
+    {"code":"CC","description":"Cabin Crew"},
+    {"code":"CPT","description":"Captain"},
+    {"code":"CPR","description":"Cardiopulmonary Resuscitation"},
+    {"code":"CREW","description":"Crew Member"},
+    {"code":"ELT","description":"Emergency Locator Transmitter"},
+    {"code":"FAK","description":"First Aid Kit"},
+    {"code":"FLT","description":"Flight"},
+    {"code":"HAL","description":"Halon Fire Extinguisher"},
+    {"code":"ICAO","description":"International Civil Aviation Organization"},
+    {"code":"IATA","description":"International Air Transport Association"},
+    {"code":"INOP","description":"Inoperative"},
+    {"code":"J/S","description":"Jump Seat"},
+    {"code":"LAV","description":"Lavatory"},
+    {"code":"MEL","description":"Minimum Equipment List"},
+    {"code":"OCC","description":"Occupancy"},
+    {"code":"PA","description":"Public Address"},
+    {"code":"PBE","description":"Protective Breathing Equipment"},
+    {"code":"PIL","description":"Pilot"},
+    {"code":"PUSH","description":"Pushback"},
+    {"code":"RTO","description":"Rejected Take-Off"},
+    {"code":"SOP","description":"Standard Operating Procedure"},
+    {"code":"TAXI","description":"Taxi"},
+    {"code":"TURB","description":"Turbulence"},
+    {"code":"WX","description":"Weather"}
+  ]
+}
