@@ -1,15 +1,27 @@
 document.addEventListener("DOMContentLoaded", function(){
+  const subjectNames = {
+
+"SSR":"SSR – Special Service Request",
+"SPML":"SPML – Special Meals",
+"PAXDOC":"PAX & DOCS – Passengers & Travel Docs",
+"TKT":"TKT – Ticket Status",
+"OPS":"OPS – Flight Operations",
+"BAG":"BAG – Baggage",
+"CAB":"CAB – Cabin & Safety",
+"MASTER":"MASTER – Challenge"
+
+}
   const lessonNames = {
 
 "AIRIMP":[
-"Baggage",
-"Passengers & Travel Docs",
-"Special Services",
-"Special Meals",
-"Ticket Status",
-"Flight Operations",
-"Cabin & Safety",
-"Master Challenge"
+"SSR",
+"SPML",
+"PAXDOC",
+"TKT",
+"OPS",
+"BAG",
+"CAB",
+"MASTER"
 ]
 
 }
@@ -20,10 +32,10 @@ const moduleFiles = {
 "airimp_services.json",
 "airimp_meals.json",
 "airimp_passengers.json",
+"airimp_ticketstatus.json",
 "airimp_operations.json",
 "airimp_baggage.json",
-"airimp_ticketstatus.json"
-"airimp_cabin_safety.json"
+"airimp_cabin_safety.json",
 "airimp_master.json"
 ]
 
@@ -40,7 +52,7 @@ lessonSelect.innerHTML = ""
 const files = moduleFiles["AIRIMP"]
 
 if(!files){
-console.error("Module not found:", module)
+console.error("AIRIMP files not found")
 return
 }
 
@@ -50,10 +62,10 @@ const option = document.createElement("option")
 
 option.value = file
 
-const name = lessonNames["AIRIMP"][index]
+const key = lessonNames["AIRIMP"][index]
 
 option.textContent =
-(index + 1) + ". " + name
+(index + 1) + ". " + subjectNames[key]
 
 lessonSelect.appendChild(option)
 
@@ -61,7 +73,6 @@ lessonSelect.appendChild(option)
   
 }
 
-moduleSelect.addEventListener("change", populateLessons)
 populateLessons()
 
 // eerste keer laden
@@ -71,7 +82,6 @@ populateLessons()
 startBtn.addEventListener("click", function(){
 
 const mode = modeSelect.value
-const module = moduleSelect.value
 const lesson = lessonSelect.value
   const gameType = document.getElementById("gameType").value
 
@@ -90,7 +100,8 @@ window.location.href =
 // MODULE EXAM
 if(mode === "module"){
 
-window.location.href = "game.html?module=" + encodeURIComponent(module)
+window.location.href =
+"game.html?final=true"
 
 }
 
