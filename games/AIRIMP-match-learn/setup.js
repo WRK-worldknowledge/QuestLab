@@ -17,9 +17,11 @@ const moduleFiles = {
 "AIRIMP":[
 "airimp_services.json",
 "airimp_meals.json",
-"airimp_passenger.json",
+"airimp_passengers.json",
 "airimp_operations.json",
 "airimp_baggage.json",
+  "airimp_ticketstatus.json"
+  "airimp_cabin_safety.json"
 "airimp_master.json"
 ]
 
