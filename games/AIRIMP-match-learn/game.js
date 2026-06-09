@@ -18,15 +18,15 @@ const final = params.get("final")
 console.log("DATA FILE:", file)
 console.log("MODULE:", module)
 console.log("FINAL:", final)
-const moduleNames = {
-    "SSR": "Special Services",
-    "MEALS": "Special Meals",
-    "PAX & DOCS": "Passengers & Travel Docs",
-    "TKT": "Ticket Status",
-    "OPS": "Flight Operations",
-    "BAG": "Baggage",
-    "CAB": "Cabin & Safety",
-    "MASTER": "Master Challenge"
+const subjectNames = {
+    "SSR": "SSR – Special Service Request",
+    "MEALS": "SPML – Special Meals",
+    "PAXDOC": "PAX & DOCS – Passengers & Travel Docs",
+    "TKT": "TKT – Ticket Status",
+    "OPS": "OPS – Flight Operations",
+    "BAG": "BAG – Baggage",
+    "CAB": "CAB – Cabin & Safety",
+    "MASTER": "MASTER – Challenge"
 };
 
 // TRAINING (1 lesson)
