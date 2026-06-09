@@ -1,0 +1,19 @@
+{
+  "pairs":[
+    {"code":"API","description":"Advanced Passenger Information"},
+    {"code":"CHD","description":"Child"},
+    {"code":"CIP","description":"Commercial Important Passenger"},
+    {"code":"CTC","description":"Contact Details"},
+    {"code":"INF","description":"Infant"},
+    {"code":"KMAR","description":"Royal Military Police"},
+    {"code":"PAP","description":"Passenger"},
+    {"code":"PAX","description":"Passengers"},
+    {"code":"TIM","description":"Travel Information Manual"},
+    {"code":"VIP","description":"Very Important Person"},
+    {"code":"YP","description":"Young Passenger"},
+    {"code":"DST","description":"Daylight Saving Time"},
+    {"code":"UTC","description":"Universal Time Coordinated"},
+    {"code":"ZULU","description":"Zulu Time"},
+    {"code":"PNR","description":"Passenger Name Record"}
+  ]
+}
