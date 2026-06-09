@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", function(){
 "AIRIMP":[
 "Special Services",
 "Meals",
-"Passenger & Ticketing",
+"Passengers & Docs",
 "Operations",
 "Baggage",
+  "Ticketstatus"
+  "Cabin Safety"
 "Master Challenge"
 ]
 
@@ -63,7 +65,7 @@ option.value = file
 
 const name = lessonNames[module][index]
 
-option.textContent = "Lesson " + (index + 1) + " – " + name
+option.textContent = "Subject " + (index + 1) + " – " + name
 
 lessonSelect.appendChild(option)
 
