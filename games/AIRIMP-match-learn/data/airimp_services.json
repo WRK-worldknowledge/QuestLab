@@ -1,6 +1,6 @@
 {
   "pairs":[
-    {"code":"AVIH","description":"Animal in Hold"},
+    {"code":"AVIH","description":"Animal Vivant in Hold"},
     {"code":"BLND","description":"Blind Passenger"},
     {"code":"BSCT","description":"Baby Bassinet"},
     {"code":"DEAF","description":"Deaf Passenger"},
