@@ -445,3 +445,29 @@ backBtn.onclick = () => window.history.back()
 }
 
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const backBtn = document.getElementById("backToMenu");
+
+if(backBtn){
+
+backBtn.onclick = function(e){
+
+e.preventDefault();
+
+const leave = confirm(
+"Leave current mission?\n\nProgress will be lost."
+);
+
+if(leave){
+
+window.location.href = "index.html";
+
+}
+
+};
+
+}
+
+});
