@@ -133,17 +133,49 @@ const selectedPairs = shuffle([...data.pairs]).slice(0,7)
 selectedPairs.forEach(pair=>{
 if(gameType==="code-description"){
 
-tiles.push({
-type:"description",
-value:pair.description,
-match:pair.code
-})
+    tiles.push({
+        type:"description",
+        value:pair.description,
+        match:pair.code
+    })
 
-tiles.push({
-type:"code",
-value:pair.code,
-match:pair.code
-})
+    tiles.push({
+        type:"code",
+        value:pair.code,
+        match:pair.code
+    })
+
+}
+
+if(gameType==="picto-code"){
+
+    tiles.push({
+        type:"image",
+        value:pair.image,
+        match:pair.code
+    })
+
+    tiles.push({
+        type:"code",
+        value:pair.code,
+        match:pair.code
+    })
+
+}
+
+if(gameType==="picto-description"){
+
+    tiles.push({
+        type:"image",
+        value:pair.image,
+        match:pair.code
+    })
+
+    tiles.push({
+        type:"description",
+        value:pair.description,
+        match:pair.code
+    })
 
 }
 
