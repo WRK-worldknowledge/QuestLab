@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function(){
   const lessonNames = {
 
 "AIRIMP":[
-"Special Services",
-"Meals",
-"Passengers & Docs",
-"Operations",
 "Baggage",
-  "Ticketstatus"
-  "Cabin Safety"
+"Passengers & Travel Docs",
+"Special Services",
+"Special Meals",
+"Ticket Status",
+"Flight Operations",
+"Cabin & Safety",
 "Master Challenge"
 ]
 
@@ -22,35 +22,22 @@ const moduleFiles = {
 "airimp_passengers.json",
 "airimp_operations.json",
 "airimp_baggage.json",
-  "airimp_ticketstatus.json"
-  "airimp_cabin_safety.json"
+"airimp_ticketstatus.json"
+"airimp_cabin_safety.json"
 "airimp_master.json"
 ]
 
 }
 const modeSelect = document.getElementById("modeSelect")
-const moduleSelect = document.getElementById("moduleSelect")
 const lessonSelect = document.getElementById("lessonSelect")
 const startBtn = document.getElementById("startBtn")
-
-// MODULES VULLEN
-Object.keys(moduleFiles).forEach(moduleName => {
-
-const option = document.createElement("option")
-option.value = moduleName
-option.textContent = moduleName
-
-moduleSelect.appendChild(option)
-
-})
 
 // LESSONS VULLEN
 function populateLessons(){
 
 lessonSelect.innerHTML = ""
 
-const module = moduleSelect.value
-const files = moduleFiles[module]
+const files = moduleFiles["AIRIMP"]
 
 if(!files){
 console.error("Module not found:", module)
@@ -63,9 +50,10 @@ const option = document.createElement("option")
 
 option.value = file
 
-const name = lessonNames[module][index]
+const name = lessonNames["AIRIMP"][index]
 
-option.textContent = "Subject " + (index + 1) + " – " + name
+option.textContent =
+(index + 1) + ". " + name
 
 lessonSelect.appendChild(option)
 
