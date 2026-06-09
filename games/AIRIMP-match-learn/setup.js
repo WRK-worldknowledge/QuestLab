@@ -86,7 +86,6 @@ const lesson = lessonSelect.value
   const gameType = document.getElementById("gameType").value
 
 console.log("MODE:", mode)
-console.log("MODULE:", module)
 console.log("LESSON FILE:", lesson)
 
 // TRAINING (1 LESSON)
