@@ -42,6 +42,17 @@ text:"Match destinations with their three-letter IATA airport code or location o
 title:"Goal",
 text:"Long press maps to enlarge and clear all tiles before the timer runs out."
 }
+],
+
+  airimpmatchlearn:[
+{
+title:"AIRIMP Match & Learn",
+text:"Match AIRIMP codes with their correct meaning and learn the abbreviations used in airline operations."
+},
+{
+title:"Goal",
+text:"Match all pairs before the timer runs out. Complete the Master Challenge to test your overall AIRIMP knowledge."
+}
 ]
 
 }
