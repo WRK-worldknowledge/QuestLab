@@ -1,4 +1,4 @@
-startHelp("matchlearn")
+startHelp("airimpmatchlearn")
 let lastTap = 0
     let firstPick=null
 let secondPick=null
