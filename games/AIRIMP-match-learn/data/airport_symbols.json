@@ -1,3 +1,101 @@
 {
-  "pairs":[]
+  "pairs":[
+
+    {
+      "id":"CUSTOMS",
+      "description":"Customs",
+      "image":"customs.png"
+    },
+
+    {
+      "id":"CHECKIN1",
+      "description":"Check-in",
+      "image":"check_in_1.png"
+    },
+
+    {
+      "id":"INFODESK1",
+      "description":"Information Desk",
+      "image":"info_desk_1.png"
+    },
+
+    {
+      "id":"DEPARTURES",
+      "description":"Departures",
+      "image":"departures_1.png"
+    },
+
+    {
+      "id":"TRANSFER1",
+      "description":"Transfer",
+      "image":"transfer_1.png"
+    },
+
+    {
+      "id":"CHECKIN2",
+      "description":"Check-in",
+      "image":"check_in_2.png"
+    },
+
+    {
+      "id":"ARRIVALS",
+      "description":"Arrivals",
+      "image":"arrivals_1.png"
+    },
+
+    {
+      "id":"ODDSIZE",
+      "description":"Odd Size Baggage",
+      "image":"odd_size_baggage_1.png"
+    },
+
+    {
+      "id":"PASSPORT1",
+      "description":"Passport Control",
+      "image":"passport_control_1.png"
+    },
+
+    {
+      "id":"SELFSERVICE",
+      "description":"Self Service Check-in",
+      "image":"check_in_selfservice.png"
+    },
+
+    {
+      "id":"INFOPOINT",
+      "description":"Information Point",
+      "image":"info_point.png"
+    },
+
+    {
+      "id":"MONEY",
+      "description":"Money Exchange",
+      "image":"money_exchange.png"
+    },
+
+    {
+      "id":"TRANSFER2",
+      "description":"Transfer",
+      "image":"transfer_2.png"
+    },
+
+    {
+      "id":"INFODESK2",
+      "description":"Information Desk",
+      "image":"info_desk_2.png"
+    },
+
+    {
+      "id":"PASSPORT2",
+      "description":"Passport Control",
+      "image":"passport_control_2.png"
+    },
+
+    {
+      "id":"TAXFREE",
+      "description":"Tax Free",
+      "image":"tax_free.png"
+    }
+
+  ]
 }
