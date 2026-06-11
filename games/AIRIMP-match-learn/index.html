@@ -98,17 +98,24 @@ color:#0F172A;
   
   <label>Game type</label>
 <select id="gameType">
-    <option value="code-description">
-        AIRIMP Code ↔ Description
-    </option>
+<option value="">Select game type...</option>
+
+<option value="code-description">
+AIRIMP Code ↔ Meaning
+</option>
 
 <option value="picto-description">
-        Airport Pictogram ↔ Description
-    </option>
+Airport Picto ↔ Meaning
+</option>
 </select>
+  
+<div id="subjectContainer" style="display:none;">
 
 <label>Subject</label>
+
 <select id="lessonSelect"></select>
+
+</div>
 
 <button id="startBtn">Start mission</button>
 
