@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function(){
 "OPS":"OPS – Flight Operations",
 "BAG":"BAG – Baggage",
 "CAB":"CAB – Cabin & Safety",
+"PICTO":"PICTO – Airport Symbols",
+"PICTOPLUS":"PICTO+ – Advanced Airport Symbols",
 "MASTER":"MASTER – Challenge"
 
 }
@@ -21,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function(){
 "OPS",
 "BAG",
 "CAB",
+"PICTO",
+"PICTOPLUS",
 "MASTER"
 ]
 
@@ -36,6 +40,8 @@ const moduleFiles = {
 "airimp_operations.json",
 "airimp_baggage.json",
 "airimp_cabin_safety.json",
+"airport_symbols.json",
+"airport_symbols_advanced.json",
 "airimp_master.json"
 ]
 
