@@ -68,15 +68,18 @@ return
 subjectContainer.style.display = "block"
 
 const subjects =
-gameType === "code-description"
-? airimpSubjects
-: pictoSubjects
-
-  const subjects =
 gameType === "picto-description"
 ? pictoSubjects
 : airimpSubjects
 
+  const placeholder = document.createElement("option")
+placeholder.value = ""
+placeholder.textContent = "Select subject..."
+placeholder.selected = true
+placeholder.disabled = true
+
+lessonSelect.appendChild(placeholder)
+  
 subjects.forEach(subject => {
 
 const option = document.createElement("option")
