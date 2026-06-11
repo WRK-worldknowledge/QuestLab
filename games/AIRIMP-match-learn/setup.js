@@ -133,19 +133,10 @@ window.location.href =
 
 }
 
-// MODULE EXAM
-if(mode === "module"){
-
-window.location.href =
-"game.html?final=true"
-
-}
-
 // FINAL EXAM
 if(mode === "final"){
-
-window.location.href = "game.html?final=true"
-
+window.location.href =
+"game.html?data=airimp_master.json&type=" + gameType
 }
 
 })
