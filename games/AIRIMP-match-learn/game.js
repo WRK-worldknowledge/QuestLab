@@ -147,21 +147,6 @@ if(gameType==="code-description"){
 
 }
 
-if(gameType==="picto-code"){
-
-    tiles.push({
-        type:"image",
-        value:pair.image,
-        match:pair.code
-    })
-
-    tiles.push({
-        type:"code",
-        value:pair.code,
-        match:pair.code
-    })
-
-}
 
 if(gameType==="picto-description"){
 
