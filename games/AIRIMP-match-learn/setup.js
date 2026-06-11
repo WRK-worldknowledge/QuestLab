@@ -1,88 +1,101 @@
 document.addEventListener("DOMContentLoaded", function(){
-  const subjectNames = {
-
-"SSR":"SSR – Special Service Request",
-"SPML":"SPML – Special Meals",
-"PAXDOC":"PAX & DOCS – Passengers & Travel Docs",
-"TKT":"TKT – Ticket Status",
-"OPS":"OPS – Flight Operations",
-"BAG":"BAG – Baggage",
-"CAB":"CAB – Cabin & Safety",
-"PICTO":"PICTO – Airport Symbols",
-"PICTOPLUS":"PICTO+ – Advanced Airport Symbols",
-"MASTER":"MASTER – Challenge"
-
+const airimpSubjects = [
+{
+name:"SSR – Special Service Request",
+file:"airimp_services.json"
+},
+{
+name:"SPML – Special Meals",
+file:"airimp_meals.json"
+},
+{
+name:"PAX & DOCS – Passengers & Travel Docs",
+file:"airimp_passengers.json"
+},
+{
+name:"TKT – Ticket Status",
+file:"airimp_ticketstatus.json"
+},
+{
+name:"OPS – Flight Operations",
+file:"airimp_operations.json"
+},
+{
+name:"BAG – Baggage",
+file:"airimp_baggage.json"
+},
+{
+name:"CAB – Cabin & Safety",
+file:"airimp_cabin_safety.json"
+},
+{
+name:"MASTER – Challenge",
+file:"airimp_master.json"
 }
-  const lessonNames = {
-
-"AIRIMP":[
-"SSR",
-"SPML",
-"PAXDOC",
-"TKT",
-"OPS",
-"BAG",
-"CAB",
-"PICTO",
-"PICTOPLUS",
-"MASTER"
 ]
 
+const pictoSubjects = [
+{
+name:"PICTO – Airport Symbols",
+file:"airport_symbols.json"
+},
+{
+name:"PICTO+ – Airport Symbols Advanced",
+file:"airport_symbols_advanced.json"
 }
-
-const moduleFiles = {
-
-"AIRIMP":[
-"airimp_services.json",
-"airimp_meals.json",
-"airimp_passengers.json",
-"airimp_ticketstatus.json",
-"airimp_operations.json",
-"airimp_baggage.json",
-"airimp_cabin_safety.json",
-"airport_symbols.json",
-"airport_symbols_advanced.json",
-"airimp_master.json"
 ]
 
-}
 const modeSelect = document.getElementById("modeSelect")
 const lessonSelect = document.getElementById("lessonSelect")
 const startBtn = document.getElementById("startBtn")
+  const gameTypeSelect = document.getElementById("gameType")
+const subjectContainer = document.getElementById("subjectContainer")
 
 // LESSONS VULLEN
-function populateLessons(){
+function populateSubjects(){
 
 lessonSelect.innerHTML = ""
 
-const files = moduleFiles["AIRIMP"]
+const gameType = gameTypeSelect.value
 
-if(!files){
-console.error("AIRIMP files not found")
+if(!gameType){
+
+subjectContainer.style.display = "none"
 return
+
 }
 
-files.forEach((file,index)=>{
+subjectContainer.style.display = "block"
+
+const subjects =
+gameType === "code-description"
+? airimpSubjects
+: pictoSubjects
+
+  const subjects =
+gameType === "picto-description"
+? pictoSubjects
+: airimpSubjects
+
+subjects.forEach(subject => {
 
 const option = document.createElement("option")
 
-option.value = file
-
-const key = lessonNames["AIRIMP"][index]
-
-option.textContent =
-(index + 1) + ". " + subjectNames[key]
+option.value = subject.file
+option.textContent = subject.name
 
 lessonSelect.appendChild(option)
 
 })
-  
-}
 
-populateLessons()
+}
+  gameTypeSelect.addEventListener(
+"change",
+populateSubjects
+)
 
 // eerste keer laden
-populateLessons()
+populateSubjects()
 
 // START BUTTON
 startBtn.addEventListener("click", function(){
@@ -90,7 +103,22 @@ startBtn.addEventListener("click", function(){
 const mode = modeSelect.value
 const lesson = lessonSelect.value
   const gameType = document.getElementById("gameType").value
+  
+  if(!gameType){
 
+alert("Please select a game type")
+return
+
+}
+
+if(!lesson){
+
+alert("Please select a subject")
+return
+
+}
+
+  
 console.log("MODE:", mode)
 console.log("LESSON FILE:", lesson)
 
