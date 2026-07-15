@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>QuestLab Login</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+</head>
+
+<body>
+
+<h1>QuestLab Login</h1>
+
+<input id="email" placeholder="Email">
+
+<input
+    id="password"
+    type="password"
+    placeholder="Password">
+
+<button onclick="login()">
+    Login
+</button>
+
+<script>
+
+async function login() {
+
+    const { data, error } =
+        await supabase.auth
+            .signInWithPassword({
+
+        email:
+            document.getElementById(
+                'email'
+            ).value,
+
+        password:
+            document.getElementById(
+                'password'
+            ).value
+
+    });
+
+    if(error){
+
+        alert(error.message);
+
+    } else {
+
+        window.location =
+            'dashboard.html';
+
+    }
+}
+
+</script>
+
+</body>
+</html>
