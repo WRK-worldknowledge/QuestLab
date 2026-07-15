@@ -28,8 +28,7 @@
 async function login() {
 
     const { data, error } =
-        await supabase.auth
-            .signInWithPassword({
+        await client.auth.signInWithPassword(
 
         email:
             document.getElementById(
