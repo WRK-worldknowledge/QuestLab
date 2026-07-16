@@ -193,26 +193,65 @@ max-width:320px;
      ">
 
     <div style="
-         width:300px;
-         margin:150px auto;
-         background:#0F172A;
-         padding:30px;
-         border-radius:20px;
-         border:3px solid #F5CA51;
-         text-align:center;
-         ">
+     width:360px;
+     margin:120px auto;
+     background:#0F172A;
+     padding:40px;
+     border-radius:24px;
+     border:5px solid #F5CA51;
+     text-align:center;
+     box-shadow:0 20px 60px rgba(0,0,0,0.6);
+     ">
 
-        <h2>QuestLab Login</h2>
+    <img
+        src="logo.png"
+        style="width:100px;margin-bottom:15px;">
 
-        <input
-            id="loginEmail"
-            placeholder="studentnummer@talnet.nl">
+    <h2 style="
+        color:#F5CA51;
+        margin-top:0;
+        margin-bottom:10px;
+    ">
+        QuestLab Login
+    </h2>
 
-        <br><br>
+    <p style="
+        opacity:.8;
+        margin-bottom:25px;
+    ">
+        Enter your TALNET email address to
+        continue your learning journey.
+    </p>
 
-        <button onclick="studentLogin()">
-            Continue
-        </button>
+    <input
+        id="loginEmail"
+        placeholder="123456@talnet.nl"
+        style="
+            width:90%;
+            padding:14px;
+            border-radius:12px;
+            border:none;
+            font-size:16px;
+            margin-bottom:20px;
+        ">
+
+    <br>
+
+    <button
+        onclick="studentLogin()"
+        style="
+            background:#F5CA51;
+            color:#0F172A;
+            border:none;
+            padding:14px 28px;
+            border-radius:12px;
+            font-size:18px;
+            font-weight:700;
+            cursor:pointer;
+            width:100%;
+        ">
+        Continue
+    </button>
 
     </div>
 
