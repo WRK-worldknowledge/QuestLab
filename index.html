@@ -247,6 +247,28 @@ function launchGame(url){
 
     location.href = url;
 }
+
+    function studentLogin(){
+
+    const email =
+        document.getElementById(
+            "loginEmail"
+        ).value;
+
+    if(
+        !email.endsWith("@talnet.nl") &&
+        !email.endsWith("@rebergen.org")
+    ){
+        alert(
+            "Please use a TALNET or Rebergen email address."
+        );
+        return;
+    }
+
+    alert(
+        "Welkom " + email
+    );
+}
 </script>
 </body>
 </html>
