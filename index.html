@@ -265,9 +265,14 @@ function launchGame(url){
         return;
     }
 
-    alert(
-        "Welkom " + email
-    );
+    loggedIn = true;
+currentUser = email;
+
+document.getElementById(
+    "loginModal"
+).style.display = "none";
+
+location.href = window.nextGame;
 }
 </script>
 </body>
