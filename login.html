@@ -27,13 +27,15 @@
 
 async function login() {
 
+    const email =
+    document.getElementById(
+        'email'
+    ).value;
+    
     const { data, error } =
         await client.auth.signInWithPassword({
 
-        email:
-            document.getElementById(
-                'email'
-            ).value,
+       email: email,
 
         password:
             document.getElementById(
@@ -48,10 +50,24 @@ async function login() {
 
     } else {
 
-        window.location =
-            'dashboard.html';
+    let role = "student";
 
+    if(email.endsWith("@rebergen.org")){
+        role = "admin";
     }
+
+    await client
+        .from('users')
+        .upsert({
+            email: email,
+            role: role,
+            last_login: new Date()
+        });
+
+    window.location =
+        'dashboard.html';
+
+}
 }
 
 </script>
