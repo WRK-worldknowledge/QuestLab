@@ -225,8 +225,13 @@ const QUESTLAB_TOKEN_RUNTIME = "";
 </script>
   
 <script>
-let loggedIn = false;
-let currentUser = null;
+let currentUser =
+    localStorage.getItem(
+        "questlabUser"
+    );
+
+let loggedIn =
+    currentUser !== null;
 </script>
   
 <!-- daarna player engine -->
@@ -267,6 +272,11 @@ function launchGame(url){
 
     loggedIn = true;
 currentUser = email;
+
+localStorage.setItem(
+    "questlabUser",
+    email
+);
 
 document.getElementById(
     "loginModal"
