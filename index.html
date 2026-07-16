@@ -175,6 +175,34 @@ transform:scale(1.03);
 
 <div class="subtitle">Learning through play</div>
 
+  <div style="
+display:flex;
+gap:15px;
+justify-content:center;
+margin-bottom:30px;
+flex-wrap:wrap;
+">
+
+    <button
+        class="button"
+        style="width:220px;"
+        onclick="playDemo()">
+
+        🎮 PLAY DEMO
+
+    </button>
+
+    <button
+        class="button"
+        style="width:220px;"
+        onclick="showLogin()">
+
+        🎓 STUDENT LOGIN
+
+    </button>
+
+</div>
+
 <div class="games-grid">
 
 <button class="game-btn" onclick="launchGame('games/topo/')">
@@ -303,11 +331,12 @@ let loggedIn =
 function launchGame(url){
 
     if(!loggedIn){
-        document.getElementById(
-            "loginModal"
-        ).style.display = "block";
 
-        window.nextGame = url;
+        alert(
+            "Please select:\n\n" +
+            "• PLAY DEMO\n" +
+            "• STUDENT LOGIN"
+        );
 
         return;
     }
@@ -344,7 +373,37 @@ document.getElementById(
     "loginModal"
 ).style.display = "none";
 
-location.href = window.nextGame;
+if(window.nextGame){
+
+    location.href = window.nextGame;
+
+} else {
+
+    alert(
+        "Welcome back!"
+    );
+}
+    function playDemo(){
+
+    loggedIn = true;
+    currentUser = "guest";
+
+    localStorage.setItem(
+        "questlabUser",
+        "guest"
+    );
+
+    alert(
+        "Welcome Guest Pilot!\n\n" +
+        "Demo mode activated."
+    );
+}
+
+function showLogin(){
+
+    document.getElementById(
+        "loginModal"
+    ).style.display = "block";
 }
 </script>
 </body>
