@@ -135,13 +135,36 @@ transition:all .15s ease;
 .game-btn:hover{
 transform:scale(1.03);
 }
-  @media (max-width:600px){
+@media (max-width:600px){
 
-.games-grid{
-grid-template-columns:1fr;
-max-width:320px;
-}
+    .games-grid{
+        grid-template-columns:1fr;
+        max-width:320px;
+    }
 
+    #loginModal > div{
+        width:85vw !important;
+        padding:25px 20px !important;
+        margin:80px auto !important;
+        border-width:4px !important;
+    }
+
+    #loginModal img{
+        width:80px !important;
+    }
+
+    #loginModal h2{
+        font-size:32px !important;
+    }
+
+    #loginModal p{
+        font-size:16px !important;
+        line-height:1.4;
+    }
+
+    #loginEmail{
+        width:85% !important;
+    }
 }
 </style>
 </head>
@@ -193,7 +216,7 @@ max-width:320px;
      ">
 
     <div style="
-     width:360px;
+    width:min(360px, 85vw);
      margin:120px auto;
      background:#0F172A;
      padding:40px;
@@ -220,7 +243,7 @@ max-width:320px;
         margin-bottom:25px;
     ">
         Enter your TALNET email address to
-        continue your learning journey.
+        continue.
     </p>
 
     <input
