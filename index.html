@@ -154,28 +154,28 @@ max-width:320px;
 
 <div class="games-grid">
 
-<button class="game-btn" onclick="location.href='games/topo/'">
+<button class="game-btn" onclick="launchGame('games/topo/')">
 🌍 WRK Topo Quiz
 </button>
 
-  <button class="game-btn" onclick="location.href='games/AIRIMP-match-learn/'">
+  <button class="game-btn" onclick="launchGame('games/AIRIMP-match-learn/')">
 ✈️ AIRIMP Match & Learn
 </button>
   
-<button class="game-btn" onclick="location.href='games/match-learn/'">
+<button class="game-btn" onclick="launchGame('games/match-learn/')">
 🧩 WRK Match & Learn
 </button> 
 
-  <button class="game-btn" onclick="location.href='games/Airline%20Message%20Builder/'">
+  <button class="game-btn" onclick="launchGame('games/Airline%20Message%20Builder/')">
 📨 Airline Message Builder
 </button>
   
-<button class="game-btn" onclick="location.href='games/wrk_charades/'">
+<button class="game-btn" onclick="launchGame('games/wrk_charades/')">
 🧭 WRK Charades
 </button>
 
 
-<button class="game-btn" onclick="location.href='games/airimp_charades/'">
+<button class="game-btn" onclick="launchGame('games/airimp_charades/')">
 ✈️ AIRIMP Charades
 </button>
 
@@ -186,8 +186,30 @@ max-width:320px;
 <script>
 const QUESTLAB_TOKEN_RUNTIME = "";
 </script>
-
+  
+<script>
+let loggedIn = false;
+let currentUser = null;
+</script>
+  
 <!-- daarna player engine -->
 <script src="player.js"></script>
+
+  <script>
+function launchGame(url){
+
+    if(!loggedIn){
+        document.getElementById(
+            "loginModal"
+        ).style.display = "block";
+
+        window.nextGame = url;
+
+        return;
+    }
+
+    location.href = url;
+}
+</script>
 </body>
 </html>
