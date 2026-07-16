@@ -73,6 +73,25 @@ z-index:999;
 background:#F5CA51;
 color:#0F172A;
 }
+  .qTimerContainer{
+    position:relative;
+    width:140px;
+    margin:20px auto;
+}
+
+.qTimer{
+    width:140px;
+}
+
+#qTime{
+    position:absolute;
+    top:48%;
+    left:48%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size:26px;
+    font-weight:700;
+}
 
 </style>
 </head>
@@ -84,7 +103,17 @@ color:#0F172A;
     ← Back to Game Console
   </button>
 </div>
+<div class="qTimerContainer">
 
+    <img
+        src="../../q.png"
+        class="qTimer">
+
+    <div id="qTime">
+        01:00
+    </div>
+
+</div>
 <h1>IATA Match & Learn</h1>
 
 <div id="setup">
@@ -114,6 +143,7 @@ color:#0F172A;
 </div>
 
 <script src="setup.js"></script>
+  <script src="../../q-timer.js"></script>
   
 </body>
 </html>
