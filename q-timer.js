@@ -1,4 +1,4 @@
-let seconds = 480;
+let seconds = 60;
 
 setInterval(() => {
 
