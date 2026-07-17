@@ -62,7 +62,9 @@ time = 60
 
 let tiles=[]
 
-const selectedPairs = shuffle([...data.pairs]).slice(0,7)
+const selectedPairs =
+    shuffle([...data])
+    .slice(0,7)
 
 selectedPairs.forEach(pair=>{
 if(gameType==="iata-airline"){
