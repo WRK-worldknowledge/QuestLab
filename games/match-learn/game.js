@@ -198,21 +198,6 @@ grid.innerHTML=""
 
 tiles.forEach((tile,index)=>{
 
-// timer op positie 2 (midden boven)
-if(index === 1){
-
-const timer=document.createElement("div")
-
-timer.className = "qTimerContainer"
-
-timer.innerHTML = `
-    <img src="../../q.png" class="qTimer">
-    <div id="qTime">01:00</div>
-`
-
-grid.appendChild(timer)
-}
-
 const div=document.createElement("div")
 div.className="tile"
 if(tile.type==="image"){
