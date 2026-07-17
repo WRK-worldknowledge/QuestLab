@@ -31,33 +31,16 @@ h2{
 
 h2:hover{
     transform:scale(1.01);
-}
+
       .plus{
     color:#F5CA51;
     margin-right:10px;
+    display:inline-block;
+    transition:transform .2s ease;
 }
-      .backBtn{
 
-    display:block;
-
-    margin:50px auto;
-
-    background:#F5CA51;
-    color:#0F172A;
-
-    border:none;
-
-    border-radius:14px;
-
-    padding:14px 28px;
-
-    font-size:18px;
-    font-weight:700;
-
-    cursor:pointer;
-
-    box-shadow:
-        0 6px 18px rgba(0,0,0,0.35);
+.plus.open{
+    transform:rotate(90deg);
 }
 
 .backBtn:hover{
@@ -95,7 +78,7 @@ ul{
 
 
 <h2>
-      <span class="plus">➕</span>
+      <span class="plus">▶</span>
       About QuestLab</h2>
       <div class="content">
 
@@ -118,7 +101,7 @@ platform featuring multiple games, XP, ranks and badges.
 
 </div>
 
-<h2><span class="plus">➕</span>
+<h2><span class="plus">▶</span>
       Learning through Play</h2>
       <div class="content">
             QuestLab is built on the principle that students learn best when they are actively engaged.
@@ -137,7 +120,7 @@ QuestLab uses:
 
 The goal is not to replace teachers, but to support classroom instruction and encourage students to practice outside lessons.
       </div>
-<h2><span class="plus">➕</span>
+<h2><span class="plus">▶</span>
       Meet the Games</h2>
             <div class="content">
 QuestLab currently features a growing collection of aviation-themed learning games, each designed to support specific knowledge and skills required in Passenger Services.
@@ -187,7 +170,7 @@ Students work together to guess aviation terms.
 
 Together, these games combine microlearning, retrieval practice, immediate feedback and gamification to help students learn faster, retain knowledge longer and enjoy the learning process.
             </div>
-<h2><span class="plus">➕</span>
+<h2><span class="plus">▶</span>
       Ranks & XP</h2>
 <div class="content">
       Every completed mission awards Experience Points (XP).
@@ -206,7 +189,7 @@ Ranks are designed to reflect career progression within the aviation industry.
 
 QuestLab encourages students to practice regularly, celebrate progress and develop confidence in their aviation knowledge.
 </div>
-<h2><span class="plus">➕</span>
+<h2><span class="plus">▶</span>
       Coming Soon...</h2>
 <div class="content">
     QuestLab is still under active development.
@@ -246,18 +229,29 @@ headers.forEach(header=>{
             const content =
                 header.nextElementSibling;
 
+            const arrow =
+                header.querySelector(".plus");
+
             if(
-                content.style.display
-                === "block"
+                content.style.display ===
+                "block"
             ){
 
                 content.style.display =
                     "none";
 
+                arrow.classList.remove(
+                    "open"
+                );
+
             }else{
 
                 content.style.display =
                     "block";
+
+                arrow.classList.add(
+                    "open"
+                );
 
             }
 
