@@ -282,15 +282,12 @@ timeUp()
 return
 }
 
-let min=Math.floor(time/60)
-let sec=time%60
+let min = Math.floor(time/60)
+let sec = time%60
 
-const timerEl = document.getElementById("timer")
-
-timerEl.innerHTML = "<span>" + min + ":" + sec.toString().padStart(2,"0") + "</span>"
-
-const progress = (time / 120) * 360
-timerEl.style.setProperty("--progress", progress + "deg")
+document.getElementById("qTime").innerText =
+    min + ":" +
+    sec.toString().padStart(2,"0");
 
 },1000)
 }
