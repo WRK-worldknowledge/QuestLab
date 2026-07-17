@@ -82,6 +82,51 @@ if(gameType==="iata-airline"){
     })
 
 }
+    if(gameType==="icao-airline"){
+
+    tiles.push({
+        type:"airline",
+        value:pair.airline,
+        match:pair.icao
+    });
+
+    tiles.push({
+        type:"icao",
+        value:pair.icao,
+        match:pair.icao
+    });
+
+}
+    if(gameType==="airline-country"){
+
+    tiles.push({
+        type:"airline",
+        value:pair.airline,
+        match:pair.country
+    });
+
+    tiles.push({
+        type:"country",
+        value:pair.country,
+        match:pair.country
+    });
+
+}
+    if(gameType==="iata-icao"){
+
+    tiles.push({
+        type:"iata",
+        value:pair.iata,
+        match:pair.icao
+    });
+
+    tiles.push({
+        type:"icao",
+        value:pair.icao,
+        match:pair.icao
+    });
+
+}
     }) 
 
 matchesLeft = selectedPairs.length
