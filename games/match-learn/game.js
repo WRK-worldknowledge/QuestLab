@@ -5,7 +5,7 @@ let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
 
-let time=120
+let time=600
 
 let timerInterval
 
@@ -202,10 +202,15 @@ tiles.forEach((tile,index)=>{
 if(index === 1){
 
 const timer=document.createElement("div")
-timer.id="timer"
-timer.innerHTML = "<span>" + Math.floor(time/60) + ":00</span>"
-grid.appendChild(timer)
 
+timer.className = "qTimerContainer"
+
+timer.innerHTML = `
+    <img src="../../q.png" class="qTimer">
+    <div id="qTime">01:00</div>
+`
+
+grid.appendChild(timer)
 }
 
 const div=document.createElement("div")
@@ -294,11 +299,11 @@ return
 let min=Math.floor(time/60)
 let sec=time%60
 
-const timerEl = document.getElementById("timer")
+document.getElementById("qTime").innerText =
+    min + ":" +
+    sec.toString().padStart(2,"0")
 
-timerEl.innerHTML = "<span>" + min + ":" + sec.toString().padStart(2,"0") + "</span>"
-
-const progress = (time / 120) * 360
+const progress = (time / 60) * 360
 timerEl.style.setProperty("--progress", progress + "deg")
 
 },1000)
