@@ -36,21 +36,61 @@ h2:hover{
     color:#F5CA51;
     margin-right:10px;
 }
+      .backBtn{
+
+    display:block;
+
+    margin:50px auto;
+
+    background:#F5CA51;
+    color:#0F172A;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px 28px;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.35);
+}
+
+.backBtn:hover{
+
+    transform:scale(1.03);
+
+}
+      .content{
+
+    display:none;
+
+    max-width:700px;
+
+    margin:0 auto 30px auto;
+
+    text-align:left;
+
+    line-height:1.7;
+
+}
 </style>
 <title>QuestLab Information</title>
 </head>
 
 <body>
 
-<h1>
-      <span class="plus">➕</span>
-      QuestLab Information</h1>
+<h1>QuestLab Information</h1>
 
 
 <h2>
       <span class="plus">➕</span>
-      ➕ About QuestLab</h2>
-      <div>
+      About QuestLab</h2>
+      <div class="content">
 
 <p>
 QuestLab is a gamified learning platform developed for
@@ -72,25 +112,27 @@ platform featuring multiple games, XP, ranks and badges.
 </div>
 
 <h2><span class="plus">➕</span>
-      ➕ Learning through Play</h2>
-      <div>
+      Learning through Play</h2>
+      <div class="content">
             QuestLab is built on the principle that students learn best when they are actively engaged.
 
 Research on gamification, retrieval practice and microlearning shows that short, repeated learning activities improve long-term retention and motivation.
 
 QuestLab uses:
-- Retrieval practice
-- Immediate feedback
-- Timed challenges
-- XP and ranks
-- Self-paced learning
-- Challenge-based learning
+<ul>
+    <li>Retrieval practice</li>
+    <li>Immediate feedback</li>
+    <li>Timed challenges</li>
+    <li>XP and ranks</li>
+    <li>Self-paced learning</li>
+    <li>Challenge-based learning</li>
+</ul>
 
 The goal is not to replace teachers, but to support classroom instruction and encourage students to practice outside lessons.
-
+      </div>
 <h2><span class="plus">➕</span>
-      ➕ Meet the Games</h2>
-            <div>
+      Meet the Games</h2>
+            <div class="content">
 QuestLab currently features a growing collection of aviation-themed learning games, each designed to support specific knowledge and skills required in Passenger Services.
 
 🌍 Topo Quest
@@ -115,50 +157,86 @@ A mobile-only team game where students physically act out airport codes, encoura
 Students work together to guess aviation terms, transforming traditional classroom revision into an engaging and memorable activity.
 
 Together, these games combine microlearning, retrieval practice, immediate feedback and gamification to help students learn faster, retain knowledge longer and enjoy the learning process.
-
+            </div>
 <h2><span class="plus">➕</span>
-      ➕ Ranks & XP</h2>
-<div>
+      Ranks & XP</h2>
+<div class="content">
       Every completed mission awards Experience Points (XP).
 
 As players earn XP, they progress through the QuestLab ranks:
 
-- Junior Flight Attendant
-- Flight Attendant
-- Senior Flight Attendant
-- Assistant Purser
-- Purser
-- Senior Purser
-
+<ul>
+      <li>Junior Flight Attendant</li>
+<li>Flight Attendant</li>
+<li>Senior Flight Attendant</li>
+<li>Assistant Purser</li>
+<li>Purser</li>
+<li>Senior Purser</li>
+</ul>
 Ranks are designed to reflect career progression within the aviation industry.
 
 QuestLab encourages students to practice regularly, celebrate progress and develop confidence in their aviation knowledge.
 </div>
 <h2><span class="plus">➕</span>
-      ➕ Coming Soon...</h2>
-<div>
+      Coming Soon...</h2>
+<div class="content">
     QuestLab is still under active development.
 
 Planned features include:
 
-- Additional aviation games
-- Cargo and Operations modules
-- New badges and achievements
-- Expanded leaderboards
-- Multiplayer challenges
-- Improved analytics
-- Internationalization
-
+<ul>
+<li>Additional aviation games</li>
+<li>Cargo and Operations modules</li>
+<li>New badges and achievements</li>
+<li>Expanded leaderboards</li>
+<li>Multiplayer challenges</li>
+<li>Improved analytics</li>
+<li>Internationalization</li>
+</ul>
 QuestLab began as a small side project in February 2026 and continues to evolve with feedback from students and colleagues.  
 </div>
 
-      <button
+  <button
     class="backBtn"
     onclick="location.href='index.html'">
 
     ← Back to QuestLab
 
 </button>
-      
+ <script>
+
+const headers =
+    document.querySelectorAll("h2");
+
+headers.forEach(header=>{
+
+    header.addEventListener(
+        "click",
+        ()=>{
+
+            const content =
+                header.nextElementSibling;
+
+            if(
+                content.style.display
+                === "block"
+            ){
+
+                content.style.display =
+                    "none";
+
+            }else{
+
+                content.style.display =
+                    "block";
+
+            }
+
+        }
+    );
+
+});
+
+</script>     
 </body>
 </html>
