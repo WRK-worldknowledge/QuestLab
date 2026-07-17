@@ -200,6 +200,26 @@ tiles.forEach((tile,index)=>{
 
 const div=document.createElement("div")
 div.className="tile"
+    if(index === 1){
+
+    const timer =
+        document.createElement("div");
+
+    timer.className =
+        "qTimerContainer";
+
+    timer.innerHTML = `
+        <img
+            src="../../q.png"
+            class="qTimer">
+
+        <div id="qTime">
+            01:00
+        </div>
+    `;
+
+    grid.appendChild(timer);
+}
 if(tile.type==="image"){
 
 const img=document.createElement("img")
