@@ -12,7 +12,7 @@ let timerInterval
 const params = new URLSearchParams(location.search)
 const gameType =
     params.get("type") ||
-    "code-city"
+    "iata-airline"
 
 const file = params.get("data")
 
@@ -40,63 +40,7 @@ alert("Dataset failed to load")
 
 }
 
-// MODULE EXAM
-if(module){
 
-fetch("data/dataset.json")
-.then(res=>res.json())
-.then(data=>{
-
-const datasets = data.dataset
-
-const moduleFiles=datasets.filter(d=>d.module===module)
-
-Promise.all(
-moduleFiles.map(d=>fetch("data/"+d.file).then(r=>r.json()))
-)
-.then(allData=>{
-
-let combined={pairs:[]}
-
-allData.forEach(d=>{
-combined.pairs.push(...d.pairs)
-})
-
-startGame(combined)
-
-})
-
-})
-
-}
-
-// FINAL EXAM
-if(final){
-
-fetch("data/dataset.json")
-.then(res=>res.json())
-.then(data=>{
-
-const datasets = data.dataset
-
-Promise.all(
-datasets.map(d=>fetch("data/"+d.file).then(r=>r.json()))
-)
-.then(allData=>{
-
-let combined={pairs:[]}
-
-allData.forEach(d=>{
-combined.pairs.push(...d.pairs)
-})
-
-startGame(combined)
-
-})
-
-})
-
-}
 function shuffle(array){
 
 for(let i = array.length - 1; i > 0; i--){
