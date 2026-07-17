@@ -5,6 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>QuestLab</title>
 <style>
+  #infoBtn{
+
+    position:fixed;
+
+    top:15px;
+    right:15px;
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:#F5CA51;
+    color:#0F172A;
+
+    border:none;
+
+    font-size:24px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    z-index:1000;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.3);
+}
+
+#infoBtn:hover{
+
+    transform:scale(1.05);
+
+}
+  
 body {
   background: #0F172A;
   color: #F8FAFC;
@@ -185,6 +219,15 @@ transform:scale(1.03);
 </style>
 </head>
 <body>
+
+<button
+    id="infoBtn"
+    onclick="location.href='info.html'">
+
+    ⓘ
+
+</button>
+
   <div id="playerCard" class="playerCard"></div>
 
 <img class="logo main-logo" src="logo.png" alt="QuestLab logo">
