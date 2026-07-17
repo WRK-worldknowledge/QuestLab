@@ -179,10 +179,23 @@ tiles.forEach((tile,index)=>{
 // timer op positie 2 (midden boven)
 if(index === 1){
 
-const timer=document.createElement("div")
-timer.id="timer"
-timer.innerHTML = "<span>" + Math.floor(time/60) + ":00</span>"
-grid.appendChild(timer)
+    const timer =
+        document.createElement("div");
+
+    timer.className =
+        "qTimerContainer";
+
+    timer.innerHTML = `
+        <img
+            src="../../q.png"
+            class="qTimer">
+
+        <div id="qTime">
+            01:00
+        </div>
+    `;
+
+    grid.appendChild(timer);
 
 }
 
