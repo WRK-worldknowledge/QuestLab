@@ -229,7 +229,7 @@ margin-bottom:20px;
 </button>
   
 <button class="game-btn" onclick="launchGame('games/match-learn/')">
-🧩 WRK QuestMatch
+🧩 IATA Code QuestMatch
 </button> 
 
   <button class="game-btn" onclick="launchGame('games/Airline%20Message%20Builder/')">
@@ -237,7 +237,7 @@ margin-bottom:20px;
 </button>
   
 <button class="game-btn" onclick="launchGame('games/wrk_charades/')">
-🧭 WRK Charades
+🧭 IATA Code Charades
 </button>
 
 
@@ -345,6 +345,26 @@ let loggedIn =
   <script>
 function launchGame(url){
 
+    const isMobile =
+        /Android|iPhone|iPad|iPod/i
+        .test(navigator.userAgent);
+
+    if(
+        (
+            url.includes("wrk_charades") ||
+            url.includes("airimp_charades")
+        )
+        && !isMobile
+    ){
+
+        alert(
+            "This game is only available on mobile devices.\n\n" +
+            "Please open QuestLab on your phone to play Charades."
+        );
+
+        return;
+    }
+
     if(!loggedIn){
 
         alert(
@@ -358,7 +378,6 @@ function launchGame(url){
 
     location.href = url;
 }
-
     function studentLogin(){
 
     const email =
@@ -371,7 +390,7 @@ function launchGame(url){
         !email.endsWith("@rebergen.org")
     ){
         alert(
-            "Please use a TALNET or Rebergen email address."
+            "Please use a TALNET or personal demo email address."
         );
         return;
     }
