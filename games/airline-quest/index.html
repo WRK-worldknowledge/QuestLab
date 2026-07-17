@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Airline IATA QuestMatch</title>
+<title>Airline QuestMatch</title>
 
 <style>
 
@@ -85,29 +85,23 @@ color:#0F172A;
   </button>
 </div>
 
-<h1>Airline IATA QuestMatch</h1>
+<h1>Airline QuestMatch</h1>
 
 <div id="setup">
 
 <label>Mode</label>
 <select id="modeSelect">
-<option value="training">Training (per lesson)</option>
-<option value="module">Module exam</option>
-<option value="final">Final exam</option>
+<option value="training">Training</option>
 </select>
   
   <label>Game type</label>
 <select id="gameType">
-<option value="code-city">Code ↔ City</option>
-<option value="code-image">Code ↔ Map</option>
-<option value="city-image">City ↔ Map</option>
+<option value="iata-airline">IATA ↔ Airline</option>
+<option value="icao-airline">ICAO ↔ Airline</option>
+<option value="iata-icao">IATA ↔ ICAO</option>
+<option value="airline-country">Airline ↔ Country</option>
 </select>
 
-<label>Module</label>
-<select id="moduleSelect"></select>
-
-<label>Lesson</label>
-<select id="lessonSelect"></select>
 
 <button id="startBtn">Start mission</button>
 
