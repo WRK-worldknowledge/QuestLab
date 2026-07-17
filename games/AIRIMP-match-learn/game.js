@@ -124,7 +124,7 @@ return array
 }
 function startGame(data){
   clearInterval(timerInterval)
-time = 120
+time = 60
 
 let tiles=[]
 
