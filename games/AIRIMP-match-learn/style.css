@@ -217,3 +217,23 @@ cursor:pointer;
 #finishScreen button:hover{
 transform:scale(1.05);
 }
+.qTimerContainer{
+    position:relative;
+    width:120px;
+    height:120px;
+    margin:auto;
+}
+
+.qTimer{
+    width:120px;
+}
+
+#qTime{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
