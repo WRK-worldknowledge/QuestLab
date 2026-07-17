@@ -33,21 +33,6 @@ margin:auto;
 position:relative;
 }
 
-#timer::after{
-content:"";
-position:absolute;
-width:80%;
-height:80%;
-background:white;
-border-radius:50%;
-z-index:0;
-}
-
-#timer span{
-position:relative;
-z-index:1;
-}
-
 .topRow{
 display:grid;
 grid-template-columns:1fr 140px 1fr;
