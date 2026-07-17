@@ -263,35 +263,30 @@ div.onclick=()=>selectTile(div,tile)
 grid.appendChild(div)
 
 })
-  timerInterval=setInterval(()=>{
+ timerInterval = setInterval(() => {
 
-time--
-      if(time <= 10){
-document.getElementById("timer").style.borderColor = "#ff4d4d"
-}
+    time--;
 
-if(time <= 0){
+    if(time <= 0){
 
-clearInterval(timerInterval)
+        clearInterval(timerInterval);
 
-document.getElementById("timer").innerText = "0:00"
+        document.getElementById("qTime").innerText =
+            "00:00";
 
-timeUp()
+        timeUp();
 
-return
-}
+        return;
+    }
 
-let min=Math.floor(time/60)
-let sec=time%60
+    let min = Math.floor(time / 60);
+    let sec = time % 60;
 
-document.getElementById("qTime").innerText =
-    min + ":" +
-    sec.toString().padStart(2,"0")
+    document.getElementById("qTime").innerText =
+        min + ":" +
+        sec.toString().padStart(2,"0");
 
-const progress = (time / 60) * 360
-timerEl.style.setProperty("--progress", progress + "deg")
-
-},1000)
+},1000);
 }
 function selectTile(div,tile){
 
