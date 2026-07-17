@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airline IATA QuestMatch</title>
+
+<style>
+
+body{
+margin:0;
+font-family:system-ui;
+background:#0F172A;
+color:#F8FAFC;
+text-align:center;
+}
+
+h1{
+margin-top:30px;
+}
+
+#setup{
+max-width:420px;
+margin:30px auto;
+}
+
+select, button{
+width:100%;
+padding:14px;
+margin:10px 0;
+border-radius:12px;
+border:none;
+font-size:18px;
+}
+
+button{
+background:#F5CA51;
+color:#0F172A;
+font-weight:700;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.02);
+}
+
+.backBtn{
+position:fixed;
+top:14px;
+left:14px;
+
+display:inline-block;
+
+background:#0F172A;
+color:#F8FAFC;
+border:2px solid #F5CA51;
+
+padding:8px 14px;
+border-radius:14px;
+
+font-weight:700;
+font-size:14px;
+
+text-decoration:none;
+
+width:auto;
+white-space:nowrap;
+
+z-index:999;
+}
+
+.backBtn:hover{
+background:#F5CA51;
+color:#0F172A;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="back-wrapper">
+  <button class="game-btn back-btn" onclick="location.href='../../index.html'">
+    ← Back to Game Console
+  </button>
+</div>
+
+<h1>Airline IATA QuestMatch</h1>
+
+<div id="setup">
+
+<label>Mode</label>
+<select id="modeSelect">
+<option value="training">Training (per lesson)</option>
+<option value="module">Module exam</option>
+<option value="final">Final exam</option>
+</select>
+  
+  <label>Game type</label>
+<select id="gameType">
+<option value="code-city">Code ↔ City</option>
+<option value="code-image">Code ↔ Map</option>
+<option value="city-image">City ↔ Map</option>
+</select>
+
+<label>Module</label>
+<select id="moduleSelect"></select>
+
+<label>Lesson</label>
+<select id="lessonSelect"></select>
+
+<button id="startBtn">Start mission</button>
+
+</div>
+
+<script src="setup.js"></script>
+  
+</body>
+</html>
