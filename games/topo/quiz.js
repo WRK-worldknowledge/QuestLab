@@ -1,5 +1,9 @@
 startHelp("wrkquiz")
     console.log("quiz.js loaded");
+const demo =
+    new URLSearchParams(
+        location.search
+    ).get("demo") === "true";
 let data = [];
 let questions = [];
 let current = 0;
@@ -719,8 +723,39 @@ finishQuiz();
 // ================= FINISH =================
 function finishQuiz(){
 
-safeToLeave = true;
-quizActive = false;
+    if(demo){
+
+        document.getElementById(
+            "quiz"
+        ).style.display = "none";
+
+        document.getElementById(
+            "result"
+        ).innerHTML = `
+            <h2>
+                Congratulations!
+            </h2>
+
+            <p>
+                You completed the
+                QuestLab demo.
+            </p>
+
+            <p>
+                Thanks for flying
+                with us!
+            </p>
+        `;
+
+        document.getElementById(
+            "result"
+        ).style.display = "block";
+
+        return;
+    }
+
+    safeToLeave = true;
+    quizActive = false;
 
 document.getElementById("quiz").style.display="none";
 document.getElementById("result").style.display="block";
