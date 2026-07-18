@@ -13,7 +13,21 @@ const params = new URLSearchParams(location.search)
 const gameType =
     params.get("type") ||
     "iata-airline"
+const demo =
+    params.get("demo") === "true";
+if(demo){
 
+    fetch(
+        "data/airline_rocva_full_array.json"
+    )
+    .then(res=>res.json())
+    .then(data=>{
+
+        startGame(data);
+
+    });
+
+}
 const file = params.get("data")
 
 console.log("DATA FILE:", file)
@@ -315,24 +329,89 @@ secondPick=null
 }
 function finishGame(){
 
-clearInterval(timerInterval)
+    if(demo){
 
-// XP berekenen
-const timeBonus = Math.max(0, Math.floor(time/20))
-const xp = 20 + timeBonus
+        clearInterval(timerInterval);
 
-// QuestLab XP systeem
-addXP(xp)
+        document.getElementById(
+            "grid"
+        ).innerHTML = "";
 
-const grid = document.getElementById("grid")
-const finish = document.getElementById("finishScreen")
+        const finish =
+            document.getElementById(
+                "finishScreen"
+            );
 
-grid.innerHTML = ""
+        finish.style.display =
+            "block";
 
-finish.style.display = "block"
+        finish.innerHTML = `
+            <h2>
+                Congratulations! ✈️
+            </h2>
 
-document.getElementById("finishScreen").querySelector("h2").innerText =
-"Mission Complete ✈️ +" + xp + " XP"
+            <p>
+                You completed all
+                QuestLab missions.
+            </p>
+
+            <p>
+                Thank you for flying
+                with QuestLab.
+            </p>
+
+            <ul style="text-align:left;display:inline-block;">
+                <li>IATA Code QuestMatch</li>
+                <li>AIRIMP Match & Learn</li>
+                <li>Topo Quest</li>
+                <li>Airline QuestMatch</li>
+            </ul>
+
+            <button onclick="
+                location.href='../../index.html'
+            ">
+                Back to QuestLab
+            </button>
+        `;
+
+        return;
+    }
+
+    // normale afsluiting
+    clearInterval(timerInterval);
+
+    const timeBonus =
+        Math.max(
+            0,
+            Math.floor(time/20)
+        );
+
+    const xp =
+        20 + timeBonus;
+
+    addXP(xp);
+
+    const grid =
+        document.getElementById(
+            "grid"
+        );
+
+    const finish =
+        document.getElementById(
+            "finishScreen"
+        );
+
+    grid.innerHTML = "";
+
+    finish.style.display =
+        "block";
+
+    finish.querySelector("h2")
+        .innerText =
+        "Mission Complete ✈️ +" +
+        xp +
+        " XP";
+}
 
 }
 const overlay = document.getElementById("imageOverlay")
