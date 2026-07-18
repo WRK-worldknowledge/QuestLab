@@ -22,13 +22,44 @@ const demo =
     params.get("demo") === "true"
 if(demo){
 
-    fetch(
-        "data/dataset.json"
-    )
+    fetch("data/dataset.json")
     .then(res=>res.json())
     .then(data=>{
 
-        startGame(data);
+        const datasets =
+            data.dataset;
+
+        Promise.all(
+
+            datasets.map(d=>
+                fetch(
+                    "data/" + d.file
+                )
+                .then(r=>r.json())
+            )
+
+        )
+        .then(allData=>{
+
+            let combined = {
+                pairs:[]
+            };
+
+            allData.forEach(d=>{
+
+                combined.pairs.push(
+                    ...d.pairs
+                );
+
+            });
+
+            console.log(
+                combined.pairs.length
+            );
+
+            startGame(combined);
+
+        });
 
     });
 
