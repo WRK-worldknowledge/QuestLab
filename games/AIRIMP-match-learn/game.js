@@ -5,7 +5,7 @@ let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
 
-let time=120
+let time=60
 
 let timerInterval
 
@@ -13,6 +13,19 @@ const params = new URLSearchParams(location.search)
 const gameType = params.get("type") || "code-description"
 const demo =
     params.get("demo") === "true"
+if(demo){
+
+    fetch(
+        "data/airimp_master.json"
+    )
+    .then(res=>res.json())
+    .then(data=>{
+
+        startGame(data);
+
+    });
+
+}
 const file = params.get("data")
 const module = params.get("module")
 const final = params.get("final")
@@ -356,17 +369,60 @@ secondPick=null
 }
 function finishGame(){
 
-    if(demo){
+  if(demo){
+
+    clearInterval(timerInterval);
+
+    const grid =
+        document.getElementById(
+            "grid"
+        );
+
+    grid.innerHTML = "";
+
+    const finish =
+        document.getElementById(
+            "finishScreen"
+        );
+
+    finish.style.display =
+        "block";
+
+    finish.innerHTML = `
+        <h2>Mission Complete! ✈️</h2>
+
+        <p>
+            Great job, Guest Pilot!
+        </p>
+
+        <p>
+            Next mission:
+            <strong>
+                Topo Quest
+            </strong>
+        </p>
+
+        <p>
+            Redirecting in 5 seconds...
+        </p>
+
+        <button onclick="
+            location.href=
+            '../topo/?demo=true'
+        ">
+            Continue →
+        </button>
+    `;
+
+    setTimeout(()=>{
 
         location.href =
             "../topo/?demo=true";
 
-        return;
+    },5000);
 
-    }
-
-    clearInterval(timerInterval)
-
+    return;
+}
     // XP berekenen
     const timeBonus =
         Math.max(
