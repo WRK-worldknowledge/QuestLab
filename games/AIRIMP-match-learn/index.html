@@ -119,6 +119,9 @@ Airport Picto ↔ Description
 <button id="startBtn">Start mission</button>
 
 </div>
+
+<script src="setup.js"></script>
+  <script>
 const demo =
     new URLSearchParams(
         location.search
@@ -126,15 +129,10 @@ const demo =
 
 if(demo){
 
-    document.getElementById(
-        "setup"
-    ).style.display = "none";
-
     location.href =
         "game.html?demo=true";
-}
 
-<script src="setup.js"></script>
-  
+}
+</script>
 </body>
 </html>
