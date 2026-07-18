@@ -4,6 +4,7 @@ const demo =
     new URLSearchParams(
         location.search
     ).get("demo") === "true";
+
 let data = [];
 let questions = [];
 let current = 0;
@@ -144,6 +145,17 @@ fetch(`./data/wrk-data.json?v=${Date.now()}`)
 
     populateModules();
     setupModeSelector();
+
+    if(demo){
+
+    document.getElementById(
+        "setup"
+    ).style.display = "none";
+
+    startQuizDemo();
+
+    return;
+}
 
     document.getElementById("startBtn")
         .addEventListener("click",startQuiz);
@@ -719,40 +731,78 @@ questions.forEach((q,i)=>{
 finishQuiz();
 
 }
+// ================= DEMO =================
+function startQuizDemo(){
 
+    const choice = confirm(
+        "Guest Pilot Demo\n\n" +
+        "OK = Multiple Choice\n" +
+        "Cancel = Type your answers"
+    );
+
+    document.getElementById(
+        "modeSelect"
+    ).value =
+        choice
+        ? "multiple"
+        : "type";
+
+    questions =
+        shuffle(
+            data.filter(
+                d => d.type === "iata"
+            )
+        ).slice(0,10);
+
+    current = 0;
+    score = 0;
+    quizActive = true;
+
+    document.getElementById(
+        "quiz"
+    ).style.display = "block";
+
+    showQuestion();
+}
 // ================= FINISH =================
 function finishQuiz(){
 
     if(demo){
 
-        document.getElementById(
-            "quiz"
-        ).style.display = "none";
+    document.getElementById(
+        "quiz"
+    ).style.display = "none";
 
-        document.getElementById(
-            "result"
-        ).innerHTML = `
-            <h2>
-                Congratulations!
-            </h2>
+    document.getElementById(
+        "result"
+    ).innerHTML = `
+        <h2>
+            Congratulations! ✈️
+        </h2>
 
-            <p>
-                You completed the
-                QuestLab demo.
-            </p>
+        <p>
+            You completed the
+            QuestLab Guest Pilot Demo.
+        </p>
 
-            <p>
-                Thanks for flying
-                with us!
-            </p>
-        `;
+        <p>
+            Thank you for flying
+            with QuestLab.
+        </p>
 
-        document.getElementById(
-            "result"
-        ).style.display = "block";
+        <button onclick="
+            location.href='../../index.html'
+        ">
+            Back to QuestLab
+        </button>
+    `;
 
-        return;
-    }
+    document.getElementById(
+        "result"
+    ).style.display = "block";
+
+    return;
+}
 
     safeToLeave = true;
     quizActive = false;
