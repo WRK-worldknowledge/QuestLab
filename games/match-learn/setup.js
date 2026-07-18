@@ -30,6 +30,27 @@ if(demo){
     );
 
 }
+if(demo){
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+
+            document
+                .getElementById(
+                    "startBtn"
+                )
+                .onclick = () => {
+
+                    location.href =
+                        "game.html?demo=true";
+
+                };
+
+        }
+    );
+
+}
 
 document.addEventListener("DOMContentLoaded", function(){
   const lessonNames = {
