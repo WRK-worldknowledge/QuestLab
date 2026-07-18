@@ -273,6 +273,21 @@ const QUESTLAB_TOKEN_RUNTIME = "";
 
 <script src="../../player.js"></script>
 <script src="quiz.js"></script>
+   <script>
+
+const demo =
+    new URLSearchParams(
+        location.search
+    ).get("demo") === "true";
+
+if(demo){
+
+    location.href =
+        "game.html?demo=true";
+
+}
+
+</script>
 
 </body>
 </html>
