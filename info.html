@@ -240,6 +240,14 @@ QuestLab began as a small side project in February 2026 and continues to evolve 
     ← Back to QuestLab
 
 </button>
+      
+      <button
+    class="backBtn"
+    id="contactBtn">
+
+    Contact QuestLab
+
+</button>
  <script>
 
 const headers =
@@ -285,6 +293,24 @@ headers.forEach(header=>{
 
 });
 
-</script>     
+</script> 
+      <script>
+
+document.getElementById(
+    "contactBtn"
+).onclick = () => {
+
+    const user = "info";
+    const domain = "rebergen.org";
+
+    window.location.href =
+        "mailto:" +
+        user +
+        "@" +
+        domain +
+        "?subject=QuestLab%20Information";
+};
+
+</script>
 </body>
 </html>
