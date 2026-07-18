@@ -20,6 +20,19 @@ const gameType =
 
 const demo =
     params.get("demo") === "true"
+if(demo){
+
+    fetch(
+        "data/dataset.json"
+    )
+    .then(res=>res.json())
+    .then(data=>{
+
+        startGame(data);
+
+    });
+
+}
 
 const file = params.get("data")
 const module = params.get("module")
