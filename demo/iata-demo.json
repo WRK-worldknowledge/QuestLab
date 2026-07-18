@@ -1,0 +1,9 @@
+[
+  {"city":"Amsterdam","code":"AMS"},
+  {"city":"London","code":"LHR"},
+  {"city":"Paris","code":"CDG"},
+  {"city":"Madrid","code":"MAD"},
+  {"city":"Frankfurt","code":"FRA"},
+  {"city":"Rome","code":"FCO"},
+  {"city":"New York","code":"JFK"}
+]
