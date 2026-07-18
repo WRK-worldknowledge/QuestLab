@@ -7,6 +7,29 @@ const demo =
     params.get("demo") === "true";
 
 alert(demo);
+if(demo){
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+
+            document.getElementById(
+                "setup"
+            ).innerHTML = `
+                <p>
+                    Demo mode<br>
+                    7 random pairs<br>
+                    Estimated time: 1 minute
+                </p>
+
+                <button id="startBtn">
+                    Start Demo
+                </button>
+            `;
+        }
+    );
+
+}
 
 document.addEventListener("DOMContentLoaded", function(){
   const lessonNames = {
