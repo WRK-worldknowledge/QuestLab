@@ -5,7 +5,7 @@ let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
 
-let time=600
+let time=60
 
 let timerInterval
 
@@ -426,35 +426,97 @@ secondPick=null
 
 }
 function finishGame(){
+
     if(demo){
 
-    location.href =
-        "../AIRIMP-match-learn/?demo=true";
+        clearInterval(timerInterval);
 
-    return;
+        const grid =
+            document.getElementById(
+                "grid"
+            );
 
+        grid.innerHTML = "";
+
+        const finish =
+            document.getElementById(
+                "finishScreen"
+            );
+
+        finish.style.display =
+            "block";
+
+        finish.innerHTML = `
+            <h2>Mission Complete! ✈️</h2>
+
+            <p>
+                Great job, Guest Pilot!
+            </p>
+
+            <p>
+                Next mission:
+                <strong>
+                    AIRIMP QuestMatch
+                </strong>
+            </p>
+
+            <p>
+                Redirecting in 5 seconds...
+            </p>
+
+            <button onclick="
+                location.href=
+                '../AIRIMP-match-learn/?demo=true'
+            ">
+                Continue →
+            </button>
+        `;
+
+        setTimeout(()=>{
+
+            location.href =
+                "../AIRIMP-match-learn/?demo=true";
+
+        },5000);
+
+        return;
+    }
+
+    // NORMALE GAME AFSLUITING
+    clearInterval(timerInterval);
+
+    const timeBonus =
+        Math.max(
+            0,
+            Math.floor(time/20)
+        );
+
+    const xp =
+        20 + timeBonus;
+
+    addXP(xp);
+
+    const grid =
+        document.getElementById(
+            "grid"
+        );
+
+    const finish =
+        document.getElementById(
+            "finishScreen"
+        );
+
+    grid.innerHTML = "";
+
+    finish.style.display =
+        "block";
+
+    finish.querySelector("h2").innerText =
+        "Mission Complete ✈️ +" +
+        xp +
+        " XP";
 }
 
-clearInterval(timerInterval)
-
-// XP berekenen
-const timeBonus = Math.max(0, Math.floor(time/20))
-const xp = 20 + timeBonus
-
-// QuestLab XP systeem
-addXP(xp)
-
-const grid = document.getElementById("grid")
-const finish = document.getElementById("finishScreen")
-
-grid.innerHTML = ""
-
-finish.style.display = "block"
-
-document.getElementById("finishScreen").querySelector("h2").innerText =
-"Mission Complete ✈️ +" + xp + " XP"
-
-}
 const overlay = document.getElementById("imageOverlay")
 const overlayImg = document.getElementById("overlayImage")
 
@@ -516,5 +578,4 @@ newBtn.onclick = () => location.reload()
 if(backBtn){
 backBtn.onclick = () => window.history.back()
 }
-
 })
