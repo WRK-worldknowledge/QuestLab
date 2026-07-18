@@ -333,9 +333,12 @@ function finishGame(){
 
         clearInterval(timerInterval);
 
-        document.getElementById(
-            "grid"
-        ).innerHTML = "";
+        const grid =
+            document.getElementById(
+                "grid"
+            );
+
+        grid.innerHTML = "";
 
         const finish =
             document.getElementById(
@@ -347,30 +350,92 @@ function finishGame(){
 
         finish.innerHTML = `
             <h2>
-                Congratulations! ✈️
+                Congratulations, Guest Pilot! ✈️
             </h2>
 
             <p>
-                You completed all
-                QuestLab missions.
+                You have completed the
+                QuestLab Guest Pilot Experience.
+            </p>
+
+            <hr>
+
+            <p>
+                During this demo you have:
+            </p>
+
+            <ul style="
+                text-align:left;
+                max-width:500px;
+                margin:auto;
+            ">
+                <li>
+                    Matched IATA airport codes
+                </li>
+
+                <li>
+                    Learned AIRIMP airline terminology
+                </li>
+
+                <li>
+                    Practiced aviation geography
+                </li>
+
+                <li>
+                    Matched airline names with
+                    IATA and ICAO codes
+                </li>
+            </ul>
+
+            <p>
+                This demo showcases only a
+                small part of QuestLab.
             </p>
 
             <p>
-                Thank you for flying
-                with QuestLab.
+                In the classroom, students can:
             </p>
 
-            <ul style="text-align:left;display:inline-block;">
-                <li>IATA Code QuestMatch</li>
-                <li>AIRIMP Match & Learn</li>
-                <li>Topo Quest</li>
-                <li>Airline QuestMatch</li>
+            <ul style="
+                text-align:left;
+                max-width:500px;
+                margin:auto;
+            ">
+                <li>
+                    Choose their own learning path
+                </li>
+
+                <li>
+                    Practice specific topics repeatedly
+                </li>
+
+                <li>
+                    Earn XP, badges and achievements
+                </li>
+
+                <li>
+                    Complete assessments and module challenges
+                </li>
+
+                <li>
+                    Track their own progress over time
+                </li>
             </ul>
 
+            <p>
+                QuestLab is designed to support
+                self-directed, gamified aviation learning.
+            </p>
+
+            <p>
+                Interested in learning more?
+            </p>
+
             <button onclick="
-                location.href='../../index.html'
+                location.href=
+                'https://www.questlab.nl/contact'
             ">
-                Back to QuestLab
+                Contact QuestLab
             </button>
         `;
 
@@ -411,8 +476,6 @@ function finishGame(){
         "Mission Complete ✈️ +" +
         xp +
         " XP";
-}
-
 }
 const overlay = document.getElementById("imageOverlay")
 const overlayImg = document.getElementById("overlayImage")
