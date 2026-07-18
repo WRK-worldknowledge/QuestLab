@@ -9,8 +9,17 @@ let time=600
 
 let timerInterval
 
-const params = new URLSearchParams(location.search)
-const gameType = params.get("type") || "code-city"
+const params =
+    new URLSearchParams(
+        location.search
+    )
+
+const gameType =
+    params.get("type") ||
+    "code-city"
+
+const demo =
+    params.get("demo") === "true"
 
 const file = params.get("data")
 const module = params.get("module")
@@ -373,6 +382,14 @@ secondPick=null
 
 }
 function finishGame(){
+    if(demo){
+
+    location.href =
+        "../AIRIMP-match-learn/?demo=true";
+
+    return;
+
+}
 
 clearInterval(timerInterval)
 
