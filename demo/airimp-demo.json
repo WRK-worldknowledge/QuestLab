@@ -1,0 +1,9 @@
+[
+  {"term":"Special Meal","code":"SPML"},
+  {"term":"Vegetarian Meal","code":"VGML"},
+  {"term":"Wheelchair Ramp","code":"WCHR"},
+  {"term":"Infant","code":"INF"},
+  {"term":"Extra Seat","code":"EXST"},
+  {"term":"Medical Case","code":"MEDA"},
+  {"term":"Unaccompanied Minor","code":"UMNR"}
+]
