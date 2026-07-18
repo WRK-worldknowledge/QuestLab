@@ -1,3 +1,13 @@
+const params =
+    new URLSearchParams(
+        location.search
+    );
+
+const demo =
+    params.get("demo") === "true";
+
+alert(demo);
+
 document.addEventListener("DOMContentLoaded", function(){
   const lessonNames = {
 
