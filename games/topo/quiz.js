@@ -767,39 +767,51 @@ function startQuizDemo(){
 // ================= FINISH =================
 function finishQuiz(){
 
-    if(demo){
+  if(demo){
 
     document.getElementById(
         "quiz"
     ).style.display = "none";
 
-    document.getElementById(
-        "result"
-    ).innerHTML = `
-        <h2>
-            Congratulations! ✈️
-        </h2>
+    const finish =
+        document.getElementById(
+            "result"
+        );
+
+    finish.innerHTML = `
+        <h2>Congratulations! ✈️</h2>
 
         <p>
-            You completed the
-            QuestLab Guest Pilot Demo.
+            You completed Topo Quest.
         </p>
 
         <p>
-            Thank you for flying
-            with QuestLab.
+            Final mission:
+            <strong>
+                IATA/ICAO Airline Quest
+            </strong>
+        </p>
+
+        <p>
+            Redirecting in 5 seconds...
         </p>
 
         <button onclick="
-            location.href='../../index.html'
+            location.href=
+            '../airline-quest/?demo=true'
         ">
-            Back to QuestLab
+            Continue →
         </button>
     `;
 
-    document.getElementById(
-        "result"
-    ).style.display = "block";
+    finish.style.display = "block";
+
+    setTimeout(()=>{
+
+        location.href =
+            "../airline-quest/?demo=true";
+
+    },5000);
 
     return;
 }
