@@ -5,7 +5,7 @@ let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
 
-let time=600
+let time=60
 
 let timerInterval
 
@@ -431,14 +431,26 @@ function finishGame(){
                 Interested in learning more?
             </p>
 
-            <button onclick="
-                location.href=
-                'https://www.questlab.nl/contact'
-            ">
-                Contact QuestLab
-            </button>
+           <button id="contactBtn">
+    Contact QuestLab
+</button>
         `;
+document
+    .getElementById(
+        "contactBtn"
+    )
+    .onclick = () => {
 
+        const user = "info";
+        const domain = "rebergen.org";
+
+        window.location.href =
+            "mailto:" +
+            user +
+            "@" +
+            domain +
+            "?subject=QuestLab%20Information";
+    };
         return;
     }
 
