@@ -1,3 +1,17 @@
+const demo =
+    new URLSearchParams(
+        location.search
+    ).get("demo") === "true";
+
+if(demo){
+
+    document.getElementById(
+        "setup"
+    ).style.display = "none";
+
+    location.href =
+        "game.html?demo=true";
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
