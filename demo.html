@@ -1,6 +1,73 @@
+<style>
+
+body{
+    margin:0;
+    font-family:system-ui;
+    background:#0F172A;
+    color:#F8FAFC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+#container{
+    max-width:700px;
+    padding:40px;
+    text-align:center;
+}
+
+h1{
+    color:#F5CA51;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+p{
+    line-height:1.7;
+}
+
+ul{
+    text-align:left;
+    display:inline-block;
+    line-height:1.8;
+}
+
+button{
+    background:#F5CA51;
+    color:#0F172A;
+    border:none;
+    border-radius:14px;
+    padding:16px 32px;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    margin-top:30px;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+.card{
+    background:#111E3A;
+    border:2px solid #F5CA51;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.4);
+}
+
+</style>
+
 <body>
 
-<h1>QuestLab Demo</h1>
+<div id="container">
+
+<div class="card">
+
+<h1>Guest Pilot Experience (Demo)</h1>
 
 <p>
 Welcome aboard, Guest Pilot!
@@ -23,23 +90,28 @@ Estimated completion time:
 </p>
 
 <button onclick="startDemo()">
-    START DEMO
+    Begin Your Flight →
 </button>
-
+<p style="
+    font-size:14px;
+    opacity:.7;
+    margin-top:30px;
+">
+    QuestLab Guest Pilot Experience • Moonshot Competition 2026
+</p>
+    
 <script>
 
 function startDemo(){
 
-    alert(
-        "games/match-learn/?demo=true"
-    );
-
+   
     location.href =
         "games/match-learn/?demo=true";
 
 }
 
 </script>
-
+</div>
+</div>
 </body>
 </html>
