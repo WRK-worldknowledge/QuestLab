@@ -11,7 +11,8 @@ let timerInterval
 
 const params = new URLSearchParams(location.search)
 const gameType = params.get("type") || "code-description"
-
+const demo =
+    params.get("demo") === "true"
 const file = params.get("data")
 const module = params.get("module")
 const final = params.get("final")
@@ -267,19 +268,17 @@ grid.appendChild(div)
   timerInterval=setInterval(()=>{
 
 time--
-      if(time <= 10){
-document.getElementById("timer").style.borderColor = "#ff4d4d"
-}
 
 if(time <= 0){
 
-clearInterval(timerInterval)
+    clearInterval(timerInterval);
 
-document.getElementById("timer").innerText = "0:00"
+    document.getElementById("qTime").innerText =
+        "0:00";
 
-timeUp()
+    timeUp();
 
-return
+    return;
 }
 
 let min = Math.floor(time/60)
@@ -357,26 +356,56 @@ secondPick=null
 }
 function finishGame(){
 
-clearInterval(timerInterval)
+    if(demo){
 
-// XP berekenen
-const timeBonus = Math.max(0, Math.floor(time/20))
-const xp = 20 + timeBonus
+        location.href =
+            "../topo/?demo=true";
 
-// QuestLab XP systeem
-addXP(xp)
+        return;
 
-const grid = document.getElementById("grid")
-const finish = document.getElementById("finishScreen")
+    }
 
-grid.innerHTML = ""
+    clearInterval(timerInterval)
 
-finish.style.display = "block"
+    // XP berekenen
+    const timeBonus =
+        Math.max(
+            0,
+            Math.floor(time/20)
+        )
 
-document.getElementById("finishScreen").querySelector("h2").innerText =
-"Mission Complete ✈️ +" + xp + " XP"
+    const xp =
+        20 + timeBonus
+
+    addXP(xp)
+
+    const grid =
+        document.getElementById(
+            "grid"
+        )
+
+    const finish =
+        document.getElementById(
+            "finishScreen"
+        )
+
+    grid.innerHTML = ""
+
+    finish.style.display =
+        "block"
+
+    document
+        .getElementById(
+            "finishScreen"
+        )
+        .querySelector("h2")
+        .innerText =
+            "Mission Complete ✈️ +" +
+            xp +
+            " XP"
 
 }
+
 const overlay = document.getElementById("imageOverlay")
 const overlayImg = document.getElementById("overlayImage")
 
