@@ -59,10 +59,10 @@ button{
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   <script>
 
-const supabase =
+const sb =
     window.supabase.createClient(
         "https://kwndokcgtzboteszodqt.supabase.co",
-        "sb_publishable_tC3c3BMT5jMdha5CBGMaNA_Osx70V3Q"
+        "sb_publishable_..."
     );
 
 </script>
@@ -73,9 +73,8 @@ document
 .onclick = async () => {
 
     const { error } =
-        await supabase
-        .from(
-            "contact_messages"
+        await sb
+    .from("contact_messages")
         )
         .insert([{
 
