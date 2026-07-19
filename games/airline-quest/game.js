@@ -491,10 +491,7 @@ document
         const domain = "rebergen.org";
 
         window.location.href =
-            "mailto:" +
-            user +
-            "@" +
-            domain +
+    "/contact.html";
             "?subject=QuestLab%20Information";
     };
         return;
