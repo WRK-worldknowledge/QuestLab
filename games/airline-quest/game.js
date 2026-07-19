@@ -4,6 +4,7 @@ let lastTap = 0
 let secondPick=null
 
 let matchesLeft=0   // ⭐ NIEUW
+let isChecking = false;
 
 let time=60
 
@@ -265,57 +266,102 @@ grid.appendChild(div)
 }
 function selectTile(div,tile){
 
-if(firstPick && firstPick.div === div) return
+    if(isChecking) return;
 
-if(firstPick==null){
+    if(firstPick && firstPick.div === div)
+        return;
 
-firstPick={div,tile}
-div.classList.add("selected")
+    if(firstPick == null){
 
-return
-}
+        firstPick = {div,tile};
 
-secondPick={div,tile}
+        div.classList.add(
+            "selected"
+        );
 
-checkMatch()
+        return;
+    }
 
+    secondPick = {div,tile};
+
+    checkMatch();
 }
 
 function checkMatch(){
 
-if(firstPick.tile.match===secondPick.tile.match
-&& firstPick.tile.type!==secondPick.tile.type){
+    isChecking = true;
 
-firstPick.div.classList.add("flip","correct")
-secondPick.div.classList.add("flip","correct")
+    if(
+        firstPick.tile.match === secondPick.tile.match &&
+        firstPick.tile.type !== secondPick.tile.type
+    ){
 
-setTimeout(()=>{
+        firstPick.div.classList.add(
+            "flip",
+            "correct"
+        );
 
-firstPick.div.style.visibility="hidden"
-secondPick.div.style.visibility="hidden"
+        secondPick.div.classList.add(
+            "flip",
+            "correct"
+        );
 
-matchesLeft--   // ⭐ nieuwe match
+        setTimeout(()=>{
 
-if(matchesLeft===0){
-finishGame()
-  clearInterval(timerInterval)
-}
+            firstPick.div.style.visibility =
+                "hidden";
 
-reset()
-},500)
+            secondPick.div.style.visibility =
+                "hidden";
 
-}else{
+            matchesLeft--;
 
-firstPick.div.classList.add("wrong")
-secondPick.div.classList.add("wrong")
+            if(matchesLeft === 0){
 
-setTimeout(()=>{
-firstPick.div.classList.remove("wrong")
-secondPick.div.classList.remove("wrong")
-reset()
-},600)
+                finishGame();
+                clearInterval(
+                    timerInterval
+                );
 
-}
+            }
+
+            reset();
+
+            isChecking = false;
+
+        },500);
+
+    }else{
+
+        firstPick.div.classList.add(
+            "wrong"
+        );
+
+        secondPick.div.classList.add(
+            "wrong"
+        );
+
+        setTimeout(()=>{
+
+            if(firstPick){
+                firstPick.div.classList.remove(
+                    "wrong"
+                );
+            }
+
+            if(secondPick){
+                secondPick.div.classList.remove(
+                    "wrong"
+                );
+            }
+
+            reset();
+
+            isChecking = false;
+
+        },600);
+
+    }
 }
 
 function reset(){
