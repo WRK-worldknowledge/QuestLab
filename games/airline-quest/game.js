@@ -477,8 +477,18 @@ function finishGame(){
                 Interested in learning more?
             </p>
 
-           <button id="contactBtn">
+          <button id="contactBtn">
     Contact QuestLab
+</button>
+
+<br><br>
+
+<button
+    onclick="
+        location.href='/'
+    "
+>
+    Return to QuestLab Home
 </button>
         `;
 document
