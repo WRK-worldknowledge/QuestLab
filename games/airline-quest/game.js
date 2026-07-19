@@ -484,6 +484,7 @@ function finishGame(){
 <br><br>
 
 <button
+    class="secondaryBtn"
     onclick="
         location.href='/'
     "
