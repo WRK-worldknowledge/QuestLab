@@ -296,20 +296,16 @@ headers.forEach(header=>{
 </script> 
       <script>
 
-document.getElementById(
-    "contactBtn"
-).onclick = () => {
+document
+    .getElementById(
+        "contactBtn"
+    )
+    .onclick = () => {
 
-    const user = "info";
-    const domain = "rebergen.org";
+        location.href =
+            "/contact.html";
 
-    window.location.href =
-        "mailto:" +
-        user +
-        "@" +
-        domain +
-        "?subject=QuestLab%20Information";
-};
+    };
 
 </script>
 </body>
