@@ -6,7 +6,6 @@ const params =
 const demo =
     params.get("demo") === "true";
 
-alert(demo);
 if(demo){
 
     document.addEventListener(
