@@ -741,11 +741,11 @@ function startQuizDemo(){
     );
 
     document.getElementById(
-        "modeSelect"
-    ).value =
-        choice
-        ? "multiple"
-        : "type";
+    "modeSelect"
+).value =
+    choice
+    ? "mc"
+    : "type";
 
     questions =
         shuffle(
