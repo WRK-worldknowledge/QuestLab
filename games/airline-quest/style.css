@@ -225,3 +225,24 @@ transform:scale(1.05);
     font-weight:700;
     text-shadow:0 0 10px rgba(0,0,0,0.5);
 }
+#finishScreen button{
+    background:#F5CA51;
+    color:#0F172A;
+    border:none;
+    border-radius:14px;
+    padding:14px 28px;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    margin:10px;
+}
+
+#finishScreen button:hover{
+    transform:scale(1.03);
+}
+
+.secondaryBtn{
+    background:#111E3A !important;
+    color:#F8FAFC !important;
+    border:2px solid #F5CA51 !important;
+}
