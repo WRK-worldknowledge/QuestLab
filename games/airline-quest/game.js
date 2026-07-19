@@ -487,12 +487,9 @@ document
     )
     .onclick = () => {
 
-        const user = "info";
-        const domain = "rebergen.org";
+        location.href =
+            "/contact.html";
 
-        window.location.href =
-    "/contact.html";
-            "?subject=QuestLab%20Information";
     };
         return;
     }
