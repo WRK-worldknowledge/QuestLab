@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact QuestLab</title>
 
+<style>
+body{
+    background:#0F172A;
+    color:white;
+    font-family:system-ui;
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+}
+
+input, textarea, button{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border-radius:12px;
+    border:none;
+    box-sizing:border-box;
+}
+
+button{
+    background:#F5CA51;
+    color:#0F172A;
+    font-weight:700;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Contact QuestLab</h1>
+
+<input id="name" placeholder="Name">
+
+<input id="email" placeholder="Email">
+
+<input id="organization"
+       placeholder="Organization">
+
+<textarea
+    id="message"
+    rows="8"
+    placeholder="Tell us a little about your interest in QuestLab">
+</textarea>
+
+<button id="sendBtn">
+    Send Message
+</button>
+
+<p id="status"></p>
+
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script>
+
+const supabase =
+    window.supabase.createClient(
+        "https://kwndokcgtzboteszodqt.supabase.co",
+        "sb_publishable_tC3c3BMT5jMdha5CBGMaNA_Osx70V3Q"
+    );
+
+</script>
+  <script>
+
+document
+.getElementById("sendBtn")
+.onclick = async () => {
+
+    const { error } =
+        await supabase
+        .from(
+            "contact_messages"
+        )
+        .insert([{
+
+            name:
+                document.getElementById(
+                    "name"
+                ).value,
+
+            email:
+                document.getElementById(
+                    "email"
+                ).value,
+
+            organization:
+                document.getElementById(
+                    "organization"
+                ).value,
+
+            message:
+                document.getElementById(
+                    "message"
+                ).value,
+
+            source:
+                "QuestLab Website"
+
+        }]);
+
+    document.getElementById(
+        "status"
+    ).innerText =
+        error
+        ? "Something went wrong."
+        : "Message sent successfully!";
+};
+
+</script>
+</html>
