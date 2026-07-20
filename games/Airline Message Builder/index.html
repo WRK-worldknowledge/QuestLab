@@ -147,6 +147,37 @@ button:hover{
 <div class="subtitle">
 QuestLab Simulator
 </div>
+  <select id="category">
+
+    <option value="all">
+        Mixed Challenge
+    </option>
+
+    <option value="ssr">
+        SSR
+    </option>
+
+    <option value="meals">
+        Meals
+    </option>
+
+    <option value="baggage">
+        Baggage
+    </option>
+
+    <option value="passenger">
+        Passenger Services
+    </option>
+
+    <option value="operations">
+        Operations
+    </option>
+
+    <option value="connections">
+        Connections
+    </option>
+
+</select>
 
   <h2>Mission 1</h2>
 
@@ -194,6 +225,7 @@ let xp = 0;
  let passengers = [];
   let currentPassenger = 0;
   let mistakes = 0;
+  let selectedCategory = "all";
 
   function loadPassenger(){
 
@@ -210,7 +242,11 @@ let xp = 0;
          passengers[currentPassenger].flight;
 
 }
-  fetch("data/passengers.json")
+fetch(
+    "data/" +
+    selectedCategory +
+    ".json"
+)
     .then(response => response.json())
     .then(data => {
 
@@ -313,7 +349,29 @@ document
         }
 
     });
+document
+    .getElementById("category")
+    .addEventListener("change", function(){
 
+        selectedCategory = this.value;
+
+        fetch(
+            "data/" +
+            selectedCategory +
+            ".json"
+        )
+        .then(response => response.json())
+        .then(data => {
+
+            passengers = data.scenarios;
+
+            currentPassenger = 0;
+
+            loadPassenger();
+
+        });
+
+    });
 </script>
 </div>
 <a href="../../index.html" class="backBtn">
