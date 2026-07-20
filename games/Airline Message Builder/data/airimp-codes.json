@@ -1,0 +1,619 @@
+{
+  "codes": [
+    {
+      "code": "BULK",
+      "description": "Bulky Baggage",
+      "category": "Baggage"
+    },
+    {
+      "code": "CBBG",
+      "description": "Cabin Baggage",
+      "category": "Baggage"
+    },
+    {
+      "code": "CLAIMTAG",
+      "description": "Baggage Receipt",
+      "category": "Baggage"
+    },
+    {
+      "code": "FIBAG",
+      "description": "First Bag on Belt",
+      "category": "Baggage"
+    },
+    {
+      "code": "LABAG",
+      "description": "Last Bag on Belt",
+      "category": "Baggage"
+    },
+    {
+      "code": "FRAG",
+      "description": "Fragile Baggage",
+      "category": "Baggage"
+    },
+    {
+      "code": "PIR",
+      "description": "Property Irregularity Report",
+      "category": "Baggage"
+    },
+    {
+      "code": "RUSH",
+      "description": "Rush Baggage",
+      "category": "Baggage"
+    },
+    {
+      "code": "XBAG",
+      "description": "Excess Baggage",
+      "category": "Baggage"
+    },
+    {
+      "code": "ABP",
+      "description": "Able Bodied Passenger",
+      "category": "Passenger"
+    },
+    {
+      "code": "A/C",
+      "description": "Aircraft",
+      "category": "Aircraft"
+    },
+    {
+      "code": "AFT",
+      "description": "Aft Cabin",
+      "category": "Cabin"
+    },
+    {
+      "code": "AML",
+      "description": "Aircraft Maintenance Log",
+      "category": "Aircraft"
+    },
+    {
+      "code": "AOG",
+      "description": "Aircraft on Ground",
+      "category": "Aircraft"
+    },
+    {
+      "code": "APU",
+      "description": "Auxiliary Power Unit",
+      "category": "Aircraft"
+    },
+    {
+      "code": "ATC",
+      "description": "Air Traffic Control",
+      "category": "Operations"
+    },
+    {
+      "code": "CA",
+      "description": "Cabin Attendant",
+      "category": "Cabin"
+    },
+    {
+      "code": "CC",
+      "description": "Cabin Crew",
+      "category": "Cabin"
+    },
+    {
+      "code": "CIM",
+      "description": "Cabin Instruction Manual",
+      "category": "Cabin"
+    },
+    {
+      "code": "CML",
+      "description": "Cabin Maintenance Log",
+      "category": "Cabin"
+    },
+    {
+      "code": "CPT",
+      "description": "Captain",
+      "category": "Cabin"
+    },
+    {
+      "code": "CRD",
+      "description": "Child Restraint Device",
+      "category": "Passenger"
+    },
+    {
+      "code": "CPR",
+      "description": "Cardiopulmonary Resuscitation",
+      "category": "Medical"
+    },
+    {
+      "code": "ELT",
+      "description": "Emergency Locator Transmitter",
+      "category": "Aircraft"
+    },
+    {
+      "code": "FAK",
+      "description": "First Aid Kit",
+      "category": "Medical"
+    },
+    {
+      "code": "FPG",
+      "description": "Fire Proof Gloves",
+      "category": "Cabin"
+    },
+    {
+      "code": "FLT",
+      "description": "Flight",
+      "category": "Operations"
+    },
+    {
+      "code": "HAL",
+      "description": "Halon",
+      "category": "Cabin"
+    },
+    {
+      "code": "IATA",
+      "description": "International Air Transport Association",
+      "category": "Misc"
+    },
+    {
+      "code": "ICAO",
+      "description": "International Civil Aviation Organization",
+      "category": "Misc"
+    },
+    {
+      "code": "INOP",
+      "description": "Inoperative",
+      "category": "Aircraft"
+    },
+    {
+      "code": "LAV",
+      "description": "Lavatory",
+      "category": "Cabin"
+    },
+    {
+      "code": "LSA",
+      "description": "Life Saving Appliances",
+      "category": "Cabin"
+    },
+    {
+      "code": "MEL",
+      "description": "Minimum Equipment List",
+      "category": "Aircraft"
+    },
+    {
+      "code": "MK",
+      "description": "Medical Kit",
+      "category": "Medical"
+    },
+    {
+      "code": "OCC",
+      "description": "Operations Control Center",
+      "category": "Operations"
+    },
+    {
+      "code": "OXYG",
+      "description": "Oxygen",
+      "category": "Medical"
+    },
+    {
+      "code": "PA",
+      "description": "Public Announcement",
+      "category": "Cabin"
+    },
+    {
+      "code": "PBE",
+      "description": "Protective Breathing Equipment",
+      "category": "Cabin"
+    },
+    {
+      "code": "PIL",
+      "description": "Passenger Information List",
+      "category": "Passenger"
+    },
+    {
+      "code": "PUSHBACK",
+      "description": "Aircraft Pushback",
+      "category": "Operations"
+    },
+    {
+      "code": "RTO",
+      "description": "Rejected Take-Off",
+      "category": "Operations"
+    },
+    {
+      "code": "SOP",
+      "description": "Standard Operating Procedures",
+      "category": "Operations"
+    },
+    {
+      "code": "TAXI",
+      "description": "Taxi",
+      "category": "Operations"
+    },
+    {
+      "code": "TURB",
+      "description": "Turbulence",
+      "category": "Operations"
+    },
+    {
+      "code": "WX",
+      "description": "Weather",
+      "category": "Operations"
+    },
+    {
+      "code": "AVML",
+      "description": "Asian Vegetarian Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "BBML",
+      "description": "Baby Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "CHML",
+      "description": "Child Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "DBML",
+      "description": "Diabetic Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "GFML",
+      "description": "Gluten Free Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "HNML",
+      "description": "Hindu Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "LFML",
+      "description": "Low Fat Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "LSML",
+      "description": "Low Sodium Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "KSML",
+      "description": "Kosher Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "MOML",
+      "description": "Muslim Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "NLML",
+      "description": "Non-Lactose Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "RVML",
+      "description": "Raw Vegetarian Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "SFML",
+      "description": "Sea Food Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "SPML",
+      "description": "Special Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "VGML",
+      "description": "Strict Vegetarian Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "VLML",
+      "description": "Western Vegetarian Meal",
+      "category": "Meal"
+    },
+    {
+      "code": "ASAP",
+      "description": "As Soon As Possible",
+      "category": "Timing"
+    },
+    {
+      "code": "ATA",
+      "description": "Actual Time of Arrival",
+      "category": "Timing"
+    },
+    {
+      "code": "ATD",
+      "description": "Actual Time of Departure",
+      "category": "Timing"
+    },
+    {
+      "code": "EBT",
+      "description": "Estimated Block Time",
+      "category": "Timing"
+    },
+    {
+      "code": "ETA",
+      "description": "Estimated Time of Arrival",
+      "category": "Timing"
+    },
+    {
+      "code": "ETD",
+      "description": "Estimated Time of Departure",
+      "category": "Timing"
+    },
+    {
+      "code": "STA",
+      "description": "Scheduled Time of Arrival",
+      "category": "Timing"
+    },
+    {
+      "code": "STD",
+      "description": "Scheduled Time of Departure",
+      "category": "Timing"
+    },
+    {
+      "code": "LIA",
+      "description": "Late Incoming Aircraft",
+      "category": "Operations"
+    },
+    {
+      "code": "LIAC",
+      "description": "Late Incoming Aircraft",
+      "category": "Operations"
+    },
+    {
+      "code": "CANX",
+      "description": "Cancelled Flight",
+      "category": "Operations"
+    },
+    {
+      "code": "LMC",
+      "description": "Last Minute Change",
+      "category": "Operations"
+    },
+    {
+      "code": "NOTOC",
+      "description": "Notification to Captain",
+      "category": "Operations"
+    },
+    {
+      "code": "API",
+      "description": "Advanced Passenger Information",
+      "category": "Passenger"
+    },
+    {
+      "code": "CHD",
+      "description": "Child",
+      "category": "Passenger"
+    },
+    {
+      "code": "CIP",
+      "description": "Commercial Important Passenger",
+      "category": "Passenger"
+    },
+    {
+      "code": "CTC",
+      "description": "Contact Details",
+      "category": "Passenger"
+    },
+    {
+      "code": "INF",
+      "description": "Infant",
+      "category": "Passenger"
+    },
+    {
+      "code": "KMAR",
+      "description": "Royal Military Police",
+      "category": "Passenger"
+    },
+    {
+      "code": "PAP",
+      "description": "Passenger",
+      "category": "Passenger"
+    },
+    {
+      "code": "PAX",
+      "description": "Passengers",
+      "category": "Passenger"
+    },
+    {
+      "code": "TIM",
+      "description": "Travel Information Manual",
+      "category": "Passenger"
+    },
+    {
+      "code": "VIP",
+      "description": "Very Important Person",
+      "category": "Passenger"
+    },
+    {
+      "code": "YP",
+      "description": "Young Passenger",
+      "category": "Passenger"
+    },
+    {
+      "code": "DST",
+      "description": "Daylight Saving Time",
+      "category": "Time"
+    },
+    {
+      "code": "UTC",
+      "description": "Universal Time Coordinated",
+      "category": "Time"
+    },
+    {
+      "code": "ZULU",
+      "description": "Zulu Time",
+      "category": "Time"
+    },
+    {
+      "code": "PNR",
+      "description": "Passenger Name Record",
+      "category": "Passenger"
+    },
+    {
+      "code": "AVIH",
+      "description": "Animal Vivant in Hold",
+      "category": "SSR"
+    },
+    {
+      "code": "BLND",
+      "description": "Blind Passenger",
+      "category": "SSR"
+    },
+    {
+      "code": "BSCT",
+      "description": "Baby Bassinet",
+      "category": "SSR"
+    },
+    {
+      "code": "DEAF",
+      "description": "Deaf Passenger",
+      "category": "SSR"
+    },
+    {
+      "code": "DEPO",
+      "description": "Deportee",
+      "category": "SSR"
+    },
+    {
+      "code": "DEPA",
+      "description": "Deportee Accompanied",
+      "category": "SSR"
+    },
+    {
+      "code": "DEPU",
+      "description": "Deportee Unaccompanied",
+      "category": "SSR"
+    },
+    {
+      "code": "EXST",
+      "description": "Extra Seat",
+      "category": "SSR"
+    },
+    {
+      "code": "INAD",
+      "description": "Inadmissible Passenger",
+      "category": "SSR"
+    },
+    {
+      "code": "MAAS",
+      "description": "Meet and Assist",
+      "category": "SSR"
+    },
+    {
+      "code": "MEDA",
+      "description": "Medical Case",
+      "category": "SSR"
+    },
+    {
+      "code": "PETC",
+      "description": "Pet in Cabin",
+      "category": "SSR"
+    },
+    {
+      "code": "PRM",
+      "description": "Passenger with Reduced Mobility",
+      "category": "SSR"
+    },
+    {
+      "code": "PWD",
+      "description": "Passenger with Disability",
+      "category": "SSR"
+    },
+    {
+      "code": "SEMN",
+      "description": "Seaman",
+      "category": "Passenger"
+    },
+    {
+      "code": "TWOV",
+      "description": "Transit Without Visa",
+      "category": "Passenger"
+    },
+    {
+      "code": "UMNR",
+      "description": "Unaccompanied Minor",
+      "category": "Passenger"
+    },
+    {
+      "code": "WCHC",
+      "description": "Wheelchair Carry On Carry Off",
+      "category": "SSR"
+    },
+    {
+      "code": "WCHR",
+      "description": "Wheelchair Ramp",
+      "category": "SSR"
+    },
+    {
+      "code": "WCHS",
+      "description": "Wheelchair Steps",
+      "category": "SSR"
+    },
+    {
+      "code": "WCOB",
+      "description": "Wheelchair On Board",
+      "category": "SSR"
+    },
+    {
+      "code": "WCMP",
+      "description": "Wheelchair Manual",
+      "category": "SSR"
+    },
+    {
+      "code": "WCBD",
+      "description": "Wheelchair Battery Dry",
+      "category": "SSR"
+    },
+    {
+      "code": "WCBW",
+      "description": "Wheelchair Battery Wet",
+      "category": "SSR"
+    },
+    {
+      "code": "OK",
+      "description": "Confirmed",
+      "category": "Ticketing"
+    },
+    {
+      "code": "RQ",
+      "description": "Requested",
+      "category": "Ticketing"
+    },
+    {
+      "code": "SA",
+      "description": "Seat Available",
+      "category": "Ticketing"
+    },
+    {
+      "code": "NS",
+      "description": "No Seat",
+      "category": "Ticketing"
+    },
+    {
+      "code": "OPEN",
+      "description": "Open Ticket",
+      "category": "Ticketing"
+    },
+    {
+      "code": "COR",
+      "description": "Corresponding Flight",
+      "category": "Connections"
+    },
+    {
+      "code": "NOC",
+      "description": "No Connection",
+      "category": "Connections"
+    },
+    {
+      "code": "MCT",
+      "description": "Minimum Connecting Time",
+      "category": "Connections"
+    },
+    {
+      "code": "SHOCON",
+      "description": "Short Connection",
+      "category": "Connections"
+    }
+  ]
+}
