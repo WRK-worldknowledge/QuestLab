@@ -255,10 +255,19 @@ function checkAnswer(){
 ){
 
         xp += 100;
-        answered = true;
+answered = true;
 
-        document.getElementById("xp").innerText = xp;
+let totalXP =
+    Number(localStorage.getItem("questlabXP")) || 0;
 
+totalXP += 100;
+
+localStorage.setItem(
+    "questlabXP",
+    totalXP
+);
+
+document.getElementById("xp").innerText = xp;
         document.getElementById("feedback").innerHTML =
             "✅ Correct! +100 XP";
 
