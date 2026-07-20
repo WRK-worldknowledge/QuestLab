@@ -1,0 +1,74 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "category": "CONNECTIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/001 MR",
+      "flight": "KL601",
+      "speech": [
+        "My next flight departs in 45 minutes.",
+        "Will I have enough time to connect?"
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "CONNECTIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/002 MR",
+      "flight": "KL602",
+      "speech": [
+        "My incoming flight was delayed.",
+        "I only have 20 minutes to make my connection."
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "CONNECTIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/003 MR",
+      "flight": "KL603",
+      "speech": [
+        "I have already missed my next flight.",
+        "What are my options?"
+      ],
+      "answers": [
+        "MISCON"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "CONNECTIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/004 MR",
+      "flight": "KL604",
+      "speech": [
+        "My itinerary has changed.",
+        "Could you update my connecting flight information?"
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "CONNECTIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/005 MR",
+      "flight": "KL605",
+      "speech": [
+        "I no longer need my connecting flight.",
+        "Please cancel the onward segment."
+      ],
+      "answers": [
+        "NOC"
+      ]
+    }
+  ]
+}

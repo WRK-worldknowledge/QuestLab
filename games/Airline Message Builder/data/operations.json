@@ -1,0 +1,69 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "category": "OPERATIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/001 MR",
+      "flight": "KL601",
+      "speech": [
+        "Ladies and gentlemen, your flight has been delayed by 45 minutes."
+      ],
+      "answers": [
+        "DELAY"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "OPERATIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/002 MR",
+      "flight": "KL602",
+      "speech": [
+        "Unfortunately, today's flight has been cancelled due to operational reasons."
+      ],
+      "answers": [
+        "CANCEL"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "OPERATIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/003 MR",
+      "flight": "KL603",
+      "speech": [
+        "Boarding has now commenced at Gate D12."
+      ],
+      "answers": [
+        "BOARD"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "OPERATIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/004 MR",
+      "flight": "KL604",
+      "speech": [
+        "A passenger's baggage must be removed from the aircraft."
+      ],
+      "answers": [
+        "OFFLOAD"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "OPERATIONS",
+      "avatar": "👤",
+      "name": "PASSENGER/005 MR",
+      "flight": "KL605",
+      "speech": [
+        "The aircraft has diverted due to weather conditions."
+      ],
+      "answers": [
+        "DIVERT"
+      ]
+    }
+  ]
+}

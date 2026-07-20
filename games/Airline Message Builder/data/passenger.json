@@ -1,0 +1,72 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "category": "PASSENGER",
+      "avatar": "👤",
+      "name": "PASSENGER/001 MR",
+      "flight": "KL601",
+      "speech": [
+        "I'm travelling alone today.",
+        "My parents will meet me in Madrid."
+      ],
+      "answers": [
+        "UMNR"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "PASSENGER",
+      "avatar": "👤",
+      "name": "PASSENGER/002 MR",
+      "flight": "KL602",
+      "speech": [
+        "I am travelling on an official visit.",
+        "Special arrangements have been made."
+      ],
+      "answers": [
+        "VIP"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "PASSENGER",
+      "avatar": "👤",
+      "name": "PASSENGER/003 MR",
+      "flight": "KL603",
+      "speech": [
+        "I have access to premium services today."
+      ],
+      "answers": [
+        "CIP"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "PASSENGER",
+      "avatar": "👤",
+      "name": "PASSENGER/004 MR",
+      "flight": "KL604",
+      "speech": [
+        "I am a frequent flyer member.",
+        "Could you add my membership number?"
+      ],
+      "answers": [
+        "FQTV"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "PASSENGER",
+      "avatar": "👤",
+      "name": "PASSENGER/005 MR",
+      "flight": "KL605",
+      "speech": [
+        "I require reduced mobility assistance during my journey."
+      ],
+      "answers": [
+        "PRM"
+      ]
+    }
+  ]
+}
