@@ -159,16 +159,9 @@ Identify the correct SSR code for the passenger.
 
   <div class="passengerCard">
 
-    <div class="avatar">
-    👨‍🦽
-</div>
+   <div class="avatar" id="avatar"></div>
 
-    <div class="speech">
-        Good afternoon.<br>
-        I am travelling to New York.<br>
-        I have my own wheelchair.<br>
-        I cannot use stairs.
-    </div>
+<div class="speech" id="speech"></div>
 
 </div>
 
@@ -176,8 +169,8 @@ Identify the correct SSR code for the passenger.
 
     <h3>CHECK-IN SYSTEM</h3>
 
-    <p><b>Name:</b> SMITH/JOHN MR</p>
-    <p><b>Flight:</b> KL641</p>
+    <p><b>Name:</b> <span id="name"></span></p>
+<p><b>Flight:</b> <span id="flight"></span></p>
 
     <input type="text" id="ssr1" placeholder="SSR Code">
 
@@ -194,6 +187,26 @@ Identify the correct SSR code for the passenger.
 
 let answered = false;
 let xp = 0;
+ let passengers = [];
+  fetch("passengers.json")
+    .then(response => response.json())
+    .then(data => {
+
+        passengers = data.passengers;
+
+        document.getElementById("avatar").innerHTML =
+            passengers[0].avatar;
+
+        document.getElementById("speech").innerHTML =
+            passengers[0].speech;
+
+        document.getElementById("name").innerText =
+            passengers[0].name;
+
+        document.getElementById("flight").innerText =
+            passengers[0].flight;
+
+    });
 
 function checkAnswer(){
 
@@ -205,7 +218,11 @@ function checkAnswer(){
         .value
         .toUpperCase();
 
-    if(answer === "WCHC"){
+    if(
+    passengers[0]
+    .answers
+    .includes(answer)
+){
 
         xp += 100;
         answered = true;
