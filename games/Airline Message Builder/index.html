@@ -257,15 +257,8 @@ function checkAnswer(){
         xp += 100;
 answered = true;
 
-let totalXP =
-    Number(localStorage.getItem("questlabXP")) || 0;
+addXP(100);
 
-totalXP += 100;
-
-localStorage.setItem(
-    "questlabXP",
-    totalXP
-);
 
 document.getElementById("xp").innerText = xp;
         document.getElementById("feedback").innerHTML =
