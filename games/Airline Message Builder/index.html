@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Airline Message Builder</title>
+<title>QuestLab - SSR Check-In Quest</title>
 
 <style>
 
@@ -76,6 +76,63 @@ border-radius:14px;
 .backBtn:hover{
 transform:scale(1.03);
 }
+  .passengerCard,
+.checkinCard{
+    max-width:500px;
+    margin:25px auto;
+    padding:20px;
+    background:#0B1430;
+    border:1px solid #F5CA51;
+    border-radius:20px;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#1E293B;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
+}
+
+.speech{
+    line-height:1.8;
+    font-size:18px;
+}
+
+input{
+    width:80%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin:15px 0;
+    text-transform:uppercase;
+    text-align:center;
+    font-size:18px;
+}
+
+button{
+    padding:12px 24px;
+    background:#F5CA51;
+    color:#0F172A;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+#feedback{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+}
 
 </style>
 </head>
@@ -83,35 +140,100 @@ transform:scale(1.03);
 
 <img src="../../logo.png" class="logo">
 
-<div class="icon">📨</div>
+<div class="icon">👨‍✈️</div>
 
-<h1>COMING SOON</h1>
+<h1>SSR CHECK-IN QUEST</h1>
 
 <div class="subtitle">
-Airline Message Builder
+QuestLab Simulator
 </div>
 
-<div class="card">
-
-<h2>Under Construction</h2>
+  <h2>Mission 1</h2>
 
 <p>
-We're building a realistic airline messaging simulator for
-future aviation professionals.
+Identify the correct SSR code for the passenger.
 </p>
+  
+<div class="card">
 
-<div class="features">
 
-✈️ Create operational airline messages<br>
-✈️ Decode AIRIMP message formats<br>
-✈️ Practice real-world airport communication<br>
-✈️ Earn XP and achievements in QuestLab<br>
-✈️ Scenario-based missions and challenges
+  <div class="passengerCard">
+
+    <div class="avatar">
+    👨‍🦽
+</div>
+
+    <div class="speech">
+        Good afternoon.<br>
+        I am travelling to New York.<br>
+        I have my own wheelchair.<br>
+        I cannot use stairs.
+    </div>
 
 </div>
 
-</div>
+<div class="checkinCard">
 
+    <h3>CHECK-IN SYSTEM</h3>
+
+    <p><b>Name:</b> SMITH/JOHN MR</p>
+    <p><b>Flight:</b> KL641</p>
+
+    <input type="text" id="ssr1" placeholder="SSR Code">
+
+    <button onclick="checkAnswer()">
+        Check Answer
+    </button>
+
+  <div id="feedback"></div>
+
+<p>XP: <span id="xp">0</span></p>
+
+</div>
+<script>
+
+let answered = false;
+let xp = 0;
+
+function checkAnswer(){
+
+    if(answered) return;
+
+    let answer =
+        document
+        .getElementById("ssr1")
+        .value
+        .toUpperCase();
+
+    if(answer === "WCHC"){
+
+        xp += 100;
+        answered = true;
+
+        document.getElementById("xp").innerText = xp;
+
+        document.getElementById("feedback").innerHTML =
+            "✅ Correct! +100 XP";
+
+    } else {
+
+        document.getElementById("feedback").innerHTML =
+            "❌ Try again.";
+    }
+}
+
+document
+    .getElementById("ssr1")
+    .addEventListener("keypress", function(event){
+
+        if(event.key === "Enter"){
+            checkAnswer();
+        }
+
+    });
+
+</script>
+</div>
 <a href="../../index.html" class="backBtn">
 ← Back to QuestLab
 </a>
