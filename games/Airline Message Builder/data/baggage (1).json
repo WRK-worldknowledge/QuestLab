@@ -1,0 +1,122 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "avatar": "🏄",
+      "name": "JOHNSON/MIKE MR",
+      "flight": "KL641",
+      "speech": [
+        "Good afternoon.",
+        "I'm travelling with my surfboard today.",
+        "Will there be an additional charge for oversized baggage?"
+      ],
+      "answers": [
+        "BULK"
+      ]
+    },
+    {
+      "id": 2,
+      "avatar": "👩",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL642",
+      "speech": [
+        "I'd like to keep my backpack with me during the flight.",
+        "Will it fit in the overhead compartment?"
+      ],
+      "answers": [
+        "CBBG"
+      ]
+    },
+    {
+      "id": 3,
+      "avatar": "👨",
+      "name": "SMITH/DAVID MR",
+      "flight": "KL643",
+      "speech": [
+        "I seem to have misplaced my baggage receipt.",
+        "Will I still be able to collect my suitcase?"
+      ],
+      "answers": [
+        "CLAIMTAG"
+      ]
+    },
+    {
+      "id": 4,
+      "avatar": "👵",
+      "name": "WILSON/MARGARET MRS",
+      "flight": "KL644",
+      "speech": [
+        "I only have 30 minutes to catch my next flight.",
+        "Is it possible for my suitcase to be unloaded first?"
+      ],
+      "answers": [
+        "FIBAG"
+      ]
+    },
+    {
+      "id": 5,
+      "avatar": "🎿",
+      "name": "ANDERSON/EMMA MS",
+      "flight": "KL645",
+      "speech": [
+        "I'm travelling with ski equipment.",
+        "I've been told oversized baggage is usually delivered last."
+      ],
+      "answers": [
+        "LABAG"
+      ]
+    },
+    {
+      "id": 6,
+      "avatar": "👴",
+      "name": "BROWN/THOMAS MR",
+      "flight": "KL646",
+      "speech": [
+        "This package contains a very delicate antique vase.",
+        "Could you please mark it as fragile?"
+      ],
+      "answers": [
+        "FRAG"
+      ]
+    },
+    {
+      "id": 7,
+      "avatar": "👨",
+      "name": "LEE/DAVID MR",
+      "flight": "KL647",
+      "speech": [
+        "My suitcase hasn't arrived.",
+        "Everyone else has already collected their baggage."
+      ],
+      "answers": [
+        "PIR"
+      ]
+    },
+    {
+      "id": 8,
+      "avatar": "👩",
+      "name": "MARTINEZ/ISABEL MS",
+      "flight": "KL648",
+      "speech": [
+        "I arrived this morning from New York.",
+        "I've been informed my baggage will arrive on a later flight."
+      ],
+      "answers": [
+        "RUSH"
+      ]
+    },
+    {
+      "id": 9,
+      "avatar": "🧳",
+      "name": "CLARK/JAMES MR",
+      "flight": "KL649",
+      "speech": [
+        "I have three large suitcases.",
+        "Will I need to pay for excess baggage?"
+      ],
+      "answers": [
+        "XBAG"
+      ]
+    }
+  ]
+}
