@@ -1,0 +1,121 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "avatar": "👨",
+      "name": "HARRIS/ROBERT MR",
+      "flight": "KL650",
+      "speech": [
+        "Thank you for your assistance.",
+        "I can confirm that my booking has been successfully processed."
+      ],
+      "answers": [
+        "OK"
+      ]
+    },
+    {
+      "id": 2,
+      "avatar": "👩",
+      "name": "DAVIS/EMILY MS",
+      "flight": "KL651",
+      "speech": [
+        "I submitted a request for an aisle seat yesterday.",
+        "Has my request been approved yet?"
+      ],
+      "answers": [
+        "RQ"
+      ]
+    },
+    {
+      "id": 3,
+      "avatar": "👨",
+      "name": "MILLER/CHRIS MR",
+      "flight": "KL652",
+      "speech": [
+        "I'd like to travel on the next available flight to London.",
+        "Could you tell me if any seats are still available?"
+      ],
+      "answers": [
+        "SA"
+      ]
+    },
+    {
+      "id": 4,
+      "avatar": "👩",
+      "name": "THOMPSON/LAURA MS",
+      "flight": "KL653",
+      "speech": [
+        "My flight is fully booked.",
+        "I've been informed that there are no remaining seats."
+      ],
+      "answers": [
+        "NS"
+      ]
+    },
+    {
+      "id": 5,
+      "avatar": "👨",
+      "name": "WALKER/PETER MR",
+      "flight": "KL654",
+      "speech": [
+        "I purchased my ticket several months ago.",
+        "I haven't decided on my travel date yet."
+      ],
+      "answers": [
+        "OPEN"
+      ]
+    },
+    {
+      "id": 6,
+      "avatar": "👩",
+      "name": "WHITE/SOPHIA MS",
+      "flight": "KL655",
+      "speech": [
+        "I'm flying to Tokyo via Amsterdam today.",
+        "Could you confirm my corresponding flight details?"
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 7,
+      "avatar": "👨",
+      "name": "MOORE/DANIEL MR",
+      "flight": "KL656",
+      "speech": [
+        "My inbound flight arrived two hours late.",
+        "I believe I've missed my onward connection."
+      ],
+      "answers": [
+        "NOC"
+      ]
+    },
+    {
+      "id": 8,
+      "avatar": "👩",
+      "name": "TAYLOR/ANNA MS",
+      "flight": "KL657",
+      "speech": [
+        "I only have 45 minutes between my flights.",
+        "Is that enough time to make my connection?"
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 9,
+      "avatar": "👨",
+      "name": "JACKSON/MARK MR",
+      "flight": "KL658",
+      "speech": [
+        "My next flight departs in 15 minutes.",
+        "Could someone help me reach the gate as quickly as possible?"
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    }
+  ]
+}
