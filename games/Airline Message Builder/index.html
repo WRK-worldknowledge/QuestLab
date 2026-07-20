@@ -193,6 +193,7 @@ let answered = false;
 let xp = 0;
  let passengers = [];
   let currentPassenger = 0;
+  let mistakes = 0;
 
   function loadPassenger(){
 
@@ -229,7 +230,8 @@ let xp = 0;
     }
 
     answered = false;
-
+mistakes = 0;
+    
     document.getElementById("ssr1").value = "";
 
     document.getElementById("feedback").innerHTML = "";
@@ -257,7 +259,7 @@ function checkAnswer(){
         xp += 100;
 answered = true;
 
-addXP(100);
+addXP(3);
 
 
 document.getElementById("xp").innerText = xp;
@@ -266,9 +268,38 @@ document.getElementById("xp").innerText = xp;
 
     } else {
 
+    mistakes++;
+
+    if(mistakes === 1){
+
+        addXP(-1);
+
         document.getElementById("feedback").innerHTML =
-            "❌ Try again.";
+            "❌ Try again. -1 XP";
+
     }
+
+    if(mistakes === 2){
+
+        addXP(-2);
+
+        document.getElementById("feedback").innerHTML =
+            "❌ Try again. -2 XP";
+
+    }
+
+    if(mistakes === 3){
+
+        addXP(-3);
+
+        document.getElementById("feedback").innerHTML =
+            "Correct answer: " +
+            passengers[currentPassenger].answers[0];
+
+        setTimeout(nextPassenger, 3000);
+
+    }
+}
 
 
 }
