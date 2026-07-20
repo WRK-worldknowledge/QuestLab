@@ -242,19 +242,26 @@ let xp = 0;
          passengers[currentPassenger].flight;
 
 }
-fetch(
-    "data/" +
-    selectedCategory +
-    ".json"
-)
+function loadCategory(){
+
+    fetch(
+        "data/" +
+        selectedCategory +
+        ".json"
+    )
     .then(response => response.json())
     .then(data => {
 
-    passengers = data.passengers;
+        passengers = data.scenarios;
 
-    loadPassenger();
+        currentPassenger = 0;
 
-});
+        loadPassenger();
+
+
+    });
+
+}
   function nextPassenger(){
 
     currentPassenger++;
@@ -372,6 +379,7 @@ document
         });
 
     });
+        loadCategory();
 </script>
 </div>
 <a href="../../index.html" class="backBtn">
