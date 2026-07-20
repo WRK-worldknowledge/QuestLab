@@ -1,0 +1,121 @@
+{
+  "scenarios": [
+    {
+      "id": 50,
+      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
+      "name": "BROWN/EMMA MRS",
+      "flight": "KL650",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "OK"
+      ]
+    },
+    {
+      "id": 51,
+      "avatar": "\ud83d\udc68",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL651",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "RQ"
+      ]
+    },
+    {
+      "id": 52,
+      "avatar": "\ud83d\udc68",
+      "name": "BROWN/EMMA MRS",
+      "flight": "KL652",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "SA"
+      ]
+    },
+    {
+      "id": 53,
+      "avatar": "\ud83e\uddd2",
+      "name": "LEE/DAVID MR",
+      "flight": "KL653",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "NS"
+      ]
+    },
+    {
+      "id": 54,
+      "avatar": "\ud83e\uddd2",
+      "name": "BROWN/EMMA MRS",
+      "flight": "KL654",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "OPEN"
+      ]
+    },
+    {
+      "id": 55,
+      "avatar": "\ud83d\udc68",
+      "name": "LEE/DAVID MR",
+      "flight": "KL655",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 56,
+      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
+      "name": "JONES/SARAH MS",
+      "flight": "KL656",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "NOC"
+      ]
+    },
+    {
+      "id": 57,
+      "avatar": "\ud83e\uddd2",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL657",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 58,
+      "avatar": "\ud83d\udc69",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL658",
+      "speech": [
+        "My next flight departs very soon.",
+        "Will I make my connection?"
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    }
+  ]
+}

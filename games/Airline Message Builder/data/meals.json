@@ -1,0 +1,212 @@
+{
+  "scenarios": [
+    {
+      "id": 10,
+      "avatar": "\ud83e\uddd2",
+      "name": "LEE/DAVID MR",
+      "flight": "KL610",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "AVML"
+      ]
+    },
+    {
+      "id": 11,
+      "avatar": "\ud83d\udc75",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL611",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "BBML"
+      ]
+    },
+    {
+      "id": 12,
+      "avatar": "\ud83d\udc68",
+      "name": "BROWN/EMMA MRS",
+      "flight": "KL612",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "CHML"
+      ]
+    },
+    {
+      "id": 13,
+      "avatar": "\ud83d\udc75",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL613",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "DBML"
+      ]
+    },
+    {
+      "id": 14,
+      "avatar": "\ud83e\uddd2",
+      "name": "LEE/DAVID MR",
+      "flight": "KL614",
+      "speech": [
+        "I have celiac disease.",
+        "I requested a gluten-free meal when I booked my ticket."
+      ],
+      "answers": [
+        "GFML"
+      ]
+    },
+    {
+      "id": 15,
+      "avatar": "\ud83d\udc68",
+      "name": "JONES/SARAH MS",
+      "flight": "KL615",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "HNML"
+      ]
+    },
+    {
+      "id": 16,
+      "avatar": "\ud83d\udc75",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL616",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "LFML"
+      ]
+    },
+    {
+      "id": 17,
+      "avatar": "\ud83d\udc68",
+      "name": "BROWN/EMMA MRS",
+      "flight": "KL617",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "LSML"
+      ]
+    },
+    {
+      "id": 18,
+      "avatar": "\ud83d\udc68",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL618",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "KSML"
+      ]
+    },
+    {
+      "id": 19,
+      "avatar": "\ud83d\udc69",
+      "name": "BROWN/EMMA MRS",
+      "flight": "KL619",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "MOML"
+      ]
+    },
+    {
+      "id": 20,
+      "avatar": "\ud83e\uddd2",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL620",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "NLML"
+      ]
+    },
+    {
+      "id": 21,
+      "avatar": "\ud83e\uddd2",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL621",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "RVML"
+      ]
+    },
+    {
+      "id": 22,
+      "avatar": "\ud83e\uddd2",
+      "name": "BROWN/EMMA MRS",
+      "flight": "KL622",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "SFML"
+      ]
+    },
+    {
+      "id": 23,
+      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
+      "name": "LEE/DAVID MR",
+      "flight": "KL623",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "SPML"
+      ]
+    },
+    {
+      "id": 24,
+      "avatar": "\ud83e\uddd2",
+      "name": "LEE/DAVID MR",
+      "flight": "KL624",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "VGML"
+      ]
+    },
+    {
+      "id": 25,
+      "avatar": "\ud83d\udc75",
+      "name": "LEE/DAVID MR",
+      "flight": "KL625",
+      "speech": [
+        "Good afternoon.",
+        "I need assistance regarding {desc.lower()}."
+      ],
+      "answers": [
+        "VLML"
+      ]
+    }
+  ]
+}
