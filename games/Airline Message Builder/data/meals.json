@@ -1,0 +1,164 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "code": "AVML",
+      "speech": [
+        "What is the AIRIMP code for AVML?"
+      ],
+      "answers": [
+        "AVML"
+      ]
+    },
+    {
+      "id": 2,
+      "code": "BBML",
+      "speech": [
+        "What is the AIRIMP code for BBML?"
+      ],
+      "answers": [
+        "BBML"
+      ]
+    },
+    {
+      "id": 3,
+      "code": "CHML",
+      "speech": [
+        "What is the AIRIMP code for CHML?"
+      ],
+      "answers": [
+        "CHML"
+      ]
+    },
+    {
+      "id": 4,
+      "code": "DBML",
+      "speech": [
+        "What is the AIRIMP code for DBML?"
+      ],
+      "answers": [
+        "DBML"
+      ]
+    },
+    {
+      "id": 5,
+      "code": "GFML",
+      "speech": [
+        "What is the AIRIMP code for GFML?"
+      ],
+      "answers": [
+        "GFML"
+      ]
+    },
+    {
+      "id": 6,
+      "code": "HNML",
+      "speech": [
+        "What is the AIRIMP code for HNML?"
+      ],
+      "answers": [
+        "HNML"
+      ]
+    },
+    {
+      "id": 7,
+      "code": "LFML",
+      "speech": [
+        "What is the AIRIMP code for LFML?"
+      ],
+      "answers": [
+        "LFML"
+      ]
+    },
+    {
+      "id": 8,
+      "code": "LSML",
+      "speech": [
+        "What is the AIRIMP code for LSML?"
+      ],
+      "answers": [
+        "LSML"
+      ]
+    },
+    {
+      "id": 9,
+      "code": "KSML",
+      "speech": [
+        "What is the AIRIMP code for KSML?"
+      ],
+      "answers": [
+        "KSML"
+      ]
+    },
+    {
+      "id": 10,
+      "code": "MOML",
+      "speech": [
+        "What is the AIRIMP code for MOML?"
+      ],
+      "answers": [
+        "MOML"
+      ]
+    },
+    {
+      "id": 11,
+      "code": "NLML",
+      "speech": [
+        "What is the AIRIMP code for NLML?"
+      ],
+      "answers": [
+        "NLML"
+      ]
+    },
+    {
+      "id": 12,
+      "code": "RVML",
+      "speech": [
+        "What is the AIRIMP code for RVML?"
+      ],
+      "answers": [
+        "RVML"
+      ]
+    },
+    {
+      "id": 13,
+      "code": "SFML",
+      "speech": [
+        "What is the AIRIMP code for SFML?"
+      ],
+      "answers": [
+        "SFML"
+      ]
+    },
+    {
+      "id": 14,
+      "code": "SPML",
+      "speech": [
+        "What is the AIRIMP code for SPML?"
+      ],
+      "answers": [
+        "SPML"
+      ]
+    },
+    {
+      "id": 15,
+      "code": "VGML",
+      "speech": [
+        "What is the AIRIMP code for VGML?"
+      ],
+      "answers": [
+        "VGML"
+      ]
+    },
+    {
+      "id": 16,
+      "code": "VLML",
+      "speech": [
+        "What is the AIRIMP code for VLML?"
+      ],
+      "answers": [
+        "VLML"
+      ]
+    }
+  ]
+}

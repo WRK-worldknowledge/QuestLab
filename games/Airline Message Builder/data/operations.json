@@ -1,0 +1,124 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "code": "CANX",
+      "speech": [
+        "What is the AIRIMP code for CANX?"
+      ],
+      "answers": [
+        "CANX"
+      ]
+    },
+    {
+      "id": 2,
+      "code": "LMC",
+      "speech": [
+        "What is the AIRIMP code for LMC?"
+      ],
+      "answers": [
+        "LMC"
+      ]
+    },
+    {
+      "id": 3,
+      "code": "NOTOC",
+      "speech": [
+        "What is the AIRIMP code for NOTOC?"
+      ],
+      "answers": [
+        "NOTOC"
+      ]
+    },
+    {
+      "id": 4,
+      "code": "API",
+      "speech": [
+        "What is the AIRIMP code for API?"
+      ],
+      "answers": [
+        "API"
+      ]
+    },
+    {
+      "id": 5,
+      "code": "ATA",
+      "speech": [
+        "What is the AIRIMP code for ATA?"
+      ],
+      "answers": [
+        "ATA"
+      ]
+    },
+    {
+      "id": 6,
+      "code": "ATD",
+      "speech": [
+        "What is the AIRIMP code for ATD?"
+      ],
+      "answers": [
+        "ATD"
+      ]
+    },
+    {
+      "id": 7,
+      "code": "ETA",
+      "speech": [
+        "What is the AIRIMP code for ETA?"
+      ],
+      "answers": [
+        "ETA"
+      ]
+    },
+    {
+      "id": 8,
+      "code": "ETD",
+      "speech": [
+        "What is the AIRIMP code for ETD?"
+      ],
+      "answers": [
+        "ETD"
+      ]
+    },
+    {
+      "id": 9,
+      "code": "STA",
+      "speech": [
+        "What is the AIRIMP code for STA?"
+      ],
+      "answers": [
+        "STA"
+      ]
+    },
+    {
+      "id": 10,
+      "code": "STD",
+      "speech": [
+        "What is the AIRIMP code for STD?"
+      ],
+      "answers": [
+        "STD"
+      ]
+    },
+    {
+      "id": 11,
+      "code": "LIA",
+      "speech": [
+        "What is the AIRIMP code for LIA?"
+      ],
+      "answers": [
+        "LIA"
+      ]
+    },
+    {
+      "id": 12,
+      "code": "LIAC",
+      "speech": [
+        "What is the AIRIMP code for LIAC?"
+      ],
+      "answers": [
+        "LIAC"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "code": "COR",
+      "speech": [
+        "What is the AIRIMP code for COR?"
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 2,
+      "code": "NOC",
+      "speech": [
+        "What is the AIRIMP code for NOC?"
+      ],
+      "answers": [
+        "NOC"
+      ]
+    },
+    {
+      "id": 3,
+      "code": "MCT",
+      "speech": [
+        "What is the AIRIMP code for MCT?"
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 4,
+      "code": "SHOCON",
+      "speech": [
+        "What is the AIRIMP code for SHOCON?"
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    }
+  ]
+}
