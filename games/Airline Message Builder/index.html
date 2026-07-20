@@ -229,18 +229,16 @@ let xp = 0;
 
   function loadPassenger(){
 
-    document.getElementById("avatar").innerHTML =
-         passengers[currentPassenger].avatar;
+    document.getElementById("avatar").innerHTML = "✈️";
 
     document.getElementById("speech").innerHTML =
-         passengers[currentPassenger].speech.join("<br>");
+        passengers[currentPassenger].speech.join("<br>");
 
     document.getElementById("name").innerText =
-         passengers[currentPassenger].name;
+        passengers[currentPassenger].code;
 
     document.getElementById("flight").innerText =
-         passengers[currentPassenger].flight;
-
+        "AIRIMP";
 }
 function loadCategory(){
 
