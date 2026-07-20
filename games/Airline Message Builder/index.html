@@ -182,31 +182,61 @@ Identify the correct SSR code for the passenger.
 
 <p>XP: <span id="xp">0</span></p>
 
+   <button onclick="nextPassenger()">
+    Next Passenger
+</button>
+
 </div>
 <script>
 
 let answered = false;
 let xp = 0;
  let passengers = [];
+  let currentPassenger = 0;
+
+  function loadPassenger(){
+
+    document.getElementById("avatar").innerHTML =
+         passengers[currentPassenger].avatar;
+
+    document.getElementById("speech").innerHTML =
+         passengers[currentPassenger].speech.join("<br>");
+
+    document.getElementById("name").innerText =
+         passengers[currentPassenger].name;
+
+    document.getElementById("flight").innerText =
+         passengers[currentPassenger].flight;
+
+}
   fetch("data/passengers.json")
     .then(response => response.json())
     .then(data => {
 
-        passengers = data.passengers;
+    passengers = data.passengers;
 
-        document.getElementById("avatar").innerHTML =
-            passengers[0].avatar;
+    loadPassenger();
 
-document.getElementById("speech").innerHTML =
-    passengers[0].speech.join("<br>");
+});
+  function nextPassenger(){
 
-        document.getElementById("name").innerText =
-            passengers[0].name;
+    currentPassenger++;
 
-        document.getElementById("flight").innerText =
-            passengers[0].flight;
+    if(currentPassenger >= passengers.length){
 
-    });
+        currentPassenger = 0;
+
+    }
+
+    answered = false;
+
+    document.getElementById("ssr1").value = "";
+
+    document.getElementById("feedback").innerHTML = "";
+
+    loadPassenger();
+
+}
 
 function checkAnswer(){
 
@@ -219,9 +249,9 @@ function checkAnswer(){
         .toUpperCase();
 
     if(
-    passengers[0]
-    .answers
-    .includes(answer)
+    passengers[currentPassenger]
+        .answers
+        .includes(answer)
 ){
 
         xp += 100;
@@ -237,6 +267,8 @@ function checkAnswer(){
         document.getElementById("feedback").innerHTML =
             "❌ Try again.";
     }
+
+
 }
 
 document
