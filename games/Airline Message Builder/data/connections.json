@@ -1,0 +1,454 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍🦽",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL102",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍🦽",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL641",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "CONNECTIONS",
+      "avatar": "✈️",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL743",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍✈️",
+      "name": "JONES/EMILY MS",
+      "flight": "KL102",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "NOC"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "CONNECTIONS",
+      "avatar": "👨",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL743",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "NOC"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "CONNECTIONS",
+      "avatar": "👩‍🦳",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL102",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "NOC"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "CONNECTIONS",
+      "avatar": "🧳",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL102",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍🦽",
+      "name": "JONES/EMILY MS",
+      "flight": "KL641",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "CONNECTIONS",
+      "avatar": "✈️",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL1287",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "CONNECTIONS",
+      "avatar": "👩‍🦳",
+      "name": "JONES/EMILY MS",
+      "flight": "KL591",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "CONNECTIONS",
+      "avatar": "👨",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL743",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "CONNECTIONS",
+      "avatar": "👨",
+      "name": "LEE/DAVID MR",
+      "flight": "KL591",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    },
+    {
+      "id": 13,
+      "category": "CONNECTIONS",
+      "avatar": "🧳",
+      "name": "JONES/EMILY MS",
+      "flight": "KL1287",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "THRCON"
+      ]
+    },
+    {
+      "id": 14,
+      "category": "CONNECTIONS",
+      "avatar": "👩",
+      "name": "LEE/DAVID MR",
+      "flight": "KL591",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "THRCON"
+      ]
+    },
+    {
+      "id": 15,
+      "category": "CONNECTIONS",
+      "avatar": "👩‍🦳",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL875",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "THRCON"
+      ]
+    },
+    {
+      "id": 16,
+      "category": "CONNECTIONS",
+      "avatar": "🧳",
+      "name": "JONES/EMILY MS",
+      "flight": "KL875",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "MISCON"
+      ]
+    },
+    {
+      "id": 17,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍🦽",
+      "name": "LEE/DAVID MR",
+      "flight": "KL875",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "MISCON"
+      ]
+    },
+    {
+      "id": 18,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍✈️",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL641",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "MISCON"
+      ]
+    },
+    {
+      "id": 19,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍✈️",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL591",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": 20,
+      "category": "CONNECTIONS",
+      "avatar": "🍽️",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL102",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": 21,
+      "category": "CONNECTIONS",
+      "avatar": "✈️",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL875",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": 22,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍✈️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL743",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "REBOOK"
+      ]
+    },
+    {
+      "id": 23,
+      "category": "CONNECTIONS",
+      "avatar": "🍽️",
+      "name": "JONES/EMILY MS",
+      "flight": "KL743",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "REBOOK"
+      ]
+    },
+    {
+      "id": 24,
+      "category": "CONNECTIONS",
+      "avatar": "🧳",
+      "name": "JONES/EMILY MS",
+      "flight": "KL875",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "REBOOK"
+      ]
+    },
+    {
+      "id": 25,
+      "category": "CONNECTIONS",
+      "avatar": "✈️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL102",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "STBY"
+      ]
+    },
+    {
+      "id": 26,
+      "category": "CONNECTIONS",
+      "avatar": "👩‍🦳",
+      "name": "LEE/DAVID MR",
+      "flight": "KL743",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "STBY"
+      ]
+    },
+    {
+      "id": 27,
+      "category": "CONNECTIONS",
+      "avatar": "🧳",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL591",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "STBY"
+      ]
+    },
+    {
+      "id": 28,
+      "category": "CONNECTIONS",
+      "avatar": "👨‍✈️",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL1287",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "CONX"
+      ]
+    },
+    {
+      "id": 29,
+      "category": "CONNECTIONS",
+      "avatar": "👨",
+      "name": "JONES/EMILY MS",
+      "flight": "KL641",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "CONX"
+      ]
+    },
+    {
+      "id": 30,
+      "category": "CONNECTIONS",
+      "avatar": "🧳",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL1287",
+      "speech": [
+        "I have a connecting flight.",
+        "I am concerned about my transfer.",
+        "Could you check my itinerary?"
+      ],
+      "answers": [
+        "CONX"
+      ]
+    }
+  ]
+}

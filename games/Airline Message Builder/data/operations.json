@@ -1,0 +1,454 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "category": "OPERATIONS",
+      "avatar": "✈️",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL875",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "DELAY"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "OPERATIONS",
+      "avatar": "👨‍✈️",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL1287",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "DELAY"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "OPERATIONS",
+      "avatar": "🧳",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL875",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "DELAY"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "OPERATIONS",
+      "avatar": "👨‍🦽",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL591",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "AOG"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "OPERATIONS",
+      "avatar": "👨",
+      "name": "JONES/EMILY MS",
+      "flight": "KL102",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "AOG"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "OPERATIONS",
+      "avatar": "🍽️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL743",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "AOG"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "OPERATIONS",
+      "avatar": "👨‍✈️",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL875",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "GATE"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "OPERATIONS",
+      "avatar": "👨‍🦽",
+      "name": "JONES/EMILY MS",
+      "flight": "KL1287",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "GATE"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "OPERATIONS",
+      "avatar": "✈️",
+      "name": "JONES/EMILY MS",
+      "flight": "KL875",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "GATE"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "OPERATIONS",
+      "avatar": "👨‍✈️",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL641",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "ETD"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "OPERATIONS",
+      "avatar": "👨‍🦽",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL641",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "ETD"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "OPERATIONS",
+      "avatar": "👨",
+      "name": "LEE/DAVID MR",
+      "flight": "KL102",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "ETD"
+      ]
+    },
+    {
+      "id": 13,
+      "category": "OPERATIONS",
+      "avatar": "🍽️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL875",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "ETA"
+      ]
+    },
+    {
+      "id": 14,
+      "category": "OPERATIONS",
+      "avatar": "👩",
+      "name": "LEE/DAVID MR",
+      "flight": "KL743",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "ETA"
+      ]
+    },
+    {
+      "id": 15,
+      "category": "OPERATIONS",
+      "avatar": "🍽️",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL875",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "ETA"
+      ]
+    },
+    {
+      "id": 16,
+      "category": "OPERATIONS",
+      "avatar": "👩‍🦳",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL591",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "DIVERT"
+      ]
+    },
+    {
+      "id": 17,
+      "category": "OPERATIONS",
+      "avatar": "👨",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL641",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "DIVERT"
+      ]
+    },
+    {
+      "id": 18,
+      "category": "OPERATIONS",
+      "avatar": "👨‍🦽",
+      "name": "JONES/EMILY MS",
+      "flight": "KL875",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "DIVERT"
+      ]
+    },
+    {
+      "id": 19,
+      "category": "OPERATIONS",
+      "avatar": "👩‍🦳",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL743",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "BOARD"
+      ]
+    },
+    {
+      "id": 20,
+      "category": "OPERATIONS",
+      "avatar": "🍽️",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL1287",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "BOARD"
+      ]
+    },
+    {
+      "id": 21,
+      "category": "OPERATIONS",
+      "avatar": "👩‍🦳",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL743",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "BOARD"
+      ]
+    },
+    {
+      "id": 22,
+      "category": "OPERATIONS",
+      "avatar": "👩‍🦳",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL102",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "OFFLOAD"
+      ]
+    },
+    {
+      "id": 23,
+      "category": "OPERATIONS",
+      "avatar": "👨‍🦽",
+      "name": "LEE/DAVID MR",
+      "flight": "KL102",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "OFFLOAD"
+      ]
+    },
+    {
+      "id": 24,
+      "category": "OPERATIONS",
+      "avatar": "👩",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL743",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "OFFLOAD"
+      ]
+    },
+    {
+      "id": 25,
+      "category": "OPERATIONS",
+      "avatar": "👨‍🦽",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL102",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "CANCEL"
+      ]
+    },
+    {
+      "id": 26,
+      "category": "OPERATIONS",
+      "avatar": "👩‍🦳",
+      "name": "LEE/DAVID MR",
+      "flight": "KL591",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "CANCEL"
+      ]
+    },
+    {
+      "id": 27,
+      "category": "OPERATIONS",
+      "avatar": "✈️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL1287",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "CANCEL"
+      ]
+    },
+    {
+      "id": 28,
+      "category": "OPERATIONS",
+      "avatar": "👨",
+      "name": "LEE/DAVID MR",
+      "flight": "KL641",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "CREW"
+      ]
+    },
+    {
+      "id": 29,
+      "category": "OPERATIONS",
+      "avatar": "👨‍✈️",
+      "name": "JONES/EMILY MS",
+      "flight": "KL743",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "CREW"
+      ]
+    },
+    {
+      "id": 30,
+      "category": "OPERATIONS",
+      "avatar": "👩‍🦳",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL102",
+      "speech": [
+        "Operations has sent an update.",
+        "Please process this message.",
+        "Inform the passengers accordingly."
+      ],
+      "answers": [
+        "CREW"
+      ]
+    }
+  ]
+}

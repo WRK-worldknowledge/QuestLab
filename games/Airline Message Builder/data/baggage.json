@@ -1,0 +1,454 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "category": "BAGGAGE",
+      "avatar": "👨",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL102",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "PIR"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "BAGGAGE",
+      "avatar": "🍽️",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL875",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "PIR"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "BAGGAGE",
+      "avatar": "👨",
+      "name": "JONES/EMILY MS",
+      "flight": "KL875",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "PIR"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "BAGGAGE",
+      "avatar": "👨",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL875",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "RUSH"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "BAGGAGE",
+      "avatar": "👨‍✈️",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL743",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "RUSH"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "BAGGAGE",
+      "avatar": "👨‍✈️",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL591",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "RUSH"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "BAGGAGE",
+      "avatar": "👨‍✈️",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL875",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "BAG"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "BAGGAGE",
+      "avatar": "👨",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL1287",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "BAG"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "BAGGAGE",
+      "avatar": "👨‍🦽",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL591",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "BAG"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "BAGGAGE",
+      "avatar": "👨‍✈️",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL743",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "AVIH"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "BAGGAGE",
+      "avatar": "✈️",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL875",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "AVIH"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "BAGGAGE",
+      "avatar": "👩",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL743",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "AVIH"
+      ]
+    },
+    {
+      "id": 13,
+      "category": "BAGGAGE",
+      "avatar": "👨‍✈️",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL102",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "HEAVY"
+      ]
+    },
+    {
+      "id": 14,
+      "category": "BAGGAGE",
+      "avatar": "👩‍🦳",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL743",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "HEAVY"
+      ]
+    },
+    {
+      "id": 15,
+      "category": "BAGGAGE",
+      "avatar": "✈️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL641",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "HEAVY"
+      ]
+    },
+    {
+      "id": 16,
+      "category": "BAGGAGE",
+      "avatar": "👩‍🦳",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL591",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "FRAGILE"
+      ]
+    },
+    {
+      "id": 17,
+      "category": "BAGGAGE",
+      "avatar": "👨‍🦽",
+      "name": "JONES/EMILY MS",
+      "flight": "KL743",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "FRAGILE"
+      ]
+    },
+    {
+      "id": 18,
+      "category": "BAGGAGE",
+      "avatar": "👨‍🦽",
+      "name": "DAVIS/ANNA MS",
+      "flight": "KL641",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "FRAGILE"
+      ]
+    },
+    {
+      "id": 19,
+      "category": "BAGGAGE",
+      "avatar": "✈️",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL875",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "BULK"
+      ]
+    },
+    {
+      "id": 20,
+      "category": "BAGGAGE",
+      "avatar": "👩‍🦳",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL641",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "BULK"
+      ]
+    },
+    {
+      "id": 21,
+      "category": "BAGGAGE",
+      "avatar": "👨‍✈️",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL641",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "BULK"
+      ]
+    },
+    {
+      "id": 22,
+      "category": "BAGGAGE",
+      "avatar": "✈️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL1287",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "DCS"
+      ]
+    },
+    {
+      "id": 23,
+      "category": "BAGGAGE",
+      "avatar": "👨",
+      "name": "BROWN/SARAH MS",
+      "flight": "KL743",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "DCS"
+      ]
+    },
+    {
+      "id": 24,
+      "category": "BAGGAGE",
+      "avatar": "✈️",
+      "name": "LEE/DAVID MR",
+      "flight": "KL591",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "DCS"
+      ]
+    },
+    {
+      "id": 25,
+      "category": "BAGGAGE",
+      "avatar": "👩‍🦳",
+      "name": "LEE/DAVID MR",
+      "flight": "KL641",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "EXBAG"
+      ]
+    },
+    {
+      "id": 26,
+      "category": "BAGGAGE",
+      "avatar": "🧳",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL1287",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "EXBAG"
+      ]
+    },
+    {
+      "id": 27,
+      "category": "BAGGAGE",
+      "avatar": "✈️",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL641",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "EXBAG"
+      ]
+    },
+    {
+      "id": 28,
+      "category": "BAGGAGE",
+      "avatar": "🧳",
+      "name": "JONES/EMILY MS",
+      "flight": "KL102",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "CBBG"
+      ]
+    },
+    {
+      "id": 29,
+      "category": "BAGGAGE",
+      "avatar": "👨",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL102",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "CBBG"
+      ]
+    },
+    {
+      "id": 30,
+      "category": "BAGGAGE",
+      "avatar": "✈️",
+      "name": "MILLER/SUSAN MRS",
+      "flight": "KL1287",
+      "speech": [
+        "Excuse me.",
+        "My baggage requires attention.",
+        "Could you assist me please?"
+      ],
+      "answers": [
+        "CBBG"
+      ]
+    }
+  ]
+}
