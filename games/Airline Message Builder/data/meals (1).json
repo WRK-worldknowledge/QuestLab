@@ -1,0 +1,212 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "avatar": "👩",
+      "name": "PATEL/ANITA MS",
+      "flight": "KL660",
+      "speech": [
+        "I don't eat meat or dairy products.",
+        "I requested an Asian vegetarian meal when I booked my ticket."
+      ],
+      "answers": [
+        "AVML"
+      ]
+    },
+    {
+      "id": 2,
+      "avatar": "👶",
+      "name": "JOHNSON/BABY EMMA",
+      "flight": "KL661",
+      "speech": [
+        "We're travelling with our eight-month-old daughter.",
+        "Could you confirm that her baby meal has been loaded?"
+      ],
+      "answers": [
+        "BBML"
+      ]
+    },
+    {
+      "id": 3,
+      "avatar": "🧒",
+      "name": "SMITH/OLIVER MSTR",
+      "flight": "KL662",
+      "speech": [
+        "My son is a very picky eater.",
+        "We ordered a children's meal for him."
+      ],
+      "answers": [
+        "CHML"
+      ]
+    },
+    {
+      "id": 4,
+      "avatar": "👨",
+      "name": "BROWN/THOMAS MR",
+      "flight": "KL663",
+      "speech": [
+        "I have diabetes and need to manage my blood sugar carefully.",
+        "I requested a diabetic meal for this flight."
+      ],
+      "answers": [
+        "DBML"
+      ]
+    },
+    {
+      "id": 5,
+      "avatar": "👩",
+      "name": "WILSON/EMMA MS",
+      "flight": "KL664",
+      "speech": [
+        "I have celiac disease.",
+        "I requested a gluten-free meal when I booked my ticket."
+      ],
+      "answers": [
+        "GFML"
+      ]
+    },
+    {
+      "id": 6,
+      "avatar": "👨",
+      "name": "KUMAR/RAJ MR",
+      "flight": "KL665",
+      "speech": [
+        "I follow a Hindu diet.",
+        "Could you verify that my meal request has been confirmed?"
+      ],
+      "answers": [
+        "HNML"
+      ]
+    },
+    {
+      "id": 7,
+      "avatar": "👩",
+      "name": "DAVIS/SARAH MS",
+      "flight": "KL666",
+      "speech": [
+        "I'm currently following a low-fat diet.",
+        "I ordered a suitable meal in advance."
+      ],
+      "answers": [
+        "LFML"
+      ]
+    },
+    {
+      "id": 8,
+      "avatar": "👨",
+      "name": "MILLER/JAMES MR",
+      "flight": "KL667",
+      "speech": [
+        "My doctor advised me to reduce my salt intake.",
+        "I requested a low sodium meal."
+      ],
+      "answers": [
+        "LSML"
+      ]
+    },
+    {
+      "id": 9,
+      "avatar": "👨",
+      "name": "COHEN/DAVID MR",
+      "flight": "KL668",
+      "speech": [
+        "I observe kosher dietary requirements.",
+        "Can you confirm my kosher meal is available?"
+      ],
+      "answers": [
+        "KSML"
+      ]
+    },
+    {
+      "id": 10,
+      "avatar": "👩",
+      "name": "AHMED/FATIMA MS",
+      "flight": "KL669",
+      "speech": [
+        "I only eat halal food.",
+        "I requested a Muslim meal for today's flight."
+      ],
+      "answers": [
+        "MOML"
+      ]
+    },
+    {
+      "id": 11,
+      "avatar": "👩",
+      "name": "CLARK/JULIA MS",
+      "flight": "KL670",
+      "speech": [
+        "I'm lactose intolerant.",
+        "I would like to confirm my non-lactose meal request."
+      ],
+      "answers": [
+        "NLML"
+      ]
+    },
+    {
+      "id": 12,
+      "avatar": "👨",
+      "name": "GREEN/ADAM MR",
+      "flight": "KL671",
+      "speech": [
+        "I only eat uncooked fruits and vegetables.",
+        "I ordered a raw vegetarian meal."
+      ],
+      "answers": [
+        "RVML"
+      ]
+    },
+    {
+      "id": 13,
+      "avatar": "👩",
+      "name": "LEE/GRACE MS",
+      "flight": "KL672",
+      "speech": [
+        "I love seafood and requested a special meal.",
+        "Could you check whether my seafood meal is on board?"
+      ],
+      "answers": [
+        "SFML"
+      ]
+    },
+    {
+      "id": 14,
+      "avatar": "👨",
+      "name": "JONES/PETER MR",
+      "flight": "KL673",
+      "speech": [
+        "I have specific dietary requirements that are not listed online.",
+        "I arranged a special meal with the airline."
+      ],
+      "answers": [
+        "SPML"
+      ]
+    },
+    {
+      "id": 15,
+      "avatar": "👩",
+      "name": "WHITE/LISA MS",
+      "flight": "KL674",
+      "speech": [
+        "I follow a strict vegan lifestyle.",
+        "I requested a vegetarian meal without any animal products."
+      ],
+      "answers": [
+        "VGML"
+      ]
+    },
+    {
+      "id": 16,
+      "avatar": "👨",
+      "name": "TAYLOR/MICHAEL MR",
+      "flight": "KL675",
+      "speech": [
+        "I don't eat meat, but I do consume dairy products.",
+        "I requested a western vegetarian meal."
+      ],
+      "answers": [
+        "VLML"
+      ]
+    }
+  ]
+}
