@@ -1,0 +1,316 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "avatar": "🐶",
+      "name": "JOHNSON/SARAH MS",
+      "flight": "KL700",
+      "speech": [
+        "My dog is travelling in the hold today.",
+        "Could you confirm that he has been checked in properly?"
+      ],
+      "answers": [
+        "AVIH"
+      ]
+    },
+    {
+      "id": 2,
+      "avatar": "🦯",
+      "name": "SMITH/ALAN MR",
+      "flight": "KL701",
+      "speech": [
+        "I am visually impaired.",
+        "Could someone assist me to the departure gate?"
+      ],
+      "answers": [
+        "BLND"
+      ]
+    },
+    {
+      "id": 3,
+      "avatar": "👶",
+      "name": "WILSON/EMMA MRS",
+      "flight": "KL702",
+      "speech": [
+        "We are travelling with our six-month-old daughter.",
+        "Is it possible to reserve a bassinet?"
+      ],
+      "answers": [
+        "BSCT"
+      ]
+    },
+    {
+      "id": 4,
+      "avatar": "🧏",
+      "name": "LEE/JASON MR",
+      "flight": "KL703",
+      "speech": [
+        "I am hearing impaired.",
+        "Could you please provide important announcements in writing?"
+      ],
+      "answers": [
+        "DEAF"
+      ]
+    },
+    {
+      "id": 5,
+      "avatar": "👮",
+      "name": "MARTINEZ/CARLOS MR",
+      "flight": "KL704",
+      "speech": [
+        "I have been removed from another country.",
+        "Airport authorities instructed me to report to your desk."
+      ],
+      "answers": [
+        "DEPO"
+      ]
+    },
+    {
+      "id": 6,
+      "avatar": "👮",
+      "name": "DAVIS/THOMAS MR",
+      "flight": "KL705",
+      "speech": [
+        "I am escorting a deportee on today's flight.",
+        "All required documentation is available."
+      ],
+      "answers": [
+        "DEPA"
+      ]
+    },
+    {
+      "id": 7,
+      "avatar": "👤",
+      "name": "BROWN/MICHAEL MR",
+      "flight": "KL706",
+      "speech": [
+        "I am travelling under the supervision of immigration authorities.",
+        "I am not accompanied by an escort."
+      ],
+      "answers": [
+        "DEPU"
+      ]
+    },
+    {
+      "id": 8,
+      "avatar": "🎻",
+      "name": "CLARK/JAMES MR",
+      "flight": "KL707",
+      "speech": [
+        "I purchased an extra seat for my cello.",
+        "Will it be seated next to me during the flight?"
+      ],
+      "answers": [
+        "EXST"
+      ]
+    },
+    {
+      "id": 9,
+      "avatar": "👨",
+      "name": "WHITE/PETER MR",
+      "flight": "KL708",
+      "speech": [
+        "Immigration refused my entry upon arrival.",
+        "I have been instructed to return on the next available flight."
+      ],
+      "answers": [
+        "INAD"
+      ]
+    },
+    {
+      "id": 10,
+      "avatar": "👵",
+      "name": "THOMPSON/MARY MRS",
+      "flight": "KL709",
+      "speech": [
+        "This is my first time travelling internationally.",
+        "Could someone meet and assist me through the airport?"
+      ],
+      "answers": [
+        "MAAS"
+      ]
+    },
+    {
+      "id": 11,
+      "avatar": "👩",
+      "name": "TAYLOR/LISA MS",
+      "flight": "KL710",
+      "speech": [
+        "I recently had surgery.",
+        "My doctor provided documentation stating I am fit to fly."
+      ],
+      "answers": [
+        "MEDA"
+      ]
+    },
+    {
+      "id": 12,
+      "avatar": "🐱",
+      "name": "JONES/OLIVIA MS",
+      "flight": "KL711",
+      "speech": [
+        "My cat will travel with me in the cabin.",
+        "She will remain in her carrier under the seat."
+      ],
+      "answers": [
+        "PETC"
+      ]
+    },
+    {
+      "id": 13,
+      "avatar": "🧑‍🦽",
+      "name": "MILLER/ROBERT MR",
+      "flight": "KL712",
+      "speech": [
+        "I require additional assistance while travelling.",
+        "Could you arrange support throughout the airport?"
+      ],
+      "answers": [
+        "PRM"
+      ]
+    },
+    {
+      "id": 14,
+      "avatar": "🧑",
+      "name": "HARRIS/SUSAN MS",
+      "flight": "KL713",
+      "speech": [
+        "I am travelling with a disability.",
+        "Please note my requirements in the reservation."
+      ],
+      "answers": [
+        "PWD"
+      ]
+    },
+    {
+      "id": 15,
+      "avatar": "⚓",
+      "name": "WALKER/DAVID MR",
+      "flight": "KL714",
+      "speech": [
+        "I am joining my ship in Singapore tomorrow.",
+        "My employer arranged this ticket for me."
+      ],
+      "answers": [
+        "SEMN"
+      ]
+    },
+    {
+      "id": 16,
+      "avatar": "👨",
+      "name": "KING/ADAM MR",
+      "flight": "KL715",
+      "speech": [
+        "I have a long layover in Amsterdam.",
+        "I will remain in transit and do not require a visa."
+      ],
+      "answers": [
+        "TWOV"
+      ]
+    },
+    {
+      "id": 17,
+      "avatar": "🧒",
+      "name": "ANDERSON/LUCAS MSTR",
+      "flight": "KL716",
+      "speech": [
+        "I'm travelling to Madrid by myself today.",
+        "My parents will meet me at the destination airport."
+      ],
+      "answers": [
+        "UMNR"
+      ]
+    },
+    {
+      "id": 18,
+      "avatar": "🦽",
+      "name": "GREEN/HELEN MRS",
+      "flight": "KL717",
+      "speech": [
+        "I cannot walk at all.",
+        "I require assistance from check-in to my seat on board."
+      ],
+      "answers": [
+        "WCHC"
+      ]
+    },
+    {
+      "id": 19,
+      "avatar": "🦽",
+      "name": "MOORE/STEPHEN MR",
+      "flight": "KL718",
+      "speech": [
+        "I can walk short distances.",
+        "However, I need assistance between the terminal and the aircraft."
+      ],
+      "answers": [
+        "WCHR"
+      ]
+    },
+    {
+      "id": 20,
+      "avatar": "🦽",
+      "name": "JACKSON/ELLA MS",
+      "flight": "KL719",
+      "speech": [
+        "I am able to walk, but I cannot use stairs.",
+        "Will a lift be available for boarding?"
+      ],
+      "answers": [
+        "WCHS"
+      ]
+    },
+    {
+      "id": 21,
+      "avatar": "🦽",
+      "name": "SCOTT/MARK MR",
+      "flight": "KL720",
+      "speech": [
+        "I use an onboard wheelchair during the flight.",
+        "Has one been arranged for today's service?"
+      ],
+      "answers": [
+        "WCOB"
+      ]
+    },
+    {
+      "id": 22,
+      "avatar": "🦽",
+      "name": "YOUNG/PATRICIA MRS",
+      "flight": "KL721",
+      "speech": [
+        "My wheelchair is manually operated.",
+        "Are there any special handling procedures?"
+      ],
+      "answers": [
+        "WCMP"
+      ]
+    },
+    {
+      "id": 23,
+      "avatar": "🦽",
+      "name": "HALL/GEORGE MR",
+      "flight": "KL722",
+      "speech": [
+        "My wheelchair uses a dry-cell battery.",
+        "Are there any restrictions for transporting it?"
+      ],
+      "answers": [
+        "WCBD"
+      ]
+    },
+    {
+      "id": 24,
+      "avatar": "🦽",
+      "name": "ALLEN/KAREN MS",
+      "flight": "KL723",
+      "speech": [
+        "My wheelchair uses a wet-cell battery.",
+        "What procedures apply before loading it into the hold?"
+      ],
+      "answers": [
+        "WCBW"
+      ]
+    }
+  ]
+}
