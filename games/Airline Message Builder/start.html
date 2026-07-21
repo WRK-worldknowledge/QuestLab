@@ -2,9 +2,7 @@
 <html>
     
 <head>
-    <link
-href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
-rel="stylesheet">
+   
 <meta charset="UTF-8">
 <title>QuestLab - Mission Select</title>
 
@@ -12,7 +10,7 @@ rel="stylesheet">
 body{
     background:#0F172A;
     color:white;
-    font-family:'Montserrat',sans-serif;
+    font-family:system-ui;
     text-align:center;
     padding:40px;
 }
@@ -21,41 +19,32 @@ body{
     margin:20px auto;
     display:block;
 }
-
-.card{
-    max-width:700px;
-    margin:20px auto;
-    padding:25px;
-    background:#111E3A;
-    border:2px solid #F5CA51;
-    border-radius:24px;
-    cursor:pointer;
-    transition:.2s;
+select{
+    width:340px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
 }
 
-.card:hover{
-    transform:scale(1.03);
-    box-shadow:0 0 20px rgba(245,202,81,.4);
-}
-
-.card h3{
-    color:#F5CA51;
-    margin:0;
-}
-
-.card p{
-    opacity:.8;
-    margin-top:10px;
-}
 button{
-    padding:15px 30px;
+    width:340px;
+    padding:15px;
     background:#F5CA51;
     border:none;
-    border-radius:10px;
+    border-radius:12px;
     font-weight:bold;
+    cursor:pointer;
+    font-size:18px;
+}
+    .backBtn{
+    display:block;
+    margin-top:30px;
+    color:white;
+    text-decoration:none;
 }
     h1{
-    color:#F5CA51;
+    color:white;
     font-size:56px;
     margin-bottom:10px;
 }
@@ -72,58 +61,33 @@ Select your training mission.
 </p>
 <h2>Select Mission</h2>
 
-<div class="card" onclick="startMission('all')">
-    <h3>🔀 Mixed Challenge</h3>
-    <p>12 random AIRIMP scenarios.</p>
-</div>
+<select id="mission">
+    <option value="all">Mixed Challenge</option>
+    <option value="ssr">SSR Specialist</option>
+    <option value="meals">Meal Expert</option>
+    <option value="baggage">Baggage Agent</option>
+    <option value="passenger">Passenger Services</option>
+    <option value="operations">Operations Officer</option>
+    <option value="connections">Connections Expert</option>
+</select>
+    <br><br>
 
-<div class="card" onclick="startMission('ssr')">
-    <h3>♿ SSR Specialist</h3>
-    <p>Medical assistance and wheelchair requests.</p>
-</div>
-
-<div class="card" onclick="startMission('meals')">
-    <h3>🍽 Meal Expert</h3>
-    <p>Special meals and dietary requirements.</p>
-</div>
-
-<div class="card" onclick="startMission('baggage')">
-    <h3>🛄 Baggage Agent</h3>
-    <p>Lost, delayed and special baggage handling.</p>
-</div>
-
-<div class="card" onclick="startMission('passenger')">
-    <h3>👤 Passenger Services</h3>
-    <p>VIPs, infants and passenger requests.</p>
-</div>
-
-<div class="card" onclick="startMission('operations')">
-    <h3>✈️ Operations Officer</h3>
-    <p>ETA, ETD, NOTOC and operational messages.</p>
-</div>
-
-<div class="card" onclick="startMission('connections')">
-    <h3>🔗 Connections Expert</h3>
-    <p>MCT, COR, NOC and SHOCON.</p>
-</div>
-
+<button onclick="startMission()">
+    Start mission
+</button>
 <script>
 
-function startMission(category){
+function startMission(){
 
     localStorage.setItem(
         "questCategory",
-        category
-    );
-
-    localStorage.setItem(
-        "maxQuestions",
-        12
+        document.getElementById(
+            "mission"
+        ).value
     );
 
     window.location.href =
         "index.html";
-
 }
 
 </script>
