@@ -147,37 +147,6 @@ button:hover{
 <div class="subtitle">
 QuestLab Simulator
 </div>
-  <select id="category">
-
-    <option value="all">
-        Mixed Challenge
-    </option>
-
-    <option value="ssr">
-        SSR
-    </option>
-
-    <option value="meals">
-        Meals
-    </option>
-
-    <option value="baggage">
-        Baggage
-    </option>
-
-    <option value="passenger">
-        Passenger Services
-    </option>
-
-    <option value="operations">
-        Operations
-    </option>
-
-    <option value="connections">
-        Connections
-    </option>
-
-</select>
 
   <h2>Mission 1</h2>
 
@@ -225,8 +194,17 @@ let xp = 0;
  let passengers = [];
   let currentPassenger = 0;
   let mistakes = 0;
-  let selectedCategory = "all";
-  let maxQuestions = 12;
+  let selectedCategory =
+    localStorage.getItem(
+        "questCategory"
+    ) || "all";
+
+let maxQuestions =
+    Number(
+        localStorage.getItem(
+            "maxQuestions"
+        )
+    ) || 12;
 let questionsAnswered = 0;
 
   function shuffle(array){
@@ -439,15 +417,6 @@ document
 
     });
 
-document
-    .getElementById("category")
-    .addEventListener("change", function(){
-
-        selectedCategory = this.value;
-
-        loadCategory();
-
-    });
 
 loadCategory();
   
