@@ -1,16 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QuestLab - Mission Select</title>
+
+<style>
+body{
+    background:#0F172A;
+    color:white;
+    font-family:system-ui;
+    text-align:center;
+    padding:40px;
+}
+
+.card{
+    max-width:600px;
+    margin:20px auto;
+    padding:20px;
+    background:#111E3A;
+    border:2px solid #F5CA51;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+button{
+    padding:15px 30px;
+    background:#F5CA51;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>SSR CHECK-IN QUEST</h1>
+
+<h2>Select Mission</h2>
+
+<div class="card" onclick="selectMission('all')">
+    🔀 Mixed Challenge
+</div>
+
+<div class="card" onclick="selectMission('meals')">
+    🍽 Meals
+</div>
+
+<div class="card" onclick="selectMission('baggage')">
+    🛄 Baggage
+</div>
+
+<div class="card" onclick="selectMission('ssr')">
+    ♿ SSR
+</div>
+
+<h2>Difficulty</h2>
+
+<div class="card" onclick="selectDifficulty(6)">
+    Cadet (6 questions)
+</div>
+
+<div class="card" onclick="selectDifficulty(12)">
+    Officer (12 questions)
+</div>
+
+<div class="card" onclick="selectDifficulty(25)">
+    Captain (25 questions)
+</div>
+
+<button onclick="startMission()">
+    START MISSION
+</button>
+
+<script>
+
 let selectedCategory = "all";
 let maxQuestions = 12;
 
 function selectMission(category){
-
     selectedCategory = category;
-
 }
 
 function selectDifficulty(num){
-
     maxQuestions = num;
-
 }
 
 function startMission(){
@@ -25,7 +98,10 @@ function startMission(){
         maxQuestions
     );
 
-    window.location.href =
-        "index.html";
-
+    window.location.href = "index.html";
 }
+
+</script>
+
+</body>
+</html>
