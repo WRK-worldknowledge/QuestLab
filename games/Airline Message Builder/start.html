@@ -1,0 +1,31 @@
+let selectedCategory = "all";
+let maxQuestions = 12;
+
+function selectMission(category){
+
+    selectedCategory = category;
+
+}
+
+function selectDifficulty(num){
+
+    maxQuestions = num;
+
+}
+
+function startMission(){
+
+    localStorage.setItem(
+        "questCategory",
+        selectedCategory
+    );
+
+    localStorage.setItem(
+        "maxQuestions",
+        maxQuestions
+    );
+
+    window.location.href =
+        "index.html";
+
+}
