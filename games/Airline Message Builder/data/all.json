@@ -2,12 +2,13 @@
   "scenarios": [
     {
       "id": 1,
-      "avatar": "\ud83d\udc69",
-      "name": "JONES/SARAH MS",
-      "flight": "KL601",
+      "avatar": "🏄",
+      "name": "JOHNSON/MIKE MR",
+      "flight": "KL641",
       "speech": [
         "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I'm travelling with my surfboard today.",
+        "Will there be an additional charge for oversized baggage?"
       ],
       "answers": [
         "BULK"
@@ -15,12 +16,12 @@
     },
     {
       "id": 2,
-      "avatar": "\ud83d\udc75",
-      "name": "LEE/DAVID MR",
-      "flight": "KL602",
+      "avatar": "👩",
+      "name": "GARCIA/MARIA MS",
+      "flight": "KL642",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I'd like to keep my backpack with me during the flight.",
+        "Will it fit in the overhead compartment?"
       ],
       "answers": [
         "CBBG"
@@ -28,12 +29,12 @@
     },
     {
       "id": 3,
-      "avatar": "\ud83d\udc68",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL603",
+      "avatar": "👨",
+      "name": "SMITH/DAVID MR",
+      "flight": "KL643",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I seem to have misplaced my baggage receipt.",
+        "Will I still be able to collect my suitcase?"
       ],
       "answers": [
         "CLAIMTAG"
@@ -41,12 +42,12 @@
     },
     {
       "id": 4,
-      "avatar": "\ud83d\udc69",
-      "name": "SMITH/JOHN MR",
-      "flight": "KL604",
+      "avatar": "👵",
+      "name": "WILSON/MARGARET MRS",
+      "flight": "KL644",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I only have 30 minutes to catch my next flight.",
+        "Is it possible for my suitcase to be unloaded first?"
       ],
       "answers": [
         "FIBAG"
@@ -54,12 +55,12 @@
     },
     {
       "id": 5,
-      "avatar": "\ud83d\udc68",
-      "name": "JONES/SARAH MS",
-      "flight": "KL605",
+      "avatar": "🎿",
+      "name": "ANDERSON/EMMA MS",
+      "flight": "KL645",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I'm travelling with ski equipment.",
+        "I've been told oversized baggage is usually delivered last."
       ],
       "answers": [
         "LABAG"
@@ -67,12 +68,12 @@
     },
     {
       "id": 6,
-      "avatar": "\ud83d\udc75",
-      "name": "LEE/DAVID MR",
-      "flight": "KL606",
+      "avatar": "👴",
+      "name": "BROWN/THOMAS MR",
+      "flight": "KL646",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "This package contains a very delicate antique vase.",
+        "Could you please mark it as fragile?"
       ],
       "answers": [
         "FRAG"
@@ -80,9 +81,9 @@
     },
     {
       "id": 7,
-      "avatar": "\ud83d\udc69",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL607",
+      "avatar": "👨",
+      "name": "LEE/DAVID MR",
+      "flight": "KL647",
       "speech": [
         "My suitcase hasn't arrived.",
         "Everyone else has already collected their baggage."
@@ -93,12 +94,12 @@
     },
     {
       "id": 8,
-      "avatar": "\ud83d\udc75",
-      "name": "SMITH/JOHN MR",
-      "flight": "KL608",
+      "avatar": "👩",
+      "name": "MARTINEZ/ISABEL MS",
+      "flight": "KL648",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I arrived this morning from New York.",
+        "I've been informed my baggage will arrive on a later flight."
       ],
       "answers": [
         "RUSH"
@@ -106,12 +107,12 @@
     },
     {
       "id": 9,
-      "avatar": "\ud83d\udc75",
-      "name": "LEE/DAVID MR",
-      "flight": "KL609",
+      "avatar": "🧳",
+      "name": "CLARK/JAMES MR",
+      "flight": "KL649",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I have three large suitcases.",
+        "Will I need to pay for excess baggage?"
       ],
       "answers": [
         "XBAG"
@@ -119,61 +120,178 @@
     },
     {
       "id": 10,
-      "avatar": "\ud83e\uddd2",
-      "name": "LEE/DAVID MR",
-      "flight": "KL610",
+      "avatar": "👨",
+      "name": "HARRIS/ROBERT MR",
+      "flight": "KL650",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "Thank you for your assistance.",
+        "I can confirm that my booking has been successfully processed."
+      ],
+      "answers": [
+        "OK"
+      ]
+    },
+    {
+      "id": 11,
+      "avatar": "👩",
+      "name": "DAVIS/EMILY MS",
+      "flight": "KL651",
+      "speech": [
+        "I submitted a request for an aisle seat yesterday.",
+        "Has my request been approved yet?"
+      ],
+      "answers": [
+        "RQ"
+      ]
+    },
+    {
+      "id": 12,
+      "avatar": "👨",
+      "name": "MILLER/CHRIS MR",
+      "flight": "KL652",
+      "speech": [
+        "I'd like to travel on the next available flight to London.",
+        "Could you tell me if any seats are still available?"
+      ],
+      "answers": [
+        "SA"
+      ]
+    },
+    {
+      "id": 13,
+      "avatar": "👩",
+      "name": "THOMPSON/LAURA MS",
+      "flight": "KL653",
+      "speech": [
+        "My flight is fully booked.",
+        "I've been informed that there are no remaining seats."
+      ],
+      "answers": [
+        "NS"
+      ]
+    },
+    {
+      "id": 14,
+      "avatar": "👨",
+      "name": "WALKER/PETER MR",
+      "flight": "KL654",
+      "speech": [
+        "I purchased my ticket several months ago.",
+        "I haven't decided on my travel date yet."
+      ],
+      "answers": [
+        "OPEN"
+      ]
+    },
+    {
+      "id": 15,
+      "avatar": "👩",
+      "name": "WHITE/SOPHIA MS",
+      "flight": "KL655",
+      "speech": [
+        "I'm flying to Tokyo via Amsterdam today.",
+        "Could you confirm my corresponding flight details?"
+      ],
+      "answers": [
+        "COR"
+      ]
+    },
+    {
+      "id": 16,
+      "avatar": "👨",
+      "name": "MOORE/DANIEL MR",
+      "flight": "KL656",
+      "speech": [
+        "My inbound flight arrived two hours late.",
+        "I believe I've missed my onward connection."
+      ],
+      "answers": [
+        "NOC"
+      ]
+    },
+    {
+      "id": 17,
+      "avatar": "👩",
+      "name": "TAYLOR/ANNA MS",
+      "flight": "KL657",
+      "speech": [
+        "I only have 45 minutes between my flights.",
+        "Is that enough time to make my connection?"
+      ],
+      "answers": [
+        "MCT"
+      ]
+    },
+    {
+      "id": 18,
+      "avatar": "👨",
+      "name": "JACKSON/MARK MR",
+      "flight": "KL658",
+      "speech": [
+        "My next flight departs in 15 minutes.",
+        "Could someone help me reach the gate as quickly as possible?"
+      ],
+      "answers": [
+        "SHOCON"
+      ]
+    },
+{
+      "id": 19,
+      "avatar": "👩",
+      "name": "PATEL/ANITA MS",
+      "flight": "KL660",
+      "speech": [
+        "I don't eat meat or dairy products.",
+        "I requested an Asian vegetarian meal when I booked my ticket."
       ],
       "answers": [
         "AVML"
       ]
     },
     {
-      "id": 11,
-      "avatar": "\ud83d\udc75",
-      "name": "SMITH/JOHN MR",
-      "flight": "KL611",
+      "id": 20,
+      "avatar": "👶",
+      "name": "JOHNSON/BABY EMMA",
+      "flight": "KL661",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "We're travelling with our eight-month-old daughter.",
+        "Could you confirm that her baby meal has been loaded?"
       ],
       "answers": [
         "BBML"
       ]
     },
     {
-      "id": 12,
-      "avatar": "\ud83d\udc68",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL612",
+      "id": 21,
+      "avatar": "🧒",
+      "name": "SMITH/OLIVER MSTR",
+      "flight": "KL662",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "My son is a very picky eater.",
+        "We ordered a children's meal for him."
       ],
       "answers": [
         "CHML"
       ]
     },
     {
-      "id": 13,
-      "avatar": "\ud83d\udc75",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL613",
+      "id": 22,
+      "avatar": "👨",
+      "name": "BROWN/THOMAS MR",
+      "flight": "KL663",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I have diabetes and need to manage my blood sugar carefully.",
+        "I requested a diabetic meal for this flight."
       ],
       "answers": [
         "DBML"
       ]
     },
     {
-      "id": 14,
-      "avatar": "\ud83e\uddd2",
-      "name": "LEE/DAVID MR",
-      "flight": "KL614",
+      "id": 23,
+      "avatar": "👩",
+      "name": "WILSON/EMMA MS",
+      "flight": "KL664",
       "speech": [
         "I have celiac disease.",
         "I requested a gluten-free meal when I booked my ticket."
@@ -183,576 +301,1308 @@
       ]
     },
     {
-      "id": 15,
-      "avatar": "\ud83d\udc68",
-      "name": "JONES/SARAH MS",
-      "flight": "KL615",
+      "id": 24,
+      "avatar": "👨",
+      "name": "KUMAR/RAJ MR",
+      "flight": "KL665",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I follow a Hindu diet.",
+        "Could you verify that my meal request has been confirmed?"
       ],
       "answers": [
         "HNML"
       ]
     },
     {
-      "id": 16,
-      "avatar": "\ud83d\udc75",
-      "name": "SMITH/JOHN MR",
-      "flight": "KL616",
+      "id": 25,
+      "avatar": "👩",
+      "name": "DAVIS/SARAH MS",
+      "flight": "KL666",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I'm currently following a low-fat diet.",
+        "I ordered a suitable meal in advance."
       ],
       "answers": [
         "LFML"
       ]
     },
     {
-      "id": 17,
-      "avatar": "\ud83d\udc68",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL617",
+      "id": 26,
+      "avatar": "👨",
+      "name": "MILLER/JAMES MR",
+      "flight": "KL667",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "My doctor advised me to reduce my salt intake.",
+        "I requested a low sodium meal."
       ],
       "answers": [
         "LSML"
       ]
     },
     {
-      "id": 18,
-      "avatar": "\ud83d\udc68",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL618",
+      "id": 27,
+      "avatar": "👨",
+      "name": "COHEN/DAVID MR",
+      "flight": "KL668",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I observe kosher dietary requirements.",
+        "Can you confirm my kosher meal is available?"
       ],
       "answers": [
         "KSML"
       ]
     },
     {
-      "id": 19,
-      "avatar": "\ud83d\udc69",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL619",
+      "id": 28,
+      "avatar": "👩",
+      "name": "AHMED/FATIMA MS",
+      "flight": "KL669",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I only eat halal food.",
+        "I requested a Muslim meal for today's flight."
       ],
       "answers": [
         "MOML"
       ]
     },
     {
-      "id": 20,
-      "avatar": "\ud83e\uddd2",
-      "name": "SMITH/JOHN MR",
-      "flight": "KL620",
+      "id": 29,
+      "avatar": "👩",
+      "name": "CLARK/JULIA MS",
+      "flight": "KL670",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I'm lactose intolerant.",
+        "I would like to confirm my non-lactose meal request."
       ],
       "answers": [
         "NLML"
       ]
     },
     {
-      "id": 21,
-      "avatar": "\ud83e\uddd2",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL621",
+      "id": 30,
+      "avatar": "👨",
+      "name": "GREEN/ADAM MR",
+      "flight": "KL671",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I only eat uncooked fruits and vegetables.",
+        "I ordered a raw vegetarian meal."
       ],
       "answers": [
         "RVML"
       ]
     },
     {
-      "id": 22,
-      "avatar": "\ud83e\uddd2",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL622",
+      "id": 31,
+      "avatar": "👩",
+      "name": "LEE/GRACE MS",
+      "flight": "KL672",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I love seafood and requested a special meal.",
+        "Could you check whether my seafood meal is on board?"
       ],
       "answers": [
         "SFML"
       ]
     },
     {
-      "id": 23,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "LEE/DAVID MR",
-      "flight": "KL623",
+      "id":32,
+      "avatar": "👨",
+      "name": "JONES/PETER MR",
+      "flight": "KL673",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I have specific dietary requirements that are not listed online.",
+        "I arranged a special meal with the airline."
       ],
       "answers": [
         "SPML"
       ]
     },
     {
-      "id": 24,
-      "avatar": "\ud83e\uddd2",
-      "name": "LEE/DAVID MR",
-      "flight": "KL624",
+      "id": 33,
+      "avatar": "👩",
+      "name": "WHITE/LISA MS",
+      "flight": "KL674",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I follow a strict vegan lifestyle.",
+        "I requested a vegetarian meal without any animal products."
       ],
       "answers": [
         "VGML"
       ]
     },
     {
-      "id": 25,
-      "avatar": "\ud83d\udc75",
-      "name": "LEE/DAVID MR",
-      "flight": "KL625",
+      "id": 34,
+      "avatar": "👨",
+      "name": "TAYLOR/MICHAEL MR",
+      "flight": "KL675",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I don't eat meat, but I do consume dairy products.",
+        "I requested a western vegetarian meal."
       ],
       "answers": [
         "VLML"
       ]
     },
     {
-      "id": 26,
-      "avatar": "\ud83d\udc69",
-      "name": "JONES/SARAH MS",
-      "flight": "KL626",
+      "id": 35,
+      "avatar": "👨",
+      "name": "MARTINEZ/CARLOS MR",
+      "flight": "KL680",
       "speech": [
-        "My dog is travelling in the hold.",
-        "Can you confirm he has been checked in?"
+        "I am travelling to the United States today.",
+        "Do I need to provide my passenger information before departure?"
+      ],
+      "answers": [
+        "API"
+      ]
+    },
+    {
+      "id": 36,
+      "avatar": "🧒",
+      "name": "SMITH/LUCAS MSTR",
+      "flight": "KL681",
+      "speech": [
+        "My son is 9 years old.",
+        "Does he qualify for a child fare?"
+      ],
+      "answers": [
+        "CHD"
+      ]
+    },
+    {
+      "id": 37,
+      "avatar": "👩",
+      "name": "JOHNSON/EMILY MS",
+      "flight": "KL682",
+      "speech": [
+        "I travel with your airline every week for business.",
+        "I was informed that I have Commercial Important Passenger status."
+      ],
+      "answers": [
+        "CIP"
+      ]
+    },
+    {
+      "id": 38,
+      "avatar": "👨",
+      "name": "BROWN/PETER MR",
+      "flight": "KL683",
+      "speech": [
+        "My mobile number has changed since I made my reservation.",
+        "Could you please update my contact details?"
+      ],
+      "answers": [
+        "CTC"
+      ]
+    },
+    {
+      "id": 39,
+      "avatar": "👶",
+      "name": "DAVIS/BABY ANNA",
+      "flight": "KL684",
+      "speech": [
+        "My daughter will be travelling on my lap during the flight.",
+        "Does she need her own boarding pass?"
+      ],
+      "answers": [
+        "INF"
+      ]
+    },
+    {
+      "id": 40,
+      "avatar": "👮",
+      "name": "DE VRIES/JAN MR",
+      "flight": "KL685",
+      "speech": [
+        "I am travelling on official duty for the Royal Military Police.",
+        "My identification documents are available upon request."
+      ],
+      "answers": [
+        "KMAR"
+      ]
+    },
+    {
+      "id": 41,
+      "avatar": "👨",
+      "name": "WILSON/ROBERT MR",
+      "flight": "KL686",
+      "speech": [
+        "Good afternoon.",
+        "I am a passenger on flight KL686 to Rome."
+      ],
+      "answers": [
+        "PAP"
+      ]
+    },
+    {
+      "id": 42,
+      "avatar": "👩",
+      "name": "LEE/GRACE MS",
+      "flight": "KL687",
+      "speech": [
+        "How many passengers are travelling on today's flight?",
+        "The departure lounge seems very busy."
+      ],
+      "answers": [
+        "PAX"
+      ]
+    },
+    {
+      "id": 43,
+      "avatar": "👨",
+      "name": "CLARK/THOMAS MR",
+      "flight": "KL688",
+      "speech": [
+        "I am travelling to South Africa next week.",
+        "Where can I find the latest travel requirements?"
+      ],
+      "answers": [
+        "TIM"
+      ]
+    },
+    {
+      "id": 44,
+      "avatar": "👩",
+      "name": "ANDERSON/SOPHIA MS",
+      "flight": "KL689",
+      "speech": [
+        "I have been escorted to the lounge by airport staff.",
+        "I understand I have been registered as a Very Important Person."
+      ],
+      "answers": [
+        "VIP"
+      ]
+    },
+    {
+      "id": 45,
+      "avatar": "🧑",
+      "name": "JONES/ETHAN MR",
+      "flight": "KL690",
+      "speech": [
+        "I'm 15 years old and travelling alone today.",
+        "Are there any additional procedures I should know about?"
+      ],
+      "answers": [
+        "YP"
+      ]
+    },
+    {
+      "id": 46,
+      "avatar": "👨",
+      "name": "MILLER/JAMES MR",
+      "flight": "KL691",
+      "speech": [
+        "My ticket says the flight departs at 18:00.",
+        "Has daylight saving time already started in Spain?"
+      ],
+      "answers": [
+        "DST"
+      ]
+    },
+    {
+      "id": 47,
+      "avatar": "👩",
+      "name": "WHITE/LISA MS",
+      "flight": "KL692",
+      "speech": [
+        "The operations report lists all times in UTC.",
+        "Could you explain what UTC means?"
+      ],
+      "answers": [
+        "UTC"
+      ]
+    },
+    {
+      "id": 48,
+      "avatar": "👨‍✈️",
+      "name": "HARRIS/MARK CAPT",
+      "flight": "KL693",
+      "speech": [
+        "Air Traffic Control provided the weather briefing in Zulu time.",
+        "Please convert it to local time for the crew."
+      ],
+      "answers": [
+        "ZULU"
+      ]
+    },
+    {
+      "id": 49,
+      "avatar": "👩",
+      "name": "TAYLOR/OLIVIA MS",
+      "flight": "KL694",
+      "speech": [
+        "I need to make changes to my reservation.",
+        "Could you please retrieve my Passenger Name Record?"
+      ],
+      "answers": [
+        "PNR"
+      ]
+    },
+    {
+      "id": 50,
+      "avatar": "🐶",
+      "name": "JOHNSON/SARAH MS",
+      "flight": "KL700",
+      "speech": [
+        "My dog is travelling in the hold today.",
+        "Could you confirm that he has been checked in properly?"
       ],
       "answers": [
         "AVIH"
       ]
     },
     {
-      "id": 27,
-      "avatar": "\ud83d\udc68",
-      "name": "JONES/SARAH MS",
-      "flight": "KL627",
+      "id": 51,
+      "avatar": "🦯",
+      "name": "SMITH/ALAN MR",
+      "flight": "KL701",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I am visually impaired.",
+        "Could someone assist me to the departure gate?"
       ],
       "answers": [
         "BLND"
       ]
     },
     {
-      "id": 28,
-      "avatar": "\ud83d\udc68",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL628",
+      "id": 52,
+      "avatar": "👶",
+      "name": "WILSON/EMMA MRS",
+      "flight": "KL702",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "We are travelling with our six-month-old daughter.",
+        "Is it possible to reserve a bassinet?"
       ],
       "answers": [
         "BSCT"
       ]
     },
     {
-      "id": 29,
-      "avatar": "\ud83d\udc69",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL629",
+      "id": 53,
+      "avatar": "🧏",
+      "name": "LEE/JASON MR",
+      "flight": "KL703",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I am hearing impaired.",
+        "Could you please provide important announcements in writing?"
       ],
       "answers": [
         "DEAF"
       ]
     },
     {
-      "id": 30,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL630",
+      "id": 54,
+      "avatar": "👮",
+      "name": "MARTINEZ/CARLOS MR",
+      "flight": "KL704",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I have been removed from another country.",
+        "Airport authorities instructed me to report to your desk."
       ],
       "answers": [
         "DEPO"
       ]
     },
     {
-      "id": 31,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL631",
+      "id": 55,
+      "avatar": "👮",
+      "name": "DAVIS/THOMAS MR",
+      "flight": "KL705",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I am escorting a deportee on today's flight.",
+        "All required documentation is available."
       ],
       "answers": [
         "DEPA"
       ]
     },
     {
-      "id": 32,
-      "avatar": "\ud83d\udc75",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL632",
+      "id": 56,
+      "avatar": "👤",
+      "name": "BROWN/MICHAEL MR",
+      "flight": "KL706",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I am travelling under the supervision of immigration authorities.",
+        "I am not accompanied by an escort."
       ],
       "answers": [
         "DEPU"
       ]
     },
     {
-      "id": 33,
-      "avatar": "\ud83e\uddd2",
-      "name": "LEE/DAVID MR",
-      "flight": "KL633",
+      "id": 57,
+      "avatar": "🎻",
+      "name": "CLARK/JAMES MR",
+      "flight": "KL707",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I purchased an extra seat for my cello.",
+        "Will it be seated next to me during the flight?"
       ],
       "answers": [
         "EXST"
       ]
     },
     {
-      "id": 34,
-      "avatar": "\ud83d\udc68",
-      "name": "JONES/SARAH MS",
-      "flight": "KL634",
+      "id": 58,
+      "avatar": "👨",
+      "name": "WHITE/PETER MR",
+      "flight": "KL708",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "Immigration refused my entry upon arrival.",
+        "I have been instructed to return on the next available flight."
       ],
       "answers": [
         "INAD"
       ]
     },
     {
-      "id": 35,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL635",
+      "id": 59,
+      "avatar": "👵",
+      "name": "THOMPSON/MARY MRS",
+      "flight": "KL709",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "This is my first time travelling internationally.",
+        "Could someone meet and assist me through the airport?"
       ],
       "answers": [
         "MAAS"
       ]
     },
     {
-      "id": 36,
-      "avatar": "\ud83d\udc69",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL636",
+      "id": 60,
+      "avatar": "👩",
+      "name": "TAYLOR/LISA MS",
+      "flight": "KL710",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I recently had surgery.",
+        "My doctor provided documentation stating I am fit to fly."
       ],
       "answers": [
         "MEDA"
       ]
     },
     {
-      "id": 37,
-      "avatar": "\ud83d\udc75",
-      "name": "LEE/DAVID MR",
-      "flight": "KL637",
+      "id": 61,
+      "avatar": "🐱",
+      "name": "JONES/OLIVIA MS",
+      "flight": "KL711",
       "speech": [
-        "My cat is travelling with me today.",
-        "She will remain under the seat in front of me."
+        "My cat will travel with me in the cabin.",
+        "She will remain in her carrier under the seat."
       ],
       "answers": [
         "PETC"
       ]
     },
     {
-      "id": 38,
-      "avatar": "\ud83e\uddd2",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL638",
+      "id": 62,
+      "avatar": "🧑‍🦽",
+      "name": "MILLER/ROBERT MR",
+      "flight": "KL712",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I require additional assistance while travelling.",
+        "Could you arrange support throughout the airport?"
       ],
       "answers": [
         "PRM"
       ]
     },
     {
-      "id": 39,
-      "avatar": "\ud83d\udc69",
-      "name": "JONES/SARAH MS",
-      "flight": "KL639",
+      "id": 63,
+      "avatar": "🧑",
+      "name": "HARRIS/SUSAN MS",
+      "flight": "KL713",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I am travelling with a disability.",
+        "Please note my requirements in the reservation."
       ],
       "answers": [
         "PWD"
       ]
     },
     {
-      "id": 40,
-      "avatar": "\ud83d\udc69",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL640",
+      "id": 64,
+      "avatar": "⚓",
+      "name": "WALKER/DAVID MR",
+      "flight": "KL714",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I am joining my ship in Singapore tomorrow.",
+        "My employer arranged this ticket for me."
       ],
       "answers": [
         "SEMN"
       ]
     },
     {
-      "id": 41,
-      "avatar": "\ud83d\udc69",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL641",
+      "id": 65,
+      "avatar": "👨",
+      "name": "KING/ADAM MR",
+      "flight": "KL715",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I have a long layover in Amsterdam.",
+        "I will remain in transit and do not require a visa."
       ],
       "answers": [
         "TWOV"
       ]
     },
     {
-      "id": 42,
-      "avatar": "\ud83e\uddd2",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL642",
+      "id": 66,
+      "avatar": "🧒",
+      "name": "ANDERSON/LUCAS MSTR",
+      "flight": "KL716",
       "speech": [
         "I'm travelling to Madrid by myself today.",
-        "My parents will meet me at the airport."
+        "My parents will meet me at the destination airport."
       ],
       "answers": [
         "UMNR"
       ]
     },
     {
-      "id": 43,
-      "avatar": "\ud83d\udc68",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL643",
+      "id": 67,
+      "avatar": "🦽",
+      "name": "GREEN/HELEN MRS",
+      "flight": "KL717",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I cannot walk at all.",
+        "I require assistance from check-in to my seat on board."
       ],
       "answers": [
         "WCHC"
       ]
     },
     {
-      "id": 44,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL644",
+      "id": 68,
+      "avatar": "🦽",
+      "name": "MOORE/STEPHEN MR",
+      "flight": "KL718",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I can walk short distances.",
+        "However, I need assistance between the terminal and the aircraft."
       ],
       "answers": [
         "WCHR"
       ]
     },
     {
-      "id": 45,
-      "avatar": "\ud83e\uddd2",
-      "name": "SMITH/JOHN MR",
-      "flight": "KL645",
+      "id": 69,
+      "avatar": "🦽",
+      "name": "JACKSON/ELLA MS",
+      "flight": "KL719",
       "speech": [
-        "I can walk short distances.",
-        "I cannot use stairs to board the aircraft."
+        "I am able to walk, but I cannot use stairs.",
+        "Will a lift be available for boarding?"
       ],
       "answers": [
         "WCHS"
       ]
     },
     {
-      "id": 46,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "LEE/DAVID MR",
-      "flight": "KL646",
+      "id": 70,
+      "avatar": "🦽",
+      "name": "SCOTT/MARK MR",
+      "flight": "KL720",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I use an onboard wheelchair during the flight.",
+        "Has one been arranged for today's service?"
       ],
       "answers": [
         "WCOB"
       ]
     },
     {
-      "id": 47,
-      "avatar": "\ud83d\udc75",
-      "name": "JONES/SARAH MS",
-      "flight": "KL647",
+      "id": 71,
+      "avatar": "🦽",
+      "name": "YOUNG/PATRICIA MRS",
+      "flight": "KL721",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "My wheelchair is manually operated.",
+        "Are there any special handling procedures?"
       ],
       "answers": [
         "WCMP"
       ]
     },
     {
-      "id": 48,
-      "avatar": "\ud83d\udc75",
-      "name": "LEE/DAVID MR",
-      "flight": "KL648",
+      "id": 72,
+      "avatar": "🦽",
+      "name": "HALL/GEORGE MR",
+      "flight": "KL722",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "My wheelchair uses a dry-cell battery.",
+        "Are there any restrictions for transporting it?"
       ],
       "answers": [
         "WCBD"
       ]
     },
     {
-      "id": 49,
-      "avatar": "\ud83e\uddd2",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL649",
+      "id": 73,
+      "avatar": "🦽",
+      "name": "ALLEN/KAREN MS",
+      "flight": "KL723",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "My wheelchair uses a wet-cell battery.",
+        "What procedures apply before loading it into the hold?"
       ],
       "answers": [
         "WCBW"
       ]
     },
-    {
-      "id": 50,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL650",
+ {
+      "id": 74,
+      "avatar": "👨",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL730",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "I am fit and able to assist in an emergency if required.",
+        "Please let me know if you need volunteers."
       ],
       "answers": [
-        "OK"
+        "ABP"
       ]
     },
     {
-      "id": 51,
-      "avatar": "\ud83d\udc68",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL651",
+      "id": 75,
+      "avatar": "✈️",
+      "name": "OPS/DISPATCH",
+      "flight": "KL731",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "The aircraft assigned to this flight has changed.",
+        "Please update the departure information screens."
       ],
       "answers": [
-        "RQ"
+        "A/C"
       ]
     },
     {
-      "id": 52,
-      "avatar": "\ud83d\udc68",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL652",
+      "id": 76,
+      "avatar": "👩‍✈️",
+      "name": "CREW/SENIOR FA",
+      "flight": "KL732",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "Cabin crew, please take your assigned positions.",
+        "You will be working in the aft cabin today."
       ],
       "answers": [
-        "SA"
+        "AFT"
       ]
     },
     {
-      "id": 53,
-      "avatar": "\ud83e\uddd2",
-      "name": "LEE/DAVID MR",
-      "flight": "KL653",
+      "id": 77,
+      "avatar": "🛠️",
+      "name": "ENGINEER/MIKE",
+      "flight": "KL733",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "A technical issue was identified during inspection.",
+        "Please record it in the Aircraft Maintenance Log."
       ],
       "answers": [
-        "NS"
+        "AML"
       ]
     },
     {
-      "id": 54,
-      "avatar": "\ud83e\uddd2",
-      "name": "BROWN/EMMA MRS",
-      "flight": "KL654",
+      "id": 78,
+      "avatar": "🛠️",
+      "name": "ENGINEER/SARAH",
+      "flight": "KL734",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "The aircraft cannot continue operations.",
+        "It has been declared Aircraft on Ground."
       ],
       "answers": [
-        "OPEN"
+        "AOG"
       ]
     },
     {
-      "id": 55,
-      "avatar": "\ud83d\udc68",
-      "name": "LEE/DAVID MR",
-      "flight": "KL655",
+      "id": 79,
+      "avatar": "✈️",
+      "name": "CAPT/JONES",
+      "flight": "KL735",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "Ground power is unavailable at this stand.",
+        "Please start the Auxiliary Power Unit."
       ],
       "answers": [
-        "COR"
+        "APU"
       ]
     },
     {
-      "id": 56,
-      "avatar": "\ud83d\udc68\u200d\ud83e\uddbd",
-      "name": "JONES/SARAH MS",
-      "flight": "KL656",
+      "id": 80,
+      "avatar": "🎧",
+      "name": "DISPATCH/ANNA",
+      "flight": "KL736",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "Air Traffic Control has issued a revised departure slot.",
+        "Expect a delay of 20 minutes."
       ],
       "answers": [
-        "NOC"
+        "ATC"
       ]
     },
     {
-      "id": 57,
-      "avatar": "\ud83e\uddd2",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL657",
+      "id": 81,
+      "avatar": "👩‍✈️",
+      "name": "CREW/LISA",
+      "flight": "KL737",
       "speech": [
-        "Good afternoon.",
-        "I need assistance regarding {desc.lower()}."
+        "Please report to briefing room B.",
+        "You are rostered as Cabin Attendant on today's flight."
       ],
       "answers": [
-        "MCT"
+        "CA"
       ]
     },
     {
-      "id": 58,
-      "avatar": "\ud83d\udc69",
-      "name": "GARCIA/MARIA MS",
-      "flight": "KL658",
+      "id": 82,
+      "avatar": "👨‍✈️",
+      "name": "OPS/CREW",
+      "flight": "KL738",
       "speech": [
-        "My next flight departs very soon.",
-        "Will I make my connection?"
+        "All cabin crew members should report for briefing at 08:30.",
+        "Uniform standards will be checked."
       ],
       "answers": [
-        "SHOCON"
+        "CC"
+      ]
+    },
+    {
+      "id": 83,
+      "avatar": "📘",
+      "name": "TRAINER/EMMA",
+      "flight": "KL739",
+      "speech": [
+        "Before operating the flight, please review the Cabin Instruction Manual.",
+        "There have been several recent updates."
+      ],
+      "answers": [
+        "CIM"
+      ]
+    },
+    {
+      "id": 84,
+      "avatar": "🛠️",
+      "name": "ENGINEER/TOM",
+      "flight": "KL740",
+      "speech": [
+        "A damaged seat was reported in row 12.",
+        "Please note it in the Cabin Maintenance Log."
+      ],
+      "answers": [
+        "CML"
+      ]
+    },
+    {
+      "id": 85,
+      "avatar": "👨‍✈️",
+      "name": "CAPT/BROWN",
+      "flight": "KL741",
+      "speech": [
+        "The Captain will provide an operational briefing before departure.",
+        "Please remain seated until it is complete."
+      ],
+      "answers": [
+        "CPT"
+      ]
+    },
+    {
+      "id": 86,
+      "avatar": "👶",
+      "name": "WILSON/FAMILY",
+      "flight": "KL742",
+      "speech": [
+        "We are travelling with a young child.",
+        "May we use our approved child restraint device on board?"
+      ],
+      "answers": [
+        "CRD"
+      ]
+    },
+    {
+      "id": 87,
+      "avatar": "🩺",
+      "name": "NURSE/AMY",
+      "flight": "KL743",
+      "speech": [
+        "A passenger has collapsed in the departure lounge.",
+        "Is there anyone trained in CPR nearby?"
+      ],
+      "answers": [
+        "CPR"
+      ]
+    },
+    {
+      "id": 88,
+      "avatar": "🛰️",
+      "name": "ENGINEER/PAUL",
+      "flight": "KL744",
+      "speech": [
+        "The Emergency Locator Transmitter requires inspection.",
+        "Maintenance has been notified."
+      ],
+      "answers": [
+        "ELT"
+      ]
+    },
+    {
+      "id": 89,
+      "avatar": "🩹",
+      "name": "CREW/ANNE",
+      "flight": "KL745",
+      "speech": [
+        "A passenger suffered a minor cut during boarding.",
+        "Please bring the First Aid Kit."
+      ],
+      "answers": [
+        "FAK"
+      ]
+    },
+    {
+      "id": 90,
+      "avatar": "🔥",
+      "name": "CREW/DAVID",
+      "flight": "KL746",
+      "speech": [
+        "Smoke was reported in the galley oven.",
+        "Use the fire proof gloves before handling the equipment."
+      ],
+      "answers": [
+        "FPG"
+      ]
+    },
+    {
+      "id": 91,
+      "avatar": "✈️",
+      "name": "DISPATCH/JANE",
+      "flight": "KL747",
+      "speech": [
+        "Flight KL747 is now ready for boarding.",
+        "Please proceed to Gate D12."
+      ],
+      "answers": [
+        "FLT"
+      ]
+    },
+    {
+      "id": 92,
+      "avatar": "🧯",
+      "name": "CREW/MIKE",
+      "flight": "KL748",
+      "speech": [
+        "A fire extinguisher was discharged during training.",
+        "Please replace the Halon bottle immediately."
+      ],
+      "answers": [
+        "HAL"
+      ]
+    },
+    {
+      "id": 93,
+      "avatar": "🌍",
+      "name": "STUDENT/EMMA",
+      "flight": "KL749",
+      "speech": [
+        "Which organization publishes airline and airport codes?",
+        "I think it might be IATA."
+      ],
+      "answers": [
+        "IATA"
+      ]
+    },
+    {
+      "id": 94,
+      "avatar": "🌐",
+      "name": "STUDENT/TOM",
+      "flight": "KL750",
+      "speech": [
+        "Which organization is responsible for international aviation standards?",
+        "I believe it is ICAO."
+      ],
+      "answers": [
+        "ICAO"
+      ]
+    },
+    {
+      "id": 95,
+      "avatar": "🛠️",
+      "name": "CREW/LISA",
+      "flight": "KL751",
+      "speech": [
+        "Seat 14A cannot be reclined.",
+        "Please mark it as inoperative."
+      ],
+      "answers": [
+        "INOP"
+      ]
+    },
+    {
+      "id": 96,
+      "avatar": "🚻",
+      "name": "CREW/SARAH",
+      "flight": "KL752",
+      "speech": [
+        "The forward lavatory is temporarily unavailable.",
+        "Please direct passengers to the rear facilities."
+      ],
+      "answers": [
+        "LAV"
+      ]
+    },
+    {
+      "id": 97,
+      "avatar": "🦺",
+      "name": "INSPECTOR/JOHN",
+      "flight": "KL753",
+      "speech": [
+        "All life saving appliances were checked before departure.",
+        "No defects were found."
+      ],
+      "answers": [
+        "LSA"
+      ]
+    },
+    {
+      "id": 98,
+      "avatar": "📋",
+      "name": "ENGINEER/ROB",
+      "flight": "KL754",
+      "speech": [
+        "The weather radar is inoperative.",
+        "Please consult the Minimum Equipment List before departure."
+      ],
+      "answers": [
+        "MEL"
+      ]
+    },
+    {
+      "id": 99,
+      "avatar": "💉",
+      "name": "DOCTOR/LISA",
+      "flight": "KL755",
+      "speech": [
+        "A passenger requires medication during the flight.",
+        "Please retrieve the Medical Kit."
+      ],
+      "answers": [
+        "MK"
+      ]
+    },
+    {
+      "id": 100,
+      "avatar": "🖥️",
+      "name": "OPS/CONTROL",
+      "flight": "KL756",
+      "speech": [
+        "Operations Control Center has approved the revised flight plan.",
+        "Proceed as briefed."
+      ],
+      "answers": [
+        "OCC"
+      ]
+    },
+    {
+      "id": 101,
+      "avatar": "😷",
+      "name": "CREW/EMMA",
+      "flight": "KL757",
+      "speech": [
+        "An oxygen bottle was used during the previous sector.",
+        "Please ensure a replacement is available."
+      ],
+      "answers": [
+        "OXYG"
+      ]
+    },
+    {
+      "id": 102,
+      "avatar": "📢",
+      "name": "CREW/ANNA",
+      "flight": "KL758",
+      "speech": [
+        "Ladies and gentlemen, welcome on board.",
+        "This is a public announcement from your cabin crew."
+      ],
+      "answers": [
+        "PA"
+      ]
+    },
+    {
+      "id": 103,
+      "avatar": "😷",
+      "name": "CREW/MARK",
+      "flight": "KL759",
+      "speech": [
+        "Smoke procedures have been initiated.",
+        "Don the Protective Breathing Equipment immediately."
+      ],
+      "answers": [
+        "PBE"
+      ]
+    },
+    {
+      "id": 104,
+      "avatar": "📄",
+      "name": "OPS/ANNE",
+      "flight": "KL760",
+      "speech": [
+        "The Passenger Information List has been printed.",
+        "Please verify the number of passengers on board."
+      ],
+      "answers": [
+        "PIL"
+      ]
+    },
+    {
+      "id": 105,
+      "avatar": "🚜",
+      "name": "RAMP/JOE",
+      "flight": "KL761",
+      "speech": [
+        "The doors are closed and the tug is connected.",
+        "Request pushback clearance from ATC."
+      ],
+      "answers": [
+        "PUSHBACK"
+      ]
+    },
+    {
+      "id": 106,
+      "avatar": "✈️",
+      "name": "CAPT/LEE",
+      "flight": "KL762",
+      "speech": [
+        "The captain aborted the take-off due to a warning indication.",
+        "The event has been classified as a rejected take-off."
+      ],
+      "answers": [
+        "RTO"
+      ]
+    },
+    {
+      "id": 107,
+      "avatar": "📚",
+      "name": "TRAINER/KIM",
+      "flight": "KL763",
+      "speech": [
+        "Please follow the Standard Operating Procedures at all times.",
+        "They are designed to ensure safety and consistency."
+      ],
+      "answers": [
+        "SOP"
+      ]
+    },
+    {
+      "id": 108,
+      "avatar": "✈️",
+      "name": "ATC/TOWER",
+      "flight": "KL764",
+      "speech": [
+        "Flight KL764, taxi to runway 18R via taxiway Bravo.",
+        "Contact tower when ready."
+      ],
+      "answers": [
+        "TAXI"
+      ]
+    },
+    {
+      "id": 109,
+      "avatar": "🌩️",
+      "name": "CAPT/SMITH",
+      "flight": "KL765",
+      "speech": [
+        "Cabin crew, please take your seats immediately.",
+        "Moderate turbulence is expected ahead."
+      ],
+      "answers": [
+        "TURB"
+      ]
+    },
+    {
+      "id": 110,
+      "avatar": "🌧️",
+      "name": "DISPATCH/SUE",
+      "flight": "KL766",
+      "speech": [
+        "Severe weather has been reported near our destination.",
+        "Expect possible delays upon arrival."
+      ],
+      "answers": [
+        "WX"
+      ]
+    },
+    {
+      "id": 111,
+      "avatar": "⏱️",
+      "name": "OPS/TEAM",
+      "flight": "KL767",
+      "speech": [
+        "The replacement crew is required at Gate F4 as soon as possible.",
+        "Please proceed immediately."
+      ],
+      "answers": [
+        "ASAP"
+      ]
+    },
+    {
+      "id": 112,
+      "avatar": "🛬",
+      "name": "OPS/CONTROL",
+      "flight": "KL768",
+      "speech": [
+        "The Actual Time of Arrival has been recorded as 14:22 local time.",
+        "Please update the system accordingly."
+      ],
+      "answers": [
+        "ATA"
+      ]
+    },
+    {
+      "id": 113,
+      "avatar": "🛫",
+      "name": "OPS/CONTROL",
+      "flight": "KL769",
+      "speech": [
+        "The aircraft departed the stand at 09:17.",
+        "Please enter the Actual Time of Departure."
+      ],
+      "answers": [
+        "ATD"
+      ]
+    },
+    {
+      "id": 114,
+      "avatar": "⏳",
+      "name": "PLANNER/MIKE",
+      "flight": "KL770",
+      "speech": [
+        "Based on today's routing, the Estimated Block Time is 2 hours and 15 minutes.",
+        "Fuel calculations have been completed."
+      ],
+      "answers": [
+        "EBT"
+      ]
+    },
+    {
+      "id": 115,
+      "avatar": "🛬",
+      "name": "DISPATCH/EMMA",
+      "flight": "KL771",
+      "speech": [
+        "Our Estimated Time of Arrival is currently 16:45.",
+        "Passengers should be informed of the revised schedule."
+      ],
+      "answers": [
+        "ETA"
+      ]
+    },
+    {
+      "id": 116,
+      "avatar": "🛫",
+      "name": "DISPATCH/PAUL",
+      "flight": "KL772",
+      "speech": [
+        "The Estimated Time of Departure has changed due to congestion.",
+        "The new departure time is 11:30."
+      ],
+      "answers": [
+        "ETD"
+      ]
+    },
+    {
+      "id": 117,
+      "avatar": "📅",
+      "name": "OPS/JANE",
+      "flight": "KL773",
+      "speech": [
+        "The Scheduled Time of Arrival is 18:05.",
+        "Ground handling staff have been notified."
+      ],
+      "answers": [
+        "STA"
+      ]
+    },
+    {
+      "id": 118,
+      "avatar": "📅",
+      "name": "OPS/MARK",
+      "flight": "KL774",
+      "speech": [
+        "The Scheduled Time of Departure remains unchanged at 07:00.",
+        "Boarding will commence in 20 minutes."
+      ],
+      "answers": [
+        "STD"
+      ]
+    },
+    {
+      "id": 119,
+      "avatar": "✈️",
+      "name": "DISPATCH/SARAH",
+      "flight": "KL775",
+      "speech": [
+        "Unfortunately, the inbound aircraft has been delayed.",
+        "This is a late incoming aircraft situation."
+      ],
+      "answers": [
+        "LIA"
+      ]
+    },
+    {
+      "id": 120,
+      "avatar": "✈️",
+      "name": "DISPATCH/TOM",
+      "flight": "KL776",
+      "speech": [
+        "Your flight has been delayed due to a late incoming aircraft.",
+        "We apologize for the inconvenience."
+      ],
+      "answers": [
+        "LIAC"
+      ]
+    },
+    {
+      "id": 121,
+      "avatar": "❌",
+      "name": "OPS/CONTROL",
+      "flight": "KL777",
+      "speech": [
+        "Due to adverse weather conditions, today's service has been cancelled.",
+        "Please contact customer services for rebooking options."
+      ],
+      "answers": [
+        "CANX"
+      ]
+    },
+    {
+      "id": 122,
+      "avatar": "📝",
+      "name": "GATE/ANNA",
+      "flight": "KL778",
+      "speech": [
+        "A passenger checked in at the last minute.",
+        "Please issue a Last Minute Change notification."
+      ],
+      "answers": [
+        "LMC"
+      ]
+    },
+    {
+      "id": 123,
+      "avatar": "📄",
+      "name": "CAPT/JOHN",
+      "flight": "KL779",
+      "speech": [
+        "Captain, the dangerous goods manifest has been updated.",
+        "Please review the NOTOC before departure."
+      ],
+      "answers": [
+        "NOTOC"
       ]
     }
   ]
 }
+
+    
+
+
