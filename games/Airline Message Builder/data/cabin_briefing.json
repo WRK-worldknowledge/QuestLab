@@ -1,0 +1,216 @@
+{
+  "briefings": [
+    {
+      "id": 1,
+      "flight": "KL801",
+      "route": "AMS-BCN",
+      "aircraft": "B737-800",
+      "pax": 184,
+      "specials": [
+        "UMNR",
+        "WCHS",
+        "KSML"
+      ],
+      "weather": "Moderate turbulence expected",
+      "questions": [
+        "Which SSR requires assistance during boarding?",
+        "Which meal code should cabin crew expect?",
+        "What should be included in the cabin briefing?"
+      ],
+      "answers": [
+        "WCHS",
+        "KSML",
+        "WX"
+      ]
+    },
+    {
+      "id": 2,
+      "flight": "KL802",
+      "route": "AMS-JFK",
+      "aircraft": "B787-9",
+      "pax": 263,
+      "specials": [
+        "MEDA",
+        "AVIH",
+        "VIP"
+      ],
+      "weather": "Clear skies",
+      "questions": [
+        "Which passenger requires medical attention planning?",
+        "Which SSR indicates an animal in the hold?",
+        "Who should be informed about the VIP passenger?"
+      ],
+      "answers": [
+        "MEDA",
+        "AVIH",
+        "CPT"
+      ]
+    },
+    {
+      "id": 3,
+      "flight": "KL803",
+      "route": "AMS-FCO",
+      "aircraft": "A321",
+      "pax": 172,
+      "specials": [
+        "UMNR",
+        "UMNR",
+        "CHML"
+      ],
+      "weather": "Light rain",
+      "questions": [
+        "How many unaccompanied minors are on board?",
+        "Which special meal has been requested?"
+      ],
+      "answers": [
+        "UMNR",
+        "CHML"
+      ]
+    },
+    {
+      "id": 4,
+      "flight": "KL804",
+      "route": "AMS-LHR",
+      "aircraft": "E190",
+      "pax": 94,
+      "specials": [
+        "WCHC",
+        "PRM"
+      ],
+      "weather": "High winds",
+      "questions": [
+        "Which passenger cannot walk at all?",
+        "Which code indicates reduced mobility?"
+      ],
+      "answers": [
+        "WCHC",
+        "PRM"
+      ]
+    },
+    {
+      "id": 5,
+      "flight": "KL805",
+      "route": "AMS-MAD",
+      "aircraft": "B737-800",
+      "pax": 176,
+      "specials": [
+        "PETC",
+        "GFML"
+      ],
+      "weather": "Moderate turbulence",
+      "questions": [
+        "Which passenger is travelling with an animal in the cabin?",
+        "Which meal should be loaded?"
+      ],
+      "answers": [
+        "PETC",
+        "GFML"
+      ]
+    },
+    {
+      "id": 6,
+      "flight": "KL806",
+      "route": "AMS-DXB",
+      "aircraft": "B777-300",
+      "pax": 311,
+      "specials": [
+        "MOML",
+        "VIP",
+        "CIP"
+      ],
+      "weather": "Hot weather expected",
+      "questions": [
+        "Which meal code applies?",
+        "Which passengers should receive special attention?"
+      ],
+      "answers": [
+        "MOML",
+        "VIP",
+        "CIP"
+      ]
+    },
+    {
+      "id": 7,
+      "flight": "KL807",
+      "route": "AMS-CPH",
+      "aircraft": "E195",
+      "pax": 102,
+      "specials": [
+        "BSCT",
+        "INF"
+      ],
+      "weather": "Clear",
+      "questions": [
+        "Which equipment should be prepared before boarding?",
+        "Which code indicates an infant?"
+      ],
+      "answers": [
+        "BSCT",
+        "INF"
+      ]
+    },
+    {
+      "id": 8,
+      "flight": "KL808",
+      "route": "AMS-SIN",
+      "aircraft": "B787-10",
+      "pax": 287,
+      "specials": [
+        "DEAF",
+        "BLND",
+        "MAAS"
+      ],
+      "weather": "Thunderstorms near destination",
+      "questions": [
+        "Which passengers may require additional communication support?",
+        "Which SSR indicates meet and assist service?"
+      ],
+      "answers": [
+        "DEAF",
+        "BLND",
+        "MAAS"
+      ]
+    },
+    {
+      "id": 9,
+      "flight": "KL809",
+      "route": "AMS-ATH",
+      "aircraft": "A320",
+      "pax": 158,
+      "specials": [
+        "EXST",
+        "XBAG"
+      ],
+      "weather": "Sunny",
+      "questions": [
+        "Which code indicates an extra seat?",
+        "Which code indicates excess baggage?"
+      ],
+      "answers": [
+        "EXST",
+        "XBAG"
+      ]
+    },
+    {
+      "id": 10,
+      "flight": "KL810",
+      "route": "AMS-HND",
+      "aircraft": "B777-200",
+      "pax": 298,
+      "specials": [
+        "NOTOC",
+        "MEDA",
+        "WCHR"
+      ],
+      "weather": "Jet stream delays possible",
+      "questions": [
+        "Which document should the Captain review?",
+        "Which passenger requires wheelchair assistance?"
+      ],
+      "answers": [
+        "NOTOC",
+        "WCHR"
+      ]
+    }
+  ]
+}
