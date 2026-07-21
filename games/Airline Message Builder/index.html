@@ -226,7 +226,24 @@ let xp = 0;
   let currentPassenger = 0;
   let mistakes = 0;
   let selectedCategory = "all";
+  let maxQuestions = 12;
+let questionsAnswered = 0;
 
+  function shuffle(array){
+
+    for(let i = array.length - 1; i > 0; i--){
+
+        let j = Math.floor(
+            Math.random() * (i + 1)
+        );
+
+        [array[i], array[j]] =
+            [array[j], array[i]];
+    }
+
+    return array;
+
+}
   function loadPassenger(){
 
     document.getElementById("avatar").innerHTML =
@@ -252,32 +269,95 @@ function loadCategory(){
     .then(response => response.json())
     .then(data => {
 
-        passengers = data.scenarios;
-console.log(passengers.length);
+        passengers = shuffle(data.scenarios);
+
+        answered = false;
+        mistakes = 0;
+        questionsAnswered = 0;
+
+        document.getElementById("ssr1").value = "";
+        document.getElementById("feedback").innerHTML = "";
+
+        if(passengers.length > maxQuestions){
+
+            passengers =
+                passengers.slice(
+                    0,
+                    maxQuestions
+                );
+
+        }
+
         currentPassenger = 0;
 
         loadPassenger();
-
 
     });
 
 }
   function nextPassenger(){
 
-    currentPassenger++;
+    if(!answered){
 
-    if(currentPassenger >= passengers.length){
+        alert(
+            "Please answer the question first."
+        );
 
-        currentPassenger = 0;
+        return;
 
     }
 
-    answered = false;
-mistakes = 0;
-    
-    document.getElementById("ssr1").value = "";
+    currentPassenger++;
+    questionsAnswered++;
 
-    document.getElementById("feedback").innerHTML = "";
+    if(
+        questionsAnswered >=
+        passengers.length
+    ){
+
+        document
+            .querySelector(".card")
+            .innerHTML = `
+
+            <h2>MISSION COMPLETE</h2>
+
+            <p>
+            Congratulations!
+            </p>
+
+            <p>
+            You completed
+            ${questionsAnswered}
+            scenarios.
+            </p>
+
+            <p>
+            Total XP:
+            ${xp}
+            </p>
+
+            <button
+                onclick="
+                location.reload()
+                "
+            >
+            Play Again
+            </button>
+        `;
+
+        return;
+    }
+
+    answered = false;
+    mistakes = 0;
+
+    document
+        .getElementById("ssr1")
+        .value = "";
+
+    document
+        .getElementById("feedback")
+        .innerHTML = "";
 
     loadPassenger();
 
@@ -331,17 +411,19 @@ document.getElementById("xp").innerText = xp;
 
     }
 
-    if(mistakes === 3){
+if(mistakes === 3){
 
-        addXP(-3);
+    addXP(-3);
 
-        document.getElementById("feedback").innerHTML =
-            "Correct answer: " +
-            passengers[currentPassenger].answers[0];
+    answered = true;
 
-        setTimeout(nextPassenger, 3000);
+    document.getElementById("feedback").innerHTML =
+        "Correct answer: " +
+        passengers[currentPassenger].answers[0];
 
-    }
+    setTimeout(nextPassenger, 3000);
+
+}
 }
 
 
@@ -356,30 +438,19 @@ document
         }
 
     });
+
 document
     .getElementById("category")
     .addEventListener("change", function(){
 
         selectedCategory = this.value;
 
-        fetch(
-            "data/" +
-            selectedCategory +
-            ".json"
-        )
-        .then(response => response.json())
-        .then(data => {
-
-            passengers = data.scenarios;
-
-            currentPassenger = 0;
-
-            loadPassenger();
-
-        });
+        loadCategory();
 
     });
-        loadCategory();
+
+loadCategory();
+  
 </script>
 </div>
 <a href="../../index.html" class="backBtn">
