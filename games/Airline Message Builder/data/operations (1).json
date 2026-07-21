@@ -1,0 +1,654 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "avatar": "👨",
+      "name": "SMITH/JOHN MR",
+      "flight": "KL730",
+      "speech": [
+        "I am fit and able to assist in an emergency if required.",
+        "Please let me know if you need volunteers."
+      ],
+      "answers": [
+        "ABP"
+      ]
+    },
+    {
+      "id": 2,
+      "avatar": "✈️",
+      "name": "OPS/DISPATCH",
+      "flight": "KL731",
+      "speech": [
+        "The aircraft assigned to this flight has changed.",
+        "Please update the departure information screens."
+      ],
+      "answers": [
+        "A/C"
+      ]
+    },
+    {
+      "id": 3,
+      "avatar": "👩‍✈️",
+      "name": "CREW/SENIOR FA",
+      "flight": "KL732",
+      "speech": [
+        "Cabin crew, please take your assigned positions.",
+        "You will be working in the aft cabin today."
+      ],
+      "answers": [
+        "AFT"
+      ]
+    },
+    {
+      "id": 4,
+      "avatar": "🛠️",
+      "name": "ENGINEER/MIKE",
+      "flight": "KL733",
+      "speech": [
+        "A technical issue was identified during inspection.",
+        "Please record it in the Aircraft Maintenance Log."
+      ],
+      "answers": [
+        "AML"
+      ]
+    },
+    {
+      "id": 5,
+      "avatar": "🛠️",
+      "name": "ENGINEER/SARAH",
+      "flight": "KL734",
+      "speech": [
+        "The aircraft cannot continue operations.",
+        "It has been declared Aircraft on Ground."
+      ],
+      "answers": [
+        "AOG"
+      ]
+    },
+    {
+      "id": 6,
+      "avatar": "✈️",
+      "name": "CAPT/JONES",
+      "flight": "KL735",
+      "speech": [
+        "Ground power is unavailable at this stand.",
+        "Please start the Auxiliary Power Unit."
+      ],
+      "answers": [
+        "APU"
+      ]
+    },
+    {
+      "id": 7,
+      "avatar": "🎧",
+      "name": "DISPATCH/ANNA",
+      "flight": "KL736",
+      "speech": [
+        "Air Traffic Control has issued a revised departure slot.",
+        "Expect a delay of 20 minutes."
+      ],
+      "answers": [
+        "ATC"
+      ]
+    },
+    {
+      "id": 8,
+      "avatar": "👩‍✈️",
+      "name": "CREW/LISA",
+      "flight": "KL737",
+      "speech": [
+        "Please report to briefing room B.",
+        "You are rostered as Cabin Attendant on today's flight."
+      ],
+      "answers": [
+        "CA"
+      ]
+    },
+    {
+      "id": 9,
+      "avatar": "👨‍✈️",
+      "name": "OPS/CREW",
+      "flight": "KL738",
+      "speech": [
+        "All cabin crew members should report for briefing at 08:30.",
+        "Uniform standards will be checked."
+      ],
+      "answers": [
+        "CC"
+      ]
+    },
+    {
+      "id": 10,
+      "avatar": "📘",
+      "name": "TRAINER/EMMA",
+      "flight": "KL739",
+      "speech": [
+        "Before operating the flight, please review the Cabin Instruction Manual.",
+        "There have been several recent updates."
+      ],
+      "answers": [
+        "CIM"
+      ]
+    },
+    {
+      "id": 11,
+      "avatar": "🛠️",
+      "name": "ENGINEER/TOM",
+      "flight": "KL740",
+      "speech": [
+        "A damaged seat was reported in row 12.",
+        "Please note it in the Cabin Maintenance Log."
+      ],
+      "answers": [
+        "CML"
+      ]
+    },
+    {
+      "id": 12,
+      "avatar": "👨‍✈️",
+      "name": "CAPT/BROWN",
+      "flight": "KL741",
+      "speech": [
+        "The Captain will provide an operational briefing before departure.",
+        "Please remain seated until it is complete."
+      ],
+      "answers": [
+        "CPT"
+      ]
+    },
+    {
+      "id": 13,
+      "avatar": "👶",
+      "name": "WILSON/FAMILY",
+      "flight": "KL742",
+      "speech": [
+        "We are travelling with a young child.",
+        "May we use our approved child restraint device on board?"
+      ],
+      "answers": [
+        "CRD"
+      ]
+    },
+    {
+      "id": 14,
+      "avatar": "🩺",
+      "name": "NURSE/AMY",
+      "flight": "KL743",
+      "speech": [
+        "A passenger has collapsed in the departure lounge.",
+        "Is there anyone trained in CPR nearby?"
+      ],
+      "answers": [
+        "CPR"
+      ]
+    },
+    {
+      "id": 15,
+      "avatar": "🛰️",
+      "name": "ENGINEER/PAUL",
+      "flight": "KL744",
+      "speech": [
+        "The Emergency Locator Transmitter requires inspection.",
+        "Maintenance has been notified."
+      ],
+      "answers": [
+        "ELT"
+      ]
+    },
+    {
+      "id": 16,
+      "avatar": "🩹",
+      "name": "CREW/ANNE",
+      "flight": "KL745",
+      "speech": [
+        "A passenger suffered a minor cut during boarding.",
+        "Please bring the First Aid Kit."
+      ],
+      "answers": [
+        "FAK"
+      ]
+    },
+    {
+      "id": 17,
+      "avatar": "🔥",
+      "name": "CREW/DAVID",
+      "flight": "KL746",
+      "speech": [
+        "Smoke was reported in the galley oven.",
+        "Use the fire proof gloves before handling the equipment."
+      ],
+      "answers": [
+        "FPG"
+      ]
+    },
+    {
+      "id": 18,
+      "avatar": "✈️",
+      "name": "DISPATCH/JANE",
+      "flight": "KL747",
+      "speech": [
+        "Flight KL747 is now ready for boarding.",
+        "Please proceed to Gate D12."
+      ],
+      "answers": [
+        "FLT"
+      ]
+    },
+    {
+      "id": 19,
+      "avatar": "🧯",
+      "name": "CREW/MIKE",
+      "flight": "KL748",
+      "speech": [
+        "A fire extinguisher was discharged during training.",
+        "Please replace the Halon bottle immediately."
+      ],
+      "answers": [
+        "HAL"
+      ]
+    },
+    {
+      "id": 20,
+      "avatar": "🌍",
+      "name": "STUDENT/EMMA",
+      "flight": "KL749",
+      "speech": [
+        "Which organization publishes airline and airport codes?",
+        "I think it might be IATA."
+      ],
+      "answers": [
+        "IATA"
+      ]
+    },
+    {
+      "id": 21,
+      "avatar": "🌐",
+      "name": "STUDENT/TOM",
+      "flight": "KL750",
+      "speech": [
+        "Which organization is responsible for international aviation standards?",
+        "I believe it is ICAO."
+      ],
+      "answers": [
+        "ICAO"
+      ]
+    },
+    {
+      "id": 22,
+      "avatar": "🛠️",
+      "name": "CREW/LISA",
+      "flight": "KL751",
+      "speech": [
+        "Seat 14A cannot be reclined.",
+        "Please mark it as inoperative."
+      ],
+      "answers": [
+        "INOP"
+      ]
+    },
+    {
+      "id": 23,
+      "avatar": "🚻",
+      "name": "CREW/SARAH",
+      "flight": "KL752",
+      "speech": [
+        "The forward lavatory is temporarily unavailable.",
+        "Please direct passengers to the rear facilities."
+      ],
+      "answers": [
+        "LAV"
+      ]
+    },
+    {
+      "id": 24,
+      "avatar": "🦺",
+      "name": "INSPECTOR/JOHN",
+      "flight": "KL753",
+      "speech": [
+        "All life saving appliances were checked before departure.",
+        "No defects were found."
+      ],
+      "answers": [
+        "LSA"
+      ]
+    },
+    {
+      "id": 25,
+      "avatar": "📋",
+      "name": "ENGINEER/ROB",
+      "flight": "KL754",
+      "speech": [
+        "The weather radar is inoperative.",
+        "Please consult the Minimum Equipment List before departure."
+      ],
+      "answers": [
+        "MEL"
+      ]
+    },
+    {
+      "id": 26,
+      "avatar": "💉",
+      "name": "DOCTOR/LISA",
+      "flight": "KL755",
+      "speech": [
+        "A passenger requires medication during the flight.",
+        "Please retrieve the Medical Kit."
+      ],
+      "answers": [
+        "MK"
+      ]
+    },
+    {
+      "id": 27,
+      "avatar": "🖥️",
+      "name": "OPS/CONTROL",
+      "flight": "KL756",
+      "speech": [
+        "Operations Control Center has approved the revised flight plan.",
+        "Proceed as briefed."
+      ],
+      "answers": [
+        "OCC"
+      ]
+    },
+    {
+      "id": 28,
+      "avatar": "😷",
+      "name": "CREW/EMMA",
+      "flight": "KL757",
+      "speech": [
+        "An oxygen bottle was used during the previous sector.",
+        "Please ensure a replacement is available."
+      ],
+      "answers": [
+        "OXYG"
+      ]
+    },
+    {
+      "id": 29,
+      "avatar": "📢",
+      "name": "CREW/ANNA",
+      "flight": "KL758",
+      "speech": [
+        "Ladies and gentlemen, welcome on board.",
+        "This is a public announcement from your cabin crew."
+      ],
+      "answers": [
+        "PA"
+      ]
+    },
+    {
+      "id": 30,
+      "avatar": "😷",
+      "name": "CREW/MARK",
+      "flight": "KL759",
+      "speech": [
+        "Smoke procedures have been initiated.",
+        "Don the Protective Breathing Equipment immediately."
+      ],
+      "answers": [
+        "PBE"
+      ]
+    },
+    {
+      "id": 31,
+      "avatar": "📄",
+      "name": "OPS/ANNE",
+      "flight": "KL760",
+      "speech": [
+        "The Passenger Information List has been printed.",
+        "Please verify the number of passengers on board."
+      ],
+      "answers": [
+        "PIL"
+      ]
+    },
+    {
+      "id": 32,
+      "avatar": "🚜",
+      "name": "RAMP/JOE",
+      "flight": "KL761",
+      "speech": [
+        "The doors are closed and the tug is connected.",
+        "Request pushback clearance from ATC."
+      ],
+      "answers": [
+        "PUSHBACK"
+      ]
+    },
+    {
+      "id": 33,
+      "avatar": "✈️",
+      "name": "CAPT/LEE",
+      "flight": "KL762",
+      "speech": [
+        "The captain aborted the take-off due to a warning indication.",
+        "The event has been classified as a rejected take-off."
+      ],
+      "answers": [
+        "RTO"
+      ]
+    },
+    {
+      "id": 34,
+      "avatar": "📚",
+      "name": "TRAINER/KIM",
+      "flight": "KL763",
+      "speech": [
+        "Please follow the Standard Operating Procedures at all times.",
+        "They are designed to ensure safety and consistency."
+      ],
+      "answers": [
+        "SOP"
+      ]
+    },
+    {
+      "id": 35,
+      "avatar": "✈️",
+      "name": "ATC/TOWER",
+      "flight": "KL764",
+      "speech": [
+        "Flight KL764, taxi to runway 18R via taxiway Bravo.",
+        "Contact tower when ready."
+      ],
+      "answers": [
+        "TAXI"
+      ]
+    },
+    {
+      "id": 36,
+      "avatar": "🌩️",
+      "name": "CAPT/SMITH",
+      "flight": "KL765",
+      "speech": [
+        "Cabin crew, please take your seats immediately.",
+        "Moderate turbulence is expected ahead."
+      ],
+      "answers": [
+        "TURB"
+      ]
+    },
+    {
+      "id": 37,
+      "avatar": "🌧️",
+      "name": "DISPATCH/SUE",
+      "flight": "KL766",
+      "speech": [
+        "Severe weather has been reported near our destination.",
+        "Expect possible delays upon arrival."
+      ],
+      "answers": [
+        "WX"
+      ]
+    },
+    {
+      "id": 38,
+      "avatar": "⏱️",
+      "name": "OPS/TEAM",
+      "flight": "KL767",
+      "speech": [
+        "The replacement crew is required at Gate F4 as soon as possible.",
+        "Please proceed immediately."
+      ],
+      "answers": [
+        "ASAP"
+      ]
+    },
+    {
+      "id": 39,
+      "avatar": "🛬",
+      "name": "OPS/CONTROL",
+      "flight": "KL768",
+      "speech": [
+        "The Actual Time of Arrival has been recorded as 14:22 local time.",
+        "Please update the system accordingly."
+      ],
+      "answers": [
+        "ATA"
+      ]
+    },
+    {
+      "id": 40,
+      "avatar": "🛫",
+      "name": "OPS/CONTROL",
+      "flight": "KL769",
+      "speech": [
+        "The aircraft departed the stand at 09:17.",
+        "Please enter the Actual Time of Departure."
+      ],
+      "answers": [
+        "ATD"
+      ]
+    },
+    {
+      "id": 41,
+      "avatar": "⏳",
+      "name": "PLANNER/MIKE",
+      "flight": "KL770",
+      "speech": [
+        "Based on today's routing, the Estimated Block Time is 2 hours and 15 minutes.",
+        "Fuel calculations have been completed."
+      ],
+      "answers": [
+        "EBT"
+      ]
+    },
+    {
+      "id": 42,
+      "avatar": "🛬",
+      "name": "DISPATCH/EMMA",
+      "flight": "KL771",
+      "speech": [
+        "Our Estimated Time of Arrival is currently 16:45.",
+        "Passengers should be informed of the revised schedule."
+      ],
+      "answers": [
+        "ETA"
+      ]
+    },
+    {
+      "id": 43,
+      "avatar": "🛫",
+      "name": "DISPATCH/PAUL",
+      "flight": "KL772",
+      "speech": [
+        "The Estimated Time of Departure has changed due to congestion.",
+        "The new departure time is 11:30."
+      ],
+      "answers": [
+        "ETD"
+      ]
+    },
+    {
+      "id": 44,
+      "avatar": "📅",
+      "name": "OPS/JANE",
+      "flight": "KL773",
+      "speech": [
+        "The Scheduled Time of Arrival is 18:05.",
+        "Ground handling staff have been notified."
+      ],
+      "answers": [
+        "STA"
+      ]
+    },
+    {
+      "id": 45,
+      "avatar": "📅",
+      "name": "OPS/MARK",
+      "flight": "KL774",
+      "speech": [
+        "The Scheduled Time of Departure remains unchanged at 07:00.",
+        "Boarding will commence in 20 minutes."
+      ],
+      "answers": [
+        "STD"
+      ]
+    },
+    {
+      "id": 46,
+      "avatar": "✈️",
+      "name": "DISPATCH/SARAH",
+      "flight": "KL775",
+      "speech": [
+        "Unfortunately, the inbound aircraft has been delayed.",
+        "This is a late incoming aircraft situation."
+      ],
+      "answers": [
+        "LIA"
+      ]
+    },
+    {
+      "id": 47,
+      "avatar": "✈️",
+      "name": "DISPATCH/TOM",
+      "flight": "KL776",
+      "speech": [
+        "Your flight has been delayed due to a late incoming aircraft.",
+        "We apologize for the inconvenience."
+      ],
+      "answers": [
+        "LIAC"
+      ]
+    },
+    {
+      "id": 48,
+      "avatar": "❌",
+      "name": "OPS/CONTROL",
+      "flight": "KL777",
+      "speech": [
+        "Due to adverse weather conditions, today's service has been cancelled.",
+        "Please contact customer services for rebooking options."
+      ],
+      "answers": [
+        "CANX"
+      ]
+    },
+    {
+      "id": 49,
+      "avatar": "📝",
+      "name": "GATE/ANNA",
+      "flight": "KL778",
+      "speech": [
+        "A passenger checked in at the last minute.",
+        "Please issue a Last Minute Change notification."
+      ],
+      "answers": [
+        "LMC"
+      ]
+    },
+    {
+      "id": 50,
+      "avatar": "📄",
+      "name": "CAPT/JOHN",
+      "flight": "KL779",
+      "speech": [
+        "Captain, the dangerous goods manifest has been updated.",
+        "Please review the NOTOC before departure."
+      ],
+      "answers": [
+        "NOTOC"
+      ]
+    }
+  ]
+}
