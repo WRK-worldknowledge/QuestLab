@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
+    <link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+rel="stylesheet">
 <meta charset="UTF-8">
 <title>QuestLab - Mission Select</title>
 
@@ -8,21 +12,41 @@
 body{
     background:#0F172A;
     color:white;
-    font-family:system-ui;
+    font-family:'Montserrat',sans-serif;
     text-align:center;
     padding:40px;
 }
-
-.card{
-    max-width:600px;
+    .logo{
+    max-width:260px;
     margin:20px auto;
-    padding:20px;
-    background:#111E3A;
-    border:2px solid #F5CA51;
-    border-radius:20px;
-    cursor:pointer;
+    display:block;
 }
 
+.card{
+    max-width:700px;
+    margin:20px auto;
+    padding:25px;
+    background:#111E3A;
+    border:2px solid #F5CA51;
+    border-radius:24px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 20px rgba(245,202,81,.4);
+}
+
+.card h3{
+    color:#F5CA51;
+    margin:0;
+}
+
+.card p{
+    opacity:.8;
+    margin-top:10px;
+}
 button{
     padding:15px 30px;
     background:#F5CA51;
@@ -30,78 +54,81 @@ button{
     border-radius:10px;
     font-weight:bold;
 }
+    h1{
+    color:#F5CA51;
+    font-size:56px;
+    margin-bottom:10px;
+}
 </style>
 </head>
 
 <body>
+<img src="../../logo.png" class="logo">
 
 <h1>SSR CHECK-IN QUEST</h1>
 
+<p>
+Select your training mission.
+</p>
 <h2>Select Mission</h2>
 
-<div class="card" onclick="selectMission('all')">
-    🔀 Mixed Challenge
+<div class="card" onclick="startMission('all')">
+    <h3>🔀 Mixed Challenge</h3>
+    <p>12 random AIRIMP scenarios.</p>
 </div>
 
-<div class="card" onclick="selectMission('meals')">
-    🍽 Meals
+<div class="card" onclick="startMission('ssr')">
+    <h3>♿ SSR Specialist</h3>
+    <p>Medical assistance and wheelchair requests.</p>
 </div>
 
-<div class="card" onclick="selectMission('baggage')">
-    🛄 Baggage
+<div class="card" onclick="startMission('meals')">
+    <h3>🍽 Meal Expert</h3>
+    <p>Special meals and dietary requirements.</p>
 </div>
 
-<div class="card" onclick="selectMission('ssr')">
-    ♿ SSR
+<div class="card" onclick="startMission('baggage')">
+    <h3>🛄 Baggage Agent</h3>
+    <p>Lost, delayed and special baggage handling.</p>
 </div>
 
-<h2>Difficulty</h2>
-
-<div class="card" onclick="selectDifficulty(6)">
-    Cadet (6 questions)
+<div class="card" onclick="startMission('passenger')">
+    <h3>👤 Passenger Services</h3>
+    <p>VIPs, infants and passenger requests.</p>
 </div>
 
-<div class="card" onclick="selectDifficulty(12)">
-    Officer (12 questions)
+<div class="card" onclick="startMission('operations')">
+    <h3>✈️ Operations Officer</h3>
+    <p>ETA, ETD, NOTOC and operational messages.</p>
 </div>
 
-<div class="card" onclick="selectDifficulty(25)">
-    Captain (25 questions)
+<div class="card" onclick="startMission('connections')">
+    <h3>🔗 Connections Expert</h3>
+    <p>MCT, COR, NOC and SHOCON.</p>
 </div>
-
-<button onclick="startMission()">
-    START MISSION
-</button>
 
 <script>
 
-let selectedCategory = "all";
-let maxQuestions = 12;
-
-function selectMission(category){
-    selectedCategory = category;
-}
-
-function selectDifficulty(num){
-    maxQuestions = num;
-}
-
-function startMission(){
+function startMission(category){
 
     localStorage.setItem(
         "questCategory",
-        selectedCategory
+        category
     );
 
     localStorage.setItem(
         "maxQuestions",
-        maxQuestions
+        12
     );
 
-    window.location.href = "index.html";
+    window.location.href =
+        "index.html";
+
 }
 
 </script>
-
+<a href="../../index.html" class="backBtn">
+← Back to QuestLab
+</a>
 </body>
 </html>
