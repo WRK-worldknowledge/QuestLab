@@ -1,0 +1,199 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "avatar": "👨",
+      "name": "MARTINEZ/CARLOS MR",
+      "flight": "KL680",
+      "speech": [
+        "I am travelling to the United States today.",
+        "Do I need to provide my passenger information before departure?"
+      ],
+      "answers": [
+        "API"
+      ]
+    },
+    {
+      "id": 2,
+      "avatar": "🧒",
+      "name": "SMITH/LUCAS MSTR",
+      "flight": "KL681",
+      "speech": [
+        "My son is 9 years old.",
+        "Does he qualify for a child fare?"
+      ],
+      "answers": [
+        "CHD"
+      ]
+    },
+    {
+      "id": 3,
+      "avatar": "👩",
+      "name": "JOHNSON/EMILY MS",
+      "flight": "KL682",
+      "speech": [
+        "I travel with your airline every week for business.",
+        "I was informed that I have Commercial Important Passenger status."
+      ],
+      "answers": [
+        "CIP"
+      ]
+    },
+    {
+      "id": 4,
+      "avatar": "👨",
+      "name": "BROWN/PETER MR",
+      "flight": "KL683",
+      "speech": [
+        "My mobile number has changed since I made my reservation.",
+        "Could you please update my contact details?"
+      ],
+      "answers": [
+        "CTC"
+      ]
+    },
+    {
+      "id": 5,
+      "avatar": "👶",
+      "name": "DAVIS/BABY ANNA",
+      "flight": "KL684",
+      "speech": [
+        "My daughter will be travelling on my lap during the flight.",
+        "Does she need her own boarding pass?"
+      ],
+      "answers": [
+        "INF"
+      ]
+    },
+    {
+      "id": 6,
+      "avatar": "👮",
+      "name": "DE VRIES/JAN MR",
+      "flight": "KL685",
+      "speech": [
+        "I am travelling on official duty for the Royal Military Police.",
+        "My identification documents are available upon request."
+      ],
+      "answers": [
+        "KMAR"
+      ]
+    },
+    {
+      "id": 7,
+      "avatar": "👨",
+      "name": "WILSON/ROBERT MR",
+      "flight": "KL686",
+      "speech": [
+        "Good afternoon.",
+        "I am a passenger on flight KL686 to Rome."
+      ],
+      "answers": [
+        "PAP"
+      ]
+    },
+    {
+      "id": 8,
+      "avatar": "👩",
+      "name": "LEE/GRACE MS",
+      "flight": "KL687",
+      "speech": [
+        "How many passengers are travelling on today's flight?",
+        "The departure lounge seems very busy."
+      ],
+      "answers": [
+        "PAX"
+      ]
+    },
+    {
+      "id": 9,
+      "avatar": "👨",
+      "name": "CLARK/THOMAS MR",
+      "flight": "KL688",
+      "speech": [
+        "I am travelling to South Africa next week.",
+        "Where can I find the latest travel requirements?"
+      ],
+      "answers": [
+        "TIM"
+      ]
+    },
+    {
+      "id": 10,
+      "avatar": "👩",
+      "name": "ANDERSON/SOPHIA MS",
+      "flight": "KL689",
+      "speech": [
+        "I have been escorted to the lounge by airport staff.",
+        "I understand I have been registered as a Very Important Person."
+      ],
+      "answers": [
+        "VIP"
+      ]
+    },
+    {
+      "id": 11,
+      "avatar": "🧑",
+      "name": "JONES/ETHAN MR",
+      "flight": "KL690",
+      "speech": [
+        "I'm 15 years old and travelling alone today.",
+        "Are there any additional procedures I should know about?"
+      ],
+      "answers": [
+        "YP"
+      ]
+    },
+    {
+      "id": 12,
+      "avatar": "👨",
+      "name": "MILLER/JAMES MR",
+      "flight": "KL691",
+      "speech": [
+        "My ticket says the flight departs at 18:00.",
+        "Has daylight saving time already started in Spain?"
+      ],
+      "answers": [
+        "DST"
+      ]
+    },
+    {
+      "id": 13,
+      "avatar": "👩",
+      "name": "WHITE/LISA MS",
+      "flight": "KL692",
+      "speech": [
+        "The operations report lists all times in UTC.",
+        "Could you explain what UTC means?"
+      ],
+      "answers": [
+        "UTC"
+      ]
+    },
+    {
+      "id": 14,
+      "avatar": "👨‍✈️",
+      "name": "HARRIS/MARK CAPT",
+      "flight": "KL693",
+      "speech": [
+        "Air Traffic Control provided the weather briefing in Zulu time.",
+        "Please convert it to local time for the crew."
+      ],
+      "answers": [
+        "ZULU"
+      ]
+    },
+    {
+      "id": 15,
+      "avatar": "👩",
+      "name": "TAYLOR/OLIVIA MS",
+      "flight": "KL694",
+      "speech": [
+        "I need to make changes to my reservation.",
+        "Could you please retrieve my Passenger Name Record?"
+      ],
+      "answers": [
+        "PNR"
+      ]
+    }
+  ]
+}
