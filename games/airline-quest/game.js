@@ -1,5 +1,6 @@
 startHelp("airlinequest")
 
+
 let lastTap = 0
 let firstPick = null
 let secondPick = null
@@ -9,81 +10,91 @@ let isChecking = false
 let time = 60
 let timerInterval
 
-const params = new URLSearchParams(location.search)
+
+const params =
+    new URLSearchParams(
+        location.search
+    )
+
 
 const gameType =
     params.get("type") ||
     "iata-airline"
+
 
 const demo =
     params.get("demo") === "true"
 
 
 /* =========================
-   LOAD DEMO DATA
+   DATASET
 ========================= */
 
-if(demo){
+let dataFile = null
 
-    fetch(
-        "data/questmatch_carriercodes_2026-2027.json"
-    )
-    .then(res => {
 
-        if(!res.ok){
-            throw new Error(
-                "Demo dataset not found"
-            )
-        }
+if(gameType === "logo-airline"){
 
-        return res.json()
+    dataFile =
+        "questmatch_logos.json"
 
-    })
-    .then(data => {
+}
 
-        startGame(data)
+else{
 
-    })
-    .catch(err => {
+    dataFile =
+        "questmatch_carriercodes_2026-2027.json"
 
-        console.error(err)
-        alert("Demo dataset failed to load")
-
-    })
 }
 
 
 /* =========================
-   LOAD TRAINING DATA
+   LOAD DATA
 ========================= */
 
 const file =
     params.get("data")
 
+
+const dataset =
+    file ||
+    dataFile
+
+
 console.log(
-    "DATA FILE:",
-    file
+    "GAME TYPE:",
+    gameType
 )
 
-if(file){
+console.log(
+    "DATA FILE:",
+    dataset
+)
 
-    fetch(
-        "data/" + file
-    )
-    .then(res => {
 
-        if(!res.ok){
+fetch(
+    "data/" + dataset
+)
+
+.then(
+    response => {
+
+        if(!response.ok){
 
             throw new Error(
-                "Dataset not found: " + file
+                "Dataset not found: " +
+                dataset
             )
 
         }
 
-        return res.json()
+        return response.json()
 
-    })
-    .then(data => {
+    }
+)
+
+.then(
+    data => {
 
         console.log(
             "DATA LOADED:",
@@ -92,17 +103,22 @@ if(file){
 
         startGame(data)
 
-    })
-    .catch(err => {
+    }
+)
 
-        console.error(err)
+.catch(
+    error => {
 
-        alert(
-            "Dataset failed to load"
+        console.error(
+            error
         )
 
-    })
-}
+        alert(
+            "Could not load the game data."
+        )
+
+    }
+)
 
 
 /* =========================
@@ -117,20 +133,29 @@ function shuffle(array){
         i--
     ){
 
-        let j =
+        const j =
             Math.floor(
-                Math.random() * (i + 1)
+                Math.random() *
+                (i + 1)
             )
 
-        let temp = array[i]
 
-        array[i] = array[j]
+        const temp =
+            array[i]
 
-        array[j] = temp
+
+        array[i] =
+            array[j]
+
+
+        array[j] =
+            temp
 
     }
 
+
     return array
+
 }
 
 
@@ -140,105 +165,177 @@ function shuffle(array){
 
 function startGame(data){
 
-    clearInterval(timerInterval)
+    clearInterval(
+        timerInterval
+    )
+
 
     time = 60
 
-    let tiles = []
-
-
-    /*
-       Pick 7 random airlines
-    */
 
     const selectedPairs =
-        shuffle([...data])
-        .slice(0,7)
-
-
-    selectedPairs.forEach(pair => {
-
-
-        /* =========================
-           IATA ↔ AIRLINE
-        ========================= */
-
-        if(
-            gameType === "iata-airline"
-        ){
-
-            tiles.push({
-
-                type: "airline",
-
-                value: pair.airline,
-
-                match: pair.iata
-
-            })
-
-
-            tiles.push({
-
-                type: "iata",
-
-                value: pair.iata,
-
-                match: pair.iata
-
-            })
-
-        }
-
-
-        /* =========================
-           LOGO ↔ AIRLINE
-        ========================= */
-
-        if(
-            gameType === "logo-airline"
-        ){
-
-            tiles.push({
-
-                type: "image",
-
-                value: pair.logo,
-
-                match: pair.airline
-
-            })
-
-
-            tiles.push({
-
-                type: "airline",
-
-                value: pair.airline,
-
-                match: pair.airline
-
-            })
-
-        }
-
-    })
+        shuffle(
+            [...data]
+        ).slice(
+            0,
+            7
+        )
 
 
     matchesLeft =
         selectedPairs.length
 
 
-    /* =========================
-       CREATE GRID
-    ========================= */
+    let tiles = []
 
-    tiles = shuffle(tiles)
+
+    selectedPairs.forEach(
+        pair => {
+
+
+            /* =========================
+               IATA ↔ AIRLINE
+            ========================= */
+
+            if(
+                gameType ===
+                "iata-airline"
+            ){
+
+                tiles.push({
+
+                    type:
+                        "airline",
+
+                    value:
+                        pair.airline,
+
+                    match:
+                        pair.iata
+
+                })
+
+
+                tiles.push({
+
+                    type:
+                        "iata",
+
+                    value:
+                        pair.iata,
+
+                    match:
+                        pair.iata
+
+                })
+
+            }
+
+
+            /* =========================
+               LOGO ↔ AIRLINE
+            ========================= */
+
+            else if(
+                gameType ===
+                "logo-airline"
+            ){
+
+                tiles.push({
+
+                    type:
+                        "image",
+
+                    value:
+                        pair.logo,
+
+                    match:
+                        pair.airline
+
+                })
+
+
+                tiles.push({
+
+                    type:
+                        "airline",
+
+                    value:
+                        pair.airline,
+
+                    match:
+                        pair.airline
+
+                })
+
+            }
+
+
+            /* =========================
+               AIRLINE ↔ COUNTRY
+               NEXT GAME
+            ========================= */
+
+            else if(
+                gameType ===
+                "airline-country"
+            ){
+
+                tiles.push({
+
+                    type:
+                        "airline",
+
+                    value:
+                        pair.airline,
+
+                    match:
+                        pair.country
+
+                })
+
+
+                tiles.push({
+
+                    type:
+                        "country",
+
+                    value:
+                        pair.country,
+
+                    match:
+                        pair.country
+
+                })
+
+            }
+
+        }
+    )
+
+
+    tiles =
+        shuffle(
+            tiles
+        )
+
 
     const grid =
         document.getElementById(
             "grid"
         )
+
+
+    if(!grid){
+
+        console.error(
+            "Grid element not found."
+        )
+
+        return
+
+    }
+
 
     grid.innerHTML = ""
 
@@ -250,6 +347,7 @@ function startGame(data){
                 document.createElement(
                     "div"
                 )
+
 
             div.className =
                 "tile"
@@ -266,11 +364,13 @@ function startGame(data){
                         "div"
                     )
 
+
                 timer.className =
                     "qTimerContainer"
 
 
                 timer.innerHTML = `
+
                     <img
                         src="../../q.png"
                         class="qTimer"
@@ -279,9 +379,13 @@ function startGame(data){
                     <div id="qTime">
                         01:00
                     </div>
+
                 `
 
-                grid.appendChild(timer)
+
+                grid.appendChild(
+                    timer
+                )
 
             }
 
@@ -291,7 +395,8 @@ function startGame(data){
             ========================= */
 
             if(
-                tile.type === "image"
+                tile.type ===
+                "image"
             ){
 
                 const img =
@@ -305,40 +410,42 @@ function startGame(data){
                     tile.value
 
 
-                img.onerror =
-                    function(){
-
-                        console.log(
-                            "Missing image:",
-                            tile.value
-                        )
-
-                        this.src =
-                            "images/fallback.jpg"
-
-                    }
+                img.alt =
+                    "Airline logo"
 
 
                 img.style.maxWidth =
                     "90%"
 
+
                 img.style.maxHeight =
                     "90%"
+
 
                 img.style.objectFit =
                     "contain"
 
 
-                /* =========================
-                   LONG PRESS → ENLARGE
-                ========================= */
+                img.onerror =
+                    () => {
+
+                        console.error(
+                            "Missing image:",
+                            tile.value
+                        )
+
+                    }
+
+
+                /* Long press / hold
+                   to enlarge logo */
 
                 let pressTimer
 
 
                 img.addEventListener(
                     "touchstart",
-                    function(){
+                    () => {
 
                         pressTimer =
                             setTimeout(
@@ -358,7 +465,7 @@ function startGame(data){
 
                 img.addEventListener(
                     "touchend",
-                    function(){
+                    () => {
 
                         clearTimeout(
                             pressTimer
@@ -370,7 +477,7 @@ function startGame(data){
 
                 img.addEventListener(
                     "touchmove",
-                    function(){
+                    () => {
 
                         clearTimeout(
                             pressTimer
@@ -382,7 +489,7 @@ function startGame(data){
 
                 img.addEventListener(
                     "mousedown",
-                    function(){
+                    () => {
 
                         pressTimer =
                             setTimeout(
@@ -402,7 +509,7 @@ function startGame(data){
 
                 img.addEventListener(
                     "mouseup",
-                    function(){
+                    () => {
 
                         clearTimeout(
                             pressTimer
@@ -414,7 +521,7 @@ function startGame(data){
 
                 img.addEventListener(
                     "mouseleave",
-                    function(){
+                    () => {
 
                         clearTimeout(
                             pressTimer
@@ -424,7 +531,9 @@ function startGame(data){
                 )
 
 
-                div.appendChild(img)
+                div.appendChild(
+                    img
+                )
 
             }
 
@@ -442,18 +551,23 @@ function startGame(data){
 
 
             /* =========================
-               TILE CLICK
+               CLICK
             ========================= */
 
             div.onclick =
-                () =>
+                () => {
+
                     selectTile(
                         div,
                         tile
                     )
 
+                }
 
-            grid.appendChild(div)
+
+            grid.appendChild(
+                div
+            )
 
         }
     )
@@ -463,11 +577,17 @@ function startGame(data){
        TIMER
     ========================= */
 
+    updateTimer()
+
+
     timerInterval =
         setInterval(
             () => {
 
                 time--
+
+
+                updateTimer()
 
 
                 if(time <= 0){
@@ -477,47 +597,55 @@ function startGame(data){
                     )
 
 
-                    document
-                        .getElementById(
-                            "qTime"
-                        )
-                        .innerText =
-                            "00:00"
-
-
                     timeUp()
 
-                    return
-
                 }
-
-
-                let min =
-                    Math.floor(
-                        time / 60
-                    )
-
-                let sec =
-                    time % 60
-
-
-                document
-                    .getElementById(
-                        "qTime"
-                    )
-                    .innerText =
-                        min +
-                        ":" +
-                        sec
-                            .toString()
-                            .padStart(
-                                2,
-                                "0"
-                            )
 
             },
             1000
         )
+
+}
+
+
+/* =========================
+   TIMER DISPLAY
+========================= */
+
+function updateTimer(){
+
+    const qTime =
+        document.getElementById(
+            "qTime"
+        )
+
+
+    if(!qTime)
+        return
+
+
+    const minutes =
+        Math.floor(
+            time / 60
+        )
+
+
+    const seconds =
+        time % 60
+
+
+    qTime.innerText =
+        String(minutes)
+            .padStart(
+                2,
+                "0"
+            ) +
+        ":" +
+        String(seconds)
+            .padStart(
+                2,
+                "0"
+            )
 
 }
 
@@ -538,17 +666,23 @@ function selectTile(
     if(
         firstPick &&
         firstPick.div === div
-    )
-        return
-
-
-    if(
-        firstPick == null
     ){
 
+        return
+
+    }
+
+
+    if(!firstPick){
+
         firstPick = {
-            div,
-            tile
+
+            div:
+                div,
+
+            tile:
+                tile
+
         }
 
 
@@ -563,8 +697,13 @@ function selectTile(
 
 
     secondPick = {
-        div,
-        tile
+
+        div:
+            div,
+
+        tile:
+            tile
+
     }
 
 
@@ -582,14 +721,19 @@ function checkMatch(){
     isChecking = true
 
 
-    if(
+    const correct =
         firstPick.tile.match ===
         secondPick.tile.match
 
-        &&
 
+    const differentTypes =
         firstPick.tile.type !==
         secondPick.tile.type
+
+
+    if(
+        correct &&
+        differentTypes
     ){
 
         firstPick.div.classList.add(
@@ -618,29 +762,25 @@ function checkMatch(){
                 matchesLeft--
 
 
+                reset()
+
+
+                isChecking = false
+
+
                 if(
                     matchesLeft === 0
                 ){
 
                     finishGame()
 
-                    clearInterval(
-                        timerInterval
-                    )
-
                 }
-
-
-                reset()
-
-                isChecking = false
 
             },
             500
         )
 
     }
-
 
     else{
 
@@ -657,25 +797,21 @@ function checkMatch(){
         setTimeout(
             () => {
 
-                if(firstPick){
-
-                    firstPick.div.classList.remove(
-                        "wrong"
-                    )
-
-                }
+                firstPick.div.classList.remove(
+                    "wrong",
+                    "selected"
+                )
 
 
-                if(secondPick){
-
-                    secondPick.div.classList.remove(
-                        "wrong"
-                    )
-
-                }
+                secondPick.div.classList.remove(
+                    "wrong",
+                    "selected"
+                )
 
 
-                reset()
+                firstPick = null
+
+                secondPick = null
 
                 isChecking = false
 
@@ -731,151 +867,7 @@ function finishGame(){
 
 
     /* =========================
-       DEMO FINISH
-    ========================= */
-
-    if(demo){
-
-        const grid =
-            document.getElementById(
-                "grid"
-            )
-
-        grid.innerHTML = ""
-
-
-        const finish =
-            document.getElementById(
-                "finishScreen"
-            )
-
-
-        finish.style.display =
-            "block"
-
-
-        finish.innerHTML = `
-
-            <h2>
-                Congratulations, Guest Pilot! ✈️
-            </h2>
-
-            <p>
-                You have completed the
-                QuestLab Guest Pilot Experience.
-            </p>
-
-            <hr>
-
-            <p>
-                During this demo you have:
-            </p>
-
-            <ul style="
-                text-align:left;
-                max-width:500px;
-                margin:auto;
-            ">
-
-                <li>
-                    Matched airline names
-                    with IATA carriercodes
-                </li>
-
-                <li>
-                    Recognised airline logos
-                </li>
-
-                <li>
-                    Practiced aviation knowledge
-                    through retrieval
-                </li>
-
-            </ul>
-
-            <p>
-                This demo showcases only a
-                small part of QuestLab.
-            </p>
-
-            <p>
-                In the classroom, students can:
-            </p>
-
-            <ul style="
-                text-align:left;
-                max-width:500px;
-                margin:auto;
-            ">
-
-                <li>
-                    Choose their own learning path
-                </li>
-
-                <li>
-                    Practice specific topics repeatedly
-                </li>
-
-                <li>
-                    Earn XP, badges and achievements
-                </li>
-
-                <li>
-                    Complete assessments and challenges
-                </li>
-
-                <li>
-                    Track their own progress over time
-                </li>
-
-            </ul>
-
-            <p>
-                QuestLab is designed to support
-                self-directed, gamified aviation learning.
-            </p>
-
-            <p>
-                Interested in learning more?
-            </p>
-
-
-            <button id="contactBtn">
-                Contact QuestLab
-            </button>
-
-            <br><br>
-
-            <button
-                class="secondaryBtn"
-                onclick="location.href='/'"
-            >
-                Return to QuestLab Home
-            </button>
-
-        `
-
-
-        document
-            .getElementById(
-                "contactBtn"
-            )
-            .onclick =
-            () => {
-
-                location.href =
-                    "/contact.html"
-
-            }
-
-
-        return
-
-    }
-
-
-    /* =========================
-       NORMAL FINISH
+       XP
     ========================= */
 
     const timeBonus =
@@ -892,7 +884,55 @@ function finishGame(){
         timeBonus
 
 
-    addXP(xp)
+    /* =========================
+       DEMO
+    ========================= */
+
+    if(demo){
+
+        const grid =
+            document.getElementById(
+                "grid"
+            )
+
+
+        const finish =
+            document.getElementById(
+                "finishScreen"
+            )
+
+
+        if(grid)
+            grid.innerHTML = ""
+
+
+        if(finish){
+
+            finish.style.display =
+                "block"
+
+        }
+
+
+        return
+
+    }
+
+
+    /* =========================
+       NORMAL GAME
+    ========================= */
+
+    if(
+        typeof addXP ===
+        "function"
+    ){
+
+        addXP(
+            xp
+        )
+
+    }
 
 
     const grid =
@@ -901,24 +941,41 @@ function finishGame(){
         )
 
 
+    if(grid){
+
+        grid.innerHTML = ""
+
+    }
+
+
     const finish =
         document.getElementById(
             "finishScreen"
         )
 
 
-    grid.innerHTML = ""
+    if(finish){
+
+        finish.style.display =
+            "block"
 
 
-    finish.style.display =
-        "block"
+        const title =
+            finish.querySelector(
+                "h2"
+            )
 
 
-    finish.querySelector("h2")
-        .innerText =
-            "Mission Complete ✈️ +" +
-            xp +
-            " XP"
+        if(title){
+
+            title.innerText =
+                "Mission Complete ✈️ +" +
+                xp +
+                " XP"
+
+        }
+
+    }
 
 }
 
@@ -944,20 +1001,11 @@ function openImage(src){
     if(
         !overlay ||
         !overlayImg
-    )
+    ){
+
         return
 
-
-    document
-        .querySelectorAll(
-            ".zoomed"
-        )
-        .forEach(
-            el =>
-                el.classList.remove(
-                    "zoomed"
-                )
-        )
+    }
 
 
     overlayImg.src =
@@ -971,7 +1019,7 @@ function openImage(src){
 
 
 /* =========================
-   CLOSE IMAGE OVERLAY
+   CLOSE IMAGE
 ========================= */
 
 if(overlay){
@@ -981,18 +1029,6 @@ if(overlay){
 
             overlay.style.display =
                 "none"
-
-
-            document
-                .querySelectorAll(
-                    ".zoomed"
-                )
-                .forEach(
-                    el =>
-                        el.classList.remove(
-                            "zoomed"
-                        )
-                )
 
         }
 
@@ -1005,13 +1041,13 @@ if(overlay){
 
 function timeUp(){
 
-    const choice =
+    const restart =
         confirm(
             "Time's up!\n\nOK = Restart mission\nCancel = Back to Game Console"
         )
 
 
-    if(choice){
+    if(restart){
 
         location.reload()
 
@@ -1019,7 +1055,7 @@ function timeUp(){
 
     else{
 
-        window.location.href =
+        location.href =
             "index.html"
 
     }
@@ -1028,14 +1064,14 @@ function timeUp(){
 
 
 /* =========================
-   FINISH SCREEN BUTTONS
+   FINISH BUTTONS
 ========================= */
 
 window.addEventListener(
     "DOMContentLoaded",
     () => {
 
-        const newBtn =
+        const newSessionBtn =
             document.getElementById(
                 "newSessionBtn"
             )
@@ -1047,11 +1083,14 @@ window.addEventListener(
             )
 
 
-        if(newBtn){
+        if(newSessionBtn){
 
-            newBtn.onclick =
-                () =>
+            newSessionBtn.onclick =
+                () => {
+
                     location.reload()
+
+                }
 
         }
 
@@ -1059,8 +1098,11 @@ window.addEventListener(
         if(backBtn){
 
             backBtn.onclick =
-                () =>
+                () => {
+
                     window.history.back()
+
+                }
 
         }
 
