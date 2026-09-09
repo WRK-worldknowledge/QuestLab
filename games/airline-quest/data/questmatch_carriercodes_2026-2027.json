@@ -1,0 +1,387 @@
+[
+  {
+    "airline": "Aegean Airlines",
+    "iata": "A3",
+    "country": "Greece"
+  },
+  {
+    "airline": "AER LINGUS",
+    "iata": "EI",
+    "country": "IRELAND"
+  },
+  {
+    "airline": "AERO MEXICO",
+    "iata": "AM",
+    "country": "MEXICO"
+  },
+  {
+    "airline": "AIR FRANCE",
+    "iata": "AF",
+    "country": "FRANCE"
+  },
+  {
+    "airline": "AIR INDIA",
+    "iata": "AI",
+    "country": "INDIA"
+  },
+  {
+    "airline": "AMERICAN AIRLINES",
+    "iata": "AA",
+    "country": "UNITED STATES"
+  },
+  {
+    "airline": "AIR CANADA",
+    "iata": "AC",
+    "country": "CANADA"
+  },
+  {
+    "airline": "AUSTRIAN AIRLINES",
+    "iata": "OS",
+    "country": "AUSTRIA"
+  },
+  {
+    "airline": "BRITISH AIRWAYS",
+    "iata": "BA",
+    "country": "UNITED KINGDOM"
+  },
+  {
+    "airline": "CATHAY PACIFIC",
+    "iata": "CX",
+    "country": "CHINA"
+  },
+  {
+    "airline": "China Airlines",
+    "iata": "CI",
+    "country": "TAIWAN"
+  },
+  {
+    "airline": "China Eastern Airlines",
+    "iata": "MU",
+    "country": "CHINA"
+  },
+  {
+    "airline": "China Southern Airlines",
+    "iata": "CZ",
+    "country": "CHINA"
+  },
+  {
+    "airline": "CORENDON DUTCH Airlines",
+    "iata": "CND",
+    "country": "THE NETHERLANDS"
+  },
+  {
+    "airline": "DELTA AIRLINES",
+    "iata": "DL",
+    "country": "UNITED STATES"
+  },
+  {
+    "airline": "EMIRATES",
+    "iata": "EK",
+    "country": "UNITED ARAB EMIRATES"
+  },
+  {
+    "airline": "ELAL",
+    "iata": "LY",
+    "country": "ISRAEL"
+  },
+  {
+    "airline": "FINNAIR",
+    "iata": "AY",
+    "country": "FINLAND"
+  },
+  {
+    "airline": "GARUDA",
+    "iata": "GA",
+    "country": "INDONESIA"
+  },
+  {
+    "airline": "IBERIA",
+    "iata": "IB",
+    "country": "SPAIN"
+  },
+  {
+    "airline": "IndiGo",
+    "iata": "6E",
+    "country": "INDIA"
+  },
+  {
+    "airline": "ITA Airways",
+    "iata": "AZ",
+    "country": "ITALY"
+  },
+  {
+    "airline": "KENYA AIRWAYS",
+    "iata": "KQ",
+    "country": "KENYA"
+  },
+  {
+    "airline": "KLM",
+    "iata": "KL",
+    "country": "THE NETHERLANDS"
+  },
+  {
+    "airline": "KOREAN AIR",
+    "iata": "KE",
+    "country": "SOUTH KOREA"
+  },
+  {
+    "airline": "LOT",
+    "iata": "LO",
+    "country": "Poland"
+  },
+  {
+    "airline": "LUFTHANSA",
+    "iata": "LH",
+    "country": "GERMANY"
+  },
+  {
+    "airline": "QATAR AIRWAYS",
+    "iata": "QR",
+    "country": "QATAR"
+  },
+  {
+    "airline": "Royal Air Maroc",
+    "iata": "AT",
+    "country": "MOROCCO"
+  },
+  {
+    "airline": "Royal Jordanian",
+    "iata": "RJ",
+    "country": "JORDAN"
+  },
+  {
+    "airline": "Saudia Airlines",
+    "iata": "SV",
+    "country": "SAUDI ARABIA"
+  },
+  {
+    "airline": "Singapore Airlines",
+    "iata": "SQ",
+    "country": "SINGAPORE"
+  },
+  {
+    "airline": "SAS",
+    "iata": "SK",
+    "country": "SCANDINAVIA"
+  },
+  {
+    "airline": "SLM",
+    "iata": "PY",
+    "country": "SURINAM"
+  },
+  {
+    "airline": "SWISS",
+    "iata": "LX",
+    "country": "SWITZERLAND"
+  },
+  {
+    "airline": "TAP",
+    "iata": "TP",
+    "country": "PORTUGAL"
+  },
+  {
+    "airline": "TRANSAVIA",
+    "iata": "HV",
+    "country": "THE NETHERLANDS"
+  },
+  {
+    "airline": "THAI AIRWAYS INTERNATIONAL",
+    "iata": "TG",
+    "country": "THAILAND"
+  },
+  {
+    "airline": "TUI",
+    "iata": "OR",
+    "country": "THE NETHERLANDS"
+  },
+  {
+    "airline": "TURKISH AIRLINES",
+    "iata": "TK",
+    "country": "TURKEY"
+  },
+  {
+    "airline": "UNITED AIRLINES",
+    "iata": "UA",
+    "country": "UNITED STATES"
+  },
+  {
+    "airline": "Xiamen Airlines",
+    "iata": "MF",
+    "country": "CHINA"
+  },
+  {
+    "airline": "Amelia",
+    "iata": "8R",
+    "country": "FRANCE"
+  },
+  {
+    "airline": "Air Baltic",
+    "iata": "BT",
+    "country": "LATVIA"
+  },
+  {
+    "airline": "Air Astana",
+    "iata": "KC",
+    "country": "KAZAKHSTAN"
+  },
+  {
+    "airline": "KM Malta Airlines",
+    "iata": "KM",
+    "country": "MALTA"
+  },
+  {
+    "airline": "Air Serbia",
+    "iata": "JU",
+    "country": "SERBIA"
+  },
+  {
+    "airline": "Air Transat",
+    "iata": "TS",
+    "country": "CANADA"
+  },
+  {
+    "airline": "Brussels Airlines",
+    "iata": "SN",
+    "country": "BELGIUM"
+  },
+  {
+    "airline": "Croatia Airlines",
+    "iata": "OU",
+    "country": "CROATIA"
+  },
+  {
+    "airline": "EVA Airways",
+    "iata": "BR",
+    "country": "TAIWAN"
+  },
+  {
+    "airline": "Etihad Airways",
+    "iata": "EY",
+    "country": "UNITED ARAB EMIRATES"
+  },
+  {
+    "airline": "Egypt Air",
+    "iata": "MS",
+    "country": "EGYPT"
+  },
+  {
+    "airline": "Icelandair",
+    "iata": "FI",
+    "country": "ICELAND"
+  },
+  {
+    "airline": "Kuwait Airways",
+    "iata": "KU",
+    "country": "Kuwait"
+  },
+  {
+    "airline": "Oman Air",
+    "iata": "WY",
+    "country": "OMAN"
+  },
+  {
+    "airline": "TAROM",
+    "iata": "RO",
+    "country": "ROMANIA"
+  },
+  {
+    "airline": "Tunis Air",
+    "iata": "TU",
+    "country": "TUNISIA"
+  },
+  {
+    "airline": "Vietnam Airlines",
+    "iata": "VN",
+    "country": "VIETNAM"
+  },
+  {
+    "airline": "WestJet",
+    "iata": "WS",
+    "country": "CANADA"
+  },
+  {
+    "airline": "Air Arabia Maroc",
+    "iata": "3O",
+    "country": "MOROCCO"
+  },
+  {
+    "airline": "Air Europa",
+    "iata": "UX",
+    "country": "SPAIN"
+  },
+  {
+    "airline": "A jet",
+    "iata": "VF",
+    "country": "TURKEY"
+  },
+  {
+    "airline": "Easyjet England",
+    "iata": "EZY",
+    "country": "UNITED KINGDOM"
+  },
+  {
+    "airline": "Easyjet Switzerland",
+    "iata": "EZS",
+    "country": "SWITZERLAND"
+  },
+  {
+    "airline": "Easyjet Europe",
+    "iata": "EZJ",
+    "country": "EUROPE"
+  },
+  {
+    "airline": "Eurowings",
+    "iata": "EW",
+    "country": "GERMANY"
+  },
+  {
+    "airline": "Flyone",
+    "iata": "5F",
+    "country": "MOLDOVA"
+  },
+  {
+    "airline": "JetBlue Airways",
+    "iata": "B6",
+    "country": "UNITED STATES"
+  },
+  {
+    "airline": "Jet2.com",
+    "iata": "LS",
+    "country": "UNITED KINGDOM"
+  },
+  {
+    "airline": "Norwegian Air",
+    "iata": "D8",
+    "country": "NORWAY"
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "iata": "PC",
+    "country": "TURKEY"
+  },
+  {
+    "airline": "Play Airlines",
+    "iata": "OG",
+    "country": "Iceland"
+  },
+  {
+    "airline": "Ryanair",
+    "iata": "FR",
+    "country": "IRELAND"
+  },
+  {
+    "airline": "Sky Express",
+    "iata": "GQ",
+    "country": "GREECE"
+  },
+  {
+    "airline": "SunExpress",
+    "iata": "XQ",
+    "country": "TURKEY"
+  },
+  {
+    "airline": "Vueling",
+    "iata": "VY",
+    "country": "SPAIN"
+  }
+]
