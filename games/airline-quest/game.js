@@ -1,415 +1,761 @@
 startHelp("airlinequest")
+
 let lastTap = 0
-    let firstPick=null
-let secondPick=null
+let firstPick = null
+let secondPick = null
+let matchesLeft = 0
+let isChecking = false
 
-let matchesLeft=0   // ⭐ NIEUW
-let isChecking = false;
-
-let time=60
-
+let time = 60
 let timerInterval
 
 const params = new URLSearchParams(location.search)
+
 const gameType =
     params.get("type") ||
     "iata-airline"
+
 const demo =
-    params.get("demo") === "true";
+    params.get("demo") === "true"
+
+
+/* =========================
+   LOAD DEMO DATA
+========================= */
+
 if(demo){
 
     fetch(
         "data/questmatch_carriercodes_2026-2027.json"
     )
-    .then(res=>res.json())
-    .then(data=>{
+    .then(res => {
 
-        startGame(data);
+        if(!res.ok){
+            throw new Error(
+                "Demo dataset not found"
+            )
+        }
 
-    });
+        return res.json()
 
+    })
+    .then(data => {
+
+        startGame(data)
+
+    })
+    .catch(err => {
+
+        console.error(err)
+        alert("Demo dataset failed to load")
+
+    })
 }
-const file = params.get("data")
-
-console.log("DATA FILE:", file)
 
 
-// TRAINING (1 lesson)
+/* =========================
+   LOAD TRAINING DATA
+========================= */
+
+const file =
+    params.get("data")
+
+console.log(
+    "DATA FILE:",
+    file
+)
+
 if(file){
 
-fetch("data/" + file)
-.then(res=>{
-if(!res.ok){
-throw new Error("Dataset not found: " + file)
-}
-return res.json()
-})
-.then(data=>{
-console.log("DATA LOADED:", data)
-startGame(data)
-})
-.catch(err=>{
-console.error(err)
-alert("Dataset failed to load")
-})
+    fetch(
+        "data/" + file
+    )
+    .then(res => {
 
+        if(!res.ok){
+
+            throw new Error(
+                "Dataset not found: " + file
+            )
+
+        }
+
+        return res.json()
+
+    })
+    .then(data => {
+
+        console.log(
+            "DATA LOADED:",
+            data
+        )
+
+        startGame(data)
+
+    })
+    .catch(err => {
+
+        console.error(err)
+
+        alert(
+            "Dataset failed to load"
+        )
+
+    })
 }
 
+
+/* =========================
+   SHUFFLE
+========================= */
 
 function shuffle(array){
 
-for(let i = array.length - 1; i > 0; i--){
+    for(
+        let i = array.length - 1;
+        i > 0;
+        i--
+    ){
 
-let j = Math.floor(Math.random() * (i + 1))
+        let j =
+            Math.floor(
+                Math.random() * (i + 1)
+            )
 
-let temp = array[i]
-array[i] = array[j]
-array[j] = temp
+        let temp = array[i]
 
-}
+        array[i] = array[j]
 
-return array
+        array[j] = temp
 
-}
-function startGame(data){
-  clearInterval(timerInterval)
-time = 60
-
-let tiles=[]
-
-const selectedPairs =
-    shuffle([...data])
-    .slice(0,7)
-
-selectedPairs.forEach(pair=>{
-if(gameType==="iata-airline"){
-
-    tiles.push({
-        type:"airline",
-        value:pair.airline,
-        match:pair.iata
-    })
-
-    tiles.push({
-        type:"iata",
-        value:pair.iata,
-        match:pair.iata
-    })
-
-}
-    if(gameType==="icao-airline"){
-
-    tiles.push({
-        type:"airline",
-        value:pair.airline,
-        match:pair.icao
-    });
-
-    tiles.push({
-        type:"icao",
-        value:pair.icao,
-        match:pair.icao
-    });
-
-}
-    if(gameType==="airline-country"){
-
-    tiles.push({
-        type:"airline",
-        value:pair.airline,
-        match:pair.country
-    });
-
-    tiles.push({
-        type:"country",
-        value:pair.country,
-        match:pair.country
-    });
-
-}
-    if(gameType==="iata-icao"){
-
-    tiles.push({
-        type:"iata",
-        value:pair.iata,
-        match:pair.icao
-    });
-
-    tiles.push({
-        type:"icao",
-        value:pair.icao,
-        match:pair.icao
-    });
-        if(gameType==="logo-airline"){
-
-    tiles.push({
-        type:"image",
-        value:pair.logo,
-        match:pair.airline
-    });
-
-    tiles.push({
-        type:"airline",
-        value:pair.airline,
-        match:pair.airline
-    });
-
-}
-
-}
-    }) 
-
-matchesLeft = selectedPairs.length
-
-
-tiles = shuffle(tiles)
-
-const grid=document.getElementById("grid")
-grid.innerHTML=""
-
-tiles.forEach((tile,index)=>{
-
-const div=document.createElement("div")
-div.className="tile"
-    if(index === 1){
-
-    const timer =
-        document.createElement("div");
-
-    timer.className =
-        "qTimerContainer";
-
-    timer.innerHTML = `
-        <img
-            src="../../q.png"
-            class="qTimer">
-
-        <div id="qTime">
-            01:00
-        </div>
-    `;
-
-    grid.appendChild(timer);
-}
-if(tile.type==="image"){
-
-const img=document.createElement("img")
-img.src="images/"+tile.value
-
-img.onerror=function(){
-console.log("Missing image:", tile.value)
-this.src="images/fallback.jpg"
-}
-
-img.style.maxWidth="90%"
-img.style.maxHeight="90%"
-img.style.objectFit="contain"
-
-    // klik op afbeelding = vergroten
-let pressTimer
-
-img.addEventListener("touchstart", function(e){
-
-pressTimer = setTimeout(()=>{
-openImage(img.src)
-},500)
-
-})
-
-img.addEventListener("touchend", function(e){
-clearTimeout(pressTimer)
-})
-
-img.addEventListener("touchmove", function(e){
-clearTimeout(pressTimer)
-})
-
-img.addEventListener("mousedown", function(e){
-
-pressTimer = setTimeout(()=>{
-openImage(img.src)
-},500)
-
-})
-
-img.addEventListener("mouseup", function(e){
-clearTimeout(pressTimer)
-})
-
-img.addEventListener("mouseleave", function(e){
-clearTimeout(pressTimer)
-})
-
-div.appendChild(img)
-
-}else{
-
-div.innerText=tile.value
-
-}
-
-// tile zelf blijft klikbaar
-div.onclick=()=>selectTile(div,tile)
-
-grid.appendChild(div)
-
-})
- timerInterval = setInterval(() => {
-
-    time--;
-
-    if(time <= 0){
-
-        clearInterval(timerInterval);
-
-        document.getElementById("qTime").innerText =
-            "00:00";
-
-        timeUp();
-
-        return;
     }
 
-    let min = Math.floor(time / 60);
-    let sec = time % 60;
-
-    document.getElementById("qTime").innerText =
-        min + ":" +
-        sec.toString().padStart(2,"0");
-
-},1000);
+    return array
 }
-function selectTile(div,tile){
 
-    if(isChecking) return;
 
-    if(firstPick && firstPick.div === div)
-        return;
+/* =========================
+   START GAME
+========================= */
 
-    if(firstPick == null){
+function startGame(data){
 
-        firstPick = {div,tile};
+    clearInterval(timerInterval)
+
+    time = 60
+
+    let tiles = []
+
+
+    /*
+       Pick 7 random airlines
+    */
+
+    const selectedPairs =
+        shuffle([...data])
+        .slice(0,7)
+
+
+    selectedPairs.forEach(pair => {
+
+
+        /* =========================
+           IATA ↔ AIRLINE
+        ========================= */
+
+        if(
+            gameType === "iata-airline"
+        ){
+
+            tiles.push({
+
+                type: "airline",
+
+                value: pair.airline,
+
+                match: pair.iata
+
+            })
+
+
+            tiles.push({
+
+                type: "iata",
+
+                value: pair.iata,
+
+                match: pair.iata
+
+            })
+
+        }
+
+
+        /* =========================
+           LOGO ↔ AIRLINE
+        ========================= */
+
+        if(
+            gameType === "logo-airline"
+        ){
+
+            tiles.push({
+
+                type: "image",
+
+                value: pair.logo,
+
+                match: pair.airline
+
+            })
+
+
+            tiles.push({
+
+                type: "airline",
+
+                value: pair.airline,
+
+                match: pair.airline
+
+            })
+
+        }
+
+    })
+
+
+    matchesLeft =
+        selectedPairs.length
+
+
+    /* =========================
+       CREATE GRID
+    ========================= */
+
+    tiles = shuffle(tiles)
+
+    const grid =
+        document.getElementById(
+            "grid"
+        )
+
+    grid.innerHTML = ""
+
+
+    tiles.forEach(
+        (tile,index) => {
+
+            const div =
+                document.createElement(
+                    "div"
+                )
+
+            div.className =
+                "tile"
+
+
+            /* =========================
+               TIMER
+            ========================= */
+
+            if(index === 1){
+
+                const timer =
+                    document.createElement(
+                        "div"
+                    )
+
+                timer.className =
+                    "qTimerContainer"
+
+
+                timer.innerHTML = `
+                    <img
+                        src="../../q.png"
+                        class="qTimer"
+                    >
+
+                    <div id="qTime">
+                        01:00
+                    </div>
+                `
+
+                grid.appendChild(timer)
+
+            }
+
+
+            /* =========================
+               IMAGE TILE
+            ========================= */
+
+            if(
+                tile.type === "image"
+            ){
+
+                const img =
+                    document.createElement(
+                        "img"
+                    )
+
+
+                img.src =
+                    "images/" +
+                    tile.value
+
+
+                img.onerror =
+                    function(){
+
+                        console.log(
+                            "Missing image:",
+                            tile.value
+                        )
+
+                        this.src =
+                            "images/fallback.jpg"
+
+                    }
+
+
+                img.style.maxWidth =
+                    "90%"
+
+                img.style.maxHeight =
+                    "90%"
+
+                img.style.objectFit =
+                    "contain"
+
+
+                /* =========================
+                   LONG PRESS → ENLARGE
+                ========================= */
+
+                let pressTimer
+
+
+                img.addEventListener(
+                    "touchstart",
+                    function(){
+
+                        pressTimer =
+                            setTimeout(
+                                () => {
+
+                                    openImage(
+                                        img.src
+                                    )
+
+                                },
+                                500
+                            )
+
+                    }
+                )
+
+
+                img.addEventListener(
+                    "touchend",
+                    function(){
+
+                        clearTimeout(
+                            pressTimer
+                        )
+
+                    }
+                )
+
+
+                img.addEventListener(
+                    "touchmove",
+                    function(){
+
+                        clearTimeout(
+                            pressTimer
+                        )
+
+                    }
+                )
+
+
+                img.addEventListener(
+                    "mousedown",
+                    function(){
+
+                        pressTimer =
+                            setTimeout(
+                                () => {
+
+                                    openImage(
+                                        img.src
+                                    )
+
+                                },
+                                500
+                            )
+
+                    }
+                )
+
+
+                img.addEventListener(
+                    "mouseup",
+                    function(){
+
+                        clearTimeout(
+                            pressTimer
+                        )
+
+                    }
+                )
+
+
+                img.addEventListener(
+                    "mouseleave",
+                    function(){
+
+                        clearTimeout(
+                            pressTimer
+                        )
+
+                    }
+                )
+
+
+                div.appendChild(img)
+
+            }
+
+
+            /* =========================
+               TEXT TILE
+            ========================= */
+
+            else{
+
+                div.innerText =
+                    tile.value
+
+            }
+
+
+            /* =========================
+               TILE CLICK
+            ========================= */
+
+            div.onclick =
+                () =>
+                    selectTile(
+                        div,
+                        tile
+                    )
+
+
+            grid.appendChild(div)
+
+        }
+    )
+
+
+    /* =========================
+       TIMER
+    ========================= */
+
+    timerInterval =
+        setInterval(
+            () => {
+
+                time--
+
+
+                if(time <= 0){
+
+                    clearInterval(
+                        timerInterval
+                    )
+
+
+                    document
+                        .getElementById(
+                            "qTime"
+                        )
+                        .innerText =
+                            "00:00"
+
+
+                    timeUp()
+
+                    return
+
+                }
+
+
+                let min =
+                    Math.floor(
+                        time / 60
+                    )
+
+                let sec =
+                    time % 60
+
+
+                document
+                    .getElementById(
+                        "qTime"
+                    )
+                    .innerText =
+                        min +
+                        ":" +
+                        sec
+                            .toString()
+                            .padStart(
+                                2,
+                                "0"
+                            )
+
+            },
+            1000
+        )
+
+}
+
+
+/* =========================
+   SELECT TILE
+========================= */
+
+function selectTile(
+    div,
+    tile
+){
+
+    if(isChecking)
+        return
+
+
+    if(
+        firstPick &&
+        firstPick.div === div
+    )
+        return
+
+
+    if(
+        firstPick == null
+    ){
+
+        firstPick = {
+            div,
+            tile
+        }
+
 
         div.classList.add(
             "selected"
-        );
+        )
 
-        return;
+
+        return
+
     }
 
-    secondPick = {div,tile};
 
-    checkMatch();
+    secondPick = {
+        div,
+        tile
+    }
+
+
+    checkMatch()
+
 }
+
+
+/* =========================
+   CHECK MATCH
+========================= */
 
 function checkMatch(){
 
-    isChecking = true;
+    isChecking = true
+
 
     if(
-        firstPick.tile.match === secondPick.tile.match &&
-        firstPick.tile.type !== secondPick.tile.type
+        firstPick.tile.match ===
+        secondPick.tile.match
+
+        &&
+
+        firstPick.tile.type !==
+        secondPick.tile.type
     ){
 
         firstPick.div.classList.add(
             "flip",
             "correct"
-        );
+        )
+
 
         secondPick.div.classList.add(
             "flip",
             "correct"
-        );
+        )
 
-        setTimeout(()=>{
 
-            firstPick.div.style.visibility =
-                "hidden";
+        setTimeout(
+            () => {
 
-            secondPick.div.style.visibility =
-                "hidden";
+                firstPick.div.style.visibility =
+                    "hidden"
 
-            matchesLeft--;
 
-            if(matchesLeft === 0){
+                secondPick.div.style.visibility =
+                    "hidden"
 
-                finishGame();
-                clearInterval(
-                    timerInterval
-                );
 
-            }
+                matchesLeft--
 
-            reset();
 
-            isChecking = false;
+                if(
+                    matchesLeft === 0
+                ){
 
-        },500);
+                    finishGame()
 
-    }else{
+                    clearInterval(
+                        timerInterval
+                    )
+
+                }
+
+
+                reset()
+
+                isChecking = false
+
+            },
+            500
+        )
+
+    }
+
+
+    else{
 
         firstPick.div.classList.add(
             "wrong"
-        );
+        )
+
 
         secondPick.div.classList.add(
             "wrong"
-        );
+        )
 
-        setTimeout(()=>{
 
-            if(firstPick){
-                firstPick.div.classList.remove(
-                    "wrong"
-                );
-            }
+        setTimeout(
+            () => {
 
-            if(secondPick){
-                secondPick.div.classList.remove(
-                    "wrong"
-                );
-            }
+                if(firstPick){
 
-            reset();
+                    firstPick.div.classList.remove(
+                        "wrong"
+                    )
 
-            isChecking = false;
+                }
 
-        },600);
+
+                if(secondPick){
+
+                    secondPick.div.classList.remove(
+                        "wrong"
+                    )
+
+                }
+
+
+                reset()
+
+                isChecking = false
+
+            },
+            600
+        )
 
     }
+
 }
+
+
+/* =========================
+   RESET
+========================= */
 
 function reset(){
 
-if(firstPick) firstPick.div.classList.remove("selected")
-if(secondPick) secondPick.div.classList.remove("selected")
+    if(firstPick){
 
-firstPick=null
-secondPick=null
+        firstPick.div.classList.remove(
+            "selected"
+        )
+
+    }
+
+
+    if(secondPick){
+
+        secondPick.div.classList.remove(
+            "selected"
+        )
+
+    }
+
+
+    firstPick = null
+
+    secondPick = null
 
 }
+
+
+/* =========================
+   FINISH GAME
+========================= */
+
 function finishGame(){
 
-    if(demo){
+    clearInterval(
+        timerInterval
+    )
 
-        clearInterval(timerInterval);
+
+    /* =========================
+       DEMO FINISH
+    ========================= */
+
+    if(demo){
 
         const grid =
             document.getElementById(
                 "grid"
-            );
+            )
 
-        grid.innerHTML = "";
+        grid.innerHTML = ""
+
 
         const finish =
             document.getElementById(
                 "finishScreen"
-            );
+            )
+
 
         finish.style.display =
-            "block";
+            "block"
+
 
         finish.innerHTML = `
+
             <h2>
                 Congratulations, Guest Pilot! ✈️
             </h2>
@@ -430,22 +776,21 @@ function finishGame(){
                 max-width:500px;
                 margin:auto;
             ">
+
                 <li>
-                    Matched IATA airport codes
+                    Matched airline names
+                    with IATA carriercodes
                 </li>
 
                 <li>
-                    Learned AIRIMP airline terminology
+                    Recognised airline logos
                 </li>
 
                 <li>
-                    Practiced aviation geography
+                    Practiced aviation knowledge
+                    through retrieval
                 </li>
 
-                <li>
-                    Matched airline names with
-                    IATA and ICAO codes
-                </li>
             </ul>
 
             <p>
@@ -462,6 +807,7 @@ function finishGame(){
                 max-width:500px;
                 margin:auto;
             ">
+
                 <li>
                     Choose their own learning path
                 </li>
@@ -475,12 +821,13 @@ function finishGame(){
                 </li>
 
                 <li>
-                    Complete assessments and module challenges
+                    Complete assessments and challenges
                 </li>
 
                 <li>
                     Track their own progress over time
                 </li>
+
             </ul>
 
             <p>
@@ -492,129 +839,230 @@ function finishGame(){
                 Interested in learning more?
             </p>
 
-          <button id="contactBtn">
-    Contact QuestLab
-</button>
 
-<br><br>
+            <button id="contactBtn">
+                Contact QuestLab
+            </button>
 
-<button
-    class="secondaryBtn"
-    onclick="
-        location.href='/'
-    "
->
-    Return to QuestLab Home
-</button>
-        `;
-document
-    .getElementById(
-        "contactBtn"
-    )
-    .onclick = () => {
+            <br><br>
 
-        location.href =
-            "/contact.html";
+            <button
+                class="secondaryBtn"
+                onclick="location.href='/'"
+            >
+                Return to QuestLab Home
+            </button>
 
-    };
-        return;
+        `
+
+
+        document
+            .getElementById(
+                "contactBtn"
+            )
+            .onclick =
+            () => {
+
+                location.href =
+                    "/contact.html"
+
+            }
+
+
+        return
+
     }
 
-    // normale afsluiting
-    clearInterval(timerInterval);
+
+    /* =========================
+       NORMAL FINISH
+    ========================= */
 
     const timeBonus =
         Math.max(
             0,
-            Math.floor(time/20)
-        );
+            Math.floor(
+                time / 20
+            )
+        )
+
 
     const xp =
-        20 + timeBonus;
+        20 +
+        timeBonus
 
-    addXP(xp);
+
+    addXP(xp)
+
 
     const grid =
         document.getElementById(
             "grid"
-        );
+        )
+
 
     const finish =
         document.getElementById(
             "finishScreen"
-        );
+        )
 
-    grid.innerHTML = "";
+
+    grid.innerHTML = ""
+
 
     finish.style.display =
-        "block";
+        "block"
+
 
     finish.querySelector("h2")
         .innerText =
-        "Mission Complete ✈️ +" +
-        xp +
-        " XP";
+            "Mission Complete ✈️ +" +
+            xp +
+            " XP"
+
 }
-const overlay = document.getElementById("imageOverlay")
-const overlayImg = document.getElementById("overlayImage")
+
+
+/* =========================
+   IMAGE OVERLAY
+========================= */
+
+const overlay =
+    document.getElementById(
+        "imageOverlay"
+    )
+
+
+const overlayImg =
+    document.getElementById(
+        "overlayImage"
+    )
+
 
 function openImage(src){
 
-if(!overlay || !overlayImg) return
+    if(
+        !overlay ||
+        !overlayImg
+    )
+        return
 
-// reset tile zooms
-document.querySelectorAll(".zoomed").forEach(el=>{
-el.classList.remove("zoomed")
-})
 
-overlayImg.src = src
-overlay.style.display = "flex"
+    document
+        .querySelectorAll(
+            ".zoomed"
+        )
+        .forEach(
+            el =>
+                el.classList.remove(
+                    "zoomed"
+                )
+        )
+
+
+    overlayImg.src =
+        src
+
+
+    overlay.style.display =
+        "flex"
 
 }
 
-// klik op overlay sluit fullscreen
+
+/* =========================
+   CLOSE IMAGE OVERLAY
+========================= */
+
 if(overlay){
 
-overlay.onclick = () => {
+    overlay.onclick =
+        () => {
 
-overlay.style.display = "none"
+            overlay.style.display =
+                "none"
 
-// reset zoom
-document.querySelectorAll(".zoomed").forEach(el=>{
-el.classList.remove("zoomed")
-})
+
+            document
+                .querySelectorAll(
+                    ".zoomed"
+                )
+                .forEach(
+                    el =>
+                        el.classList.remove(
+                            "zoomed"
+                        )
+                )
+
+        }
 
 }
 
-}
-    function timeUp(){
 
-const choice = confirm(
-"Time's up!\n\nOK = Restart mission\nCancel = Back to Game Console"
+/* =========================
+   TIME UP
+========================= */
+
+function timeUp(){
+
+    const choice =
+        confirm(
+            "Time's up!\n\nOK = Restart mission\nCancel = Back to Game Console"
+        )
+
+
+    if(choice){
+
+        location.reload()
+
+    }
+
+    else{
+
+        window.location.href =
+            "index.html"
+
+    }
+
+}
+
+
+/* =========================
+   FINISH SCREEN BUTTONS
+========================= */
+
+window.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        const newBtn =
+            document.getElementById(
+                "newSessionBtn"
+            )
+
+
+        const backBtn =
+            document.getElementById(
+                "backBtn"
+            )
+
+
+        if(newBtn){
+
+            newBtn.onclick =
+                () =>
+                    location.reload()
+
+        }
+
+
+        if(backBtn){
+
+            backBtn.onclick =
+                () =>
+                    window.history.back()
+
+        }
+
+    }
 )
-
-if(choice){
-
-location.reload()
-
-}else{
-
-window.location.href="index.html"
-
-}
-
-}
-window.addEventListener("DOMContentLoaded", () => {
-
-const newBtn = document.getElementById("newSessionBtn")
-const backBtn = document.getElementById("backBtn")
-
-if(newBtn){
-newBtn.onclick = () => location.reload()
-}
-
-if(backBtn){
-backBtn.onclick = () => window.history.back()
-}
-
-})
