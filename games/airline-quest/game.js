@@ -140,6 +140,21 @@ if(gameType==="iata-airline"){
         value:pair.icao,
         match:pair.icao
     });
+        if(gameType==="logo-airline"){
+
+    tiles.push({
+        type:"image",
+        value:pair.logo,
+        match:pair.airline
+    });
+
+    tiles.push({
+        type:"airline",
+        value:pair.airline,
+        match:pair.airline
+    });
+
+}
 
 }
     }) 
