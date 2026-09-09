@@ -1,7 +1,6 @@
 startHelp("airlinequest")
 
 
-let lastTap = 0
 let firstPick = null
 let secondPick = null
 let matchesLeft = 0
@@ -30,10 +29,13 @@ const demo =
    DATASET
 ========================= */
 
-let dataFile = null
+let dataFile
 
 
-if(gameType === "logo-airline"){
+if(
+    gameType === "logo-airline" ||
+    gameType === "iata-logo"
+){
 
     dataFile =
         "questmatch_logos.json"
@@ -65,6 +67,7 @@ console.log(
     "GAME TYPE:",
     gameType
 )
+
 
 console.log(
     "DATA FILE:",
@@ -272,6 +275,45 @@ function startGame(data){
 
 
             /* =========================
+               IATA ↔ LOGO
+            ========================= */
+
+            else if(
+                gameType ===
+                "iata-logo"
+            ){
+
+                tiles.push({
+
+                    type:
+                        "iata",
+
+                    value:
+                        pair.iata,
+
+                    match:
+                        pair.airline
+
+                })
+
+
+                tiles.push({
+
+                    type:
+                        "image",
+
+                    value:
+                        pair.logo,
+
+                    match:
+                        pair.airline
+
+                })
+
+            }
+
+
+            /* =========================
                AIRLINE ↔ COUNTRY
                NEXT GAME
             ========================= */
@@ -437,8 +479,7 @@ function startGame(data){
                     }
 
 
-                /* Long press / hold
-                   to enlarge logo */
+                /* Long press / hold */
 
                 let pressTimer
 
@@ -866,10 +907,6 @@ function finishGame(){
     )
 
 
-    /* =========================
-       XP
-    ========================= */
-
     const timeBonus =
         Math.max(
             0,
@@ -906,12 +943,9 @@ function finishGame(){
             grid.innerHTML = ""
 
 
-        if(finish){
-
+        if(finish)
             finish.style.display =
                 "block"
-
-        }
 
 
         return
