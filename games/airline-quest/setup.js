@@ -7,10 +7,22 @@ document
             "gameType"
         ).value;
 
+
+    if(!type){
+
+        alert(
+            "Please select a game type"
+        );
+
+        return;
+    }
+
+
     const demo =
         new URLSearchParams(
             location.search
         ).get("demo") === "true";
+
 
     if(demo){
 
@@ -21,28 +33,10 @@ document
         return;
     }
 
-    const user =
-        localStorage.getItem(
-            "questlabUser"
-        );
 
-    let dataset =
-        "airline_complete.json";
+    const dataset =
+        "questmatch_carriercodes_2026-2027.json";
 
-    if(
-        user &&
-        (
-            user.endsWith(
-                "@talnet.nl"
-            ) ||
-            user.endsWith(
-                "@rebergen.org"
-            )
-        )
-    ){
-        dataset =
-            "airline_rocva_full_array.json";
-    }
 
     location.href =
         "game.html?data=" +
