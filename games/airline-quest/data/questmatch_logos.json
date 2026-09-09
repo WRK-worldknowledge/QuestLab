@@ -1,0 +1,187 @@
+[
+  {
+    "airline": "Air Arabia Maroc",
+    "iata": "3O",
+    "logo": "3O_AirArabia_Logo.jpg"
+  },
+  {
+    "airline": "Air France",
+    "iata": "AF",
+    "logo": "AF_Air-France-Logo-1998-2009.jpg"
+  },
+  {
+    "airline": "Ryanair",
+    "iata": "FR",
+    "logo": "FR_Ryanair.jpg"
+  },
+  {
+    "airline": "Garuda",
+    "iata": "GA",
+    "logo": "GA_image-3.png"
+  },
+  {
+    "airline": "Air Serbia",
+    "iata": "JU",
+    "logo": "JU_Logo_Air_Serbia.jpg"
+  },
+  {
+    "airline": "Korean Air",
+    "iata": "KE",
+    "logo": "KE_Logo_Korean_Air.jpg"
+  },
+  {
+    "airline": "SAS",
+    "iata": "SK",
+    "logo": "SK_4a93498dcbbc128af7299c632b18fb3a--the-s-the-flag.jpg"
+  },
+  {
+    "airline": "Austrian Airlines",
+    "iata": "OS",
+    "logo": "OS_Austrian_Airlines.png"
+  },
+  {
+    "airline": "Royal Air Maroc",
+    "iata": "AT",
+    "logo": "AT_company_logo_AT.png"
+  },
+  {
+    "airline": "Kenya Airways",
+    "iata": "KQ",
+    "logo": "KQ_388-3889667_kenya-airways-logo-transparent-hd-png-download.png"
+  },
+  {
+    "airline": "EVA Airways",
+    "iata": "BR",
+    "logo": "BR_eva_airlogo.png"
+  },
+  {
+    "airline": "LOT",
+    "iata": "LO",
+    "logo": "LO_polishairlines.png"
+  },
+  {
+    "airline": "Cathay Pacific",
+    "iata": "CX",
+    "logo": "CX_Logo_CX.png"
+  },
+  {
+    "airline": "Delta Airlines",
+    "iata": "DL",
+    "logo": "DL_DL.png"
+  },
+  {
+    "airline": "TUI",
+    "iata": "OR",
+    "logo": "OR_TUI-Fly-logo.jpg"
+  },
+  {
+    "airline": "SLM",
+    "iata": "PY",
+    "logo": "PY_PY_logo.jpg"
+  },
+  {
+    "airline": "Air Transat",
+    "iata": "TS",
+    "logo": "TS_TS_Air_Transat.jpg"
+  },
+  {
+    "airline": "Etihad Airways",
+    "iata": "EY",
+    "logo": "EY_Etihad-Airways-logo.jpg"
+  },
+  {
+    "airline": "China Southern Airlines",
+    "iata": "CZ",
+    "logo": "CZ_Logo_CZ.png"
+  },
+  {
+    "airline": "Aer Lingus",
+    "iata": "EI",
+    "logo": "EI_Logo_EI.png"
+  },
+  {
+    "airline": "Easyjet England",
+    "iata": "EZY",
+    "logo": "EZY_Logo_EZY.png"
+  },
+  {
+    "airline": "Transavia",
+    "iata": "HV",
+    "logo": "HV_Logo_HV.png"
+  },
+  {
+    "airline": "Singapore Airlines",
+    "iata": "SQ",
+    "logo": "SQ_LOgo_SQ.png"
+  },
+  {
+    "airline": "Lufthansa",
+    "iata": "LH",
+    "logo": "LH_lufthansa_logo_before_after.png"
+  },
+  {
+    "airline": "SWISS",
+    "iata": "LX",
+    "logo": "LX_swiss-international-air-lines-vector-logo.png"
+  },
+  {
+    "airline": "TAP",
+    "iata": "TP",
+    "logo": "TP_tap-portugal-logo.png"
+  },
+  {
+    "airline": "Turkish Airlines",
+    "iata": "TK",
+    "logo": "TK_turkish-airlines-logo-1E368810A4-seeklogo_com.png"
+  },
+  {
+    "airline": "Easyjet Switzerland",
+    "iata": "EZS",
+    "logo": "EZS_Logo_EZY.png"
+  },
+  {
+    "airline": "United Airlines",
+    "iata": "UA",
+    "logo": "UA_logo-united-airlines.6.b958.jpg"
+  },
+  {
+    "airline": "Air Baltic",
+    "iata": "BT",
+    "logo": "BT_Airbaltic-logo.png"
+  },
+  {
+    "airline": "American Airlines",
+    "iata": "AA",
+    "logo": "AA_image-1.png"
+  },
+  {
+    "airline": "Aeromexico",
+    "iata": "AM",
+    "logo": "AM_AM_logo.png"
+  },
+  {
+    "airline": "ITA Airways",
+    "iata": "AZ",
+    "logo": "AZ_ITA-Airways-New-Logo.png"
+  },
+  {
+    "airline": "Emirates",
+    "iata": "EK",
+    "logo": "EK_850px-Emirates_logo.svg.png"
+  },
+  {
+    "airline": "Icelandair",
+    "iata": "FI",
+    "logo": "FI_image-2.png"
+  },
+  {
+    "airline": "KM Malta Airlines",
+    "iata": "KM",
+    "logo": "KM_KM_malta_airlines.png"
+  },
+  {
+    "airline": "SunExpress",
+    "iata": "XQ",
+    "logo": "XQ_Sunexpress.png"
+  }
+]
