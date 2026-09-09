@@ -2,7 +2,6 @@ document
     .getElementById("startBtn")
     .onclick = () => {
 
-
     const type =
         document.getElementById(
             "gameType"
@@ -38,7 +37,10 @@ document
     let dataset;
 
 
-    if(type === "iata-airline"){
+    if(
+        type === "iata-airline" ||
+        type === "airline-country"
+    ){
 
         dataset =
             "questmatch_carriercodes_2026-2027.json";
@@ -46,7 +48,10 @@ document
     }
 
 
-    if(type === "logo-airline"){
+    if(
+        type === "logo-airline" ||
+        type === "iata-logo"
+    ){
 
         dataset =
             "questmatch_logos.json";
