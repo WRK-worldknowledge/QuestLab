@@ -19,7 +19,7 @@ const demo =
 if(demo){
 
     fetch(
-        "data/airline_rocva_full_array.json"
+        "data/questmatch_carriercodes_2026-2027.json"
     )
     .then(res=>res.json())
     .then(data=>{
